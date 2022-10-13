@@ -26,8 +26,8 @@ abstract class Class142 {
 
 	static final int method2307(int i, int i_0_, int i_1_) {
 		try {
-			double d = Math.log((double) i_0_) / Math.log(2.0);
-			double d_2_ = Math.log((double) i) / Math.log(2.0);
+			double d = Math.log(i_0_) / Math.log(2.0);
+			double d_2_ = Math.log(i) / Math.log(2.0);
 			int i_3_ = 107 % ((i_1_ - -33) / 52);
 			double d_4_ = d_2_ + Math.random() * (-d_2_ + d);
 			return (int) (0.5 + Math.pow(2.0, d_4_));
@@ -49,7 +49,7 @@ abstract class Class142 {
 					if (i != 19208)
 						aClass105_1159 = null;
 					do {
-						if ((string.length() ^ 0xffffffff) == -1) {
+						if (string.length() == 0) {
 							string_7_ += "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0";
 							if (!client.aBoolean3553)
 								break;

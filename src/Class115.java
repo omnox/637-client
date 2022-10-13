@@ -64,7 +64,7 @@ final class Class115 {
 		try {
 			Class266 class266;
 			synchronized (aClass79_959) {
-				class266 = (Class266) aClass79_959.get((long) i);
+				class266 = (Class266) aClass79_959.get(i);
 			}
 			if (class266 != null)
 				return class266;
@@ -78,7 +78,7 @@ final class Class115 {
 			if (is != null)
 				class266.method3236(new RSByteBuffer(is), (byte) -16);
 			synchronized (aClass79_959) {
-				aClass79_959.put((long) i, class266);
+				aClass79_959.put(i, class266);
 			}
 			return class266;
 		} catch (RuntimeException runtimeexception) {

@@ -102,8 +102,8 @@ final class Class76_Sub11 extends Class76 {
 		try {
 			if (i != 6)
 				anInt3798 = 101;
-			((Class76) this).aHa_Sub3_585.method2005(interface4, -123);
-			((Class76) this).aHa_Sub3_585.method2015(i_6_, (byte) 117);
+			this.aHa_Sub3_585.method2005(interface4, -123);
+			this.aHa_Sub3_585.method2015(i_6_, (byte) 117);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("wk.I(" + i + ',' + i_6_ + ',' + (interface4 != null ? "{...}" : "null") + ')'));
 		}

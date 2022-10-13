@@ -8,7 +8,7 @@ final class Class129 {
 
 	static final synchronized byte[] method2225(boolean bool, int i) {
 		try {
-			if ((i ^ 0xffffffff) == -101 && Class69_Sub1.anInt5329 > 0) {
+			if (i == 100 && Class69_Sub1.anInt5329 > 0) {
 				byte[] is = Class157.aByteArrayArray1248[--Class69_Sub1.anInt5329];
 				Class157.aByteArrayArray1248[Class69_Sub1.anInt5329] = null;
 				return is;
@@ -20,14 +20,14 @@ final class Class129 {
 				Class366.aByteArrayArray3119[Class35.anInt336] = null;
 				return is;
 			}
-			if ((i ^ 0xffffffff) == -30001 && Class10.anInt119 > 0) {
+			if (i == 30000 && Class10.anInt119 > 0) {
 				byte[] is = Class64_Sub11.aByteArrayArray3670[--Class10.anInt119];
 				Class64_Sub11.aByteArrayArray3670[Class10.anInt119] = null;
 				return is;
 			}
 			if (Class190.aByteArrayArrayArray1468 != null) {
 				for (int i_0_ = 0; Class111_Sub1.anIntArray4681.length > i_0_; i_0_++) {
-					if (i == Class111_Sub1.anIntArray4681[i_0_] && (Class98_Sub46_Sub13_Sub1.anIntArray6308[i_0_] ^ 0xffffffff) < -1) {
+					if (i == Class111_Sub1.anIntArray4681[i_0_] && Class98_Sub46_Sub13_Sub1.anIntArray6308[i_0_] > 0) {
 						byte[] is = (Class190.aByteArrayArrayArray1468[i_0_][--Class98_Sub46_Sub13_Sub1.anIntArray6308[i_0_]]);
 						Class190.aByteArrayArrayArray1468[i_0_][Class98_Sub46_Sub13_Sub1.anIntArray6308[i_0_]] = null;
 						return is;
@@ -53,36 +53,36 @@ final class Class129 {
 		if (class246_sub3 != null) {
 			for (int i = 0; i < 2; i++) {
 				AnimableEntity class246_sub3_2_ = null;
-				for (AnimableEntity class246_sub3_3_ = Class379.aClass246_Sub3Array3198[i]; class246_sub3_3_ != null; class246_sub3_3_ = (((AnimableEntity) class246_sub3_3_).aClass246_Sub3_5090)) {
+				for (AnimableEntity class246_sub3_3_ = Class379.aClass246_Sub3Array3198[i]; class246_sub3_3_ != null; class246_sub3_3_ = (class246_sub3_3_.aClass246_Sub3_5090)) {
 					if (class246_sub3_3_ == class246_sub3) {
 						if (class246_sub3_2_ != null)
-							((AnimableEntity) class246_sub3_2_).aClass246_Sub3_5090 = (((AnimableEntity) class246_sub3_3_).aClass246_Sub3_5090);
+							class246_sub3_2_.aClass246_Sub3_5090 = (class246_sub3_3_.aClass246_Sub3_5090);
 						else
-							Class379.aClass246_Sub3Array3198[i] = (((AnimableEntity) class246_sub3_3_).aClass246_Sub3_5090);
+							Class379.aClass246_Sub3Array3198[i] = (class246_sub3_3_.aClass246_Sub3_5090);
 						Class358.aBoolean3033 = true;
 						return;
 					}
 					class246_sub3_2_ = class246_sub3_3_;
 				}
 				class246_sub3_2_ = null;
-				for (AnimableEntity class246_sub3_4_ = Class359.aClass246_Sub3Array3056[i]; class246_sub3_4_ != null; class246_sub3_4_ = (((AnimableEntity) class246_sub3_4_).aClass246_Sub3_5090)) {
+				for (AnimableEntity class246_sub3_4_ = Class359.aClass246_Sub3Array3056[i]; class246_sub3_4_ != null; class246_sub3_4_ = (class246_sub3_4_.aClass246_Sub3_5090)) {
 					if (class246_sub3_4_ == class246_sub3) {
 						if (class246_sub3_2_ != null)
-							((AnimableEntity) class246_sub3_2_).aClass246_Sub3_5090 = (((AnimableEntity) class246_sub3_4_).aClass246_Sub3_5090);
+							class246_sub3_2_.aClass246_Sub3_5090 = (class246_sub3_4_.aClass246_Sub3_5090);
 						else
-							Class359.aClass246_Sub3Array3056[i] = (((AnimableEntity) class246_sub3_4_).aClass246_Sub3_5090);
+							Class359.aClass246_Sub3Array3056[i] = (class246_sub3_4_.aClass246_Sub3_5090);
 						Class358.aBoolean3033 = true;
 						return;
 					}
 					class246_sub3_2_ = class246_sub3_4_;
 				}
 				class246_sub3_2_ = null;
-				for (AnimableEntity class246_sub3_5_ = Class130.aClass246_Sub3Array1029[i]; class246_sub3_5_ != null; class246_sub3_5_ = (((AnimableEntity) class246_sub3_5_).aClass246_Sub3_5090)) {
+				for (AnimableEntity class246_sub3_5_ = Class130.aClass246_Sub3Array1029[i]; class246_sub3_5_ != null; class246_sub3_5_ = (class246_sub3_5_.aClass246_Sub3_5090)) {
 					if (class246_sub3_5_ == class246_sub3) {
 						if (class246_sub3_2_ != null)
-							((AnimableEntity) class246_sub3_2_).aClass246_Sub3_5090 = (((AnimableEntity) class246_sub3_5_).aClass246_Sub3_5090);
+							class246_sub3_2_.aClass246_Sub3_5090 = (class246_sub3_5_.aClass246_Sub3_5090);
 						else
-							Class130.aClass246_Sub3Array1029[i] = (((AnimableEntity) class246_sub3_5_).aClass246_Sub3_5090);
+							Class130.aClass246_Sub3Array1029[i] = (class246_sub3_5_.aClass246_Sub3_5090);
 						Class358.aBoolean3033 = true;
 						return;
 					}
@@ -101,13 +101,13 @@ final class Class129 {
 					Class157.aByteArrayArray1248[Class69_Sub1.anInt5329++] = is;
 				else if (is.length == 5000 && Class35.anInt336 < 250)
 					Class366.aByteArrayArray3119[Class35.anInt336++] = is;
-				else if ((is.length ^ 0xffffffff) == -30001 && (Class10.anInt119 ^ 0xffffffff) > -51)
+				else if (is.length == 30000 && Class10.anInt119 < 50)
 					Class64_Sub11.aByteArrayArray3670[Class10.anInt119++] = is;
 				else {
 					if (Class190.aByteArrayArrayArray1468 == null)
 						break;
-					for (int i_6_ = 0; ((i_6_ ^ 0xffffffff) > (Class111_Sub1.anIntArray4681.length ^ 0xffffffff)); i_6_++) {
-						if (Class111_Sub1.anIntArray4681[i_6_] == is.length && ((Class98_Sub46_Sub13_Sub1.anIntArray6308[i_6_] ^ 0xffffffff) > ((Class190.aByteArrayArrayArray1468[i_6_]).length ^ 0xffffffff))) {
+					for (int i_6_ = 0; (Class111_Sub1.anIntArray4681.length > i_6_); i_6_++) {
+						if (Class111_Sub1.anIntArray4681[i_6_] == is.length && ((Class190.aByteArrayArrayArray1468[i_6_]).length > Class98_Sub46_Sub13_Sub1.anIntArray6308[i_6_])) {
 							Class190.aByteArrayArrayArray1468[i_6_][Class98_Sub46_Sub13_Sub1.anIntArray6308[i_6_]++] = is;
 							break;
 						}

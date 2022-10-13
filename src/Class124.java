@@ -17,9 +17,9 @@ final class Class124 {
 			Class98_Sub3 class98_sub3 = Class64_Sub28.method669(i_0_, bool, 6);
 			if (class98_sub3 == null)
 				return 0;
-			if (i_1_ < 0 || ((i_1_ ^ 0xffffffff) <= (((Class98_Sub3) class98_sub3).anIntArray3823.length ^ 0xffffffff)))
+			if (i_1_ < 0 || (class98_sub3.anIntArray3823.length <= i_1_))
 				return 0;
-			return ((Class98_Sub3) class98_sub3).anIntArray3823[i_1_];
+			return class98_sub3.anIntArray3823[i_1_];
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ie.A(" + bool + ',' + i + ',' + i_0_ + ',' + i_1_ + ')'));
 		}
@@ -71,12 +71,12 @@ final class Class124 {
 
 	final void method2215(int i, RSByteBuffer class98_sub22) {
 		try {
-			((Class124) this).anInt1012 = class98_sub22.readMedium(-124);
-			((Class124) this).anInt1014 = class98_sub22.readShort();
-			((Class124) this).anInterface21Array1013 = new Interface21[class98_sub22.readUnsignedByte()];
+			this.anInt1012 = class98_sub22.readMedium(-124);
+			this.anInt1014 = class98_sub22.readShort();
+			this.anInterface21Array1013 = new Interface21[class98_sub22.readUnsignedByte()];
 			Class113[] class113s = Class48_Sub2_Sub1.method476(false);
-			for (int i_2_ = i; (((Class124) this).anInterface21Array1013.length ^ 0xffffffff) < (i_2_ ^ 0xffffffff); i_2_++)
-				((Class124) this).anInterface21Array1013[i_2_] = method2213((class113s[class98_sub22.readUnsignedByte()]), class98_sub22, -8829);
+			for (int i_2_ = i; i_2_ < this.anInterface21Array1013.length; i_2_++)
+				this.anInterface21Array1013[i_2_] = method2213((class113s[class98_sub22.readUnsignedByte()]), class98_sub22, -8829);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ie.B(" + i + ',' + (class98_sub22 != null ? "{...}" : "null") + ')'));
 		}

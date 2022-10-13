@@ -37,13 +37,13 @@ final class Class10 {
 					if (i_11_ >= 0 && i_10_ >= 1) {
 						Class331.anIntArray2810[i_10_] = i_6_;
 						i_10_--;
-						i_11_ -= i_10_ << 251598881;
+						i_11_ -= i_10_ << 1;
 					}
 					i_6_++;
-					if ((i_9_ ^ 0xffffffff) <= -1) {
+					if (i_9_ >= 0) {
 						i_8_--;
-						i_9_ -= i_8_ << 1376638529;
-						if ((i_8_ ^ 0xffffffff) <= (i_7_ ^ 0xffffffff)) {
+						i_9_ -= i_8_ << 1;
+						if (i_7_ <= i_8_) {
 							int[] is_16_ = Class97.anIntArrayArray814[i_8_ + i_5_];
 							int[] is_17_ = Class97.anIntArrayArray814[i_5_ + -i_8_];
 							int i_18_ = i_2_ + i_6_;
@@ -70,11 +70,11 @@ final class Class10 {
 					int[] is_28_ = Class97.anIntArrayArray814[i_5_ + -i_6_];
 					int i_29_ = i_8_ + i_2_;
 					int i_30_ = i_2_ - i_8_;
-					if ((i_7_ ^ 0xffffffff) >= (i_6_ ^ 0xffffffff)) {
+					if (i_6_ >= i_7_) {
 						Class333.method3761(i_3_, is_27_, i_30_, i_29_, (byte) 100);
 						Class333.method3761(i_3_, is_28_, i_30_, i_29_, (byte) -123);
 					} else {
-						int i_31_ = ((i_10_ ^ 0xffffffff) <= (i_6_ ^ 0xffffffff) ? i_10_ : Class331.anIntArray2810[i_6_]);
+						int i_31_ = (i_6_ <= i_10_ ? i_10_ : Class331.anIntArray2810[i_6_]);
 						int i_32_ = i_31_ + i_2_;
 						int i_33_ = -i_31_ + i_2_;
 						Class333.method3761(i_3_, is_27_, i_30_, i_33_, (byte) -123);
@@ -94,7 +94,7 @@ final class Class10 {
 	static final void method197(int i, int i_34_, int i_35_, int i_36_, int i_37_, int i_38_) {
 		try {
 			int i_39_ = 26 % ((i_38_ - 74) / 42);
-			for (int i_40_ = i_35_; (i_40_ ^ 0xffffffff) >= (i_36_ ^ 0xffffffff); i_40_++)
+			for (int i_40_ = i_35_; i_36_ >= i_40_; i_40_++)
 				Class333.method3761(i, Class97.anIntArrayArray814[i_40_], i_37_, i_34_, (byte) -125);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ao.C(" + i + ',' + i_34_ + ',' + i_35_ + ',' + i_36_ + ',' + i_37_ + ',' + i_38_ + ')'));

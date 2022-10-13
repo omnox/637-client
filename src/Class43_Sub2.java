@@ -28,7 +28,7 @@ final class Class43_Sub2 extends Class43 {
 		class111_sub3.method2100(i, i_4_, 0);
 		aHa_Sub3_3608.method1935(1);
 		aHa_Sub3_3608.method1971(0, true, anInterface2_Impl1_3606);
-		aHa_Sub3_3608.method2042(((ha_Sub3) aHa_Sub3_3608).aClass256_4664, (byte) 120);
+		aHa_Sub3_3608.method2042(aHa_Sub3_3608.aClass256_4664, (byte) 120);
 		aHa_Sub3_3608.method2037(Class98_Sub46_Sub15.aClass232_6043, c * '\004', (byte) 98, 2);
 		if (aBoolean3605 || bool)
 			aHa_Sub3_3608.method2051(0, -104, Class300.aClass65_2499);
@@ -40,31 +40,31 @@ final class Class43_Sub2 extends Class43 {
 		int i = 0;
 		for (int i_6_ = 0; i_6_ < 256; i_6_++) {
 			Class324 class324 = class324s[i_6_];
-			if (((Class324) class324).anInt2720 > i)
-				i = ((Class324) class324).anInt2720;
-			if (((Class324) class324).anInt2722 > i)
-				i = ((Class324) class324).anInt2722;
+			if (class324.anInt2720 > i)
+				i = class324.anInt2720;
+			if (class324.anInt2722 > i)
+				i = class324.anInt2722;
 		}
 		int i_7_ = i * 16;
 		if (bool) {
 			byte[] is = new byte[i_7_ * i_7_];
 			for (int i_8_ = 0; i_8_ < 256; i_8_++) {
 				Class324 class324 = class324s[i_8_];
-				int i_9_ = ((Class324) class324).anInt2720;
-				int i_10_ = ((Class324) class324).anInt2722;
+				int i_9_ = class324.anInt2720;
+				int i_10_ = class324.anInt2722;
 				int i_11_ = i_8_ % 16 * i;
 				int i_12_ = i_8_ / 16 * i;
 				int i_13_ = i_12_ * i_7_ + i_11_;
 				int i_14_ = 0;
-				if (((Class324) class324).aByteArray2723 == null) {
-					byte[] is_15_ = ((Class324) class324).aByteArray2717;
+				if (class324.aByteArray2723 == null) {
+					byte[] is_15_ = class324.aByteArray2717;
 					for (int i_16_ = 0; i_16_ < i_9_; i_16_++) {
 						for (int i_17_ = 0; i_17_ < i_10_; i_17_++)
 							is[i_13_++] = (byte) (is_15_[i_14_++] == 0 ? 0 : -1);
 						i_13_ += i_7_ - i_10_;
 					}
 				} else {
-					byte[] is_18_ = ((Class324) class324).aByteArray2723;
+					byte[] is_18_ = class324.aByteArray2723;
 					for (int i_19_ = 0; i_19_ < i_9_; i_19_++) {
 						for (int i_20_ = 0; i_20_ < i_10_; i_20_++)
 							is[i_13_++] = is_18_[i_14_++];
@@ -84,11 +84,11 @@ final class Class43_Sub2 extends Class43 {
 			int[] is = new int[i_7_ * i_7_];
 			for (int i_23_ = 0; i_23_ < 256; i_23_++) {
 				Class324 class324 = class324s[i_23_];
-				int[] is_24_ = ((Class324) class324).anIntArray2718;
-				byte[] is_25_ = ((Class324) class324).aByteArray2723;
-				byte[] is_26_ = ((Class324) class324).aByteArray2717;
-				int i_27_ = ((Class324) class324).anInt2720;
-				int i_28_ = ((Class324) class324).anInt2722;
+				int[] is_24_ = class324.anIntArray2718;
+				byte[] is_25_ = class324.aByteArray2723;
+				byte[] is_26_ = class324.aByteArray2717;
+				int i_27_ = class324.anInt2720;
+				int i_28_ = class324.anInt2722;
 				int i_29_ = i_23_ % 16 * i;
 				int i_30_ = i_23_ / 16 * i;
 				int i_31_ = i_30_ * i_7_ + i_29_;
@@ -128,10 +128,10 @@ final class Class43_Sub2 extends Class43 {
 				float f_39_ = (anInterface4_Impl2_3607.method45(-8473, (float) i_7_) / (float) i_7_);
 				for (int i_40_ = 0; i_40_ < 256; i_40_++) {
 					Class324 class324 = class324s[i_40_];
-					int i_41_ = ((Class324) class324).anInt2720;
-					int i_42_ = ((Class324) class324).anInt2722;
-					int i_43_ = ((Class324) class324).anInt2721;
-					int i_44_ = ((Class324) class324).anInt2725;
+					int i_41_ = class324.anInt2720;
+					int i_42_ = class324.anInt2722;
+					int i_43_ = class324.anInt2721;
+					int i_44_ = class324.anInt2725;
 					float f_45_ = (float) (i_40_ % 16 * i);
 					float f_46_ = (float) (i_40_ / 16 * i);
 					float f_47_ = f_45_ * f;

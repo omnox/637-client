@@ -34,11 +34,11 @@ final class Class339_Sub1 extends Class339 {
 			if (aClass312_5313 == null)
 				return 0;
 			if (!aBoolean5324)
-				return ((Class312) aClass312_5313).anInt2665;
+				return aClass312_5313.anInt2665;
 			Node class98 = aClass148_5322.method2418(32);
 			if (class98 == null)
 				return 0;
-			return (int) ((Node) class98).uid;
+			return (int) class98.uid;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "lw.R(" + i + ')');
 		}
@@ -46,13 +46,13 @@ final class Class339_Sub1 extends Class339 {
 
 	private final Class98_Sub46_Sub13 method3792(int i, int i_0_, int i_1_) {
 		try {
-			Class98_Sub46_Sub13 class98_sub46_sub13 = ((Class98_Sub46_Sub13) aClass377_5307.method3990((long) i_0_, i ^ 0x1));
-			if (class98_sub46_sub13 != null && (i_1_ ^ 0xffffffff) == -1 && !((Class98_Sub46_Sub13) class98_sub46_sub13).aBoolean6037 && ((Class98_Sub46_Sub13) class98_sub46_sub13).aBoolean6038) {
+			Class98_Sub46_Sub13 class98_sub46_sub13 = ((Class98_Sub46_Sub13) aClass377_5307.method3990(i_0_, i ^ 0x1));
+			if (class98_sub46_sub13 != null && i_1_ == 0 && !class98_sub46_sub13.aBoolean6037 && class98_sub46_sub13.aBoolean6038) {
 				class98_sub46_sub13.remove();
 				class98_sub46_sub13 = null;
 			}
 			if (class98_sub46_sub13 == null) {
-				if ((i_1_ ^ 0xffffffff) == -1) {
+				if (i_1_ == 0) {
 					if (aClass17_5314 != null && aByteArray5317[i_0_] != -1)
 						class98_sub46_sub13 = aClass253_5312.method3184(1, aClass17_5314, i_0_);
 					else {
@@ -75,79 +75,79 @@ final class Class339_Sub1 extends Class339 {
 						throw new RuntimeException();
 					class98_sub46_sub13 = aClass253_5312.method3176((byte) -38, i_0_, aClass17_5314);
 				}
-				aClass377_5307.method3996(class98_sub46_sub13, (long) i_0_, -1);
+				aClass377_5307.method3996(class98_sub46_sub13, i_0_, -1);
 			}
-			if (((Class98_Sub46_Sub13) class98_sub46_sub13).aBoolean6038)
+			if (class98_sub46_sub13.aBoolean6038)
 				return null;
 			byte[] is = class98_sub46_sub13.method1591(90);
 			if (i != -2)
 				method3784((byte) -125);
 			if (class98_sub46_sub13 instanceof Class98_Sub46_Sub13_Sub2) {
 				try {
-					if (is == null || (is.length ^ 0xffffffff) >= -3)
+					if (is == null || is.length <= 2)
 						throw new RuntimeException();
 					Class279.aCRC32_2097.reset();
 					Class279.aCRC32_2097.update(is, 0, -2 + is.length);
 					int i_2_ = (int) Class279.aCRC32_2097.getValue();
-					if ((i_2_ ^ 0xffffffff) != (((Class312) aClass312_5313).anIntArray2673[i_0_] ^ 0xffffffff))
+					if (aClass312_5313.anIntArray2673[i_0_] != i_2_)
 						throw new RuntimeException();
-					if (((Class312) aClass312_5313).aByteArrayArray2675 != null && (((Class312) aClass312_5313).aByteArrayArray2675[i_0_]) != null) {
-						byte[] is_3_ = (((Class312) aClass312_5313).aByteArrayArray2675[i_0_]);
+					if (aClass312_5313.aByteArrayArray2675 != null && (aClass312_5313.aByteArrayArray2675[i_0_]) != null) {
+						byte[] is_3_ = (aClass312_5313.aByteArrayArray2675[i_0_]);
 						byte[] is_4_ = Class64_Sub11.method595(0, (byte) -122, is, -2 + is.length);
 						for (int i_5_ = 0; i_5_ < 64; i_5_++) {
 							if (is_4_[i_5_] != is_3_[i_5_])
 								throw new RuntimeException();
 						}
 					}
-					int i_6_ = (((0xff & is[-2 + is.length]) << 1865901960) - -(0xff & is[is.length - 1]));
-					if ((i_6_ ^ 0xffffffff) != (0xffff & (((Class312) aClass312_5313).anIntArray2667[i_0_]) ^ 0xffffffff))
+					int i_6_ = (((0xff & is[-2 + is.length]) << 8) - -(0xff & is[is.length - 1]));
+					if ((0xffff & (aClass312_5313.anIntArray2667[i_0_])) != i_6_)
 						throw new RuntimeException();
-					if ((aByteArray5317[i_0_] ^ 0xffffffff) != -2) {
+					if (aByteArray5317[i_0_] != 1) {
 						anInt5311++;
 						aByteArray5317[i_0_] = (byte) 1;
 					}
-					if (!((Class98_Sub46_Sub13) class98_sub46_sub13).aBoolean6037)
+					if (!class98_sub46_sub13.aBoolean6037)
 						class98_sub46_sub13.remove();
 					return class98_sub46_sub13;
 				} catch (Exception exception) {
 					aByteArray5317[i_0_] = (byte) -1;
 					class98_sub46_sub13.remove();
-					if ((((Class98_Sub46_Sub13) class98_sub46_sub13).aBoolean6037) && !aClass135_5318.method2253(100)) {
+					if ((class98_sub46_sub13.aBoolean6037) && !aClass135_5318.method2253(100)) {
 						Class98_Sub46_Sub13_Sub1 class98_sub46_sub13_sub1 = aClass135_5318.method2252(anInt5310, (byte) 2, i_0_, 122, true);
-						aClass377_5307.method3996(class98_sub46_sub13_sub1, (long) i_0_, -1);
+						aClass377_5307.method3996(class98_sub46_sub13_sub1, i_0_, -1);
 					}
 					return null;
 				}
 			}
 			try {
-				if (is == null || (is.length ^ 0xffffffff) >= -3)
+				if (is == null || is.length <= 2)
 					throw new RuntimeException();
 				Class279.aCRC32_2097.reset();
 				Class279.aCRC32_2097.update(is, 0, is.length + -2);
 				int i_7_ = (int) Class279.aCRC32_2097.getValue();
-				if ((((Class312) aClass312_5313).anIntArray2673[i_0_] ^ 0xffffffff) != (i_7_ ^ 0xffffffff))
+				if (i_7_ != aClass312_5313.anIntArray2673[i_0_])
 					throw new RuntimeException();
-				if (((Class312) aClass312_5313).aByteArrayArray2675 != null && (((Class312) aClass312_5313).aByteArrayArray2675[i_0_] != null)) {
-					byte[] is_8_ = (((Class312) aClass312_5313).aByteArrayArray2675[i_0_]);
+				if (aClass312_5313.aByteArrayArray2675 != null && (aClass312_5313.aByteArrayArray2675[i_0_] != null)) {
+					byte[] is_8_ = (aClass312_5313.aByteArrayArray2675[i_0_]);
 					byte[] is_9_ = Class64_Sub11.method595(0, (byte) -124, is, -2 + is.length);
-					for (int i_10_ = 0; (i_10_ ^ 0xffffffff) > -65; i_10_++) {
-						if ((is_8_[i_10_] ^ 0xffffffff) != (is_9_[i_10_] ^ 0xffffffff))
+					for (int i_10_ = 0; i_10_ < 64; i_10_++) {
+						if (is_9_[i_10_] != is_8_[i_10_])
 							throw new RuntimeException();
 					}
 				}
-				((Class135) aClass135_5318).anInt1065 = 0;
-				((Class135) aClass135_5318).anInt1066 = 0;
+				aClass135_5318.anInt1065 = 0;
+				aClass135_5318.anInt1066 = 0;
 			} catch (RuntimeException runtimeexception) {
 				aClass135_5318.method2257(67);
 				class98_sub46_sub13.remove();
-				if (((Class98_Sub46_Sub13) class98_sub46_sub13).aBoolean6037 && !aClass135_5318.method2253(88)) {
+				if (class98_sub46_sub13.aBoolean6037 && !aClass135_5318.method2253(88)) {
 					Class98_Sub46_Sub13_Sub1 class98_sub46_sub13_sub1 = aClass135_5318.method2252(anInt5310, (byte) 2, i_0_, 127, true);
-					aClass377_5307.method3996(class98_sub46_sub13_sub1, (long) i_0_, i ^ 0x1);
+					aClass377_5307.method3996(class98_sub46_sub13_sub1, i_0_, i ^ 0x1);
 				}
 				return null;
 			}
-			is[is.length - 2] = (byte) (((Class312) aClass312_5313).anIntArray2667[i_0_] >>> 969573768);
-			is[-1 + is.length] = (byte) ((Class312) aClass312_5313).anIntArray2667[i_0_];
+			is[is.length - 2] = (byte) (aClass312_5313.anIntArray2667[i_0_] >>> 8);
+			is[-1 + is.length] = (byte) aClass312_5313.anIntArray2667[i_0_];
 			if (aClass17_5314 != null) {
 				aClass253_5312.method3179(is, (byte) 61, aClass17_5314, i_0_);
 				if (aByteArray5317[i_0_] != 1) {
@@ -155,7 +155,7 @@ final class Class339_Sub1 extends Class339 {
 					aByteArray5317[i_0_] = (byte) 1;
 				}
 			}
-			if (!((Class98_Sub46_Sub13) class98_sub46_sub13).aBoolean6037)
+			if (!class98_sub46_sub13.aBoolean6037)
 				class98_sub46_sub13.remove();
 			return class98_sub46_sub13;
 		} catch (RuntimeException runtimeexception) {
@@ -187,7 +187,7 @@ final class Class339_Sub1 extends Class339 {
 					return null;
 				aClass98_Sub46_Sub13_5306 = aClass135_5318.method2252(255, (byte) 0, anInt5310, 126, true);
 			}
-			if (((Class98_Sub46_Sub13) aClass98_Sub46_Sub13_5306).aBoolean6038)
+			if (aClass98_Sub46_Sub13_5306.aBoolean6038)
 				return null;
 			byte[] is = aClass98_Sub46_Sub13_5306.method1591(25);
 			if (!(aClass98_Sub46_Sub13_5306 instanceof Class98_Sub46_Sub13_Sub2)) {
@@ -211,7 +211,7 @@ final class Class339_Sub1 extends Class339 {
 					if (is == null)
 						throw new RuntimeException();
 					aClass312_5313 = new Class312(is, anInt5309, aByteArray5319);
-					if (anInt5321 != ((Class312) aClass312_5313).anInt2676)
+					if (anInt5321 != aClass312_5313.anInt2676)
 						throw new RuntimeException();
 				} catch (RuntimeException runtimeexception) {
 					aClass312_5313 = null;
@@ -224,7 +224,7 @@ final class Class339_Sub1 extends Class339 {
 			}
 			aClass98_Sub46_Sub13_5306 = null;
 			if (aClass17_5314 != null) {
-				aByteArray5317 = new byte[((Class312) aClass312_5313).anInt2668];
+				aByteArray5317 = new byte[aClass312_5313.anInt2668];
 				anInt5311 = 0;
 			}
 			return aClass312_5313;
@@ -237,7 +237,7 @@ final class Class339_Sub1 extends Class339 {
 		try {
 			if (i_12_ >= -10)
 				aClass326_5315 = null;
-			Class98_Sub46_Sub13 class98_sub46_sub13 = ((Class98_Sub46_Sub13) aClass377_5307.method3990((long) i, -1));
+			Class98_Sub46_Sub13 class98_sub46_sub13 = ((Class98_Sub46_Sub13) aClass377_5307.method3990(i, -1));
 			if (class98_sub46_sub13 != null)
 				return class98_sub46_sub13.method1590(100);
 			return 0;
@@ -295,11 +295,11 @@ final class Class339_Sub1 extends Class339 {
 				if (bool != false)
 					method3793(51);
 				for (Node class98 = aClass148_5325.method2418(32); class98 != null; class98 = aClass148_5325.method2417(97)) {
-					if ((long) i == ((Node) class98).uid)
+					if ((long) i == class98.uid)
 						return;
 				}
 				Node class98 = new Node();
-				((Node) class98).uid = (long) i;
+				class98.uid = i;
 				aClass148_5325.add_last(class98, -20911);
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -317,27 +317,27 @@ final class Class339_Sub1 extends Class339 {
 						if (aBoolean5324) {
 							boolean bool = true;
 							for (Node class98 = aClass148_5322.method2418(32); class98 != null; class98 = aClass148_5322.method2417(123)) {
-								int i_14_ = (int) ((Node) class98).uid;
-								if ((aByteArray5317[i_14_] ^ 0xffffffff) == -1)
+								int i_14_ = (int) class98.uid;
+								if (aByteArray5317[i_14_] == 0)
 									method3792(-2, i_14_, 1);
-								if ((aByteArray5317[i_14_] ^ 0xffffffff) != -1)
+								if (aByteArray5317[i_14_] != 0)
 									class98.remove();
 								else
 									bool = false;
 							}
-							while (((((Class312) aClass312_5313).anIntArray2670).length ^ 0xffffffff) < (anInt5323 ^ 0xffffffff)) {
-								if (((((Class312) aClass312_5313).anIntArray2670[anInt5323]) ^ 0xffffffff) == -1)
+							while (anInt5323 < (aClass312_5313.anIntArray2670).length) {
+								if ((aClass312_5313.anIntArray2670[anInt5323]) == 0)
 									anInt5323++;
 								else {
-									if ((((Class253) aClass253_5312).anInt1935 ^ 0xffffffff) <= -251) {
+									if (aClass253_5312.anInt1935 >= 250) {
 										bool = false;
 										break;
 									}
-									if ((aByteArray5317[anInt5323] ^ 0xffffffff) == -1)
+									if (aByteArray5317[anInt5323] == 0)
 										method3792(-2, anInt5323, 1);
-									if ((aByteArray5317[anInt5323] ^ 0xffffffff) == -1) {
+									if (aByteArray5317[anInt5323] == 0) {
 										Node class98 = new Node();
-										((Node) class98).uid = (long) anInt5323;
+										class98.uid = anInt5323;
 										bool = false;
 										aClass148_5322.add_last(class98, -20911);
 									}
@@ -353,16 +353,16 @@ final class Class339_Sub1 extends Class339 {
 						else {
 							boolean bool = true;
 							for (Node class98 = aClass148_5322.method2418(32); class98 != null; class98 = aClass148_5322.method2417(112)) {
-								int i_15_ = (int) ((Node) class98).uid;
-								if ((aByteArray5317[i_15_] ^ 0xffffffff) != -2)
+								int i_15_ = (int) class98.uid;
+								if (aByteArray5317[i_15_] != 1)
 									method3792(-2, i_15_, 2);
 								if (aByteArray5317[i_15_] == 1)
 									class98.remove();
 								else
 									bool = false;
 							}
-							while (anInt5323 < (((Class312) aClass312_5313).anIntArray2670).length) {
-								if (((((Class312) aClass312_5313).anIntArray2670[anInt5323]) ^ 0xffffffff) == -1)
+							while (anInt5323 < (aClass312_5313.anIntArray2670).length) {
+								if ((aClass312_5313.anIntArray2670[anInt5323]) == 0)
 									anInt5323++;
 								else {
 									if (aClass135_5318.method2263(i ^ 0x1ecf)) {
@@ -373,7 +373,7 @@ final class Class339_Sub1 extends Class339 {
 										method3792(-2, anInt5323, 2);
 									if (aByteArray5317[anInt5323] != 1) {
 										Node class98 = new Node();
-										((Node) class98).uid = (long) anInt5323;
+										class98.uid = anInt5323;
 										aClass148_5322.add_last(class98, -20911);
 										bool = false;
 									}
@@ -386,14 +386,14 @@ final class Class339_Sub1 extends Class339 {
 							}
 						}
 					}
-					if (!aBoolean5328 || ((aLong5327 ^ 0xffffffffffffffffL) < (Class343.method3819(-47) ^ 0xffffffffffffffffL)))
+					if (!aBoolean5328 || (Class343.method3819(-47) < aLong5327))
 						break;
 					for (Class98_Sub46_Sub13 class98_sub46_sub13 = ((Class98_Sub46_Sub13) aClass377_5307.start_iteration(122)); class98_sub46_sub13 != null; class98_sub46_sub13 = ((Class98_Sub46_Sub13) aClass377_5307.iterate_next(-1))) {
-						if (!((Class98_Sub46_Sub13) class98_sub46_sub13).aBoolean6038) {
-							if (!((Class98_Sub46_Sub13) class98_sub46_sub13).aBoolean6036)
-								((Class98_Sub46_Sub13) class98_sub46_sub13).aBoolean6036 = true;
+						if (!class98_sub46_sub13.aBoolean6038) {
+							if (!class98_sub46_sub13.aBoolean6036)
+								class98_sub46_sub13.aBoolean6036 = true;
 							else {
-								if (!((Class98_Sub46_Sub13) class98_sub46_sub13).aBoolean6037)
+								if (!class98_sub46_sub13.aBoolean6037)
 									throw new RuntimeException();
 								class98_sub46_sub13.remove();
 							}
@@ -414,15 +414,15 @@ final class Class339_Sub1 extends Class339 {
 				if (i != -1)
 					method3790(29, (byte) -69);
 				for (Node class98 = aClass148_5325.method2418(i + 33); class98 != null; class98 = aClass148_5325.method2417(117)) {
-					int i_16_ = (int) ((Node) class98).uid;
-					if ((i_16_ ^ 0xffffffff) > -1 || ((Class312) aClass312_5313).anInt2668 <= i_16_ || (((Class312) aClass312_5313).anIntArray2670[i_16_] == 0))
+					int i_16_ = (int) class98.uid;
+					if (i_16_ < 0 || aClass312_5313.anInt2668 <= i_16_ || (aClass312_5313.anIntArray2670[i_16_] == 0))
 						class98.remove();
 					else {
-						if ((aByteArray5317[i_16_] ^ 0xffffffff) == -1)
+						if (aByteArray5317[i_16_] == 0)
 							method3792(i + -1, i_16_, 1);
 						if (aByteArray5317[i_16_] == -1)
 							method3792(i ^ 0x1, i_16_, 2);
-						if ((aByteArray5317[i_16_] ^ 0xffffffff) == -2)
+						if (aByteArray5317[i_16_] == 1)
 							class98.remove();
 					}
 				}
@@ -446,7 +446,7 @@ final class Class339_Sub1 extends Class339 {
 		try {
 			Class39_Sub1.anInt3594++;
 			OutgoingPacket class98_sub11 = Class246_Sub3_Sub4.method3023(i + 260, Class98_Sub23.aClass171_3998, Class331.aClass117_2811);
-			((OutgoingPacket) class98_sub11).packet.writeByte(i);
+			class98_sub11.packet.writeByte(i);
 			Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "lw.I(" + i + ')');
@@ -459,7 +459,7 @@ final class Class339_Sub1 extends Class339 {
 				method3794((byte) 48);
 			if (aClass312_5313 == null)
 				return 0;
-			return ((Class312) aClass312_5313).anInt2665;
+			return aClass312_5313.anInt2665;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "lw.P(" + i + ')');
 		}

@@ -33,12 +33,12 @@ abstract class Class119 {
 	static final void method2176(int i, boolean bool, int i_2_, byte i_3_, int i_4_) {
 		try {
 			do {
-				if ((((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 126) ^ 0xffffffff) == -1) {
+				if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 126) == 0) {
 					Class118.method2173(false, 120);
 					if (!client.aBoolean3553)
 						break;
 				}
-				Class132.anInt1050 = ((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 125);
+				Class132.anInt1050 = Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 125);
 				Class76_Sub4.method754(0, true, -127);
 			} while (false);
 			Node.anInt835 = i_4_;
@@ -55,7 +55,7 @@ abstract class Class119 {
 	static final void method2177(int i, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_) {
 		try {
 			do {
-				if ((i_8_ ^ 0xffffffff) <= (Class76_Sub8.anInt3778 ^ 0xffffffff) && (i_7_ ^ 0xffffffff) >= (Class3.anInt77 ^ 0xffffffff) && ((Class98_Sub10_Sub38.anInt5753 ^ 0xffffffff) >= (i_9_ ^ 0xffffffff)) && Class218.anInt1635 >= i_5_) {
+				if (Class76_Sub8.anInt3778 <= i_8_ && Class3.anInt77 >= i_7_ && (i_9_ >= Class98_Sub10_Sub38.anInt5753) && Class218.anInt1635 >= i_5_) {
 					Class10.method197(i, i_7_, i_9_, i_5_, i_8_, -86);
 					if (!client.aBoolean3553)
 						break;
@@ -72,9 +72,9 @@ abstract class Class119 {
 
 	Class119(int i, int i_13_, int i_14_) {
 		try {
-			((Class119) this).anInt988 = i;
-			((Class119) this).anInt987 = i_14_;
-			((Class119) this).anInt985 = i_13_;
+			this.anInt988 = i;
+			this.anInt987 = i_14_;
+			this.anInt985 = i_13_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("hm.<init>(" + i + ',' + i_13_ + ',' + i_14_ + ')'));
 		}

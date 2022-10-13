@@ -74,15 +74,15 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 
 	final void method2007(boolean bool) {
 		try {
-			((ha_Sub3_Sub1) this).aFloat4592 = (float) (((ha_Sub3_Sub1) this).anInt4605 + -((ha_Sub3_Sub1) this).anInt4601);
-			((ha_Sub3_Sub1) this).aFloat4615 = ((float) -((ha_Sub3_Sub1) this).anInt4581 + ((ha_Sub3_Sub1) this).aFloat4592);
+			this.aFloat4592 = (float) (this.anInt4605 + -this.anInt4601);
+			this.aFloat4615 = ((float) -this.anInt4581 + this.aFloat4592);
 			if (bool)
 				anIntArray6106 = null;
-			if (((ha_Sub3_Sub1) this).aFloat4615 < (float) ((ha_Sub3_Sub1) this).anInt4640)
-				((ha_Sub3_Sub1) this).aFloat4615 = (float) ((ha_Sub3_Sub1) this).anInt4640;
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.a(36, ((ha_Sub3_Sub1) this).aFloat4615);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.a(37, ((ha_Sub3_Sub1) this).aFloat4592);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(34, ((ha_Sub3_Sub1) this).anInt4636);
+			if (this.aFloat4615 < (float) this.anInt4640)
+				this.aFloat4615 = (float) this.anInt4640;
+			this.anIDirect3DDevice6098.a(36, this.aFloat4615);
+			this.anIDirect3DDevice6098.a(37, this.aFloat4592);
+			this.anIDirect3DDevice6098.SetRenderState(34, this.anInt4636);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -92,19 +92,19 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 		do {
 			try {
 				int i_9_ = -52 % ((-62 - i) / 42);
-				if (null != anIDirect3DVertexShader6091 || (Class98_Sub46_Sub19.aClass258_6062 == (((ha_Sub3_Sub1) this).aClass258Array4644[((ha_Sub3_Sub1) this).anInt4579]))) {
-					((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTextureStageState(((ha_Sub3_Sub1) this).anInt4579, 24, 0);
-					anIntArray6087[((ha_Sub3_Sub1) this).anInt4579] = 0;
+				if (null != anIDirect3DVertexShader6091 || (Class98_Sub46_Sub19.aClass258_6062 == (this.aClass258Array4644[this.anInt4579]))) {
+					this.anIDirect3DDevice6098.SetTextureStageState(this.anInt4579, 24, 0);
+					anIntArray6087[this.anInt4579] = 0;
 				} else {
-					if (Class246_Sub3_Sub4_Sub5.aClass258_6260 != (((ha_Sub3_Sub1) this).aClass258Array4644[((ha_Sub3_Sub1) this).anInt4579]))
-						((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTransform(((ha_Sub3_Sub1) this).anInt4579 + 16, ((ha_Sub3_Sub1) this).aClass111_Sub3Array4609[((ha_Sub3_Sub1) this).anInt4579].method2121((byte) -91, aFloatArray6101));
+					if (Class246_Sub3_Sub4_Sub5.aClass258_6260 != (this.aClass258Array4644[this.anInt4579]))
+						this.anIDirect3DDevice6098.SetTransform(this.anInt4579 + 16, this.aClass111_Sub3Array4609[this.anInt4579].method2121((byte) -91, aFloatArray6101));
 					else
-						((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTransform(((ha_Sub3_Sub1) this).anInt4579 + 16, ((ha_Sub3_Sub1) this).aClass111_Sub3Array4609[((ha_Sub3_Sub1) this).anInt4579].method2122(aFloatArray6101, 22));
-					int i_10_ = method2071((((ha_Sub3_Sub1) this).aClass258Array4644[((ha_Sub3_Sub1) this).anInt4579]), 2474);
-					if (i_10_ == anIntArray6087[((ha_Sub3_Sub1) this).anInt4579])
+						this.anIDirect3DDevice6098.SetTransform(this.anInt4579 + 16, this.aClass111_Sub3Array4609[this.anInt4579].method2122(aFloatArray6101, 22));
+					int i_10_ = method2071((this.aClass258Array4644[this.anInt4579]), 2474);
+					if (i_10_ == anIntArray6087[this.anInt4579])
 						break;
-					((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTextureStageState(((ha_Sub3_Sub1) this).anInt4579, 24, i_10_);
-					anIntArray6087[((ha_Sub3_Sub1) this).anInt4579] = i_10_;
+					this.anIDirect3DDevice6098.SetTextureStageState(this.anInt4579, 24, i_10_);
+					anIntArray6087[this.anInt4579] = i_10_;
 				}
 			} catch (RuntimeException runtimeexception) {
 				throw runtimeexception;
@@ -127,7 +127,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 
 	final void method1773() {
 		try {
-			((ha_Sub3_Sub1) this).aJaa6108.b((byte) -125);
+			this.aJaa6108.b((byte) -125);
 			super.method1773();
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
@@ -140,7 +140,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 
 	final void method2021(int i) {
 		try {
-			if (!((ha_Sub3_Sub1) this).aClass204_4551.method2708(98)) {
+			if (!this.aClass204_4551.method2708(98)) {
 				aFloatArray6101[15] = 1.0F;
 				aFloatArray6101[1] = 0.0F;
 				aFloatArray6101[11] = 0.0F;
@@ -158,9 +158,9 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 				aFloatArray6101[9] = 0.0F;
 				aFloatArray6101[10] = 1.0F;
 			} else
-				((ha_Sub3_Sub1) this).aClass111_Sub3_4545.method2121((byte) -111, aFloatArray6101);
+				this.aClass111_Sub3_4545.method2121((byte) -111, aFloatArray6101);
 			if (i == 0)
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTransform(2, aFloatArray6101);
+				this.anIDirect3DDevice6098.SetTransform(2, aFloatArray6101);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -244,12 +244,12 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 				int i_12_ = 92 / ((-16 - i) / 50);
 				if (aBoolean6096)
 					break;
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.LightEnable(0, false);
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.LightEnable(1, false);
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetLight(0, aD3DLIGHT6099);
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetLight(1, aD3DLIGHT6104);
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.LightEnable(0, true);
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.LightEnable(1, true);
+				this.anIDirect3DDevice6098.LightEnable(0, false);
+				this.anIDirect3DDevice6098.LightEnable(1, false);
+				this.anIDirect3DDevice6098.SetLight(0, aD3DLIGHT6099);
+				this.anIDirect3DDevice6098.SetLight(1, aD3DLIGHT6104);
+				this.anIDirect3DDevice6098.LightEnable(0, true);
+				this.anIDirect3DDevice6098.LightEnable(1, true);
 				aBoolean6096 = true;
 			} catch (RuntimeException runtimeexception) {
 				throw runtimeexception;
@@ -262,7 +262,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 		do {
 			try {
 				anIDirect3DVertexShader6091 = idirect3dvertexshader;
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetVertexShader(idirect3dvertexshader);
+				this.anIDirect3DDevice6098.SetVertexShader(idirect3dvertexshader);
 				method2010(-114);
 				if (bool == true)
 					break;
@@ -281,7 +281,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method2046(int i) {
 		do {
 			try {
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.a(15, ((ha_Sub3_Sub1) this).aBoolean4599);
+				this.anIDirect3DDevice6098.a(15, this.aBoolean4599);
 				if (i == 0)
 					break;
 				aBooleanArray6088 = null;
@@ -318,7 +318,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 
 	final void method1825() {
 		try {
-			IDirect3DEventQuery idirect3deventquery = ((ha_Sub3_Sub1) this).anIDirect3DDevice6098.c();
+			IDirect3DEventQuery idirect3deventquery = this.anIDirect3DDevice6098.c();
 			if (kg.a(-21593, idirect3deventquery.Issue())) {
 				for (;;) {
 					int i = idirect3deventquery.IsSignaled();
@@ -346,7 +346,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method2037(Class232 class232, int i, byte i_14_, int i_15_) {
 		do {
 			try {
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.DrawPrimitive(method2069(-101, class232), i, i_15_);
+				this.anIDirect3DDevice6098.DrawPrimitive(method2069(-101, class232), i, i_15_);
 				if (i_14_ > 8)
 					break;
 			} catch (RuntimeException runtimeexception) {
@@ -373,10 +373,10 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method2036(int i) {
 		do {
 			try {
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetViewport(((ha_Sub3_Sub1) this).anInt4578, ((ha_Sub3_Sub1) this).anInt4622, ((ha_Sub3_Sub1) this).anInt4527, ((ha_Sub3_Sub1) this).anInt4531, 0.0F, 1.0F);
+				this.anIDirect3DDevice6098.SetViewport(this.anInt4578, this.anInt4622, this.anInt4527, this.anInt4531, 0.0F, 1.0F);
 				if (i == -11155)
 					break;
-				((ha_Sub3_Sub1) this).aBoolean6109 = true;
+				this.aBoolean6109 = true;
 			} catch (RuntimeException runtimeexception) {
 				throw runtimeexception;
 			}
@@ -415,7 +415,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 		try {
 			if (i != -5668)
 				anIntArray6084 = null;
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.a(137, (((ha_Sub3_Sub1) this).aBoolean4643 && !((ha_Sub3_Sub1) this).aBoolean4637));
+			this.anIDirect3DDevice6098.a(137, (this.aBoolean4643 && !this.aBoolean4637));
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -423,7 +423,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 
 	final synchronized void method1806(int i) {
 		try {
-			((ha_Sub3_Sub1) this).aJaa6108.a((byte) 126);
+			this.aJaa6108.a((byte) 126);
 			super.method1806(i);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
@@ -434,7 +434,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 		try {
 			if (i != 28976)
 				aBoolean6096 = false;
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetScissorRect((((ha_Sub3_Sub1) this).anInt4602 + ((ha_Sub3_Sub1) this).anInt4578), (((ha_Sub3_Sub1) this).anInt4558 + ((ha_Sub3_Sub1) this).anInt4622), ((ha_Sub3_Sub1) this).anInt4575, ((ha_Sub3_Sub1) this).anInt4638);
+			this.anIDirect3DDevice6098.SetScissorRect((this.anInt4602 + this.anInt4578), (this.anInt4558 + this.anInt4622), this.anInt4575, this.anInt4638);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -444,16 +444,16 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 		int[] is;
 		try {
 			int[] is_21_ = null;
-			IDirect3DSurface idirect3dsurface = ((ha_Sub3_Sub1) this).anIDirect3DDevice6098.d(0);
-			IDirect3DSurface idirect3dsurface_22_ = ((ha_Sub3_Sub1) this).anIDirect3DDevice6098.a(i_19_, i_20_, 21, 0, 0, true);
-			if (kg.a(-21593, (((ha_Sub3_Sub1) this).anIDirect3DDevice6098.StretchRect(idirect3dsurface, i, i_18_, i_19_, i_20_, idirect3dsurface_22_, 0, 0, i_19_, i_20_, 0))) && kg.a(-21593, idirect3dsurface_22_.LockRect(0, 0, i_19_, i_20_, 16, (((ha_Sub3_Sub1) this).aPixelBuffer6095)))) {
+			IDirect3DSurface idirect3dsurface = this.anIDirect3DDevice6098.d(0);
+			IDirect3DSurface idirect3dsurface_22_ = this.anIDirect3DDevice6098.a(i_19_, i_20_, 21, 0, 0, true);
+			if (kg.a(-21593, (this.anIDirect3DDevice6098.StretchRect(idirect3dsurface, i, i_18_, i_19_, i_20_, idirect3dsurface_22_, 0, 0, i_19_, i_20_, 0))) && kg.a(-21593, idirect3dsurface_22_.LockRect(0, 0, i_19_, i_20_, 16, (this.aPixelBuffer6095)))) {
 				is_21_ = new int[i_19_ * i_20_];
-				int i_23_ = ((ha_Sub3_Sub1) this).aPixelBuffer6095.getRowPitch();
-				if ((4 * i_19_ ^ 0xffffffff) == (i_23_ ^ 0xffffffff))
-					((ha_Sub3_Sub1) this).aPixelBuffer6095.b(is_21_, 0, 0, i_19_ * i_20_);
+				int i_23_ = this.aPixelBuffer6095.getRowPitch();
+				if (i_23_ == 4 * i_19_)
+					this.aPixelBuffer6095.b(is_21_, 0, 0, i_19_ * i_20_);
 				else {
-					for (int i_24_ = 0; (i_24_ ^ 0xffffffff) > (i_20_ ^ 0xffffffff); i_24_++)
-						((ha_Sub3_Sub1) this).aPixelBuffer6095.b(is_21_, i_19_ * i_24_, i_24_ * i_23_, i_19_);
+					for (int i_24_ = 0; i_20_ > i_24_; i_24_++)
+						this.aPixelBuffer6095.b(is_21_, i_19_ * i_24_, i_24_ * i_23_, i_19_);
 				}
 				idirect3dsurface_22_.UnlockRect();
 			}
@@ -473,7 +473,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method2057(int i) {
 		try {
 			if (i == 12362)
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(60, ((ha_Sub3_Sub1) this).anInt4648);
+				this.anIDirect3DDevice6098.SetRenderState(60, this.anInt4648);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -509,16 +509,16 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 			while_23_: do {
 				do {
 					if (3 != i_27_) {
-						if (-5 != (i_27_ ^ 0xffffffff)) {
+						if (i_27_ != 4) {
 							if (i_27_ == 8)
 								break;
 							break while_23_;
 						}
 					} else
-						return new Class76_Sub6(this, (((ha_Sub3_Sub1) this).aClass207_4535));
-					return new Class76_Sub3(this, (((ha_Sub3_Sub1) this).aClass207_4535), (((ha_Sub3_Sub1) this).aClass195_4529));
+						return new Class76_Sub6(this, (this.aClass207_4535));
+					return new Class76_Sub3(this, (this.aClass207_4535), (this.aClass195_4529));
 				} while (false);
-				return new Class76_Sub1(this, ((ha_Sub3_Sub1) this).aClass207_4535, ((ha_Sub3_Sub1) this).aClass195_4529);
+				return new Class76_Sub1(this, this.aClass207_4535, this.aClass195_4529);
 			} while (false);
 			class76 = super.method2067(i, (byte) 102);
 		} catch (RuntimeException runtimeexception) {
@@ -585,7 +585,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 					i_32_ = 196608;
 			} else
 				i_32_ = 65536;
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTextureStageState(((ha_Sub3_Sub1) this).anInt4579, 11, i_32_ | ((ha_Sub3_Sub1) this).anInt4579);
+			this.anIDirect3DDevice6098.SetTextureStageState(this.anInt4579, 11, i_32_ | this.anInt4579);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -618,7 +618,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 
 	final void method1983(byte i) {
 		try {
-			if (((ha_Sub3_Sub1) this).aBoolean4540) {
+			if (this.aBoolean4540) {
 				aFloatArray6101[5] = 1.0F;
 				aFloatArray6101[9] = 0.0F;
 				aFloatArray6101[7] = 0.0F;
@@ -636,9 +636,9 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 				aFloatArray6101[15] = 1.0F;
 				aFloatArray6101[8] = 0.0F;
 			} else
-				((ha_Sub3_Sub1) this).aClass111_Sub3_4542.method2121((byte) -90, aFloatArray6101);
+				this.aClass111_Sub3_4542.method2121((byte) -90, aFloatArray6101);
 			int i_33_ = 2 % ((26 - i) / 53);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTransform(256, aFloatArray6101);
+			this.anIDirect3DDevice6098.SetTransform(256, aFloatArray6101);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -647,7 +647,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void ya() {
 		try {
 			method1997(0, true);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.Clear(2, 0, 1.0F, 0);
+			this.anIDirect3DDevice6098.Clear(2, 0, 1.0F, 0);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -655,10 +655,10 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 
 	final void method1973(Class232 class232, int i, int i_34_, int i_35_, Interface2_Impl2 interface2_impl2, int i_36_, int i_37_) {
 		try {
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetIndices(((Class125) (Class125) interface2_impl2).anIDirect3DIndexBuffer5350);
+			this.anIDirect3DDevice6098.SetIndices(((Class125) interface2_impl2).anIDirect3DIndexBuffer5350);
 			if (i_35_ != 26810)
 				aBooleanArray6094 = null;
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.DrawIndexedPrimitive(method2069(-85, class232), 0, i_36_, i, i_34_, i_37_);
+			this.anIDirect3DDevice6098.DrawIndexedPrimitive(method2069(-85, class232), 0, i_36_, i, i_34_, i_37_);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -681,7 +681,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 		try {
 			if (i != 28)
 				method2072(true, null);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetPixelShader(idirect3dpixelshader);
+			this.anIDirect3DDevice6098.SetPixelShader(idirect3dpixelshader);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -692,34 +692,34 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 		try {
 			try {
 				anInt6103 = i;
-				((ha_Sub3_Sub1) this).aJaa6108 = var_jaa;
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098 = idirect3ddevice;
+				this.aJaa6108 = var_jaa;
+				this.anIDirect3DDevice6098 = idirect3ddevice;
 				anInt6090 = i_38_;
 				aD3DPRESENT_PARAMETERS6085 = d3dpresent_parameters;
 				aClass229_6110 = class229;
-				((ha_Sub3_Sub1) this).aD3DCAPS6093 = d3dcaps;
+				this.aD3DCAPS6093 = d3dcaps;
 				anIDirect3D6089 = idirect3d;
-				aD3DLIGHT6099 = new D3DLIGHT(((ha_Sub3_Sub1) this).aJaa6108);
-				aD3DLIGHT6104 = new D3DLIGHT(((ha_Sub3_Sub1) this).aJaa6108);
-				aD3DLIGHT6092 = new D3DLIGHT(((ha_Sub3_Sub1) this).aJaa6108);
-				((ha_Sub3_Sub1) this).aPixelBuffer6095 = new PixelBuffer(((ha_Sub3_Sub1) this).aJaa6108);
-				((ha_Sub3_Sub1) this).aGeometryBuffer6086 = new GeometryBuffer(((ha_Sub3_Sub1) this).aJaa6108);
-				new GeometryBuffer(((ha_Sub3_Sub1) this).aJaa6108);
-				((ha_Sub3_Sub1) this).anInt4608 = (((ha_Sub3_Sub1) this).aD3DCAPS6093.MaxSimultaneousTextures);
-				((ha_Sub3_Sub1) this).aBoolean6097 = (0x10000 & ((ha_Sub3_Sub1) this).aD3DCAPS6093.TextureCaps) != 0;
-				((ha_Sub3_Sub1) this).aBoolean4569 = -1 != ((((ha_Sub3_Sub1) this).aD3DCAPS6093.TextureCaps & 0x800) ^ 0xffffffff);
-				((ha_Sub3_Sub1) this).anInt4565 = (((ha_Sub3_Sub1) this).aD3DCAPS6093.MaxActiveLights > 0 ? ((ha_Sub3_Sub1) this).aD3DCAPS6093.MaxActiveLights : 8);
-				((ha_Sub3_Sub1) this).aBoolean6107 = -1 != ((((ha_Sub3_Sub1) this).aD3DCAPS6093.TextureCaps & 0x4000) ^ 0xffffffff);
-				((ha_Sub3_Sub1) this).aBoolean4588 = -1 != ((0x2000 & ((ha_Sub3_Sub1) this).aD3DCAPS6093.TextureCaps) ^ 0xffffffff);
-				((ha_Sub3_Sub1) this).aBoolean6109 = ((((ha_Sub3_Sub1) this).aD3DCAPS6093.TextureCaps & 0x2) == 0);
-				((ha_Sub3_Sub1) this).aBoolean4559 = (-1 > (((ha_Sub3_Sub1) this).anInt4616 ^ 0xffffffff) || (anIDirect3D6089.CheckDeviceMultiSampleType(anInt6103, anInt6090, aD3DPRESENT_PARAMETERS6085.BackBufferFormat, true, 2)) == 0);
-				aBooleanArray6100 = new boolean[((ha_Sub3_Sub1) this).anInt4608];
-				aBooleanArray6088 = new boolean[((ha_Sub3_Sub1) this).anInt4608];
-				aBooleanArray6094 = new boolean[((ha_Sub3_Sub1) this).anInt4608];
-				aBooleanArray6105 = new boolean[((ha_Sub3_Sub1) this).anInt4608];
-				anIntArray6087 = new int[((ha_Sub3_Sub1) this).anInt4608];
-				aClass200Array6102 = new Class200[((ha_Sub3_Sub1) this).anInt4608];
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.BeginScene();
+				aD3DLIGHT6099 = new D3DLIGHT(this.aJaa6108);
+				aD3DLIGHT6104 = new D3DLIGHT(this.aJaa6108);
+				aD3DLIGHT6092 = new D3DLIGHT(this.aJaa6108);
+				this.aPixelBuffer6095 = new PixelBuffer(this.aJaa6108);
+				this.aGeometryBuffer6086 = new GeometryBuffer(this.aJaa6108);
+				new GeometryBuffer(this.aJaa6108);
+				this.anInt4608 = (this.aD3DCAPS6093.MaxSimultaneousTextures);
+				this.aBoolean6097 = (0x10000 & this.aD3DCAPS6093.TextureCaps) != 0;
+				this.aBoolean4569 = (this.aD3DCAPS6093.TextureCaps & 0x800) != 0;
+				this.anInt4565 = (this.aD3DCAPS6093.MaxActiveLights > 0 ? this.aD3DCAPS6093.MaxActiveLights : 8);
+				this.aBoolean6107 = (this.aD3DCAPS6093.TextureCaps & 0x4000) != 0;
+				this.aBoolean4588 = (0x2000 & this.aD3DCAPS6093.TextureCaps) != 0;
+				this.aBoolean6109 = ((this.aD3DCAPS6093.TextureCaps & 0x2) == 0);
+				this.aBoolean4559 = (this.anInt4616 > 0 || (anIDirect3D6089.CheckDeviceMultiSampleType(anInt6103, anInt6090, aD3DPRESENT_PARAMETERS6085.BackBufferFormat, true, 2)) == 0);
+				aBooleanArray6100 = new boolean[this.anInt4608];
+				aBooleanArray6088 = new boolean[this.anInt4608];
+				aBooleanArray6094 = new boolean[this.anInt4608];
+				aBooleanArray6105 = new boolean[this.anInt4608];
+				anIntArray6087 = new int[this.anInt4608];
+				aClass200Array6102 = new Class200[this.anInt4608];
+				this.anIDirect3DDevice6098.BeginScene();
 			} catch (Throwable throwable) {
 				throwable.printStackTrace();
 				method1743(-1);
@@ -757,17 +757,17 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 		try {
 			if (i >= -127)
 				return true;
-			int i_43_ = ((ha_Sub3_Sub1) this).anIDirect3DDevice6098.TestCooperativeLevel();
-			if (0 == i_43_ || (i_43_ ^ 0xffffffff) == 2005530518) {
-				Class229 class229 = (Class229) ((ha_Sub3_Sub1) this).anObject4530;
+			int i_43_ = this.anIDirect3DDevice6098.TestCooperativeLevel();
+			if (0 == i_43_ || i_43_ == -2005530519) {
+				Class229 class229 = (Class229) this.anObject4530;
 				method1981((byte) -105);
 				class229.method2868((byte) 88);
 				aD3DPRESENT_PARAMETERS6085.BackBufferWidth = 0;
 				aD3DPRESENT_PARAMETERS6085.BackBufferHeight = 0;
-				if (method2080(((ha_Sub3_Sub1) this).anInt4616, anInt6103, anIDirect3D6089, 0, aD3DPRESENT_PARAMETERS6085, anInt6090)) {
-					int i_44_ = ((ha_Sub3_Sub1) this).anIDirect3DDevice6098.Reset(aD3DPRESENT_PARAMETERS6085);
+				if (method2080(this.anInt4616, anInt6103, anIDirect3D6089, 0, aD3DPRESENT_PARAMETERS6085, anInt6090)) {
+					int i_44_ = this.anIDirect3DDevice6098.Reset(aD3DPRESENT_PARAMETERS6085);
 					if (kg.a(-21593, i_44_)) {
-						class229.method2866(((ha_Sub3_Sub1) this).anIDirect3DDevice6098.b(), (byte) -85, ((ha_Sub3_Sub1) this).anIDirect3DDevice6098.c(0));
+						class229.method2866(this.anIDirect3DDevice6098.b(), (byte) -85, this.anIDirect3DDevice6098.c(0));
 						method2064((byte) -61);
 						method1941(1);
 						return true;
@@ -785,17 +785,17 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 		do {
 			try {
 				method2078(class26_sub2, 0);
-				if (!aBooleanArray6088[((ha_Sub3_Sub1) this).anInt4579]) {
-					((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetSamplerState(((ha_Sub3_Sub1) this).anInt4579, 1, 1);
-					aBooleanArray6088[((ha_Sub3_Sub1) this).anInt4579] = true;
+				if (!aBooleanArray6088[this.anInt4579]) {
+					this.anIDirect3DDevice6098.SetSamplerState(this.anInt4579, 1, 1);
+					aBooleanArray6088[this.anInt4579] = true;
 				}
-				if (!aBooleanArray6100[((ha_Sub3_Sub1) this).anInt4579]) {
-					((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetSamplerState(((ha_Sub3_Sub1) this).anInt4579, 2, 1);
-					aBooleanArray6100[((ha_Sub3_Sub1) this).anInt4579] = true;
+				if (!aBooleanArray6100[this.anInt4579]) {
+					this.anIDirect3DDevice6098.SetSamplerState(this.anInt4579, 2, 1);
+					aBooleanArray6100[this.anInt4579] = true;
 				}
 				if (!bool)
 					break;
-				((ha_Sub3_Sub1) this).aBoolean6097 = true;
+				this.aBoolean6097 = true;
 			} catch (RuntimeException runtimeexception) {
 				throw runtimeexception;
 			}
@@ -820,24 +820,24 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method2078(Class26 class26, int i) {
 		do {
 			try {
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTexture(((ha_Sub3_Sub1) this).anInt4579, class26.method293((byte) 18));
-				if (((Class26) class26).aClass200_272 != aClass200Array6102[((ha_Sub3_Sub1) this).anInt4579]) {
-					int i_45_ = method2073(26476, ((Class26) class26).aClass200_272);
-					((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetSamplerState(((ha_Sub3_Sub1) this).anInt4579, 6, i_45_);
-					((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetSamplerState(((ha_Sub3_Sub1) this).anInt4579, 5, i_45_);
-					aClass200Array6102[((ha_Sub3_Sub1) this).anInt4579] = ((Class26) class26).aClass200_272;
-					if (!aBooleanArray6105[((ha_Sub3_Sub1) this).anInt4579] != !((Class26) class26).aBoolean269) {
-						((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetSamplerState(((ha_Sub3_Sub1) this).anInt4579, 7, (!((Class26) class26).aBoolean269 ? 0 : method2073(26476, (((Class26) class26).aClass200_272))));
-						aBooleanArray6105[((ha_Sub3_Sub1) this).anInt4579] = ((Class26) class26).aBoolean269;
+				this.anIDirect3DDevice6098.SetTexture(this.anInt4579, class26.method293((byte) 18));
+				if (class26.aClass200_272 != aClass200Array6102[this.anInt4579]) {
+					int i_45_ = method2073(26476, class26.aClass200_272);
+					this.anIDirect3DDevice6098.SetSamplerState(this.anInt4579, 6, i_45_);
+					this.anIDirect3DDevice6098.SetSamplerState(this.anInt4579, 5, i_45_);
+					aClass200Array6102[this.anInt4579] = class26.aClass200_272;
+					if (!aBooleanArray6105[this.anInt4579] != !class26.aBoolean269) {
+						this.anIDirect3DDevice6098.SetSamplerState(this.anInt4579, 7, (!class26.aBoolean269 ? 0 : method2073(26476, (class26.aClass200_272))));
+						aBooleanArray6105[this.anInt4579] = class26.aBoolean269;
 					}
-				} else if (!((Class26) class26).aBoolean269 != !(aBooleanArray6105[((ha_Sub3_Sub1) this).anInt4579])) {
-					((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetSamplerState(((ha_Sub3_Sub1) this).anInt4579, 7, (!((Class26) class26).aBoolean269 ? 0 : method2073(26476, ((Class26) class26).aClass200_272)));
-					aBooleanArray6105[((ha_Sub3_Sub1) this).anInt4579] = ((Class26) class26).aBoolean269;
+				} else if (!class26.aBoolean269 != !(aBooleanArray6105[this.anInt4579])) {
+					this.anIDirect3DDevice6098.SetSamplerState(this.anInt4579, 7, (!class26.aBoolean269 ? 0 : method2073(26476, class26.aClass200_272)));
+					aBooleanArray6105[this.anInt4579] = class26.aBoolean269;
 				}
 				if (i == 0) {
-					if (aBooleanArray6094[((ha_Sub3_Sub1) this).anInt4579])
+					if (aBooleanArray6094[this.anInt4579])
 						break;
-					aBooleanArray6094[((ha_Sub3_Sub1) this).anInt4579] = true;
+					aBooleanArray6094[this.anInt4579] = true;
 					method1958((byte) -48);
 					method2011(2);
 				}
@@ -852,7 +852,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 		try {
 			if (i < 0)
 				anIntArray6087 = null;
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTextureStageState(((ha_Sub3_Sub1) this).anInt4579, 11, i_46_);
+			this.anIDirect3DDevice6098.SetTextureStageState(this.anInt4579, 11, i_46_);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -860,8 +860,8 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 
 	final void method2065(byte i) {
 		try {
-			aD3DLIGHT6099.SetDirection(-((ha_Sub3_Sub1) this).aFloatArray4596[0], -((ha_Sub3_Sub1) this).aFloatArray4596[1], -((ha_Sub3_Sub1) this).aFloatArray4596[2]);
-			aD3DLIGHT6104.SetDirection(-((ha_Sub3_Sub1) this).aFloatArray4572[0], -((ha_Sub3_Sub1) this).aFloatArray4572[1], -((ha_Sub3_Sub1) this).aFloatArray4572[2]);
+			aD3DLIGHT6099.SetDirection(-this.aFloatArray4596[0], -this.aFloatArray4596[1], -this.aFloatArray4596[2]);
+			aD3DLIGHT6104.SetDirection(-this.aFloatArray4572[0], -this.aFloatArray4572[1], -this.aFloatArray4572[2]);
 			if (i == 80)
 				aBoolean6096 = false;
 		} catch (RuntimeException runtimeexception) {
@@ -887,7 +887,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 					throw new RuntimeException("");
 				if (0 == (0x8 & d3dcaps.TextureOpCaps))
 					throw new RuntimeException("");
-				if (-1 == (0x40 & d3dcaps.TextureOpCaps ^ 0xffffffff))
+				if ((0x40 & d3dcaps.TextureOpCaps) == 0)
 					throw new RuntimeException("");
 				if ((d3dcaps.TextureOpCaps & 0x200) == 0)
 					throw new RuntimeException("");
@@ -897,11 +897,11 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 					throw new RuntimeException("");
 				if (0 == (d3dcaps.SrcBlendCaps & d3dcaps.DestBlendCaps & 0x20))
 					throw new RuntimeException("");
-				if ((0x2 & (d3dcaps.DestBlendCaps & d3dcaps.SrcBlendCaps) ^ 0xffffffff) == -1)
+				if ((0x2 & (d3dcaps.DestBlendCaps & d3dcaps.SrcBlendCaps)) == 0)
 					throw new RuntimeException("");
-				if (-1 > (d3dcaps.MaxActiveLights ^ 0xffffffff) && -3 < (d3dcaps.MaxActiveLights ^ 0xffffffff))
+				if (d3dcaps.MaxActiveLights > 0 && d3dcaps.MaxActiveLights < 2)
 					throw new RuntimeException("");
-				if ((d3dcaps.MaxStreams ^ 0xffffffff) > -6)
+				if (d3dcaps.MaxStreams < 5)
 					throw new RuntimeException("");
 				D3DPRESENT_PARAMETERS d3dpresent_parameters = new D3DPRESENT_PARAMETERS(canvas);
 				if (!method2080(integer.intValue(), i, idirect3d, 0, d3dpresent_parameters, i_48_))
@@ -910,7 +910,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 				d3dpresent_parameters.EnableAutoDepthStencil = true;
 				d3dpresent_parameters.Windowed = true;
 				int i_49_ = 2;
-				if (-1 != (0x100000 & d3dcaps.DevCaps ^ 0xffffffff))
+				if ((0x100000 & d3dcaps.DevCaps) != 0)
 					i_49_ |= 0x10;
 				Object object = null;
 				IDirect3DDevice idirect3ddevice;
@@ -937,7 +937,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method1991(int i) {
 		do {
 			try {
-				aD3DLIGHT6099.SetAmbient((((ha_Sub3_Sub1) this).aFloat4611 * ((ha_Sub3_Sub1) this).aFloat4576), (((ha_Sub3_Sub1) this).aFloat4549 * ((ha_Sub3_Sub1) this).aFloat4576), (((ha_Sub3_Sub1) this).aFloat4576 * ((ha_Sub3_Sub1) this).aFloat4591), 0.0F);
+				aD3DLIGHT6099.SetAmbient((this.aFloat4611 * this.aFloat4576), (this.aFloat4549 * this.aFloat4576), (this.aFloat4576 * this.aFloat4591), 0.0F);
 				aBoolean6096 = false;
 				if (i == -24391)
 					break;
@@ -953,7 +953,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 		try {
 			if (i != -122)
 				F(29, 70);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.a(174, ((ha_Sub3_Sub1) this).aBoolean4672);
+			this.anIDirect3DDevice6098.a(174, this.aBoolean4672);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -1000,7 +1000,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method1972(int i) {
 		try {
 			if (i == 0)
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.a(14, (((ha_Sub3_Sub1) this).aBoolean4606 && ((ha_Sub3_Sub1) this).aBoolean4620));
+				this.anIDirect3DDevice6098.a(14, (this.aBoolean4606 && this.aBoolean4620));
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -1008,7 +1008,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 
 	final void method1764(int i, int i_55_) throws Exception_Sub1 {
 		try {
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.EndScene();
+			this.anIDirect3DDevice6098.EndScene();
 			if (aClass229_6110.method2867(0)) {
 				anInt6083 = 0;
 				if (kg.b(-7175, aClass229_6110.method2865(true, 0)))
@@ -1018,7 +1018,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 					throw new Exception_Sub1();
 				method2076(-128);
 			}
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.BeginScene();
+			this.anIDirect3DDevice6098.BeginScene();
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -1042,7 +1042,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 				aClass229_6110 = (Class229) object;
 				if (i == -34)
 					break;
-				((ha_Sub3_Sub1) this).aJaa6108 = null;
+				this.aJaa6108 = null;
 			} catch (RuntimeException runtimeexception) {
 				throw runtimeexception;
 			}
@@ -1062,16 +1062,16 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 		do {
 			try {
 				method2078(class26_sub3, 0);
-				if (((Class26_Sub3) class26_sub3).aBoolean3584 != aBooleanArray6088[((ha_Sub3_Sub1) this).anInt4579]) {
-					((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetSamplerState(((ha_Sub3_Sub1) this).anInt4579, 1, ((Class26_Sub3) class26_sub3).aBoolean3584 ? 1 : 3);
-					aBooleanArray6088[((ha_Sub3_Sub1) this).anInt4579] = ((Class26_Sub3) class26_sub3).aBoolean3584;
+				if (class26_sub3.aBoolean3584 != aBooleanArray6088[this.anInt4579]) {
+					this.anIDirect3DDevice6098.SetSamplerState(this.anInt4579, 1, class26_sub3.aBoolean3584 ? 1 : 3);
+					aBooleanArray6088[this.anInt4579] = class26_sub3.aBoolean3584;
 				}
 				if (bool)
 					method1942(-63, null, null);
-				if (((Class26_Sub3) class26_sub3).aBoolean3585 != !aBooleanArray6100[((ha_Sub3_Sub1) this).anInt4579])
+				if (class26_sub3.aBoolean3585 != !aBooleanArray6100[this.anInt4579])
 					break;
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetSamplerState(((ha_Sub3_Sub1) this).anInt4579, 2, !((Class26_Sub3) class26_sub3).aBoolean3585 ? 3 : 1);
-				aBooleanArray6100[((ha_Sub3_Sub1) this).anInt4579] = ((Class26_Sub3) class26_sub3).aBoolean3585;
+				this.anIDirect3DDevice6098.SetSamplerState(this.anInt4579, 2, !class26_sub3.aBoolean3585 ? 3 : 1);
+				aBooleanArray6100[this.anInt4579] = class26_sub3.aBoolean3585;
 			} catch (RuntimeException runtimeexception) {
 				throw runtimeexception;
 			}
@@ -1082,7 +1082,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method1999(byte i) {
 		do {
 			try {
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.a(28, (((ha_Sub3_Sub1) this).aBoolean4571 && ((ha_Sub3_Sub1) this).aBoolean4562 && ((ha_Sub3_Sub1) this).anInt4581 >= 0));
+				this.anIDirect3DDevice6098.a(28, (this.aBoolean4571 && this.aBoolean4562 && this.anInt4581 >= 0));
 				if (i == 112)
 					break;
 				anIntArray6106 = null;
@@ -1095,7 +1095,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 
 	final void GA(int i) {
 		try {
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.Clear(1, i, 0.0F, 0);
+			this.anIDirect3DDevice6098.Clear(1, i, 0.0F, 0);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -1117,7 +1117,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 		do {
 			try {
 				Class80 class80 = (Class80) interface2_impl1;
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetStreamSource(i, ((Class80) class80).anIDirect3DVertexBuffer5337, 0, class80.method810((byte) -22));
+				this.anIDirect3DDevice6098.SetStreamSource(i, class80.anIDirect3DVertexBuffer5337, 0, class80.method810((byte) -22));
 				if (bool == true)
 					break;
 				anIntArray6084 = null;
@@ -1131,8 +1131,8 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method1958(byte i) {
 		do {
 			try {
-				int i_62_ = (aBooleanArray6094[((ha_Sub3_Sub1) this).anInt4579] ? method2072(false, (((ha_Sub3_Sub1) this).aClass128Array4639[((ha_Sub3_Sub1) this).anInt4579])) : 1);
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTextureStageState(((ha_Sub3_Sub1) this).anInt4579, 4, i_62_);
+				int i_62_ = (aBooleanArray6094[this.anInt4579] ? method2072(false, (this.aClass128Array4639[this.anInt4579])) : 1);
+				this.anIDirect3DDevice6098.SetTextureStageState(this.anInt4579, 4, i_62_);
 				if (i == -48)
 					break;
 				aBooleanArray6100 = null;
@@ -1146,9 +1146,9 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method1959(int i) {
 		do {
 			try {
-				if (aBooleanArray6094[((ha_Sub3_Sub1) this).anInt4579]) {
-					aBooleanArray6094[((ha_Sub3_Sub1) this).anInt4579] = false;
-					((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTexture(((ha_Sub3_Sub1) this).anInt4579, null);
+				if (aBooleanArray6094[this.anInt4579]) {
+					aBooleanArray6094[this.anInt4579] = false;
+					this.anIDirect3DDevice6098.SetTexture(this.anInt4579, null);
 					method1958((byte) -48);
 					method2011(2);
 				}
@@ -1177,7 +1177,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method1966(byte i) {
 		try {
 			int i_63_ = 9 / ((i - -6) / 34);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTransform(3, ((ha_Sub3_Sub1) this).aFloatArray4566);
+			this.anIDirect3DDevice6098.SetTransform(3, this.aFloatArray4566);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -1197,7 +1197,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 		try {
 			int i_64_ = 55 / ((i - -4) / 48);
 			dxVertexLayout var_dxVertexLayout = (dxVertexLayout) class256;
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetVertexDeclaration(((dxVertexLayout) var_dxVertexLayout).anIDirect3DVertexDeclaration5155);
+			this.anIDirect3DDevice6098.SetVertexDeclaration(var_dxVertexLayout.anIDirect3DVertexDeclaration5155);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -1208,14 +1208,14 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 			try {
 				if (i > -40)
 					method1950((byte) -56);
-				if (((ha_Sub3_Sub1) this).aCanvas4533 != canvas)
+				if (this.aCanvas4533 != canvas)
 					break;
 				Dimension dimension = canvas.getSize();
-				if ((dimension.width ^ 0xffffffff) >= -1 || (dimension.height ^ 0xffffffff) >= -1)
+				if (dimension.width <= 0 || dimension.height <= 0)
 					break;
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.EndScene();
+				this.anIDirect3DDevice6098.EndScene();
 				method2076(-128);
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.BeginScene();
+				this.anIDirect3DDevice6098.BeginScene();
 			} catch (RuntimeException runtimeexception) {
 				throw runtimeexception;
 			}
@@ -1236,10 +1236,10 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 					if (kg.b(i_66_ + -7175, idirect3d.a(i_65_, d3ddisplaymode)))
 						return false;
 					while_24_: for (/**/; 0 <= i; i--) {
-						if (-2 != (i ^ 0xffffffff)) {
+						if (i != 1) {
 							i_70_ = 0 + i;
-							for (int i_72_ = 0; ((i_72_ ^ 0xffffffff) > (anIntArray6106.length ^ 0xffffffff)); i_72_++) {
-								if (idirect3d.CheckDeviceType(i_65_, i_67_, (d3ddisplaymode.Format), (anIntArray6106[i_72_]), true) == 0 && (idirect3d.CheckDeviceFormat(i_65_, i_67_, d3ddisplaymode.Format, 1, 1, anIntArray6106[i_72_])) == 0 && (i == 0 || ((idirect3d.CheckDeviceMultiSampleType(i_65_, i_67_, anIntArray6106[i_72_], true, i_70_)) ^ 0xffffffff) == -1)) {
+							for (int i_72_ = 0; (anIntArray6106.length > i_72_); i_72_++) {
+								if (idirect3d.CheckDeviceType(i_65_, i_67_, (d3ddisplaymode.Format), (anIntArray6106[i_72_]), true) == 0 && (idirect3d.CheckDeviceFormat(i_65_, i_67_, d3ddisplaymode.Format, 1, 1, anIntArray6106[i_72_])) == 0 && (i == 0 || (idirect3d.CheckDeviceMultiSampleType(i_65_, i_67_, anIntArray6106[i_72_], true, i_70_)) == 0)) {
 									for (int i_73_ = 0; anIntArray6084.length > i_73_; i_73_++) {
 										if ((idirect3d.CheckDeviceFormat(i_65_, i_67_, d3ddisplaymode.Format, 2, 1, anIntArray6084[i_73_])) == 0 && (0 == (idirect3d.CheckDepthStencilMatch(i_65_, i_67_, d3ddisplaymode.Format, anIntArray6106[i_72_], anIntArray6084[i_73_]))) && (i == 0 || (idirect3d.CheckDeviceMultiSampleType(i_65_, i_67_, anIntArray6084[i_72_], true, i_70_)) == 0)) {
 											i_69_ = anIntArray6106[i_72_];
@@ -1273,20 +1273,20 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method2035(int i) {
 		try {
 			int i_74_;
-			for (i_74_ = 0; ((ha_Sub3_Sub1) this).anInt4619 > i_74_; i_74_++) {
-				Class98_Sub5 class98_sub5 = ((ha_Sub3_Sub1) this).aClass98_Sub5Array4597[i_74_];
+			for (i_74_ = 0; this.anInt4619 > i_74_; i_74_++) {
+				Class98_Sub5 class98_sub5 = this.aClass98_Sub5Array4597[i_74_];
 				int i_75_ = i_74_ - -2;
 				int i_76_ = class98_sub5.method961((byte) -78);
 				float f = class98_sub5.method956(false) / 255.0F;
 				aD3DLIGHT6092.SetPosition((float) class98_sub5.method954(7019), (float) class98_sub5.method963((byte) 115), (float) class98_sub5.method962(i + 43412));
-				aD3DLIGHT6092.SetDiffuse((float) ((i_76_ & 0xff6196) >> 1871372912) * f, (float) ((i_76_ & 0xff55) >> -1608995352) * f, (float) (0xff & i_76_) * f, 0.0F);
+				aD3DLIGHT6092.SetDiffuse((float) ((i_76_ & 0xff6196) >> 16) * f, (float) ((i_76_ & 0xff55) >> 8) * f, (float) (0xff & i_76_) * f, 0.0F);
 				aD3DLIGHT6092.SetAttenuation(0.0F, 0.0F, 1.0F / (float) (class98_sub5.method958(i + 14840) * class98_sub5.method958(i ^ ~0x3906)));
 				aD3DLIGHT6092.SetRange((float) class98_sub5.method958(i ^ ~0x3906));
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetLight(i_75_, aD3DLIGHT6092);
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.LightEnable(i_75_, true);
+				this.anIDirect3DDevice6098.SetLight(i_75_, aD3DLIGHT6092);
+				this.anIDirect3DDevice6098.LightEnable(i_75_, true);
 			}
-			for (/**/; ((ha_Sub3_Sub1) this).anInt4628 > i_74_; i_74_++)
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.LightEnable(i_74_ + 2, false);
+			for (/**/; this.anInt4628 > i_74_; i_74_++)
+				this.anIDirect3DDevice6098.LightEnable(i_74_ + 2, false);
 			super.method2035(i);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
@@ -1318,7 +1318,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 				i_81_ |= 0x20;
 			if (bool_78_)
 				i_81_ |= 0x10;
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTextureStageState(((ha_Sub3_Sub1) this).anInt4579, i_80_, i_81_ | method2068(class65, (byte) 127));
+			this.anIDirect3DDevice6098.SetTextureStageState(this.anInt4579, i_80_, i_81_ | method2068(class65, (byte) 127));
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -1327,10 +1327,10 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method2004(byte i) {
 		try {
 			if (i <= -98) {
-				float f = (((ha_Sub3_Sub1) this).aBoolean4555 ? ((ha_Sub3_Sub1) this).aFloat4630 : 0.0F);
-				float f_82_ = (((ha_Sub3_Sub1) this).aBoolean4555 ? -((ha_Sub3_Sub1) this).aFloat4594 : 0.0F);
-				aD3DLIGHT6099.SetDiffuse(f * ((ha_Sub3_Sub1) this).aFloat4611, ((ha_Sub3_Sub1) this).aFloat4549 * f, f * ((ha_Sub3_Sub1) this).aFloat4591, 0.0F);
-				aD3DLIGHT6104.SetDiffuse(((ha_Sub3_Sub1) this).aFloat4611 * f_82_, ((ha_Sub3_Sub1) this).aFloat4549 * f_82_, ((ha_Sub3_Sub1) this).aFloat4591 * f_82_, 0.0F);
+				float f = (this.aBoolean4555 ? this.aFloat4630 : 0.0F);
+				float f_82_ = (this.aBoolean4555 ? -this.aFloat4594 : 0.0F);
+				aD3DLIGHT6099.SetDiffuse(f * this.aFloat4611, this.aFloat4549 * f, f * this.aFloat4591, 0.0F);
+				aD3DLIGHT6104.SetDiffuse(this.aFloat4611 * f_82_, this.aFloat4549 * f_82_, this.aFloat4591 * f_82_, 0.0F);
 				aBoolean6096 = false;
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -1355,7 +1355,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 
 	final void method2033(int i) {
 		try {
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.a(27, ((ha_Sub3_Sub1) this).aBoolean4560);
+			this.anIDirect3DDevice6098.a(27, this.aBoolean4560);
 			int i_90_ = 25 / ((i - -43) / 34);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
@@ -1365,7 +1365,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method2059(boolean bool, boolean bool_91_) {
 		do {
 			try {
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.a(161, bool);
+				this.anIDirect3DDevice6098.a(161, bool);
 				if (!bool_91_)
 					break;
 				method2025((byte) -31);
@@ -1378,27 +1378,27 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 
 	final void method1941(int i) {
 		try {
-			for (int i_92_ = 0; ((i_92_ ^ 0xffffffff) > (((ha_Sub3_Sub1) this).anInt4608 ^ 0xffffffff)); i_92_++) {
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetSamplerState(i_92_, 7, 0);
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetSamplerState(i_92_, 6, 2);
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetSamplerState(i_92_, 5, 2);
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetSamplerState(i_92_, 1, 1);
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetSamplerState(i_92_, 2, 1);
+			for (int i_92_ = 0; (this.anInt4608 > i_92_); i_92_++) {
+				this.anIDirect3DDevice6098.SetSamplerState(i_92_, 7, 0);
+				this.anIDirect3DDevice6098.SetSamplerState(i_92_, 6, 2);
+				this.anIDirect3DDevice6098.SetSamplerState(i_92_, 5, 2);
+				this.anIDirect3DDevice6098.SetSamplerState(i_92_, 1, 1);
+				this.anIDirect3DDevice6098.SetSamplerState(i_92_, 2, 1);
 				aClass200Array6102[i_92_] = Class284_Sub1_Sub1.aClass200_6187;
 				aBooleanArray6088[i_92_] = aBooleanArray6100[i_92_] = true;
 				aBooleanArray6105[i_92_] = false;
 				anIntArray6087[i_92_] = 0;
 			}
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTextureStageState(0, 6, 1);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(9, 2);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(23, 4);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(25, 5);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(24, 0);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(22, 2);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(147, i);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(145, 1);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.a(38, 0.95F);
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(140, 3);
+			this.anIDirect3DDevice6098.SetTextureStageState(0, 6, 1);
+			this.anIDirect3DDevice6098.SetRenderState(9, 2);
+			this.anIDirect3DDevice6098.SetRenderState(23, 4);
+			this.anIDirect3DDevice6098.SetRenderState(25, 5);
+			this.anIDirect3DDevice6098.SetRenderState(24, 0);
+			this.anIDirect3DDevice6098.SetRenderState(22, 2);
+			this.anIDirect3DDevice6098.SetRenderState(147, i);
+			this.anIDirect3DDevice6098.SetRenderState(145, 1);
+			this.anIDirect3DDevice6098.a(38, 0.95F);
+			this.anIDirect3DDevice6098.SetRenderState(140, 3);
 			aD3DLIGHT6099.SetType(3);
 			aD3DLIGHT6104.SetType(3);
 			aD3DLIGHT6092.SetType(1);
@@ -1419,7 +1419,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 			while_26_: do {
 				do {
 					if (i_95_ != 1) {
-						if (-3 != (i_95_ ^ 0xffffffff))
+						if (i_95_ != 2)
 							break;
 					} else {
 						i_96_ = 6;
@@ -1432,7 +1432,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 			} while (false);
 			if (bool)
 				i_94_ |= 0x10;
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTextureStageState(((ha_Sub3_Sub1) this).anInt4579, i_96_, i_94_ | method2068(class65, (byte) 127));
+			this.anIDirect3DDevice6098.SetTextureStageState(this.anInt4579, i_96_, i_94_ | method2068(class65, (byte) 127));
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -1440,10 +1440,10 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 
 	final void method2011(int i) {
 		try {
-			int i_97_ = (aBooleanArray6094[((ha_Sub3_Sub1) this).anInt4579] ? method2072(false, (((ha_Sub3_Sub1) this).aClass128Array4585[((ha_Sub3_Sub1) this).anInt4579])) : 1);
+			int i_97_ = (aBooleanArray6094[this.anInt4579] ? method2072(false, (this.aClass128Array4585[this.anInt4579])) : 1);
 			if (i != 2)
-				((ha_Sub3_Sub1) this).aGeometryBuffer6086 = null;
-			((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetTextureStageState(((ha_Sub3_Sub1) this).anInt4579, 1, i_97_);
+				this.aGeometryBuffer6086 = null;
+			this.anIDirect3DDevice6098.SetTextureStageState(this.anInt4579, 1, i_97_);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -1456,19 +1456,19 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method2016(byte i) {
 		try {
 			if (i <= -109) {
-				if (((ha_Sub3_Sub1) this).aClass126_4625 != Class101.aClass126_848) {
-					if (((ha_Sub3_Sub1) this).aClass126_4625 != Class373_Sub1_Sub1.aClass126_6216) {
-						if (Class83.aClass126_632 == ((ha_Sub3_Sub1) this).aClass126_4625) {
-							((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(19, 9);
-							((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(20, 2);
+				if (this.aClass126_4625 != Class101.aClass126_848) {
+					if (this.aClass126_4625 != Class373_Sub1_Sub1.aClass126_6216) {
+						if (Class83.aClass126_632 == this.aClass126_4625) {
+							this.anIDirect3DDevice6098.SetRenderState(19, 9);
+							this.anIDirect3DDevice6098.SetRenderState(20, 2);
 						}
 					} else {
-						((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(19, 2);
-						((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(20, 2);
+						this.anIDirect3DDevice6098.SetRenderState(19, 2);
+						this.anIDirect3DDevice6098.SetRenderState(20, 2);
 					}
 				} else {
-					((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(19, 5);
-					((ha_Sub3_Sub1) this).anIDirect3DDevice6098.SetRenderState(20, 6);
+					this.anIDirect3DDevice6098.SetRenderState(19, 5);
+					this.anIDirect3DDevice6098.SetRenderState(20, 6);
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -1479,7 +1479,7 @@ public final class ha_Sub3_Sub1 extends ha_Sub3 {
 	final void method1974(int i) {
 		do {
 			try {
-				((ha_Sub3_Sub1) this).anIDirect3DDevice6098.a(7, ((ha_Sub3_Sub1) this).aBoolean4577);
+				this.anIDirect3DDevice6098.a(7, this.aBoolean4577);
 				if (i == 0)
 					break;
 				anInt6083 = -18;

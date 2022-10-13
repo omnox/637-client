@@ -34,7 +34,7 @@ class Class246_Sub4_Sub2 extends Class246_Sub4 {
 		try {
 			if (i_0_ >= -65)
 				method3107(-77, (byte) 42);
-			if ((i ^ 0xffffffff) != -1 && (i ^ 0xffffffff) != -3)
+			if (i != 0 && i != 2)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -46,10 +46,10 @@ class Class246_Sub4_Sub2 extends Class246_Sub4 {
 		try {
 			if (i != 1)
 				method3106((byte) 100);
-			if ((i_3_ ^ 0xffffffff) < (i_2_ ^ 0xffffffff)) {
+			if (i_2_ < i_3_) {
 				i_1_ += i_2_;
-				i_4_ = -i_2_ + i_3_ >> 1044038946;
-				while ((--i_4_ ^ 0xffffffff) <= -1) {
+				i_4_ = -i_2_ + i_3_ >> 2;
+				while (--i_4_ >= 0) {
 					is[i_1_++] = (byte) 1;
 					is[i_1_++] = (byte) 1;
 					is[i_1_++] = (byte) 1;

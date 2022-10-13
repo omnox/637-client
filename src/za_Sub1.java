@@ -14,7 +14,7 @@ final class za_Sub1 extends za {
 		try {
 			if (i != 41)
 				method1679(41, -90, (byte) 42, null);
-			((za_Sub1) this).aNativeHeap6078.b();
+			this.aNativeHeap6078.b();
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "eb.F(" + i + ')');
 		}
@@ -40,7 +40,7 @@ final class za_Sub1 extends za {
 			while (i_4_ > i_3_) {
 				int i_5_ = 0xff & is[i_3_++];
 				int i_6_;
-				if ((i_5_ ^ 0xffffffff) > -129) {
+				if (i_5_ < 128) {
 					if (i_5_ == 0)
 						i_6_ = 65533;
 					else
@@ -48,15 +48,15 @@ final class za_Sub1 extends za {
 				} else if (i_5_ < 192)
 					i_6_ = 65533;
 				else if (i_5_ < 224) {
-					if ((i_3_ ^ 0xffffffff) > (i_4_ ^ 0xffffffff) && (0xc0 & is[i_3_] ^ 0xffffffff) == -129) {
-						i_6_ = is[i_3_++] & 0x3f | i_5_ << -915049466 & 0x7c0;
+					if (i_4_ > i_3_ && (0xc0 & is[i_3_]) == 128) {
+						i_6_ = is[i_3_++] & 0x3f | i_5_ << 6 & 0x7c0;
 						if (i_6_ < 128)
 							i_6_ = 65533;
 					} else
 						i_6_ = 65533;
-				} else if ((i_5_ ^ 0xffffffff) > -241) {
-					if (i_3_ + 1 < i_4_ && (is[i_3_] & 0xc0) == 128 && (0xc0 & is[i_3_ - -1] ^ 0xffffffff) == -129) {
-						i_6_ = ((0x3f & is[i_3_++]) << -1763835738 | (i_5_ & 0xf) << -2124097300 | 0x3f & is[i_3_++]);
+				} else if (i_5_ < 240) {
+					if (i_3_ + 1 < i_4_ && (is[i_3_] & 0xc0) == 128 && (0xc0 & is[i_3_ - -1]) == 128) {
+						i_6_ = ((0x3f & is[i_3_++]) << 6 | (i_5_ & 0xf) << 12 | 0x3f & is[i_3_++]);
 						if (i_6_ < 2048)
 							i_6_ = 65533;
 					} else
@@ -65,8 +65,8 @@ final class za_Sub1 extends za {
 					if (2 + i_3_ >= i_4_ || (is[i_3_] & 0xc0) != 128 || (is[i_3_ + 1] & 0xc0) != 128 || (is[2 + i_3_] & 0xc0) != 128)
 						i_6_ = 65533;
 					else {
-						i_6_ = (0x1c0000 & i_5_ << -1549523662 | (is[i_3_++] & 0x3f) << 1368200812 | (is[i_3_++] & 0x3f) << 1875455398 | is[i_3_++] & 0x3f);
-						if ((i_6_ ^ 0xffffffff) <= -65537 && (i_6_ ^ 0xffffffff) >= -1114112)
+						i_6_ = (0x1c0000 & i_5_ << 18 | (is[i_3_++] & 0x3f) << 12 | (is[i_3_++] & 0x3f) << 6 | is[i_3_++] & 0x3f);
+						if (i_6_ >= 65536 && i_6_ <= 1114111)
 							i_6_ = 65533;
 						else
 							i_6_ = 65533;
@@ -83,7 +83,7 @@ final class za_Sub1 extends za {
 
 	za_Sub1(int i) {
 		try {
-			((za_Sub1) this).aNativeHeap6078 = new NativeHeap(i);
+			this.aNativeHeap6078 = new NativeHeap(i);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "eb.<init>(" + i + ')');
 		}

@@ -12,15 +12,15 @@ final class Class130 {
 		try {
 			int i_5_ = i_3_ % i;
 			int i_6_;
-			if ((i_5_ ^ 0xffffffff) != -1)
+			if (i_5_ != 0)
 				i_6_ = i - i_5_;
 			else
 				i_6_ = 0;
 			int i_7_ = -((-1 + i + i_4_) / i);
 			int i_8_ = -((i + (i_3_ - i_1_)) / i);
-			for (int i_9_ = i_7_; (i_9_ ^ 0xffffffff) > -1; i_9_++) {
-				for (int i_10_ = i_8_; (i_10_ ^ 0xffffffff) > -1; i_10_++) {
-					if ((is[i_0_] ^ 0xffffffff) == -1)
+			for (int i_9_ = i_7_; i_9_ < 0; i_9_++) {
+				for (int i_10_ = i_8_; i_10_ < 0; i_10_++) {
+					if (is[i_0_] == 0)
 						return true;
 					i_0_ += i;
 				}

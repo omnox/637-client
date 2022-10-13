@@ -24,35 +24,35 @@ final class Class86 {
 		do {
 			try {
 				if (i_0_ == 1)
-					((Class86) this).anInt655 = class98_sub22.readShort();
-				else if ((i_0_ ^ 0xffffffff) == -3)
-					((Class86) this).anInt648 = class98_sub22.readMedium(-128);
-				else if ((i_0_ ^ 0xffffffff) == -4)
+					this.anInt655 = class98_sub22.readShort();
+				else if (i_0_ == 2)
+					this.anInt648 = class98_sub22.readMedium(-128);
+				else if (i_0_ == 3)
 					anInt641 = class98_sub22.readShort();
 				else if (i_0_ == 4)
 					anInt643 = class98_sub22.readShort();
-				else if ((i_0_ ^ 0xffffffff) == -6)
+				else if (i_0_ == 5)
 					anInt652 = class98_sub22.readShort();
-				else if ((i_0_ ^ 0xffffffff) != -7) {
-					if ((i_0_ ^ 0xffffffff) != -8) {
-						if ((i_0_ ^ 0xffffffff) != -9) {
-							if ((i_0_ ^ 0xffffffff) == -10)
-								((Class86) this).anInt651 = class98_sub22.readShort();
+				else if (i_0_ != 6) {
+					if (i_0_ != 7) {
+						if (i_0_ != 8) {
+							if (i_0_ == 9)
+								this.anInt651 = class98_sub22.readShort();
 							else if (i_0_ == 10)
-								((Class86) this).anInt650 = class98_sub22.readUShort(false);
+								this.anInt650 = class98_sub22.readUShort(false);
 							else if (i_0_ == 11)
-								((Class86) this).anInt645 = 0;
+								this.anInt645 = 0;
 							else if (i_0_ == 12)
-								((Class86) this).anInt642 = class98_sub22.readUnsignedByte();
+								this.anInt642 = class98_sub22.readUnsignedByte();
 							else if (i_0_ == 13)
-								((Class86) this).anInt646 = class98_sub22.readUShort(false);
+								this.anInt646 = class98_sub22.readUShort(false);
 							else if (i_0_ == 14)
-								((Class86) this).anInt645 = class98_sub22.readShort();
+								this.anInt645 = class98_sub22.readShort();
 						} else {
 							aString654 = class98_sub22.method1223(-1);
 						}
 					} else
-						((Class86) this).anInt653 = class98_sub22.readUShort(false);
+						this.anInt653 = class98_sub22.readUShort(false);
 				} else
 					anInt647 = class98_sub22.readShort();
 				if (i <= -7)
@@ -86,7 +86,7 @@ final class Class86 {
 				Class8.aClass148_110.method2422((byte) 47);
 				if (!Class98_Sub43_Sub1.aBoolean5895) {
 					for (Class98_Sub47 class98_sub47 = (Class98_Sub47) class148.method2418(32); class98_sub47 != null; class98_sub47 = ((Class98_Sub47) class148.method2417(i_1_ + 93))) {
-						Class24 class24 = (Class278.aClass341_2057.method3807(i_1_ ^ ~0x65, ((Class98_Sub47) class98_sub47).anInt4268));
+						Class24 class24 = (Class278.aClass341_2057.method3807(i_1_ ^ ~0x65, class98_sub47.anInt4268));
 						if (Class87.method855(87, class24)) {
 							boolean bool = Class98_Sub40.method1473(class24, i, class98_sub47, i_2_, 15924, var_ha);
 							if (bool)
@@ -107,7 +107,7 @@ final class Class86 {
 	static final void method844(int i, boolean bool, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_) {
 		do {
 			try {
-				if ((!bool ? ((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub22_4066.method641((byte) 122) : ((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub22_4054.method641((byte) 127)) != 0 && i_4_ != 0 && Class306.anInt2566 < 50 && i_7_ != -1)
+				if ((!bool ? Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub22_4066.method641((byte) 122) : Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub22_4054.method641((byte) 127)) != 0 && i_4_ != 0 && Class306.anInt2566 < 50 && i_7_ != -1)
 					Class245.aClass338Array1865[Class306.anInt2566++] = new Class338(!bool ? (byte) 2 : (byte) 3, i_7_, i_4_, i_3_, i_5_, i_6_, i, null);
 				if (i_8_ < -58)
 					break;
@@ -123,14 +123,14 @@ final class Class86 {
 		try {
 			if (i != -124)
 				method844(-38, false, 87, -74, -69, -59, 2, -40);
-			if (((Class98_Sub46_Sub8) class98_sub46_sub8).aString5985 != null && ((Class98_Sub46_Sub8) class98_sub46_sub8).aString5985.length() != 0) {
-				if ((((Class98_Sub46_Sub8) class98_sub46_sub8).aString5992 == null) || (((Class98_Sub46_Sub8) class98_sub46_sub8).aString5992.length() ^ 0xffffffff) >= -1)
-					return ((((Class98_Sub46_Sub8) class98_sub46_sub8).aString5994) + TextResources.aClass309_2618.get_text(Class374.anInt3159) + (((Class98_Sub46_Sub8) class98_sub46_sub8).aString5985));
-				return (((Class98_Sub46_Sub8) class98_sub46_sub8).aString5994 + TextResources.aClass309_2618.get_text(Class374.anInt3159) + ((Class98_Sub46_Sub8) class98_sub46_sub8).aString5992 + TextResources.aClass309_2618.get_text(Class374.anInt3159) + (((Class98_Sub46_Sub8) class98_sub46_sub8).aString5985));
+			if (class98_sub46_sub8.aString5985 != null && class98_sub46_sub8.aString5985.length() != 0) {
+				if ((class98_sub46_sub8.aString5992 == null) || class98_sub46_sub8.aString5992.length() <= 0)
+					return ((class98_sub46_sub8.aString5994) + TextResources.aClass309_2618.get_text(Class374.anInt3159) + (class98_sub46_sub8.aString5985));
+				return (class98_sub46_sub8.aString5994 + TextResources.aClass309_2618.get_text(Class374.anInt3159) + class98_sub46_sub8.aString5992 + TextResources.aClass309_2618.get_text(Class374.anInt3159) + (class98_sub46_sub8.aString5985));
 			}
-			if (((Class98_Sub46_Sub8) class98_sub46_sub8).aString5992 == null || (((Class98_Sub46_Sub8) class98_sub46_sub8).aString5992.length() ^ 0xffffffff) >= -1)
-				return ((Class98_Sub46_Sub8) class98_sub46_sub8).aString5994;
-			return (((Class98_Sub46_Sub8) class98_sub46_sub8).aString5994 + TextResources.aClass309_2618.get_text(Class374.anInt3159) + ((Class98_Sub46_Sub8) class98_sub46_sub8).aString5992);
+			if (class98_sub46_sub8.aString5992 == null || class98_sub46_sub8.aString5992.length() <= 0)
+				return class98_sub46_sub8.aString5994;
+			return (class98_sub46_sub8.aString5994 + TextResources.aClass309_2618.get_text(Class374.anInt3159) + class98_sub46_sub8.aString5992);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("fj.K(" + i + ',' + (class98_sub46_sub8 != null ? "{...}" : "null") + ')'));
 		}
@@ -141,11 +141,11 @@ final class Class86 {
 			if (anInt641 < 0)
 				return null;
 			if (bool != false)
-				((Class86) this).anInt655 = 120;
-			Class332 class332 = ((Class332) ((Class121) ((Class86) this).aClass121_644).aClass79_1003.get((long) anInt641));
+				this.anInt655 = 120;
+			Class332 class332 = ((Class332) this.aClass121_644.aClass79_1003.get(anInt641));
 			if (class332 == null) {
 				method847(-109, var_ha);
-				class332 = (Class332) ((Class121) ((Class86) this).aClass121_644).aClass79_1003.get((long) anInt641);
+				class332 = (Class332) this.aClass121_644.aClass79_1003.get(anInt641);
 			}
 			return class332;
 		} catch (RuntimeException runtimeexception) {
@@ -157,23 +157,23 @@ final class Class86 {
 		do {
 			try {
 				int i_9_ = 25 / ((i - 3) / 34);
-				RuneScapeCache class207 = (((Class121) ((Class86) this).aClass121_644).aClass207_1005);
-				if (anInt641 >= 0 && (((Class121) ((Class86) this).aClass121_644).aClass79_1003.get((long) anInt641) == null) && class207.method2742(-32, anInt641)) {
+				RuneScapeCache class207 = (this.aClass121_644.aClass207_1005);
+				if (anInt641 >= 0 && (this.aClass121_644.aClass79_1003.get(anInt641) == null) && class207.method2742(-32, anInt641)) {
 					Class324 class324 = Class324.method3683(class207, anInt641);
-					((Class121) ((Class86) this).aClass121_644).aClass79_1003.put((long) anInt641, var_ha.method1758(class324, true));
+					this.aClass121_644.aClass79_1003.put(anInt641, var_ha.method1758(class324, true));
 				}
-				if (anInt652 >= 0 && (((Class121) ((Class86) this).aClass121_644).aClass79_1003.get((long) anInt652) == null) && class207.method2742(-83, anInt652)) {
+				if (anInt652 >= 0 && (this.aClass121_644.aClass79_1003.get(anInt652) == null) && class207.method2742(-83, anInt652)) {
 					Class324 class324 = Class324.method3683(class207, anInt652);
-					((Class121) ((Class86) this).aClass121_644).aClass79_1003.put((long) anInt652, var_ha.method1758(class324, true));
+					this.aClass121_644.aClass79_1003.put(anInt652, var_ha.method1758(class324, true));
 				}
-				if ((anInt643 ^ 0xffffffff) <= -1 && (((Class121) ((Class86) this).aClass121_644).aClass79_1003.get((long) anInt643) == null) && class207.method2742(-91, anInt643)) {
+				if (anInt643 >= 0 && (this.aClass121_644.aClass79_1003.get(anInt643) == null) && class207.method2742(-91, anInt643)) {
 					Class324 class324 = Class324.method3683(class207, anInt643);
-					((Class121) ((Class86) this).aClass121_644).aClass79_1003.put((long) anInt643, var_ha.method1758(class324, true));
+					this.aClass121_644.aClass79_1003.put(anInt643, var_ha.method1758(class324, true));
 				}
-				if ((anInt647 ^ 0xffffffff) > -1 || (((Class121) ((Class86) this).aClass121_644).aClass79_1003.get((long) anInt647) != null) || !class207.method2742(-79, anInt647))
+				if (anInt647 < 0 || (this.aClass121_644.aClass79_1003.get(anInt647) != null) || !class207.method2742(-79, anInt647))
 					break;
 				Class324 class324 = Class324.method3683(class207, anInt647);
-				((Class121) ((Class86) this).aClass121_644).aClass79_1003.put((long) anInt647, var_ha.method1758(class324, true));
+				this.aClass121_644.aClass79_1003.put(anInt647, var_ha.method1758(class324, true));
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("fj.G(" + i + ',' + (var_ha != null ? "{...}" : "null") + ')'));
 			}
@@ -188,7 +188,7 @@ final class Class86 {
 				anInt652 = 8;
 			for (;;) {
 				int i_11_ = string.indexOf("%1");
-				if ((i_11_ ^ 0xffffffff) > -1)
+				if (i_11_ < 0)
 					break;
 				string = (string.substring(0, i_11_) + Class44.method428(i_10_, false, false) + string.substring(i_11_ + 2));
 			}
@@ -200,13 +200,13 @@ final class Class86 {
 
 	final Class332 method849(ha var_ha, int i) {
 		try {
-			if ((anInt643 ^ 0xffffffff) > -1)
+			if (anInt643 < 0)
 				return null;
 			int i_12_ = 85 / ((-57 - i) / 49);
-			Class332 class332 = ((Class332) ((Class121) ((Class86) this).aClass121_644).aClass79_1003.get((long) anInt643));
+			Class332 class332 = ((Class332) this.aClass121_644.aClass79_1003.get(anInt643));
 			if (class332 == null) {
 				method847(-83, var_ha);
-				class332 = (Class332) ((Class121) ((Class86) this).aClass121_644).aClass79_1003.get((long) anInt643);
+				class332 = (Class332) this.aClass121_644.aClass79_1003.get(anInt643);
 			}
 			return class332;
 		} catch (RuntimeException runtimeexception) {
@@ -216,12 +216,12 @@ final class Class86 {
 
 	final Class332 method850(int i, ha var_ha) {
 		try {
-			if (i < (anInt647 ^ 0xffffffff))
+			if (i < (~anInt647))
 				return null;
-			Class332 class332 = ((Class332) ((Class121) ((Class86) this).aClass121_644).aClass79_1003.get((long) anInt647));
+			Class332 class332 = ((Class332) this.aClass121_644.aClass79_1003.get(anInt647));
 			if (class332 == null) {
 				method847(i + 61, var_ha);
-				class332 = (Class332) ((Class121) ((Class86) this).aClass121_644).aClass79_1003.get((long) anInt647);
+				class332 = (Class332) this.aClass121_644.aClass79_1003.get(anInt647);
 			}
 			return class332;
 		} catch (RuntimeException runtimeexception) {
@@ -234,7 +234,7 @@ final class Class86 {
 			try {
 				for (;;) {
 					int i_13_ = class98_sub22.readUnsignedByte();
-					if ((i_13_ ^ 0xffffffff) == -1)
+					if (i_13_ == 0)
 						break;
 					method841(-120, i_13_, class98_sub22);
 				}
@@ -252,12 +252,12 @@ final class Class86 {
 		try {
 			if (anInt652 < 0)
 				return null;
-			Class332 class332 = ((Class332) ((Class121) ((Class86) this).aClass121_644).aClass79_1003.get((long) anInt652));
+			Class332 class332 = ((Class332) this.aClass121_644.aClass79_1003.get(anInt652));
 			if (i < 11)
 				return null;
 			if (class332 == null) {
 				method847(45, var_ha);
-				class332 = (Class332) ((Class121) ((Class86) this).aClass121_644).aClass79_1003.get((long) anInt652);
+				class332 = (Class332) this.aClass121_644.aClass79_1003.get(anInt652);
 			}
 			return class332;
 		} catch (RuntimeException runtimeexception) {
@@ -266,15 +266,15 @@ final class Class86 {
 	}
 
 	public Class86() {
-		((Class86) this).anInt645 = -1;
-		((Class86) this).anInt650 = 0;
-		((Class86) this).anInt648 = 16777215;
-		((Class86) this).anInt651 = 70;
+		this.anInt645 = -1;
+		this.anInt650 = 0;
+		this.anInt648 = 16777215;
+		this.anInt651 = 70;
 		anInt643 = -1;
 		anInt652 = -1;
-		((Class86) this).anInt653 = 0;
-		((Class86) this).anInt646 = 0;
-		((Class86) this).anInt655 = -1;
+		this.anInt653 = 0;
+		this.anInt646 = 0;
+		this.anInt655 = -1;
 		aString654 = "";
 	}
 }

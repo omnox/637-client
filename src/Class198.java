@@ -13,8 +13,8 @@ final class Class198 {
 		try {
 			if (i != 6)
 				aClass171_1521 = null;
-			int i_2_ = -1 + i_1_ & i_0_ >> -1893021153;
-			return ((i_0_ >>> 1656906079) + i_0_) % i_1_ + i_2_;
+			int i_2_ = -1 + i_1_ & i_0_ >> 31;
+			return ((i_0_ >>> 31) + i_0_) % i_1_ + i_2_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("nb.F(" + i + ',' + i_0_ + ',' + i_1_ + ')'));
 		}
@@ -39,7 +39,7 @@ final class Class198 {
 				aClass171_1521 = null;
 			Class366 class366;
 			synchronized (aClass79_1523) {
-				class366 = (Class366) aClass79_1523.get((long) i);
+				class366 = (Class366) aClass79_1523.get(i);
 			}
 			if (class366 != null)
 				return class366;
@@ -51,7 +51,7 @@ final class Class198 {
 			if (is != null)
 				class366.method3945(new RSByteBuffer(is), -6364);
 			synchronized (aClass79_1523) {
-				aClass79_1523.put((long) i, class366);
+				aClass79_1523.put(i, class366);
 			}
 			return class366;
 		} catch (RuntimeException runtimeexception) {

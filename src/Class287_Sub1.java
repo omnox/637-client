@@ -82,7 +82,7 @@ final class Class287_Sub1 extends Class287 implements Interface16 {
 		try {
 			if (i != -14112)
 				return 57;
-			return ((Class287) this).anInt2191;
+			return this.anInt2191;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "iv.B(" + i + ')');
 		}
@@ -91,7 +91,7 @@ final class Class287_Sub1 extends Class287 implements Interface16 {
 	final void method3384(int i) {
 		do {
 			try {
-				((Class287) this).aHa_Sub1_2185.method1887(this, i + 34962);
+				this.aHa_Sub1_2185.method1887(this, i + 34962);
 				if (i == 0)
 					break;
 				method53(-28);
@@ -105,9 +105,9 @@ final class Class287_Sub1 extends Class287 implements Interface16 {
 	static {
 		for (int i = 0; i < 256; i++) {
 			int i_5_ = i;
-			for (int i_6_ = 0; (i_6_ ^ 0xffffffff) > -9; i_6_++) {
+			for (int i_6_ = 0; i_6_ < 8; i_6_++) {
 				if ((i_5_ & 0x1) == 1)
-					i_5_ = ~0x12477cdf ^ i_5_ >>> 1453156353;
+					i_5_ = ~0x12477cdf ^ i_5_ >>> 1;
 				else
 					i_5_ >>>= 1;
 			}

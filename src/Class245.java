@@ -53,7 +53,7 @@ final class Class245 {
 	final void method2958(byte i, AnimableEntity class246_sub3) {
 		try {
 			int i_0_ = 106 % ((i - -71) / 50);
-			((AnimableEntity) class246_sub3).aBoolean5078 = true;
+			class246_sub3.aBoolean5078 = true;
 			synchronized (aClass218_1863) {
 				aClass218_1863.method2808(true, class246_sub3);
 				anInt1867++;
@@ -82,7 +82,7 @@ final class Class245 {
 
 	final void method2960(AnimableEntity class246_sub3, int i) {
 		try {
-			((AnimableEntity) class246_sub3).aBoolean5078 = false;
+			class246_sub3.aBoolean5078 = false;
 			synchronized (aClass218_1863) {
 				aClass218_1863.method2808(true, class246_sub3);
 				anInt1867++;
@@ -117,7 +117,7 @@ final class Class245 {
 
 	Class245(String string) {
 		try {
-			((Class245) this).aString1866 = string;
+			this.aString1866 = string;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ph.<init>(" + (string != null ? "{...}" : "null") + ')');
 		}

@@ -12,16 +12,16 @@ final class OutgoingOpcode {
 		try {
 			int i_6_;
 			do {
-				if ((Class98_Sub46_Sub20_Sub2.anInt6319 ^ 0xffffffff) == -5) {
+				if (Class98_Sub46_Sub20_Sub2.anInt6319 == 4) {
 					i_6_ = (int) GameWorld.cameraGetHrot & 0x3fff;
 					if (!client.aBoolean3553)
 						break;
 				}
 				i_6_ = ((int) GameWorld.cameraGetHrot - -Class204.anInt1553) & 0x3fff;
 			} while (false);
-			int i_7_ = (Math.max(((GameInterfaceData) class293).anInt2311 / 2, ((GameInterfaceData) class293).anInt2258 / 2) - -10);
+			int i_7_ = (Math.max(class293.anInt2311 / 2, class293.anInt2258 / 2) - -10);
 			int i_8_ = i_5_ * i_5_ + i * i;
-			if ((i_7_ * i_7_ ^ 0xffffffff) <= (i_8_ ^ 0xffffffff)) {
+			if (i_8_ <= i_7_ * i_7_) {
 				if (i_3_ < 73)
 					method2540(52, -42, null, -60, null, 123, (byte) 1, null, null, -98, -39, null);
 				int i_9_ = Class284_Sub2_Sub2.anIntArray6200[i_6_];
@@ -30,13 +30,13 @@ final class OutgoingOpcode {
 					i_9_ = i_9_ * 256 / (Class151.anInt1213 + 256);
 					i_10_ = i_10_ * 256 / (256 + Class151.anInt1213);
 				}
-				int i_11_ = i_5_ * i_9_ + i * i_10_ >> 2091290062;
-				int i_12_ = i_10_ * i_5_ + -(i * i_9_) >> 1204621454;
+				int i_11_ = i_5_ * i_9_ + i * i_10_ >> 14;
+				int i_12_ = i_10_ * i_5_ + -(i * i_9_) >> 14;
 				int i_13_ = class197.method2670(100, string, null, (byte) 106);
 				int i_14_ = class197.method2672(null, 100, 0, string, true);
 				i_11_ -= i_13_ / 2;
-				if (-((GameInterfaceData) class293).anInt2311 <= i_11_ && ((((GameInterfaceData) class293).anInt2311 ^ 0xffffffff) <= (i_11_ ^ 0xffffffff)) && -((GameInterfaceData) class293).anInt2258 <= i_12_ && (i_12_ ^ 0xffffffff) >= (((GameInterfaceData) class293).anInt2258 ^ 0xffffffff))
-					class43.method408((((GameInterfaceData) class293).anInt2311 / 2 + i_11_ - -i_0_), null, i_13_, string, i_0_, 0, var_aa, 1, (byte) -75, i_4_, null, 0, i_1_, 0, (-i_14_ + -i_12_ + i_1_ - (-(((GameInterfaceData) class293).anInt2258 / 2) - -i_2_)), 50);
+				if (-class293.anInt2311 <= i_11_ && (i_11_ <= class293.anInt2311) && -class293.anInt2258 <= i_12_ && class293.anInt2258 >= i_12_)
+					class43.method408((class293.anInt2311 / 2 + i_11_ - -i_0_), null, i_13_, string, i_0_, 0, var_aa, 1, (byte) -75, i_4_, null, 0, i_1_, 0, (-i_14_ + -i_12_ + i_1_ - (-(class293.anInt2258 / 2) - -i_2_)), 50);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("lga.B(" + i + ',' + i_0_ + ',' + (class197 != null ? "{...}" : "null") + ',' + i_1_ + ',' + (class293 != null ? "{...}" : "null") + ',' + i_2_ + ',' + i_3_ + ',' + (string != null ? "{...}" : "null") + ',' + (var_aa != null ? "{...}" : "null") + ',' + i_4_ + ',' + i_5_ + ',' + (class43 != null ? "{...}" : "null") + ')'));
@@ -64,7 +64,7 @@ final class OutgoingOpcode {
 	OutgoingOpcode(int i, int i_15_) {
 		try {
 			opcode = i;
-			((OutgoingOpcode) this).size = i_15_;
+			this.size = i_15_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("lga.<init>(" + i + ',' + i_15_ + ')'));
 		}

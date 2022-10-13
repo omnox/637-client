@@ -41,7 +41,7 @@ final class Class6 {
 
 	Class6(String string, int i) {
 		try {
-			((Class6) this).anInt87 = i;
+			this.anInt87 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("afa.<init>(" + (string != null ? "{...}" : "null") + ',' + i + ')'));
 		}
@@ -51,7 +51,7 @@ final class Class6 {
 		do {
 			try {
 				do {
-					if ((Class98_Sub46.anInt4261 ^ 0xffffffff) != -2) {
+					if (Class98_Sub46.anInt4261 != 1) {
 						Class154.aHa1231.method1764(0, 0);
 						if (!client.aBoolean3553)
 							break;
@@ -72,7 +72,7 @@ final class Class6 {
 		try {
 			if (i > -37)
 				method182(121);
-			return ((Class6) this).anInt87;
+			return this.anInt87;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "afa.A(" + i + ')');
 		}

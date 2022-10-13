@@ -37,7 +37,7 @@ final class Class156_Sub2 extends Class156 implements Interface16 {
 		try {
 			if (i != 24582)
 				anInt3422 = 44;
-			return ((Class156) this).aBuffer1247.getAddress();
+			return this.aBuffer1247.getAddress();
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "se.E(" + i + ')');
 		}
@@ -51,17 +51,17 @@ final class Class156_Sub2 extends Class156 implements Interface16 {
 				l *= 37L;
 				int i_5_ = string.charAt(i_4_);
 				if (i_5_ >= 65 && i_5_ <= 90)
-					l += (long) (1 - (-i_5_ - -65));
+					l += 1 - (-i_5_ - -65);
 				else if (i_5_ >= 97 && i_5_ <= 122)
-					l += (long) (-97 + (1 + i_5_));
+					l += -97 + (1 + i_5_);
 				else if (i_5_ >= 48 && i_5_ <= 57)
-					l += (long) (i_5_ + -21);
-				if ((l ^ 0xffffffffffffffffL) <= -177917621779460414L)
+					l += i_5_ + -21;
+				if (l >= 177917621779460413L)
 					break;
 			}
 			if (i > -124)
 				anInt3423 = 56;
-			for (/**/; (l % 37L ^ 0xffffffffffffffffL) == -1L && l != 0L; l /= 37L) {
+			for (/**/; l % 37L == 0 && l != 0L; l /= 37L) {
 				/* empty */
 			}
 			return l;

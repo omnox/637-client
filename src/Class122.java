@@ -14,8 +14,8 @@ final class Class122 {
 				int i = 0;
 				if (bool != false)
 					anInt1009 = 50;
-				for (int i_0_ = 0; (i_0_ ^ 0xffffffff) > -513; i_0_++) {
-					float f = 360.0F * (0.0078125F + (float) (i_0_ >> 74274595) / 64.0F);
+				for (int i_0_ = 0; i_0_ < 512; i_0_++) {
+					float f = 360.0F * (0.0078125F + (float) (i_0_ >> 3) / 64.0F);
 					float f_1_ = (float) (i_0_ & 0x7) / 8.0F + 0.0625F;
 					for (int i_2_ = 0; i_2_ < 128; i_2_++) {
 						float f_3_ = (float) i_2_ / 128.0F;
@@ -31,10 +31,10 @@ final class Class122 {
 						float f_13_ = (-((-f_10_ + 1.0F) * f_1_) + 1.0F) * f_3_;
 						if (i_9_ != 0) {
 							if (i_9_ != 1) {
-								if ((i_9_ ^ 0xffffffff) != -3) {
-									if ((i_9_ ^ 0xffffffff) != -4) {
-										if ((i_9_ ^ 0xffffffff) != -5) {
-											if ((i_9_ ^ 0xffffffff) == -6) {
+								if (i_9_ != 2) {
+									if (i_9_ != 3) {
+										if (i_9_ != 4) {
+											if (i_9_ == 5) {
 												f_6_ = f_12_;
 												f_4_ = f_3_;
 												f_5_ = f_11_;
@@ -64,13 +64,13 @@ final class Class122 {
 							f_4_ = f_3_;
 							f_6_ = f_11_;
 						}
-						f_4_ = (float) Math.pow((double) f_4_, d);
-						f_5_ = (float) Math.pow((double) f_5_, d);
-						f_6_ = (float) Math.pow((double) f_6_, d);
+						f_4_ = (float) Math.pow(f_4_, d);
+						f_5_ = (float) Math.pow(f_5_, d);
+						f_6_ = (float) Math.pow(f_6_, d);
 						int i_14_ = (int) (256.0F * f_4_);
 						int i_15_ = (int) (f_5_ * 256.0F);
 						int i_16_ = (int) (f_6_ * 256.0F);
-						int i_17_ = ((i_14_ << 1057698384) + (-16777216 + (i_15_ << 1325420744) - -i_16_));
+						int i_17_ = ((i_14_ << 16) + (-16777216 + (i_15_ << 8) - -i_16_));
 						Class221.anIntArray1665[i++] = i_17_;
 					}
 				}
@@ -84,13 +84,13 @@ final class Class122 {
 		try {
 			if (i != -26)
 				method2201(83, null, -111, null, 117, (byte) -54);
-			int i_19_ = (anIntArray1008.length >> 1866406849) - 1;
+			int i_19_ = (anIntArray1008.length >> 1) - 1;
 			int i_20_ = i_19_ & i_18_;
 			for (;;) {
 				int i_21_ = anIntArray1008[1 + (i_20_ + i_20_)];
-				if ((i_21_ ^ 0xffffffff) == 0)
+				if (i_21_ == -1)
 					return -1;
-				if ((i_18_ ^ 0xffffffff) == (anIntArray1008[i_20_ - -i_20_] ^ 0xffffffff))
+				if (anIntArray1008[i_20_ - -i_20_] == i_18_)
 					return i_21_;
 				i_20_ = 1 + i_20_ & i_19_;
 			}
@@ -102,13 +102,13 @@ final class Class122 {
 	Class122(int[] is) {
 		try {
 			int i;
-			for (i = 1; ((i ^ 0xffffffff) >= (is.length + (is.length >> 1095190241) ^ 0xffffffff)); i <<= 1) {
+			for (i = 1; (is.length + (is.length >> 1) >= i); i <<= 1) {
 				/* empty */
 			}
 			anIntArray1008 = new int[i + i];
 			for (int i_22_ = 0; i - -i > i_22_; i_22_++)
 				anIntArray1008[i_22_] = -1;
-			for (int i_23_ = 0; (is.length ^ 0xffffffff) < (i_23_ ^ 0xffffffff); i_23_++) {
+			for (int i_23_ = 0; i_23_ < is.length; i_23_++) {
 				int i_24_;
 				for (i_24_ = is[i_23_] & i + -1; anIntArray1008[1 + i_24_ + i_24_] != -1; i_24_ = i_24_ - -1 & -1 + i) {
 					/* empty */
@@ -125,33 +125,33 @@ final class Class122 {
 		try {
 			if (i_27_ != 70)
 				method2201(76, null, 62, null, 80, (byte) -43);
-			Class9 class9 = Class98_Sub10_Sub23.aClass335_5662.method3766(((Class352) class352).anInt2990, (byte) 97);
-			if ((((Class9) class9).anInt114 ^ 0xffffffff) != 0) {
+			Class9 class9 = Class98_Sub10_Sub23.aClass335_5662.method3766(class352.anInt2990, (byte) 97);
+			if (class9.anInt114 != -1) {
 				do {
-					if (((Class352) class352).aBoolean3004) {
-						i += ((Class352) class352).anInt2962;
+					if (class352.aBoolean3004) {
+						i += class352.anInt2962;
 						i &= 0x3;
 						if (!client.aBoolean3553)
 							break;
 					}
 					i = 0;
 				} while (false);
-				Class332 class332 = class9.method190(((Class352) class352).aBoolean2976, 0, i, var_ha);
+				Class332 class332 = class9.method190(class352.aBoolean2976, 0, i, var_ha);
 				if (class332 != null) {
-					int i_28_ = ((Class352) class352).sizeY;
-					int i_29_ = ((Class352) class352).sizeX;
+					int i_28_ = class352.sizeY;
+					int i_29_ = class352.sizeX;
 					if ((0x1 & i) == 1) {
-						i_29_ = ((Class352) class352).sizeY;
-						i_28_ = ((Class352) class352).sizeX;
+						i_29_ = class352.sizeY;
+						i_28_ = class352.sizeX;
 					}
 					int i_30_ = class332.method3737();
 					int i_31_ = class332.method3749();
-					if (((Class9) class9).aBoolean116) {
+					if (class9.aBoolean116) {
 						i_31_ = 4 * i_29_;
 						i_30_ = 4 * i_28_;
 					}
-					if ((((Class9) class9).anInt115 ^ 0xffffffff) != -1)
-						class332.method3727(i_25_, i_26_ - -4 - 4 * i_29_, i_30_, i_31_, 0, (((Class9) class9).anInt115 | ~0xffffff), 1);
+					if (class9.anInt115 != 0)
+						class332.method3727(i_25_, i_26_ - -4 - 4 * i_29_, i_30_, i_31_, 0, (class9.anInt115 | ~0xffffff), 1);
 					else
 						class332.method3726(i_25_, i_26_ + -(4 * (-1 + i_29_)), i_30_, i_31_);
 				}

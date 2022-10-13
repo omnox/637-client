@@ -33,7 +33,7 @@ final class Class98_Sub6 extends Node {
 		try {
 			if (i_0_ < 104)
 				anInt3848 = 122;
-			if ((anInt3842 ^ 0xffffffff) == (i_2_ ^ 0xffffffff) && i_1_ >= anInt3840 && i_1_ <= anInt3848 && i >= anInt3846 && i <= anInt3841)
+			if (i_2_ == anInt3842 && i_1_ >= anInt3840 && i_1_ <= anInt3848 && i >= anInt3846 && i <= anInt3841)
 				return true;
 			return false;
 		} catch (RuntimeException runtimeexception) {
@@ -45,7 +45,7 @@ final class Class98_Sub6 extends Node {
 		try {
 			if (i_3_ <= 32)
 				anInt3848 = 89;
-			if (((((Class98_Sub6) this).anInt3839 ^ 0xffffffff) >= (i ^ 0xffffffff)) && i <= ((Class98_Sub6) this).anInt3838 && ((Class98_Sub6) this).anInt3843 <= i_4_ && ((Class98_Sub6) this).anInt3845 >= i_4_)
+			if ((i >= this.anInt3839) && i <= this.anInt3838 && this.anInt3843 <= i_4_ && this.anInt3845 >= i_4_)
 				return true;
 			return false;
 		} catch (RuntimeException runtimeexception) {
@@ -59,12 +59,12 @@ final class Class98_Sub6 extends Node {
 			if (class98_sub3 == null)
 				return 0;
 			int i_8_ = 0;
-			for (int i_9_ = 0; ((i_9_ ^ 0xffffffff) > (((Class98_Sub3) class98_sub3).anIntArray3824.length ^ 0xffffffff)); i_9_++) {
-				if ((((Class98_Sub3) class98_sub3).anIntArray3824[i_9_] ^ 0xffffffff) <= -1 && (((((ItemDefinitionList) Class98_Sub46_Sub19.getItemDefs).anInt1554) ^ 0xffffffff) < (((Class98_Sub3) class98_sub3).anIntArray3824[i_9_] ^ 0xffffffff))) {
-					ItemDefinition class297 = (Class98_Sub46_Sub19.getItemDefs.getItemDefs(((Class98_Sub3) class98_sub3).anIntArray3824[i_9_]));
-					int i_10_ = (class297.method3494(i_7_, (byte) -128, (((ParamType) Class98_Sub43_Sub1.aClass365_5897.list((byte) 31, i_7_)).anInt1202)));
+			for (int i_9_ = 0; (class98_sub3.anIntArray3824.length > i_9_); i_9_++) {
+				if (class98_sub3.anIntArray3824[i_9_] >= 0 && (class98_sub3.anIntArray3824[i_9_] < (Class98_Sub46_Sub19.getItemDefs.anInt1554))) {
+					ItemDefinition class297 = (Class98_Sub46_Sub19.getItemDefs.getItemDefs(class98_sub3.anIntArray3824[i_9_]));
+					int i_10_ = (class297.method3494(i_7_, (byte) -128, (Class98_Sub43_Sub1.aClass365_5897.list((byte) 31, i_7_).anInt1202)));
 					if (bool_5_)
-						i_8_ += (((Class98_Sub3) class98_sub3).anIntArray3823[i_9_]) * i_10_;
+						i_8_ += (class98_sub3.anIntArray3823[i_9_]) * i_10_;
 					else
 						i_8_ += i_10_;
 				}
@@ -79,9 +79,9 @@ final class Class98_Sub6 extends Node {
 
 	final void method979(int i, int i_11_, int i_12_, int[] is) {
 		try {
-			is[1] = i_12_ - ((Class98_Sub6) this).anInt3839 - -anInt3840;
+			is[1] = i_12_ - this.anInt3839 - -anInt3840;
 			is[i_11_] = anInt3842;
-			is[2] = i - -anInt3846 + -((Class98_Sub6) this).anInt3843;
+			is[2] = i - -anInt3846 + -this.anInt3843;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("cd.H(" + i + ',' + i_11_ + ',' + i_12_ + ',' + (is != null ? "{...}" : "null") + ')'));
 		}
@@ -91,7 +91,7 @@ final class Class98_Sub6 extends Node {
 		try {
 			if (i > -94)
 				method980(104, -50, -22);
-			if ((i_13_ ^ 0xffffffff) > (anInt3840 ^ 0xffffffff) || (i_13_ ^ 0xffffffff) < (anInt3848 ^ 0xffffffff) || (anInt3846 ^ 0xffffffff) < (i_14_ ^ 0xffffffff) || anInt3841 < i_14_)
+			if (anInt3840 > i_13_ || anInt3848 < i_13_ || i_14_ < anInt3846 || anInt3841 < i_14_)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -117,13 +117,13 @@ final class Class98_Sub6 extends Node {
 		try {
 			anInt3842 = i;
 			anInt3840 = i_17_;
-			((Class98_Sub6) this).anInt3845 = i_24_;
+			this.anInt3845 = i_24_;
 			anInt3846 = i_18_;
 			anInt3841 = i_20_;
-			((Class98_Sub6) this).anInt3839 = i_21_;
+			this.anInt3839 = i_21_;
 			anInt3848 = i_19_;
-			((Class98_Sub6) this).anInt3838 = i_23_;
-			((Class98_Sub6) this).anInt3843 = i_22_;
+			this.anInt3838 = i_23_;
+			this.anInt3843 = i_22_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("cd.<init>(" + i + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'));
 		}
@@ -133,8 +133,8 @@ final class Class98_Sub6 extends Node {
 		do {
 			try {
 				is[0] = 0;
-				is[2] = ((Class98_Sub6) this).anInt3843 - anInt3846 + i;
-				is[1] = -anInt3840 - (-((Class98_Sub6) this).anInt3839 - i_25_);
+				is[2] = this.anInt3843 - anInt3846 + i;
+				is[1] = -anInt3840 - (-this.anInt3839 - i_25_);
 				if (i_26_ > 43)
 					break;
 				anInt3842 = 27;

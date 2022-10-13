@@ -10,7 +10,7 @@ final class Class144 {
 		try {
 			if (bool != false)
 				return true;
-			if ((i ^ 0xffffffff) != -2 && (i ^ 0xffffffff) != -4 && (i ^ 0xffffffff) != -6)
+			if (i != 1 && i != 3 && i != 5)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

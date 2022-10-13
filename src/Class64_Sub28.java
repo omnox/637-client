@@ -23,7 +23,7 @@ final class Class64_Sub28 extends Class64 {
 
 	final void method550(int i, int i_0_) {
 		try {
-			((Class64) this).anInt494 = i_0_;
+			this.anInt494 = i_0_;
 			int i_1_ = -44 / ((-26 - i) / 41);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "vp.B(" + i + ',' + i_0_ + ')');
@@ -34,7 +34,7 @@ final class Class64_Sub28 extends Class64 {
 		try {
 			if (i < 119)
 				return 12;
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "vp.E(" + i + ')');
 		}
@@ -44,7 +44,7 @@ final class Class64_Sub28 extends Class64 {
 		try {
 			if (i_2_ != 6)
 				anIntArrayArray3719 = null;
-			long l = (long) ((!bool ? 0 : -2147483648) | i);
+			long l = (!bool ? 0 : -2147483648) | i;
 			return (Class98_Sub3) Class142.aClass377_1157.method3990(l, -1);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("vp.H(" + i + ',' + bool + ',' + i_2_ + ')'));
@@ -65,7 +65,7 @@ final class Class64_Sub28 extends Class64 {
 		try {
 			if (i != -1)
 				method551((byte) 19);
-			if (((Class64) this).aClass98_Sub27_495.method1291((byte) 109))
+			if (this.aClass98_Sub27_495.method1291((byte) 109))
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -80,13 +80,13 @@ final class Class64_Sub28 extends Class64 {
 	final void method551(byte i) {
 		do {
 			try {
-				if (((Class64) this).aClass98_Sub27_495.method1291((byte) 118))
-					((Class64) this).anInt494 = 0;
+				if (this.aClass98_Sub27_495.method1291((byte) 118))
+					this.anInt494 = 0;
 				if (i <= 118)
 					anIntArrayArray3719 = null;
-				if (((Class64) this).anInt494 >= 0 || (((Class64) this).anInt494 ^ 0xffffffff) >= -3)
+				if (this.anInt494 >= 0 || this.anInt494 <= 2)
 					break;
-				((Class64) this).anInt494 = method552(0);
+				this.anInt494 = method552(0);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "vp.C(" + i + ')');
 			}
@@ -96,9 +96,9 @@ final class Class64_Sub28 extends Class64 {
 
 	final int method556(int i, int i_5_) {
 		try {
-			if (((Class64) this).aClass98_Sub27_495.method1291((byte) 113))
+			if (this.aClass98_Sub27_495.method1291((byte) 113))
 				return 3;
-			if ((i ^ 0xffffffff) == -1 || (((Class98_Sub27) ((Class64) this).aClass98_Sub27_495).aClass64_Sub25_4039.method655((byte) 121) ^ 0xffffffff) == -2)
+			if (i == 0 || this.aClass98_Sub27_495.aClass64_Sub25_4039.method655((byte) 121) == 1)
 				return 1;
 			if (i_5_ != 29053)
 				method551((byte) -65);

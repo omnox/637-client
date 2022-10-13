@@ -15,7 +15,7 @@ class Class246_Sub4 extends Class246 {
 						if (Class278.aFloat2068 > Class278.aFloat2064)
 							Class278.aFloat2064 = Class278.aFloat2068;
 						aa_Sub1.method155(-1);
-						Class278.anInt2069 = (int) Class278.aFloat2064 >> 9275809;
+						Class278.anInt2069 = (int) Class278.aFloat2064 >> 1;
 						Class278.aByteArrayArrayArray2072 = Class287_Sub2.method3392(Class278.anInt2069, (byte) -86);
 					}
 				} else {
@@ -23,18 +23,18 @@ class Class246_Sub4 extends Class246 {
 					if (Class278.aFloat2064 > Class278.aFloat2068)
 						Class278.aFloat2064 = Class278.aFloat2068;
 					aa_Sub1.method155(-1);
-					Class278.anInt2069 = (int) Class278.aFloat2064 >> 2089293857;
+					Class278.anInt2069 = (int) Class278.aFloat2064 >> 1;
 					Class278.aByteArrayArrayArray2072 = Class287_Sub2.method3392(Class278.anInt2069, (byte) 112);
 				}
 				if (Class101.anInt849 != -1 && Class169.anInt1307 != -1) {
 					int i_2_ = -Class42_Sub4.anInt5371 + Class101.anInt849;
-					if (i_2_ < 2 || (i_2_ ^ 0xffffffff) < -3)
+					if (i_2_ < 2 || i_2_ > 2)
 						i_2_ /= 8;
 					int i_3_ = -Class98_Sub40.anInt4197 + Class169.anInt1307;
 					Class42_Sub4.anInt5371 -= -i_2_;
-					if ((i_3_ ^ 0xffffffff) > -3 || i_3_ > 2)
+					if (i_3_ < 2 || i_3_ > 2)
 						i_3_ /= 8;
-					if (i_2_ == 0 && (i_3_ ^ 0xffffffff) == -1) {
+					if (i_2_ == 0 && i_3_ == 0) {
 						Class101.anInt849 = -1;
 						Class169.anInt1307 = -1;
 					}
@@ -43,7 +43,7 @@ class Class246_Sub4 extends Class246 {
 				}
 				if (i_1_ != 2)
 					method3099(33, 96, (byte) -1);
-				if ((Class64_Sub25.anInt3711 ^ 0xffffffff) >= -1) {
+				if (Class64_Sub25.anInt3711 <= 0) {
 					Class98_Sub5_Sub2.anInt5536 = -1;
 					Class256.anInt1945 = -1;
 				} else {
@@ -56,31 +56,31 @@ class Class246_Sub4 extends Class246 {
 				if (!Class253.aBoolean1930 || Class8.aClass148_110 == null)
 					break;
 				for (Class98_Sub23 class98_sub23 = (Class98_Sub23) Class8.aClass148_110.method2418(32); class98_sub23 != null; class98_sub23 = ((Class98_Sub23) Class8.aClass148_110.method2417(i_1_ ^ 0x73))) {
-					Class24 class24 = (Class278.aClass341_2057.method3807(i_1_ ^ ~0x20, (((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).anInt4268)));
+					Class24 class24 = (Class278.aClass341_2057.method3807(i_1_ ^ ~0x20, (class98_sub23.aClass98_Sub47_3997.anInt4268)));
 					if (!class98_sub23.method1267(-2147483648, i_0_, i)) {
-						if (((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).aBoolean4275) {
-							((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).aBoolean4275 = false;
-							ClientScript2Runtime.method3152((Class98_Sub10_Sub26.aClass105_5684), (((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).anInt4268), ((Class24) class24).anInt246);
+						if (class98_sub23.aClass98_Sub47_3997.aBoolean4275) {
+							class98_sub23.aClass98_Sub47_3997.aBoolean4275 = false;
+							ClientScript2Runtime.method3152((Class98_Sub10_Sub26.aClass105_5684), (class98_sub23.aClass98_Sub47_3997.anInt4268), class24.anInt246);
 						}
 					} else {
-						if (((Class24) class24).aStringArray237 != null) {
-							if (((Class24) class24).aStringArray237[4] != null)
-								GameInterfaceData.method3470(false, true, (long) ((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).anInt4268, -1, ((Class24) class24).anInt246, ((Class24) class24).aString232, false, 0, 1004, (long) ((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).anInt4268, -1, false, ((Class24) class24).aStringArray237[4]);
-							if (((Class24) class24).aStringArray237[3] != null)
-								GameInterfaceData.method3470(false, true, (long) ((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).anInt4268, -1, ((Class24) class24).anInt246, ((Class24) class24).aString232, false, 0, 1010, (long) ((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).anInt4268, -1, false, ((Class24) class24).aStringArray237[3]);
-							if (((Class24) class24).aStringArray237[2] != null)
-								GameInterfaceData.method3470(false, true, (long) ((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).anInt4268, -1, ((Class24) class24).anInt246, ((Class24) class24).aString232, false, 0, 1001, (long) ((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).anInt4268, -1, false, ((Class24) class24).aStringArray237[2]);
-							if (((Class24) class24).aStringArray237[1] != null)
-								GameInterfaceData.method3470(false, true, (long) ((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).anInt4268, -1, ((Class24) class24).anInt246, ((Class24) class24).aString232, false, 0, 1003, (long) ((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).anInt4268, -1, false, ((Class24) class24).aStringArray237[1]);
-							if (((Class24) class24).aStringArray237[0] != null)
-								GameInterfaceData.method3470(false, true, (long) ((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).anInt4268, -1, ((Class24) class24).anInt246, ((Class24) class24).aString232, false, 0, 1011, (long) ((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).anInt4268, -1, false, ((Class24) class24).aStringArray237[0]);
+						if (class24.aStringArray237 != null) {
+							if (class24.aStringArray237[4] != null)
+								GameInterfaceData.method3470(false, true, class98_sub23.aClass98_Sub47_3997.anInt4268, -1, class24.anInt246, class24.aString232, false, 0, 1004, class98_sub23.aClass98_Sub47_3997.anInt4268, -1, false, class24.aStringArray237[4]);
+							if (class24.aStringArray237[3] != null)
+								GameInterfaceData.method3470(false, true, class98_sub23.aClass98_Sub47_3997.anInt4268, -1, class24.anInt246, class24.aString232, false, 0, 1010, class98_sub23.aClass98_Sub47_3997.anInt4268, -1, false, class24.aStringArray237[3]);
+							if (class24.aStringArray237[2] != null)
+								GameInterfaceData.method3470(false, true, class98_sub23.aClass98_Sub47_3997.anInt4268, -1, class24.anInt246, class24.aString232, false, 0, 1001, class98_sub23.aClass98_Sub47_3997.anInt4268, -1, false, class24.aStringArray237[2]);
+							if (class24.aStringArray237[1] != null)
+								GameInterfaceData.method3470(false, true, class98_sub23.aClass98_Sub47_3997.anInt4268, -1, class24.anInt246, class24.aString232, false, 0, 1003, class98_sub23.aClass98_Sub47_3997.anInt4268, -1, false, class24.aStringArray237[1]);
+							if (class24.aStringArray237[0] != null)
+								GameInterfaceData.method3470(false, true, class98_sub23.aClass98_Sub47_3997.anInt4268, -1, class24.anInt246, class24.aString232, false, 0, 1011, class98_sub23.aClass98_Sub47_3997.anInt4268, -1, false, class24.aStringArray237[0]);
 						}
-						if (!((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).aBoolean4275) {
-							((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).aBoolean4275 = true;
-							ClientScript2Runtime.method3152(Class90.aClass105_719, (((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).anInt4268), ((Class24) class24).anInt246);
+						if (!class98_sub23.aClass98_Sub47_3997.aBoolean4275) {
+							class98_sub23.aClass98_Sub47_3997.aBoolean4275 = true;
+							ClientScript2Runtime.method3152(Class90.aClass105_719, (class98_sub23.aClass98_Sub47_3997.anInt4268), class24.anInt246);
 						}
-						if (((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).aBoolean4275)
-							ClientScript2Runtime.method3152(Class331.aClass105_2792, (((Class98_Sub47) (((Class98_Sub23) class98_sub23).aClass98_Sub47_3997)).anInt4268), ((Class24) class24).anInt246);
+						if (class98_sub23.aClass98_Sub47_3997.aBoolean4275)
+							ClientScript2Runtime.method3152(Class331.aClass105_2792, (class98_sub23.aClass98_Sub47_3997.anInt4268), class24.anInt246);
 					}
 				}
 			} catch (RuntimeException runtimeexception) {
@@ -94,7 +94,7 @@ class Class246_Sub4 extends Class246 {
 		try {
 			if (i_4_ < 41)
 				return false;
-			if ((i ^ 0xffffffff) > -13 || (i ^ 0xffffffff) < -18)
+			if (i < 12 || i > 17)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -104,12 +104,12 @@ class Class246_Sub4 extends Class246 {
 
 	final void method3101(int i) {
 		try {
-			if (((Class246_Sub4) this).aClass246_Sub4_5092 != null) {
-				((Class246_Sub4) ((Class246_Sub4) this).aClass246_Sub4_5092).aClass246_Sub4_5091 = ((Class246_Sub4) this).aClass246_Sub4_5091;
-				((Class246_Sub4) ((Class246_Sub4) this).aClass246_Sub4_5091).aClass246_Sub4_5092 = ((Class246_Sub4) this).aClass246_Sub4_5092;
+			if (this.aClass246_Sub4_5092 != null) {
+				this.aClass246_Sub4_5092.aClass246_Sub4_5091 = this.aClass246_Sub4_5091;
+				this.aClass246_Sub4_5091.aClass246_Sub4_5092 = this.aClass246_Sub4_5092;
 				int i_5_ = 16 % ((24 - i) / 38);
-				((Class246_Sub4) this).aClass246_Sub4_5091 = null;
-				((Class246_Sub4) this).aClass246_Sub4_5092 = null;
+				this.aClass246_Sub4_5091 = null;
+				this.aClass246_Sub4_5092 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hs.G(" + i + ')');

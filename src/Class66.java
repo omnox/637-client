@@ -26,7 +26,7 @@ final class Class66 {
 			try {
 				for (;;) {
 					int i_0_ = class98_sub22.readUnsignedByte();
-					if ((i_0_ ^ 0xffffffff) == -1)
+					if (i_0_ == 0)
 						break;
 					method686(i_0_, class98_sub22, (byte) -126);
 				}
@@ -42,11 +42,11 @@ final class Class66 {
 
 	static final int method683(byte i, int i_1_, int i_2_) {
 		try {
-			if ((Class64_Sub10.anInt3666 ^ 0xffffffff) == 0)
+			if (Class64_Sub10.anInt3666 == -1)
 				return 1;
-			if ((((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 122) ^ 0xffffffff) != (i_2_ ^ 0xffffffff)) {
+			if (i_2_ != Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 122)) {
 				Class151_Sub9.method2472(true, TextResources.aClass309_2599.get_text(Class374.anInt3159), i_2_, true);
-				if ((i_2_ ^ 0xffffffff) != (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 126) ^ 0xffffffff))
+				if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 126) != i_2_)
 					return -1;
 			}
 			try {
@@ -72,7 +72,7 @@ final class Class66 {
 							Class76_Sub5.aClass111_3745.method2100((int) (((float) i_6_ - (float) i_5_ / 2.0F) * (float) r_Sub2.anInt6333), 0, (1 + i_5_) * r_Sub2.anInt6333);
 							class146.method2325(Class76_Sub5.aClass111_3745, null, 0);
 							i_3_++;
-							if (((long) i_1_ ^ 0xffffffffffffffffL) >= (-l + Class343.method3819(-47) ^ 0xffffffffffffffffL))
+							if (-l + Class343.method3819(-47) >= (long) i_1_)
 								break while_77_;
 						}
 					}
@@ -113,7 +113,7 @@ final class Class66 {
 								}
 							}
 						}
-						for (int i_12_ = 0; ((i_12_ ^ 0xffffffff) > (Class314.anInt2692 ^ 0xffffffff)); i_12_++) {
+						for (int i_12_ = 0; (Class314.anInt2692 > i_12_); i_12_++) {
 							String string_13_ = Class353.method3867(-1, (Class98_Sub25.aStringArray4026[i_12_]));
 							if (string_13_ != null && string_13_.equals(string_8_)) {
 								za_Sub2.method1684(((TextResources.aClass309_2631.get_text(Class374.anInt3159)) + string + (TextResources.aClass309_2632.get_text(Class374.anInt3159))), 4, (byte) 59);
@@ -127,13 +127,13 @@ final class Class66 {
 								}
 							}
 						}
-						if (Class353.method3867(-1, (((Player) Player.selfPlayer).displayName)).equals(string_8_))
+						if (Class353.method3867(-1, (Player.selfPlayer.displayName)).equals(string_8_))
 							za_Sub2.method1684((TextResources.aClass309_2628.get_text(Class374.anInt3159)), 4, (byte) -66);
 						else {
 							OutgoingPacket class98_sub11 = (Class246_Sub3_Sub4.method3023(260, Class98_Sub8.aClass171_3264, Class331.aClass117_2811));
-							((OutgoingPacket) class98_sub11).packet.writeByte(1 + r_Sub2.method1650(string, (byte) 90));
-							((OutgoingPacket) class98_sub11).packet.method1188(string, (byte) 113);
-							((OutgoingPacket) class98_sub11).packet.writeByte(bool ? 1 : 0);
+							class98_sub11.packet.writeByte(1 + r_Sub2.method1650(string, (byte) 90));
+							class98_sub11.packet.method1188(string, (byte) 113);
+							class98_sub11.packet.writeByte(bool ? 1 : 0);
 							if (i < -40)
 								Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 						}
@@ -148,25 +148,25 @@ final class Class66 {
 	final void method685(int i) {
 		do {
 			try {
-				((Class66) this).anInt514 = (Class284_Sub2_Sub2.anIntArray6202[anInt510 << 1969546147]);
-				long l = (long) ((Class66) this).anInt506;
+				this.anInt514 = (Class284_Sub2_Sub2.anIntArray6202[anInt510 << 3]);
+				long l = this.anInt506;
 				if (i != 1)
-					((Class66) this).anInt509 = 44;
-				long l_15_ = (long) ((Class66) this).anInt511;
-				long l_16_ = (long) ((Class66) this).anInt505;
-				((Class66) this).anInt517 = (int) Math.sqrt((double) (l * l + l_15_ * l_15_ + l_16_ * l_16_));
-				if (((Class66) this).anInt512 == 0)
-					((Class66) this).anInt512 = 1;
-				if ((((Class66) this).anInt518 ^ 0xffffffff) == -1)
-					((Class66) this).aLong516 = 2147483647L;
-				else if ((((Class66) this).anInt518 ^ 0xffffffff) == -2) {
-					((Class66) this).aLong516 = (long) (8 * ((Class66) this).anInt517 / ((Class66) this).anInt512);
-					((Class66) this).aLong516 *= ((Class66) this).aLong516;
-				} else if ((((Class66) this).anInt518 ^ 0xffffffff) == -3)
-					((Class66) this).aLong516 = (long) (8 * ((Class66) this).anInt517 / ((Class66) this).anInt512);
+					this.anInt509 = 44;
+				long l_15_ = this.anInt511;
+				long l_16_ = this.anInt505;
+				this.anInt517 = (int) Math.sqrt((double) (l * l + l_15_ * l_15_ + l_16_ * l_16_));
+				if (this.anInt512 == 0)
+					this.anInt512 = 1;
+				if (this.anInt518 == 0)
+					this.aLong516 = 2147483647L;
+				else if (this.anInt518 == 1) {
+					this.aLong516 = 8 * this.anInt517 / this.anInt512;
+					this.aLong516 *= this.aLong516;
+				} else if (this.anInt518 == 2)
+					this.aLong516 = 8 * this.anInt517 / this.anInt512;
 				if (!aBoolean519)
 					break;
-				((Class66) this).anInt517 *= -1;
+				this.anInt517 *= -1;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "ega.A(" + i + ')');
 			}
@@ -177,31 +177,31 @@ final class Class66 {
 	private final void method686(int i, RSByteBuffer class98_sub22, byte i_17_) {
 		do {
 			try {
-				if ((i ^ 0xffffffff) == -2)
+				if (i == 1)
 					anInt510 = class98_sub22.readShort();
 				else if (i == 2)
 					class98_sub22.readUnsignedByte();
 				else if (i != 3) {
-					if ((i ^ 0xffffffff) == -5) {
-						((Class66) this).anInt518 = class98_sub22.readUnsignedByte();
-						((Class66) this).anInt512 = class98_sub22.readInt(-2);
+					if (i == 4) {
+						this.anInt518 = class98_sub22.readUnsignedByte();
+						this.anInt512 = class98_sub22.readInt(-2);
 					} else if (i == 6)
-						((Class66) this).anInt508 = class98_sub22.readUnsignedByte();
-					else if ((i ^ 0xffffffff) != -9) {
+						this.anInt508 = class98_sub22.readUnsignedByte();
+					else if (i != 8) {
 						if (i == 9)
-							((Class66) this).anInt515 = 1;
-						else if ((i ^ 0xffffffff) == -11)
+							this.anInt515 = 1;
+						else if (i == 10)
 							aBoolean519 = true;
 					} else
-						((Class66) this).anInt513 = 1;
+						this.anInt513 = 1;
 				} else {
-					((Class66) this).anInt506 = class98_sub22.readInt(-2);
-					((Class66) this).anInt511 = class98_sub22.readInt(-2);
-					((Class66) this).anInt505 = class98_sub22.readInt(-2);
+					this.anInt506 = class98_sub22.readInt(-2);
+					this.anInt511 = class98_sub22.readInt(-2);
+					this.anInt505 = class98_sub22.readInt(-2);
 				}
 				if (i_17_ <= -120)
 					break;
-				((Class66) this).anInt518 = 31;
+				this.anInt518 = 31;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("ega.D(" + i + ',' + (class98_sub22 != null ? "{...}" : "null") + ',' + i_17_ + ')'));
 			}

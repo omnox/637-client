@@ -38,8 +38,8 @@ abstract class Class98_Sub28 extends Node {
 	final boolean method1300(int i) {
 		try {
 			if (i != 0)
-				((Class98_Sub28) this).aBoolean4081 = false;
-			return ((Class98_Sub28) this).aBoolean4081;
+				this.aBoolean4081 = false;
+			return this.aBoolean4081;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "lb.N(" + i + ')');
 		}
@@ -60,7 +60,7 @@ abstract class Class98_Sub28 extends Node {
 	final int method1303(int i) {
 		try {
 			if (i != 0)
-				((Class98_Sub28) this).aBoolean4081 = true;
+				this.aBoolean4081 = true;
 			return 1;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "lb.Q(" + i + ')');
@@ -97,9 +97,9 @@ abstract class Class98_Sub28 extends Node {
 			boolean bool = false;
 			boolean bool_8_ = false;
 			boolean bool_9_ = false;
-			if (((Class88) Class98_Sub43_Sub2.aClass88_5907).aBoolean682 && !((Class88) Class98_Sub43_Sub2.aClass88_5907).aBoolean675) {
+			if (Class98_Sub43_Sub2.aClass88_5907.aBoolean682 && !Class98_Sub43_Sub2.aClass88_5907.aBoolean675) {
 				bool = true;
-				if ((((Class98_Sub35) Exception_Sub1.aClass98_Sub35_47).anInt4129) < 512 && (((Class98_Sub35) Exception_Sub1.aClass98_Sub35_47).anInt4129) != 0)
+				if ((Exception_Sub1.aClass98_Sub35_47.anInt4129) < 512 && (Exception_Sub1.aClass98_Sub35_47.anInt4129) != 0)
 					bool = false;
 				if (!Class88.aString699.startsWith("win"))
 					bool_8_ = true;
@@ -130,15 +130,15 @@ abstract class Class98_Sub28 extends Node {
 				if (bool_9_) {
 					try {
 						i_12_ = Class66.method683((byte) -113, 1000, 3);
-						if (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 127) == 3) {
+						if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 127) == 3) {
 							Class62 class62 = Class265.aHa1974.method1799();
-							long l = (0xffffffffffffL & ((Class62) class62).aLong485);
-							int i_13_ = ((Class62) class62).anInt484;
-							if ((i_13_ ^ 0xffffffff) != -4319) {
-								if ((i_13_ ^ 0xffffffff) != -4099)
+							long l = (0xffffffffffffL & class62.aLong485);
+							int i_13_ = class62.anInt484;
+							if (i_13_ != 4318) {
+								if (i_13_ != 4098)
 									break;
 							} else {
-								bool_8_ = bool_8_ & ((l ^ 0xffffffffffffffffL) <= -64425238955L);
+								bool_8_ = bool_8_ & (l >= 64425238954L);
 								break;
 							}
 							bool_8_ = bool_8_ & l >= 60129613779L;
@@ -157,7 +157,7 @@ abstract class Class98_Sub28 extends Node {
 					/* empty */
 				}
 			}
-			if ((i_10_ ^ 0xffffffff) == 0 && (i_11_ ^ 0xffffffff) == 0 && i_12_ == -1)
+			if (i_10_ == -1 && i_11_ == -1 && i_12_ == -1)
 				return Class246_Sub3_Sub4_Sub5.method3085(0);
 			i_12_ *= 1.1F;
 			i_11_ *= 1.1F;
@@ -174,7 +174,7 @@ abstract class Class98_Sub28 extends Node {
 
 	static final int method1307(int i, int i_14_, int i_15_, int i_16_) {
 		try {
-			if ((Class212.anInt1600 ^ 0xffffffff) > -101)
+			if (Class212.anInt1600 < 100)
 				return -2;
 			if (i_14_ != 1)
 				return 57;
@@ -183,10 +183,10 @@ abstract class Class98_Sub28 extends Node {
 			int i_19_ = -Class278.anInt2075 + i_15_;
 			int i_20_ = -Class278.anInt2078 + i_16_;
 			for (Class98_Sub47 class98_sub47 = ((Class98_Sub47) Class278.aClass148_2065.method2418(i_14_ ^ 0x21)); class98_sub47 != null; class98_sub47 = ((Class98_Sub47) Class278.aClass148_2065.method2417(88))) {
-				if (i == ((Class98_Sub47) class98_sub47).anInt4268) {
-					int i_21_ = ((Class98_Sub47) class98_sub47).anInt4272;
-					int i_22_ = ((Class98_Sub47) class98_sub47).anInt4267;
-					int i_23_ = (i_21_ + Class278.anInt2075 << -1106336498 | Class278.anInt2078 + i_22_);
+				if (i == class98_sub47.anInt4268) {
+					int i_21_ = class98_sub47.anInt4272;
+					int i_22_ = class98_sub47.anInt4267;
+					int i_23_ = (i_21_ + Class278.anInt2075 << 14 | Class278.anInt2078 + i_22_);
 					int i_24_ = ((i_20_ + -i_22_) * (i_20_ + -i_22_) + (-i_21_ + i_19_) * (i_19_ - i_21_));
 					if (i_17_ < 0 || i_24_ < i_18_) {
 						i_17_ = i_23_;
@@ -202,7 +202,7 @@ abstract class Class98_Sub28 extends Node {
 
 	Class98_Sub28(ha_Sub1 var_ha_Sub1) {
 		try {
-			((Class98_Sub28) this).aHa_Sub1_4079 = var_ha_Sub1;
+			this.aHa_Sub1_4079 = var_ha_Sub1;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "lb.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ')');
 		}

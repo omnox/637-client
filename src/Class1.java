@@ -24,7 +24,7 @@ final class Class1 {
 		try {
 			if (i_0_ != -101)
 				aBoolean66 = true;
-			if ((i_1_ ^ 0xffffffff) == -2 || (i_1_ ^ 0xffffffff) == -4)
+			if (i_1_ == 1 || i_1_ == 3)
 				return Class98_Sub10_Sub6.anIntArray5559[i & 0x3];
 			return Class299_Sub2.anIntArray5301[0x3 & i];
 		} catch (RuntimeException runtimeexception) {
@@ -48,9 +48,9 @@ final class Class1 {
 							while_0_: do {
 								do {
 									if (i_5_ != 1) {
-										if ((i_5_ ^ 0xffffffff) != -4) {
-											if ((i_5_ ^ 0xffffffff) != -5) {
-												if ((i_5_ ^ 0xffffffff) != -3) {
+										if (i_5_ != 3) {
+											if (i_5_ != 4) {
+												if (i_5_ != 2) {
 													if (i_5_ == 5)
 														break while_1_;
 													break while_2_;
@@ -60,25 +60,25 @@ final class Class1 {
 											break while_0_;
 										}
 									} else {
-										i_3_ = ((Class284_Sub2_Sub2.anIntArray6200[i_4_ << -516328477]) >> -967825788) + 1024;
+										i_3_ = ((Class284_Sub2_Sub2.anIntArray6200[i_4_ << 3]) >> 4) + 1024;
 										break while_3_;
 									}
-									i_3_ = (Class287_Sub1.anIntArray3421[i_4_] >> 1875641633);
+									i_3_ = (Class287_Sub1.anIntArray3421[i_4_] >> 1);
 									break while_3_;
 								} while (false);
-								i_3_ = i_4_ >> -322029302 << 2017264779;
+								i_3_ = i_4_ >> 10 << 11;
 								break while_3_;
 							} while (false);
 							i_3_ = i_4_;
 							break while_3_;
 						} while (false);
-						i_3_ = ((i_4_ < 1024 ? i_4_ : -i_4_ + 2048) << 1254570465);
+						i_3_ = ((i_4_ < 1024 ? i_4_ : -i_4_ + 2048) << 1);
 						break while_3_;
 					} while (false);
 					i_3_ = 2048;
 				}
 			} while (false);
-			((Class1) this).aClass98_Sub5_55.method959((float) (anInt56 + (i_3_ * anInt52 >> 1801072939)) / 2048.0F, 57);
+			this.aClass98_Sub5_55.method959((float) (anInt56 + (i_3_ * anInt52 >> 11)) / 2048.0F, 57);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ab.F(" + bool + ',' + i + ',' + i_2_ + ')'));
 		}
@@ -88,7 +88,7 @@ final class Class1 {
 		try {
 			if (i_6_ >= -79)
 				aBoolean66 = true;
-			if ((i_7_ ^ 0xffffffff) > -1 || i < 0 || Class281.tileSettings[1].length <= i_7_ || ((i ^ 0xffffffff) <= (Class281.tileSettings[1][i_7_].length ^ 0xffffffff)))
+			if (i_7_ < 0 || i < 0 || Class281.tileSettings[1].length <= i_7_ || (Class281.tileSettings[1][i_7_].length <= i))
 				return false;
 			if ((0x2 & Class281.tileSettings[1][i_7_][i]) != 0)
 				return true;
@@ -114,7 +114,7 @@ final class Class1 {
 	private final void method164(int i) {
 		do {
 			try {
-				int i_8_ = ((Class1) this).anInt62;
+				int i_8_ = this.anInt62;
 				while_17_: do {
 					while_16_: do {
 						while_15_: do {
@@ -133,18 +133,18 @@ final class Class1 {
 																			if (i_8_ != 2) {
 																				if (i_8_ != 3) {
 																					if (i_8_ != 4) {
-																						if ((i_8_ ^ 0xffffffff) != -6) {
+																						if (i_8_ != 5) {
 																							if (i_8_ != 12) {
 																								if (i_8_ != 13) {
 																									if (i_8_ != 10) {
 																										if (i_8_ != 11) {
-																											if ((i_8_ ^ 0xffffffff) != -7) {
+																											if (i_8_ != 6) {
 																												if (i_8_ != 7) {
-																													if ((i_8_ ^ 0xffffffff) != -9) {
+																													if (i_8_ != 8) {
 																														if (i_8_ != 9) {
-																															if ((i_8_ ^ 0xffffffff) != -15) {
-																																if ((i_8_ ^ 0xffffffff) != -16) {
-																																	if ((i_8_ ^ 0xffffffff) == -17)
+																															if (i_8_ != 14) {
+																																if (i_8_ != 15) {
+																																	if (i_8_ == 16)
 																																		break while_15_;
 																																	break while_16_;
 																																}
@@ -319,7 +319,7 @@ final class Class1 {
 	private final void method167(byte i, ha var_ha, int i_13_, int i_14_, int i_15_, int i_16_, int i_17_) {
 		do {
 			try {
-				((Class1) this).aClass98_Sub5_55 = var_ha.method1765(i_15_, i_17_, i_13_, i_16_, i_14_, 1.0F);
+				this.aClass98_Sub5_55 = var_ha.method1765(i_15_, i_17_, i_13_, i_16_, i_14_, 1.0F);
 				if (i < -21)
 					break;
 				method164(-124);
@@ -344,32 +344,32 @@ final class Class1 {
 		try {
 			if (Class287_Sub1.anIntArray3421 == null)
 				Class358.method3887(110);
-			((Class1) this).anInt57 = class98_sub22.readUnsignedByte();
-			((Class1) this).aBoolean54 = (0x10 & ((Class1) this).anInt57 ^ 0xffffffff) != -1;
-			((Class1) this).aBoolean58 = (((Class1) this).anInt57 & 0x8 ^ 0xffffffff) != -1;
-			((Class1) this).anInt57 = ((Class1) this).anInt57 & 0x7;
+			this.anInt57 = class98_sub22.readUnsignedByte();
+			this.aBoolean54 = (0x10 & this.anInt57) != 0;
+			this.aBoolean58 = (this.anInt57 & 0x8) != 0;
+			this.anInt57 = this.anInt57 & 0x7;
 			int i_18_ = class98_sub22.readShort() << i;
 			int i_19_ = class98_sub22.readShort() << i;
 			int i_20_ = class98_sub22.readShort() << i;
 			int i_21_ = class98_sub22.readUnsignedByte();
 			int i_22_ = 1 + 2 * i_21_;
-			((Class1) this).aShortArray59 = new short[i_22_];
-			for (int i_23_ = 0; ((i_23_ ^ 0xffffffff) > (((Class1) this).aShortArray59.length ^ 0xffffffff)); i_23_++) {
+			this.aShortArray59 = new short[i_22_];
+			for (int i_23_ = 0; (this.aShortArray59.length > i_23_); i_23_++) {
 				int i_24_ = (short) class98_sub22.readShort();
-				int i_25_ = i_24_ >>> -502532568;
+				int i_25_ = i_24_ >>> 8;
 				int i_26_ = i_24_ & 0xff;
-				if ((i_25_ ^ 0xffffffff) <= (i_22_ ^ 0xffffffff))
+				if (i_22_ <= i_25_)
 					i_25_ = i_22_ - 1;
 				if (i_26_ > -i_25_ + i_22_)
 					i_26_ = -i_25_ + i_22_;
-				((Class1) this).aShortArray59[i_23_] = (short) Class41.method366(i_25_ << 1030619432, i_26_);
+				this.aShortArray59[i_23_] = (short) Class41.method366(i_25_ << 8, i_26_);
 			}
 			i_21_ = (i_21_ << Class151_Sub8.anInt5015) + RuneScapeCache.anInt1577;
 			int i_27_ = (Class208.anIntArray1579 != null ? (Class208.anIntArray1579[class98_sub22.readShort()]) : (Class221.anIntArray1665[Class111_Sub2.method2117(class98_sub22.readShort(), 61) & 0xffff]));
 			int i_28_ = class98_sub22.readUnsignedByte();
-			((Class1) this).anInt62 = 0x1f & i_28_;
-			anInt61 = 0x700 & i_28_ << -997312285;
-			if (((Class1) this).anInt62 != 31)
+			this.anInt62 = 0x1f & i_28_;
+			anInt61 = 0x700 & i_28_ << 3;
+			if (this.anInt62 != 31)
 				method164(-31);
 			method167((byte) -56, var_ha, i_19_, i_27_, i_18_, i_21_, i_20_);
 		} catch (RuntimeException runtimeexception) {

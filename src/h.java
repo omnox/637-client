@@ -25,17 +25,17 @@ final class h extends Class43 implements Interface9 {
 		int[] is_16_ = new int[class324s.length];
 		int[] is_17_ = new int[class324s.length];
 		for (int i = 0; i < class324s.length; i++) {
-			is[i] = ((Class324) class324s[i]).aByteArray2717;
-			is_14_[i] = ((Class324) class324s[i]).anInt2722;
-			is_15_[i] = ((Class324) class324s[i]).anInt2720;
-			is_16_[i] = ((Class324) class324s[i]).anInt2725;
-			is_17_[i] = ((Class324) class324s[i]).anInt2721;
+			is[i] = class324s[i].aByteArray2717;
+			is_14_[i] = class324s[i].anInt2722;
+			is_15_[i] = class324s[i].anInt2720;
+			is_16_[i] = class324s[i].anInt2725;
+			is_17_[i] = class324s[i].anInt2721;
 		}
 		JA(var_oa, var_ya, is, is_14_, is_15_, is_16_, is_17_);
 	}
 
 	protected final void finalize() {
-		if (((h) this).nativeid != 0L)
+		if (this.nativeid != 0L)
 			Class192.method2654(false, this);
 	}
 }

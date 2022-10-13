@@ -13,13 +13,13 @@ final class Class264 {
 
 	static final void method3222(byte i) {
 		try {
-			Class253.anInt1934 = (((Class197) Class98_Sub46_Sub10.aClass197_6019).anInt1517 - (-(((Class197) Class98_Sub46_Sub10.aClass197_6019).anInt1514) - 2));
+			Class253.anInt1934 = (Class98_Sub46_Sub10.aClass197_6019.anInt1517 - (-(Class98_Sub46_Sub10.aClass197_6019.anInt1514) - 2));
 			Class98_Sub46_Sub20.aStringArray6073 = new String[500];
-			Class98_Sub10_Sub12.anInt5598 = (2 + ((Class197) Class42_Sub1.aClass197_5354).anInt1517 + ((Class197) Class42_Sub1.aClass197_5354).anInt1514);
+			Class98_Sub10_Sub12.anInt5598 = (2 + Class42_Sub1.aClass197_5354.anInt1517 + Class42_Sub1.aClass197_5354.anInt1514);
 			int i_0_ = 0;
 			if (i != -43)
 				anInt1971 = 15;
-			for (/**/; ((Class98_Sub46_Sub20.aStringArray6073.length ^ 0xffffffff) < (i_0_ ^ 0xffffffff)); i_0_++)
+			for (/**/; (i_0_ < Class98_Sub46_Sub20.aStringArray6073.length); i_0_++)
 				Class98_Sub46_Sub20.aStringArray6073[i_0_] = "";
 			Class98_Sub46.method1525(TextResources.aClass309_2586.get_text(Class374.anInt3159), i ^ ~0x7b);
 		} catch (RuntimeException runtimeexception) {
@@ -43,7 +43,7 @@ final class Class264 {
 		try {
 			Class98_Sub46_Sub12 class98_sub46_sub12;
 			synchronized (aClass79_1968) {
-				class98_sub46_sub12 = ((Class98_Sub46_Sub12) aClass79_1968.get((long) i_1_));
+				class98_sub46_sub12 = ((Class98_Sub46_Sub12) aClass79_1968.get(i_1_));
 			}
 			if (class98_sub46_sub12 != null)
 				return class98_sub46_sub12;
@@ -55,7 +55,7 @@ final class Class264 {
 			if (is != null)
 				class98_sub46_sub12.method1588(0, new RSByteBuffer(is));
 			synchronized (aClass79_1968) {
-				aClass79_1968.put((long) i_1_, class98_sub46_sub12);
+				aClass79_1968.put(i_1_, class98_sub46_sub12);
 			}
 			return class98_sub46_sub12;
 		} catch (RuntimeException runtimeexception) {

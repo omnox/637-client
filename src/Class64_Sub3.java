@@ -11,7 +11,7 @@ final class Class64_Sub3 extends Class64 {
 		try {
 			if (i < 119)
 				anInt3646 = 36;
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "be.E(" + i + ')');
 		}
@@ -27,7 +27,7 @@ final class Class64_Sub3 extends Class64 {
 			Class333.method3761(i_3_, Class97.anIntArrayArray814[i_0_--], i_2_, i_1_, (byte) 125);
 			if (i_4_ != -10194)
 				anInt3647 = 18;
-			for (int i_5_ = i; (i_5_ ^ 0xffffffff) >= (i_0_ ^ 0xffffffff); i_5_++) {
+			for (int i_5_ = i; i_0_ >= i_5_; i_5_++) {
 				int[] is = Class97.anIntArrayArray814[i_5_];
 				is[i_2_] = is[i_1_] = i_3_;
 			}
@@ -44,7 +44,7 @@ final class Class64_Sub3 extends Class64 {
 		try {
 			if (i != 0)
 				aClass207_3648 = null;
-			if ((((Class64) this).aClass98_Sub27_495.method1286((byte) 104) != s_Sub1.aClass279_5197) || !((Class64) this).aClass98_Sub27_495.method1291((byte) 104))
+			if ((this.aClass98_Sub27_495.method1286((byte) 104) != s_Sub1.aClass279_5197) || !this.aClass98_Sub27_495.method1291((byte) 104))
 				return 1;
 			return 0;
 		} catch (RuntimeException runtimeexception) {
@@ -64,7 +64,7 @@ final class Class64_Sub3 extends Class64 {
 
 	final void method550(int i, int i_7_) {
 		try {
-			((Class64) this).anInt494 = i_7_;
+			this.anInt494 = i_7_;
 			int i_8_ = -62 % ((i - -26) / 41);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "be.B(" + i + ',' + i_7_ + ')');
@@ -74,7 +74,7 @@ final class Class64_Sub3 extends Class64 {
 	final void method551(byte i) {
 		do {
 			try {
-				((Class64) this).anInt494 = method552(0);
+				this.anInt494 = method552(0);
 				if (i >= 118)
 					break;
 				method565(-59, 53, -54, 62, 98, 89);

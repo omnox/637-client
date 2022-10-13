@@ -7,7 +7,7 @@ abstract class Class111 {
 
 	static final boolean method2089(byte i, char c) {
 		try {
-			if (c > 0 && c < 128 || c >= 160 && (c ^ 0xffffffff) >= -256)
+			if (c > 0 && c < 128 || c >= 160 && c <= 255)
 				return true;
 			if (c != 0) {
 				char[] cs = Class65.aCharArray497;
@@ -39,7 +39,7 @@ abstract class Class111 {
 				aByte947 = (byte) -46;
 			if (string == null)
 				return -1;
-			for (int i_8_ = 0; (Class314.anInt2692 ^ 0xffffffff) < (i_8_ ^ 0xffffffff); i_8_++) {
+			for (int i_8_ = 0; i_8_ < Class314.anInt2692; i_8_++) {
 				if (string.equalsIgnoreCase(Class98_Sub25.aStringArray4026[i_8_]))
 					return i_8_;
 			}
@@ -53,7 +53,7 @@ abstract class Class111 {
 		try {
 			if (i_10_ > -84)
 				method2095(67, 68, (byte) 112);
-			if ((i_9_ & 0x20 ^ 0xffffffff) == -1)
+			if ((i_9_ & 0x20) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -66,10 +66,10 @@ abstract class Class111 {
 	abstract void method2097(int i);
 
 	static final void method2098(AnimableEntity class246_sub3) {
-		Class98_Sub10_Sub30.aHa5709.H(((AnimableEntity) class246_sub3).localXPos, (((AnimableEntity) class246_sub3).anInt5089 + (class246_sub3.method2990(0) >> 1)), ((AnimableEntity) class246_sub3).localYPos, Class226.anIntArray1699);
-		((AnimableEntity) class246_sub3).anInt5085 = Class226.anIntArray1699[0];
-		((AnimableEntity) class246_sub3).anInt5080 = Class226.anIntArray1699[1];
-		((AnimableEntity) class246_sub3).anInt5083 = Class226.anIntArray1699[2];
+		Class98_Sub10_Sub30.aHa5709.H(class246_sub3.localXPos, (class246_sub3.anInt5089 + (class246_sub3.method2990(0) >> 1)), class246_sub3.localYPos, Class226.anIntArray1699);
+		class246_sub3.anInt5085 = Class226.anIntArray1699[0];
+		class246_sub3.anInt5080 = Class226.anIntArray1699[1];
+		class246_sub3.anInt5083 = Class226.anIntArray1699[2];
 	}
 
 	abstract void method2099(int i, int i_13_, int i_14_, int[] is);

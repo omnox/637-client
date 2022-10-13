@@ -26,10 +26,10 @@ final class Class310 {
 						break;
 					while (class143.anInt1163 == 0)
 						Class246_Sub7.method3131(i + 5964, 1L);
-					if ((class143.anInt1163 ^ 0xffffffff) == -2) {
+					if (class143.anInt1163 == 1) {
 						class356 = (Class356) class143.anObject1162;
 						RSByteBuffer class98_sub22 = Class98_Sub9.aClass98_Sub27_3856.method1288(true);
-						class356.method3882((((RSByteBuffer) class98_sub22).data), 4657, 0, (((RSByteBuffer) class98_sub22).position));
+						class356.method3882((class98_sub22.data), 4657, 0, (class98_sub22.position));
 					}
 				} catch (Exception exception) {
 					/* empty */

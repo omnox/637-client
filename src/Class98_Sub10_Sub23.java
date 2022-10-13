@@ -39,7 +39,7 @@ final class Class98_Sub10_Sub23 extends Class98_Sub10 {
 					do {
 						if (i_1_ != 0) {
 							if (i_1_ != 1) {
-								if ((i_1_ ^ 0xffffffff) == -3)
+								if (i_1_ == 2)
 									break;
 								break while_132_;
 							}
@@ -82,7 +82,7 @@ final class Class98_Sub10_Sub23 extends Class98_Sub10 {
 			anIntArray5660 = new int[1 + anInt5664];
 			int i_2_ = 0;
 			int i_3_ = 4096 / anInt5664;
-			int i_4_ = i_3_ * anInt5657 >> -946071060;
+			int i_4_ = i_3_ * anInt5657 >> 12;
 			int i_5_ = 0;
 			if (i != -6)
 				anInt5657 = -68;
@@ -100,14 +100,14 @@ final class Class98_Sub10_Sub23 extends Class98_Sub10 {
 
 	final int[] method990(int i, int i_6_) {
 		try {
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_6_);
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
+			int[] is = this.aClass16_3863.method237((byte) 98, i_6_);
+			if (this.aClass16_3863.aBoolean198) {
 				int i_7_ = Class352.anIntArray3001[i_6_];
-				if ((anInt5663 ^ 0xffffffff) == -1) {
+				if (anInt5663 == 0) {
 					int i_8_ = 0;
 					for (int i_9_ = 0; anInt5664 > i_9_; i_9_++) {
-						if ((i_7_ ^ 0xffffffff) <= (anIntArray5660[i_9_] ^ 0xffffffff) && ((anIntArray5660[1 + i_9_] ^ 0xffffffff) < (i_7_ ^ 0xffffffff))) {
-							if ((anIntArray5658[i_9_] ^ 0xffffffff) < (i_7_ ^ 0xffffffff))
+						if (anIntArray5660[i_9_] <= i_7_ && (i_7_ < anIntArray5660[1 + i_9_])) {
+							if (i_7_ < anIntArray5658[i_9_])
 								i_8_ = 4096;
 							break;
 						}
@@ -122,8 +122,8 @@ final class Class98_Sub10_Sub23 extends Class98_Sub10 {
 						while_133_: do {
 							do {
 								if (i_14_ != 1) {
-									if ((i_14_ ^ 0xffffffff) != -3) {
-										if ((i_14_ ^ 0xffffffff) == -4)
+									if (i_14_ != 2) {
+										if (i_14_ == 3)
 											break;
 										break while_133_;
 									}
@@ -131,14 +131,14 @@ final class Class98_Sub10_Sub23 extends Class98_Sub10 {
 									i_11_ = i_13_;
 									break while_133_;
 								}
-								i_11_ = 2048 + (i_13_ + -4096 + i_7_ >> -752554751);
+								i_11_ = 2048 + (i_13_ + -4096 + i_7_ >> 1);
 								break while_133_;
 							} while (false);
-							i_11_ = (i_13_ + -i_7_ >> 2077425665) + 2048;
+							i_11_ = (i_13_ + -i_7_ >> 1) + 2048;
 						} while (false);
-						for (i_14_ = 0; (anInt5664 ^ 0xffffffff) < (i_14_ ^ 0xffffffff); i_14_++) {
-							if (((anIntArray5660[i_14_] ^ 0xffffffff) >= (i_11_ ^ 0xffffffff)) && ((anIntArray5660[i_14_ - -1] ^ 0xffffffff) < (i_11_ ^ 0xffffffff))) {
-								if ((anIntArray5658[i_14_] ^ 0xffffffff) < (i_11_ ^ 0xffffffff))
+						for (i_14_ = 0; i_14_ < anInt5664; i_14_++) {
+							if ((i_11_ >= anIntArray5660[i_14_]) && (i_11_ < anIntArray5660[i_14_ - -1])) {
+								if (i_11_ < anIntArray5658[i_14_])
 									i_12_ = 4096;
 								break;
 							}

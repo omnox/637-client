@@ -27,13 +27,13 @@ final class Class336 {
 				char c_7_;
 				char c_8_;
 				for (;;) {
-					if (i_2_ <= -c + i_4_ && (i_3_ ^ 0xffffffff) >= (-c_6_ + i_5_ ^ 0xffffffff))
+					if (i_2_ <= -c + i_4_ && -c_6_ + i_5_ >= i_3_)
 						break while_225_;
 					if (i_2_ <= i_4_ - c)
 						return -1;
 					if (i_5_ + -c_6_ >= i_3_)
 						return 1;
-					if ((c ^ 0xffffffff) == -1)
+					if (c == 0)
 						c_7_ = string.charAt(i_4_++);
 					else {
 						c_7_ = c;
@@ -49,10 +49,10 @@ final class Class336 {
 					c_6_ = Class263.method3217(14561, c_8_);
 					c_7_ = Class76_Sub10.method769(c_7_, i, (byte) -85);
 					c_8_ = Class76_Sub10.method769(c_8_, i, (byte) -123);
-					if ((c_7_ ^ 0xffffffff) != (c_8_ ^ 0xffffffff) && ((Character.toUpperCase(c_7_) ^ 0xffffffff) != (Character.toUpperCase(c_8_) ^ 0xffffffff))) {
+					if (c_8_ != c_7_ && (Character.toUpperCase(c_8_) != Character.toUpperCase(c_7_))) {
 						c_7_ = Character.toLowerCase(c_7_);
 						c_8_ = Character.toLowerCase(c_8_);
-						if ((c_8_ ^ 0xffffffff) != (c_7_ ^ 0xffffffff))
+						if (c_7_ != c_8_)
 							break;
 					}
 				}
@@ -67,10 +67,10 @@ final class Class336 {
 					i_4_ = i_5_ = i_10_;
 				char c_11_ = string.charAt(i_4_);
 				char c_12_ = string_0_.charAt(i_5_);
-				if ((c_11_ ^ 0xffffffff) != (c_12_ ^ 0xffffffff) && ((Character.toUpperCase(c_11_) ^ 0xffffffff) != (Character.toUpperCase(c_12_) ^ 0xffffffff))) {
+				if (c_12_ != c_11_ && (Character.toUpperCase(c_12_) != Character.toUpperCase(c_11_))) {
 					c_11_ = Character.toLowerCase(c_11_);
 					c_12_ = Character.toLowerCase(c_12_);
-					if ((c_12_ ^ 0xffffffff) != (c_11_ ^ 0xffffffff))
+					if (c_11_ != c_12_)
 						return (Class347.method3834(i, c_11_, (byte) -106) + -Class347.method3834(i, c_12_, (byte) -103));
 				}
 			}
@@ -95,47 +95,47 @@ final class Class336 {
 		try {
 			if (i_20_ > 0 && !Class81.method815(i_20_, 0))
 				throw new IllegalArgumentException("");
-			if ((i_22_ ^ 0xffffffff) < -1 && !Class81.method815(i_22_, 0))
+			if (i_22_ > 0 && !Class81.method815(i_22_, 0))
 				throw new IllegalArgumentException("");
 			if (i_21_ != 32993)
 				throw new IllegalArgumentException("");
 			int i_23_ = 0;
 			int i_24_ = i_20_ >= i_22_ ? i_22_ : i_20_;
-			int i_26_ = i_20_ >> 197585345;
-			int i_27_ = i_22_ >> 1631935457;
+			int i_26_ = i_20_ >> 1;
+			int i_27_ = i_22_ >> 1;
 			int[] is_28_ = is;
 			int[] is_29_ = new int[i_26_ * i_27_];
 			for (;;) {
 				OpenGL.glTexImage2Di(i_19_, i_23_, i, i_20_, i_22_, 0, i_21_, i_18_, is_28_, 0);
-				if ((i_24_ ^ 0xffffffff) >= -2)
+				if (i_24_ <= 1)
 					break;
 				int i_30_ = 0;
 				int i_31_ = 0;
 				int i_32_ = i_20_ + i_31_;
 				int[] is_33_ = is_29_;
 				for (int i_34_ = 0; i_27_ > i_34_; i_34_++) {
-					for (int i_35_ = 0; (i_26_ ^ 0xffffffff) < (i_35_ ^ 0xffffffff); i_35_++) {
+					for (int i_35_ = 0; i_35_ < i_26_; i_35_++) {
 						int i_36_ = is_28_[i_31_++];
 						int i_37_ = is_28_[i_31_++];
 						int i_38_ = is_28_[i_32_++];
 						int i_39_ = is_28_[i_32_++];
-						int i_40_ = (0xff9f & i_36_) >> -421974616;
-						int i_41_ = 0xff & i_36_ >> -43327976;
+						int i_40_ = (0xff9f & i_36_) >> 8;
+						int i_41_ = 0xff & i_36_ >> 24;
 						int i_42_ = 0xff & i_36_;
-						int i_43_ = (0xff69b8 & i_36_) >> -776339632;
-						i_40_ += (i_37_ & 0xff1c) >> 812194376;
+						int i_43_ = (0xff69b8 & i_36_) >> 16;
+						i_40_ += (i_37_ & 0xff1c) >> 8;
 						i_42_ += 0xff & i_37_;
-						i_43_ += 0xff & i_37_ >> 1557675760;
-						i_41_ += i_37_ >> 243371288 & 0xff;
+						i_43_ += 0xff & i_37_ >> 16;
+						i_41_ += i_37_ >> 24 & 0xff;
 						i_42_ += i_38_ & 0xff;
-						i_43_ += (0xff241e & i_38_) >> -1634852208;
-						i_40_ += 0xff & i_38_ >> -531512024;
-						i_41_ += i_38_ >> 458737752 & 0xff;
-						i_43_ += 0xff & i_39_ >> -1828159344;
+						i_43_ += (0xff241e & i_38_) >> 16;
+						i_40_ += 0xff & i_38_ >> 8;
+						i_41_ += i_38_ >> 24 & 0xff;
+						i_43_ += 0xff & i_39_ >> 16;
 						i_42_ += i_39_ & 0xff;
-						i_41_ += i_39_ >> -1038206792 & 0xff;
-						i_40_ += (0xff74 & i_39_) >> -1994009752;
-						is_29_[i_30_++] = (Class41.method366((Class41.method366((Class202.method2702(i_40_, 1020) << 2110065190), (Class41.method366((Class202.method2702(i_43_, 1020) << 1166845806), Class202.method2702(-16777216, (i_41_ << -1269502378)))))), Class202.method2702(255, i_42_ >> 786651458)));
+						i_41_ += i_39_ >> 24 & 0xff;
+						i_40_ += (0xff74 & i_39_) >> 8;
+						is_29_[i_30_++] = (Class41.method366((Class41.method366((Class202.method2702(i_40_, 1020) << 6), (Class41.method366((Class202.method2702(i_43_, 1020) << 14), Class202.method2702(-16777216, (i_41_ << 22)))))), Class202.method2702(255, i_42_ >> 2)));
 					}
 					i_31_ += i_20_;
 					i_32_ += i_20_;
@@ -156,7 +156,7 @@ final class Class336 {
 
 	protected final void finalize() throws Throwable {
 		try {
-			aHa_Sub1_2824.method1855(false, ((Class336) this).aLong2821);
+			aHa_Sub1_2824.method1855(false, this.aLong2821);
 			super.finalize();
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uj.finalize(" + ')');
@@ -180,7 +180,7 @@ final class Class336 {
 
 	Class336(ha_Sub1 var_ha_Sub1, long l, Class345[] class345s) {
 		try {
-			((Class336) this).aLong2821 = l;
+			this.aLong2821 = l;
 			aHa_Sub1_2824 = var_ha_Sub1;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("uj.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ',' + l + ',' + (class345s != null ? "{...}" : "null") + ')'));

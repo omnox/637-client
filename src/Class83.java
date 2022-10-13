@@ -17,16 +17,16 @@ final class Class83 {
 					int i_0_ = Class2.aClass299_73.method3514(116);
 					int i_1_ = Class2.aClass299_73.method3507((byte) 58);
 					if (!Class248.aBoolean1896) {
-						if (Class38.anInt355 < i_0_ && ((i_0_ ^ 0xffffffff) > ((Class246_Sub3_Sub4_Sub4.anInt6488 + Class38.anInt355) ^ 0xffffffff))) {
+						if (Class38.anInt355 < i_0_ && ((Class246_Sub3_Sub4_Sub4.anInt6488 + Class38.anInt355) > i_0_)) {
 							int i_2_ = -1;
 							for (int i_3_ = 0; i_3_ < Class359.anInt3058; i_3_++) {
 								if (!Class98_Sub5_Sub3.aBoolean5539) {
 									int i_4_ = ((Class359.anInt3058 + (-1 + -i_3_)) * 16 + 31 + Class104.anInt897);
-									if (((i_4_ - 13 ^ 0xffffffff) > (i_1_ ^ 0xffffffff)) && ((i_4_ + 3 ^ 0xffffffff) <= (i_1_ ^ 0xffffffff)))
+									if ((i_1_ > i_4_ - 13) && (i_1_ <= i_4_ + 3))
 										i_2_ = i_3_;
 								} else {
 									int i_5_ = 33 + (Class104.anInt897 + (-i_3_ + Class359.anInt3058 - 1) * 16);
-									if ((i_1_ ^ 0xffffffff) < (i_5_ - 13 ^ 0xffffffff) && ((i_1_ ^ 0xffffffff) >= (i_5_ + 3 ^ 0xffffffff)))
+									if (i_5_ - 13 < i_1_ && (i_5_ + 3 >= i_1_))
 										i_2_ = i_3_;
 								}
 							}
@@ -35,14 +35,14 @@ final class Class83 {
 								Class157 class157 = new Class157(Class33.aClass148_315);
 								for (Class98_Sub46_Sub8 class98_sub46_sub8 = ((Class98_Sub46_Sub8) class157.method2504((byte) -121)); class98_sub46_sub8 != null; class98_sub46_sub8 = ((Class98_Sub46_Sub8) class157.method2503(1000))) {
 									if (i_6_++ == i_2_)
-										return (((Class98_Sub46_Sub8) class98_sub46_sub8).anInt5986);
+										return (class98_sub46_sub8.anInt5986);
 								}
 							}
 						}
 					} else if (Class38.anInt355 >= i_0_ || Class38.anInt355 + (Class246_Sub3_Sub4_Sub4.anInt6488) <= i_0_) {
-						if (Class308.aClass98_Sub46_Sub9_2583 != null && (i_0_ ^ 0xffffffff) < (Class282.anInt2128 ^ 0xffffffff) && (Class5.anInt3439 + Class282.anInt2128 ^ 0xffffffff) < (i_0_ ^ 0xffffffff)) {
+						if (Class308.aClass98_Sub46_Sub9_2583 != null && Class282.anInt2128 < i_0_ && i_0_ < Class5.anInt3439 + Class282.anInt2128) {
 							int i_7_ = -1;
-							for (int i_8_ = 0; ((i_8_ ^ 0xffffffff) > ((((Class98_Sub46_Sub9) Class308.aClass98_Sub46_Sub9_2583).anInt6001) ^ 0xffffffff)); i_8_++) {
+							for (int i_8_ = 0; ((Class308.aClass98_Sub46_Sub9_2583.anInt6001) > i_8_); i_8_++) {
 								if (!Class98_Sub5_Sub3.aBoolean5539) {
 									int i_9_ = 31 + (Class163.anInt3518 + i_8_ * 16);
 									if (-13 + i_9_ < i_1_ && i_9_ - -3 >= i_1_)
@@ -55,10 +55,10 @@ final class Class83 {
 							}
 							if (i_7_ != -1) {
 								int i_11_ = 0;
-								Class252 class252 = (new Class252(((Class98_Sub46_Sub9) Class308.aClass98_Sub46_Sub9_2583).aClass215_5999));
+								Class252 class252 = (new Class252(Class308.aClass98_Sub46_Sub9_2583.aClass215_5999));
 								for (Class98_Sub46_Sub8 class98_sub46_sub8 = ((Class98_Sub46_Sub8) class252.method3173(true)); class98_sub46_sub8 != null; class98_sub46_sub8 = ((Class98_Sub46_Sub8) class252.method3174(0))) {
-									if ((i_7_ ^ 0xffffffff) == (i_11_++ ^ 0xffffffff))
-										return (((Class98_Sub46_Sub8) class98_sub46_sub8).anInt5986);
+									if (i_11_++ == i_7_)
+										return (class98_sub46_sub8.anInt5986);
 								}
 							}
 						}
@@ -67,25 +67,25 @@ final class Class83 {
 						for (int i_13_ = 0; Class64_Sub12.anInt3672 > i_13_; i_13_++) {
 							if (!Class98_Sub5_Sub3.aBoolean5539) {
 								int i_14_ = Class104.anInt897 + (31 - -(16 * i_13_));
-								if ((i_14_ - 13 ^ 0xffffffff) > (i_1_ ^ 0xffffffff) && 3 + i_14_ >= i_1_)
+								if (i_1_ > i_14_ - 13 && 3 + i_14_ >= i_1_)
 									i_12_ = i_13_;
 							} else {
 								int i_15_ = 33 + (Class104.anInt897 - -(i_13_ * 16));
-								if (i_15_ - 13 < i_1_ && ((i_15_ + 3 ^ 0xffffffff) <= (i_1_ ^ 0xffffffff)))
+								if (i_15_ - 13 < i_1_ && (i_1_ <= i_15_ + 3))
 									i_12_ = i_13_;
 							}
 						}
-						if ((i_12_ ^ 0xffffffff) != 0) {
+						if (i_12_ != -1) {
 							int i_16_ = 0;
 							Class252 class252 = new Class252(GameInterface.aClass215_3949);
 							for (Class98_Sub46_Sub9 class98_sub46_sub9 = ((Class98_Sub46_Sub9) class252.method3173(true)); class98_sub46_sub9 != null; class98_sub46_sub9 = ((Class98_Sub46_Sub9) class252.method3174(0))) {
 								if (i_16_++ == i_12_)
-									return (((Class98_Sub46_Sub8) (Class98_Sub46_Sub8) (((Class98_Sub46) (((Class215) (((Class98_Sub46_Sub9) class98_sub46_sub9).aClass215_5999)).aClass98_Sub46_1615)).aClass98_Sub46_4262)).anInt5986);
+									return (((Class98_Sub46_Sub8) class98_sub46_sub9.aClass215_5999.aClass98_Sub46_1615.aClass98_Sub46_4262).anInt5986);
 							}
 						}
 					}
 				} else
-					return (((Class98_Sub46_Sub8) Class266.aClass98_Sub46_Sub8_1994).anInt5986);
+					return (Class266.aClass98_Sub46_Sub8_1994.anInt5986);
 			}
 			return -1;
 		} catch (RuntimeException runtimeexception) {
@@ -101,7 +101,7 @@ final class Class83 {
 		try {
 			Class152 class152;
 			synchronized (aClass79_634) {
-				class152 = (Class152) aClass79_634.get((long) i);
+				class152 = (Class152) aClass79_634.get(i);
 			}
 			if (class152 != null)
 				return class152;
@@ -110,11 +110,11 @@ final class Class83 {
 				is = aClass207_633.readArchive(i, i_17_);
 			}
 			class152 = new Class152();
-			((Class152) class152).aClass83_1220 = this;
+			class152.aClass83_1220 = this;
 			if (is != null)
 				class152.method2480(false, new RSByteBuffer(is));
 			synchronized (aClass79_634) {
-				aClass79_634.put((long) i, class152);
+				aClass79_634.put(i, class152);
 			}
 			return class152;
 		} catch (RuntimeException runtimeexception) {
@@ -180,7 +180,7 @@ final class Class83 {
 	Class83(Class279 class279, int i, RuneScapeCache class207, RuneScapeCache class207_20_) {
 		try {
 			aClass207_633 = class207;
-			((Class83) this).aClass207_631 = class207_20_;
+			this.aClass207_631 = class207_20_;
 			aClass207_633.method2761(0, 3);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("fga.<init>(" + (class279 != null ? "{...}" : "null") + ',' + i + ',' + (class207 != null ? "{...}" : "null") + ',' + (class207_20_ != null ? "{...}" : "null") + ')'));

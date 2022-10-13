@@ -38,11 +38,11 @@ class Class337 implements Interface21 {
 
 	Class337(int i, Class63 class63, Class110 class110, int i_0_, int i_1_) {
 		try {
-			((Class337) this).anInt3542 = i_1_;
-			((Class337) this).anInt3535 = i;
-			((Class337) this).aClass63_3538 = class63;
-			((Class337) this).aClass110_3540 = class110;
-			((Class337) this).anInt3541 = i_0_;
+			this.anInt3542 = i_1_;
+			this.anInt3535 = i;
+			this.aClass63_3538 = class63;
+			this.aClass110_3540 = class110;
+			this.anInt3541 = i_0_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("uk.<init>(" + i + ',' + (class63 != null ? "{...}" : "null") + ',' + (class110 != null ? "{...}" : "null") + ',' + i_0_ + ',' + i_1_ + ')'));
 		}

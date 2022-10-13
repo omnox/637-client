@@ -19,33 +19,33 @@ final class Class223 {
 		try {
 			if (i_0_ != 0)
 				return null;
-			if ((anInt1674 ^ 0xffffffff) == (anInt1677 ^ 0xffffffff)) {
-				((Class223) this).aBoolean1683 = aClass98_Sub9Array1678[i] == null;
+			if (anInt1677 == anInt1674) {
+				this.aBoolean1683 = aClass98_Sub9Array1678[i] == null;
 				aClass98_Sub9Array1678[i] = Class354.aClass98_Sub9_3014;
 				return anIntArrayArrayArray1680[i];
 			}
 			if (anInt1677 == 1) {
-				((Class223) this).aBoolean1683 = (anInt1675 ^ 0xffffffff) != (i ^ 0xffffffff);
+				this.aBoolean1683 = i != anInt1675;
 				anInt1675 = i;
 				return anIntArrayArrayArray1680[0];
 			}
 			Class98_Sub9 class98_sub9 = aClass98_Sub9Array1678[i];
 			if (class98_sub9 == null) {
-				((Class223) this).aBoolean1683 = true;
-				if ((anInt1677 ^ 0xffffffff) < (anInt1682 ^ 0xffffffff)) {
+				this.aBoolean1683 = true;
+				if (anInt1682 < anInt1677) {
 					class98_sub9 = new Class98_Sub9(i, anInt1682);
 					anInt1682++;
 				} else {
 					Class98_Sub9 class98_sub9_1_ = (Class98_Sub9) aClass148_1673.method2427(i_0_ + -52);
-					class98_sub9 = new Class98_Sub9(i, (((Class98_Sub9) class98_sub9_1_).anInt3853));
-					aClass98_Sub9Array1678[(((Class98_Sub9) class98_sub9_1_).anInt3852)] = null;
+					class98_sub9 = new Class98_Sub9(i, (class98_sub9_1_.anInt3853));
+					aClass98_Sub9Array1678[(class98_sub9_1_.anInt3852)] = null;
 					class98_sub9_1_.remove();
 				}
 				aClass98_Sub9Array1678[i] = class98_sub9;
 			} else
-				((Class223) this).aBoolean1683 = false;
+				this.aBoolean1683 = false;
 			aClass148_1673.method2423(-2, class98_sub9);
-			return (anIntArrayArrayArray1680[((Class98_Sub9) class98_sub9).anInt3853]);
+			return (anIntArrayArrayArray1680[class98_sub9.anInt3853]);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "oea.E(" + i + ',' + i_0_ + ')');
 		}
@@ -67,9 +67,9 @@ final class Class223 {
 		try {
 			if (i != 26279)
 				method2828(-62, -13);
-			if ((anInt1674 ^ 0xffffffff) != (anInt1677 ^ 0xffffffff))
+			if (anInt1677 != anInt1674)
 				throw new RuntimeException("Can only retrieve a full image cache");
-			for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > (anInt1677 ^ 0xffffffff); i_4_++)
+			for (int i_4_ = 0; anInt1677 > i_4_; i_4_++)
 				aClass98_Sub9Array1678[i_4_] = Class354.aClass98_Sub9_3014;
 			return anIntArrayArrayArray1680;
 		} catch (RuntimeException runtimeexception) {
@@ -106,7 +106,7 @@ final class Class223 {
 
 	Class223(int i, int i_6_, int i_7_) {
 		aClass148_1673 = new LinkedList();
-		((Class223) this).aBoolean1683 = false;
+		this.aBoolean1683 = false;
 		try {
 			anInt1674 = i_6_;
 			anInt1677 = i;

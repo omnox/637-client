@@ -55,13 +55,13 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 			anInt5882 += i;
 			if (anInt5874 == -256 && (anInt5879 & 0xff) == 0) {
 				if (Class151_Sub7.aBoolean5007)
-					i = method1420(0, ((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) (((Class98_Sub31) this).aClass98_Sub24_4104)).aByteArray5799, is, anInt5879, i, anInt5876, anInt5880, anInt5871, anInt5868, 0, i_14_, i_11_, this);
+					i = method1420(0, ((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799, is, anInt5879, i, anInt5876, anInt5880, anInt5871, anInt5868, 0, i_14_, i_11_, this);
 				else
-					i = method1418(((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) (((Class98_Sub31) this).aClass98_Sub24_4104)).aByteArray5799, is, anInt5879, i, anInt5877, anInt5878, 0, i_14_, i_11_, this);
+					i = method1418(((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799, is, anInt5879, i, anInt5877, anInt5878, 0, i_14_, i_11_, this);
 			} else if (Class151_Sub7.aBoolean5007)
-				i = method1409(0, 0, (((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5876, anInt5880, anInt5871, anInt5868, 0, i_14_, i_11_, this, anInt5874, i_13_);
+				i = method1409(0, 0, (((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5876, anInt5880, anInt5871, anInt5868, 0, i_14_, i_11_, this, anInt5874, i_13_);
 			else
-				i = method1395(0, 0, (((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5877, anInt5878, 0, i_14_, i_11_, this, anInt5874, i_13_);
+				i = method1395(0, 0, (((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5877, anInt5878, 0, i_14_, i_11_, this, anInt5874, i_13_);
 			anInt5882 -= i;
 			if (anInt5882 != 0)
 				return i;
@@ -70,12 +70,12 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 		}
 		if (anInt5874 == -256 && (anInt5879 & 0xff) == 0) {
 			if (Class151_Sub7.aBoolean5007)
-				return method1429(0, (((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5876, anInt5880, 0, i_12_, i_11_, this);
-			return method1414((((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5877, 0, i_12_, i_11_, this);
+				return method1429(0, (((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5876, anInt5880, 0, i_12_, i_11_, this);
+			return method1414((((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5877, 0, i_12_, i_11_, this);
 		}
 		if (Class151_Sub7.aBoolean5007)
-			return method1406(0, 0, (((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5876, anInt5880, 0, i_12_, i_11_, this, anInt5874, i_13_);
-		return method1404(0, 0, (((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5877, 0, i_12_, i_11_, this, anInt5874, i_13_);
+			return method1406(0, 0, (((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5876, anInt5880, 0, i_12_, i_11_, this, anInt5874, i_13_);
+		return method1404(0, 0, (((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5877, 0, i_12_, i_11_, this, anInt5874, i_13_);
 	}
 
 	private static final int method1395(int i, int i_15_, byte[] is, int[] is_16_, int i_17_, int i_18_, int i_19_, int i_20_, int i_21_, int i_22_, int i_23_, Class98_Sub31_Sub5 class98_sub31_sub5, int i_24_, int i_25_) {
@@ -114,10 +114,10 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 		if (anInt5881 == 0 && anInt5882 == 0)
 			method1321(i_26_);
 		else {
-			Class98_Sub24_Sub1 class98_sub24_sub1 = ((Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104);
+			Class98_Sub24_Sub1 class98_sub24_sub1 = ((Class98_Sub24_Sub1) this.aClass98_Sub24_4104);
 			int i_27_ = anInt5869 << 8;
 			int i_28_ = anInt5870 << 8;
-			int i_29_ = ((((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799).length << 8);
+			int i_29_ = ((class98_sub24_sub1.aByteArray5799).length << 8);
 			int i_30_ = i_28_ - i_27_;
 			if (i_30_ <= 0)
 				anInt5872 = 0;
@@ -144,19 +144,19 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 			if (anInt5872 < 0) {
 				if (aBoolean5873) {
 					if (anInt5874 < 0) {
-						i_31_ = method1394(is, i_31_, i_27_, i_26_, (((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799[anInt5869]));
+						i_31_ = method1394(is, i_31_, i_27_, i_26_, (class98_sub24_sub1.aByteArray5799[anInt5869]));
 						if (anInt5879 >= i_27_)
 							return;
 						anInt5879 = i_27_ + i_27_ - 1 - anInt5879;
 						anInt5874 = -anInt5874;
 					}
 					for (;;) {
-						i_31_ = method1428(is, i_31_, i_28_, i_26_, (((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799[anInt5870 - 1]));
+						i_31_ = method1428(is, i_31_, i_28_, i_26_, (class98_sub24_sub1.aByteArray5799[anInt5870 - 1]));
 						if (anInt5879 < i_28_)
 							break;
 						anInt5879 = i_28_ + i_28_ - 1 - anInt5879;
 						anInt5874 = -anInt5874;
-						i_31_ = method1394(is, i_31_, i_27_, i_26_, (((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799[anInt5869]));
+						i_31_ = method1394(is, i_31_, i_27_, i_26_, (class98_sub24_sub1.aByteArray5799[anInt5869]));
 						if (anInt5879 >= i_27_)
 							break;
 						anInt5879 = i_27_ + i_27_ - 1 - anInt5879;
@@ -164,14 +164,14 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 					}
 				} else if (anInt5874 < 0) {
 					for (;;) {
-						i_31_ = method1394(is, i_31_, i_27_, i_26_, (((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799[anInt5870 - 1]));
+						i_31_ = method1394(is, i_31_, i_27_, i_26_, (class98_sub24_sub1.aByteArray5799[anInt5870 - 1]));
 						if (anInt5879 >= i_27_)
 							break;
 						anInt5879 = i_28_ - 1 - (i_28_ - 1 - anInt5879) % i_30_;
 					}
 				} else {
 					for (;;) {
-						i_31_ = method1428(is, i_31_, i_28_, i_26_, (((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799[anInt5869]));
+						i_31_ = method1428(is, i_31_, i_28_, i_26_, (class98_sub24_sub1.aByteArray5799[anInt5869]));
 						if (anInt5879 < i_28_)
 							break;
 						anInt5879 = i_27_ + (anInt5879 - i_27_) % i_30_;
@@ -182,7 +182,7 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 					if (anInt5872 > 0) {
 						if (aBoolean5873) {
 							if (anInt5874 < 0) {
-								i_31_ = method1394(is, i_31_, i_27_, i_26_, (((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799[anInt5869]));
+								i_31_ = method1394(is, i_31_, i_27_, i_26_, (class98_sub24_sub1.aByteArray5799[anInt5869]));
 								if (anInt5879 >= i_27_)
 									return;
 								anInt5879 = i_27_ + i_27_ - 1 - anInt5879;
@@ -191,14 +191,14 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 									break;
 							}
 							do {
-								i_31_ = method1428(is, i_31_, i_28_, i_26_, (((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799[anInt5870 - 1]));
+								i_31_ = method1428(is, i_31_, i_28_, i_26_, (class98_sub24_sub1.aByteArray5799[anInt5870 - 1]));
 								if (anInt5879 < i_28_)
 									return;
 								anInt5879 = i_28_ + i_28_ - 1 - anInt5879;
 								anInt5874 = -anInt5874;
 								if (--anInt5872 == 0)
 									break;
-								i_31_ = method1394(is, i_31_, i_27_, i_26_, (((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799[anInt5869]));
+								i_31_ = method1394(is, i_31_, i_27_, i_26_, (class98_sub24_sub1.aByteArray5799[anInt5869]));
 								if (anInt5879 >= i_27_)
 									return;
 								anInt5879 = i_27_ + i_27_ - 1 - anInt5879;
@@ -206,7 +206,7 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 							} while (--anInt5872 != 0);
 						} else if (anInt5874 < 0) {
 							for (;;) {
-								i_31_ = method1394(is, i_31_, i_27_, i_26_, (((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799[anInt5870 - 1]));
+								i_31_ = method1394(is, i_31_, i_27_, i_26_, (class98_sub24_sub1.aByteArray5799[anInt5870 - 1]));
 								if (anInt5879 >= i_27_)
 									return;
 								int i_32_ = (i_28_ - 1 - anInt5879) / i_30_;
@@ -220,7 +220,7 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 							}
 						} else {
 							for (;;) {
-								i_31_ = method1428(is, i_31_, i_28_, i_26_, (((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799[anInt5869]));
+								i_31_ = method1428(is, i_31_, i_28_, i_26_, (class98_sub24_sub1.aByteArray5799[anInt5869]));
 								if (anInt5879 < i_28_)
 									return;
 								int i_33_ = (anInt5879 - i_27_) / i_30_;
@@ -334,7 +334,7 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 	}
 
 	final synchronized void method1399(int i) {
-		int i_43_ = ((((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799).length << 8);
+		int i_43_ = ((((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799).length << 8);
 		if (i < -1)
 			i = -1;
 		if (i > i_43_)
@@ -349,13 +349,13 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 	}
 
 	final boolean method1401() {
-		if (anInt5879 >= 0 && anInt5879 < (((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799).length << 8)
+		if (anInt5879 >= 0 && anInt5879 < (((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799).length << 8)
 			return false;
 		return true;
 	}
 
 	static final Class98_Sub31_Sub5 method1402(Class98_Sub24_Sub1 class98_sub24_sub1, int i, int i_44_, int i_45_) {
-		if (((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799 == null || (((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799.length == 0))
+		if (class98_sub24_sub1.aByteArray5799 == null || (class98_sub24_sub1.aByteArray5799.length == 0))
 			return null;
 		return new Class98_Sub31_Sub5(class98_sub24_sub1, i, i_44_, i_45_);
 	}
@@ -412,10 +412,10 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 				anInt5882 -= i;
 			}
 		}
-		Class98_Sub24_Sub1 class98_sub24_sub1 = (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104;
+		Class98_Sub24_Sub1 class98_sub24_sub1 = (Class98_Sub24_Sub1) this.aClass98_Sub24_4104;
 		int i_54_ = anInt5869 << 8;
 		int i_55_ = anInt5870 << 8;
-		int i_56_ = (((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799.length << 8);
+		int i_56_ = (class98_sub24_sub1.aByteArray5799.length << 8);
 		int i_57_ = i_55_ - i_54_;
 		if (i_57_ <= 0)
 			anInt5872 = 0;
@@ -999,13 +999,13 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 			anInt5882 += i;
 			if (anInt5874 == 256 && (anInt5879 & 0xff) == 0) {
 				if (Class151_Sub7.aBoolean5007)
-					i = method1417(0, ((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) (((Class98_Sub31) this).aClass98_Sub24_4104)).aByteArray5799, is, anInt5879, i, anInt5876, anInt5880, anInt5871, anInt5868, 0, i_170_, i_167_, this);
+					i = method1417(0, ((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799, is, anInt5879, i, anInt5876, anInt5880, anInt5871, anInt5868, 0, i_170_, i_167_, this);
 				else
-					i = method1416(((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) (((Class98_Sub31) this).aClass98_Sub24_4104)).aByteArray5799, is, anInt5879, i, anInt5877, anInt5878, 0, i_170_, i_167_, this);
+					i = method1416(((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799, is, anInt5879, i, anInt5877, anInt5878, 0, i_170_, i_167_, this);
 			} else if (Class151_Sub7.aBoolean5007)
-				i = method1415(0, 0, (((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5876, anInt5880, anInt5871, anInt5868, 0, i_170_, i_167_, this, anInt5874, i_169_);
+				i = method1415(0, 0, (((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5876, anInt5880, anInt5871, anInt5868, 0, i_170_, i_167_, this, anInt5874, i_169_);
 			else
-				i = method1424(0, 0, (((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5877, anInt5878, 0, i_170_, i_167_, this, anInt5874, i_169_);
+				i = method1424(0, 0, (((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5877, anInt5878, 0, i_170_, i_167_, this, anInt5874, i_169_);
 			anInt5882 -= i;
 			if (anInt5882 != 0)
 				return i;
@@ -1014,12 +1014,12 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 		}
 		if (anInt5874 == 256 && (anInt5879 & 0xff) == 0) {
 			if (Class151_Sub7.aBoolean5007)
-				return method1403(0, (((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5876, anInt5880, 0, i_168_, i_167_, this);
-			return method1396((((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5877, 0, i_168_, i_167_, this);
+				return method1403(0, (((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5876, anInt5880, 0, i_168_, i_167_, this);
+			return method1396((((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5877, 0, i_168_, i_167_, this);
 		}
 		if (Class151_Sub7.aBoolean5007)
-			return method1393(0, 0, (((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5876, anInt5880, 0, i_168_, i_167_, this, anInt5874, i_169_);
-		return method1432(0, 0, (((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5877, 0, i_168_, i_167_, this, anInt5874, i_169_);
+			return method1393(0, 0, (((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5876, anInt5880, 0, i_168_, i_167_, this, anInt5874, i_169_);
+		return method1432(0, 0, (((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799), is, anInt5879, i, anInt5877, 0, i_168_, i_167_, this, anInt5874, i_169_);
 	}
 
 	private static final int method1429(int i, byte[] is, int[] is_171_, int i_172_, int i_173_, int i_174_, int i_175_, int i_176_, int i_177_, int i_178_, Class98_Sub31_Sub5 class98_sub31_sub5) {
@@ -1088,10 +1088,10 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 	}
 
 	private Class98_Sub31_Sub5(Class98_Sub24_Sub1 class98_sub24_sub1, int i, int i_189_, int i_190_) {
-		((Class98_Sub31) this).aClass98_Sub24_4104 = class98_sub24_sub1;
-		anInt5869 = ((Class98_Sub24_Sub1) class98_sub24_sub1).anInt5798;
-		anInt5870 = ((Class98_Sub24_Sub1) class98_sub24_sub1).anInt5796;
-		aBoolean5873 = ((Class98_Sub24_Sub1) class98_sub24_sub1).aBoolean5797;
+		this.aClass98_Sub24_4104 = class98_sub24_sub1;
+		anInt5869 = class98_sub24_sub1.anInt5798;
+		anInt5870 = class98_sub24_sub1.anInt5796;
+		aBoolean5873 = class98_sub24_sub1.aBoolean5797;
 		anInt5874 = i;
 		anInt5881 = i_189_;
 		anInt5875 = i_190_;
@@ -1103,9 +1103,9 @@ final class Class98_Sub31_Sub5 extends Class98_Sub31 {
 		int i = anInt5877 * 3 >> 6;
 		i = (i ^ i >> 31) + (i >>> 31);
 		if (anInt5872 == 0)
-			i -= i * anInt5879 / ((((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799).length << 8);
+			i -= i * anInt5879 / ((((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799).length << 8);
 		else if (anInt5872 >= 0)
-			i -= i * anInt5869 / (((Class98_Sub24_Sub1) (Class98_Sub24_Sub1) ((Class98_Sub31) this).aClass98_Sub24_4104).aByteArray5799).length;
+			i -= i * anInt5869 / (((Class98_Sub24_Sub1) this.aClass98_Sub24_4104).aByteArray5799).length;
 		if (i > 255)
 			return 255;
 		return i;

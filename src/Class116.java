@@ -42,7 +42,7 @@ final class Class116 {
 			if (i_1_ == -120) {
 				Class98_Sub46_Sub17 class98_sub46_sub17 = Class185.setCS2StringOrVarc(varcIndex, -124, 1);
 				class98_sub46_sub17.method1626((byte) -103);
-				((Class98_Sub46_Sub17) class98_sub46_sub17).anInt6054 = varcValue;
+				class98_sub46_sub17.anInt6054 = varcValue;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("hha.D(" + varcValue + ',' + varcIndex + ',' + i_1_ + ')'));

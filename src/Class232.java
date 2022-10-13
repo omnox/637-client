@@ -40,9 +40,9 @@ final class Class232 {
 			if (class98_sub3 != null) {
 				if (i != -26)
 					method2881(false);
-				for (int i_1_ = 0; (i_1_ < ((Class98_Sub3) class98_sub3).anIntArray3824.length); i_1_++) {
-					((Class98_Sub3) class98_sub3).anIntArray3824[i_1_] = -1;
-					((Class98_Sub3) class98_sub3).anIntArray3823[i_1_] = 0;
+				for (int i_1_ = 0; (i_1_ < class98_sub3.anIntArray3824.length); i_1_++) {
+					class98_sub3.anIntArray3824[i_1_] = -1;
+					class98_sub3.anIntArray3823[i_1_] = 0;
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -54,7 +54,7 @@ final class Class232 {
 		aClass79_1740 = new Class79(20);
 		aBoolean1744 = false;
 		aCharArray1745 = new char[64];
-		for (int i = 0; (i ^ 0xffffffff) > -27; i++)
+		for (int i = 0; i < 26; i++)
 			aCharArray1745[i] = (char) (i + 65);
 		for (int i = 26; i < 52; i++)
 			aCharArray1745[i] = (char) (97 + (i + -26));

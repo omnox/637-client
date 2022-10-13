@@ -38,10 +38,10 @@ final class Class98_Sub22_Sub2 extends RSByteBuffer {
 	final void method1264(byte i, float f) {
 		try {
 			int i_2_ = Stream.floatToRawIntBits(f);
-			((RSByteBuffer) this).data[((RSByteBuffer) this).position++] = (byte) (i_2_ >> -1300741416);
-			((RSByteBuffer) this).data[((RSByteBuffer) this).position++] = (byte) (i_2_ >> 494236848);
-			((RSByteBuffer) this).data[((RSByteBuffer) this).position++] = (byte) (i_2_ >> -747420472);
-			((RSByteBuffer) this).data[((RSByteBuffer) this).position++] = (byte) i_2_;
+			this.data[this.position++] = (byte) (i_2_ >> 24);
+			this.data[this.position++] = (byte) (i_2_ >> 16);
+			this.data[this.position++] = (byte) (i_2_ >> 8);
+			this.data[this.position++] = (byte) i_2_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "vda.B(" + i + ',' + f + ')');
 		}
@@ -52,10 +52,10 @@ final class Class98_Sub22_Sub2 extends RSByteBuffer {
 			int i_3_ = Stream.floatToRawIntBits(f);
 			if (i != -52)
 				aClass171_5792 = null;
-			((RSByteBuffer) this).data[((RSByteBuffer) this).position++] = (byte) i_3_;
-			((RSByteBuffer) this).data[((RSByteBuffer) this).position++] = (byte) (i_3_ >> 660574952);
-			((RSByteBuffer) this).data[((RSByteBuffer) this).position++] = (byte) (i_3_ >> 664922064);
-			((RSByteBuffer) this).data[((RSByteBuffer) this).position++] = (byte) (i_3_ >> 566266104);
+			this.data[this.position++] = (byte) i_3_;
+			this.data[this.position++] = (byte) (i_3_ >> 8);
+			this.data[this.position++] = (byte) (i_3_ >> 16);
+			this.data[this.position++] = (byte) (i_3_ >> 24);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "vda.C(" + i + ',' + f + ')');
 		}

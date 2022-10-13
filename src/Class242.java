@@ -25,9 +25,9 @@ final class Class242 {
 			int i_2_ = i_0_ - -(57 * i_1_);
 			if (i != 11348)
 				method2935((byte) 75, null);
-			i_2_ ^= i_2_ << 952799405;
+			i_2_ ^= i_2_ << 13;
 			int i_3_ = (0x7fffffff & 1376312589 + (789221 + i_2_ * i_2_ * 15731) * i_2_);
-			return 0xff & i_3_ >> -1652763981;
+			return 0xff & i_3_ >> 19;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("pf.B(" + i + ',' + i_0_ + ',' + i_1_ + ')'));
 		}

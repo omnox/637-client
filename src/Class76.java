@@ -47,7 +47,7 @@ abstract class Class76 {
 
 	Class76(ha_Sub3 var_ha_Sub3) {
 		try {
-			((Class76) this).aHa_Sub3_585 = var_ha_Sub3;
+			this.aHa_Sub3_585 = var_ha_Sub3;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ew.<init>(" + (var_ha_Sub3 != null ? "{...}" : "null") + ')');
 		}

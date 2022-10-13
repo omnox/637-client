@@ -8,7 +8,7 @@ final class Class64_Sub13 extends Class64 {
 	static final void method601(Class185 class185, int i, int i_0_, int i_1_, int i_2_, int i_3_) {
 		do {
 			try {
-				if ((i_1_ ^ 0xffffffff) <= -2 && i >= 1 && -2 + GameWorld.size_x >= i_1_ && (i ^ 0xffffffff) >= (-2 + GameWorld.size_y ^ 0xffffffff)) {
+				if (i_1_ >= 1 && i >= 1 && -2 + GameWorld.size_x >= i_1_ && -2 + GameWorld.size_y >= i) {
 					if (Class98_Sub46_Sub1.aClass172ArrayArrayArray5948 == null)
 						break;
 					Interface19 interface19 = Class146_Sub3.aClass305_Sub1_4952.method3583(i, i_2_, i_0_, i_3_ + -6094, i_1_);
@@ -38,7 +38,7 @@ final class Class64_Sub13 extends Class64 {
 		try {
 			if (i <= 119)
 				aClass293ArrayArray3674 = null;
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "iq.E(" + i + ')');
 		}
@@ -79,8 +79,8 @@ final class Class64_Sub13 extends Class64 {
 		try {
 			if (i <= 118)
 				aClass293ArrayArray3674 = null;
-			if (((Class64) this).anInt494 != 1 && (((Class64) this).anInt494 ^ 0xffffffff) != -1)
-				((Class64) this).anInt494 = method552(0);
+			if (this.anInt494 != 1 && this.anInt494 != 0)
+				this.anInt494 = method552(0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "iq.C(" + i + ')');
 		}
@@ -132,7 +132,7 @@ final class Class64_Sub13 extends Class64 {
 	final void method550(int i, int i_10_) {
 		try {
 			int i_11_ = -107 % ((i - -26) / 41);
-			((Class64) this).anInt494 = i_10_;
+			this.anInt494 = i_10_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "iq.B(" + i + ',' + i_10_ + ')');
 		}

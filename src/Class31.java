@@ -15,15 +15,15 @@ abstract class Class31 {
 
 	static final void method306(int i, RSByteBuffer class98_sub22) {
 		try {
-			if (((-((RSByteBuffer) class98_sub22).position + ((RSByteBuffer) class98_sub22).data.length) ^ 0xffffffff) <= -2) {
+			if ((-class98_sub22.position + class98_sub22.data.length) >= 1) {
 				int i_0_ = class98_sub22.readUnsignedByte();
-				if ((i_0_ ^ 0xffffffff) <= -1 && (i_0_ ^ 0xffffffff) >= -2 && i == 10090 && ((((RSByteBuffer) class98_sub22).data.length - ((RSByteBuffer) class98_sub22).position) ^ 0xffffffff) <= -3) {
+				if (i_0_ >= 0 && i_0_ <= 1 && i == 10090 && (class98_sub22.data.length - class98_sub22.position) >= 2) {
 					int i_1_ = class98_sub22.readShort();
-					if (((((RSByteBuffer) class98_sub22).data.length - ((RSByteBuffer) class98_sub22).position) ^ 0xffffffff) <= (i_1_ * 6 ^ 0xffffffff)) {
+					if (i_1_ * 6 <= (class98_sub22.data.length - class98_sub22.position)) {
 						for (int i_2_ = 0; i_1_ > i_2_; i_2_++) {
 							int i_3_ = class98_sub22.readShort();
 							int i_4_ = class98_sub22.readInt(-2);
-							if ((Class76_Sub5.anIntArray3744.length ^ 0xffffffff) < (i_3_ ^ 0xffffffff) && VarpClass.aBooleanArray3246[i_3_] && (((((Class90) Class345.aClass132_2889.method2237(i_3_, 101)).aChar720) ^ 0xffffffff) != -50 || i_4_ >= -1 && i_4_ <= 1))
+							if (i_3_ < Class76_Sub5.anIntArray3744.length && VarpClass.aBooleanArray3246[i_3_] && ((Class345.aClass132_2889.method2237(i_3_, 101).aChar720) != 49 || i_4_ >= -1 && i_4_ <= 1))
 								Class76_Sub5.anIntArray3744[i_3_] = i_4_;
 						}
 					}
@@ -52,7 +52,7 @@ abstract class Class31 {
 		try {
 			if (i != -53)
 				anInterface17_301 = null;
-			return new Socket(((Class31) this).aString299, ((Class31) this).anInt302);
+			return new Socket(this.aString299, this.anInt302);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cda.D(" + i + ')');
 		}

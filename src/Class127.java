@@ -49,13 +49,13 @@ final class Class127 implements Runnable {
 					for (;;) {
 						if (anIOException1017 != null)
 							return;
-						if ((anInt1016 ^ 0xffffffff) == -1)
+						if (anInt1016 == 0)
 							i = -1 + -anInt1020 + anInt1023;
 						else if (anInt1016 >= anInt1020)
 							i = -anInt1020 + (anInt1016 - 1);
 						else
 							i = anInt1023 + -anInt1020;
-						if ((i ^ 0xffffffff) < -1)
+						if (i > 0)
 							break;
 						try {
 							this.wait();
@@ -67,7 +67,7 @@ final class Class127 implements Runnable {
 				int i_0_;
 				try {
 					i_0_ = anInputStream1024.read(aByteArray1022, anInt1020, i);
-					if ((i_0_ ^ 0xffffffff) == 0)
+					if (i_0_ == -1)
 						throw new EOFException();
 				} catch (IOException ioexception) {
 					synchronized (this) {
@@ -105,19 +105,19 @@ final class Class127 implements Runnable {
 
 	final int method2221(int i, byte[] is, int i_1_, byte i_2_) throws IOException {
 		try {
-			if ((i_1_ ^ 0xffffffff) > -1 || (i ^ 0xffffffff) > -1 || (is.length ^ 0xffffffff) > (i + i_1_ ^ 0xffffffff))
+			if (i_1_ < 0 || i < 0 || i + i_1_ > is.length)
 				throw new IOException();
 			synchronized (this) {
 				int i_3_;
-				if ((anInt1020 ^ 0xffffffff) > (anInt1016 ^ 0xffffffff))
+				if (anInt1016 > anInt1020)
 					i_3_ = anInt1020 + (anInt1023 - anInt1016);
 				else
 					i_3_ = -anInt1016 + anInt1020;
 				if (i_2_ != 59)
 					method2220(-89);
-				if ((i_1_ ^ 0xffffffff) < (i_3_ ^ 0xffffffff))
+				if (i_3_ < i_1_)
 					i_1_ = i_3_;
-				if ((i_1_ ^ 0xffffffff) == -1 && anIOException1017 != null)
+				if (i_1_ == 0 && anIOException1017 != null)
 					throw new IOException(anIOException1017.toString());
 				if (anInt1023 >= anInt1016 - -i_1_)
 					Class236.method2894(aByteArray1022, anInt1016, is, i, i_1_);
@@ -139,19 +139,19 @@ final class Class127 implements Runnable {
 		try {
 			if (i_5_ > -120)
 				aClass207_1019 = null;
-			if ((i ^ 0xffffffff) >= -1 || (i ^ 0xffffffff) <= (anInt1023 ^ 0xffffffff))
+			if (i <= 0 || anInt1023 <= i)
 				throw new IOException();
 			synchronized (this) {
 				int i_6_;
 				do {
-					if ((anInt1016 ^ 0xffffffff) < (anInt1020 ^ 0xffffffff)) {
+					if (anInt1020 < anInt1016) {
 						i_6_ = anInt1023 - (anInt1016 + -anInt1020);
 						if (!client.aBoolean3553)
 							break;
 					}
 					i_6_ = anInt1020 - anInt1016;
 				} while (false);
-				if ((i_6_ ^ 0xffffffff) > (i ^ 0xffffffff)) {
+				if (i > i_6_) {
 					if (anIOException1017 != null)
 						throw new IOException(anIOException1017.toString());
 					return false;

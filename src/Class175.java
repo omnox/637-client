@@ -182,10 +182,10 @@ final class Class175 {
 					class178.method2594((byte) 0, (short) 127, (short) 0, (byte) 0, false, 1, i_44_, (byte) 0, i_45_);
 				}
 			}
-			((ModelDefinitions) class178).anInt1406 = ((ModelDefinitions) class178).anInt1407;
-			((ModelDefinitions) class178).anIntArray1395 = null;
-			((ModelDefinitions) class178).anIntArray1417 = null;
-			((ModelDefinitions) class178).aByteArray1402 = null;
+			class178.anInt1406 = class178.anInt1407;
+			class178.anIntArray1395 = null;
+			class178.anIntArray1417 = null;
+			class178.aByteArray1402 = null;
 			aClass146_1357 = var_ha.method1790(class178, 51200, 33, 64, 768);
 		}
 	}
@@ -198,24 +198,24 @@ final class Class175 {
 			i_52_ = anInt1370 - i;
 			i_53_ = anInt1355 - i_49_;
 			i_54_ = anInt1364 - i_50_;
-			((Class175) this).anInt1361 = (int) Math.sqrt((double) (i_52_ * i_52_ + i_53_ * i_53_ + i_54_ * i_54_));
-			if (((Class175) this).anInt1361 == 0)
-				((Class175) this).anInt1361 = 1;
-			i_52_ = (i_52_ << 8) / ((Class175) this).anInt1361;
-			i_53_ = (i_53_ << 8) / ((Class175) this).anInt1361;
-			i_54_ = (i_54_ << 8) / ((Class175) this).anInt1361;
+			this.anInt1361 = (int) Math.sqrt(i_52_ * i_52_ + i_53_ * i_53_ + i_54_ * i_54_);
+			if (this.anInt1361 == 0)
+				this.anInt1361 = 1;
+			i_52_ = (i_52_ << 8) / this.anInt1361;
+			i_53_ = (i_53_ << 8) / this.anInt1361;
+			i_54_ = (i_54_ << 8) / this.anInt1361;
 		} else {
-			((Class175) this).anInt1361 = 1073741823;
+			this.anInt1361 = 1073741823;
 			i_52_ = anInt1370;
 			i_53_ = anInt1355;
 			i_54_ = anInt1364;
 		}
-		int i_55_ = (int) (Math.sqrt((double) (i_52_ * i_52_ + i_53_ * i_53_ + i_54_ * i_54_)) * 256.0);
+		int i_55_ = (int) (Math.sqrt(i_52_ * i_52_ + i_53_ * i_53_ + i_54_ * i_54_) * 256.0);
 		if (i_55_ > 128) {
 			i_52_ = (i_52_ << 16) / i_55_;
 			i_53_ = (i_53_ << 16) / i_55_;
 			i_54_ = (i_54_ << 16) / i_55_;
-			anInt1360 = anInt1365 * i_51_ / (aBoolean1371 ? 1024 : ((Class175) this).anInt1361);
+			anInt1360 = anInt1365 * i_51_ / (aBoolean1371 ? 1024 : this.anInt1361);
 		} else
 			anInt1360 = 0;
 		if (anInt1360 < 8) {
@@ -229,8 +229,8 @@ final class Class175 {
 			i_56_ = 512;
 		if (i_56_ != anInt1354)
 			anInt1354 = i_56_;
-		anInt1358 = (int) (Math.asin((double) ((float) i_53_ / 256.0F)) * 2607.5945876176133) & 0x3fff;
-		anInt1362 = (int) (Math.atan2((double) i_52_, (double) -i_54_) * 2607.5945876176133) & 0x3fff;
+		anInt1358 = (int) (Math.asin((float) i_53_ / 256.0F) * 2607.5945876176133) & 0x3fff;
+		anInt1362 = (int) (Math.atan2(i_52_, -i_54_) * 2607.5945876176133) & 0x3fff;
 		aClass332_1368 = null;
 		return true;
 	}

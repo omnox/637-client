@@ -29,7 +29,7 @@ final class Class184 {
 		try {
 			if (c >= 32 && c <= 126)
 				return true;
-			if ((c ^ 0xffffffff) <= -161 && (c ^ 0xffffffff) >= -256)
+			if (c >= 160 && c <= 255)
 				return true;
 			if (i != 376)
 				return false;

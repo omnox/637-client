@@ -23,7 +23,7 @@ final class Class98_Sub10_Sub5_Sub1 extends Class98_Sub10_Sub5 {
 					}
 				}
 				int i_13_ = i;
-				for (int i_14_ = 0; (i_14_ ^ 0xffffffff) > (i_9_ ^ 0xffffffff); i_14_++) {
+				for (int i_14_ = 0; i_9_ > i_14_; i_14_++) {
 					is[i_13_] = (byte) (is[i_13_] + 127);
 					i_13_++;
 				}
@@ -43,17 +43,17 @@ final class Class98_Sub10_Sub5_Sub1 extends Class98_Sub10_Sub5 {
 
 	final int[][] method997(int i, int i_15_) {
 		try {
-			int[][] is = ((Class98_Sub10) this).aClass223_3859.method2828(i_15_, 0);
-			if (((Class223) ((Class98_Sub10) this).aClass223_3859).aBoolean1683 && this.method1016(-1)) {
+			int[][] is = this.aClass223_3859.method2828(i_15_, 0);
+			if (this.aClass223_3859.aBoolean1683 && this.method1016(-1)) {
 				int[] is_16_ = is[0];
 				int[] is_17_ = is[1];
 				int[] is_18_ = is[2];
-				int i_19_ = (((Class98_Sub10_Sub5) this).anInt5555 * (i_15_ % ((Class98_Sub10_Sub5) this).anInt5555));
-				for (int i_20_ = 0; (i_20_ ^ 0xffffffff) > (Class25.anInt268 ^ 0xffffffff); i_20_++) {
-					int i_21_ = (((Class98_Sub10_Sub5) this).anIntArray5552[(i_20_ % ((Class98_Sub10_Sub5) this).anInt5556 + i_19_)]);
-					is_18_[i_20_] = Class202.method2702(i_21_ << 1432308676, 4080);
-					is_17_[i_20_] = Class202.method2702(4080, i_21_ >> -1121818652);
-					is_16_[i_20_] = Class202.method2702(i_21_, 16711680) >> 1364421580;
+				int i_19_ = (this.anInt5555 * (i_15_ % this.anInt5555));
+				for (int i_20_ = 0; Class25.anInt268 > i_20_; i_20_++) {
+					int i_21_ = (this.anIntArray5552[(i_20_ % this.anInt5556 + i_19_)]);
+					is_18_[i_20_] = Class202.method2702(i_21_ << 4, 4080);
+					is_17_[i_20_] = Class202.method2702(4080, i_21_ >> 4);
+					is_16_[i_20_] = Class202.method2702(i_21_, 16711680) >> 12;
 				}
 			}
 			if (i >= -76)

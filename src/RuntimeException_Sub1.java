@@ -15,9 +15,9 @@ final class RuntimeException_Sub1 extends RuntimeException {
 	static final void method4010(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_) {
 		do {
 			try {
-				if ((Class218.anInt1635 ^ 0xffffffff) <= (i_2_ ^ 0xffffffff) && i_0_ >= Class98_Sub10_Sub38.anInt5753) {
+				if (i_2_ <= Class218.anInt1635 && i_0_ >= Class98_Sub10_Sub38.anInt5753) {
 					boolean bool;
-					if ((Class76_Sub8.anInt3778 ^ 0xffffffff) < (i_1_ ^ 0xffffffff)) {
+					if (i_1_ < Class76_Sub8.anInt3778) {
 						bool = false;
 						i_1_ = Class76_Sub8.anInt3778;
 					} else if (Class3.anInt77 >= i_1_)
@@ -40,7 +40,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
 						i_2_ = Class98_Sub10_Sub38.anInt5753;
 					else
 						Class333.method3761(i_4_, Class97.anIntArrayArray814[i_2_++], i_1_, i_3_, (byte) 113);
-					if ((i_0_ ^ 0xffffffff) < (Class218.anInt1635 ^ 0xffffffff))
+					if (Class218.anInt1635 < i_0_)
 						i_0_ = Class218.anInt1635;
 					else
 						Class333.method3761(i_4_, Class97.anIntArrayArray814[i_0_--], i_1_, i_3_, (byte) 26);
@@ -71,40 +71,40 @@ final class RuntimeException_Sub1 extends RuntimeException {
 
 	static final void method4011(int i) {
 		try {
-			if ((Class98_Sub10_Sub6.anInt5570 ^ 0xffffffff) <= -1) {
+			if (Class98_Sub10_Sub6.anInt5570 >= 0) {
 				long l = Class343.method3819(-47);
 				Class98_Sub10_Sub6.anInt5570 -= -Class98_Sub46_Sub12.aLong6035 + l;
 				do {
 					if (Class98_Sub10_Sub6.anInt5570 <= 0) {
-						Class98_Sub46_Sub6.anInt5979 = ((Class28) aa.aClass28_50).anInt290;
-						Class159.aFloat1254 = ((Class28) aa.aClass28_50).aFloat281;
-						Class215.aFloat1613 = ((Class28) aa.aClass28_50).aFloat289;
-						Class263.anInt1965 = ((Class28) aa.aClass28_50).anInt283;
-						Class141.aFloat1150 = ((Class28) aa.aClass28_50).aFloat288;
+						Class98_Sub46_Sub6.anInt5979 = aa.aClass28_50.anInt290;
+						Class159.aFloat1254 = aa.aClass28_50.aFloat281;
+						Class215.aFloat1613 = aa.aClass28_50.aFloat289;
+						Class263.anInt1965 = aa.aClass28_50.anInt283;
+						Class141.aFloat1150 = aa.aClass28_50.aFloat288;
 						Class98_Sub10_Sub6.anInt5570 = -1;
-						Class284_Sub1_Sub2.anInt6192 = ((Class28) aa.aClass28_50).anInt285;
-						Class46.aFloat388 = ((Class28) aa.aClass28_50).aFloat293;
-						Class98_Sub46_Sub4.aClass48_5962 = ((Class28) aa.aClass28_50).aClass48_287;
-						Class260.aFloat3260 = ((Class28) aa.aClass28_50).aFloat295;
-						Class97.aFloat831 = ((Class28) aa.aClass28_50).aFloat291;
+						Class284_Sub1_Sub2.anInt6192 = aa.aClass28_50.anInt285;
+						Class46.aFloat388 = aa.aClass28_50.aFloat293;
+						Class98_Sub46_Sub4.aClass48_5962 = aa.aClass28_50.aClass48_287;
+						Class260.aFloat3260 = aa.aClass28_50.aFloat295;
+						Class97.aFloat831 = aa.aClass28_50.aFloat291;
 						if (!client.aBoolean3553)
 							break;
 					}
-					int i_9_ = ((Class98_Sub10_Sub6.anInt5570 << -869608184) / Class287.anInt2196);
+					int i_9_ = ((Class98_Sub10_Sub6.anInt5570 << 8) / Class287.anInt2196);
 					int i_10_ = -i_9_ + 255;
 					float f = (float) i_9_ / 255.0F;
 					float f_11_ = 1.0F - f;
-					Class98_Sub46_Sub6.anInt5979 = ((0xff0000 & (i_9_ * (Class98_Sub28_Sub1.anInt5811 & 0xff00) - -(i_10_ * (((Class28) aa.aClass28_50).anInt290 & 0xff00)))) + ((i_10_ * (0xff00ff & ((Class28) aa.aClass28_50).anInt290) + ((Class98_Sub28_Sub1.anInt5811 & 0xff00ff) * i_9_)) & ~0xff00ff)) >>> -1850804568;
-					Class46.aFloat388 = (f_11_ * (-IOException_Sub1.aFloat31 + ((Class28) aa.aClass28_50).aFloat293) + IOException_Sub1.aFloat31);
-					Class215.aFloat1613 = (Class3.aFloat78 + f_11_ * (((Class28) aa.aClass28_50).aFloat289 - Class3.aFloat78));
-					Class97.aFloat831 = (Class157.aFloat1249 + f_11_ * (-Class157.aFloat1249 + ((Class28) aa.aClass28_50).aFloat291));
-					Class260.aFloat3260 = ((((Class28) aa.aClass28_50).aFloat295 - Class346.aFloat2900) * f_11_ + Class346.aFloat2900);
-					Class159.aFloat1254 = ((-Class135.aFloat1053 + ((Class28) aa.aClass28_50).aFloat281) * f_11_ + Class135.aFloat1053);
-					Class284_Sub1_Sub2.anInt6192 = (((i_9_ * (Class162.anInt1271 & 0xff00) - -(i_10_ * (0xff00 & ((Class28) aa.aClass28_50).anInt285))) & 0xff0000) + (~0xff00ff & ((Class162.anInt1271 & 0xff00ff) * i_9_ + (((Class28) aa.aClass28_50).anInt285 & 0xff00ff) * i_10_))) >>> 1466852232;
-					Class263.anInt1965 = ((i_9_ * Class98_Sub12.anInt3872 + ((Class28) aa.aClass28_50).anInt283 * i_10_) >> 40165512);
-					Class141.aFloat1150 = (Class234.aFloat1749 + (((Class28) aa.aClass28_50).aFloat288 - Class234.aFloat1749) * f_11_);
-					if (((Class28) aa.aClass28_50).aClass48_287 != VarpClass.aClass48_3245)
-						Class98_Sub46_Sub4.aClass48_5962 = (Class98_Sub37.aHa4185.method1769(VarpClass.aClass48_3245, ((Class28) aa.aClass28_50).aClass48_287, f_11_, Class98_Sub46_Sub4.aClass48_5962));
+					Class98_Sub46_Sub6.anInt5979 = ((0xff0000 & (i_9_ * (Class98_Sub28_Sub1.anInt5811 & 0xff00) - -(i_10_ * (aa.aClass28_50.anInt290 & 0xff00)))) + ((i_10_ * (0xff00ff & aa.aClass28_50.anInt290) + ((Class98_Sub28_Sub1.anInt5811 & 0xff00ff) * i_9_)) & ~0xff00ff)) >>> 8;
+					Class46.aFloat388 = (f_11_ * (-IOException_Sub1.aFloat31 + aa.aClass28_50.aFloat293) + IOException_Sub1.aFloat31);
+					Class215.aFloat1613 = (Class3.aFloat78 + f_11_ * (aa.aClass28_50.aFloat289 - Class3.aFloat78));
+					Class97.aFloat831 = (Class157.aFloat1249 + f_11_ * (-Class157.aFloat1249 + aa.aClass28_50.aFloat291));
+					Class260.aFloat3260 = ((aa.aClass28_50.aFloat295 - Class346.aFloat2900) * f_11_ + Class346.aFloat2900);
+					Class159.aFloat1254 = ((-Class135.aFloat1053 + aa.aClass28_50.aFloat281) * f_11_ + Class135.aFloat1053);
+					Class284_Sub1_Sub2.anInt6192 = (((i_9_ * (Class162.anInt1271 & 0xff00) - -(i_10_ * (0xff00 & aa.aClass28_50.anInt285))) & 0xff0000) + (~0xff00ff & ((Class162.anInt1271 & 0xff00ff) * i_9_ + (aa.aClass28_50.anInt285 & 0xff00ff) * i_10_))) >>> 8;
+					Class263.anInt1965 = ((i_9_ * Class98_Sub12.anInt3872 + aa.aClass28_50.anInt283 * i_10_) >> 8);
+					Class141.aFloat1150 = (Class234.aFloat1749 + (aa.aClass28_50.aFloat288 - Class234.aFloat1749) * f_11_);
+					if (aa.aClass28_50.aClass48_287 != VarpClass.aClass48_3245)
+						Class98_Sub46_Sub4.aClass48_5962 = (Class98_Sub37.aHa4185.method1769(VarpClass.aClass48_3245, aa.aClass28_50.aClass48_287, f_11_, Class98_Sub46_Sub4.aClass48_5962));
 				} while (false);
 				Class98_Sub46_Sub12.aLong6035 = l;
 			}
@@ -117,8 +117,8 @@ final class RuntimeException_Sub1 extends RuntimeException {
 
 	RuntimeException_Sub1(Throwable throwable, String string) {
 		try {
-			((RuntimeException_Sub1) this).aThrowable3199 = throwable;
-			((RuntimeException_Sub1) this).aString3202 = string;
+			this.aThrowable3199 = throwable;
+			this.aString3202 = string;
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}

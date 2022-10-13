@@ -22,7 +22,7 @@ final class Class21_Sub3 extends Class21 implements Interface4_Impl2 {
 						aa.aClass28_50 = class28;
 						Class98_Sub46_Sub12.aLong6035 = Class343.method3819(-47);
 						Class287.anInt2196 = Class98_Sub10_Sub6.anInt5570 = i;
-						if ((Class287.anInt2196 ^ 0xffffffff) == -1) {
+						if (Class287.anInt2196 == 0) {
 							RuntimeException_Sub1.method4011(-38);
 							if (!client.aBoolean3553)
 								break;
@@ -74,10 +74,10 @@ final class Class21_Sub3 extends Class21 implements Interface4_Impl2 {
 		try {
 			anInt5391 = i;
 			anInt5392 = i_2_;
-			((Class21) this).aHa_Sub3_Sub2_3233.method2005(this, -123);
+			this.aHa_Sub3_Sub2_3233.method2005(this, -123);
 			OpenGL.glPixelStorei(3317, 1);
 			OpenGL.glPixelStorei(3314, i_4_);
-			OpenGL.glTexImage2Dub(((Class21) this).anInt3235, 0, this.method260(0), i, i_2_, 0, Class196.method2665(false, (((Class21) this).aClass164_3237)), 5121, is, i_3_);
+			OpenGL.glTexImage2Dub(this.anInt3235, 0, this.method260(0), i, i_2_, 0, Class196.method2665(false, (this.aClass164_3237)), 5121, is, i_3_);
 			OpenGL.glPixelStorei(3314, 0);
 			OpenGL.glPixelStorei(3317, 4);
 		} catch (RuntimeException runtimeexception) {
@@ -99,13 +99,13 @@ final class Class21_Sub3 extends Class21 implements Interface4_Impl2 {
 		try {
 			if (i == 0)
 				i = i_6_;
-			((Class21) this).aHa_Sub3_Sub2_3233.method2005(this, -123);
+			this.aHa_Sub3_Sub2_3233.method2005(this, -123);
 			if (i_9_ != -26946)
 				method45(-63, 1.4202741F);
 			OpenGL.glPixelStorei(3317, 1);
 			if (i_6_ != i)
 				OpenGL.glPixelStorei(3314, i);
-			OpenGL.glTexSubImage2Dub(((Class21) this).anInt3235, 0, i_10_, i_7_, i_6_, i_8_, Class196.method2665(false, class164), 5121, is, i_5_);
+			OpenGL.glTexSubImage2Dub(this.anInt3235, 0, i_10_, i_7_, i_6_, i_8_, Class196.method2665(false, class164), 5121, is, i_5_);
 			if (i != i_6_)
 				OpenGL.glPixelStorei(3314, 0);
 			OpenGL.glPixelStorei(3317, 4);
@@ -146,9 +146,9 @@ final class Class21_Sub3 extends Class21 implements Interface4_Impl2 {
 		try {
 			anInt5392 = i_14_;
 			anInt5391 = i;
-			((Class21) this).aHa_Sub3_Sub2_3233.method2005(this, -121);
+			this.aHa_Sub3_Sub2_3233.method2005(this, -121);
 			OpenGL.glPixelStorei(3314, i_16_);
-			OpenGL.glTexImage2Di(((Class21) this).anInt3235, 0, 6408, anInt5391, anInt5392, 0, 32993, (((ha_Sub3_Sub2) ((Class21) this).aHa_Sub3_Sub2_3233).anInt6135), is, 4 * i_15_);
+			OpenGL.glTexImage2Di(this.anInt3235, 0, 6408, anInt5391, anInt5392, 0, 32993, (this.aHa_Sub3_Sub2_3233.anInt6135), is, 4 * i_15_);
 			OpenGL.glPixelStorei(3314, 0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("vca.<init>(" + (var_ha_Sub3_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_14_ + ',' + (is != null ? "{...}" : "null") + ',' + i_15_ + ',' + i_16_ + ')'));
@@ -160,9 +160,9 @@ final class Class21_Sub3 extends Class21 implements Interface4_Impl2 {
 		try {
 			anInt5392 = i_17_;
 			anInt5391 = i;
-			((Class21) this).aHa_Sub3_Sub2_3233.method2005(this, 43);
+			this.aHa_Sub3_Sub2_3233.method2005(this, 43);
 			OpenGL.glPixelStorei(3314, i_19_);
-			OpenGL.glTexImage2Df(((Class21) this).anInt3235, 0, this.method260(0), i, i_17_, 0, Class196.method2665(false, (((Class21) this).aClass164_3237)), 5126, fs, 4 * i_18_);
+			OpenGL.glTexImage2Df(this.anInt3235, 0, this.method260(0), i, i_17_, 0, Class196.method2665(false, (this.aClass164_3237)), 5126, fs, 4 * i_18_);
 			OpenGL.glPixelStorei(3314, 0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("vca.<init>(" + (var_ha_Sub3_Sub2 != null ? "{...}" : "null") + ',' + (class164 != null ? "{...}" : "null") + ',' + i + ',' + i_17_ + ',' + (fs != null ? "{...}" : "null") + ',' + i_18_ + ',' + i_19_ + ')'));
@@ -173,8 +173,8 @@ final class Class21_Sub3 extends Class21 implements Interface4_Impl2 {
 		try {
 			int i_25_ = 46 / ((i_21_ - -48) / 59);
 			int[] is_26_ = new int[anInt5391 * anInt5392];
-			((Class21) this).aHa_Sub3_Sub2_3233.method2005(this, 88);
-			OpenGL.glGetTexImagei(((Class21) this).anInt3235, 0, 32993, 5121, is_26_, 0);
+			this.aHa_Sub3_Sub2_3233.method2005(this, 88);
+			OpenGL.glGetTexImagei(this.anInt3235, 0, 32993, 5121, is_26_, 0);
 			for (int i_27_ = 0; i_27_ < i_22_; i_27_++)
 				Class236.method2891(is_26_, ((-i_27_ + -1 - (-i_22_ - i_24_)) * anInt5391), is, i_20_ - -(i * i_27_), i);
 		} catch (RuntimeException runtimeexception) {
@@ -197,13 +197,13 @@ final class Class21_Sub3 extends Class21 implements Interface4_Impl2 {
 			try {
 				if (i != 17779)
 					method49(-84, 50, 115, null, 124, 55, -64, 94);
-				((Class21) this).aHa_Sub3_Sub2_3233.method2005(this, i + -17894);
+				this.aHa_Sub3_Sub2_3233.method2005(this, i + -17894);
 				if (i_32_ == 0)
 					i_32_ = i_33_;
-				if ((i_32_ ^ 0xffffffff) != (i_33_ ^ 0xffffffff))
+				if (i_33_ != i_32_)
 					OpenGL.glPixelStorei(3314, i_32_);
-				OpenGL.glTexSubImage2Di(((Class21) this).anInt3235, 0, i_30_, i_28_, i_33_, i_29_, 32993, (((ha_Sub3_Sub2) ((Class21) this).aHa_Sub3_Sub2_3233).anInt6135), is, i_31_);
-				if ((i_33_ ^ 0xffffffff) == (i_32_ ^ 0xffffffff))
+				OpenGL.glTexSubImage2Di(this.anInt3235, 0, i_30_, i_28_, i_33_, i_29_, 32993, (this.aHa_Sub3_Sub2_3233.anInt6135), is, i_31_);
+				if (i_32_ == i_33_)
 					break;
 				OpenGL.glPixelStorei(3314, 0);
 			} catch (RuntimeException runtimeexception) {
@@ -218,8 +218,8 @@ final class Class21_Sub3 extends Class21 implements Interface4_Impl2 {
 		try {
 			anInt5392 = i_34_;
 			anInt5391 = i;
-			((Class21) this).aHa_Sub3_Sub2_3233.method2005(this, -119);
-			OpenGL.glTexImage2Dub(((Class21) this).anInt3235, 0, this.method260(0), i, i_34_, 0, Class196.method2665(false, ((Class21) this).aClass164_3237), Class98_Sub5_Sub1.method964(((Class21) this).aClass162_3234, (byte) 105), null, 0);
+			this.aHa_Sub3_Sub2_3233.method2005(this, -119);
+			OpenGL.glTexImage2Dub(this.anInt3235, 0, this.method260(0), i, i_34_, 0, Class196.method2665(false, this.aClass164_3237), Class98_Sub5_Sub1.method964(this.aClass162_3234, (byte) 105), null, 0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("vca.<init>(" + (var_ha_Sub3_Sub2 != null ? "{...}" : "null") + ',' + (class164 != null ? "{...}" : "null") + ',' + (class162 != null ? "{...}" : "null") + ',' + i + ',' + i_34_ + ')'));
 		}

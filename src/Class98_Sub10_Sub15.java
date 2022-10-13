@@ -27,7 +27,7 @@ final class Class98_Sub10_Sub15 extends Class98_Sub10 {
 						anInt5616 = class98_sub22.readShort();
 						break while_99_;
 					} while (false);
-					((Class98_Sub10) this).aBoolean3861 = ((class98_sub22.readUnsignedByte() ^ 0xffffffff) == -2);
+					this.aBoolean3861 = (class98_sub22.readUnsignedByte() == 1);
 				} while (false);
 				if (i_0_ <= -92)
 					break;
@@ -77,7 +77,7 @@ final class Class98_Sub10_Sub15 extends Class98_Sub10 {
 			Class142.method2310((byte) 91);
 			Class82.method822(10157);
 			if (Class64_Sub29.aClass196_3720 != Class43.aClass196_375) {
-				for (int i_2_ = 0; ((i_2_ ^ 0xffffffff) > (Class76.aByteArrayArray590.length ^ 0xffffffff)); i_2_++)
+				for (int i_2_ = 0; (Class76.aByteArrayArray590.length > i_2_); i_2_++)
 					Class76.aByteArrayArray590[i_2_] = null;
 				Class98_Sub48.anInt4281 = 0;
 			}
@@ -140,10 +140,10 @@ final class Class98_Sub10_Sub15 extends Class98_Sub10 {
 
 	final int[][] method997(int i, int i_3_) {
 		try {
-			int[][] is = ((Class98_Sub10) this).aClass223_3859.method2828(i_3_, 0);
+			int[][] is = this.aClass223_3859.method2828(i_3_, 0);
 			if (i >= -76)
 				method1050((byte) 14);
-			if (((Class223) ((Class98_Sub10) this).aClass223_3859).aBoolean1683) {
+			if (this.aClass223_3859.aBoolean1683) {
 				int[][] is_4_ = this.method994(i_3_, 24431, 0);
 				int[] is_5_ = is_4_[0];
 				int[] is_6_ = is_4_[1];
@@ -151,24 +151,24 @@ final class Class98_Sub10_Sub15 extends Class98_Sub10 {
 				int[] is_8_ = is[0];
 				int[] is_9_ = is[1];
 				int[] is_10_ = is[2];
-				for (int i_11_ = 0; (Class25.anInt268 ^ 0xffffffff) < (i_11_ ^ 0xffffffff); i_11_++) {
+				for (int i_11_ = 0; i_11_ < Class25.anInt268; i_11_++) {
 					int i_12_ = is_5_[i_11_];
 					int i_13_ = is_6_[i_11_];
 					int i_14_ = is_7_[i_11_];
-					if ((i_12_ ^ 0xffffffff) <= (anInt5617 ^ 0xffffffff)) {
+					if (anInt5617 <= i_12_) {
 						if (i_12_ <= anInt5616)
 							is_8_[i_11_] = i_12_;
 						else
 							is_8_[i_11_] = anInt5616;
 					} else
 						is_8_[i_11_] = anInt5617;
-					if ((anInt5617 ^ 0xffffffff) < (i_13_ ^ 0xffffffff))
+					if (i_13_ < anInt5617)
 						is_9_[i_11_] = anInt5617;
-					else if ((anInt5616 ^ 0xffffffff) <= (i_13_ ^ 0xffffffff))
+					else if (i_13_ <= anInt5616)
 						is_9_[i_11_] = i_13_;
 					else
 						is_9_[i_11_] = anInt5616;
-					if ((i_14_ ^ 0xffffffff) <= (anInt5617 ^ 0xffffffff)) {
+					if (anInt5617 <= i_14_) {
 						if (anInt5616 >= i_14_)
 							is_10_[i_11_] = i_14_;
 						else
@@ -187,14 +187,14 @@ final class Class98_Sub10_Sub15 extends Class98_Sub10 {
 		try {
 			if (i != 255)
 				method997(-53, 122);
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_15_);
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
+			int[] is = this.aClass16_3863.method237((byte) 98, i_15_);
+			if (this.aClass16_3863.aBoolean198) {
 				int[] is_16_ = this.method1000(i_15_, 0, 0);
-				for (int i_17_ = 0; (i_17_ ^ 0xffffffff) > (Class25.anInt268 ^ 0xffffffff); i_17_++) {
+				for (int i_17_ = 0; Class25.anInt268 > i_17_; i_17_++) {
 					int i_18_ = is_16_[i_17_];
 					if (anInt5617 > i_18_)
 						is[i_17_] = anInt5617;
-					else if ((anInt5616 ^ 0xffffffff) > (i_18_ ^ 0xffffffff))
+					else if (i_18_ > anInt5616)
 						is[i_17_] = anInt5616;
 					else
 						is[i_17_] = i_18_;

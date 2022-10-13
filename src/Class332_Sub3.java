@@ -44,25 +44,25 @@ abstract class Class332_Sub3 extends Class332 {
 	abstract void method3759(int i, int i_10_);
 
 	final int method3737() {
-		return (((Class332_Sub3) this).anInt5446 + ((Class332_Sub3) this).anInt5433 + ((Class332_Sub3) this).anInt5455);
+		return (this.anInt5446 + this.anInt5433 + this.anInt5455);
 	}
 
 	private final boolean method3760(float f, float f_11_, float f_12_, float f_13_, float f_14_, float f_15_) {
-		int i = (((Class332_Sub3) this).anInt5446 + ((Class332_Sub3) this).anInt5433 + ((Class332_Sub3) this).anInt5455);
-		int i_16_ = (((Class332_Sub3) this).anInt5439 + ((Class332_Sub3) this).anInt5454 + ((Class332_Sub3) this).anInt5447);
-		if (i != ((Class332_Sub3) this).anInt5433 || i_16_ != ((Class332_Sub3) this).anInt5454) {
+		int i = (this.anInt5446 + this.anInt5433 + this.anInt5455);
+		int i_16_ = (this.anInt5439 + this.anInt5454 + this.anInt5447);
+		if (i != this.anInt5433 || i_16_ != this.anInt5454) {
 			float f_17_ = (f_12_ - f) / (float) i;
 			float f_18_ = (f_13_ - f_11_) / (float) i;
 			float f_19_ = (f_14_ - f) / (float) i_16_;
 			float f_20_ = (f_15_ - f_11_) / (float) i_16_;
-			float f_21_ = f_19_ * (float) ((Class332_Sub3) this).anInt5439;
-			float f_22_ = f_20_ * (float) ((Class332_Sub3) this).anInt5439;
-			float f_23_ = f_17_ * (float) ((Class332_Sub3) this).anInt5446;
-			float f_24_ = f_18_ * (float) ((Class332_Sub3) this).anInt5446;
-			float f_25_ = -f_17_ * (float) ((Class332_Sub3) this).anInt5455;
-			float f_26_ = -f_18_ * (float) ((Class332_Sub3) this).anInt5455;
-			float f_27_ = -f_19_ * (float) ((Class332_Sub3) this).anInt5447;
-			float f_28_ = -f_20_ * (float) ((Class332_Sub3) this).anInt5447;
+			float f_21_ = f_19_ * (float) this.anInt5439;
+			float f_22_ = f_20_ * (float) this.anInt5439;
+			float f_23_ = f_17_ * (float) this.anInt5446;
+			float f_24_ = f_18_ * (float) this.anInt5446;
+			float f_25_ = -f_17_ * (float) this.anInt5455;
+			float f_26_ = -f_18_ * (float) this.anInt5455;
+			float f_27_ = -f_19_ * (float) this.anInt5447;
+			float f_28_ = -f_20_ * (float) this.anInt5447;
 			f += f_23_ + f_21_;
 			f_11_ += f_24_ + f_22_;
 			f_12_ += f_25_ + f_21_;
@@ -106,32 +106,32 @@ abstract class Class332_Sub3 extends Class332 {
 			f_34_ = f_15_;
 		if (f_30_ > f_34_)
 			f_34_ = f_30_;
-		if (f_31_ < (float) (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4509))
-			f_31_ = (float) (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4509);
-		if (f_32_ > (float) (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4507))
-			f_32_ = (float) (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4507);
-		if (f_33_ < (float) (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4495))
-			f_33_ = (float) (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4495);
-		if (f_34_ > (float) (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4492))
-			f_34_ = (float) (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4492);
+		if (f_31_ < (float) (this.aHa_Sub2_5434.anInt4509))
+			f_31_ = (float) (this.aHa_Sub2_5434.anInt4509);
+		if (f_32_ > (float) (this.aHa_Sub2_5434.anInt4507))
+			f_32_ = (float) (this.aHa_Sub2_5434.anInt4507);
+		if (f_33_ < (float) (this.aHa_Sub2_5434.anInt4495))
+			f_33_ = (float) (this.aHa_Sub2_5434.anInt4495);
+		if (f_34_ > (float) (this.aHa_Sub2_5434.anInt4492))
+			f_34_ = (float) (this.aHa_Sub2_5434.anInt4492);
 		f_32_ = f_31_ - f_32_;
 		if (f_32_ >= 0.0F)
 			return false;
 		f_34_ = f_33_ - f_34_;
 		if (f_34_ >= 0.0F)
 			return false;
-		anInt5438 = ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4505;
+		anInt5438 = this.aHa_Sub2_5434.anInt4505;
 		anInt5451 = (int) ((float) ((int) f_33_ * anInt5438) + f_31_);
 		float f_35_ = (f_12_ - f) * (f_15_ - f_11_) - (f_13_ - f_11_) * (f_14_ - f);
 		float f_36_ = (f_14_ - f) * (f_13_ - f_11_) - (f_15_ - f_11_) * (f_12_ - f);
-		anInt5444 = (int) ((f_15_ - f_11_) * 4096.0F * (float) ((Class332_Sub3) this).anInt5433 / f_35_);
-		anInt5436 = (int) ((f_13_ - f_11_) * 4096.0F * (float) ((Class332_Sub3) this).anInt5454 / f_36_);
-		anInt5441 = (int) ((f_14_ - f) * 4096.0F * (float) ((Class332_Sub3) this).anInt5433 / f_36_);
-		anInt5428 = (int) ((f_12_ - f) * 4096.0F * (float) ((Class332_Sub3) this).anInt5454 / f_35_);
+		anInt5444 = (int) ((f_15_ - f_11_) * 4096.0F * (float) this.anInt5433 / f_35_);
+		anInt5436 = (int) ((f_13_ - f_11_) * 4096.0F * (float) this.anInt5454 / f_36_);
+		anInt5441 = (int) ((f_14_ - f) * 4096.0F * (float) this.anInt5433 / f_36_);
+		anInt5428 = (int) ((f_12_ - f) * 4096.0F * (float) this.anInt5454 / f_35_);
 		anInt5426 = (int) (f_31_ * 16.0F + 8.0F - (f + f_12_ + f_14_ + f_29_) / 4.0F * 16.0F);
 		anInt5445 = (int) (f_33_ * 16.0F + 8.0F - (f_11_ + f_13_ + f_15_ + f_30_) / 4.0F * 16.0F);
-		anInt5450 = ((((Class332_Sub3) this).anInt5433 >> 1 << 12) + (anInt5445 * anInt5441 >> 4));
-		anInt5443 = ((((Class332_Sub3) this).anInt5454 >> 1 << 12) + (anInt5445 * anInt5428 >> 4));
+		anInt5450 = ((this.anInt5433 >> 1 << 12) + (anInt5445 * anInt5441 >> 4));
+		anInt5443 = ((this.anInt5454 >> 1 << 12) + (anInt5445 * anInt5428 >> 4));
 		anInt5425 = anInt5426 * anInt5444 >> 4;
 		anInt5456 = anInt5426 * anInt5436 >> 4;
 		anInt5453 = (int) f_31_;
@@ -142,13 +142,13 @@ abstract class Class332_Sub3 extends Class332 {
 	}
 
 	final int method3731() {
-		return ((Class332_Sub3) this).anInt5454;
+		return this.anInt5454;
 	}
 
 	abstract void method3729(int i, int i_37_, aa var_aa, int i_38_, int i_39_);
 
 	final void method3733(float f, float f_40_, float f_41_, float f_42_, float f_43_, float f_44_, int i, int i_45_, int i_46_, int i_47_) {
-		if (((Class332_Sub3) this).aHa_Sub2_5434.method1920())
+		if (this.aHa_Sub2_5434.method1920())
 			throw new IllegalStateException();
 		if (method3760(f, f_40_, f_41_, f_42_, f_43_, f_44_)) {
 			anInt5432 = i_45_;
@@ -200,16 +200,16 @@ abstract class Class332_Sub3 extends Class332 {
 	}
 
 	final int method3749() {
-		return (((Class332_Sub3) this).anInt5439 + ((Class332_Sub3) this).anInt5454 + ((Class332_Sub3) this).anInt5447);
+		return (this.anInt5439 + this.anInt5454 + this.anInt5447);
 	}
 
 	final void method3728(int i, int i_50_, int i_51_, int i_52_, int i_53_, int i_54_, int i_55_) {
-		if (((Class332_Sub3) this).aHa_Sub2_5434.method1920())
+		if (this.aHa_Sub2_5434.method1920())
 			throw new IllegalStateException();
 		if (anIntArray5437 == null)
 			anIntArray5437 = new int[4];
-		((Class332_Sub3) this).aHa_Sub2_5434.K(anIntArray5437);
-		((Class332_Sub3) this).aHa_Sub2_5434.T(((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4509, ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4495, i + i_51_, i_50_ + i_52_);
+		this.aHa_Sub2_5434.K(anIntArray5437);
+		this.aHa_Sub2_5434.T(this.aHa_Sub2_5434.anInt4509, this.aHa_Sub2_5434.anInt4495, i + i_51_, i_50_ + i_52_);
 		int i_56_ = method3737();
 		int i_57_ = method3749();
 		int i_58_ = (i_51_ + i_56_ - 1) / i_56_;
@@ -219,44 +219,44 @@ abstract class Class332_Sub3 extends Class332 {
 			for (int i_62_ = 0; i_62_ < i_58_; i_62_++)
 				method3748(i + i_62_ * i_56_, i_50_ + i_61_, i_53_, i_54_, i_55_);
 		}
-		((Class332_Sub3) this).aHa_Sub2_5434.KA(anIntArray5437[0], anIntArray5437[1], anIntArray5437[2], anIntArray5437[3]);
+		this.aHa_Sub2_5434.KA(anIntArray5437[0], anIntArray5437[1], anIntArray5437[2], anIntArray5437[3]);
 	}
 
 	abstract void method3745(int i, int i_63_, int i_64_, int i_65_, int i_66_, int i_67_, int i_68_, int i_69_);
 
 	final void method3747(float f, float f_70_, float f_71_, float f_72_, float f_73_, float f_74_, int i, aa var_aa, int i_75_, int i_76_) {
-		if (((Class332_Sub3) this).aHa_Sub2_5434.method1920())
+		if (this.aHa_Sub2_5434.method1920())
 			throw new IllegalStateException();
 		if (method3760(f, f_70_, f_71_, f_72_, f_73_, f_74_)) {
 			aa_Sub1 var_aa_Sub1 = (aa_Sub1) var_aa;
-			method3758(((aa_Sub1) var_aa_Sub1).anIntArray3555, ((aa_Sub1) var_aa_Sub1).anIntArray3557, anInt5453 - i_75_, -i_76_ - (anInt5431 - anInt5429));
+			method3758(var_aa_Sub1.anIntArray3555, var_aa_Sub1.anIntArray3557, anInt5453 - i_75_, -i_76_ - (anInt5431 - anInt5429));
 		}
 	}
 
 	abstract void method3748(int i, int i_77_, int i_78_, int i_79_, int i_80_);
 
 	final void method3740(int i, int i_81_, int i_82_, int i_83_) {
-		((Class332_Sub3) this).anInt5446 = i;
-		((Class332_Sub3) this).anInt5439 = i_81_;
-		((Class332_Sub3) this).anInt5455 = i_82_;
-		((Class332_Sub3) this).anInt5447 = i_83_;
+		this.anInt5446 = i;
+		this.anInt5439 = i_81_;
+		this.anInt5455 = i_82_;
+		this.anInt5447 = i_83_;
 	}
 
 	Class332_Sub3(ha_Sub2 var_ha_Sub2, int i, int i_84_) {
-		((Class332_Sub3) this).aHa_Sub2_5434 = var_ha_Sub2;
-		((Class332_Sub3) this).anInt5433 = i;
-		((Class332_Sub3) this).anInt5454 = i_84_;
+		this.aHa_Sub2_5434 = var_ha_Sub2;
+		this.anInt5433 = i;
+		this.anInt5454 = i_84_;
 	}
 
 	final void method3741(int[] is) {
-		is[0] = ((Class332_Sub3) this).anInt5446;
-		is[1] = ((Class332_Sub3) this).anInt5439;
-		is[2] = ((Class332_Sub3) this).anInt5455;
-		is[3] = ((Class332_Sub3) this).anInt5447;
+		is[0] = this.anInt5446;
+		is[1] = this.anInt5439;
+		is[2] = this.anInt5455;
+		is[3] = this.anInt5447;
 	}
 
 	final int method3734() {
-		return ((Class332_Sub3) this).anInt5433;
+		return this.anInt5433;
 	}
 
 	static {

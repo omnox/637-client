@@ -60,7 +60,7 @@ final class OutputStream_Sub1 extends OutputStream {
 
 	static final void method130(int i, int i_10_, int i_11_) {
 		try {
-			Class299_Sub2.method3523(i_11_, i, i_10_ ^ i_10_);
+			Class299_Sub2.method3523(i_11_, i, 0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("dg.B(" + i + ',' + i_10_ + ',' + i_11_ + ')'));
 		}

@@ -44,11 +44,11 @@ final class Class98_Sub10_Sub28 extends Class98_Sub10 {
 												if (i_2_ != 1) {
 													if (i_2_ != 2) {
 														if (i_2_ != 3) {
-															if ((i_2_ ^ 0xffffffff) != -5) {
+															if (i_2_ != 4) {
 																if (i_2_ != 5) {
-																	if ((i_2_ ^ 0xffffffff) != -7) {
+																	if (i_2_ != 6) {
 																		if (i_2_ != 7) {
-																			if ((i_2_ ^ 0xffffffff) == -9)
+																			if (i_2_ == 8)
 																				break while_157_;
 																			break while_158_;
 																		}
@@ -112,35 +112,35 @@ final class Class98_Sub10_Sub28 extends Class98_Sub10 {
 	private final void method1089(byte i, int i_3_, int i_4_, Random random, int[][] is, int i_5_, int i_6_) {
 		try {
 			int i_7_ = (anInt5699 <= 0 ? 4096 : 4096 - Class63.method546(-28737, anInt5699, random));
-			int i_8_ = anInt5706 * anInt5694 >> 1951392652;
-			int i_9_ = anInt5706 + -((i_8_ ^ 0xffffffff) >= -1 ? 0 : Class63.method546(-28737, i_8_, random));
+			int i_8_ = anInt5706 * anInt5694 >> 12;
+			int i_9_ = anInt5706 + -(i_8_ <= 0 ? 0 : Class63.method546(-28737, i_8_, random));
 			if (Class25.anInt268 <= i_4_)
 				i_4_ -= Class25.anInt268;
 			if (i >= 39) {
 				if (i_9_ > 0) {
-					if ((i_6_ ^ 0xffffffff) < -1 && i_3_ > 0) {
+					if (i_6_ > 0 && i_3_ > 0) {
 						int i_10_ = i_3_ / 2;
 						int i_11_ = i_6_ / 2;
-						int i_12_ = ((i_9_ ^ 0xffffffff) < (i_10_ ^ 0xffffffff) ? i_10_ : i_9_);
-						int i_13_ = ((i_11_ ^ 0xffffffff) > (i_9_ ^ 0xffffffff) ? i_11_ : i_9_);
+						int i_12_ = (i_10_ < i_9_ ? i_10_ : i_9_);
+						int i_13_ = (i_9_ > i_11_ ? i_11_ : i_9_);
 						int i_14_ = i_4_ - -i_12_;
 						int i_15_ = -(2 * i_12_) + i_3_;
-						for (int i_16_ = 0; (i_16_ ^ 0xffffffff) > (i_6_ ^ 0xffffffff); i_16_++) {
+						for (int i_16_ = 0; i_6_ > i_16_; i_16_++) {
 							int[] is_17_ = is[i_16_ - -i_5_];
-							if ((i_16_ ^ 0xffffffff) > (i_13_ ^ 0xffffffff)) {
+							if (i_13_ > i_16_) {
 								int i_18_ = i_7_ * i_16_ / i_13_;
 								if (anInt5703 == 0) {
-									for (int i_19_ = 0; ((i_19_ ^ 0xffffffff) > (i_12_ ^ 0xffffffff)); i_19_++) {
+									for (int i_19_ = 0; (i_12_ > i_19_); i_19_++) {
 										int i_20_ = i_19_ * i_7_ / i_12_;
-										is_17_[Class202.method2702(i_4_ + i_19_, (Class329.anInt2761))] = is_17_[(Class202.method2702((-1 + -i_19_ + i_3_ + i_4_), Class329.anInt2761))] = i_20_ * i_18_ >> -895330964;
+										is_17_[Class202.method2702(i_4_ + i_19_, (Class329.anInt2761))] = is_17_[(Class202.method2702((-1 + -i_19_ + i_3_ + i_4_), Class329.anInt2761))] = i_20_ * i_18_ >> 12;
 									}
 								} else {
-									for (int i_21_ = 0; ((i_21_ ^ 0xffffffff) > (i_12_ ^ 0xffffffff)); i_21_++) {
+									for (int i_21_ = 0; (i_12_ > i_21_); i_21_++) {
 										int i_22_ = i_7_ * i_21_ / i_12_;
 										is_17_[Class202.method2702((Class329.anInt2761), i_21_ + i_4_)] = is_17_[(Class202.method2702(Class329.anInt2761, -i_21_ + i_4_ - (-i_3_ + 1)))] = i_22_ < i_18_ ? i_22_ : i_18_;
 									}
 								}
-								if ((Class25.anInt268 ^ 0xffffffff) <= (i_14_ - -i_15_ ^ 0xffffffff))
+								if (i_14_ - -i_15_ <= Class25.anInt268)
 									Class236.method2896(is_17_, i_14_, i_15_, i_18_);
 								else {
 									int i_23_ = -i_14_ + Class25.anInt268;
@@ -149,12 +149,12 @@ final class Class98_Sub10_Sub28 extends Class98_Sub10 {
 								}
 							} else {
 								int i_24_ = -1 + i_6_ + -i_16_;
-								if ((i_13_ ^ 0xffffffff) < (i_24_ ^ 0xffffffff)) {
+								if (i_24_ < i_13_) {
 									int i_25_ = i_24_ * i_7_ / i_13_;
 									if (anInt5703 == 0) {
 										for (int i_26_ = 0; i_12_ > i_26_; i_26_++) {
 											int i_27_ = i_26_ * i_7_ / i_12_;
-											is_17_[(Class202.method2702(Class329.anInt2761, i_4_ + i_26_))] = is_17_[(Class202.method2702((i_4_ + i_3_ - i_26_ + -1), (Class329.anInt2761)))] = i_27_ * i_25_ >> 1830367756;
+											is_17_[(Class202.method2702(Class329.anInt2761, i_4_ + i_26_))] = is_17_[(Class202.method2702((i_4_ + i_3_ - i_26_ + -1), (Class329.anInt2761)))] = i_27_ * i_25_ >> 12;
 										}
 									} else {
 										for (int i_28_ = 0; i_28_ < i_12_; i_28_++) {
@@ -162,7 +162,7 @@ final class Class98_Sub10_Sub28 extends Class98_Sub10 {
 											is_17_[(Class202.method2702(Class329.anInt2761, i_28_ + i_4_))] = is_17_[(Class202.method2702(Class329.anInt2761, (-1 + i_3_ + (i_4_ + -i_28_))))] = (i_29_ >= i_25_ ? i_25_ : i_29_);
 										}
 									}
-									if ((Class25.anInt268 ^ 0xffffffff) > (i_14_ + i_15_ ^ 0xffffffff)) {
+									if (i_14_ + i_15_ > Class25.anInt268) {
 										int i_30_ = -i_14_ + Class25.anInt268;
 										Class236.method2896(is_17_, i_14_, i_30_, i_25_);
 										Class236.method2896(is_17_, 0, -i_30_ + i_15_, i_25_);
@@ -187,7 +187,7 @@ final class Class98_Sub10_Sub28 extends Class98_Sub10 {
 						Class236.method2896(is[i_33_ + i_5_], i_4_, i_3_, i_7_);
 				} else {
 					int i_34_ = -i_4_ + Class25.anInt268;
-					for (int i_35_ = 0; (i_6_ ^ 0xffffffff) < (i_35_ ^ 0xffffffff); i_35_++) {
+					for (int i_35_ = 0; i_35_ < i_6_; i_35_++) {
 						int[] is_36_ = is[i_35_ + i_5_];
 						Class236.method2896(is_36_, i_4_, i_34_, i_7_);
 						Class236.method2896(is_36_, 0, i_3_ + -i_34_, i_7_);
@@ -201,9 +201,9 @@ final class Class98_Sub10_Sub28 extends Class98_Sub10 {
 
 	final int[] method990(int i, int i_37_) {
 		try {
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_37_);
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
-				int[][] is_38_ = ((Class98_Sub10) this).aClass16_3863.method238(98);
+			int[] is = this.aClass16_3863.method237((byte) 98, i_37_);
+			if (this.aClass16_3863.aBoolean198) {
+				int[][] is_38_ = this.aClass16_3863.method238(98);
 				int i_39_ = 0;
 				int i_40_ = 0;
 				int i_41_ = 0;
@@ -213,17 +213,17 @@ final class Class98_Sub10_Sub28 extends Class98_Sub10 {
 				boolean bool_44_ = true;
 				int i_45_ = 0;
 				int i_46_ = 0;
-				int i_47_ = anInt5698 * Class25.anInt268 >> -697803540;
-				int i_48_ = anInt5701 * Class25.anInt268 >> 2123484780;
-				int i_49_ = Class63.anInt492 * anInt5702 >> 669504172;
-				int i_50_ = Class63.anInt492 * anInt5695 >> 1744932684;
+				int i_47_ = anInt5698 * Class25.anInt268 >> 12;
+				int i_48_ = anInt5701 * Class25.anInt268 >> 12;
+				int i_49_ = Class63.anInt492 * anInt5702 >> 12;
+				int i_50_ = Class63.anInt492 * anInt5695 >> 12;
 				if (i_50_ <= 1)
 					return is_38_[i_37_];
-				anInt5706 = Class25.anInt268 / 8 * anInt5696 >> 2057408108;
+				anInt5706 = Class25.anInt268 / 8 * anInt5696 >> 12;
 				int i_51_ = 1 + Class25.anInt268 / i_47_;
 				int[][] is_52_ = new int[i_51_][3];
 				int[][] is_53_ = new int[i_51_][3];
-				Random random = new Random((long) anInt5700);
+				Random random = new Random(anInt5700);
 				for (;;) {
 					int i_54_ = (Class63.method546(i ^ ~0x70bf, i_48_ - i_47_, random) + i_47_);
 					int i_55_ = (Class63.method546(-28737, i_50_ - i_49_, random) + i_49_);
@@ -247,7 +247,7 @@ final class Class98_Sub10_Sub28 extends Class98_Sub10 {
 						i_57_ = is_59_[2];
 						for (;;) {
 							int[] is_62_ = is_53_[i_58_];
-							if ((i_61_ ^ 0xffffffff) <= (is_62_[0] ^ 0xffffffff) && is_62_[1] >= i_61_)
+							if (is_62_[0] <= i_61_ && is_62_[1] >= i_61_)
 								break;
 							i_60_++;
 							if (i_45_ <= ++i_58_)
@@ -259,19 +259,19 @@ final class Class98_Sub10_Sub28 extends Class98_Sub10 {
 								i_63_ += Class25.anInt268;
 							if (i_63_ > Class25.anInt268)
 								i_63_ -= Class25.anInt268;
-							for (int i_64_ = 1; (i_60_ ^ 0xffffffff) <= (i_64_ ^ 0xffffffff); i_64_++) {
+							for (int i_64_ = 1; i_64_ <= i_60_; i_64_++) {
 								int[] is_65_ = is_53_[(i_64_ + i_43_) % i_45_];
 								i_57_ = Math.max(i_57_, is_65_[2]);
 							}
 							for (int i_66_ = 0; i_66_ <= i_60_; i_66_++) {
 								int[] is_67_ = is_53_[(i_66_ + i_43_) % i_45_];
 								int i_68_ = is_67_[2];
-								if ((i_68_ ^ 0xffffffff) != (i_57_ ^ 0xffffffff)) {
+								if (i_57_ != i_68_) {
 									int i_69_ = is_67_[0];
 									int i_70_ = is_67_[1];
 									int i_71_;
 									int i_72_;
-									if ((i_63_ ^ 0xffffffff) <= (i_61_ ^ 0xffffffff)) {
+									if (i_61_ <= i_63_) {
 										if (i_69_ != 0) {
 											i_71_ = Math.max(i_63_, i_69_);
 											i_72_ = Class25.anInt268;
@@ -289,7 +289,7 @@ final class Class98_Sub10_Sub28 extends Class98_Sub10 {
 						}
 						i_43_ = i_58_;
 					}
-					if ((Class63.anInt492 ^ 0xffffffff) > (i_57_ - -i_55_ ^ 0xffffffff))
+					if (i_57_ - -i_55_ > Class63.anInt492)
 						i_55_ = -i_57_ + Class63.anInt492;
 					else
 						bool = false;
@@ -327,7 +327,7 @@ final class Class98_Sub10_Sub28 extends Class98_Sub10 {
 						bool_44_ = false;
 						for (;;) {
 							int[] is_77_ = is_53_[i_43_];
-							if ((is_77_[0] ^ 0xffffffff) >= (i_76_ ^ 0xffffffff) && i_76_ <= is_77_[1])
+							if (i_76_ >= is_77_[0] && i_76_ <= is_77_[1])
 								break;
 							if (++i_43_ >= i_45_)
 								i_43_ = 0;

@@ -20,7 +20,7 @@ final class Class230 {
 		try {
 			int i_0_ = -17 / ((-9 - i) / 48);
 			for (Class98_Sub46_Sub8 class98_sub46_sub8 = ((Class98_Sub46_Sub8) Class33.aClass148_315.method2418(32)); class98_sub46_sub8 != null; class98_sub46_sub8 = ((Class98_Sub46_Sub8) Class33.aClass148_315.method2417(101))) {
-				if (ClientScript2Event.method1179(((Class98_Sub46_Sub8) class98_sub46_sub8).anInt5990, 255))
+				if (ClientScript2Event.method1179(class98_sub46_sub8.anInt5990, 255))
 					Class280.method3324(class98_sub46_sub8, -32612);
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -31,8 +31,8 @@ final class Class230 {
 	static final void method2870(byte i) {
 		do {
 			try {
-				Class98_Sub37.aHa4185.xa((((float) ((Class98_Sub27) (Class98_Sub9.aClass98_Sub27_3856)).aClass64_Sub19_4057.method630((byte) 125) * 0.1F) + 0.7F) * Class159.aFloat1254);
-				Class98_Sub37.aHa4185.ZA(Class98_Sub46_Sub6.anInt5979, Class141.aFloat1150, Class215.aFloat1613, (float) (InputStream_Sub2.anInt29 << -1868059326), (float) (Class48.anInt410 << -1893384734), (float) (OutputStream_Sub2.anInt40 << 1516482466));
+				Class98_Sub37.aHa4185.xa((((float) Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub19_4057.method630((byte) 125) * 0.1F) + 0.7F) * Class159.aFloat1254);
+				Class98_Sub37.aHa4185.ZA(Class98_Sub46_Sub6.anInt5979, Class141.aFloat1150, Class215.aFloat1613, (float) (InputStream_Sub2.anInt29 << 2), (float) (Class48.anInt410 << 2), (float) (OutputStream_Sub2.anInt40 << 2));
 				Class98_Sub37.aHa4185.method1775(Class98_Sub46_Sub4.aClass48_5962);
 				if (i == -74)
 					break;
@@ -46,7 +46,7 @@ final class Class230 {
 
 	protected final void finalize() throws Throwable {
 		try {
-			aHa_Sub3_Sub2_1731.method2082(0, ((Class230) this).aLong1723);
+			aHa_Sub3_Sub2_1731.method2082(0, this.aLong1723);
 			super.finalize();
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "on.finalize(" + ')');
@@ -56,9 +56,9 @@ final class Class230 {
 	static final void method2871(int i) {
 		try {
 			Class246.method2962(false);
-			int i_1_ = ((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub18_4071.method627((byte) 120);
+			int i_1_ = Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub18_4071.method627((byte) 120);
 			do {
-				if ((i_1_ ^ 0xffffffff) != -3) {
+				if (i_1_ != 2) {
 					if (i_1_ != 3)
 						break;
 				} else {
@@ -69,12 +69,12 @@ final class Class230 {
 			} while (false);
 			if (i >= -30)
 				method2869(-126);
-			if (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub18_4071.method625((byte) -77))
+			if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub18_4071.method625((byte) -77))
 				GameInterfaceData.method3471(Class42_Sub3.aCanvas5361, 0);
 			if (Class265.aHa1974 != null)
 				Class98_Sub10_Sub34.method1104(99);
-			Class239.aBoolean1839 = ((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub18_4071.method627((byte) 122) != 0;
-			za_Sub2.aBoolean6079 = ((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub18_4071.method625((byte) -58);
+			Class239.aBoolean1839 = Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub18_4071.method627((byte) 122) != 0;
+			za_Sub2.aBoolean6079 = Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub18_4071.method625((byte) -58);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "on.B(" + i + ')');
 		}
@@ -99,7 +99,7 @@ final class Class230 {
 
 	Class230(ha_Sub3_Sub2 var_ha_Sub3_Sub2, long l, int i) {
 		try {
-			((Class230) this).aLong1723 = l;
+			this.aLong1723 = l;
 			aHa_Sub3_Sub2_1731 = var_ha_Sub3_Sub2;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("on.<init>(" + (var_ha_Sub3_Sub2 != null ? "{...}" : "null") + ',' + l + ',' + i + ')'));

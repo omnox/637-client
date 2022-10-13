@@ -24,7 +24,7 @@ final class Class168 {
 	static final void method2533(int i, int i_0_, int i_1_, int i_2_, byte i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_) {
 		try {
 			if (i_3_ > 79) {
-				if ((i_0_ ^ 0xffffffff) > -513 || i_4_ < 512 || ((GameWorld.size_x * 512 + -1024 ^ 0xffffffff) > (i_0_ ^ 0xffffffff)) || (GameWorld.size_y * 512 + -1024 ^ 0xffffffff) > (i_4_ ^ 0xffffffff))
+				if (i_0_ < 512 || i_4_ < 512 || (i_0_ > GameWorld.size_x * 512 + -1024) || i_4_ > GameWorld.size_y * 512 + -1024)
 					Class259.anIntArray1957[0] = Class259.anIntArray1957[1] = -1;
 				else {
 					int i_9_ = (Perspective.getTileHeight(i_6_, i_4_, i_0_) + -i_8_);

@@ -72,7 +72,7 @@ final class Class298 //steven
 
 	static {
 		Class222[] class222s = Class98_Sub43.method1484(0);
-		for (int i = 0; (i ^ 0xffffffff) > (class222s.length ^ 0xffffffff); i++)
-			aClass222Array2491[((Class222) class222s[i]).anInt1668] = class222s[i];
+		for (int i = 0; class222s.length > i; i++)
+			aClass222Array2491[class222s[i].anInt1668] = class222s[i];
 	}
 }

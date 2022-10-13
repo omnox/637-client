@@ -25,7 +25,7 @@ final class Class332_Sub2 extends Class332 {
 				int[] is = aHa_Sub3_5415.na(i_3_, i_4_, i_1_, i_2_);
 				if (is == null)
 					break;
-				for (int i_5_ = 0; (is.length ^ 0xffffffff) < (i_5_ ^ 0xffffffff); i_5_++)
+				for (int i_5_ = 0; i_5_ < is.length; i_5_++)
 					is[i_5_] = Class41.method366(is[i_5_], -16777216);
 				method3756(i, i_0_, i_1_, i_2_, is, 0, i_1_);
 			} catch (RuntimeException runtimeexception) {
@@ -132,18 +132,18 @@ final class Class332_Sub2 extends Class332 {
 			int[] is = aHa_Sub3_5415.na(i, i_34_, anInt5412, anInt5419);
 			int[] is_36_ = new int[anInt5419 * anInt5412];
 			anInterface4_Impl2_5424.method44(anInt5412, 0, (byte) 87, anInt5419, 0, is_36_, 0);
-			if ((i_35_ ^ 0xffffffff) != -1) {
-				if ((i_35_ ^ 0xffffffff) != -2) {
-					if ((i_35_ ^ 0xffffffff) == -3) {
+			if (i_35_ != 0) {
+				if (i_35_ != 1) {
+					if (i_35_ == 2) {
 						for (int i_37_ = 0; i_37_ < anInt5419; i_37_++) {
 							int i_38_ = i_37_ * anInt5412;
-							for (int i_39_ = 0; ((anInt5412 ^ 0xffffffff) < (i_39_ ^ 0xffffffff)); i_39_++)
-								is_36_[i_39_ + i_38_] = (Class41.method366((Class202.method2702(is[i_39_ + i_38_], -1286409473) << 1475591704), Class202.method2702(16777215, (is_36_[(i_39_ + i_38_)]))));
+							for (int i_39_ = 0; (i_39_ < anInt5412); i_39_++)
+								is_36_[i_39_ + i_38_] = (Class41.method366((Class202.method2702(is[i_39_ + i_38_], -1286409473) << 24), Class202.method2702(16777215, (is_36_[(i_39_ + i_38_)]))));
 						}
-					} else if ((i_35_ ^ 0xffffffff) == -4) {
-						for (int i_40_ = 0; (i_40_ ^ 0xffffffff) > (anInt5419 ^ 0xffffffff); i_40_++) {
+					} else if (i_35_ == 3) {
+						for (int i_40_ = 0; anInt5419 > i_40_; i_40_++) {
 							int i_41_ = i_40_ * anInt5412;
-							for (int i_42_ = 0; ((i_42_ ^ 0xffffffff) > (anInt5412 ^ 0xffffffff)); i_42_++)
+							for (int i_42_ = 0; (anInt5412 > i_42_); i_42_++)
 								is_36_[i_41_ + i_42_] = (Class41.method366(is[i_42_ + i_41_] != 0 ? -16777216 : 0, Class202.method2702(16777215, (is_36_[(i_41_ - -i_42_)]))));
 						}
 					}
@@ -151,14 +151,14 @@ final class Class332_Sub2 extends Class332 {
 					for (int i_43_ = 0; i_43_ < anInt5419; i_43_++) {
 						int i_44_ = i_43_ * anInt5412;
 						for (int i_45_ = 0; i_45_ < anInt5412; i_45_++)
-							is_36_[i_44_ + i_45_] = (Class41.method366(Class202.method2702(16777215, is_36_[i_45_ + i_44_]), (Class202.method2702(1304231680, is[i_45_ + i_44_]) << -1936896592)));
+							is_36_[i_44_ + i_45_] = (Class41.method366(Class202.method2702(16777215, is_36_[i_45_ + i_44_]), (Class202.method2702(1304231680, is[i_45_ + i_44_]) << 16)));
 					}
 				}
 			} else {
-				for (int i_46_ = 0; (anInt5419 ^ 0xffffffff) < (i_46_ ^ 0xffffffff); i_46_++) {
+				for (int i_46_ = 0; i_46_ < anInt5419; i_46_++) {
 					int i_47_ = i_46_ * anInt5412;
 					for (int i_48_ = 0; anInt5412 > i_48_; i_48_++)
-						is_36_[i_48_ + i_47_] = (Class41.method366(Class202.method2702(-16776984, (is[i_47_ - -i_48_] << -1575239864)), Class202.method2702(16777215, is_36_[i_48_ + i_47_])));
+						is_36_[i_48_ + i_47_] = (Class41.method366(Class202.method2702(-16776984, (is[i_47_ - -i_48_] << 8)), Class202.method2702(16777215, is_36_[i_48_ + i_47_])));
 				}
 			}
 			method3756(0, 0, anInt5412, anInt5419, is_36_, 0, anInt5412);
@@ -173,7 +173,7 @@ final class Class332_Sub2 extends Class332 {
 			anInt5414 = i;
 			anInt5422 = i_50_;
 			anInt5416 = i_49_;
-			aBoolean5420 = (anInt5414 != 0 || (anInt5416 ^ 0xffffffff) != -1 || (anInt5422 ^ 0xffffffff) != -1 || (anInt5418 ^ 0xffffffff) != -1);
+			aBoolean5420 = (anInt5414 != 0 || anInt5416 != 0 || anInt5422 != 0 || anInt5418 != 0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("pia.Q(" + i + ',' + i_49_ + ',' + i_50_ + ',' + i_51_ + ')'));
 		}
@@ -191,7 +191,7 @@ final class Class332_Sub2 extends Class332 {
 			aHa_Sub3_5415.method2051(1, -98, Class64_Sub16.aClass65_3681);
 			aHa_Sub3_5415.method1953(-67, Class64_Sub16.aClass65_3681, 1);
 			aHa_Sub3_5415.method1984(2, i_56_);
-			boolean bool = (aBoolean5417 && (anInt5416 ^ 0xffffffff) == -1 && (anInt5418 ^ 0xffffffff) == -1);
+			boolean bool = (aBoolean5417 && anInt5416 == 0 && anInt5418 == 0);
 			boolean bool_59_ = aBoolean5413 && anInt5414 == 0 && anInt5422 == 0;
 			if (!(bool_59_ & bool)) {
 				if (!bool_59_) {
@@ -210,7 +210,7 @@ final class Class332_Sub2 extends Class332 {
 							i_63_ += i_61_;
 							aHa_Sub3_5415.method2002((byte) -124);
 						}
-						if ((i_62_ ^ 0xffffffff) > (i_60_ ^ 0xffffffff)) {
+						if (i_60_ > i_62_) {
 							int i_64_ = i_60_ - i_62_;
 							class111_sub3_58_.method2137(anInterface4_Impl2_5424.method45(-8473, (float) i_54_), (byte) -121, anInterface4_Impl2_5424.method42((byte) -86, (float) i_64_), 1.0F);
 							aHa_Sub3_5415.method2008((Class246_Sub3_Sub4_Sub5.aClass258_6260), (byte) 107);
@@ -231,7 +231,7 @@ final class Class332_Sub2 extends Class332 {
 							aHa_Sub3_5415.method2008((Class246_Sub3_Sub4_Sub5.aClass258_6260), (byte) 64);
 							int i_71_ = anInt5414 + i;
 							int i_72_ = i_71_ - -anInt5412;
-							while ((i_66_ ^ 0xffffffff) <= (i_72_ ^ 0xffffffff)) {
+							while (i_72_ <= i_66_) {
 								class111_sub3.method2137((float) anInt5419, (byte) -125, (float) anInt5412, 0.0F);
 								class111_sub3.method2106(i_71_, i_69_, 0);
 								aHa_Sub3_5415.method1935(1);
@@ -239,7 +239,7 @@ final class Class332_Sub2 extends Class332 {
 								aHa_Sub3_5415.method2002((byte) -128);
 								i_71_ += i_67_;
 							}
-							if ((i_71_ ^ 0xffffffff) > (i_66_ ^ 0xffffffff)) {
+							if (i_66_ > i_71_) {
 								int i_73_ = -i_71_ + i_66_;
 								class111_sub3_58_.method2137(anInterface4_Impl2_5424.method45(-8473, (float) anInt5419), (byte) -110, anInterface4_Impl2_5424.method42((byte) -55, (float) i_73_), 1.0F);
 								aHa_Sub3_5415.method2008(Class246_Sub3_Sub4_Sub5.aClass258_6260, (byte) 26);
@@ -256,7 +256,7 @@ final class Class332_Sub2 extends Class332 {
 							class111_sub3_58_.method2137(anInterface4_Impl2_5424.method45(-8473, (float) i_74_), (byte) -122, anInterface4_Impl2_5424.method42((byte) -100, (float) anInt5412), 1.0F);
 							aHa_Sub3_5415.method2008((Class246_Sub3_Sub4_Sub5.aClass258_6260), (byte) 105);
 							int i_75_ = i - -anInt5414;
-							for (int i_76_ = i_75_ - -anInt5412; (i_66_ ^ 0xffffffff) <= (i_76_ ^ 0xffffffff); i_76_ += i_67_) {
+							for (int i_76_ = i_75_ - -anInt5412; i_76_ <= i_66_; i_76_ += i_67_) {
 								class111_sub3.method2137((float) i_74_, (byte) -119, (float) anInt5412, 0.0F);
 								class111_sub3.method2106(i_75_, i_69_, 0);
 								aHa_Sub3_5415.method1935(1);
@@ -289,7 +289,7 @@ final class Class332_Sub2 extends Class332 {
 						aHa_Sub3_5415.method2002((byte) -108);
 						i_80_ += i_79_;
 					}
-					if ((i_80_ ^ 0xffffffff) > (i_78_ ^ 0xffffffff)) {
+					if (i_78_ > i_80_) {
 						int i_82_ = -i_80_ + i_78_;
 						class111_sub3_58_.method2137(anInterface4_Impl2_5424.method45(-8473, (float) i_82_), (byte) -122, anInterface4_Impl2_5424.method42((byte) 79, (float) i_53_), 1.0F);
 						aHa_Sub3_5415.method2008((Class246_Sub3_Sub4_Sub5.aClass258_6260), (byte) 97);
@@ -320,7 +320,7 @@ final class Class332_Sub2 extends Class332 {
 			aa_Sub2 var_aa_Sub2 = (aa_Sub2) var_aa;
 			i_83_ += anInt5416;
 			i += anInt5414;
-			Interface4_Impl2 interface4_impl2 = ((aa_Sub2) var_aa_Sub2).anInterface4_Impl2_3563;
+			Interface4_Impl2 interface4_impl2 = var_aa_Sub2.anInterface4_Impl2_3563;
 			anInterface4_Impl2_5424.method4((byte) -81, Class342.aClass200_2861);
 			aHa_Sub3_5415.method2052(false);
 			aHa_Sub3_5415.method2005(anInterface4_Impl2_5424, 43);
@@ -358,7 +358,7 @@ final class Class332_Sub2 extends Class332 {
 			Class111_Sub3 class111_sub3 = aHa_Sub3_5415.method1978((byte) 102);
 			Class111_Sub3 class111_sub3_95_ = aHa_Sub3_5415.method1957((byte) -80);
 			aa_Sub2 var_aa_Sub2 = (aa_Sub2) var_aa;
-			Interface4_Impl2 interface4_impl2 = ((aa_Sub2) var_aa_Sub2).anInterface4_Impl2_3563;
+			Interface4_Impl2 interface4_impl2 = var_aa_Sub2.anInterface4_Impl2_3563;
 			anInterface4_Impl2_5424.method4((byte) -81, ((aBoolean5410 || aBoolean5411 || (0x1 & i) == 0) ? Class342.aClass200_2861 : (Class284_Sub1_Sub1.aClass200_6187)));
 			aHa_Sub3_5415.method2052(false);
 			aHa_Sub3_5415.method2005(anInterface4_Impl2_5424, -120);
@@ -412,7 +412,7 @@ final class Class332_Sub2 extends Class332 {
 		try {
 			Class111_Sub3 class111_sub3 = aHa_Sub3_5415.method1978((byte) 4);
 			Class111_Sub3 class111_sub3_106_ = aHa_Sub3_5415.method1957((byte) 103);
-			anInterface4_Impl2_5424.method4((byte) -81, ((aBoolean5410 || aBoolean5411 || ((0x1 & i_105_ ^ 0xffffffff) == -1)) ? Class342.aClass200_2861 : (Class284_Sub1_Sub1.aClass200_6187)));
+			anInterface4_Impl2_5424.method4((byte) -81, ((aBoolean5410 || aBoolean5411 || ((0x1 & i_105_) == 0)) ? Class342.aClass200_2861 : (Class284_Sub1_Sub1.aClass200_6187)));
 			aHa_Sub3_5415.method2052(false);
 			aHa_Sub3_5415.method2005(anInterface4_Impl2_5424, -123);
 			aHa_Sub3_5415.method2001(i_104_, 96);
@@ -487,7 +487,7 @@ final class Class332_Sub2 extends Class332 {
 			anInterface4_Impl2_5424 = var_ha_Sub3.method2006(i_112_, i, (!bool ? Class98_Sub40.aClass164_4190 : Class62.aClass164_486), (byte) 45, Class162.aClass162_1266);
 			anInterface4_Impl2_5424.method46(true, true, 116);
 			aBoolean5410 = anInterface4_Impl2_5424.method47(12941) != i;
-			aBoolean5411 = (anInterface4_Impl2_5424.method43(116) ^ 0xffffffff) != (i_112_ ^ 0xffffffff);
+			aBoolean5411 = i_112_ != anInterface4_Impl2_5424.method43(116);
 			aBoolean5413 = !aBoolean5410 && anInterface4_Impl2_5424.method48(-62);
 			aBoolean5417 = !aBoolean5411 && anInterface4_Impl2_5424.method48(-33);
 		} catch (RuntimeException runtimeexception) {
@@ -505,7 +505,7 @@ final class Class332_Sub2 extends Class332 {
 			aHa_Sub3_5415 = var_ha_Sub3;
 			anInterface4_Impl2_5424 = var_ha_Sub3.method2063(i_114_, (byte) 124, is, false, i, i_113_, i_115_);
 			anInterface4_Impl2_5424.method46(true, true, 102);
-			aBoolean5410 = (i ^ 0xffffffff) != (anInterface4_Impl2_5424.method47(12941) ^ 0xffffffff);
+			aBoolean5410 = anInterface4_Impl2_5424.method47(12941) != i;
 			aBoolean5411 = anInterface4_Impl2_5424.method43(124) != i_113_;
 			aBoolean5413 = !aBoolean5410 && anInterface4_Impl2_5424.method48(-116);
 			aBoolean5417 = !aBoolean5411 && anInterface4_Impl2_5424.method48(-111);

@@ -21,7 +21,7 @@ final class Class64_Sub14 extends Class64 {
 
 	final int method556(int i, int i_0_) {
 		try {
-			if ((i ^ 0xffffffff) == -1 || ((Class98_Sub27) ((Class64) this).aClass98_Sub27_495).aClass64_Sub25_4039.method655((byte) 126) == 1)
+			if (i == 0 || this.aClass98_Sub27_495.aClass64_Sub25_4039.method655((byte) 126) == 1)
 				return 1;
 			if (i_0_ != 29053)
 				aClass332Array3675 = null;
@@ -35,10 +35,10 @@ final class Class64_Sub14 extends Class64 {
 		try {
 			if (i <= 118)
 				aClass332Array3675 = null;
-			if ((((Class64) this).anInt494 ^ 0xffffffff) != -1 && ((Class98_Sub27) ((Class64) this).aClass98_Sub27_495).aClass64_Sub25_4039.method655((byte) 122) != 1)
-				((Class64) this).anInt494 = 0;
-			if (((Class64) this).anInt494 < 0 || (((Class64) this).anInt494 ^ 0xffffffff) < -2)
-				((Class64) this).anInt494 = method552(0);
+			if (this.anInt494 != 0 && this.aClass98_Sub27_495.aClass64_Sub25_4039.method655((byte) 122) != 1)
+				this.anInt494 = 0;
+			if (this.anInt494 < 0 || this.anInt494 > 1)
+				this.anInt494 = method552(0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ju.C(" + i + ')');
 		}
@@ -72,7 +72,7 @@ final class Class64_Sub14 extends Class64 {
 		try {
 			if (i < 119)
 				aClass332Array3675 = null;
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ju.E(" + i + ')');
 		}
@@ -81,7 +81,7 @@ final class Class64_Sub14 extends Class64 {
 	final void method550(int i, int i_1_) {
 		try {
 			int i_2_ = -63 % ((i - -26) / 41);
-			((Class64) this).anInt494 = i_1_;
+			this.anInt494 = i_1_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ju.B(" + i + ',' + i_1_ + ')');
 		}

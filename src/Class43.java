@@ -15,7 +15,7 @@ abstract class Class43 {
 
 	private final void method396(int i, int i_0_, int i_1_, int i_2_, aa var_aa, int i_3_, String string, Class332[] class332s, int[] is) {
 		try {
-			i_1_ -= ((Class197) aClass197_373).anInt1518;
+			i_1_ -= aClass197_373.anInt1518;
 			int i_4_ = -1;
 			int i_5_ = i_3_;
 			int i_6_ = string.length();
@@ -48,9 +48,9 @@ abstract class Class43 {
 												Class332 class332 = class332s[i_9_];
 												int i_10_ = (is != null ? is[i_9_] : class332.method3749());
 												if ((Class223.anInt1676 & ~0xffffff) == -16777216)
-													class332.method3748(i_2_, (-i_10_ + ((((Class197) aClass197_373).anInt1518) + i_1_)), 1, 0, 1);
+													class332.method3748(i_2_, (-i_10_ + ((aClass197_373.anInt1518) + i_1_)), 1, 0, 1);
 												else
-													class332.method3748(i_2_, (-i_10_ + (i_1_ - -(((Class197) aClass197_373).anInt1518))), 0, ((Class223.anInt1676 & ~0xffffff) | 0xffffff), 1);
+													class332.method3748(i_2_, (-i_10_ + (i_1_ - -(aClass197_373.anInt1518))), 0, ((Class223.anInt1676 & ~0xffffff) | 0xffffff), 1);
 												i_2_ += class332s[i_9_].method3737();
 												i_5_ = -1;
 											} catch (Exception exception) {
@@ -67,13 +67,13 @@ abstract class Class43 {
 						} else
 							c = '\u00d7';
 					}
-					if ((i_4_ ^ 0xffffffff) == 0) {
+					if (i_4_ == -1) {
 						if (i_5_ != -1)
 							i_2_ += aClass197_373.method2671((byte) -50, c, i_5_);
 						if (c == 32) {
-							if ((Class93_Sub1.anInt5486 ^ 0xffffffff) < -1) {
+							if (Class93_Sub1.anInt5486 > 0) {
 								Class98_Sub47.anInt4276 += Class93_Sub1.anInt5486;
-								i_2_ += Class98_Sub47.anInt4276 >> 804071592;
+								i_2_ += Class98_Sub47.anInt4276 >> 8;
 								Class98_Sub47.anInt4276 &= 0xff;
 							}
 						} else if (var_aa == null) {
@@ -86,10 +86,10 @@ abstract class Class43 {
 							method409(c, i_2_, i_1_, Class223.anInt1676, false, var_aa, i, i_0_);
 						}
 						int i_11_ = aClass197_373.method2673((byte) 81, c);
-						if ((Class98_Sub10_Sub5_Sub1.anInt6292 ^ 0xffffffff) != 0)
-							aHa374.method1753(i_3_ ^ ~0x5716, i_11_, Class98_Sub10_Sub5_Sub1.anInt6292, i_1_ + (int) (0.7 * (double) (((Class197) aClass197_373).anInt1518)), i_2_);
-						if ((Class91.anInt724 ^ 0xffffffff) != 0)
-							aHa374.method1753(22294, i_11_, Class91.anInt724, (((Class197) aClass197_373).anInt1518) + i_1_ + 1, i_2_);
+						if (Class98_Sub10_Sub5_Sub1.anInt6292 != -1)
+							aHa374.method1753(i_3_ ^ ~0x5716, i_11_, Class98_Sub10_Sub5_Sub1.anInt6292, i_1_ + (int) (0.7 * (double) (aClass197_373.anInt1518)), i_2_);
+						if (Class91.anInt724 != -1)
+							aHa374.method1753(22294, i_11_, Class91.anInt724, (aClass197_373.anInt1518) + i_1_ + 1, i_2_);
 						i_5_ = c;
 						i_2_ += i_11_;
 					}
@@ -113,8 +113,8 @@ abstract class Class43 {
 
 	static final void method398(int i) {
 		try {
-			Class45.method431((long) Class215.anInt1614, true, Class265.aHa1974);
-			if ((Class15.anInt185 ^ 0xffffffff) != 0)
+			Class45.method431(Class215.anInt1614, true, Class265.aHa1974);
+			if (Class15.anInt185 != -1)
 				Class350.method3844(Class15.anInt185, -115);
 			for (int i_16_ = 0; i_16_ < Class69_Sub2.anInt5335; i_16_++) {
 				if (aa_Sub3.aBooleanArray3574[i_16_])
@@ -125,14 +125,14 @@ abstract class Class43 {
 			Class77_Sub1.anInt3803 = Class215.anInt1614;
 			if (i < 33)
 				method398(14);
-			if ((Class15.anInt185 ^ 0xffffffff) != 0) {
+			if (Class15.anInt185 != -1) {
 				Class69_Sub2.anInt5335 = 0;
 				Class215.method2791((byte) 112);
 			}
 			Class265.aHa1974.la();
 			Class98_Sub10_Sub22.method1069(256, Class265.aHa1974);
 			int i_17_ = Class83.method824((byte) -70);
-			if ((i_17_ ^ 0xffffffff) == 0)
+			if (i_17_ == -1)
 				i_17_ = Class21_Sub2.anInt5387;
 			if (i_17_ == -1)
 				i_17_ = OutputStream_Sub2.anInt39;
@@ -212,9 +212,9 @@ abstract class Class43 {
 	static final void method401(int i, boolean bool) {
 		do {
 			try {
-				if (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub29_4050.method677((byte) 120) == 0)
+				if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub29_4050.method677((byte) 120) == 0)
 					i = -1;
-				if ((i ^ 0xffffffff) != (Class325.anInt2729 ^ 0xffffffff)) {
+				if (Class325.anInt2729 != i) {
 					do {
 						if (i != -1) {
 							Class231 class231 = Class18.aClass11_213.method202(i, 25930);
@@ -224,12 +224,12 @@ abstract class Class43 {
 								if (!client.aBoolean3553)
 									break;
 							}
-							Class98_Sub43_Sub2.aClass88_5907.method872(class324.method3686(), new Point(((Class231) class231).anInt1738, ((Class231) class231).anInt1736), class324.method3681(), (byte) 125, class324.method3689(), Class42_Sub3.aCanvas5361);
+							Class98_Sub43_Sub2.aClass88_5907.method872(class324.method3686(), new Point(class231.anInt1738, class231.anInt1736), class324.method3681(), (byte) 125, class324.method3689(), Class42_Sub3.aCanvas5361);
 							Class325.anInt2729 = i;
 						}
 					} while (false);
 					if (bool == true) {
-						if ((i ^ 0xffffffff) != 0 || Class325.anInt2729 == -1)
+						if (i != -1 || Class325.anInt2729 == -1)
 							break;
 						Class98_Sub43_Sub2.aClass88_5907.method872(null, new Point(), -1, (byte) 95, -1, Class42_Sub3.aCanvas5361);
 						Class325.anInt2729 = -1;
@@ -250,7 +250,7 @@ abstract class Class43 {
 				for (int i_23_ = 0; i_23_ < string.length(); i_23_++) {
 					int i_24_ = string.charAt(i_23_);
 					if (i_24_ != 60) {
-						if ((i_24_ ^ 0xffffffff) == -63)
+						if (i_24_ == 62)
 							bool = false;
 						else if (!bool && i_24_ == 32)
 							i_22_++;
@@ -261,7 +261,7 @@ abstract class Class43 {
 					aClass197_373 = null;
 				if (i_22_ <= 0)
 					break;
-				Class93_Sub1.anInt5486 = (-aClass197_373.method2674(string, 106) + i << 1130187208) / i_22_;
+				Class93_Sub1.anInt5486 = (-aClass197_373.method2674(string, 106) + i << 8) / i_22_;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("da.AA(" + i + ',' + (string != null ? "{...}" : "null") + ',' + i_21_ + ')'));
 			}
@@ -306,47 +306,47 @@ abstract class Class43 {
 			if (string == null)
 				return 0;
 			method399((byte) 108, i_37_, i_42_);
-			if ((i_38_ ^ 0xffffffff) == -1)
-				i_38_ = ((Class197) aClass197_373).anInt1518;
+			if (i_38_ == 0)
+				i_38_ = aClass197_373.anInt1518;
 			int[] is_45_;
-			if (((((Class197) aClass197_373).anInt1517 - -((Class197) aClass197_373).anInt1514 + i_38_) ^ 0xffffffff) >= (i_34_ ^ 0xffffffff) || i_38_ - -i_38_ <= i_34_)
+			if (i_34_ >= (aClass197_373.anInt1517 - -aClass197_373.anInt1514 + i_38_) || i_38_ - -i_38_ <= i_34_)
 				is_45_ = new int[] { i_36_ };
 			else
 				is_45_ = null;
 			int i_46_ = aClass197_373.method2675(string, Class98_Sub43_Sub4.aStringArray5932, is_45_, class332s, -1);
 			if (i_33_ == -1) {
 				i_33_ = i_34_ / i_38_;
-				if ((i_33_ ^ 0xffffffff) >= -1)
+				if (i_33_ <= 0)
 					i_33_ = 1;
 			}
 			int i_47_ = 82 % ((i_41_ - 30) / 51);
-			if ((i_33_ ^ 0xffffffff) < -1 && i_46_ >= i_33_) {
+			if (i_33_ > 0 && i_46_ >= i_33_) {
 				i_46_ = i_33_;
 				Class98_Sub43_Sub4.aStringArray5932[-1 + i_33_] = aClass197_373.method2677((Class98_Sub43_Sub4.aStringArray5932[-1 + i_33_]), false, class332s, i_36_);
 			}
-			if ((i_39_ ^ 0xffffffff) == -4 && (i_46_ ^ 0xffffffff) == -2)
+			if (i_39_ == 3 && i_46_ == 1)
 				i_39_ = 1;
 			int i_48_;
 			if (i_39_ != 0) {
-				if ((i_39_ ^ 0xffffffff) == -2)
-					i_48_ = (((Class197) aClass197_373).anInt1517 + (i_40_ - -((-((i_46_ + -1) * i_38_) + (-((Class197) aClass197_373).anInt1514 + (i_34_ + -(((Class197) aClass197_373).anInt1517)))) / 2)));
-				else if ((i_39_ ^ 0xffffffff) != -3) {
-					int i_49_ = ((-((Class197) aClass197_373).anInt1514 + -((Class197) aClass197_373).anInt1517 + (i_34_ - i_38_ * (-1 + i_46_))) / (1 + i_46_));
-					if ((i_49_ ^ 0xffffffff) > -1)
+				if (i_39_ == 1)
+					i_48_ = (aClass197_373.anInt1517 + (i_40_ - -((-((i_46_ + -1) * i_38_) + (-aClass197_373.anInt1514 + (i_34_ + -(aClass197_373.anInt1517)))) / 2)));
+				else if (i_39_ != 2) {
+					int i_49_ = ((-aClass197_373.anInt1514 + -aClass197_373.anInt1517 + (i_34_ - i_38_ * (-1 + i_46_))) / (1 + i_46_));
+					if (i_49_ < 0)
 						i_49_ = 0;
-					i_48_ = i_49_ + ((Class197) aClass197_373).anInt1517 + i_40_;
+					i_48_ = i_49_ + aClass197_373.anInt1517 + i_40_;
 					i_38_ += i_49_;
 				} else
-					i_48_ = (-(i_38_ * (-1 + i_46_)) + i_34_ + (i_40_ + -((Class197) aClass197_373).anInt1514));
+					i_48_ = (-(i_38_ * (-1 + i_46_)) + i_34_ + (i_40_ + -aClass197_373.anInt1514));
 			} else
-				i_48_ = i_40_ + ((Class197) aClass197_373).anInt1517;
+				i_48_ = i_40_ + aClass197_373.anInt1517;
 			for (int i_50_ = 0; i_46_ > i_50_; i_50_++) {
-				if ((i_44_ ^ 0xffffffff) == -1)
+				if (i_44_ == 0)
 					method396(i_43_, i_35_, i_48_, i, var_aa, -1, Class98_Sub43_Sub4.aStringArray5932[i_50_], class332s, is);
 				else if (i_44_ != 1) {
 					if (i_44_ == 2)
 						method396(i_43_, i_35_, i_48_, i + (i_36_ - (aClass197_373.method2674((Class98_Sub43_Sub4.aStringArray5932[i_50_]), 123))), var_aa, -1, Class98_Sub43_Sub4.aStringArray5932[i_50_], class332s, is);
-					else if ((i_46_ - 1 ^ 0xffffffff) != (i_50_ ^ 0xffffffff)) {
+					else if (i_50_ != i_46_ - 1) {
 						method402(i_36_, Class98_Sub43_Sub4.aStringArray5932[i_50_], (byte) 74);
 						method396(i_43_, i_35_, i_48_, i, var_aa, -1, Class98_Sub43_Sub4.aStringArray5932[i_50_], class332s, is);
 						Class93_Sub1.anInt5486 = 0;
@@ -371,7 +371,7 @@ abstract class Class43 {
 					d = 0.0;
 				int i_57_ = string.length();
 				int[] is = new int[i_57_];
-				for (int i_58_ = i; (i_58_ ^ 0xffffffff) > (i_57_ ^ 0xffffffff); i_58_++)
+				for (int i_58_ = i; i_57_ > i_58_; i_58_++)
 					is[i_58_] = (int) (d * Math.sin((double) i_55_ + (double) i_58_ / 1.5));
 				method410(is, -(aClass197_373.method2674(string, 118) / 2) + i_56_, true, null, null, string, null, i_52_);
 			}
@@ -388,13 +388,13 @@ abstract class Class43 {
 				method410(null, -54, true, null, null, null, null, -121);
 			if (string == null)
 				return 0;
-			random.setSeed((long) i_63_);
+			random.setSeed(i_63_);
 			int i_66_ = (0x1f & random.nextInt()) + 192;
-			method399((byte) -94, i & 0xffffff | i_66_ << 2106889272, i_66_ << 484897464 | 0xffffff & i_61_);
+			method399((byte) -94, i & 0xffffff | i_66_ << 24, i_66_ << 24 | 0xffffff & i_61_);
 			int i_67_ = string.length();
 			int[] is_68_ = new int[i_67_];
 			int i_69_ = 0;
-			for (int i_70_ = 0; (i_70_ ^ 0xffffffff) > (i_67_ ^ 0xffffffff); i_70_++) {
+			for (int i_70_ = 0; i_67_ > i_70_; i_70_++) {
 				is_68_[i_70_] = i_69_;
 				if ((random.nextInt() & 0x3) == 0)
 					i_69_++;
@@ -420,7 +420,7 @@ abstract class Class43 {
 
 	private final void method410(int[] is, int i, boolean bool, int[] is_86_, Class332[] class332s, String string, int[] is_87_, int i_88_) {
 		try {
-			i_88_ -= ((Class197) aClass197_373).anInt1518;
+			i_88_ -= aClass197_373.anInt1518;
 			int i_89_ = -1;
 			int i_90_ = -1;
 			int i_91_ = 0;
@@ -428,12 +428,12 @@ abstract class Class43 {
 				method403(39, -23, 82, 55, -128, null, 88);
 			int i_92_ = string.length();
 			int i_93_ = 0;
-			for (/**/; (i_93_ ^ 0xffffffff) > (i_92_ ^ 0xffffffff); i_93_++) {
+			for (/**/; i_92_ > i_93_; i_93_++) {
 				char c = (char) (0xff & Class349.method3843((byte) 88, string.charAt(i_93_)));
-				if ((c ^ 0xffffffff) == -61)
+				if (c == 60)
 					i_89_ = i_93_;
 				else {
-					if (c == 62 && (i_89_ ^ 0xffffffff) != 0) {
+					if (c == 62 && i_89_ != -1) {
 						String string_94_ = string.substring(1 + i_89_, i_93_);
 						i_89_ = -1;
 						if (!string_94_.equals("lt")) {
@@ -468,7 +468,7 @@ abstract class Class43 {
 												int i_97_ = (PacketSender.method3607(-62, string_94_.substring(4)));
 												Class332 class332 = class332s[i_97_];
 												int i_98_ = (is_87_ != null ? is_87_[i_97_] : class332.method3749());
-												class332.method3748(i - -i_95_, i_88_ + ((((Class197) aClass197_373).anInt1518) - i_98_ - -i_96_), 1, 0, 1);
+												class332.method3748(i - -i_95_, i_88_ + ((aClass197_373.anInt1518) - i_98_ - -i_96_), 1, 0, 1);
 												i += class332s[i_97_].method3737();
 												i_90_ = -1;
 											} catch (Exception exception) {
@@ -484,8 +484,8 @@ abstract class Class43 {
 						} else
 							c = '<';
 					}
-					if ((i_89_ ^ 0xffffffff) == 0) {
-						if ((i_90_ ^ 0xffffffff) != 0)
+					if (i_89_ == -1) {
+						if (i_90_ != -1)
 							i += aClass197_373.method2671((byte) -50, c, i_90_);
 						int i_99_;
 						if (is_86_ != null)
@@ -504,14 +504,14 @@ abstract class Class43 {
 							fa(c, i_99_ + i, i_100_ + i_88_, Class223.anInt1676, false);
 						} else if (Class93_Sub1.anInt5486 > 0) {
 							Class98_Sub47.anInt4276 += Class93_Sub1.anInt5486;
-							i += Class98_Sub47.anInt4276 >> 146551848;
+							i += Class98_Sub47.anInt4276 >> 8;
 							Class98_Sub47.anInt4276 &= 0xff;
 						}
 						int i_101_ = aClass197_373.method2673((byte) -127, c);
 						if (Class98_Sub10_Sub5_Sub1.anInt6292 != -1)
-							aHa374.method1753(22294, i_101_, Class98_Sub10_Sub5_Sub1.anInt6292, (int) (0.7 * (double) (((Class197) aClass197_373).anInt1518)) + i_88_, i);
-						if ((Class91.anInt724 ^ 0xffffffff) != 0)
-							aHa374.method1753(22294, i_101_, Class91.anInt724, (i_88_ + (((Class197) aClass197_373).anInt1518)), i);
+							aHa374.method1753(22294, i_101_, Class98_Sub10_Sub5_Sub1.anInt6292, (int) (0.7 * (double) (aClass197_373.anInt1518)) + i_88_, i);
+						if (Class91.anInt724 != -1)
+							aHa374.method1753(22294, i_101_, Class91.anInt724, (i_88_ + (aClass197_373.anInt1518)), i);
 						i_90_ = c;
 						i += i_101_;
 					}
@@ -541,7 +541,7 @@ abstract class Class43 {
 				int i_112_ = string.length();
 				int[] is = new int[i_112_];
 				int[] is_113_ = new int[i_112_];
-				for (int i_114_ = 0; (i_112_ ^ 0xffffffff) < (i_114_ ^ 0xffffffff); i_114_++) {
+				for (int i_114_ = 0; i_114_ < i_112_; i_114_++) {
 					is[i_114_] = (int) (5.0 * Math.sin((double) i_111_ / 5.0 + (double) i_114_ / 5.0));
 					is_113_[i_114_] = (int) (Math.sin((double) i_111_ / 5.0 + (double) i_114_ / 3.0) * 5.0);
 				}
@@ -604,27 +604,27 @@ abstract class Class43 {
 		try {
 			if (string == null)
 				return 0;
-			random.setSeed((long) i_126_);
+			random.setSeed(i_126_);
 			int i_135_ = (random.nextInt() & 0x1f) + 192;
-			method399((byte) -77, i_127_ & 0xffffff | i_135_ << 1901748184, i_135_ << 1707350264 | i_125_ & 0xffffff);
+			method399((byte) -77, i_127_ & 0xffffff | i_135_ << 24, i_135_ << 24 | i_125_ & 0xffffff);
 			int i_136_ = string.length();
 			int[] is_137_ = new int[i_136_];
 			int i_138_ = 0;
-			for (int i_139_ = 0; (i_139_ ^ 0xffffffff) > (i_136_ ^ 0xffffffff); i_139_++) {
+			for (int i_139_ = 0; i_136_ > i_139_; i_139_++) {
 				is_137_[i_139_] = i_138_;
-				if ((0x3 & random.nextInt() ^ 0xffffffff) == -1)
+				if ((0x3 & random.nextInt()) == 0)
 					i_138_++;
 			}
 			int i_140_ = -112 % ((i_133_ - -55) / 54);
 			int i_141_ = i;
-			int i_142_ = ((Class197) aClass197_373).anInt1517 + i_134_;
+			int i_142_ = aClass197_373.anInt1517 + i_134_;
 			int i_143_ = -1;
 			if (i_131_ != 1) {
 				if (i_131_ == 2)
-					i_142_ = (i_134_ + i_128_ - ((Class197) aClass197_373).anInt1514);
+					i_142_ = (i_134_ + i_128_ - aClass197_373.anInt1514);
 			} else
-				i_142_ += ((-((Class197) aClass197_373).anInt1514 + (i_128_ + -((Class197) aClass197_373).anInt1517)) / 2);
-			if ((i_129_ ^ 0xffffffff) == -2) {
+				i_142_ += ((-aClass197_373.anInt1514 + (i_128_ + -aClass197_373.anInt1517)) / 2);
+			if (i_129_ == 1) {
 				i_143_ = i_138_ + aClass197_373.method2674(string, 118);
 				i_141_ += (-i_143_ + i_130_) / 2;
 			} else if (i_129_ == 2) {
@@ -633,11 +633,11 @@ abstract class Class43 {
 			}
 			method410(null, i_141_, true, is_137_, class332s, string, is_132_, i_142_);
 			if (is != null) {
-				if ((i_143_ ^ 0xffffffff) == 0)
+				if (i_143_ == -1)
 					i_143_ = i_138_ + aClass197_373.method2674(string, 104);
-				is[1] = -((Class197) aClass197_373).anInt1517 + i_142_;
+				is[1] = -aClass197_373.anInt1517 + i_142_;
 				is[0] = i_141_;
-				is[3] = (((Class197) aClass197_373).anInt1514 + ((Class197) aClass197_373).anInt1517);
+				is[3] = (aClass197_373.anInt1514 + aClass197_373.anInt1517);
 				is[2] = i_143_;
 			}
 			return i_138_;

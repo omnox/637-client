@@ -48,9 +48,9 @@ final class Class221 {
 					int i_6_ = is[i_3_];
 					is[i_3_] = is[i_2_];
 					is[i_2_] = i_6_;
-					int i_7_ = (i_5_ ^ 0xffffffff) != -2147483648 ? 1 : 0;
+					int i_7_ = i_5_ != 2147483647 ? 1 : 0;
 					for (int i_8_ = i_1_; i_2_ > i_8_; i_8_++) {
-						if ((is_0_[i_8_] ^ 0xffffffff) > ((i_7_ & i_8_) + i_5_ ^ 0xffffffff)) {
+						if ((i_7_ & i_8_) + i_5_ > is_0_[i_8_]) {
 							int i_9_ = is_0_[i_8_];
 							is_0_[i_8_] = is_0_[i_4_];
 							is_0_[i_4_] = i_9_;

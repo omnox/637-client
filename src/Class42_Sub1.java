@@ -15,10 +15,10 @@ class Class42_Sub1 extends Class42 {
 	Class42_Sub1(ha_Sub1 var_ha_Sub1, int i, int i_0_, int i_1_, int i_2_) {
 		super(var_ha_Sub1, i, i_0_, i_2_ * i_1_, false);
 		try {
-			((Class42_Sub1) this).anInt5352 = i_2_;
-			((Class42_Sub1) this).anInt5355 = i_1_;
-			((Class42) this).aHa_Sub1_3227.method1863(1, this);
-			OpenGL.glTexImage2Dub(((Class42) this).anInt3226, 0, ((Class42) this).anInt3230, i_1_, i_2_, 0, Class98_Sub31_Sub2.method1339((((Class42) this).anInt3230), 126), 5121, null, 0);
+			this.anInt5352 = i_2_;
+			this.anInt5355 = i_1_;
+			this.aHa_Sub1_3227.method1863(1, this);
+			OpenGL.glTexImage2Dub(this.anInt3226, 0, this.anInt3230, i_1_, i_2_, 0, Class98_Sub31_Sub2.method1339((this.anInt3230), 126), 5121, null, 0);
 			this.method372(-28003, true);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("aaa.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'));
@@ -28,22 +28,22 @@ class Class42_Sub1 extends Class42 {
 	Class42_Sub1(ha_Sub1 var_ha_Sub1, int i, int i_3_, int i_4_, int i_5_, boolean bool, byte[] is, int i_6_, boolean bool_7_) {
 		super(var_ha_Sub1, i, i_3_, i_4_ * i_5_, bool);
 		try {
-			((Class42_Sub1) this).anInt5355 = i_4_;
-			((Class42_Sub1) this).anInt5352 = i_5_;
+			this.anInt5355 = i_4_;
+			this.anInt5352 = i_5_;
 			if (bool_7_) {
 				byte[] is_8_ = new byte[is.length];
-				for (int i_9_ = 0; (i_5_ ^ 0xffffffff) < (i_9_ ^ 0xffffffff); i_9_++) {
+				for (int i_9_ = 0; i_9_ < i_5_; i_9_++) {
 					int i_10_ = i_4_ * i_9_;
 					int i_11_ = (-1 + -i_9_ + i_5_) * i_4_;
-					for (int i_12_ = 0; (i_4_ ^ 0xffffffff) < (i_12_ ^ 0xffffffff); i_12_++)
+					for (int i_12_ = 0; i_12_ < i_4_; i_12_++)
 						is_8_[i_10_++] = is[i_11_++];
 				}
 				is = is_8_;
 			}
-			((Class42) this).aHa_Sub1_3227.method1863(1, this);
+			this.aHa_Sub1_3227.method1863(1, this);
 			OpenGL.glPixelStorei(3317, 1);
-			if (!bool || (((Class42) this).anInt3226 ^ 0xffffffff) == -34038) {
-				OpenGL.glTexImage2Dub(((Class42) this).anInt3226, 0, ((Class42) this).anInt3230, ((Class42_Sub1) this).anInt5355, ((Class42_Sub1) this).anInt5352, 0, i_6_, 5121, is, 0);
+			if (!bool || this.anInt3226 == 34037) {
+				OpenGL.glTexImage2Dub(this.anInt3226, 0, this.anInt3230, this.anInt5355, this.anInt5352, 0, i_6_, 5121, is, 0);
 				this.method373(true, false);
 			} else {
 				Class98_Sub46_Sub16.method1613(i_4_, i, is, -1, i_5_, i_3_, i_6_);
@@ -59,27 +59,27 @@ class Class42_Sub1 extends Class42 {
 	final void method378(int i, int i_13_, boolean bool, int i_14_, byte[] is, int i_15_, byte i_16_, int i_17_, int i_18_, int i_19_) {
 		do {
 			try {
-				if ((i_14_ ^ 0xffffffff) == -1)
+				if (i_14_ == 0)
 					i_14_ = i;
 				if (bool) {
 					int i_20_ = Class246_Sub3_Sub3.method3014(1, i_13_);
 					int i_21_ = i_20_ * i;
 					int i_22_ = i_14_ * i_20_;
 					byte[] is_23_ = new byte[i_21_ * i_19_];
-					for (int i_24_ = 0; (i_19_ ^ 0xffffffff) < (i_24_ ^ 0xffffffff); i_24_++) {
+					for (int i_24_ = 0; i_24_ < i_19_; i_24_++) {
 						int i_25_ = i_21_ * i_24_;
 						int i_26_ = i_22_ * (-i_24_ + i_19_ - 1) - -i_18_;
-						for (int i_27_ = 0; (i_21_ ^ 0xffffffff) < (i_27_ ^ 0xffffffff); i_27_++)
+						for (int i_27_ = 0; i_27_ < i_21_; i_27_++)
 							is_23_[i_25_++] = is[i_26_++];
 					}
 					is = is_23_;
 				}
-				((Class42) this).aHa_Sub1_3227.method1863(1, this);
+				this.aHa_Sub1_3227.method1863(1, this);
 				OpenGL.glPixelStorei(3317, 1);
-				if ((i ^ 0xffffffff) != (i_14_ ^ 0xffffffff))
+				if (i_14_ != i)
 					OpenGL.glPixelStorei(3314, i_14_);
-				OpenGL.glTexSubImage2Dub(((Class42) this).anInt3226, 0, i_17_, i_15_, i, i_19_, i_13_, 5121, is, i_18_);
-				if ((i_14_ ^ 0xffffffff) != (i ^ 0xffffffff))
+				OpenGL.glTexSubImage2Dub(this.anInt3226, 0, i_17_, i_15_, i, i_19_, i_13_, 5121, is, i_18_);
+				if (i != i_14_)
 					OpenGL.glPixelStorei(3314, 0);
 				OpenGL.glPixelStorei(3317, 4);
 				if (i_16_ == -80)
@@ -95,11 +95,11 @@ class Class42_Sub1 extends Class42 {
 	Class42_Sub1(ha_Sub1 var_ha_Sub1, int i, int i_28_, int i_29_, int i_30_, int i_31_) {
 		super(var_ha_Sub1, i, 6407, i_30_ * i_31_, false);
 		try {
-			((Class42_Sub1) this).anInt5352 = i_31_;
-			((Class42_Sub1) this).anInt5355 = i_30_;
-			int i_32_ = (((ha_Sub1) ((Class42) this).aHa_Sub1_3227).anInt4304 - i_31_ - i_29_);
-			((Class42) this).aHa_Sub1_3227.method1863(1, this);
-			OpenGL.glCopyTexImage2D(((Class42) this).anInt3226, 0, ((Class42) this).anInt3230, i_28_, i_32_, i_30_, i_31_, 0);
+			this.anInt5352 = i_31_;
+			this.anInt5355 = i_30_;
+			int i_32_ = (this.aHa_Sub1_3227.anInt4304 - i_31_ - i_29_);
+			this.aHa_Sub1_3227.method1863(1, this);
+			OpenGL.glCopyTexImage2D(this.anInt3226, 0, this.anInt3230, i_28_, i_32_, i_30_, i_31_, 0);
 			this.method372(-28003, true);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("aaa.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ',' + i + ',' + i_28_ + ',' + i_29_ + ',' + i_30_ + ',' + i_31_ + ')'));
@@ -110,23 +110,23 @@ class Class42_Sub1 extends Class42 {
 		do {
 			try {
 				if (i_34_ == 3656) {
-					if ((i_36_ ^ 0xffffffff) == -1)
+					if (i_36_ == 0)
 						i_36_ = i_37_;
 					if (bool) {
 						int[] is_39_ = new int[i * i_37_];
-						for (int i_40_ = 0; (i ^ 0xffffffff) < (i_40_ ^ 0xffffffff); i_40_++) {
+						for (int i_40_ = 0; i_40_ < i; i_40_++) {
 							int i_41_ = i_37_ * i_40_;
 							int i_42_ = (i + (-i_40_ + -1)) * i_36_ + i_33_;
-							for (int i_43_ = 0; (i_43_ ^ 0xffffffff) > (i_37_ ^ 0xffffffff); i_43_++)
+							for (int i_43_ = 0; i_37_ > i_43_; i_43_++)
 								is_39_[i_41_++] = is[i_42_++];
 						}
 						is = is_39_;
 					}
-					((Class42) this).aHa_Sub1_3227.method1863(1, this);
-					if ((i_37_ ^ 0xffffffff) != (i_36_ ^ 0xffffffff))
+					this.aHa_Sub1_3227.method1863(1, this);
+					if (i_36_ != i_37_)
 						OpenGL.glPixelStorei(3314, i_36_);
-					OpenGL.glTexSubImage2Di(((Class42) this).anInt3226, 0, i_38_, ((Class42_Sub1) this).anInt5352 + -i_35_ + -i, i_37_, i, 32993, ((ha_Sub1) ((Class42) this).aHa_Sub1_3227).anInt4425, is, i_33_);
-					if ((i_36_ ^ 0xffffffff) == (i_37_ ^ 0xffffffff))
+					OpenGL.glTexSubImage2Di(this.anInt3226, 0, i_38_, this.anInt5352 + -i_35_ + -i, i_37_, i, 32993, this.aHa_Sub1_3227.anInt4425, is, i_33_);
+					if (i_37_ == i_36_)
 						break;
 					OpenGL.glPixelStorei(3314, 0);
 				}
@@ -139,9 +139,9 @@ class Class42_Sub1 extends Class42 {
 
 	final void method380(int i, int i_44_, int i_45_, int i_46_, int i_47_, int i_48_, int i_49_) {
 		try {
-			int i_50_ = (((ha_Sub1) ((Class42) this).aHa_Sub1_3227).anInt4304 - (i_46_ - -i_49_));
-			((Class42) this).aHa_Sub1_3227.method1863(1, this);
-			OpenGL.glCopyTexSubImage2D(((Class42) this).anInt3226, 0, i_44_, (((Class42_Sub1) this).anInt5352 - (i_45_ + i_49_)), i_47_, i_50_, i, i_49_);
+			int i_50_ = (this.aHa_Sub1_3227.anInt4304 - (i_46_ - -i_49_));
+			this.aHa_Sub1_3227.method1863(1, this);
+			OpenGL.glCopyTexSubImage2D(this.anInt3226, 0, i_44_, (this.anInt5352 - (i_45_ + i_49_)), i_47_, i_50_, i, i_49_);
 			if (i_48_ <= 79)
 				method383(true, -52, false);
 			OpenGL.glFlush();
@@ -164,12 +164,12 @@ class Class42_Sub1 extends Class42 {
 	Class42_Sub1(ha_Sub1 var_ha_Sub1, int i, int i_57_, int i_58_, int i_59_, boolean bool, float[] fs, int i_60_) {
 		super(var_ha_Sub1, i, i_57_, i_58_ * i_59_, bool);
 		try {
-			((Class42_Sub1) this).anInt5355 = i_58_;
-			((Class42_Sub1) this).anInt5352 = i_59_;
-			((Class42) this).aHa_Sub1_3227.method1863(1, this);
+			this.anInt5355 = i_58_;
+			this.anInt5352 = i_59_;
+			this.aHa_Sub1_3227.method1863(1, this);
 			do {
-				if (!bool || (((Class42) this).anInt3226 ^ 0xffffffff) == -34038) {
-					OpenGL.glTexImage2Df(((Class42) this).anInt3226, 0, ((Class42) this).anInt3230, ((Class42_Sub1) this).anInt5355, ((Class42_Sub1) this).anInt5352, 0, i_60_, 5126, fs, 0);
+				if (!bool || this.anInt3226 == 34037) {
+					OpenGL.glTexImage2Df(this.anInt3226, 0, this.anInt3230, this.anInt5355, this.anInt5352, 0, i_60_, 5126, fs, 0);
 					this.method373(true, false);
 					if (!client.aBoolean3553)
 						break;
@@ -186,7 +186,7 @@ class Class42_Sub1 extends Class42 {
 	final void method382(int i, boolean bool, int i_61_, int i_62_) {
 		do {
 			try {
-				OpenGL.glFramebufferTexture2DEXT(i, i_61_, ((Class42) this).anInt3226, ((Class42) this).anInt3229, i_62_);
+				OpenGL.glFramebufferTexture2DEXT(i, i_61_, this.anInt3226, this.anInt3229, i_62_);
 				anInt5351 = i_61_;
 				anInt5353 = i;
 				if (bool == true)
@@ -204,11 +204,11 @@ class Class42_Sub1 extends Class42 {
 			try {
 				if (i != 10242)
 					method380(-75, 26, 70, 110, -90, 106, 103);
-				if ((((Class42) this).anInt3226 ^ 0xffffffff) != -3554)
+				if (this.anInt3226 != 3553)
 					break;
-				((Class42) this).aHa_Sub1_3227.method1863(1, this);
-				OpenGL.glTexParameteri(((Class42) this).anInt3226, 10242, !bool_63_ ? 33071 : 10497);
-				OpenGL.glTexParameteri(((Class42) this).anInt3226, 10243, !bool ? 33071 : 10497);
+				this.aHa_Sub1_3227.method1863(1, this);
+				OpenGL.glTexParameteri(this.anInt3226, 10242, !bool_63_ ? 33071 : 10497);
+				OpenGL.glTexParameteri(this.anInt3226, 10243, !bool ? 33071 : 10497);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("aaa.I(" + bool + ',' + i + ',' + bool_63_ + ')'));
 			}
@@ -229,11 +229,11 @@ class Class42_Sub1 extends Class42 {
 	Class42_Sub1(ha_Sub1 var_ha_Sub1, int i, int i_64_, int i_65_, int i_66_, boolean bool, int[] is, int i_67_, int i_68_, boolean bool_69_) {
 		super(var_ha_Sub1, i, i_64_, i_66_ * i_65_, bool);
 		try {
-			((Class42_Sub1) this).anInt5352 = i_66_;
-			((Class42_Sub1) this).anInt5355 = i_65_;
+			this.anInt5352 = i_66_;
+			this.anInt5355 = i_65_;
 			if (bool_69_) {
 				int[] is_70_ = new int[is.length];
-				for (int i_71_ = 0; (i_66_ ^ 0xffffffff) < (i_71_ ^ 0xffffffff); i_71_++) {
+				for (int i_71_ = 0; i_71_ < i_66_; i_71_++) {
 					int i_72_ = i_65_ * i_71_;
 					int i_73_ = (-1 + (i_66_ + -i_71_)) * i_65_;
 					for (int i_74_ = 0; i_65_ > i_74_; i_74_++)
@@ -241,14 +241,14 @@ class Class42_Sub1 extends Class42 {
 				}
 				is = is_70_;
 			}
-			((Class42) this).aHa_Sub1_3227.method1863(1, this);
-			if (((Class42) this).anInt3226 == 34037 || !bool || i_67_ != 0 || i_68_ != 0) {
+			this.aHa_Sub1_3227.method1863(1, this);
+			if (this.anInt3226 == 34037 || !bool || i_67_ != 0 || i_68_ != 0) {
 				OpenGL.glPixelStorei(3314, i_67_);
-				OpenGL.glTexImage2Di(((Class42) this).anInt3226, 0, ((Class42) this).anInt3230, ((Class42_Sub1) this).anInt5355, ((Class42_Sub1) this).anInt5352, 0, 32993, ((ha_Sub1) (((Class42) this).aHa_Sub1_3227)).anInt4425, is, 4 * i_68_);
+				OpenGL.glTexImage2Di(this.anInt3226, 0, this.anInt3230, this.anInt5355, this.anInt5352, 0, 32993, this.aHa_Sub1_3227.anInt4425, is, 4 * i_68_);
 				OpenGL.glPixelStorei(3314, 0);
 				this.method373(true, false);
 			} else {
-				Class336.method3773(((Class42) this).anInt3230, -121, (((ha_Sub1) ((Class42) this).aHa_Sub1_3227).anInt4425), ((Class42) this).anInt3226, ((Class42_Sub1) this).anInt5355, 32993, ((Class42_Sub1) this).anInt5352, is);
+				Class336.method3773(this.anInt3230, -121, (this.aHa_Sub1_3227.anInt4425), this.anInt3226, this.anInt5355, 32993, this.anInt5352, is);
 				this.method373(true, true);
 			}
 			this.method372(-28003, true);
@@ -260,7 +260,7 @@ class Class42_Sub1 extends Class42 {
 	public final void method3(byte i) {
 		do {
 			try {
-				OpenGL.glFramebufferTexture2DEXT(anInt5353, anInt5351, ((Class42) this).anInt3226, 0, 0);
+				OpenGL.glFramebufferTexture2DEXT(anInt5353, anInt5351, this.anInt3226, 0, 0);
 				anInt5353 = -1;
 				anInt5351 = -1;
 				if (i < -117)

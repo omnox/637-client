@@ -53,7 +53,7 @@ final class Class378 {
 			byte[] is_14_ = is[i];
 			int i_15_ = -i_6_ + i_10_;
 			int i_16_ = -i_8_ + i_10_;
-			for (int i_17_ = i_10_; (i_11_ ^ 0xffffffff) < (i_17_ ^ 0xffffffff); i_17_++) {
+			for (int i_17_ = i_10_; i_17_ < i_11_; i_17_++) {
 				int i_18_ = is_14_[i_16_++] + is_13_[i_15_++];
 				if (i_18_ < i_12_)
 					i_12_ = i_18_;
@@ -66,7 +66,7 @@ final class Class378 {
 
 	static final boolean method4004(byte i, int i_19_, int i_20_) {
 		try {
-			if (i_20_ >= 1000 && (i_19_ ^ 0xffffffff) > -1001)
+			if (i_20_ >= 1000 && i_19_ < 1000)
 				return true;
 			if (i_20_ < 1000 && i_19_ < 1000) {
 				if (Class343.method3817((byte) -98, i_19_))
@@ -100,12 +100,12 @@ final class Class378 {
 			int i_24_ = string.length();
 			for (int i_25_ = 0; i_24_ > i_25_; i_25_++) {
 				char c = string.charAt(i_25_);
-				if ((c ^ 0xffffffff) == -38 && (i_24_ ^ 0xffffffff) < (2 + i_25_ ^ 0xffffffff)) {
+				if (c == 37 && 2 + i_25_ < i_24_) {
 					int i_26_ = string.charAt(i_25_ - -1);
 					boolean bool = false;
 					int i_27_;
-					if (i_26_ < 48 || (i_26_ ^ 0xffffffff) < -58) {
-						if ((i_26_ ^ 0xffffffff) <= -98 && i_26_ <= 102)
+					if (i_26_ < 48 || i_26_ > 57) {
+						if (i_26_ >= 97 && i_26_ <= 102)
 							i_27_ = -97 + (i_26_ + 10);
 						else {
 							if (i_26_ < 65 || i_26_ > 70) {
@@ -118,21 +118,21 @@ final class Class378 {
 						i_27_ = -48 + i_26_;
 					i_27_ *= 16;
 					i_26_ = string.charAt(i_25_ - -2);
-					if ((i_26_ ^ 0xffffffff) <= -49 && (i_26_ ^ 0xffffffff) >= -58)
+					if (i_26_ >= 48 && i_26_ <= 57)
 						i_27_ += -48 + i_26_;
-					else if (i_26_ >= 97 && (i_26_ ^ 0xffffffff) >= -103)
+					else if (i_26_ >= 97 && i_26_ <= 102)
 						i_27_ += -87 - -i_26_;
 					else {
-						if (i_26_ < 65 || (i_26_ ^ 0xffffffff) < -71) {
+						if (i_26_ < 65 || i_26_ > 70) {
 							stringbuffer.append('%');
 							continue;
 						}
 						i_27_ += -65 + (10 + i_26_);
 					}
 					i_25_ += 2;
-					if ((i_27_ ^ 0xffffffff) != -1 && Class302.method3553(-127, (byte) i_27_))
+					if (i_27_ != 0 && Class302.method3553(-127, (byte) i_27_))
 						stringbuffer.append(Class64_Sub7.method576((byte) i_27_, (byte) 125));
-				} else if ((c ^ 0xffffffff) != -44)
+				} else if (c != 43)
 					stringbuffer.append(c);
 				else
 					stringbuffer.append(' ');

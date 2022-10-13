@@ -42,7 +42,7 @@ final class Class98_Sub2 extends Node {
 	}
 
 	Class98_Sub2(int i, int i_11_, int[] is, boolean bool) {
-		((Class98_Sub2) this).anInt3820 = i;
+		this.anInt3820 = i;
 		anInt3822 = i_11_;
 		anIntArray3819 = is;
 		if (bool) {

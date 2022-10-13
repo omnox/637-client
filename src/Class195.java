@@ -18,12 +18,12 @@ final class Class195 {
 		try {
 			if (i != -22382)
 				return false;
-			if (!((Class195) this).aBoolean1501) {
-				if (((Class195) this).anInterface4_Impl2Array1503 == null)
+			if (!this.aBoolean1501) {
+				if (this.anInterface4_Impl2Array1503 == null)
 					return false;
 				return true;
 			}
-			if (((Class195) this).anInterface4_Impl1_1498 == null)
+			if (this.anInterface4_Impl1_1498 == null)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -49,7 +49,7 @@ final class Class195 {
 				method2662(-60);
 			if (!Class98_Sub17.aBoolean3942 || !Class135.aBoolean1052)
 				return false;
-			if ((Class4.anInt81 ^ 0xffffffff) > -101)
+			if (Class4.anInt81 < 100)
 				return false;
 			if (!Class76_Sub5.method758((byte) 72, i, i_0_, i_1_))
 				return false;
@@ -87,7 +87,7 @@ final class Class195 {
 		try {
 			if (bool != false)
 				method2660(-61);
-			if ((i & 0x34 ^ 0xffffffff) == -1)
+			if ((i & 0x34) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -98,7 +98,7 @@ final class Class195 {
 	final boolean method2664(int i) {
 		try {
 			int i_7_ = 5 / ((-66 - i) / 48);
-			if (((Class195) this).anInterface4_Impl1_1500 == null) {
+			if (this.anInterface4_Impl1_1500 == null) {
 				if (Class332_Sub1.anObject5409 == null) {
 					byte[] is = Class134_Sub1.method2244(-31633, 16.0F, 0.5F, 0.6F, 16, 8, 128, new Class39_Sub1(419684), 4.0F, 4.0F, 128);
 					Class332_Sub1.anObject5409 = Class64_Sub25.method654(2, is, false);
@@ -106,17 +106,17 @@ final class Class195 {
 				byte[] is = Class98_Sub28_Sub1.method1310(false, Class332_Sub1.anObject5409, false);
 				byte[] is_8_ = new byte[is.length * 4];
 				int i_9_ = 0;
-				for (int i_10_ = 0; (i_10_ ^ 0xffffffff) > -17; i_10_++) {
+				for (int i_10_ = 0; i_10_ < 16; i_10_++) {
 					int i_11_ = 128 * i_10_ * 128;
 					int i_12_ = i_11_;
-					for (int i_13_ = 0; (i_13_ ^ 0xffffffff) > -129; i_13_++) {
+					for (int i_13_ = 0; i_13_ < 128; i_13_++) {
 						int i_14_ = i_12_ + i_13_ * 128;
 						int i_15_ = i_12_ - -(128 * (0x7f & -1 + i_13_));
 						int i_16_ = i_12_ + 128 * (i_13_ + 1 & 0x7f);
 						for (int i_17_ = 0; i_17_ < 128; i_17_++) {
 							float f = (float) ((is[i_17_ + i_15_] & 0xff) - (0xff & is[i_16_ + i_17_]));
 							float f_18_ = (float) ((is[(-1 + i_17_ & 0x7f) + i_14_] & 0xff) - (is[(1 + i_17_ & 0x7f) + i_14_] & 0xff));
-							float f_19_ = (float) (128.0 / (Math.sqrt((double) (f * f + (16384.0F + (f_18_ * f_18_))))));
+							float f_19_ = (float) (128.0 / (Math.sqrt(f * f + (16384.0F + (f_18_ * f_18_)))));
 							is_8_[i_9_++] = (byte) (int) (f_18_ * f_19_ + 127.0F);
 							is_8_[i_9_++] = (byte) (int) (127.0F + 128.0F * f_19_);
 							is_8_[i_9_++] = (byte) (int) (f_19_ * f + 127.0F);
@@ -124,9 +124,9 @@ final class Class195 {
 						}
 					}
 				}
-				((Class195) this).anInterface4_Impl1_1500 = aHa_Sub3_1504.method2044(-81, Class62.aClass164_486, is_8_, 128, 128, 16);
+				this.anInterface4_Impl1_1500 = aHa_Sub3_1504.method2044(-81, Class62.aClass164_486, is_8_, 128, 128, 16);
 			}
-			if (((Class195) this).anInterface4_Impl1_1500 == null)
+			if (this.anInterface4_Impl1_1500 == null)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -135,20 +135,20 @@ final class Class195 {
 	}
 
 	Class195(ha_Sub3 var_ha_Sub3) {
-		((Class195) this).anInterface4_Impl1_1498 = null;
+		this.anInterface4_Impl1_1498 = null;
 		anInterface4_Impl2Array1505 = null;
 		try {
 			aHa_Sub3_1504 = var_ha_Sub3;
-			((Class195) this).aBoolean1501 = ((ha_Sub3) aHa_Sub3_1504).aBoolean4588;
-			if (((Class195) this).aBoolean1501 && !aHa_Sub3_1504.method1977(Class162.aClass162_1266, true, Class74.aClass164_547))
-				((Class195) this).aBoolean1501 = false;
-			if (((Class195) this).aBoolean1501 || aHa_Sub3_1504.method1942(0, Class74.aClass164_547, Class162.aClass162_1266)) {
+			this.aBoolean1501 = aHa_Sub3_1504.aBoolean4588;
+			if (this.aBoolean1501 && !aHa_Sub3_1504.method1977(Class162.aClass162_1266, true, Class74.aClass164_547))
+				this.aBoolean1501 = false;
+			if (this.aBoolean1501 || aHa_Sub3_1504.method1942(0, Class74.aClass164_547, Class162.aClass162_1266)) {
 				Class98_Sub42.method1477(false);
-				if (!((Class195) this).aBoolean1501) {
-					((Class195) this).anInterface4_Impl2Array1503 = new Interface4_Impl2[16];
-					for (int i = 0; (i ^ 0xffffffff) > -17; i++) {
+				if (!this.aBoolean1501) {
+					this.anInterface4_Impl2Array1503 = new Interface4_Impl2[16];
+					for (int i = 0; i < 16; i++) {
 						byte[] is = Class98_Sub10_Sub20.method1061(2, 32768, 2 * (128 * (i * 128)), (Class241.anObject1847));
-						((Class195) this).anInterface4_Impl2Array1503[i] = aHa_Sub3_1504.method2053(128, Class74.aClass164_547, (byte) 87, is, true, 128);
+						this.anInterface4_Impl2Array1503[i] = aHa_Sub3_1504.method2053(128, Class74.aClass164_547, (byte) 87, is, true, 128);
 					}
 					anInterface4_Impl2Array1505 = new Interface4_Impl2[16];
 					for (int i = 0; i < 16; i++) {
@@ -157,7 +157,7 @@ final class Class195 {
 					}
 				} else {
 					byte[] is = Class98_Sub28_Sub1.method1310(false, Class241.anObject1847, false);
-					((Class195) this).anInterface4_Impl1_1498 = aHa_Sub3_1504.method2044(95, Class74.aClass164_547, is, 128, 128, 16);
+					this.anInterface4_Impl1_1498 = aHa_Sub3_1504.method2044(95, Class74.aClass164_547, is, 128, 128, 16);
 					is = Class98_Sub28_Sub1.method1310(false, (Class64_Sub24.anObject3709), false);
 					aHa_Sub3_1504.method2044(125, Class74.aClass164_547, is, 128, 128, 16);
 				}

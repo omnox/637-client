@@ -61,7 +61,7 @@ final class Class319 {
 
 	final Interface4_Impl2 method3661(int i, int i_0_) {
 		try {
-			Object object = aClass79_2703.get((long) i_0_);
+			Object object = aClass79_2703.get(i_0_);
 			if (object != null)
 				return (Interface4_Impl2) object;
 			if (!aD2701.method8(-5, i_0_))
@@ -69,21 +69,21 @@ final class Class319 {
 			if (i != 0)
 				return null;
 			Class238 class238 = aD2701.method11(i_0_, i + -28755);
-			int i_1_ = (!((Class238) class238).aBoolean1822 ? ((ha_Sub3) aHa_Sub3_2704).anInt4607 : 64);
+			int i_1_ = (!class238.aBoolean1822 ? aHa_Sub3_2704.anInt4607 : 64);
 			Interface4_Impl2 interface4_impl2;
-			if (((Class238) class238).aBoolean1817 && aHa_Sub3_2704.method1768()) {
+			if (class238.aBoolean1817 && aHa_Sub3_2704.method1768()) {
 				float[] fs = aD2701.method10((byte) -117, false, i_0_, i_1_, 0.7F, i_1_);
-				interface4_impl2 = aHa_Sub3_2704.method2066(Class62.aClass164_486, (((Class238) class238).aByte1832 ^ 0xffffffff) != -1, fs, false, i_1_, i_1_);
+				interface4_impl2 = aHa_Sub3_2704.method2066(Class62.aClass164_486, class238.aByte1832 != 0, fs, false, i_1_, i_1_);
 			} else {
 				int[] is;
-				if ((((Class238) class238).anInt1818 ^ 0xffffffff) == -3 || !Class98_Sub10_Sub7.method1023(i ^ 0x1, (((Class238) class238).aByte1820)))
+				if (class238.anInt1818 == 2 || !Class98_Sub10_Sub7.method1023(i ^ 0x1, (class238.aByte1820)))
 					is = aD2701.method13(i + 115, i_1_, i_0_, 0.7F, false, i_1_);
 				else
 					is = aD2701.method9(i_0_, (byte) -116, i_1_, 0.7F, true, i_1_);
-				interface4_impl2 = aHa_Sub3_2704.method2012(i_1_, i_1_, (byte) 31, is, (((Class238) class238).aByte1832 != 0));
+				interface4_impl2 = aHa_Sub3_2704.method2012(i_1_, i_1_, (byte) 31, is, (class238.aByte1832 != 0));
 			}
-			interface4_impl2.method46(((Class238) class238).aBoolean1826, ((Class238) class238).aBoolean1819, -97);
-			aClass79_2703.put((long) i_0_, interface4_impl2);
+			interface4_impl2.method46(class238.aBoolean1826, class238.aBoolean1819, -97);
+			aClass79_2703.put(i_0_, interface4_impl2);
 			return interface4_impl2;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "tl.D(" + i + ',' + i_0_ + ')');

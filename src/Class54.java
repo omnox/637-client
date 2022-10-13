@@ -15,7 +15,7 @@ final class Class54 implements Interface14 {
 	public final int method51(byte i) {
 		try {
 			int i_0_ = Class35.method337(-120, aString3396);
-			if (i_0_ >= 0 && (i_0_ ^ 0xffffffff) >= -101)
+			if (i_0_ >= 0 && i_0_ <= 100)
 				return i_0_;
 			if (i < 126)
 				method504(true);
@@ -32,22 +32,22 @@ final class Class54 implements Interface14 {
 				anInt3395 = 45;
 			if (!class88.method860((byte) 83))
 				return null;
-			if ((i ^ 0xffffffff) == -1) {
+			if (i == 0) {
 				Class259[] class259s = Class52.method490(class88, (byte) -94);
 				if (class259s == null)
 					return null;
 				boolean bool = false;
-				for (int i_5_ = 0; (class259s.length ^ 0xffffffff) < (i_5_ ^ 0xffffffff); i_5_++) {
-					if (i_2_ == ((Class259) class259s[i_5_]).anInt1953 && i_3_ == ((Class259) class259s[i_5_]).anInt1956 && (i_4_ == 0 || i_4_ == ((Class259) class259s[i_5_]).anInt1958) && (!bool || (((Class259) class259s[i_5_]).anInt1955 ^ 0xffffffff) < (i ^ 0xffffffff))) {
+				for (int i_5_ = 0; i_5_ < class259s.length; i_5_++) {
+					if (i_2_ == class259s[i_5_].anInt1953 && i_3_ == class259s[i_5_].anInt1956 && (i_4_ == 0 || i_4_ == class259s[i_5_].anInt1958) && (!bool || i < class259s[i_5_].anInt1955)) {
 						bool = true;
-						i = ((Class259) class259s[i_5_]).anInt1955;
+						i = class259s[i_5_].anInt1955;
 					}
 				}
 				if (!bool)
 					return null;
 			}
 			Class143 class143 = class88.method869(-21605, i, i_2_, i_4_, i_3_);
-			while ((class143.anInt1163 ^ 0xffffffff) == -1)
+			while (class143.anInt1163 == 0)
 				Class246_Sub7.method3131(0, 10L);
 			Frame frame = (Frame) class143.anObject1162;
 			if (frame == null)

@@ -46,7 +46,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 			try {
 				if (i >= 0)
 					break;
-				((ha_Sub3_Sub2) this).aBoolean6133 = true;
+				this.aBoolean6133 = true;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "hl.BA(" + i + ',' + i_0_ + ')');
 			}
@@ -56,7 +56,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 
 	final void GA(int i) {
 		try {
-			OpenGL.glClearColor((float) (i & 0xff0000) / 1.671168E7F, (float) (i & 0xff00) / 65280.0F, (float) (0xff & i) / 255.0F, (float) (i >>> -58636872) / 255.0F);
+			OpenGL.glClearColor((float) (i & 0xff0000) / 1.671168E7F, (float) (i & 0xff00) / 65280.0F, (float) (0xff & i) / 255.0F, (float) (i >>> 24) / 255.0F);
 			OpenGL.glClear(16384);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hl.GA(" + i + ')');
@@ -115,22 +115,22 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 			if (aBoolean6120)
 				OpenGL.glPopMatrix();
 			int i_7_ = -109 / (-i / 51);
-			if (((ha_Sub3) this).aClass204_4551.method2708(126)) {
+			if (this.aClass204_4551.method2708(126)) {
 				if (!aBoolean6122) {
-					OpenGL.glLoadMatrixf((((ha_Sub3) this).aClass111_Sub3_4545.method2121((byte) -81, Class98_Sub30.aFloatArray4096)), 0);
+					OpenGL.glLoadMatrixf((this.aClass111_Sub3_4545.method2121((byte) -81, Class98_Sub30.aFloatArray4096)), 0);
 					aBoolean6122 = true;
 					method2065((byte) 80);
 					method2035(-14713);
 				}
-				if (((ha_Sub3) this).aBoolean4540)
+				if (this.aBoolean4540)
 					aBoolean6120 = false;
 				else {
 					OpenGL.glPushMatrix();
-					OpenGL.glMultMatrixf((((ha_Sub3) this).aClass111_Sub3_4542.method2121((byte) -80, Class98_Sub30.aFloatArray4096)), 0);
+					OpenGL.glMultMatrixf((this.aClass111_Sub3_4542.method2121((byte) -80, Class98_Sub30.aFloatArray4096)), 0);
 					aBoolean6120 = true;
 				}
-			} else if (!((ha_Sub3) this).aBoolean4540) {
-				OpenGL.glLoadMatrixf((((ha_Sub3) this).aClass111_Sub3_4542.method2121((byte) -57, Class98_Sub30.aFloatArray4096)), 0);
+			} else if (!this.aBoolean4540) {
+				OpenGL.glLoadMatrixf((this.aClass111_Sub3_4542.method2121((byte) -57, Class98_Sub30.aFloatArray4096)), 0);
 				aBoolean6120 = false;
 			} else {
 				OpenGL.glLoadIdentity();
@@ -144,7 +144,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 	final void method2025(byte i) {
 		try {
 			int i_8_ = 93 % ((i - 69) / 53);
-			if (!((ha_Sub3) this).aBoolean4555) {
+			if (!this.aBoolean4555) {
 				OpenGL.glDisable(16384);
 				OpenGL.glDisable(16385);
 			} else {
@@ -164,18 +164,18 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 				while_97_: do {
 					do {
 						if (i_11_ != 3) {
-							if ((i_11_ ^ 0xffffffff) == -5)
+							if (i_11_ == 4)
 								break;
-							if ((i_11_ ^ 0xffffffff) != -9)
+							if (i_11_ != 8)
 								break while_98_;
 							if (!client.aBoolean3553)
 								break while_97_;
 						}
-						return new Class76_Sub8(this, (((ha_Sub3) this).aClass207_4535));
+						return new Class76_Sub8(this, (this.aClass207_4535));
 					} while (false);
-					return new Class76_Sub2(this, ((ha_Sub3) this).aClass207_4535, ((ha_Sub3) this).aClass195_4529);
+					return new Class76_Sub2(this, this.aClass207_4535, this.aClass195_4529);
 				} while (false);
-				return new Class76_Sub9(this, ((ha_Sub3) this).aClass207_4535, ((ha_Sub3) this).aClass195_4529);
+				return new Class76_Sub9(this, this.aClass207_4535, this.aClass195_4529);
 			} while (false);
 			return super.method2067(i, (byte) -112);
 		} catch (RuntimeException runtimeexception) {
@@ -189,7 +189,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 
 	final void method2009(int i) {
 		try {
-			OpenGL.glScissor(((ha_Sub3) this).anInt4578 + ((ha_Sub3) this).anInt4602, (-((ha_Sub3) this).anInt4638 + ((ha_Sub3) this).anInt4531 + ((ha_Sub3) this).anInt4622), ((ha_Sub3) this).anInt4575 - ((ha_Sub3) this).anInt4602, -((ha_Sub3) this).anInt4558 + ((ha_Sub3) this).anInt4638);
+			OpenGL.glScissor(this.anInt4578 + this.anInt4602, (-this.anInt4638 + this.anInt4531 + this.anInt4622), this.anInt4575 - this.anInt4602, -this.anInt4558 + this.anInt4638);
 			if (i != 28976)
 				method1974(-60);
 		} catch (RuntimeException runtimeexception) {
@@ -203,17 +203,17 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 
 	final void method2007(boolean bool) {
 		try {
-			((ha_Sub3) this).aFloat4592 = (float) (-((ha_Sub3) this).anInt4601 + ((ha_Sub3) this).anInt4605);
-			((ha_Sub3) this).aFloat4615 = ((float) -((ha_Sub3) this).anInt4581 + ((ha_Sub3) this).aFloat4592);
+			this.aFloat4592 = (float) (-this.anInt4601 + this.anInt4605);
+			this.aFloat4615 = ((float) -this.anInt4581 + this.aFloat4592);
 			if (bool != false)
 				method1972(58);
-			if (((ha_Sub3) this).aFloat4615 < (float) ((ha_Sub3) this).anInt4640)
-				((ha_Sub3) this).aFloat4615 = (float) ((ha_Sub3) this).anInt4640;
-			OpenGL.glFogf(2915, ((ha_Sub3) this).aFloat4615);
-			OpenGL.glFogf(2916, ((ha_Sub3) this).aFloat4592);
-			Class98_Sub39.aFloatArray4189[2] = ((float) Class202.method2702(((ha_Sub3) this).anInt4636, 255) / 255.0F);
-			Class98_Sub39.aFloatArray4189[0] = ((float) Class202.method2702(16711680, ((ha_Sub3) this).anInt4636) / 1.671168E7F);
-			Class98_Sub39.aFloatArray4189[1] = ((float) Class202.method2702(65280, ((ha_Sub3) this).anInt4636) / 65280.0F);
+			if (this.aFloat4615 < (float) this.anInt4640)
+				this.aFloat4615 = (float) this.anInt4640;
+			OpenGL.glFogf(2915, this.aFloat4615);
+			OpenGL.glFogf(2916, this.aFloat4592);
+			Class98_Sub39.aFloatArray4189[2] = ((float) Class202.method2702(this.anInt4636, 255) / 255.0F);
+			Class98_Sub39.aFloatArray4189[0] = ((float) Class202.method2702(16711680, this.anInt4636) / 1.671168E7F);
+			Class98_Sub39.aFloatArray4189[1] = ((float) Class202.method2702(65280, this.anInt4636) / 65280.0F);
 			OpenGL.glFogfv(2918, Class98_Sub39.aFloatArray4189, 0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hl.S(" + bool + ')');
@@ -250,7 +250,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 			if (i != 0)
 				aClass148_6112 = null;
 			Node class98 = new Node();
-			((Node) class98).uid = l;
+			class98.uid = l;
 			aClass148_6118.add_last(class98, -20911);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hl.AA(" + i + ',' + l + ')');
@@ -261,7 +261,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 		do {
 			try {
 				do {
-					if (!((ha_Sub3) this).aBoolean4672) {
+					if (!this.aBoolean4672) {
 						OpenGL.glDisable(3089);
 						if (!client.aBoolean3553)
 							break;
@@ -281,7 +281,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 	final void method1999(byte i) {
 		try {
 			do {
-				if (((ha_Sub3) this).aBoolean4571 && ((ha_Sub3) this).aBoolean4562 && (((ha_Sub3) this).anInt4581 ^ 0xffffffff) <= -1) {
+				if (this.aBoolean4571 && this.aBoolean4562 && this.anInt4581 >= 0) {
 					OpenGL.glEnable(2912);
 					if (!client.aBoolean3553)
 						break;
@@ -299,7 +299,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 		try {
 			if (i != -11155)
 				aBoolean6123 = false;
-			OpenGL.glViewport(((ha_Sub3) this).anInt4578, ((ha_Sub3) this).anInt4622, ((ha_Sub3) this).anInt4527, ((ha_Sub3) this).anInt4531);
+			OpenGL.glViewport(this.anInt4578, this.anInt4622, this.anInt4527, this.anInt4531);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hl.JB(" + i + ')');
 		}
@@ -307,11 +307,11 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 
 	final void method2016(byte i) {
 		try {
-			if (((ha_Sub3) this).aClass126_4625 == Class101.aClass126_848)
+			if (this.aClass126_4625 == Class101.aClass126_848)
 				OpenGL.glBlendFunc(770, 771);
-			else if (Class373_Sub1_Sub1.aClass126_6216 == ((ha_Sub3) this).aClass126_4625)
+			else if (Class373_Sub1_Sub1.aClass126_6216 == this.aClass126_4625)
 				OpenGL.glBlendFunc(1, 1);
-			else if (Class83.aClass126_632 == ((ha_Sub3) this).aClass126_4625)
+			else if (Class83.aClass126_632 == this.aClass126_4625)
 				OpenGL.glBlendFunc(774, 1);
 			if (i >= -109)
 				return;
@@ -345,9 +345,9 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 		try {
 			int i = -1;
 			if (aString6140.indexOf("nvidia") == -1) {
-				if ((aString6140.indexOf("intel") ^ 0xffffffff) != 0)
+				if (aString6140.indexOf("intel") != -1)
 					i = 32902;
-				else if ((aString6140.indexOf("ati") ^ 0xffffffff) != 0)
+				else if (aString6140.indexOf("ati") != -1)
 					i = 4098;
 			} else
 				i = 4318;
@@ -372,7 +372,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 	final void method2033(int i) {
 		try {
 			do {
-				if (((ha_Sub3) this).aBoolean4560) {
+				if (this.aBoolean4560) {
 					OpenGL.glEnable(3042);
 					if (!client.aBoolean3553)
 						break;
@@ -389,7 +389,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 		try {
 			int[] is = new int[i_25_ * i_26_];
 			for (int i_27_ = 0; i_27_ < i_26_; i_27_++)
-				OpenGL.glReadPixelsi(i, (-i_27_ + ((ha_Sub3) this).anInt4531 + -i_24_ + -1), i_25_, 1, 32993, ((ha_Sub3_Sub2) this).anInt6135, is, i_27_ * i_25_);
+				OpenGL.glReadPixelsi(i, (-i_27_ + this.anInt4531 + -i_24_ + -1), i_25_, 1, 32993, this.anInt6135, is, i_27_ * i_25_);
 			return is;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("hl.na(" + i + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ')'));
@@ -402,21 +402,21 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 			int i_28_ = 0;
 			while (!aClass148_6113.method2420(-126)) {
 				Class98_Sub34 class98_sub34 = (Class98_Sub34) aClass148_6113.method2421(6494);
-				RenderAnimDefinitions.anIntArray2408[i_28_++] = (int) ((Node) class98_sub34).uid;
-				((ha_Sub3) this).anInt4538 -= ((Class98_Sub34) class98_sub34).anInt4126;
+				RenderAnimDefinitions.anIntArray2408[i_28_++] = (int) class98_sub34.uid;
+				this.anInt4538 -= class98_sub34.anInt4126;
 				if (i_28_ == 1000) {
 					OpenGL.glDeleteBuffersARB(i_28_, RenderAnimDefinitions.anIntArray2408, 0);
 					i_28_ = 0;
 				}
 			}
-			if ((i_28_ ^ 0xffffffff) < -1) {
+			if (i_28_ > 0) {
 				OpenGL.glDeleteBuffersARB(i_28_, RenderAnimDefinitions.anIntArray2408, 0);
 				i_28_ = 0;
 			}
 			while (!aClass148_6114.method2420(-125)) {
 				Class98_Sub34 class98_sub34 = (Class98_Sub34) aClass148_6114.method2421(6494);
-				RenderAnimDefinitions.anIntArray2408[i_28_++] = (int) ((Node) class98_sub34).uid;
-				((ha_Sub3) this).anInt4541 -= ((Class98_Sub34) class98_sub34).anInt4126;
+				RenderAnimDefinitions.anIntArray2408[i_28_++] = (int) class98_sub34.uid;
+				this.anInt4541 -= class98_sub34.anInt4126;
 				if (i_28_ == 1000) {
 					OpenGL.glDeleteTextures(i_28_, RenderAnimDefinitions.anIntArray2408, 0);
 					i_28_ = 0;
@@ -428,8 +428,8 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 			}
 			while (!aClass148_6115.method2420(-125)) {
 				Class98_Sub34 class98_sub34 = (Class98_Sub34) aClass148_6115.method2421(6494);
-				RenderAnimDefinitions.anIntArray2408[i_28_++] = ((Class98_Sub34) class98_sub34).anInt4126;
-				if ((i_28_ ^ 0xffffffff) == -1001) {
+				RenderAnimDefinitions.anIntArray2408[i_28_++] = class98_sub34.anInt4126;
+				if (i_28_ == 1000) {
 					OpenGL.glDeleteFramebuffersEXT(i_28_, RenderAnimDefinitions.anIntArray2408, 0);
 					i_28_ = 0;
 				}
@@ -440,32 +440,32 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 			}
 			while (!aClass148_6116.method2420(-124)) {
 				Class98_Sub34 class98_sub34 = (Class98_Sub34) aClass148_6116.method2421(6494);
-				RenderAnimDefinitions.anIntArray2408[i_28_++] = (int) ((Node) class98_sub34).uid;
-				((ha_Sub3) this).anInt4539 -= ((Class98_Sub34) class98_sub34).anInt4126;
+				RenderAnimDefinitions.anIntArray2408[i_28_++] = (int) class98_sub34.uid;
+				this.anInt4539 -= class98_sub34.anInt4126;
 				if (i_28_ == 1000) {
 					OpenGL.glDeleteRenderbuffersEXT(i_28_, RenderAnimDefinitions.anIntArray2408, 0);
 					i_28_ = 0;
 				}
 			}
-			if ((i_28_ ^ 0xffffffff) < -1) {
+			if (i_28_ > 0) {
 				OpenGL.glDeleteRenderbuffersEXT(i_28_, RenderAnimDefinitions.anIntArray2408, 0);
 				boolean bool = false;
 			}
 			while (!aClass148_6112.method2420(-127)) {
 				Class98_Sub34 class98_sub34 = (Class98_Sub34) aClass148_6112.method2421(6494);
-				OpenGL.glDeleteLists((int) ((Node) class98_sub34).uid, (((Class98_Sub34) class98_sub34).anInt4126));
+				OpenGL.glDeleteLists((int) class98_sub34.uid, (class98_sub34.anInt4126));
 			}
 			while (!aClass148_6117.method2420(-128)) {
 				Node class98 = aClass148_6117.method2421(6494);
-				OpenGL.glDeleteProgramARB((int) ((Node) class98).uid);
+				OpenGL.glDeleteProgramARB((int) class98.uid);
 			}
 			while (!aClass148_6118.method2420(-125)) {
 				Node class98 = aClass148_6118.method2421(6494);
-				OpenGL.glDeleteObjectARB(((Node) class98).uid);
+				OpenGL.glDeleteObjectARB(class98.uid);
 			}
 			while (!aClass148_6112.method2420(-125)) {
 				Class98_Sub34 class98_sub34 = (Class98_Sub34) aClass148_6112.method2421(6494);
-				OpenGL.glDeleteLists((int) ((Node) class98_sub34).uid, (((Class98_Sub34) class98_sub34).anInt4126));
+				OpenGL.glDeleteLists((int) class98_sub34.uid, (class98_sub34.anInt4126));
 			}
 			if (this.E() > 100663296 && aLong6127 - -60000L < Class343.method3819(-47)) {
 				System.gc();
@@ -481,7 +481,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 		do {
 			try {
 				do {
-					if (!((ha_Sub3) this).aBoolean4643 || ((ha_Sub3) this).aBoolean4637) {
+					if (!this.aBoolean4643 || this.aBoolean4637) {
 						OpenGL.glDisable(2896);
 						if (!client.aBoolean3553)
 							break;
@@ -502,7 +502,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 		try {
 			int i_29_ = 70 / ((-6 - i) / 34);
 			OpenGL.glMatrixMode(5889);
-			OpenGL.glLoadMatrixf(((ha_Sub3) this).aFloatArray4566, 0);
+			OpenGL.glLoadMatrixf(this.aFloatArray4566, 0);
 			OpenGL.glMatrixMode(5888);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hl.LC(" + i + ')');
@@ -570,10 +570,10 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 	final void method1972(int i) {
 		do {
 			try {
-				OpenGL.glDepthMask(((ha_Sub3) this).aBoolean4606 && ((ha_Sub3) this).aBoolean4620);
+				OpenGL.glDepthMask(this.aBoolean4606 && this.aBoolean4620);
 				if (i == 0)
 					break;
-				((ha_Sub3_Sub2) this).aMapBuffer6125 = null;
+				this.aMapBuffer6125 = null;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "hl.DB(" + i + ')');
 			}
@@ -584,7 +584,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 	final synchronized void method2083(int i, int i_33_, int i_34_) {
 		try {
 			Class98_Sub34 class98_sub34 = new Class98_Sub34(i_34_);
-			((Node) class98_sub34).uid = (long) i_33_;
+			class98_sub34.uid = i_33_;
 			if (i <= -4)
 				aClass148_6114.add_last(class98_sub34, -20911);
 		} catch (RuntimeException runtimeexception) {
@@ -641,7 +641,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 		do {
 			try {
 				do {
-					if (((ha_Sub3) this).aBoolean4599) {
+					if (this.aBoolean4599) {
 						OpenGL.glEnable(3008);
 						if (!client.aBoolean3553)
 							break;
@@ -686,7 +686,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 	final void method1974(int i) {
 		try {
 			if (i == 0) {
-				if (!((ha_Sub3) this).aBoolean4577)
+				if (!this.aBoolean4577)
 					OpenGL.glDisable(2929);
 				else
 					OpenGL.glEnable(2929);
@@ -737,12 +737,12 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 	final void method2042(Class256 class256, byte i) {
 		try {
 			int i_52_ = -90 % ((-4 - i) / 48);
-			Class49[] class49s = ((Class256_Sub1) (Class256_Sub1) class256).aClass49Array5159;
+			Class49[] class49s = ((Class256_Sub1) class256).aClass49Array5159;
 			int i_53_ = 0;
 			boolean bool = false;
 			boolean bool_54_ = false;
 			boolean bool_55_ = false;
-			for (int i_56_ = 0; (class49s.length ^ 0xffffffff) < (i_56_ ^ 0xffffffff); i_56_++) {
+			for (int i_56_ = 0; i_56_ < class49s.length; i_56_++) {
 				Class49 class49 = class49s[i_56_];
 				Class69_Sub2 class69_sub2 = aClass69_Sub2Array6124[i_56_];
 				int i_57_ = 0;
@@ -777,7 +777,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 						bool_55_ = true;
 						OpenGL.glVertexPointer(3, 5126, i_58_, l + (long) i_57_);
 					}
-					i_57_ += ((Class169) class169).anInt1295;
+					i_57_ += class169.anInt1295;
 				}
 			}
 			if (bool_55_ != aBoolean6121) {
@@ -801,7 +801,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 					OpenGL.glEnableClientState(32886);
 				aBoolean6119 = bool;
 			}
-			if ((anInt6126 ^ 0xffffffff) <= (i_53_ ^ 0xffffffff)) {
+			if (i_53_ <= anInt6126) {
 				if (anInt6126 > i_53_) {
 					for (int i_60_ = i_53_; i_60_ < anInt6126; i_60_++) {
 						OpenGL.glClientActiveTexture(33984 - -i_60_);
@@ -810,7 +810,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 					anInt6126 = i_53_;
 				}
 			} else {
-				for (int i_61_ = anInt6126; (i_61_ ^ 0xffffffff) > (i_53_ ^ 0xffffffff); i_61_++) {
+				for (int i_61_ = anInt6126; i_53_ > i_61_; i_61_++) {
 					OpenGL.glClientActiveTexture(i_61_ + 33984);
 					OpenGL.glEnableClientState(32888);
 				}
@@ -824,7 +824,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 	final void method1958(byte i) {
 		do {
 			try {
-				OpenGL.glTexEnvi(8960, 34162, Class5.method178((((ha_Sub3) this).aClass128Array4639[(((ha_Sub3) this).anInt4579)]), 0));
+				OpenGL.glTexEnvi(8960, 34162, Class5.method178((this.aClass128Array4639[(this.anInt4579)]), 0));
 				if (i == -48)
 					break;
 				method2065((byte) -18);
@@ -837,11 +837,11 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 
 	final void method1817() {
 		try {
-			if ((((ha_Sub3) this).anInt4527 ^ 0xffffffff) < -1 || ((ha_Sub3) this).anInt4531 > 0) {
-				int i = ((ha_Sub3) this).anInt4602;
-				int i_62_ = ((ha_Sub3) this).anInt4575;
-				int i_63_ = ((ha_Sub3) this).anInt4558;
-				int i_64_ = ((ha_Sub3) this).anInt4638;
+			if (this.anInt4527 > 0 || this.anInt4531 > 0) {
+				int i = this.anInt4602;
+				int i_62_ = this.anInt4575;
+				int i_63_ = this.anInt4558;
+				int i_64_ = this.anInt4638;
 				this.la();
 				OpenGL.glReadBuffer(1028);
 				OpenGL.glDrawBuffer(1029);
@@ -860,7 +860,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 				OpenGL.glMatrixMode(5888);
 				OpenGL.glLoadIdentity();
 				OpenGL.glRasterPos2i(0, 0);
-				OpenGL.glCopyPixels(0, 0, ((ha_Sub3) this).anInt4527, ((ha_Sub3) this).anInt4531, 6144);
+				OpenGL.glCopyPixels(0, 0, this.anInt4527, this.anInt4531, 6144);
 				OpenGL.glFlush();
 				OpenGL.glReadBuffer(1029);
 				OpenGL.glDrawBuffer(1029);
@@ -900,7 +900,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 				Class162 class162 = interface2_impl2.method77(-15448);
 				Class69_Sub1 class69_sub1 = (Class69_Sub1) interface2_impl2;
 				class69_sub1.method698(18569);
-				OpenGL.glDrawElements(i_69_, i_70_, Class98_Sub5_Sub1.method964(class162, (byte) 105), (class69_sub1.method695(-30277) - -(long) (i_65_ * (((Class162) class162).anInt1263))));
+				OpenGL.glDrawElements(i_69_, i_70_, Class98_Sub5_Sub1.method964(class162, (byte) 105), (class69_sub1.method695(-30277) - -(long) (i_65_ * (class162.anInt1263))));
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("hl.SD(" + (class232 != null ? "{...}" : "null") + ',' + i + ',' + i_65_ + ',' + i_66_ + ',' + (interface2_impl2 != null ? "{...}" : "null") + ',' + i_67_ + ',' + i_68_ + ')'));
@@ -920,7 +920,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 	final void method2011(int i) {
 		do {
 			try {
-				OpenGL.glTexEnvi(8960, 34161, Class5.method178((((ha_Sub3) this).aClass128Array4585[(((ha_Sub3) this).anInt4579)]), 0));
+				OpenGL.glTexEnvi(8960, 34161, Class5.method178((this.aClass128Array4585[(this.anInt4579)]), 0));
 				if (i == 2)
 					break;
 				GA(-98);
@@ -948,12 +948,12 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 
 	final void method2057(int i) {
 		try {
-			Class98_Sub39.aFloatArray4189[2] = ((float) Class202.method2702(((ha_Sub3) this).anInt4648, 255) / 255.0F);
-			Class98_Sub39.aFloatArray4189[1] = ((float) Class202.method2702(65280, ((ha_Sub3) this).anInt4648) / 65280.0F);
+			Class98_Sub39.aFloatArray4189[2] = ((float) Class202.method2702(this.anInt4648, 255) / 255.0F);
+			Class98_Sub39.aFloatArray4189[1] = ((float) Class202.method2702(65280, this.anInt4648) / 65280.0F);
 			if (i != 12362)
 				aLong6127 = 41L;
-			Class98_Sub39.aFloatArray4189[0] = ((float) Class202.method2702(16711680, ((ha_Sub3) this).anInt4648) / 1.671168E7F);
-			Class98_Sub39.aFloatArray4189[3] = (float) (((ha_Sub3) this).anInt4648 >>> 1318505624) / 255.0F;
+			Class98_Sub39.aFloatArray4189[0] = ((float) Class202.method2702(16711680, this.anInt4648) / 1.671168E7F);
+			Class98_Sub39.aFloatArray4189[3] = (float) (this.anInt4648 >>> 24) / 255.0F;
 			OpenGL.glTexEnvfv(8960, 8705, Class98_Sub39.aFloatArray4189, 0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hl.TB(" + i + ')');
@@ -973,7 +973,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 	final void method1950(byte i) {
 		try {
 			int i_78_ = 50 % ((-49 - i) / 47);
-			OpenGL.glActiveTexture(((ha_Sub3) this).anInt4579 + 33984);
+			OpenGL.glActiveTexture(this.anInt4579 + 33984);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hl.IB(" + i + ')');
 		}
@@ -982,15 +982,15 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 	final void method2004(byte i) {
 		do {
 			try {
-				Class98_Sub39.aFloatArray4189[1] = (((ha_Sub3) this).aFloat4549 * ((ha_Sub3) this).aFloat4630);
+				Class98_Sub39.aFloatArray4189[1] = (this.aFloat4549 * this.aFloat4630);
 				Class98_Sub39.aFloatArray4189[3] = 1.0F;
-				Class98_Sub39.aFloatArray4189[0] = (((ha_Sub3) this).aFloat4630 * ((ha_Sub3) this).aFloat4611);
-				Class98_Sub39.aFloatArray4189[2] = (((ha_Sub3) this).aFloat4630 * ((ha_Sub3) this).aFloat4591);
+				Class98_Sub39.aFloatArray4189[0] = (this.aFloat4630 * this.aFloat4611);
+				Class98_Sub39.aFloatArray4189[2] = (this.aFloat4630 * this.aFloat4591);
 				OpenGL.glLightfv(16384, 4609, Class98_Sub39.aFloatArray4189, 0);
 				Class98_Sub39.aFloatArray4189[3] = 1.0F;
-				Class98_Sub39.aFloatArray4189[1] = (-((ha_Sub3) this).aFloat4594 * ((ha_Sub3) this).aFloat4549);
-				Class98_Sub39.aFloatArray4189[2] = (-((ha_Sub3) this).aFloat4594 * ((ha_Sub3) this).aFloat4591);
-				Class98_Sub39.aFloatArray4189[0] = (((ha_Sub3) this).aFloat4611 * -((ha_Sub3) this).aFloat4594);
+				Class98_Sub39.aFloatArray4189[1] = (-this.aFloat4594 * this.aFloat4549);
+				Class98_Sub39.aFloatArray4189[2] = (-this.aFloat4594 * this.aFloat4591);
+				Class98_Sub39.aFloatArray4189[0] = (this.aFloat4611 * -this.aFloat4594);
 				OpenGL.glLightfv(16385, 4609, Class98_Sub39.aFloatArray4189, 0);
 				if (i <= -98)
 					break;
@@ -1026,9 +1026,9 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 
 	final void method2065(byte i) {
 		try {
-			OpenGL.glLightfv(16384, 4611, ((ha_Sub3) this).aFloatArray4596, 0);
+			OpenGL.glLightfv(16384, 4611, this.aFloatArray4596, 0);
 			if (i == 80)
-				OpenGL.glLightfv(16385, 4611, ((ha_Sub3) this).aFloatArray4572, 0);
+				OpenGL.glLightfv(16385, 4611, this.aFloatArray4572, 0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hl.LB(" + i + ')');
 		}
@@ -1037,10 +1037,10 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 	final void method1959(int i) {
 		do {
 			try {
-				int i_79_ = (((ha_Sub3_Sub2) this).anIntArray6139[((ha_Sub3) this).anInt4579]);
+				int i_79_ = (this.anIntArray6139[this.anInt4579]);
 				if (i_79_ == i)
 					break;
-				((ha_Sub3_Sub2) this).anIntArray6139[(((ha_Sub3) this).anInt4579)] = 0;
+				this.anIntArray6139[(this.anInt4579)] = 0;
 				OpenGL.glBindTexture(i_79_, 0);
 				OpenGL.glDisable(i_79_);
 			} catch (RuntimeException runtimeexception) {
@@ -1059,7 +1059,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 			if (i != 1)
 				method1746(-36, 50, 45, 78);
 			Class98_Sub34 class98_sub34 = new Class98_Sub34(i_80_);
-			((Node) class98_sub34).uid = (long) i_81_;
+			class98_sub34.uid = i_81_;
 			aClass148_6113.add_last(class98_sub34, -20911);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("hl.FA(" + i + ',' + i_80_ + ',' + i_81_ + ')'));
@@ -1091,11 +1091,11 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 				anOpenGL6111.b();
 				aString6140 = OpenGL.glGetString(7936).toLowerCase();
 				aString6131 = OpenGL.glGetString(7937).toLowerCase();
-				if ((aString6140.indexOf("microsoft") ^ 0xffffffff) != 0 || aString6140.indexOf("brian paul") != -1 || aString6140.indexOf("mesa") != -1)
+				if (aString6140.indexOf("microsoft") != -1 || aString6140.indexOf("brian paul") != -1 || aString6140.indexOf("mesa") != -1)
 					throw new RuntimeException("");
 				String string = OpenGL.glGetString(7938);
 				String[] strings = Class112.method2142(string.replace('.', ' '), ' ', false);
-				if ((strings.length ^ 0xffffffff) <= -3) {
+				if (strings.length >= 2) {
 					try {
 						int i_83_ = PacketSender.method3607(-52, strings[0]);
 						int i_84_ = PacketSender.method3607(73, strings[1]);
@@ -1105,7 +1105,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 					}
 				} else
 					throw new RuntimeException("");
-				if ((anInt6129 ^ 0xffffffff) > -13)
+				if (anInt6129 < 12)
 					throw new RuntimeException("");
 				if (!anOpenGL6111.a("GL_ARB_multitexture"))
 					throw new RuntimeException("");
@@ -1113,22 +1113,22 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 					throw new RuntimeException("");
 				int[] is = new int[1];
 				OpenGL.glGetIntegerv(34018, is, 0);
-				((ha_Sub3) this).anInt4608 = is[0];
-				if (((ha_Sub3) this).anInt4608 < 2)
+				this.anInt4608 = is[0];
+				if (this.anInt4608 < 2)
 					throw new RuntimeException("");
-				((ha_Sub3) this).anInt4565 = 8;
-				((ha_Sub3_Sub2) this).aBoolean6137 = anOpenGL6111.a("GL_ARB_vertex_buffer_object");
-				((ha_Sub3) this).aBoolean4559 = anOpenGL6111.a("GL_ARB_multisample");
+				this.anInt4565 = 8;
+				this.aBoolean6137 = anOpenGL6111.a("GL_ARB_vertex_buffer_object");
+				this.aBoolean4559 = anOpenGL6111.a("GL_ARB_multisample");
 				aBoolean6138 = anOpenGL6111.a("GL_ARB_texture_rectangle");
-				((ha_Sub3) this).aBoolean4569 = anOpenGL6111.a("GL_ARB_texture_cube_map");
+				this.aBoolean4569 = anOpenGL6111.a("GL_ARB_texture_cube_map");
 				aBoolean6130 = anOpenGL6111.a("GL_ARB_texture_non_power_of_two");
-				((ha_Sub3) this).aBoolean4588 = anOpenGL6111.a("GL_EXT_texture3D");
-				((ha_Sub3_Sub2) this).aBoolean6133 = anOpenGL6111.a("GL_ARB_vertex_shader");
-				((ha_Sub3_Sub2) this).aBoolean6134 = anOpenGL6111.a("GL_ARB_vertex_program");
-				((ha_Sub3_Sub2) this).aBoolean6136 = anOpenGL6111.a("GL_ARB_fragment_shader");
+				this.aBoolean4588 = anOpenGL6111.a("GL_EXT_texture3D");
+				this.aBoolean6133 = anOpenGL6111.a("GL_ARB_vertex_shader");
+				this.aBoolean6134 = anOpenGL6111.a("GL_ARB_vertex_program");
+				this.aBoolean6136 = anOpenGL6111.a("GL_ARB_fragment_shader");
 				anOpenGL6111.a("GL_ARB_fragment_program");
-				((ha_Sub3_Sub2) this).anIntArray6139 = new int[((ha_Sub3) this).anInt4608];
-				((ha_Sub3_Sub2) this).anInt6135 = !Stream.a() ? 5121 : 33639;
+				this.anIntArray6139 = new int[this.anInt4608];
+				this.anInt6135 = !Stream.a() ? 5121 : 33639;
 				if (aString6131.indexOf("radeon") != -1) {
 					int i_85_ = 0;
 					boolean bool = false;
@@ -1138,7 +1138,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 						String string_89_ = strings_87_[i_88_];
 						try {
 							if (string_89_.length() > 0) {
-								if (string_89_.charAt(0) == 'x' && (string_89_.length() ^ 0xffffffff) <= -4 && (Class77_Sub1.method781((byte) 53, string_89_.substring(1, 3)))) {
+								if (string_89_.charAt(0) == 'x' && string_89_.length() >= 3 && (Class77_Sub1.method781((byte) 53, string_89_.substring(1, 3)))) {
 									string_89_ = string_89_.substring(1);
 									bool_86_ = true;
 								}
@@ -1149,7 +1149,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 										string_89_ = string_89_.substring(2);
 										bool = true;
 									}
-									if (((string_89_.length() ^ 0xffffffff) <= -5) && (Class77_Sub1.method781((byte) 53, string_89_.substring(0, 4)))) {
+									if ((string_89_.length() >= 4) && (Class77_Sub1.method781((byte) 53, string_89_.substring(0, 4)))) {
 										i_85_ = (PacketSender.method3607(87, string_89_.substring(0, 4)));
 										break;
 									}
@@ -1161,14 +1161,14 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 					}
 					if (!bool_86_ && !bool) {
 						if (i_85_ >= 7000 && i_85_ <= 7999)
-							((ha_Sub3_Sub2) this).aBoolean6137 = false;
+							this.aBoolean6137 = false;
 						if (i_85_ >= 7000 && i_85_ <= 9250)
-							((ha_Sub3) this).aBoolean4588 = false;
+							this.aBoolean4588 = false;
 					}
 					aBoolean6138 &= anOpenGL6111.a("GL_ARB_half_float_pixel");
 				}
 				aString6140.indexOf("intel");
-				if (((ha_Sub3_Sub2) this).aBoolean6137) {
+				if (this.aBoolean6137) {
 					try {
 						int[] is_90_ = new int[1];
 						OpenGL.glGenBuffersARB(1, is_90_, 0);
@@ -1214,10 +1214,10 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 
 	final void method1991(int i) {
 		try {
-			Class98_Sub39.aFloatArray4189[2] = ((ha_Sub3) this).aFloat4576 * ((ha_Sub3) this).aFloat4591;
+			Class98_Sub39.aFloatArray4189[2] = this.aFloat4576 * this.aFloat4591;
 			Class98_Sub39.aFloatArray4189[3] = 1.0F;
-			Class98_Sub39.aFloatArray4189[1] = ((ha_Sub3) this).aFloat4549 * ((ha_Sub3) this).aFloat4576;
-			Class98_Sub39.aFloatArray4189[0] = ((ha_Sub3) this).aFloat4611 * ((ha_Sub3) this).aFloat4576;
+			Class98_Sub39.aFloatArray4189[1] = this.aFloat4549 * this.aFloat4576;
+			Class98_Sub39.aFloatArray4189[0] = this.aFloat4611 * this.aFloat4576;
 			if (i != -24391)
 				I();
 			OpenGL.glLightModelfv(2899, Class98_Sub39.aFloatArray4189, 0);
@@ -1242,7 +1242,7 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 
 	final void method1941(int i) {
 		try {
-			for (int i_93_ = ((ha_Sub3) this).anInt4608 + -1; (i_93_ ^ 0xffffffff) <= -1; i_93_--) {
+			for (int i_93_ = this.anInt4608 + -1; i_93_ >= 0; i_93_--) {
 				OpenGL.glActiveTexture(i_93_ + 33984);
 				OpenGL.glTexEnvi(8960, 8704, 34160);
 				OpenGL.glTexEnvi(8960, 34161, 8448);
@@ -1303,8 +1303,8 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 		try {
 			this.method1960(i ^ ~0xf07);
 			int i_97_;
-			for (i_97_ = 0; ((ha_Sub3) this).anInt4619 > i_97_; i_97_++) {
-				Class98_Sub5 class98_sub5 = ((ha_Sub3) this).aClass98_Sub5Array4597[i_97_];
+			for (i_97_ = 0; this.anInt4619 > i_97_; i_97_++) {
+				Class98_Sub5 class98_sub5 = this.aClass98_Sub5Array4597[i_97_];
 				int i_98_ = class98_sub5.method961((byte) -78);
 				int i_99_ = 16386 - -i_97_;
 				float f = class98_sub5.method956(false) / 255.0F;
@@ -1314,14 +1314,14 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 				Class98_Sub39.aFloatArray4189[3] = 1.0F;
 				OpenGL.glLightfv(i_99_, 4611, Class98_Sub39.aFloatArray4189, 0);
 				Class98_Sub39.aFloatArray4189[2] = f * (float) Class202.method2702(255, i_98_);
-				Class98_Sub39.aFloatArray4189[1] = f * (float) Class202.method2702(i_98_ >> -989028888, 255);
+				Class98_Sub39.aFloatArray4189[1] = f * (float) Class202.method2702(i_98_ >> 8, 255);
 				Class98_Sub39.aFloatArray4189[3] = 1.0F;
-				Class98_Sub39.aFloatArray4189[0] = (float) Class202.method2702(255, i_98_ >> 444887952) * f;
+				Class98_Sub39.aFloatArray4189[0] = (float) Class202.method2702(255, i_98_ >> 16) * f;
 				OpenGL.glLightfv(i_99_, 4609, Class98_Sub39.aFloatArray4189, 0);
 				OpenGL.glLightf(i_99_, 4617, (1.0F / (float) (class98_sub5.method958(i + 14840) * class98_sub5.method958(126))));
 				OpenGL.glEnable(i_99_);
 			}
-			for (/**/; ((((ha_Sub3) this).anInt4628 ^ 0xffffffff) < (i_97_ ^ 0xffffffff)); i_97_++)
+			for (/**/; (i_97_ < this.anInt4628); i_97_++)
 				OpenGL.glDisable(16386 - -i_97_);
 			super.method2035(i);
 		} catch (RuntimeException runtimeexception) {
@@ -1380,9 +1380,9 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 	final synchronized void method2085(boolean bool, int i) {
 		try {
 			if (bool != true)
-				((ha_Sub3_Sub2) this).aBoolean6133 = false;
+				this.aBoolean6133 = false;
 			Node class98 = new Node();
-			((Node) class98).uid = (long) i;
+			class98.uid = i;
 			aClass148_6117.add_last(class98, -20911);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hl.W(" + bool + ',' + i + ')');
@@ -1393,12 +1393,12 @@ final class ha_Sub3_Sub2 extends ha_Sub3 {
 		try {
 			OpenGL.glMatrixMode(5890);
 			do {
-				if (Class98_Sub46_Sub19.aClass258_6062 == (((ha_Sub3) this).aClass258Array4644[((ha_Sub3) this).anInt4579])) {
+				if (Class98_Sub46_Sub19.aClass258_6062 == (this.aClass258Array4644[this.anInt4579])) {
 					OpenGL.glLoadIdentity();
 					if (!client.aBoolean3553)
 						break;
 				}
-				OpenGL.glLoadMatrixf((((ha_Sub3) this).aClass111_Sub3Array4609[((ha_Sub3) this).anInt4579].method2121((byte) -58, Class98_Sub30.aFloatArray4096)), 0);
+				OpenGL.glLoadMatrixf((this.aClass111_Sub3Array4609[this.anInt4579].method2121((byte) -58, Class98_Sub30.aFloatArray4096)), 0);
 			} while (false);
 			int i_100_ = -73 % ((i - -62) / 42);
 			OpenGL.glMatrixMode(5888);

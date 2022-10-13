@@ -90,21 +90,21 @@ final class Class27 {
 	static {
 		for (int i = 0; i < 256; i++) {
 			int i_0_ = "\u1823\uc6e8\u87b8\u014f\u36a6\ud2f5\u796f\u9152\u60bc\u9b8e\ua30c\u7b35\u1de0\ud7c2\u2e4b\ufe57\u1577\u37e5\u9ff0\u4ada\u58c9\u290a\ub1a0\u6b85\ubd5d\u10f4\ucb3e\u0567\ue427\u418b\ua77d\u95d8\ufbee\u7c66\udd17\u479e\uca2d\ubf07\uad5a\u8333\u6302\uaa71\uc819\u49d9\uf2e3\u5b88\u9a26\u32b0\ue90f\ud580\ubecd\u3448\uff7a\u905f\u2068\u1aae\ub454\u9322\u64f1\u7312\u4008\uc3ec\udba1\u8d3d\u9700\ucf2b\u7682\ud61b\ub5af\u6a50\u45f3\u30ef\u3f55\ua2ea\u65ba\u2fc0\ude1c\ufd4d\u9275\u068a\ub2e6\u0e1f\u62d4\ua896\uf9c5\u2559\u8472\u394c\u5e78\u388c\ud1a5\ue261\ub321\u9c1e\u43c7\ufc04\u5199\u6d0d\ufadf\u7e24\u3bab\uce11\u8f4e\ub7eb\u3c81\u94f7\ub913\u2cd3\ue76e\uc403\u5644\u7fa9\u2abb\uc153\udc0b\u9d6c\u3174\uf646\uac89\u14e1\u163a\u6909\u70b6\ud0ed\ucc42\u98a4\u285c\uf886".charAt(i / 2);
-			long l = (long) ((0x1 & i ^ 0xffffffff) == -1 ? i_0_ >>> 1856053640 : i_0_ & 0xff);
-			long l_1_ = l << 909211713;
+			long l = (0x1 & i) == 0 ? i_0_ >>> 8 : i_0_ & 0xff;
+			long l_1_ = l << 1;
 			if (l_1_ >= 256L)
 				l_1_ ^= 0x11dL;
-			long l_2_ = l_1_ << 1782822081;
-			if ((l_2_ ^ 0xffffffffffffffffL) <= -257L)
+			long l_2_ = l_1_ << 1;
+			if (l_2_ >= 256)
 				l_2_ ^= 0x11dL;
 			long l_3_ = l_2_ ^ l;
-			long l_4_ = l_2_ << 483539521;
-			if ((l_4_ ^ 0xffffffffffffffffL) <= -257L)
+			long l_4_ = l_2_ << 1;
+			if (l_4_ >= 256)
 				l_4_ ^= 0x11dL;
 			long l_5_ = l ^ l_4_;
-			aLongArrayArray279[0][i] = (Class151_Sub1.method2448(l_5_, (Class151_Sub1.method2448((Class151_Sub1.method2448(l_3_ << 390312336, (Class151_Sub1.method2448(l_4_ << 1263478616, (Class151_Sub1.method2448((Class151_Sub1.method2448(l_2_ << 1309969768, Class151_Sub1.method2448(l << -966627024, l << -650887624))), l << 996425056)))))), l_1_ << -175798776))));
-			for (int i_6_ = 1; (i_6_ ^ 0xffffffff) > -9; i_6_++)
-				aLongArrayArray279[i_6_][i] = Class151_Sub1.method2448((aLongArrayArray279[-1 + i_6_][i]) << 2027155000, (aLongArrayArray279[-1 + i_6_][i]) >>> 1503710728);
+			aLongArrayArray279[0][i] = (Class151_Sub1.method2448(l_5_, (Class151_Sub1.method2448((Class151_Sub1.method2448(l_3_ << 16, (Class151_Sub1.method2448(l_4_ << 24, (Class151_Sub1.method2448((Class151_Sub1.method2448(l_2_ << 40, Class151_Sub1.method2448(l << 48, l << 56))), l << 32)))))), l_1_ << 8))));
+			for (int i_6_ = 1; i_6_ < 8; i_6_++)
+				aLongArrayArray279[i_6_][i] = Class151_Sub1.method2448((aLongArrayArray279[-1 + i_6_][i]) << 56, (aLongArrayArray279[-1 + i_6_][i]) >>> 8);
 		}
 		aLongArray280[0] = 0L;
 		for (int i = 1; i <= 10; i++) {

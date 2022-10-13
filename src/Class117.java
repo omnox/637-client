@@ -28,7 +28,7 @@ final class Class117 {
 		Class151_Sub8.anInt5015 = i_0_;
 		r_Sub2.anInt6333 = 1 << Class151_Sub8.anInt5015;
 		RuneScapeCache.anInt1577 = r_Sub2.anInt6333 >> 1;
-		Math.sqrt((double) (RuneScapeCache.anInt1577 * RuneScapeCache.anInt1577 + RuneScapeCache.anInt1577 * RuneScapeCache.anInt1577));
+		Math.sqrt(RuneScapeCache.anInt1577 * RuneScapeCache.anInt1577 + RuneScapeCache.anInt1577 * RuneScapeCache.anInt1577);
 		Class364.anInt3103 = i_1_;
 		Class366.anInt3112 = i_2_;
 		Class64_Sub9.anInt3662 = i_3_;
@@ -117,29 +117,29 @@ final class Class117 {
 			int i_15_;
 			int i_16_;
 			int i_9_ = (i_10_ = i_11_ = i_12_ = i_13_ = i_14_ = i_15_ = i_16_ = -1640531527);
-			for (int i_17_ = 0; (i_17_ ^ 0xffffffff) > -5; i_17_++) {
-				i_9_ ^= i_10_ << -910493557;
+			for (int i_17_ = 0; i_17_ < 4; i_17_++) {
+				i_9_ ^= i_10_ << 11;
 				i_10_ += i_11_;
 				i_12_ += i_9_;
-				i_10_ ^= i_11_ >>> -424891550;
+				i_10_ ^= i_11_ >>> 2;
 				i_13_ += i_10_;
 				i_11_ += i_12_;
-				i_11_ ^= i_12_ << -1200133080;
+				i_11_ ^= i_12_ << 8;
 				i_12_ += i_13_;
 				i_14_ += i_11_;
-				i_12_ ^= i_13_ >>> -151076080;
+				i_12_ ^= i_13_ >>> 16;
 				i_13_ += i_14_;
 				i_15_ += i_12_;
-				i_13_ ^= i_14_ << -958066198;
+				i_13_ ^= i_14_ << 10;
 				i_16_ += i_13_;
 				i_14_ += i_15_;
-				i_14_ ^= i_15_ >>> 1081109060;
+				i_14_ ^= i_15_ >>> 4;
 				i_9_ += i_14_;
 				i_15_ += i_16_;
-				i_15_ ^= i_16_ << -2066782968;
+				i_15_ ^= i_16_ << 8;
 				i_16_ += i_9_;
 				i_10_ += i_15_;
-				i_16_ ^= i_9_ >>> -1653233111;
+				i_16_ ^= i_9_ >>> 9;
 				i_9_ += i_10_;
 				i_11_ += i_16_;
 			}
@@ -154,28 +154,28 @@ final class Class117 {
 				i_13_ += anIntArray973[4 + i_18_];
 				i_12_ += anIntArray973[3 + i_18_];
 				i_15_ += anIntArray973[i_18_ - -6];
-				i_9_ ^= i_10_ << 1494265387;
+				i_9_ ^= i_10_ << 11;
 				i_10_ += i_11_;
 				i_12_ += i_9_;
-				i_10_ ^= i_11_ >>> 386271234;
+				i_10_ ^= i_11_ >>> 2;
 				i_13_ += i_10_;
 				i_11_ += i_12_;
-				i_11_ ^= i_12_ << -459009784;
+				i_11_ ^= i_12_ << 8;
 				i_12_ += i_13_;
 				i_14_ += i_11_;
-				i_12_ ^= i_13_ >>> 1744658032;
+				i_12_ ^= i_13_ >>> 16;
 				i_15_ += i_12_;
 				i_13_ += i_14_;
-				i_13_ ^= i_14_ << -754939414;
+				i_13_ ^= i_14_ << 10;
 				i_16_ += i_13_;
 				i_14_ += i_15_;
-				i_14_ ^= i_15_ >>> -1730138780;
+				i_14_ ^= i_15_ >>> 4;
 				i_9_ += i_14_;
 				i_15_ += i_16_;
-				i_15_ ^= i_16_ << -949934008;
+				i_15_ ^= i_16_ << 8;
 				i_10_ += i_15_;
 				i_16_ += i_9_;
-				i_16_ ^= i_9_ >>> -1543727799;
+				i_16_ ^= i_9_ >>> 9;
 				i_11_ += i_16_;
 				i_9_ += i_10_;
 				anIntArray969[i_18_] = i_9_;
@@ -187,7 +187,7 @@ final class Class117 {
 				anIntArray969[i_18_ - -6] = i_15_;
 				anIntArray969[i_18_ - -7] = i_16_;
 			}
-			for (i_18_ = 0; (i_18_ ^ 0xffffffff) > -257; i_18_ += 8) {
+			for (i_18_ = 0; i_18_ < 256; i_18_ += 8) {
 				i_16_ += anIntArray969[i_18_ + 7];
 				i_12_ += anIntArray969[i_18_ - -3];
 				i_13_ += anIntArray969[4 + i_18_];
@@ -196,28 +196,28 @@ final class Class117 {
 				i_9_ += anIntArray969[i_18_];
 				i_14_ += anIntArray969[i_18_ + 5];
 				i_11_ += anIntArray969[i_18_ - -2];
-				i_9_ ^= i_10_ << -542763221;
+				i_9_ ^= i_10_ << 11;
 				i_10_ += i_11_;
 				i_12_ += i_9_;
-				i_10_ ^= i_11_ >>> -902646974;
+				i_10_ ^= i_11_ >>> 2;
 				i_13_ += i_10_;
 				i_11_ += i_12_;
-				i_11_ ^= i_12_ << 334759432;
+				i_11_ ^= i_12_ << 8;
 				i_14_ += i_11_;
 				i_12_ += i_13_;
-				i_12_ ^= i_13_ >>> 967114160;
+				i_12_ ^= i_13_ >>> 16;
 				i_15_ += i_12_;
 				i_13_ += i_14_;
-				i_13_ ^= i_14_ << 755037322;
+				i_13_ ^= i_14_ << 10;
 				i_16_ += i_13_;
 				i_14_ += i_15_;
-				i_14_ ^= i_15_ >>> -1484981788;
+				i_14_ ^= i_15_ >>> 4;
 				i_15_ += i_16_;
 				i_9_ += i_14_;
-				i_15_ ^= i_16_ << 463243080;
+				i_15_ ^= i_16_ << 8;
 				i_10_ += i_15_;
 				i_16_ += i_9_;
-				i_16_ ^= i_9_ >>> 1562519465;
+				i_16_ ^= i_9_ >>> 9;
 				i_11_ += i_16_;
 				i_9_ += i_10_;
 				anIntArray969[i_18_] = i_9_;
@@ -242,19 +242,19 @@ final class Class117 {
 				anInt968 += ++anInt972;
 				for (int i_20_ = 0; i_20_ < 256; i_20_++) {
 					int i_21_ = anIntArray969[i_20_];
-					if ((0x2 & i_20_ ^ 0xffffffff) != -1) {
-						if ((0x1 & i_20_ ^ 0xffffffff) != -1)
-							anInt971 ^= anInt971 >>> -2137572944;
+					if ((0x2 & i_20_) != 0) {
+						if ((0x1 & i_20_) != 0)
+							anInt971 ^= anInt971 >>> 16;
 						else
-							anInt971 ^= anInt971 << -255770270;
+							anInt971 ^= anInt971 << 2;
 					} else if ((i_20_ & 0x1) == 0)
-						anInt971 ^= anInt971 << -1951024339;
+						anInt971 ^= anInt971 << 13;
 					else
-						anInt971 ^= anInt971 >>> 1690224390;
+						anInt971 ^= anInt971 >>> 6;
 					anInt971 += anIntArray969[0xff & 128 + i_20_];
 					int i_22_;
-					anIntArray969[i_20_] = i_22_ = (anInt971 + (anIntArray969[Class202.method2702(1020, i_21_) >> -875557438]) - -anInt968);
-					anIntArray973[i_20_] = anInt968 = (anIntArray969[(Class202.method2702(i_22_ >> -1052867128, 1020) >> -1635419422)]) - -i_21_;
+					anIntArray969[i_20_] = i_22_ = (anInt971 + (anIntArray969[Class202.method2702(1020, i_21_) >> 2]) - -anInt968);
+					anIntArray973[i_20_] = anInt968 = (anIntArray969[(Class202.method2702(i_22_ >> 8, 1020) >> 2)]) - -i_21_;
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -266,7 +266,7 @@ final class Class117 {
 		try {
 			if (i <= 76)
 				anInt968 = -71;
-			if ((anInt970 ^ 0xffffffff) == -1) {
+			if (anInt970 == 0) {
 				method2166((byte) 94);
 				anInt970 = 256;
 			}
@@ -309,7 +309,7 @@ final class Class117 {
 					is[i_24_] = is[i_23_];
 					is[i_23_] = i_26_;
 					int i_27_ = l == 9223372036854775807L ? 0 : 1;
-					for (int i_28_ = i; (i_23_ ^ 0xffffffff) < (i_28_ ^ 0xffffffff); i_28_++) {
+					for (int i_28_ = i; i_28_ < i_23_; i_28_++) {
 						if (l - -(long) (i_27_ & i_28_) > ls[i_28_]) {
 							long l_29_ = ls[i_28_];
 							ls[i_28_] = ls[i_25_];
@@ -340,7 +340,7 @@ final class Class117 {
 		try {
 			anIntArray969 = new int[256];
 			anIntArray973 = new int[256];
-			for (int i = 0; (is.length ^ 0xffffffff) < (i ^ 0xffffffff); i++)
+			for (int i = 0; i < is.length; i++)
 				anIntArray973[i] = is[i];
 			method2165((byte) -123);
 		} catch (RuntimeException runtimeexception) {

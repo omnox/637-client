@@ -33,49 +33,49 @@ final class Class237_Sub1 extends Class237 {
 				byte[] is_1_ = aClass207_5046.readArchive(0, anInt5042);
 				if (is_1_ == null)
 					throw new IllegalStateException("");
-				((RSByteBuffer) aClass98_Sub22_5048).data = is_1_;
-				((RSByteBuffer) aClass98_Sub22_5048).position = 0;
-				int i_2_ = is_1_.length >> -830071903;
+				aClass98_Sub22_5048.data = is_1_;
+				aClass98_Sub22_5048.position = 0;
+				int i_2_ = is_1_.length >> 1;
 				anIntArray5040 = new int[i_2_];
-				for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > (i_2_ ^ 0xffffffff); i_3_++)
+				for (int i_3_ = 0; i_2_ > i_3_; i_3_++)
 					anIntArray5040[i_3_] = aClass98_Sub22_5048.readShort();
 			}
-			if ((anIntArray5040.length ^ 0xffffffff) >= (anInt5045 ^ 0xffffffff))
+			if (anInt5045 >= anIntArray5040.length)
 				return -1;
 			method2916((byte) 44);
-			((RSByteBuffer) aClass98_Sub22_5048).position = 0;
-			((RSByteBuffer) aClass98_Sub22_5048).data = is;
+			aClass98_Sub22_5048.position = 0;
+			aClass98_Sub22_5048.data = is;
 			if (i <= 43)
 				anIntArray5040 = null;
-			while (((RSByteBuffer) aClass98_Sub22_5048).position < (((RSByteBuffer) aClass98_Sub22_5048).data).length) {
-				if (((RSByteBuffer) aClass98_Sub22_5043).data == null) {
+			while (aClass98_Sub22_5048.position < (aClass98_Sub22_5048.data).length) {
+				if (aClass98_Sub22_5043.data == null) {
 					if (aByteArrayArray5041[0] == null) {
-						((RSByteBuffer) aClass98_Sub22_5048).data = null;
-						return ((RSByteBuffer) aClass98_Sub22_5048).position;
+						aClass98_Sub22_5048.data = null;
+						return aClass98_Sub22_5048.position;
 					}
-					((RSByteBuffer) aClass98_Sub22_5043).data = aByteArrayArray5041[0];
+					aClass98_Sub22_5043.data = aByteArrayArray5041[0];
 				}
-				int i_4_ = (-((RSByteBuffer) aClass98_Sub22_5048).position + (((RSByteBuffer) aClass98_Sub22_5048).data).length);
-				int i_5_ = (-((RSByteBuffer) aClass98_Sub22_5043).position + (((RSByteBuffer) aClass98_Sub22_5043).data).length);
-				if ((i_4_ ^ 0xffffffff) <= (i_5_ ^ 0xffffffff)) {
-					aClass98_Sub22_5048.method1217(((RSByteBuffer) aClass98_Sub22_5043).data, i_5_, -1, ((RSByteBuffer) aClass98_Sub22_5043).position);
-					((RSByteBuffer) aClass98_Sub22_5043).data = null;
-					((RSByteBuffer) aClass98_Sub22_5043).position = 0;
+				int i_4_ = (-aClass98_Sub22_5048.position + (aClass98_Sub22_5048.data).length);
+				int i_5_ = (-aClass98_Sub22_5043.position + (aClass98_Sub22_5043.data).length);
+				if (i_5_ <= i_4_) {
+					aClass98_Sub22_5048.method1217(aClass98_Sub22_5043.data, i_5_, -1, aClass98_Sub22_5043.position);
+					aClass98_Sub22_5043.data = null;
+					aClass98_Sub22_5043.position = 0;
 					anInt5045++;
 					for (int i_6_ = 0; i_6_ < 9; i_6_++)
 						aByteArrayArray5041[i_6_] = aByteArrayArray5041[1 + i_6_];
 					aByteArrayArray5041[9] = null;
 					if (anInt5045 >= anIntArray5040.length) {
-						((RSByteBuffer) aClass98_Sub22_5048).data = null;
-						return ((RSByteBuffer) aClass98_Sub22_5048).position;
+						aClass98_Sub22_5048.data = null;
+						return aClass98_Sub22_5048.position;
 					}
 				} else {
-					aClass98_Sub22_5043.method1190(((RSByteBuffer) aClass98_Sub22_5048).data, true, i_4_, ((RSByteBuffer) aClass98_Sub22_5048).position);
-					((RSByteBuffer) aClass98_Sub22_5048).data = null;
+					aClass98_Sub22_5043.method1190(aClass98_Sub22_5048.data, true, i_4_, aClass98_Sub22_5048.position);
+					aClass98_Sub22_5048.data = null;
 					return is.length;
 				}
 			}
-			((RSByteBuffer) aClass98_Sub22_5048).data = null;
+			aClass98_Sub22_5048.data = null;
 			return is.length;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("dha.O(" + i + ',' + (is != null ? "{...}" : "null") + ')'));
@@ -86,7 +86,7 @@ final class Class237_Sub1 extends Class237 {
 		try {
 			if (i_7_ != -89)
 				aBoolean5044 = true;
-			Class332 class332 = (Class332) Class135.aClass79_1054.get((long) i);
+			Class332 class332 = (Class332) Class135.aClass79_1054.get(i);
 			if (class332 == null) {
 				do {
 					if (!Class98_Sub5_Sub2.aBoolean5535) {
@@ -96,7 +96,7 @@ final class Class237_Sub1 extends Class237 {
 					}
 					class332 = (Class265.aHa1974.method1758(Class324.method3683(class207, i), true));
 				} while (false);
-				Class135.aClass79_1054.put((long) i, class332);
+				Class135.aClass79_1054.put(i, class332);
 			}
 			return class332;
 		} catch (RuntimeException runtimeexception) {

@@ -44,7 +44,7 @@ abstract class RtKeyListener {
 	static final void method778(int i, int i_1_) {
 		try {
 			Class98_Sub46_Sub17 class98_sub46_sub17 = Class185.setCS2StringOrVarc(i_1_, i ^ ~0xd, 14);
-			class98_sub46_sub17.method1621(i ^ i);
+			class98_sub46_sub17.method1621(0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "fa.E(" + i + ',' + i_1_ + ')');
 		}
@@ -58,7 +58,7 @@ abstract class RtKeyListener {
 
 	static final int method780(int i, byte i_3_, int i_4_) {
 		try {
-			if ((i ^ 0xffffffff) == -2 || (i ^ 0xffffffff) == -4)
+			if (i == 1 || i == 3)
 				return Class373.anIntArray3479[i_4_ & 0x3];
 			if (i_3_ != -72)
 				return -111;

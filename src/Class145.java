@@ -19,8 +19,8 @@ final class Class145 {
 			long l = 0L;
 			if (i > -118)
 				return 54L;
-			for (int i_1_ = 0; (i_0_ ^ 0xffffffff) < (i_1_ ^ 0xffffffff); i_1_++)
-				l = (long) string.charAt(i_1_) + (l << -470840507) + -l;
+			for (int i_1_ = 0; i_1_ < i_0_; i_1_++)
+				l = (long) string.charAt(i_1_) + (l << 5) + -l;
 			return l;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "k.B(" + i + ',' + (string != null ? "{...}" : "null") + ')');

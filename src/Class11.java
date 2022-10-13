@@ -26,8 +26,8 @@ final class Class11 {
 			synchronized (aClass79_125) {
 				aClass79_125.method806((byte) -108);
 			}
-			synchronized (((Class11) this).aClass79_126) {
-				((Class11) this).aClass79_126.method806((byte) -100);
+			synchronized (this.aClass79_126) {
+				this.aClass79_126.method806((byte) -100);
 			}
 			if (i != 1)
 				method203(false, 10);
@@ -41,8 +41,8 @@ final class Class11 {
 			synchronized (aClass79_125) {
 				aClass79_125.method794(123);
 			}
-			synchronized (((Class11) this).aClass79_126) {
-				((Class11) this).aClass79_126.method794(42);
+			synchronized (this.aClass79_126) {
+				this.aClass79_126.method794(42);
 			}
 			if (i <= 121)
 				method199((byte) 127);
@@ -57,7 +57,7 @@ final class Class11 {
 				aClass207_122 = null;
 			Class231 class231;
 			synchronized (aClass79_125) {
-				class231 = (Class231) aClass79_125.get((long) i);
+				class231 = (Class231) aClass79_125.get(i);
 			}
 			if (class231 != null)
 				return class231;
@@ -66,11 +66,11 @@ final class Class11 {
 				is = aClass207_122.readArchive(i, 33);
 			}
 			class231 = new Class231();
-			((Class231) class231).aClass11_1737 = this;
+			class231.aClass11_1737 = this;
 			if (is != null)
 				class231.method2880(true, new RSByteBuffer(is));
 			synchronized (aClass79_125) {
-				aClass79_125.put((long) i, class231);
+				aClass79_125.put(i, class231);
 			}
 			return class231;
 		} catch (RuntimeException runtimeexception) {
@@ -85,8 +85,8 @@ final class Class11 {
 			}
 			if (bool != false)
 				method203(true, 93);
-			synchronized (((Class11) this).aClass79_126) {
-				((Class11) this).aClass79_126.method800((byte) 62, i);
+			synchronized (this.aClass79_126) {
+				this.aClass79_126.method800((byte) 62, i);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "aq.C(" + bool + ',' + i + ')');
@@ -96,7 +96,7 @@ final class Class11 {
 	Class11(Class279 class279, int i, RuneScapeCache class207, RuneScapeCache class207_2_) {
 		try {
 			aClass207_122 = class207;
-			((Class11) this).aClass207_124 = class207_2_;
+			this.aClass207_124 = class207_2_;
 			aClass207_122.method2761(0, 33);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("aq.<init>(" + (class279 != null ? "{...}" : "null") + ',' + i + ',' + (class207 != null ? "{...}" : "null") + ',' + (class207_2_ != null ? "{...}" : "null") + ')'));

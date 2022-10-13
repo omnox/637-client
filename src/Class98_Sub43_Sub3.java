@@ -39,9 +39,9 @@ final class Class98_Sub43_Sub3 extends Class98_Sub43 {
 				int i_1_ = -57 / ((-11 - i_0_) / 48);
 				if (!aBoolean5927)
 					break;
-				if ((anInt5925 ^ 0xffffffff) > (anInt5929 ^ 0xffffffff))
+				if (anInt5929 > anInt5925)
 					anInt5929 = anInt5925;
-				if ((anInt5929 ^ 0xffffffff) > -1)
+				if (anInt5929 < 0)
 					anInt5929 = 0;
 				aDecoderContext5923.setPostProcessingLevel(anInt5929);
 			} catch (RuntimeException runtimeexception) {
@@ -91,7 +91,7 @@ final class Class98_Sub43_Sub3 extends Class98_Sub43 {
 				do {
 					if (!aBoolean5927) {
 						int i = aSetupInfo5928.decodeHeader(aTheoraInfo5914, aTheoraComment5921, oggpacket);
-						if ((i ^ 0xffffffff) == -1) {
+						if (i == 0) {
 							aBoolean5927 = true;
 							if (aTheoraInfo5914.frameWidth > 2048 || aTheoraInfo5914.frameHeight > 1024)
 								throw new IllegalStateException();
@@ -103,23 +103,23 @@ final class Class98_Sub43_Sub3 extends Class98_Sub43 {
 							if (!client.aBoolean3553)
 								break;
 						}
-						if ((i ^ 0xffffffff) > -1)
+						if (i < 0)
 							throw new IllegalStateException(String.valueOf(i));
 					} else {
 						aLong5920 = Class343.method3819(-47);
 						int i = aDecoderContext5923.decodePacketIn(oggpacket, aGranulePos5918);
-						if ((i ^ 0xffffffff) > -1)
+						if (i < 0)
 							throw new IllegalStateException(String.valueOf(i));
 						aDecoderContext5923.granuleFrame(aGranulePos5918);
 						aDouble5915 = aDecoderContext5923.granuleTime(aGranulePos5918);
 						if (aBoolean5916) {
-							boolean bool_2_ = (oggpacket.isKeyFrame() ^ 0xffffffff) == -2;
+							boolean bool_2_ = oggpacket.isKeyFrame() == 1;
 							if (!bool_2_)
 								return;
 							aBoolean5916 = false;
 						}
-						if (!aBoolean5913 || (oggpacket.isKeyFrame() ^ 0xffffffff) == -2) {
-							if ((aDecoderContext5923.decodeFrame(aFrame5911) ^ 0xffffffff) != -1)
+						if (!aBoolean5913 || oggpacket.isKeyFrame() == 1) {
+							if (aDecoderContext5923.decodeFrame(aFrame5911) != 0)
 								throw new IllegalStateException(String.valueOf(i));
 							aBoolean5912 = true;
 						}
@@ -237,9 +237,9 @@ final class Class98_Sub43_Sub3 extends Class98_Sub43 {
 			anIntArray5919[i] = -1;
 		for (int i = 65; i <= 90; i++)
 			anIntArray5919[i] = i - 65;
-		for (int i = 97; (i ^ 0xffffffff) >= -123; i++)
+		for (int i = 97; i <= 122; i++)
 			anIntArray5919[i] = i + -71;
-		for (int i = 48; (i ^ 0xffffffff) >= -58; i++)
+		for (int i = 48; i <= 57; i++)
 			anIntArray5919[i] = 52 + (-48 + i);
 		anIntArray5919[45] = anIntArray5919[47] = 63;
 		anIntArray5919[42] = anIntArray5919[43] = 62;

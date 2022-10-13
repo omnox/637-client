@@ -15,13 +15,13 @@ final class p extends Node implements Interface9 {
 	private static long aLong3323;
 
 	protected final void finalize() {
-		if (((p) this).nativeid != 0L)
+		if (this.nativeid != 0L)
 			Class192.method2654(false, this);
 	}
 
 	final void method1445(Rectangle[] rectangles, int i, int i_0_, int i_1_) {
 		try {
-			synchronized (((p) this).aCanvas3320.getTreeLock()) {
+			synchronized (this.aCanvas3320.getTreeLock()) {
 				for (int i_2_ = 0; i_2_ < i; i_2_++) {
 					Rectangle rectangle = rectangles[i_2_];
 					if (rectangle.width > 0 && rectangle.height > 0)
@@ -41,7 +41,7 @@ final class p extends Node implements Interface9 {
 			aLong3323 = Class343.method3819(-47);
 			aBoolean3321 = true;
 		} else if (Class343.method3819(-47) - aLong3323 < 30000L)
-			((p) this).aCanvas3320.repaint();
+			this.aCanvas3320.repaint();
 		else
 			throw new RuntimeException(exception.getMessage());
 	}
@@ -54,8 +54,8 @@ final class p extends Node implements Interface9 {
 
 	final void method1447(int i, int i_12_) {
 		try {
-			synchronized (((p) this).aCanvas3320.getTreeLock()) {
-				Dimension dimension = ((p) this).aCanvas3320.getSize();
+			synchronized (this.aCanvas3320.getTreeLock()) {
+				Dimension dimension = this.aCanvas3320.getSize();
 				H(i, i_12_, dimension.width, dimension.height);
 				aBoolean3321 = false;
 			}
@@ -65,22 +65,22 @@ final class p extends Node implements Interface9 {
 	}
 
 	p(oa var_oa, Canvas canvas, int i, int i_13_) {
-		((p) this).aCanvas3320 = canvas;
-		((p) this).anInt3319 = i;
-		((p) this).anInt3322 = i_13_;
-		sa(var_oa, ((p) this).aCanvas3320, i, i_13_);
+		this.aCanvas3320 = canvas;
+		this.anInt3319 = i;
+		this.anInt3322 = i_13_;
+		sa(var_oa, this.aCanvas3320, i, i_13_);
 	}
 
 	final void method1448(Canvas canvas, int i, int i_14_) {
-		((p) this).anInt3319 = i;
-		((p) this).anInt3322 = i_14_;
+		this.anInt3319 = i;
+		this.anInt3322 = i_14_;
 		oa(canvas, i, i_14_);
 	}
 
 	final void method1449() {
 		w(true);
-		((p) this).nativeid = 0L;
-		((p) this).aCanvas3320 = null;
+		this.nativeid = 0L;
+		this.aCanvas3320 = null;
 	}
 
 	private final native void sa(oa var_oa, Canvas canvas, int i, int i_15_);

@@ -35,7 +35,7 @@ final class Class257 {
 		try {
 			RenderAnimDefinitions class294;
 			synchronized (aClass79_1950) {
-				class294 = (RenderAnimDefinitions) aClass79_1950.get((long) i);
+				class294 = (RenderAnimDefinitions) aClass79_1950.get(i);
 			}
 			if (class294 != null)
 				return class294;
@@ -47,7 +47,7 @@ final class Class257 {
 			if (is != null)
 				class294.method3475(-22400, new RSByteBuffer(is));
 			synchronized (aClass79_1950) {
-				aClass79_1950.put((long) i, class294);
+				aClass79_1950.put(i, class294);
 			}
 			return class294;
 		} catch (RuntimeException runtimeexception) {
@@ -71,7 +71,7 @@ final class Class257 {
 			Class128.method2224(22696);
 			if (za_Sub2.method1683(-11297, Class177.anInt1376)) {
 				Class196.anInt1511++;
-				if ((Class196.anInt1511 ^ 0xffffffff) <= -51 || bool) {
+				if (Class196.anInt1511 >= 50 || bool) {
 					if (i < 45)
 						method3198(75);
 					Class196.anInt1511 = 0;

@@ -34,15 +34,15 @@ final class Class9 {
 
 	final Class332 method190(boolean bool, int i, int i_1_, ha var_ha) {
 		try {
-			long l = (long) (i_1_ << -529389104 | ((Class9) this).anInt114 | (!bool ? 0 : 262144) | ((ha) var_ha).anInt937 << -1675288589);
-			Class332 class332 = (Class332) ((Class335) ((Class9) this).aClass335_117).aClass79_2818.get(l);
+			long l = i_1_ << 16 | this.anInt114 | (!bool ? 0 : 262144) | var_ha.anInt937 << 19;
+			Class332 class332 = (Class332) this.aClass335_117.aClass79_2818.get(l);
 			if (class332 != null)
 				return class332;
-			if (!((Class335) ((Class9) this).aClass335_117).aClass207_2814.method2742(-51, ((Class9) this).anInt114))
+			if (!this.aClass335_117.aClass207_2814.method2742(-51, this.anInt114))
 				return null;
-			Class324 class324 = Class324.method3685((((Class335) ((Class9) this).aClass335_117).aClass207_2814), ((Class9) this).anInt114, i);
+			Class324 class324 = Class324.method3685((this.aClass335_117.aClass207_2814), this.anInt114, i);
 			if (class324 != null) {
-				((Class324) class324).anInt2724 = ((Class324) class324).anInt2725 = ((Class324) class324).anInt2719 = ((Class324) class324).anInt2721 = 0;
+				class324.anInt2724 = class324.anInt2725 = class324.anInt2719 = class324.anInt2721 = 0;
 				if (bool)
 					class324.method3682();
 				for (int i_2_ = 0; i_2_ < i_1_; i_2_++)
@@ -50,7 +50,7 @@ final class Class9 {
 			}
 			class332 = var_ha.method1758(class324, true);
 			if (class332 != null)
-				((Class335) ((Class9) this).aClass335_117).aClass79_2818.put(l, class332);
+				this.aClass335_117.aClass79_2818.put(l, class332);
 			return class332;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("an.C(" + bool + ',' + i + ',' + i_1_ + ',' + (var_ha != null ? "{...}" : "null") + ')'));
@@ -60,7 +60,7 @@ final class Class9 {
 	final boolean method191(int i) {
 		try {
 			int i_3_ = 93 % ((19 - i) / 63);
-			return ((Class335) ((Class9) this).aClass335_117).aClass207_2814.method2742(-68, ((Class9) this).anInt114);
+			return this.aClass335_117.aClass207_2814.method2742(-68, this.anInt114);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "an.F(" + i + ')');
 		}
@@ -72,7 +72,7 @@ final class Class9 {
 				method189(null, (byte) 10);
 			for (;;) {
 				int i = class98_sub22.readUnsignedByte();
-				if ((i ^ 0xffffffff) == -1)
+				if (i == 0)
 					break;
 				method193(class98_sub22, (byte) -43, i);
 			}
@@ -86,16 +86,16 @@ final class Class9 {
 			try {
 				if (i != -43)
 					method195(79, -65, null);
-				if ((i_4_ ^ 0xffffffff) == -2)
-					((Class9) this).anInt114 = class98_sub22.readShort();
-				else if ((i_4_ ^ 0xffffffff) == -3)
-					((Class9) this).anInt115 = class98_sub22.readMedium(i ^ 0x56);
+				if (i_4_ == 1)
+					this.anInt114 = class98_sub22.readShort();
+				else if (i_4_ == 2)
+					this.anInt115 = class98_sub22.readMedium(i ^ 0x56);
 				else if (i_4_ == 3)
-					((Class9) this).aBoolean116 = true;
+					this.aBoolean116 = true;
 				else {
 					if (i_4_ != 4)
 						break;
-					((Class9) this).anInt114 = -1;
+					this.anInt114 = -1;
 				}
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("an.E(" + (class98_sub22 != null ? "{...}" : "null") + ',' + i + ',' + i_4_ + ')'));
@@ -170,38 +170,38 @@ final class Class9 {
 				method194();
 			for (int i_6_ = 0; class293s.length > i_6_; i_6_++) {
 				GameInterfaceData class293 = class293s[i_6_];
-				if (class293 != null && i == ((GameInterfaceData) class293).anInt2234 && !client.method111(class293)) {
-					if ((((GameInterfaceData) class293).type ^ 0xffffffff) == -1) {
-						method195(((GameInterfaceData) class293).anInt2248, 28219, class293s);
-						if (((GameInterfaceData) class293).interfaceComponents != null)
-							method195(((GameInterfaceData) class293).anInt2248, 28219, (((GameInterfaceData) class293).interfaceComponents));
-						GameInterface class98_sub18 = ((GameInterface) (Class116.aClass377_964.method3990((long) ((GameInterfaceData) class293).anInt2248, -1)));
+				if (class293 != null && i == class293.anInt2234 && !client.method111(class293)) {
+					if (class293.type == 0) {
+						method195(class293.anInt2248, 28219, class293s);
+						if (class293.interfaceComponents != null)
+							method195(class293.anInt2248, 28219, (class293.interfaceComponents));
+						GameInterface class98_sub18 = ((GameInterface) (Class116.aClass377_964.method3990(class293.anInt2248, -1)));
 						if (class98_sub18 != null)
-							Class350.method3844(((GameInterface) class98_sub18).interfaceID, i_5_ + -28101);
+							Class350.method3844(class98_sub18.interfaceID, i_5_ + -28101);
 					}
-					if (((GameInterfaceData) class293).type == 6 && ((GameInterfaceData) class293).anInt2208 != -1) {
-						Class97 class97 = (Class151_Sub7.aClass183_5001.method2623(((GameInterfaceData) class293).anInt2208, 16383));
+					if (class293.type == 6 && class293.anInt2208 != -1) {
+						Class97 class97 = (Class151_Sub7.aClass183_5001.method2623(class293.anInt2208, 16383));
 						if (class97 != null) {
-							((GameInterfaceData) class293).anInt2312 += Class279.anInt2099;
-							int i_7_ = ((GameInterfaceData) class293).anInt2303;
-							while ((((GameInterfaceData) class293).anInt2312 ^ 0xffffffff) < ((((Class97) class97).anIntArray811[((GameInterfaceData) class293).anInt2303]) ^ 0xffffffff)) {
-								((GameInterfaceData) class293).anInt2312 -= (((Class97) class97).anIntArray811[((GameInterfaceData) class293).anInt2303]);
-								((GameInterfaceData) class293).anInt2303++;
-								if ((((GameInterfaceData) class293).anInt2303 ^ 0xffffffff) <= ((((Class97) class97).anIntArray818).length ^ 0xffffffff)) {
-									((GameInterfaceData) class293).anInt2303 -= ((Class97) class97).anInt828;
-									if (((GameInterfaceData) class293).anInt2303 < 0 || (((GameInterfaceData) class293).anInt2303 >= (((Class97) class97).anIntArray818).length))
-										((GameInterfaceData) class293).anInt2303 = 0;
+							class293.anInt2312 += Class279.anInt2099;
+							int i_7_ = class293.anInt2303;
+							while ((class97.anIntArray811[class293.anInt2303]) < class293.anInt2312) {
+								class293.anInt2312 -= (class97.anIntArray811[class293.anInt2303]);
+								class293.anInt2303++;
+								if ((class97.anIntArray818).length <= class293.anInt2303) {
+									class293.anInt2303 -= class97.anInt828;
+									if (class293.anInt2303 < 0 || (class293.anInt2303 >= (class97.anIntArray818).length))
+										class293.anInt2303 = 0;
 								}
-								((GameInterfaceData) class293).anInt2287 = 1 + ((GameInterfaceData) class293).anInt2303;
-								if ((((GameInterfaceData) class293).anInt2287 ^ 0xffffffff) <= ((((Class97) class97).anIntArray818).length ^ 0xffffffff)) {
-									((GameInterfaceData) class293).anInt2287 -= ((Class97) class97).anInt828;
-									if (((GameInterfaceData) class293).anInt2287 < 0 || ((((Class97) class97).anIntArray818).length <= (((GameInterfaceData) class293).anInt2287)))
-										((GameInterfaceData) class293).anInt2287 = -1;
+								class293.anInt2287 = 1 + class293.anInt2303;
+								if ((class97.anIntArray818).length <= class293.anInt2287) {
+									class293.anInt2287 -= class97.anInt828;
+									if (class293.anInt2287 < 0 || ((class97.anIntArray818).length <= (class293.anInt2287)))
+										class293.anInt2287 = -1;
 								}
 								Class341.method3812(1, class293);
 							}
-							if (i_7_ != ((GameInterfaceData) class293).anInt2303)
-								Class280.method3327((((GameInterfaceData) class293).anInt2303), class97, (byte) 121);
+							if (i_7_ != class293.anInt2303)
+								Class280.method3327((class293.anInt2303), class97, (byte) 121);
 						}
 					}
 				}

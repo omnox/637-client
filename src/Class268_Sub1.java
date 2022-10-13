@@ -15,7 +15,7 @@ final class Class268_Sub1 extends Class268 {
 	}
 
 	final void method3257() {
-		anInterface11_5161.method33(anInt5160, ((Class268) this).anIntArray2005);
+		anInterface11_5161.method33(anInt5160, this.anIntArray2005);
 	}
 
 	final void method3262() {

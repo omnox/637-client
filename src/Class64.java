@@ -37,7 +37,7 @@ abstract class Class64 {
 					method550(i_1_ ^ ~0x2608, i);
 				if (i_1_ == 9848)
 					break;
-				((Class64) this).anInt494 = 1;
+				this.anInt494 = 1;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "eea.L(" + i + ',' + i_1_ + ')');
 			}
@@ -49,7 +49,7 @@ abstract class Class64 {
 		try {
 			if (i_3_ >= -33)
 				return false;
-			if ((0x400 & i_2_ ^ 0xffffffff) == -1)
+			if ((0x400 & i_2_) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -61,8 +61,8 @@ abstract class Class64 {
 
 	Class64(Class98_Sub27 class98_sub27) {
 		try {
-			((Class64) this).aClass98_Sub27_495 = class98_sub27;
-			((Class64) this).anInt494 = method552(0);
+			this.aClass98_Sub27_495 = class98_sub27;
+			this.anInt494 = method552(0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("eea.<init>(" + (class98_sub27 != null ? "{...}" : "null") + ')'));
 		}
@@ -70,8 +70,8 @@ abstract class Class64 {
 
 	Class64(int i, Class98_Sub27 class98_sub27) {
 		try {
-			((Class64) this).aClass98_Sub27_495 = class98_sub27;
-			((Class64) this).anInt494 = i;
+			this.aClass98_Sub27_495 = class98_sub27;
+			this.anInt494 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("eea.<init>(" + i + ',' + (class98_sub27 != null ? "{...}" : "null") + ')'));
 		}

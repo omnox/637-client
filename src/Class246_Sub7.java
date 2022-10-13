@@ -17,8 +17,8 @@ final class Class246_Sub7 extends Class246 {
 		try {
 			if (i != 0)
 				aClass48_5119 = null;
-			if ((l ^ 0xffffffffffffffffL) < -1L) {
-				if ((l % 10L ^ 0xffffffffffffffffL) != -1L)
+			if (l > 0) {
+				if (l % 10L != 0)
 					Class74.method733(l, 75);
 				else {
 					Class74.method733(-1L + l, 60);
@@ -34,10 +34,10 @@ final class Class246_Sub7 extends Class246 {
 		try {
 			if (i_0_ != 118)
 				return 45;
-			i = (i_1_ & 0x7f) * i >> -1157637401;
+			i = (i_1_ & 0x7f) * i >> 7;
 			do {
 				if (i >= 2) {
-					if ((i ^ 0xffffffff) >= -127)
+					if (i <= 126)
 						break;
 					i = 126;
 					if (!client.aBoolean3553)

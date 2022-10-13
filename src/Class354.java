@@ -14,7 +14,7 @@ final class Class354 {
 	final Class143 method3870(int i, Class88 class88) {
 		try {
 			int i_0_ = 56 / ((-28 - i) / 39);
-			return class88.method863(((Class354) this).aString3016, false, (!aBoolean3013 ? ((Class354) this).anInt3015 : ((Class354) this).anInt3012), aBoolean3010);
+			return class88.method863(this.aString3016, false, (!aBoolean3013 ? this.anInt3015 : this.anInt3012), aBoolean3010);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("via.E(" + i + ',' + (class88 != null ? "{...}" : "null") + ')'));
 		}
@@ -53,7 +53,7 @@ final class Class354 {
 			if (i < 103)
 				method3873(-66, null);
 			if (class354_1_ != null) {
-				if ((((Class354) this).anInt3011 != ((Class354) class354_1_).anInt3011) || !((Class354) this).aString3016.equals(((Class354) class354_1_).aString3016))
+				if ((this.anInt3011 != class354_1_.anInt3011) || !this.aString3016.equals(class354_1_.aString3016))
 					return false;
 				return true;
 			}
@@ -84,6 +84,6 @@ final class Class354 {
 	}
 
 	public Class354() {
-		((Class354) this).anInt3015 = 43594;
+		this.anInt3015 = 43594;
 	}
 }

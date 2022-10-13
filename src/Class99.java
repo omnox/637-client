@@ -18,18 +18,18 @@ final class Class99 {
 	}
 
 	static final void method1687(Class246_Sub3_Sub4 class246_sub3_sub4, boolean bool) {
-		for (int i = ((Class246_Sub3_Sub4) class246_sub3_sub4).aShort6158; i <= ((Class246_Sub3_Sub4) class246_sub3_sub4).aShort6160; i++) {
-			for (int i_1_ = ((Class246_Sub3_Sub4) class246_sub3_sub4).aShort6157; i_1_ <= ((Class246_Sub3_Sub4) class246_sub3_sub4).aShort6159; i_1_++) {
-				Class172 class172 = (Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[((AnimableEntity) class246_sub3_sub4).height_level][i][i_1_]);
+		for (int i = class246_sub3_sub4.aShort6158; i <= class246_sub3_sub4.aShort6160; i++) {
+			for (int i_1_ = class246_sub3_sub4.aShort6157; i_1_ <= class246_sub3_sub4.aShort6159; i_1_++) {
+				Class172 class172 = (Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[class246_sub3_sub4.height_level][i][i_1_]);
 				if (class172 != null) {
-					Class154 class154 = ((Class172) class172).aClass154_1325;
+					Class154 class154 = class172.aClass154_1325;
 					Class154 class154_2_ = null;
-					for (/**/; class154 != null; class154 = ((Class154) class154).aClass154_1233) {
-						if (((Class154) class154).aClass246_Sub3_Sub4_1232 == class246_sub3_sub4) {
+					for (/**/; class154 != null; class154 = class154.aClass154_1233) {
+						if (class154.aClass246_Sub3_Sub4_1232 == class246_sub3_sub4) {
 							if (class154_2_ != null)
-								((Class154) class154_2_).aClass154_1233 = ((Class154) class154).aClass154_1233;
+								class154_2_.aClass154_1233 = class154.aClass154_1233;
 							else
-								((Class172) class172).aClass154_1325 = ((Class154) class154).aClass154_1233;
+								class172.aClass154_1325 = class154.aClass154_1233;
 							class154.method2491(2);
 							break;
 						}

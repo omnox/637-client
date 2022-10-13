@@ -30,12 +30,12 @@ final class Class216 {
 	static final void method2794(byte i) {
 		try {
 			if (i <= -74) {
-				for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > (Class150.anInt1211 ^ 0xffffffff); i_2_++) {
+				for (int i_2_ = 0; Class150.anInt1211 > i_2_; i_2_++) {
 					int i_3_ = Class325.anIntArray2726[i_2_];
-					Class98_Sub39 class98_sub39 = ((Class98_Sub39) Class260.aClass377_3254.method3990((long) i_3_, -1));
+					Class98_Sub39 class98_sub39 = ((Class98_Sub39) Class260.aClass377_3254.method3990(i_3_, -1));
 					if (class98_sub39 != null) {
-						Class246_Sub3_Sub4_Sub2_Sub1 class246_sub3_sub4_sub2_sub1 = (((Class98_Sub39) class98_sub39).aClass246_Sub3_Sub4_Sub2_Sub1_4187);
-						Class98_Sub10_Sub10.method1038(class246_sub3_sub4_sub2_sub1, ((Class141) (((Class246_Sub3_Sub4_Sub2_Sub1) class246_sub3_sub4_sub2_sub1).aClass141_6504)).anInt1112, -12212);
+						Class246_Sub3_Sub4_Sub2_Sub1 class246_sub3_sub4_sub2_sub1 = (class98_sub39.aClass246_Sub3_Sub4_Sub2_Sub1_4187);
+						Class98_Sub10_Sub10.method1038(class246_sub3_sub4_sub2_sub1, class246_sub3_sub4_sub2_sub1.aClass141_6504.anInt1112, -12212);
 					}
 				}
 			}
@@ -46,7 +46,7 @@ final class Class216 {
 
 	final boolean method2795(Class216 class216_4_, boolean bool) {
 		try {
-			if (((((Class216) this).anInt1617 ^ 0xffffffff) == (((Class216) class216_4_).anInt1617 ^ 0xffffffff)) && ((((Class216) this).anInt1618 ^ 0xffffffff) == (((Class216) class216_4_).anInt1618 ^ 0xffffffff)) && (((Class216) this).anInt1621 == ((Class216) class216_4_).anInt1621))
+			if ((class216_4_.anInt1617 == this.anInt1617) && (class216_4_.anInt1618 == this.anInt1618) && (this.anInt1621 == class216_4_.anInt1621))
 				return true;
 			if (bool != true)
 				method2797(64, 32, 21, 60);
@@ -64,9 +64,9 @@ final class Class216 {
 				while_130_: do {
 					do {
 						if (i_10_ != 0) {
-							if ((i_10_ ^ 0xffffffff) == -2)
+							if (i_10_ == 1)
 								break;
-							if ((i_10_ ^ 0xffffffff) != -3)
+							if (i_10_ != 2)
 								break while_131_;
 							if (!client.aBoolean3553)
 								break while_130_;
@@ -82,11 +82,11 @@ final class Class216 {
 				} while (false);
 				if (i_6_ > Class98_Sub19.anInt3956)
 					Class98_Sub19.anInt3956 = i_6_;
-				if ((i ^ 0xffffffff) < (Class82.anInt629 ^ 0xffffffff))
+				if (Class82.anInt629 < i)
 					Class82.anInt629 = i;
 				if (i_7_ < Applet_Sub1.anInt2)
 					Applet_Sub1.anInt2 = i_7_;
-				if ((Class64_Sub27.anInt3716 ^ 0xffffffff) < (i_5_ ^ 0xffffffff))
+				if (i_5_ < Class64_Sub27.anInt3716)
 					Class64_Sub27.anInt3716 = i_5_;
 				break;
 			} catch (RuntimeException runtimeexception) {
@@ -97,7 +97,7 @@ final class Class216 {
 
 	static final void method2797(int i, int i_11_, int i_12_, int i_13_) {
 		try {
-			if ((i ^ 0xffffffff) != (Class224_Sub2_Sub1.anInt6141 ^ 0xffffffff) || (Class109.anInt926 ^ 0xffffffff) != (i_12_ ^ 0xffffffff) || (aa_Sub1.anInt3558 ^ 0xffffffff) != (i_11_ ^ 0xffffffff)) {
+			if (Class224_Sub2_Sub1.anInt6141 != i || i_12_ != Class109.anInt926 || i_11_ != aa_Sub1.anInt3558) {
 				Class224_Sub2_Sub1.anInt6141 = i;
 				Class109.anInt926 = i_12_;
 				Class358.aBoolean3033 = true;

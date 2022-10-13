@@ -40,14 +40,14 @@ final class PlayerUpdate implements Interface14 {
 	static final void method2857(Class88 class88, int i, Object object) {
 		do {
 			try {
-				if (((Class88) class88).anEventQueue698 != null) {
-					for (int i_0_ = 0; ((i_0_ ^ 0xffffffff) > -51 && (((Class88) class88).anEventQueue698.peekEvent() != null)); i_0_++)
+				if (class88.anEventQueue698 != null) {
+					for (int i_0_ = 0; (i_0_ < 50 && (class88.anEventQueue698.peekEvent() != null)); i_0_++)
 						Class246_Sub7.method3131(0, 1L);
 					try {
 						if (i == 31668) {
 							if (object == null)
 								break;
-							((Class88) class88).anEventQueue698.postEvent(new ActionEvent(object, 1001, "dummy"));
+							class88.anEventQueue698.postEvent(new ActionEvent(object, 1001, "dummy"));
 						}
 					} catch (Exception exception) {
 						/* empty */
@@ -82,7 +82,7 @@ final class PlayerUpdate implements Interface14 {
 			class98_sub22_sub1.method1254((byte) 120);
 			Class373_Sub2.anInt5473 = 0;
 			Class2.anInt71 = 0;
-			for (int i_14_ = 1; (i_14_ ^ 0xffffffff) > -2049; i_14_++) {
+			for (int i_14_ = 1; i_14_ < 2048; i_14_++) {
 				Class98_Sub27.aByteArray4075[i_14_] >>= 1;
 				Player class246_sub3_sub4_sub2_sub2 = (Class151_Sub9.playerArray[i_14_]);
 				if (class246_sub3_sub4_sub2_sub2 == null)
@@ -107,7 +107,7 @@ final class PlayerUpdate implements Interface14 {
 
 	static final int method2859(int i, boolean bool, String string, int i_15_) {
 		try {
-			if (i < 2 || (i ^ 0xffffffff) < -37)
+			if (i < 2 || i > 36)
 				throw new IllegalArgumentException("Invalid radix:" + i);
 			boolean bool_16_ = false;
 			if (i_15_ != -21972)
@@ -115,7 +115,7 @@ final class PlayerUpdate implements Interface14 {
 			boolean bool_17_ = false;
 			int i_18_ = 0;
 			int i_19_ = string.length();
-			for (int i_20_ = 0; (i_19_ ^ 0xffffffff) < (i_20_ ^ 0xffffffff); i_20_++) {
+			for (int i_20_ = 0; i_20_ < i_19_; i_20_++) {
 				int i_21_ = string.charAt(i_20_);
 				if (i_20_ == 0) {
 					if (i_21_ == 45) {
@@ -125,11 +125,11 @@ final class PlayerUpdate implements Interface14 {
 					if (i_21_ == 43 && bool)
 						continue;
 				}
-				if (i_21_ >= 48 && (i_21_ ^ 0xffffffff) >= -58)
+				if (i_21_ >= 48 && i_21_ <= 57)
 					i_21_ -= 48;
-				else if ((i_21_ ^ 0xffffffff) <= -66 && i_21_ <= 90)
+				else if (i_21_ >= 65 && i_21_ <= 90)
 					i_21_ -= 55;
-				else if (i_21_ >= 97 && (i_21_ ^ 0xffffffff) >= -123)
+				else if (i_21_ >= 97 && i_21_ <= 122)
 					i_21_ -= 87;
 				else
 					throw new NumberFormatException();

@@ -35,11 +35,11 @@ public class DebugConsole {
 					}
 					if (string.equals("renderer")) {
 						Class62 class62 = Class265.aHa1974.method1799();
-						Class98_Sub46.method1525(("Vendor: " + (((Class62) class62).anInt484)), -123);
-						Class98_Sub46.method1525(("Name: " + (((Class62) class62).aString489)), i ^ ~0x3e);
-						Class98_Sub46.method1525(("Version: " + (((Class62) class62).anInt483)), 52);
-						Class98_Sub46.method1525(("Device: " + (((Class62) class62).aString488)), -115);
-						Class98_Sub46.method1525(("Driver Version: " + (((Class62) class62).aLong485)), -82);
+						Class98_Sub46.method1525(("Vendor: " + (class62.anInt484)), -123);
+						Class98_Sub46.method1525(("Name: " + (class62.aString489)), i ^ ~0x3e);
+						Class98_Sub46.method1525(("Version: " + (class62.anInt483)), 52);
+						Class98_Sub46.method1525(("Device: " + (class62.aString488)), -115);
+						Class98_Sub46.method1525(("Driver Version: " + (class62.aLong485)), -82);
 						break;
 					}
 					if (i != 117)
@@ -52,7 +52,7 @@ public class DebugConsole {
 					Class98_Sub46.method1525(TextResources.aClass309_2587.get_text(Class374.anInt3159), 107);
 					break;
 				}
-				if (Class43.aClass196_375 != Class64_Sub29.aClass196_3720 || (Player.rights ^ 0xffffffff) <= -3) {
+				if (Class43.aClass196_375 != Class64_Sub29.aClass196_3720 || Player.rights >= 2) {
 					if (string.equalsIgnoreCase("errortest"))
 						throw new RuntimeException();
 					if (string.equals("nativememerror"))
@@ -84,7 +84,7 @@ public class DebugConsole {
 						}
 						if (string.equals("systemmem")) {
 							try {
-								Class98_Sub46.method1525(("System memory: " + (jagmisc.getAvailablePhysicalMemory() / 1048576L) + "/" + (((Class98_Sub35) Exception_Sub1.aClass98_Sub35_47).anInt4129) + "Mb"), 108);
+								Class98_Sub46.method1525(("System memory: " + (jagmisc.getAvailablePhysicalMemory() / 1048576L) + "/" + (Exception_Sub1.aClass98_Sub35_47.anInt4129) + "Mb"), 108);
 							} catch (Throwable throwable) {
 								/* empty */
 							}
@@ -97,7 +97,7 @@ public class DebugConsole {
 						}
 						if (string.equalsIgnoreCase("gc")) {
 							Class27.method294(true);
-							for (int i_38_ = 0; (i_38_ ^ 0xffffffff) > -11; i_38_++)
+							for (int i_38_ = 0; i_38_ < 10; i_38_++)
 								System.gc();
 							Runtime runtime = Runtime.getRuntime();
 							int i_39_ = (int) ((runtime.totalMemory() - runtime.freeMemory()) / 1024L);
@@ -125,8 +125,8 @@ public class DebugConsole {
 						}
 						if (string.equalsIgnoreCase("clientdrop")) {
 							Class98_Sub46.method1525("Dropped client connection", -67);
-							if ((Class177.anInt1376 ^ 0xffffffff) != -11) {
-								if ((Class177.anInt1376 ^ 0xffffffff) == -12)
+							if (Class177.anInt1376 != 10) {
+								if (Class177.anInt1376 == 11)
 									Class76_Sub9.aBoolean3788 = true;
 							} else
 								Canvas_Sub1.method118((byte) 104);
@@ -180,7 +180,7 @@ public class DebugConsole {
 						}
 						if (string.equalsIgnoreCase("wm2")) {
 							Class98_Sub16.method1150(2, -1, i ^ 0x76, -1, false);
-							if ((Class146_Sub2.method2391((byte) 107) ^ 0xffffffff) == -3)
+							if (Class146_Sub2.method2391((byte) 107) == 2)
 								Class98_Sub46.method1525("wm2 succeeded", -94);
 							else {
 								Class98_Sub46.method1525("wm2 failed", -86);
@@ -200,9 +200,9 @@ public class DebugConsole {
 						}
 						if (string.equalsIgnoreCase("tk0")) {
 							Class76_Sub4.method754(0, false, 103);
-							if (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 121) == 0) {
+							if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 121) == 0) {
 								Class98_Sub46.method1525("Entered tk0", 108);
-								Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 0, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4062));
+								Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 0, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4062));
 								Class310.method3618(-5964);
 								s_Sub1.aBoolean5207 = false;
 							} else {
@@ -213,9 +213,9 @@ public class DebugConsole {
 						}
 						if (string.equalsIgnoreCase("tk1")) {
 							Class76_Sub4.method754(1, false, -116);
-							if (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 123) == 1) {
+							if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 123) == 1) {
 								Class98_Sub46.method1525("Entered tk1", 110);
-								Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4062));
+								Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4062));
 								Class310.method3618(i + -6081);
 								s_Sub1.aBoolean5207 = false;
 							} else {
@@ -226,11 +226,11 @@ public class DebugConsole {
 						}
 						if (string.equalsIgnoreCase("tk2")) {
 							Class76_Sub4.method754(2, false, 71);
-							if ((((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 120) ^ 0xffffffff) != -3)
+							if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 120) != 2)
 								Class98_Sub46.method1525("Failed to enter tk2", -64);
 							else {
 								Class98_Sub46.method1525("Entered tk2", -116);
-								Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 2, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4062));
+								Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 2, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4062));
 								Class310.method3618(-5964);
 								s_Sub1.aBoolean5207 = false;
 								break;
@@ -239,11 +239,11 @@ public class DebugConsole {
 						}
 						if (string.equalsIgnoreCase("tk3")) {
 							Class76_Sub4.method754(3, false, i + -13);
-							if ((((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 127) ^ 0xffffffff) != -4)
+							if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 127) != 3)
 								Class98_Sub46.method1525("Failed to enter tk3", 50);
 							else {
 								Class98_Sub46.method1525("Entered tk3", 97);
-								Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 3, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4062));
+								Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 3, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4062));
 								Class310.method3618(-5964);
 								s_Sub1.aBoolean5207 = false;
 								break;
@@ -252,9 +252,9 @@ public class DebugConsole {
 						}
 						if (string.equalsIgnoreCase("tk5")) {
 							Class76_Sub4.method754(5, false, 76);
-							if (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 124) == 5) {
+							if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 124) == 5) {
 								Class98_Sub46.method1525("Entered tk5", 111);
-								Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 5, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4062));
+								Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 5, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4062));
 								Class310.method3618(i + -6081);
 								s_Sub1.aBoolean5207 = false;
 							} else {
@@ -264,17 +264,17 @@ public class DebugConsole {
 							break;
 						}
 						if (string.startsWith("setba")) {
-							if ((string.length() ^ 0xffffffff) > -7)
+							if (string.length() < 6)
 								Class98_Sub46.method1525("Invalid buildarea value", -80);
 							else {
 								int i_43_ = PacketSender.method3607(-102, string.substring(6));
-								if ((i_43_ ^ 0xffffffff) > -1 || i_43_ > (Class98_Sub22_Sub2.method1262(i + -109, Class292.anInt3359)))
+								if (i_43_ < 0 || i_43_ > (Class98_Sub22_Sub2.method1262(i + -109, Class292.anInt3359)))
 									Class98_Sub46.method1525("Invalid buildarea value", -63);
 								else {
-									Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, i_43_, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub17_4046));
+									Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, i_43_, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub17_4046));
 									Class310.method3618(-5964);
 									s_Sub1.aBoolean5207 = false;
-									Class98_Sub46.method1525(("maxbuildarea=" + ((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub17_4046.method617((byte) 120)), -65);
+									Class98_Sub46.method1525(("maxbuildarea=" + Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub17_4046.method617((byte) 120)), -65);
 									break;
 								}
 								break;
@@ -339,11 +339,11 @@ public class DebugConsole {
 							break;
 						}
 						if (string.equalsIgnoreCase("getcgcoord")) {
-							Class98_Sub46.method1525(("x:" + ((((AnimableEntity) (Player.selfPlayer)).localXPos) >> -766503447) + " z:" + ((((AnimableEntity) (Player.selfPlayer)).localYPos) >> 1009373513)), -102);
+							Class98_Sub46.method1525(("x:" + ((Player.selfPlayer.localXPos) >> 9) + " z:" + ((Player.selfPlayer.localYPos) >> 9)), -102);
 							break;
 						}
 						if (string.equalsIgnoreCase("getheight")) {
-							Class98_Sub46.method1525(("Height: " + (Class78.activeTileHeightMap[(((AnimableEntity) (Player.selfPlayer)).height_level)].method3420((((AnimableEntity) (Player.selfPlayer)).localYPos) >> -447569975, -12639, (((AnimableEntity) (Player.selfPlayer)).localXPos) >> 1269250985))), 88);
+							Class98_Sub46.method1525(("Height: " + (Class78.activeTileHeightMap[(Player.selfPlayer.height_level)].method3420((Player.selfPlayer.localYPos) >> 9, -12639, (Player.selfPlayer.localXPos) >> 9))), 88);
 							break;
 						}
 						if (string.equalsIgnoreCase("resetminimap")) {
@@ -358,7 +358,7 @@ public class DebugConsole {
 						if (string.startsWith("mc")) {
 							if (Class265.aHa1974.method1810()) {
 								int i_45_ = Integer.parseInt(string.substring(3));
-								if ((i_45_ ^ 0xffffffff) <= -2) {
+								if (i_45_ >= 1) {
 									if (i_45_ > 4)
 										i_45_ = 4;
 								} else
@@ -375,12 +375,12 @@ public class DebugConsole {
 						if (string.startsWith("cachespace")) {
 							Class98_Sub46.method1525(("I(s): " + Class69_Sub2.aClass79_5334.method799(1551398789) + "/" + Class69_Sub2.aClass79_5334.method793(18)), 53);
 							Class98_Sub46.method1525(("I(m): " + Class64_Sub5.aClass79_3650.method799(1551398789) + "/" + Class64_Sub5.aClass79_3650.method793(16)), -122);
-							Class98_Sub46.method1525(("O(s): " + ((ItemDefinitionList) Class98_Sub46_Sub19.getItemDefs).aClass74_1561.method726(true) + "/" + ((ItemDefinitionList) Class98_Sub46_Sub19.getItemDefs).aClass74_1561.method730(-19536)), i + -197);
+							Class98_Sub46.method1525(("O(s): " + Class98_Sub46_Sub19.getItemDefs.aClass74_1561.method726(true) + "/" + Class98_Sub46_Sub19.getItemDefs.aClass74_1561.method730(-19536)), i + -197);
 							break;
 						}
 						if (string.equalsIgnoreCase("getcamerapos")) {
-							Class98_Sub46.method1525(("Pos: " + (((AnimableEntity) (Player.selfPlayer)).height_level) + "," + ((Class98_Sub46_Sub10.renderX >> 1855638953) - -Class272.anInt2038 >> -82400218) + "," + (((Class134.renderZ >> -583047319) + aa_Sub2.anInt3562) >> 559817670) + "," + (0x3f & (Class272.anInt2038 + (Class98_Sub46_Sub10.renderX >> 86672457))) + "," + (0x3f & ((Class134.renderZ >> 1182901385) + aa_Sub2.anInt3562)) + " Height: " + ((Perspective.getTileHeight((((AnimableEntity) (Player.selfPlayer)).height_level), Class134.renderZ, Class98_Sub46_Sub10.renderX)) + -Class79.renderY)), 96);
-							Class98_Sub46.method1525(("Look: " + (((AnimableEntity) (Player.selfPlayer)).height_level) + "," + ((Exception_Sub1.anInt44 - -Class272.anInt2038) >> -1575614138) + "," + ((aa_Sub2.anInt3562 + Class98_Sub15.anInt3915) >> 1704567462) + "," + (0x3f & (Class272.anInt2038 + Exception_Sub1.anInt44)) + "," + (0x3f & (Class98_Sub15.anInt3915 - -aa_Sub2.anInt3562)) + " Height: " + ((Perspective.getTileHeight((((AnimableEntity) (Player.selfPlayer)).height_level), Class98_Sub15.anInt3915, Exception_Sub1.anInt44)) - Class303.anInt2530)), 122);
+							Class98_Sub46.method1525(("Pos: " + (Player.selfPlayer.height_level) + "," + ((Class98_Sub46_Sub10.renderX >> 9) - -Class272.anInt2038 >> 6) + "," + (((Class134.renderZ >> 9) + aa_Sub2.anInt3562) >> 6) + "," + (0x3f & (Class272.anInt2038 + (Class98_Sub46_Sub10.renderX >> 9))) + "," + (0x3f & ((Class134.renderZ >> 9) + aa_Sub2.anInt3562)) + " Height: " + ((Perspective.getTileHeight((Player.selfPlayer.height_level), Class134.renderZ, Class98_Sub46_Sub10.renderX)) + -Class79.renderY)), 96);
+							Class98_Sub46.method1525(("Look: " + (Player.selfPlayer.height_level) + "," + ((Exception_Sub1.anInt44 - -Class272.anInt2038) >> 6) + "," + ((aa_Sub2.anInt3562 + Class98_Sub15.anInt3915) >> 6) + "," + (0x3f & (Class272.anInt2038 + Exception_Sub1.anInt44)) + "," + (0x3f & (Class98_Sub15.anInt3915 - -aa_Sub2.anInt3562)) + " Height: " + ((Perspective.getTileHeight((Player.selfPlayer.height_level), Class98_Sub15.anInt3915, Exception_Sub1.anInt44)) - Class303.anInt2530)), 122);
 							break;
 						}
 						if (string.equals("renderprofile") || string.equals("rp")) {
@@ -393,22 +393,22 @@ public class DebugConsole {
 						if (string.startsWith("performancetest")) {
 							int i_46_ = -1;
 							int i_47_ = 1000;
-							if ((string.length() ^ 0xffffffff) < -16) {
+							if (string.length() > 15) {
 								String[] strings = Class112.method2142(string, ' ', false);
 								try {
-									if ((strings.length ^ 0xffffffff) < -2)
+									if (strings.length > 1)
 										i_47_ = Integer.parseInt(strings[1]);
 								} catch (Throwable throwable) {
 									/* empty */
 								}
 								try {
-									if ((strings.length ^ 0xffffffff) < -3)
+									if (strings.length > 2)
 										i_46_ = Integer.parseInt(strings[2]);
 								} catch (Throwable throwable) {
 									/* empty */
 								}
 							}
-							if ((i_46_ ^ 0xffffffff) != 0)
+							if (i_46_ != -1)
 								Class98_Sub46.method1525(("Performance: " + Class66.method683((byte) -86, i_47_, i_46_)), -64);
 							else {
 								Class98_Sub46.method1525(("Java toolkit: " + Class66.method683((byte) -109, i_47_, 0)), -108);
@@ -432,22 +432,22 @@ public class DebugConsole {
 						}
 						if (string.startsWith("switchworld")) {
 							int i_48_ = Integer.parseInt(string.substring(12));
-							Class98_Sub12.method1131(-8804, i_48_, (((Class53_Sub1) Class275.method3283((byte) 113, i_48_)).aString3634));
+							Class98_Sub12.method1131(-8804, i_48_, (Class275.method3283((byte) 113, i_48_).aString3634));
 							Class98_Sub46.method1525("switched", i + -77);
 							break;
 						}
 						if (string.equals("getworld")) {
-							Class98_Sub46.method1525(("w: " + (((Class354) (Class98_Sub46_Sub10.aClass354_6011)).anInt3011)), i + -196);
+							Class98_Sub46.method1525(("w: " + (Class98_Sub46_Sub10.aClass354_6011.anInt3011)), i + -196);
 							break;
 						}
 						if (string.startsWith("pc")) {
 							OutgoingPacket class98_sub11 = (Class246_Sub3_Sub4.method3023(260, Class246_Sub4_Sub2.aClass171_6185, Class331.aClass117_2811));
-							((OutgoingPacket) class98_sub11).packet.writeByte(0);
-							int i_49_ = (((RSByteBuffer) (((OutgoingPacket) class98_sub11).packet)).position);
+							class98_sub11.packet.writeByte(0);
+							int i_49_ = (class98_sub11.packet.position);
 							int i_50_ = string.indexOf(" ", 4);
-							((OutgoingPacket) class98_sub11).packet.method1188(string.substring(3, i_50_), (byte) 113);
-							Class284_Sub1_Sub1.method3368(i + 10, string.substring(i_50_), (((OutgoingPacket) class98_sub11).packet));
-							((OutgoingPacket) class98_sub11).packet.method1211((byte) 118, -i_49_ + (((RSByteBuffer) (((OutgoingPacket) class98_sub11).packet)).position));
+							class98_sub11.packet.method1188(string.substring(3, i_50_), (byte) 113);
+							Class284_Sub1_Sub1.method3368(i + 10, string.substring(i_50_), (class98_sub11.packet));
+							class98_sub11.packet.method1211((byte) 118, -i_49_ + (class98_sub11.packet.position));
 							Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 							break;
 						}
@@ -457,7 +457,7 @@ public class DebugConsole {
 							break;
 						}
 						if (string.equals("scramblevarcs")) {
-							for (int i_51_ = 0; ((Class76_Sub5.anIntArray3744.length ^ 0xffffffff) < (i_51_ ^ 0xffffffff)); i_51_++) {
+							for (int i_51_ = 0; (i_51_ < Class76_Sub5.anIntArray3744.length); i_51_++) {
 								if (VarpClass.aBooleanArray3246[i_51_]) {
 									Class76_Sub5.anIntArray3744[i_51_] = (int) (Math.random() * 99999.0);
 									if (Math.random() > 0.5)
@@ -501,7 +501,7 @@ public class DebugConsole {
 						}
 						if (string.startsWith("directlogin")) {
 							String[] strings = Class112.method2142(string.substring(12), ' ', false);
-							if ((strings.length ^ 0xffffffff) <= -3) {
+							if (strings.length >= 2) {
 								int i_54_ = (strings.length > 2 ? Integer.parseInt(strings[2]) : 0);
 								Class251.method3171(strings[1], -17877, strings[0], i_54_);
 								break;
@@ -530,7 +530,7 @@ public class DebugConsole {
 						}
 						if (string.equals("autosetup")) {
 							Class98_Sub28.method1306((byte) -106);
-							Class98_Sub46.method1525(("Complete. Toolkit now: " + ((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 123)), i + -52);
+							Class98_Sub46.method1525(("Complete. Toolkit now: " + Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 123)), i + -52);
 							break;
 						}
 						if (string.equals("errormessage")) {
@@ -564,11 +564,11 @@ public class DebugConsole {
 								Class98_Sub46.method1525("Syntax: ortho <n>", -66);
 							else {
 								int i_58_ = (PacketSender.method3607(84, string.substring(i_57_ - -1)));
-								Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, i_58_, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub18_4071));
+								Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, i_58_, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub18_4071));
 								Class310.method3618(-5964);
 								s_Sub1.aBoolean5207 = false;
 								Class230.method2871(-45);
-								if ((i_58_ ^ 0xffffffff) != (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub18_4071.method627((byte) 124) ^ 0xffffffff))
+								if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub18_4071.method627((byte) 124) != i_58_)
 									Class98_Sub46.method1525("Failed to change ortho mode", -94);
 								else {
 									Class98_Sub46.method1525("Successfully changed ortho mode", -104);
@@ -579,7 +579,7 @@ public class DebugConsole {
 							break;
 						}
 						if (string.startsWith("orthozoom ")) {
-							if (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub18_4071.method627((byte) 122) == 0)
+							if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub18_4071.method627((byte) 122) == 0)
 								Class98_Sub46.method1525("enable ortho mode first (use 'ortho <n>')", -114);
 							else {
 								int i_59_ = (PacketSender.method3607(-52, string.substring(string.indexOf(' ') + 1)));
@@ -649,12 +649,12 @@ public class DebugConsole {
 								Class135.cameraZoom = i_61_;
 							break;
 						}
-						if ((Class177.anInt1376 ^ 0xffffffff) == -11) {
+						if (Class177.anInt1376 == 10) {
 							OutgoingPacket class98_sub11 = (Class246_Sub3_Sub4.method3023(260, TextResources.aClass171_2650, Class331.aClass117_2811));
-							((OutgoingPacket) class98_sub11).packet.writeByte(string.length() - -3);
-							((OutgoingPacket) class98_sub11).packet.writeByte(!bool_37_ ? 0 : 1);
-							((OutgoingPacket) class98_sub11).packet.writeByte(!bool ? 0 : 1);
-							((OutgoingPacket) class98_sub11).packet.method1188(string, (byte) 113);
+							class98_sub11.packet.writeByte(string.length() - -3);
+							class98_sub11.packet.writeByte(!bool_37_ ? 0 : 1);
+							class98_sub11.packet.writeByte(!bool ? 0 : 1);
+							class98_sub11.packet.method1188(string, (byte) 113);
 							Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 						}
 						if (string.startsWith("fps ") && (Class64_Sub29.aClass196_3720 != Class43.aClass196_375)) {

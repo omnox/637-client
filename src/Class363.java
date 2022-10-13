@@ -25,10 +25,10 @@ final class Class363 implements Runnable {
 				for (/**/; string != null; string = bufferedreader.readLine())
 					class267.method3245(string, 0);
 				String[] strings = class267.method3244(20780);
-				if ((strings.length % 3 ^ 0xffffffff) != -1)
+				if (strings.length % 3 != 0)
 					return;
 				aClass368Array3094 = new Class368[strings.length / 3];
-				for (int i = 0; (i ^ 0xffffffff) > (strings.length ^ 0xffffffff); i += 3)
+				for (int i = 0; strings.length > i; i += 3)
 					aClass368Array3094[i / 3] = new Class368(strings[i], strings[i + 1], strings[2 + i]);
 			} catch (java.io.IOException ioexception) {
 				/* empty */
@@ -47,15 +47,15 @@ final class Class363 implements Runnable {
 				return true;
 			if (aClass143_3096 == null) {
 				try {
-					int i_0_ = ((Class64_Sub29.aClass196_3720 == Class43.aClass196_375) ? 80 : 7000 + ((Class354) (Class98_Sub46_Sub17.aClass354_6050)).anInt3011);
-					aClass143_3096 = (Class98_Sub43_Sub2.aClass88_5907.method866(-106, new URL("http://" + (((Class354) (Class98_Sub46_Sub17.aClass354_6050)).aString3016) + ":" + i_0_ + "/news.ws?game=" + (((Class279) Class4.aClass279_86).anInt2095))));
+					int i_0_ = ((Class64_Sub29.aClass196_3720 == Class43.aClass196_375) ? 80 : 7000 + Class98_Sub46_Sub17.aClass354_6050.anInt3011);
+					aClass143_3096 = (Class98_Sub43_Sub2.aClass88_5907.method866(-106, new URL("http://" + (Class98_Sub46_Sub17.aClass354_6050.aString3016) + ":" + i_0_ + "/news.ws?game=" + (Class4.aClass279_86.anInt2095))));
 				} catch (java.net.MalformedURLException malformedurlexception) {
 					return true;
 				}
 			}
 			if (aClass143_3096 == null || aClass143_3096.anInt1163 == 2)
 				return true;
-			if ((aClass143_3096.anInt1163 ^ 0xffffffff) != -2)
+			if (aClass143_3096.anInt1163 != 1)
 				return false;
 			if (aThread3097 == null) {
 				aThread3097 = new Thread(this);
@@ -81,11 +81,11 @@ final class Class363 implements Runnable {
 
 	static final void method3930(boolean bool, byte i, Player class246_sub3_sub4_sub2_sub2, int i_2_, int i_3_) {
 		try {
-			int i_4_ = (((Mobile) class246_sub3_sub4_sub2_sub2).walkQueueX[0]);
-			int i_5_ = (((Mobile) class246_sub3_sub4_sub2_sub2).walkQueueZ[0]);
-			if ((i_4_ ^ 0xffffffff) <= -1 && (i_4_ ^ 0xffffffff) > (GameWorld.size_x ^ 0xffffffff) && (i_5_ ^ 0xffffffff) <= -1 && (i_5_ ^ 0xffffffff) > (GameWorld.size_y ^ 0xffffffff) && ((i_3_ ^ 0xffffffff) <= -1 && (i_3_ ^ 0xffffffff) > (GameWorld.size_x ^ 0xffffffff) && (i_2_ ^ 0xffffffff) <= -1 && (i_2_ ^ 0xffffffff) > (GameWorld.size_y ^ 0xffffffff))) {
-				int i_6_ = (Applet_Sub1.findPath((Class167.aClass243Array1281[(((AnimableEntity) class246_sub3_sub4_sub2_sub2).height_level)]), class246_sub3_sub4_sub2_sub2.getSize(), Class76_Sub5.anIntArray3743, 0, 0, i_2_, 0, i_5_, Class117.anIntArray974, true, i_3_, -4, 48, i_4_, 0));
-				if ((i_6_ ^ 0xffffffff) <= -2 && i_6_ <= 3) {
+			int i_4_ = (class246_sub3_sub4_sub2_sub2.walkQueueX[0]);
+			int i_5_ = (class246_sub3_sub4_sub2_sub2.walkQueueZ[0]);
+			if (i_4_ >= 0 && GameWorld.size_x > i_4_ && i_5_ >= 0 && GameWorld.size_y > i_5_ && (i_3_ >= 0 && GameWorld.size_x > i_3_ && i_2_ >= 0 && GameWorld.size_y > i_2_)) {
+				int i_6_ = (Applet_Sub1.findPath((Class167.aClass243Array1281[(class246_sub3_sub4_sub2_sub2.height_level)]), class246_sub3_sub4_sub2_sub2.getSize(), Class76_Sub5.anIntArray3743, 0, 0, i_2_, 0, i_5_, Class117.anIntArray974, true, i_3_, -4, 48, i_4_, 0));
+				if (i_6_ >= 1 && i_6_ <= 3) {
 					if (bool != false)
 						anInt3098 = 115;
 					for (int i_7_ = 0; -1 + i_6_ > i_7_; i_7_++)

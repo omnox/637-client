@@ -21,7 +21,7 @@ final class Class76_Sub9 extends Class76 {
 		try {
 			if (i != 4185)
 				return null;
-			for (int i_2_ = string_1_.indexOf(string_0_); (i_2_ ^ 0xffffffff) != 0; i_2_ = string_1_.indexOf(string_0_, string.length() + i_2_))
+			for (int i_2_ = string_1_.indexOf(string_0_); i_2_ != -1; i_2_ = string_1_.indexOf(string_0_, string.length() + i_2_))
 				string_1_ = (string_1_.substring(0, i_2_) + string + string_1_.substring(i_2_ - -string_0_.length()));
 			return string_1_;
 		} catch (RuntimeException runtimeexception) {
@@ -46,10 +46,10 @@ final class Class76_Sub9 extends Class76 {
 			if (i != -2)
 				method768(31);
 			if (aBoolean3789) {
-				((Class76) this).aHa_Sub3_585.method1951((byte) 120, 1);
-				((Class76) this).aHa_Sub3_585.method2005(null, 40);
-				((Class76) this).aHa_Sub3_585.method1951((byte) 120, 0);
-				((Class76) this).aHa_Sub3_585.method2005(null, -114);
+				this.aHa_Sub3_585.method1951((byte) 120, 1);
+				this.aHa_Sub3_585.method2005(null, 40);
+				this.aHa_Sub3_585.method1951((byte) 120, 0);
+				this.aHa_Sub3_585.method2005(null, -114);
 				OpenGL.glUseProgramObjectARB(0L);
 				aBoolean3789 = false;
 			}
@@ -63,20 +63,20 @@ final class Class76_Sub9 extends Class76 {
 			try {
 				if (i != 69)
 					aBoolean3789 = true;
-				Interface4_Impl3 interface4_impl3 = ((Class76) this).aHa_Sub3_585.method1939(-93);
+				Interface4_Impl3 interface4_impl3 = this.aHa_Sub3_585.method1939(-93);
 				if (!aBoolean3782 || interface4_impl3 == null)
 					break;
-				((Class76) this).aHa_Sub3_585.method1951((byte) 120, 1);
-				((Class76) this).aHa_Sub3_585.method2005(interface4_impl3, i + 11);
-				((Class76) this).aHa_Sub3_585.method1951((byte) 120, 0);
-				((Class76) this).aHa_Sub3_585.method2005(((Class195) aClass195_3790).anInterface4_Impl1_1500, i + -197);
-				long l = ((Class82) aClass82_3792).aLong628;
+				this.aHa_Sub3_585.method1951((byte) 120, 1);
+				this.aHa_Sub3_585.method2005(interface4_impl3, i + 11);
+				this.aHa_Sub3_585.method1951((byte) 120, 0);
+				this.aHa_Sub3_585.method2005(aClass195_3790.anInterface4_Impl1_1500, i + -197);
+				long l = aClass82_3792.aLong628;
 				OpenGL.glUseProgramObjectARB(l);
 				OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(l, "normalSampler"), 0);
 				OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(l, "envMapSampler"), 1);
-				OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(l, "sunDir"), -(((ha_Sub3) ((Class76) this).aHa_Sub3_585).aFloatArray4596[0]), -(((ha_Sub3) ((Class76) this).aHa_Sub3_585).aFloatArray4596[1]), -(((ha_Sub3) ((Class76) this).aHa_Sub3_585).aFloatArray4596[2]));
-				OpenGL.glUniform4fARB(OpenGL.glGetUniformLocationARB(l, "sunColour"), ((ha_Sub3) ((Class76) this).aHa_Sub3_585).aFloat4611, ((ha_Sub3) ((Class76) this).aHa_Sub3_585).aFloat4549, ((ha_Sub3) ((Class76) this).aHa_Sub3_585).aFloat4591, 1.0F);
-				OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "sunExponent"), 96.0F + 928.0F * Math.abs(((ha_Sub3) ((Class76) this).aHa_Sub3_585).aFloatArray4596[1]));
+				OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(l, "sunDir"), -(this.aHa_Sub3_585.aFloatArray4596[0]), -(this.aHa_Sub3_585.aFloatArray4596[1]), -(this.aHa_Sub3_585.aFloatArray4596[2]));
+				OpenGL.glUniform4fARB(OpenGL.glGetUniformLocationARB(l, "sunColour"), this.aHa_Sub3_585.aFloat4611, this.aHa_Sub3_585.aFloat4549, this.aHa_Sub3_585.aFloat4591, 1.0F);
+				OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "sunExponent"), 96.0F + 928.0F * Math.abs(this.aHa_Sub3_585.aFloatArray4596[1]));
 				aBoolean3789 = true;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "q.B(" + i + ',' + bool + ')');
@@ -127,11 +127,11 @@ final class Class76_Sub9 extends Class76 {
 			if (i_6_ <= -75) {
 				if (aBoolean3789) {
 					int i_7_ = 1 << (0x3 & i);
-					float f = (float) (1 << ((0x3f & i) >> 1719984675)) / 32.0F;
+					float f = (float) (1 << ((0x3f & i) >> 3)) / 32.0F;
 					int i_8_ = 0xffff & i_5_;
-					float f_9_ = (float) (i_5_ >> -1594334576 & 0x3) / 8.0F;
-					long l = ((Class82) aClass82_3792).aLong628;
-					OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "time"), (float) (i_7_ * (((ha_Sub3) ((Class76) this).aHa_Sub3_585).anInt4556) % 40000) / 40000.0F);
+					float f_9_ = (float) (i_5_ >> 16 & 0x3) / 8.0F;
+					long l = aClass82_3792.aLong628;
+					OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "time"), (float) (i_7_ * (this.aHa_Sub3_585.anInt4556) % 40000) / 40000.0F);
 					OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "scale"), f);
 					OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "breakWaterDepth"), (float) i_8_);
 					OpenGL.glUniform1fARB(OpenGL.glGetUniformLocationARB(l, "breakWaterOffset"), f_9_);
@@ -146,8 +146,8 @@ final class Class76_Sub9 extends Class76 {
 		try {
 			if (i == 6) {
 				if (!aBoolean3789) {
-					((Class76) this).aHa_Sub3_585.method2005(interface4, 103);
-					((Class76) this).aHa_Sub3_585.method2015(i_10_, (byte) -105);
+					this.aHa_Sub3_585.method2005(interface4, 103);
+					this.aHa_Sub3_585.method2015(i_10_, (byte) -105);
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -175,7 +175,7 @@ final class Class76_Sub9 extends Class76 {
 		super(var_ha_Sub3_Sub2);
 		try {
 			aClass195_3790 = class195;
-			if (class207 != null && ((ha_Sub3_Sub2) var_ha_Sub3_Sub2).aBoolean6133 && ((ha_Sub3_Sub2) var_ha_Sub3_Sub2).aBoolean6136) {
+			if (class207 != null && var_ha_Sub3_Sub2.aBoolean6133 && var_ha_Sub3_Sub2.aBoolean6136) {
 				Class230 class230 = (Class98_Sub46.method1526(class207.method2739("gl", "environment_mapped_water_v", -32734), var_ha_Sub3_Sub2, -25671, 35633));
 				Class230 class230_11_ = (Class98_Sub46.method1526(class207.method2739("gl", "environment_mapped_water_f", -32734), var_ha_Sub3_Sub2, -25671, 35632));
 				aClass82_3792 = ItemDefinitionList.method2713(var_ha_Sub3_Sub2, 0, new Class230[] { class230, class230_11_ });

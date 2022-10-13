@@ -28,7 +28,7 @@ final class i extends AbstractModel implements Interface9 {
 	private final native void oa(oa var_oa);
 
 	final Class35[] method2322() {
-		return ((i) this).aClass35Array3295;
+		return this.aClass35Array3295;
 	}
 
 	final native void s(int i);
@@ -46,7 +46,7 @@ final class i extends AbstractModel implements Interface9 {
 	final native void LA(int i);
 
 	final void method2331(Class111 class111, int i, boolean bool) {
-		A(((ja) (ja) class111).nativeid, i, bool);
+		A(((ja) class111).nativeid, i, bool);
 	}
 
 	final native int G();
@@ -68,33 +68,33 @@ final class i extends AbstractModel implements Interface9 {
 	final void method2343(Class111 class111) {
 		method2376(oa.anIntArray3306, class111);
 		int i = 0;
-		if (((i) this).aClass87Array3294 != null) {
-			for (int i_19_ = 0; i_19_ < ((i) this).aClass87Array3294.length; i_19_++) {
-				Class87 class87 = ((i) this).aClass87Array3294[i_19_];
-				((Class87) class87).anInt670 = oa.anIntArray3306[i++];
-				((Class87) class87).anInt668 = oa.anIntArray3306[i++];
-				((Class87) class87).anInt671 = oa.anIntArray3306[i++];
-				((Class87) class87).anInt663 = oa.anIntArray3306[i++];
-				((Class87) class87).anInt664 = oa.anIntArray3306[i++];
-				((Class87) class87).anInt656 = oa.anIntArray3306[i++];
-				((Class87) class87).anInt659 = oa.anIntArray3306[i++];
-				((Class87) class87).anInt669 = oa.anIntArray3306[i++];
-				((Class87) class87).anInt662 = oa.anIntArray3306[i++];
+		if (this.aClass87Array3294 != null) {
+			for (int i_19_ = 0; i_19_ < this.aClass87Array3294.length; i_19_++) {
+				Class87 class87 = this.aClass87Array3294[i_19_];
+				class87.anInt670 = oa.anIntArray3306[i++];
+				class87.anInt668 = oa.anIntArray3306[i++];
+				class87.anInt671 = oa.anIntArray3306[i++];
+				class87.anInt663 = oa.anIntArray3306[i++];
+				class87.anInt664 = oa.anIntArray3306[i++];
+				class87.anInt656 = oa.anIntArray3306[i++];
+				class87.anInt659 = oa.anIntArray3306[i++];
+				class87.anInt669 = oa.anIntArray3306[i++];
+				class87.anInt662 = oa.anIntArray3306[i++];
 			}
 		}
-		if (((i) this).aClass35Array3295 != null) {
-			for (int i_20_ = 0; i_20_ < ((i) this).aClass35Array3295.length; i_20_++) {
-				Class35 class35 = ((i) this).aClass35Array3295[i_20_];
+		if (this.aClass35Array3295 != null) {
+			for (int i_20_ = 0; i_20_ < this.aClass35Array3295.length; i_20_++) {
+				Class35 class35 = this.aClass35Array3295[i_20_];
 				Class35 class35_21_ = class35;
-				if (((Class35) class35).aClass35_328 != null)
-					class35_21_ = ((Class35) class35).aClass35_328;
-				if (((Class35) class35).aClass111_334 != null)
-					((Class35) class35).aClass111_334.method2092(class111);
+				if (class35.aClass35_328 != null)
+					class35_21_ = class35.aClass35_328;
+				if (class35.aClass111_334 != null)
+					class35.aClass111_334.method2092(class111);
 				else
-					((Class35) class35).aClass111_334 = class111.method2102();
-				((Class35) class35_21_).anInt331 = oa.anIntArray3306[i++];
-				((Class35) class35_21_).anInt330 = oa.anIntArray3306[i++];
-				((Class35) class35_21_).anInt337 = oa.anIntArray3306[i++];
+					class35.aClass111_334 = class111.method2102();
+				class35_21_.anInt331 = oa.anIntArray3306[i++];
+				class35_21_.anInt330 = oa.anIntArray3306[i++];
+				class35_21_.anInt337 = oa.anIntArray3306[i++];
 			}
 		}
 	}
@@ -102,7 +102,7 @@ final class i extends AbstractModel implements Interface9 {
 	public final native void w(boolean bool);
 
 	final Class87[] method2320() {
-		return ((i) this).aClass87Array3294;
+		return this.aClass87Array3294;
 	}
 
 	final native boolean F();
@@ -114,16 +114,16 @@ final class i extends AbstractModel implements Interface9 {
 	final native void I(int i, int[] is, int i_22_, int i_23_, int i_24_, boolean bool, int i_25_, int[] is_26_);
 
 	final void method2342() {
-		if (((oa) anOa3293).anInt3316 > 1) {
+		if (anOa3293.anInt3316 > 1) {
 			synchronized (this) {
-				while (((AbstractModel) this).aBoolean1181) {
+				while (this.aBoolean1181) {
 					try {
 						this.wait();
 					} catch (InterruptedException interruptedexception) {
 						/* empty */
 					}
 				}
-				((AbstractModel) this).aBoolean1181 = true;
+				this.aBoolean1181 = true;
 			}
 		}
 	}
@@ -137,7 +137,7 @@ final class i extends AbstractModel implements Interface9 {
 	}
 
 	protected final void finalize() {
-		if (((i) this).nativeid != 0L)
+		if (this.nativeid != 0L)
 			Class192.method2654(false, this);
 	}
 
@@ -153,12 +153,12 @@ final class i extends AbstractModel implements Interface9 {
 		else {
 			oa.anIntArray3313[5] = 0;
 			anOa3293.method1930().method149(this, class111, oa.anIntArray3313, i);
-			((Class246_Sub6) class246_sub6).anInt5111 = oa.anIntArray3313[0];
-			((Class246_Sub6) class246_sub6).anInt5113 = oa.anIntArray3313[1];
-			((Class246_Sub6) class246_sub6).anInt5110 = oa.anIntArray3313[2];
-			((Class246_Sub6) class246_sub6).anInt5112 = oa.anIntArray3313[3];
-			((Class246_Sub6) class246_sub6).anInt5109 = oa.anIntArray3313[4];
-			((Class246_Sub6) class246_sub6).aBoolean5114 = oa.anIntArray3313[5] != 0;
+			class246_sub6.anInt5111 = oa.anIntArray3313[0];
+			class246_sub6.anInt5113 = oa.anIntArray3313[1];
+			class246_sub6.anInt5110 = oa.anIntArray3313[2];
+			class246_sub6.anInt5112 = oa.anIntArray3313[3];
+			class246_sub6.anInt5109 = oa.anIntArray3313[4];
+			class246_sub6.aBoolean5114 = oa.anIntArray3313[5] != 0;
 		}
 	}
 
@@ -183,7 +183,7 @@ final class i extends AbstractModel implements Interface9 {
 	final native int WA();
 
 	final void method2344(int i, int[] is, int i_39_, int i_40_, int i_41_, int i_42_, boolean bool) {
-		l(((i) this).nativeid, i, is, i_39_, i_40_, i_41_, i_42_, bool);
+		l(this.nativeid, i, is, i_39_, i_40_, i_41_, i_42_, bool);
 	}
 
 	final void method2326() {
@@ -195,9 +195,9 @@ final class i extends AbstractModel implements Interface9 {
 	}
 
 	final void method2327() {
-		if (((oa) anOa3293).anInt3316 > 1) {
+		if (anOa3293.anInt3316 > 1) {
 			synchronized (this) {
-				((AbstractModel) this).aBoolean1181 = false;
+				this.aBoolean1181 = false;
 				this.notifyAll();
 			}
 		}
@@ -209,12 +209,12 @@ final class i extends AbstractModel implements Interface9 {
 		else {
 			oa.anIntArray3313[5] = 0;
 			anOa3293.method1930().method146(this, class111, oa.anIntArray3313, i, i_44_);
-			((Class246_Sub6) class246_sub6).anInt5111 = oa.anIntArray3313[0];
-			((Class246_Sub6) class246_sub6).anInt5113 = oa.anIntArray3313[1];
-			((Class246_Sub6) class246_sub6).anInt5110 = oa.anIntArray3313[2];
-			((Class246_Sub6) class246_sub6).anInt5112 = oa.anIntArray3313[3];
-			((Class246_Sub6) class246_sub6).anInt5109 = oa.anIntArray3313[4];
-			((Class246_Sub6) class246_sub6).aBoolean5114 = oa.anIntArray3313[5] != 0;
+			class246_sub6.anInt5111 = oa.anIntArray3313[0];
+			class246_sub6.anInt5113 = oa.anIntArray3313[1];
+			class246_sub6.anInt5110 = oa.anIntArray3313[2];
+			class246_sub6.anInt5112 = oa.anIntArray3313[3];
+			class246_sub6.anInt5109 = oa.anIntArray3313[4];
+			class246_sub6.aBoolean5114 = oa.anIntArray3313[5] != 0;
 		}
 	}
 
@@ -225,38 +225,38 @@ final class i extends AbstractModel implements Interface9 {
 	i(oa var_oa, ya var_ya, ModelDefinitions class178, int i, int i_84_, int i_85_, int i_86_) {
 		anOa3293 = var_oa;
 		aYa3292 = var_ya;
-		((i) this).aClass87Array3294 = ((ModelDefinitions) class178).aClass87Array1413;
-		((i) this).aClass35Array3295 = ((ModelDefinitions) class178).aClass35Array1398;
-		int i_87_ = (((ModelDefinitions) class178).aClass87Array1413 == null ? 0 : ((ModelDefinitions) class178).aClass87Array1413.length);
-		int i_88_ = (((ModelDefinitions) class178).aClass35Array1398 == null ? 0 : ((ModelDefinitions) class178).aClass35Array1398.length);
+		this.aClass87Array3294 = class178.aClass87Array1413;
+		this.aClass35Array3295 = class178.aClass35Array1398;
+		int i_87_ = (class178.aClass87Array1413 == null ? 0 : class178.aClass87Array1413.length);
+		int i_88_ = (class178.aClass35Array1398 == null ? 0 : class178.aClass35Array1398.length);
 		int i_89_ = 0;
 		int[] is = new int[i_87_ * 3 + i_88_];
 		for (int i_90_ = 0; i_90_ < i_87_; i_90_++) {
-			is[i_89_++] = ((Class87) ((i) this).aClass87Array3294[i_90_]).anInt666;
-			is[i_89_++] = ((Class87) ((i) this).aClass87Array3294[i_90_]).anInt661;
-			is[i_89_++] = ((Class87) ((i) this).aClass87Array3294[i_90_]).anInt674;
+			is[i_89_++] = this.aClass87Array3294[i_90_].anInt666;
+			is[i_89_++] = this.aClass87Array3294[i_90_].anInt661;
+			is[i_89_++] = this.aClass87Array3294[i_90_].anInt674;
 		}
 		for (int i_91_ = 0; i_91_ < i_88_; i_91_++)
-			is[i_89_++] = ((Class35) ((i) this).aClass35Array3295[i_91_]).anInt327;
-		int i_92_ = (((ModelDefinitions) class178).aClass106Array1419 == null ? 0 : ((ModelDefinitions) class178).aClass106Array1419.length);
+			is[i_89_++] = this.aClass35Array3295[i_91_].anInt327;
+		int i_92_ = (class178.aClass106Array1419 == null ? 0 : class178.aClass106Array1419.length);
 		int[] is_93_ = new int[i_92_ * 8];
 		int i_94_ = 0;
 		for (int i_95_ = 0; i_95_ < i_92_; i_95_++) {
-			Class106 class106 = ((ModelDefinitions) class178).aClass106Array1419[i_95_];
-			Class177 class177 = Class67.method689(((Class106) class106).anInt905, (byte) -119);
-			is_93_[i_94_++] = ((Class106) class106).anInt906;
-			is_93_[i_94_++] = ((Class177) class177).anInt1374;
-			is_93_[i_94_++] = ((Class177) class177).anInt1380;
-			is_93_[i_94_++] = ((Class177) class177).anInt1373;
-			is_93_[i_94_++] = ((Class177) class177).anInt1384;
-			is_93_[i_94_++] = ((Class177) class177).anInt1379;
-			is_93_[i_94_++] = ((Class177) class177).aBoolean1377 ? -1 : 0;
+			Class106 class106 = class178.aClass106Array1419[i_95_];
+			Class177 class177 = Class67.method689(class106.anInt905, (byte) -119);
+			is_93_[i_94_++] = class106.anInt906;
+			is_93_[i_94_++] = class177.anInt1374;
+			is_93_[i_94_++] = class177.anInt1380;
+			is_93_[i_94_++] = class177.anInt1373;
+			is_93_[i_94_++] = class177.anInt1384;
+			is_93_[i_94_++] = class177.anInt1379;
+			is_93_[i_94_++] = class177.aBoolean1377 ? -1 : 0;
 		}
 		for (int i_96_ = 0; i_96_ < i_92_; i_96_++) {
-			Class106 class106 = ((ModelDefinitions) class178).aClass106Array1419[i_96_];
-			is_93_[i_94_++] = ((Class106) class106).anInt908;
+			Class106 class106 = class178.aClass106Array1419[i_96_];
+			is_93_[i_94_++] = class106.anInt908;
 		}
-		R(anOa3293, aYa3292, ((ModelDefinitions) class178).anInt1407, ((ModelDefinitions) class178).anInt1406, ((ModelDefinitions) class178).anIntArray1416, ((ModelDefinitions) class178).anIntArray1400, ((ModelDefinitions) class178).anIntArray1418, ((ModelDefinitions) class178).anIntArray1417, ((ModelDefinitions) class178).aShortArray1408, ((ModelDefinitions) class178).anInt1391, ((ModelDefinitions) class178).aShortArray1393, ((ModelDefinitions) class178).aShortArray1410, ((ModelDefinitions) class178).aShortArray1392, ((ModelDefinitions) class178).aByteArray1414, ((ModelDefinitions) class178).aByteArray1402, ((ModelDefinitions) class178).aByteArray1411, ((ModelDefinitions) class178).aByteArray1420, ((ModelDefinitions) class178).aShortArray1415, ((ModelDefinitions) class178).aShortArray1409, ((ModelDefinitions) class178).anIntArray1395, ((ModelDefinitions) class178).aByte1422, ((ModelDefinitions) class178).aShortArray1394, ((ModelDefinitions) class178).anInt1396, ((ModelDefinitions) class178).aByteArray1388, ((ModelDefinitions) class178).aShortArray1403, ((ModelDefinitions) class178).aShortArray1421, ((ModelDefinitions) class178).aShortArray1385, ((ModelDefinitions) class178).anIntArray1389, ((ModelDefinitions) class178).anIntArray1404, ((ModelDefinitions) class178).anIntArray1390, ((ModelDefinitions) class178).aByteArray1423, ((ModelDefinitions) class178).aByteArray1399, ((ModelDefinitions) class178).anIntArray1412, ((ModelDefinitions) class178).anIntArray1397, ((ModelDefinitions) class178).anIntArray1386, is, i_87_, i_88_, i, i_84_, i_85_, i_86_, is_93_);
+		R(anOa3293, aYa3292, class178.anInt1407, class178.anInt1406, class178.anIntArray1416, class178.anIntArray1400, class178.anIntArray1418, class178.anIntArray1417, class178.aShortArray1408, class178.anInt1391, class178.aShortArray1393, class178.aShortArray1410, class178.aShortArray1392, class178.aByteArray1414, class178.aByteArray1402, class178.aByteArray1411, class178.aByteArray1420, class178.aShortArray1415, class178.aShortArray1409, class178.anIntArray1395, class178.aByte1422, class178.aShortArray1394, class178.anInt1396, class178.aByteArray1388, class178.aShortArray1403, class178.aShortArray1421, class178.aShortArray1385, class178.anIntArray1389, class178.anIntArray1404, class178.anIntArray1390, class178.aByteArray1423, class178.aByteArray1399, class178.anIntArray1412, class178.anIntArray1397, class178.anIntArray1386, is, i_87_, i_88_, i, i_84_, i_85_, i_86_, is_93_);
 	}
 
 	final native int HA();

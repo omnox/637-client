@@ -26,11 +26,11 @@ final class Callback_Sub1 extends Callback {
 
 	final synchronized int method357(int i, int i_3_, int i_4_, int i_5_) {
 		try {
-			if ((i ^ 0xffffffff) != (anInt3597 ^ 0xffffffff)) {
+			if (anInt3597 != i) {
 				int i_6_ = User32.GetWindowLong(i, -4);
 				return User32.CallWindowProc(i_6_, i, i_3_, i_4_, i_5_);
 			}
-			if ((i_3_ ^ 0xffffffff) == -33) {
+			if (i_3_ == 32) {
 				int i_7_ = i_5_ & 0xffff;
 				if (i_7_ == 1) {
 					User32.SetCursor(!aBoolean3596 ? 0 : anInt3598);
@@ -53,7 +53,7 @@ final class Callback_Sub1 extends Callback {
 
 	final void method358(boolean bool, Component component, byte i) {
 		try {
-			WComponentPeer wcomponentpeer = (WComponentPeer) new WComponentPeer();
+			WComponentPeer wcomponentpeer = new WComponentPeer();
 			if (i >= -65)
 				method356(-61, -37, -29);
 			int i_8_ = wcomponentpeer.getTopHwnd();
@@ -64,7 +64,7 @@ final class Callback_Sub1 extends Callback {
 					aBoolean3599 = true;
 				}
 				if (anInt3597 != i_8_) {
-					if ((anInt3597 ^ 0xffffffff) != -1) {
+					if (anInt3597 != 0) {
 						aBoolean3596 = true;
 						User32.SendMessage(i_8_, 101024, 0, 0);
 						synchronized (this) {

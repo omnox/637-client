@@ -5,7 +5,7 @@
 final class Class320 {
 	static final void method3663(Class98_Sub46_Sub9 class98_sub46_sub9, int i, int i_0_, int i_1_, int i_2_, int i_3_, ha var_ha, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_) {
 		try {
-			if ((i_3_ ^ 0xffffffff) > (i_0_ ^ 0xffffffff) && i_0_ < i_3_ + i_7_ && i_2_ > i_4_ - 13 && i_2_ < 3 + i_4_)
+			if (i_0_ > i_3_ && i_0_ < i_3_ + i_7_ && i_2_ > i_4_ - 13 && i_2_ < 3 + i_4_)
 				i = i_5_;
 			String string = Class21.method262(class98_sub46_sub9, (byte) 36);
 			Class98_Sub10_Sub34.aClass43_5730.method413(i_4_, Class64_Sub5.anIntArray3652, i_6_, string, i, 3 + i_3_, (byte) 18, Class217.aClass332Array3408);
@@ -32,7 +32,7 @@ final class Class320 {
 		try {
 			Class61.method540((byte) -51);
 			if (i_9_ == 0) {
-				Class265.aHa1974 = Class76_Sub11.method771(((Class98_Sub27) (Class98_Sub9.aClass98_Sub27_3856)).aClass64_Sub23_4055.method648((byte) 120) * 2, Class42_Sub3.aCanvas5361, i ^ 0x27, Class284_Sub2_Sub2.aD6203, 0, Class212.aClass207_1603);
+				Class265.aHa1974 = Class76_Sub11.method771(Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub23_4055.method648((byte) 120) * 2, Class42_Sub3.aCanvas5361, i ^ 0x27, Class284_Sub2_Sub2.aD6203, 0, Class212.aClass207_1603);
 				if (string != null) {
 					Class265.aHa1974.GA(0);
 					Class197 class197 = Class109.method1733((byte) 120, 0, Class269.anInt2026, Class36.aClass207_348);
@@ -51,7 +51,7 @@ final class Class320 {
 					Class246_Sub2.method2972(-99, class197, class43, true, var_ha, string);
 				}
 				try {
-					Class265.aHa1974 = (Class76_Sub11.method771(((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub23_4055.method648((byte) 127) * 2, Class42_Sub3.aCanvas5361, 79, Class284_Sub2_Sub2.aD6203, i_9_, Class212.aClass207_1603));
+					Class265.aHa1974 = (Class76_Sub11.method771(Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub23_4055.method648((byte) 127) * 2, Class42_Sub3.aCanvas5361, 79, Class284_Sub2_Sub2.aD6203, i_9_, Class212.aClass207_1603));
 					if (string != null) {
 						var_ha.GA(0);
 						Class197 class197 = Class109.method1733((byte) 124, 0, Class269.anInt2026, Class36.aClass207_348);
@@ -62,7 +62,7 @@ final class Class320 {
 					if (Class265.aHa1974.method1824()) {
 						boolean bool_10_ = true;
 						try {
-							bool_10_ = (((Class98_Sub35) Exception_Sub1.aClass98_Sub35_47).anInt4129) > 256;
+							bool_10_ = (Exception_Sub1.aClass98_Sub35_47.anInt4129) > 256;
 						} catch (Throwable throwable) {
 							/* empty */
 						}
@@ -74,10 +74,10 @@ final class Class320 {
 						Class265.aHa1974.a(var_za);
 					}
 				} catch (Throwable throwable) {
-					int i_11_ = ((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 120);
-					if ((i_11_ ^ 0xffffffff) == -3)
+					int i_11_ = Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 120);
+					if (i_11_ == 2)
 						Class223.aBoolean1679 = true;
-					Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 0, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042));
+					Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 0, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042));
 					method3665((byte) 69, string, i_11_, bool);
 					return;
 				} finally {
@@ -90,8 +90,8 @@ final class Class320 {
 					}
 				}
 			}
-			((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method582(!bool, false);
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, i_9_, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042));
+			Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method582(!bool, false);
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, i_9_, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042));
 			Class39.method353((byte) -79);
 			Class265.aHa1974.method1798(10000);
 			Class265.aHa1974.X(32);
@@ -100,10 +100,10 @@ final class Class320 {
 			Class98_Sub10_Sub34.method1104(110);
 			if (i != 69)
 				method3664(-5);
-			Class265.aHa1974.method1749((((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub9_4067.method588((byte) 122) ^ 0xffffffff) == -2);
+			Class265.aHa1974.method1749(Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub9_4067.method588((byte) 122) == 1);
 			if (Class265.aHa1974.method1767())
-				Class98_Sub5_Sub1.method966(29089, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub5_4065.method570((byte) 122) ^ 0xffffffff) == -2);
-			Class159.method2508(GameWorld.size_x >> 1270556451, GameWorld.size_y >> 1930762467, (byte) -50, Class265.aHa1974);
+				Class98_Sub5_Sub1.method966(29089, Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub5_4065.method570((byte) 122) == 1);
+			Class159.method2508(GameWorld.size_x >> 3, GameWorld.size_y >> 3, (byte) -50, Class265.aHa1974);
 			Class374.method3980((byte) 125);
 			Class33.aBoolean316 = true;
 			PlayerUpdateMask.aClass259Array527 = null;

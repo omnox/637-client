@@ -11,7 +11,7 @@ final class Class114 {
 		try {
 			if (i <= 104)
 				return true;
-			if (((c ^ 0xffffffff) > -49 || c > 57) && (c < 65 || c > 90) && (c < 97 || c > 122))
+			if ((c < 48 || c > 57) && (c < 65 || c > 90) && (c < 97 || c > 122))
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -54,21 +54,21 @@ final class Class114 {
 
 	static final Class244 method2151(int i, boolean bool, ha var_ha, boolean bool_2_) {
 		try {
-			if ((i ^ 0xffffffff) == 0)
+			if (i == -1)
 				return null;
 			if (Class2.anIntArray70 != null) {
-				for (int i_3_ = 0; ((i_3_ ^ 0xffffffff) > (Class2.anIntArray70.length ^ 0xffffffff)); i_3_++) {
+				for (int i_3_ = 0; (Class2.anIntArray70.length > i_3_); i_3_++) {
 					if (Class2.anIntArray70[i_3_] == i)
 						return Class242.aClass244Array1851[i_3_];
 				}
 			}
-			Class244 class244 = (Class244) Class232.aClass79_1740.get((long) i);
+			Class244 class244 = (Class244) Class232.aClass79_1740.get(i);
 			if (class244 != null) {
-				if (bool && ((Class244) class244).aClass197_1858 == null) {
+				if (bool && class244.aClass197_1858 == null) {
 					Class197 class197 = Class119_Sub1.method2182((Class64_Sub17.aClass207_3687), true, i);
 					if (class197 == null)
 						return null;
-					((Class244) class244).aClass197_1858 = class197;
+					class244.aClass197_1858 = class197;
 				}
 				return class244;
 			}
@@ -84,7 +84,7 @@ final class Class114 {
 				class244 = new Class244(var_ha.method1804(class197, class324s, true));
 			else
 				class244 = new Class244(var_ha.method1804(class197, class324s, true), class197);
-			Class232.aClass79_1740.put((long) i, class244);
+			Class232.aClass79_1740.put(i, class244);
 			return class244;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("hga.B(" + i + ',' + bool + ',' + (var_ha != null ? "{...}" : "null") + ',' + bool_2_ + ')'));

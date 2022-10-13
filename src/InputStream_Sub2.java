@@ -12,9 +12,9 @@ final class InputStream_Sub2 extends InputStream {
 			if (i_2_ != 111)
 				anInt29 = -5;
 			byte[] is_3_ = new byte[i * i_0_];
-			for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > (i ^ 0xffffffff); i_4_++) {
+			for (int i_4_ = 0; i > i_4_; i_4_++) {
 				int i_5_ = i_0_ * i_4_ + is[i_4_];
-				for (int i_6_ = 0; (i_6_ ^ 0xffffffff) > (is_1_[i_4_] ^ 0xffffffff); i_6_++)
+				for (int i_6_ = 0; is_1_[i_4_] > i_6_; i_6_++)
 					is_3_[i_5_++] = (byte) -1;
 			}
 			return new aa_Sub3(var_ha_Sub1, i_0_, i, is_3_);
@@ -48,7 +48,7 @@ final class InputStream_Sub2 extends InputStream {
 			if (i_12_ != 21597)
 				anInt29 = 22;
 			int i_14_ = i_9_ + -i_10_;
-			if ((i_13_ ^ 0xffffffff) != -1) {
+			if (i_13_ != 0) {
 				if (i_14_ == 0) {
 					Class318.method3656(i_8_, i_11_, (byte) 85, i, i_10_);
 					return;
@@ -58,16 +58,16 @@ final class InputStream_Sub2 extends InputStream {
 					Class98_Sub50.method1671(i_11_, (byte) 0, i_10_, i_9_, i_8_);
 				return;
 			}
-			int i_15_ = (i_14_ << -2124827092) / i_13_;
-			int i_16_ = i_10_ + -(i_15_ * i_11_ >> 203447180);
+			int i_15_ = (i_14_ << 12) / i_13_;
+			int i_16_ = i_10_ + -(i_15_ * i_11_ >> 12);
 			int i_17_;
 			int i_18_;
-			if ((i ^ 0xffffffff) > (Class76_Sub8.anInt3778 ^ 0xffffffff)) {
-				i_18_ = i_16_ + (i_15_ * Class76_Sub8.anInt3778 >> -277934004);
+			if (Class76_Sub8.anInt3778 > i) {
+				i_18_ = i_16_ + (i_15_ * Class76_Sub8.anInt3778 >> 12);
 				i_17_ = Class76_Sub8.anInt3778;
 			} else if (i > Class3.anInt77) {
 				i_17_ = Class3.anInt77;
-				i_18_ = i_16_ + (Class3.anInt77 * i_15_ >> 674340300);
+				i_18_ = i_16_ + (Class3.anInt77 * i_15_ >> 12);
 			} else {
 				i_17_ = i;
 				i_18_ = i_9_;
@@ -75,10 +75,10 @@ final class InputStream_Sub2 extends InputStream {
 			int i_19_;
 			int i_20_;
 			if (Class76_Sub8.anInt3778 > i_11_) {
-				i_19_ = i_16_ - -(i_15_ * Class76_Sub8.anInt3778 >> 376571916);
+				i_19_ = i_16_ - -(i_15_ * Class76_Sub8.anInt3778 >> 12);
 				i_20_ = Class76_Sub8.anInt3778;
-			} else if ((i_11_ ^ 0xffffffff) < (Class3.anInt77 ^ 0xffffffff)) {
-				i_19_ = i_16_ + (i_15_ * Class3.anInt77 >> 854040140);
+			} else if (Class3.anInt77 < i_11_) {
+				i_19_ = i_16_ + (i_15_ * Class3.anInt77 >> 12);
 				i_20_ = Class3.anInt77;
 			} else {
 				i_19_ = i_10_;
@@ -86,19 +86,19 @@ final class InputStream_Sub2 extends InputStream {
 			}
 			if (Class98_Sub10_Sub38.anInt5753 > i_18_) {
 				i_18_ = Class98_Sub10_Sub38.anInt5753;
-				i_17_ = ((-i_16_ + Class98_Sub10_Sub38.anInt5753 << -561169876) / i_15_);
-			} else if ((Class218.anInt1635 ^ 0xffffffff) > (i_18_ ^ 0xffffffff)) {
-				i_17_ = (-i_16_ + Class218.anInt1635 << -895871700) / i_15_;
+				i_17_ = ((-i_16_ + Class98_Sub10_Sub38.anInt5753 << 12) / i_15_);
+			} else if (i_18_ > Class218.anInt1635) {
+				i_17_ = (-i_16_ + Class218.anInt1635 << 12) / i_15_;
 				i_18_ = Class218.anInt1635;
 			}
-			if ((Class98_Sub10_Sub38.anInt5753 ^ 0xffffffff) >= (i_19_ ^ 0xffffffff)) {
-				if ((i_19_ ^ 0xffffffff) < (Class218.anInt1635 ^ 0xffffffff)) {
+			if (i_19_ >= Class98_Sub10_Sub38.anInt5753) {
+				if (Class218.anInt1635 < i_19_) {
 					i_19_ = Class218.anInt1635;
-					i_20_ = (-i_16_ + Class218.anInt1635 << 322051660) / i_15_;
+					i_20_ = (-i_16_ + Class218.anInt1635 << 12) / i_15_;
 				}
 			} else {
 				i_19_ = Class98_Sub10_Sub38.anInt5753;
-				i_20_ = ((-i_16_ + Class98_Sub10_Sub38.anInt5753 << 865861260) / i_15_);
+				i_20_ = ((-i_16_ + Class98_Sub10_Sub38.anInt5753 << 12) / i_15_);
 			}
 			Class91.method890(i_8_, i_19_, i_18_, i_17_, (byte) -126, i_20_);
 		} catch (RuntimeException runtimeexception) {

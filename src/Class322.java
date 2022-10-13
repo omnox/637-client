@@ -31,19 +31,19 @@ final class Class322 {
 	static final void method3671(int i, int i_0_, int i_1_, Class246_Sub3_Sub1 class246_sub3_sub1) {
 		Class172 class172 = Class100.method1693(i, i_0_, i_1_);
 		if (class172 != null) {
-			((Class172) class172).aClass246_Sub3_Sub1_1332 = class246_sub3_sub1;
+			class172.aClass246_Sub3_Sub1_1332 = class246_sub3_sub1;
 			int i_2_ = Class78.activeTileHeightMap == Class81.aSArray618 ? 1 : 0;
 			if (class246_sub3_sub1.method2978(-127)) {
 				if (class246_sub3_sub1.method2987(6540)) {
-					((AnimableEntity) class246_sub3_sub1).aClass246_Sub3_5090 = Class359.aClass246_Sub3Array3056[i_2_];
+					class246_sub3_sub1.aClass246_Sub3_5090 = Class359.aClass246_Sub3Array3056[i_2_];
 					Class359.aClass246_Sub3Array3056[i_2_] = class246_sub3_sub1;
 				} else {
-					((AnimableEntity) class246_sub3_sub1).aClass246_Sub3_5090 = Class379.aClass246_Sub3Array3198[i_2_];
+					class246_sub3_sub1.aClass246_Sub3_5090 = Class379.aClass246_Sub3Array3198[i_2_];
 					Class379.aClass246_Sub3Array3198[i_2_] = class246_sub3_sub1;
 					Class358.aBoolean3033 = true;
 				}
 			} else {
-				((AnimableEntity) class246_sub3_sub1).aClass246_Sub3_5090 = Class130.aClass246_Sub3Array1029[i_2_];
+				class246_sub3_sub1.aClass246_Sub3_5090 = Class130.aClass246_Sub3Array1029[i_2_];
 				Class130.aClass246_Sub3Array1029[i_2_] = class246_sub3_sub1;
 			}
 		}
@@ -73,9 +73,9 @@ final class Class322 {
 
 	static final void method3674(int i, Player class246_sub3_sub4_sub2_sub2) {
 		try {
-			Class98_Sub42 class98_sub42 = ((Class98_Sub42) (Class98_Sub10_Sub14.aClass377_5612.method3990((long) ((Mobile) class246_sub3_sub4_sub2_sub2).anInt6369, -1)));
+			Class98_Sub42 class98_sub42 = ((Class98_Sub42) (Class98_Sub10_Sub14.aClass377_5612.method3990(class246_sub3_sub4_sub2_sub2.anInt6369, -1)));
 			if (class98_sub42 == null)
-				Class98_Sub31_Sub4.method1383(class246_sub3_sub4_sub2_sub2, null, (((Mobile) class246_sub3_sub4_sub2_sub2).walkQueueX[0]), 0, i + 3, (((Mobile) class246_sub3_sub4_sub2_sub2).walkQueueZ[0]), ((AnimableEntity) class246_sub3_sub4_sub2_sub2).height_level, null);
+				Class98_Sub31_Sub4.method1383(class246_sub3_sub4_sub2_sub2, null, (class246_sub3_sub4_sub2_sub2.walkQueueX[0]), 0, i + 3, (class246_sub3_sub4_sub2_sub2.walkQueueZ[0]), class246_sub3_sub4_sub2_sub2.height_level, null);
 			else
 				class98_sub42.method1478(true);
 		} catch (RuntimeException runtimeexception) {

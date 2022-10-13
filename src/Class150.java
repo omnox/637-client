@@ -17,7 +17,7 @@ final class Class150 {
 
 	static final int readFile(int fileId) {
 		try {
-			return fileId >>> -54059832;
+			return fileId >>> 8;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "kca.B(" + fileId + ')');
 		}

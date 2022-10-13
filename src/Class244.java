@@ -12,27 +12,27 @@ final class Class244 {
 		try {
 			Class98_Sub46_Sub17 class98_sub46_sub17 = Class185.setCS2StringOrVarc(0, -71, 15);
 			class98_sub46_sub17.method1626((byte) -103);
-			((Class98_Sub46_Sub17) class98_sub46_sub17).anInt6051 = minimapY;
-			((Class98_Sub46_Sub17) class98_sub46_sub17).anInt6054 = minimapX;
+			class98_sub46_sub17.anInt6051 = minimapY;
+			class98_sub46_sub17.anInt6054 = minimapX;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("pga.B(" + i + ',' + minimapX + ',' + minimapY + ')'));
 		}
 	}
 
 	Class244(Class43 class43) {
-		((Class244) this).aClass197_1858 = null;
+		this.aClass197_1858 = null;
 		try {
-			((Class244) this).aClass43_1859 = class43;
+			this.aClass43_1859 = class43;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "pga.<init>(" + (class43 != null ? "{...}" : "null") + ')');
 		}
 	}
 
 	Class244(Class43 class43, Class197 class197) {
-		((Class244) this).aClass197_1858 = null;
+		this.aClass197_1858 = null;
 		try {
-			((Class244) this).aClass197_1858 = class197;
-			((Class244) this).aClass43_1859 = class43;
+			this.aClass197_1858 = class197;
+			this.aClass43_1859 = class43;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("pga.<init>(" + (class43 != null ? "{...}" : "null") + ',' + (class197 != null ? "{...}" : "null") + ')'));
 		}

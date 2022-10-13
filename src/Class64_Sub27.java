@@ -13,7 +13,7 @@ final class Class64_Sub27 extends Class64 {
 			int i_0_ = class98_sub22.readInt(-2);
 			int i_1_ = class98_sub22.readInt(-2);
 			int i_2_ = class98_sub22.readShort();
-			return new Class93_Sub2(((Class93) class93).aClass63_3509, ((Class93) class93).aClass110_3511, ((Class93) class93).anInt3505, ((Class93) class93).anInt3507, ((Class93) class93).anInt3514, ((Class93) class93).anInt3504, ((Class93) class93).anInt3508, ((Class93) class93).anInt3506, ((Class93) class93).anInt3513, i_0_, i_1_, i_2_);
+			return new Class93_Sub2(class93.aClass63_3509, class93.aClass110_3511, class93.anInt3505, class93.anInt3507, class93.anInt3514, class93.anInt3504, class93.anInt3508, class93.anInt3506, class93.anInt3513, i_0_, i_1_, i_2_);
 		} catch (RuntimeException runtimeexception) {
 			throw method667(runtimeexception, "ve.G(" + i + ',' + (class98_sub22 != null ? "{...}" : "null") + ')');
 		}
@@ -22,8 +22,8 @@ final class Class64_Sub27 extends Class64 {
 	final void method551(byte i) {
 		do {
 			try {
-				if (((Class64) this).anInt494 < 1 || (((Class64) this).anInt494 ^ 0xffffffff) < -4)
-					((Class64) this).anInt494 = method552(0);
+				if (this.anInt494 < 1 || this.anInt494 > 3)
+					this.anInt494 = method552(0);
 				if (i >= 118)
 					break;
 				anInt3716 = -41;
@@ -38,7 +38,7 @@ final class Class64_Sub27 extends Class64 {
 		try {
 			if (i != 0)
 				IncomingOpcode.cs2Opcode = null;
-			if (!((Class64) this).aClass98_Sub27_495.method1289(-120).method2316(true))
+			if (!this.aClass98_Sub27_495.method1289(-120).method2316(true))
 				return 2;
 			return 3;
 		} catch (RuntimeException runtimeexception) {
@@ -63,22 +63,22 @@ final class Class64_Sub27 extends Class64 {
 			if (i_5_ < 59)
 				IncomingOpcode.cs2Opcode = null;
 			if (i_6_ < 3) {
-				int i_9_ = i_7_ >> -1338599447;
-				int i_10_ = i >> -623073207;
-				if ((i_8_ ^ 0xffffffff) > -1 || (i_4_ ^ 0xffffffff) > -1 || i_8_ > -1 + GameWorld.size_x || ((GameWorld.size_y + -1 ^ 0xffffffff) > (i_4_ ^ 0xffffffff)))
+				int i_9_ = i_7_ >> 9;
+				int i_10_ = i >> 9;
+				if (i_8_ < 0 || i_4_ < 0 || i_8_ > -1 + GameWorld.size_x || (i_4_ > GameWorld.size_y + -1))
 					return 0;
-				if ((i_9_ ^ 0xffffffff) > -2 || i_10_ < 1 || i_9_ > GameWorld.size_x - 1 || ((-1 + GameWorld.size_y ^ 0xffffffff) > (i_10_ ^ 0xffffffff)))
+				if (i_9_ < 1 || i_10_ < 1 || i_9_ > GameWorld.size_x - 1 || (i_10_ > -1 + GameWorld.size_y))
 					return 0;
-				boolean bool = ((0x2 & (Class281.tileSettings[1][i_7_ >> 117366825][i >> 1053911209])) != 0);
-				if ((i_7_ & 0x1ff ^ 0xffffffff) == -1) {
-					boolean bool_11_ = (((Class281.tileSettings[1][i_9_ + -1][i >> 772758441]) & 0x2) != 0);
-					boolean bool_12_ = (((Class281.tileSettings[1][i_9_][i >> -174615703]) & 0x2 ^ 0xffffffff) != -1);
+				boolean bool = ((0x2 & (Class281.tileSettings[1][i_7_ >> 9][i >> 9])) != 0);
+				if ((i_7_ & 0x1ff) == 0) {
+					boolean bool_11_ = (((Class281.tileSettings[1][i_9_ + -1][i >> 9]) & 0x2) != 0);
+					boolean bool_12_ = (((Class281.tileSettings[1][i_9_][i >> 9]) & 0x2) != 0);
 					if (!bool_12_ == bool_11_)
-						bool = (0x2 & (Class281.tileSettings[1][i_8_][i_4_]) ^ 0xffffffff) != -1;
+						bool = (0x2 & (Class281.tileSettings[1][i_8_][i_4_])) != 0;
 				}
-				if ((0x1ff & i ^ 0xffffffff) == -1) {
-					boolean bool_13_ = (((Class281.tileSettings[1][i_7_ >> -1641555127][i_10_ - 1]) & 0x2) != 0);
-					boolean bool_14_ = ((0x2 & (Class281.tileSettings[1][i_7_ >> -1729018327][i_10_])) != 0);
+				if ((0x1ff & i) == 0) {
+					boolean bool_13_ = (((Class281.tileSettings[1][i_7_ >> 9][i_10_ - 1]) & 0x2) != 0);
+					boolean bool_14_ = ((0x2 & (Class281.tileSettings[1][i_7_ >> 9][i_10_])) != 0);
 					if (!bool_13_ != !bool_14_)
 						bool = (0x2 & (Class281.tileSettings[1][i_8_][i_4_])) != 0;
 				}
@@ -104,7 +104,7 @@ final class Class64_Sub27 extends Class64 {
 	final void method550(int i, int i_15_) {
 		try {
 			int i_16_ = 13 / ((i - -26) / 41);
-			((Class64) this).anInt494 = i_15_;
+			this.anInt494 = i_15_;
 		} catch (RuntimeException runtimeexception) {
 			throw method667(runtimeexception, "ve.B(" + i + ',' + i_15_ + ')');
 		}
@@ -122,7 +122,7 @@ final class Class64_Sub27 extends Class64 {
 		try {
 			if (i <= 119)
 				return -75;
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw method667(runtimeexception, "ve.E(" + i + ')');
 		}
@@ -135,7 +135,7 @@ final class Class64_Sub27 extends Class64 {
 				runtimeexception_sub1 = new RuntimeException_Sub1(throwable, string);
 			else {
 				runtimeexception_sub1 = (RuntimeException_Sub1) throwable;
-				((RuntimeException_Sub1) runtimeexception_sub1).aString3202 += ' ' + (String) string;
+				runtimeexception_sub1.aString3202 += ' ' + string;
 			}
 			return runtimeexception_sub1;
 		} catch (RuntimeException runtimeexception) {

@@ -31,7 +31,7 @@ final class Class64_Sub4 extends Class64 {
 
 	final void method550(int i, int i_1_) {
 		try {
-			((Class64) this).anInt494 = i_1_;
+			this.anInt494 = i_1_;
 			int i_2_ = 26 / ((i - -26) / 41);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cq.B(" + i + ',' + i_1_ + ')');
@@ -56,7 +56,7 @@ final class Class64_Sub4 extends Class64 {
 		try {
 			if (i < 119)
 				aClass204_3649 = null;
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cq.E(" + i + ')');
 		}

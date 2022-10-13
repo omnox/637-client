@@ -10,7 +10,7 @@ final class Class93_Sub2 extends Class93 {
 	public final Class113 method70(int i) {
 		try {
 			if (i != 30778)
-				((Class93_Sub2) this).anInt5490 = 109;
+				this.anInt5490 = 109;
 			return Class137.aClass113_1078;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "tu.A(" + i + ')');
@@ -20,8 +20,8 @@ final class Class93_Sub2 extends Class93 {
 	Class93_Sub2(Class63 class63, Class110 class110, int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_) {
 		super(class63, class110, i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_);
 		try {
-			((Class93_Sub2) this).anInt5490 = i_8_;
-			((Class93_Sub2) this).anInt5492 = i_7_;
+			this.anInt5490 = i_8_;
+			this.anInt5492 = i_7_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("tu.<init>(" + (class63 != null ? "{...}" : "null") + ',' + (class110 != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'));
 		}
@@ -46,7 +46,7 @@ final class Class93_Sub2 extends Class93 {
 		try {
 			if (i != 95)
 				method911('6', -97);
-			if (c != 160 && (c ^ 0xffffffff) != -33 && c != 95 && (c ^ 0xffffffff) != -46)
+			if (c != 160 && c != 32 && c != 95 && c != 45)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

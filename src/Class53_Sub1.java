@@ -13,11 +13,11 @@ final class Class53_Sub1 extends Class53 {
 
 	static final void method498(int i) {
 		try {
-			for (int i_0_ = i; (Class63.anInt493 ^ 0xffffffff) < (i_0_ ^ 0xffffffff); i_0_++) {
+			for (int i_0_ = i; i_0_ < Class63.anInt493; i_0_++) {
 				int i_1_ = (Class198.method2678((byte) 6, i_0_ - -Class268.anInt2007, Class63.anInt493) * Class191.anInt1477);
 				for (int i_2_ = 0; i_2_ < Class191.anInt1477; i_2_++) {
 					int i_3_ = (i_1_ + Class198.method2678((byte) 6, Class76_Sub8.anInt3780 + i_2_, Class191.anInt1477));
-					if ((Class230.anInt1732 ^ 0xffffffff) == (Class146_Sub2.anIntArray4873[i_3_] ^ 0xffffffff))
+					if (Class146_Sub2.anIntArray4873[i_3_] == Class230.anInt1732)
 						Class172.anInterface17Array1327[i_3_].method57(0, 0, Class197.anInt1513, Class98_Sub10_Sub38.anInt5761, Class197.anInt1513 * i_2_, i_0_ * Class98_Sub10_Sub38.anInt5761, true, true);
 				}
 			}
@@ -30,7 +30,7 @@ final class Class53_Sub1 extends Class53 {
 		try {
 			if (i != 2048)
 				method502(119, -121, (byte) 95);
-			if ((i_4_ ^ 0xffffffff) != -4 && i_4_ != 4 && i_4_ != 5 && i_4_ != 6)
+			if (i_4_ != 3 && i_4_ != 4 && i_4_ != 5 && i_4_ != 6)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -52,7 +52,7 @@ final class Class53_Sub1 extends Class53 {
 		try {
 			if (i != -1)
 				method500(-79);
-			return (Class98_Sub10_Sub36.aClass114Array5744[((Class53) this).anInt426]);
+			return (Class98_Sub10_Sub36.aClass114Array5744[this.anInt426]);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "jha.I(" + i + ')');
 		}
@@ -62,7 +62,7 @@ final class Class53_Sub1 extends Class53 {
 		try {
 			if (i_6_ < 110)
 				method500(-79);
-			if ((i_5_ & 0x800 ^ 0xffffffff) == -1)
+			if ((i_5_ & 0x800) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

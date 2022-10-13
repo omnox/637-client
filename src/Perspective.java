@@ -8,12 +8,12 @@ public class Perspective {
 		try {
 			if (Class78.activeTileHeightMap == null)
 				return 0;
-			int tileX = x >> 1350900553;
-			int tileY = y >> 1039231433;
-			if (tileX < 0 || (tileY ^ 0xffffffff) > -1 || -1 + GameWorld.size_x < tileX || ((-1 + GameWorld.size_y ^ 0xffffffff) > (tileY ^ 0xffffffff)))
+			int tileX = x >> 9;
+			int tileY = y >> 9;
+			if (tileX < 0 || tileY < 0 || -1 + GameWorld.size_x < tileX || (tileY > -1 + GameWorld.size_y))
 				return 0;
 			int tileZ = z;
-			if (tileZ < 3 && (Class281.tileSettings[1][tileX][tileY] & 0x2 ^ 0xffffffff) != -1)
+			if (tileZ < 3 && (Class281.tileSettings[1][tileX][tileY] & 0x2) != 0)
 				tileZ++;
 			return Class78.activeTileHeightMap[tileZ].method3417(x, y, true);
 		} catch (RuntimeException runtimeexception) {

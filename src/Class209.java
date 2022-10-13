@@ -38,9 +38,9 @@ final class Class209 {
 	}
 
 	final void method2771(RSByteBuffer class98_sub22) {
-		((Class209) this).anInt1584 = class98_sub22.readUnsignedByte();
-		((Class209) this).anInt1587 = class98_sub22.readInt(-2);
-		((Class209) this).anInt1583 = class98_sub22.readInt(-2);
+		this.anInt1584 = class98_sub22.readUnsignedByte();
+		this.anInt1587 = class98_sub22.readInt(-2);
+		this.anInt1583 = class98_sub22.readInt(-2);
 		method2772(class98_sub22);
 	}
 

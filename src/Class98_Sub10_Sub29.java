@@ -10,8 +10,8 @@ final class Class98_Sub10_Sub29 extends Class98_Sub10 {
 		try {
 			if (i > -76)
 				method991(84, null, (byte) 25);
-			int[][] is = ((Class98_Sub10) this).aClass223_3859.method2828(i_0_, 0);
-			if (((Class223) ((Class98_Sub10) this).aClass223_3859).aBoolean1683) {
+			int[][] is = this.aClass223_3859.method2828(i_0_, 0);
+			if (this.aClass223_3859.aBoolean1683) {
 				int i_1_ = Class25.anInt268 / anInt5707;
 				int i_2_ = Class63.anInt492 / anInt5708;
 				int[][] is_3_;
@@ -51,8 +51,8 @@ final class Class98_Sub10_Sub29 extends Class98_Sub10 {
 			if ((long) i_19_ <= l) {
 				if (i_18_ != 4)
 					method1092(-62, -95, (byte) 36);
-				int i_20_ = Math.min(((GameInterfaceData) class293).anInt2311 / 2, ((GameInterfaceData) class293).anInt2258 / 2);
-				if ((i_19_ ^ 0xffffffff) >= (i_20_ * i_20_ ^ 0xffffffff))
+				int i_20_ = Math.min(class293.anInt2311 / 2, class293.anInt2258 / 2);
+				if (i_20_ * i_20_ >= i_19_)
 					Class4.method173(i_16_, i_14_, i_17_, class293, var_aa, i_15_, (byte) -24, (Class98_Sub46_Sub11.aClass332Array6032[i]));
 				else {
 					i_20_ -= 10;
@@ -71,12 +71,12 @@ final class Class98_Sub10_Sub29 extends Class98_Sub10 {
 						i_22_ = i_22_ * 256 / (Class151.anInt1213 - -256);
 						i_23_ = i_23_ * 256 / (256 + Class151.anInt1213);
 					}
-					int i_24_ = i_22_ * i_14_ - -(i_15_ * i_23_) >> -1569017266;
-					int i_25_ = -(i_15_ * i_22_) + i_23_ * i_14_ >> 813721934;
-					double d = Math.atan2((double) i_24_, (double) i_25_);
+					int i_24_ = i_22_ * i_14_ - -(i_15_ * i_23_) >> 14;
+					int i_25_ = -(i_15_ * i_22_) + i_23_ * i_14_ >> 14;
+					double d = Math.atan2(i_24_, i_25_);
 					int i_26_ = (int) (Math.sin(d) * (double) i_20_);
 					int i_27_ = (int) (Math.cos(d) * (double) i_20_);
-					Class352.aClass332Array3000[i].method3730(((float) i_17_ + (float) ((GameInterfaceData) class293).anInt2311 / 2.0F + (float) i_26_), (float) -i_27_ + ((float) i_16_ + (float) (((GameInterfaceData) class293).anInt2258) / 2.0F), 4096, (int) (-d / 6.283185307179586 * 65535.0));
+					Class352.aClass332Array3000[i].method3730(((float) i_17_ + (float) class293.anInt2311 / 2.0F + (float) i_26_), (float) -i_27_ + ((float) i_16_ + (float) (class293.anInt2258) / 2.0F), 4096, (int) (-d / 6.283185307179586 * 65535.0));
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -94,7 +94,7 @@ final class Class98_Sub10_Sub29 extends Class98_Sub10 {
 				int i_29_ = i;
 				do {
 					if (i_29_ != 0) {
-						if ((i_29_ ^ 0xffffffff) != -2)
+						if (i_29_ != 1)
 							break;
 					} else {
 						anInt5707 = class98_sub22.readUnsignedByte();
@@ -117,9 +117,9 @@ final class Class98_Sub10_Sub29 extends Class98_Sub10 {
 			Class336.aClass148_2827.add_last(class98_sub11, -20911);
 			if (bool != false)
 				method1092(-65, -93, (byte) 41);
-			((OutgoingPacket) class98_sub11).anInt3869 = ((RSByteBuffer) (((OutgoingPacket) class98_sub11).packet)).position;
-			Class62.anInt490 += ((OutgoingPacket) class98_sub11).anInt3869;
-			((RSByteBuffer) (((OutgoingPacket) class98_sub11).packet)).position = 0;
+			class98_sub11.anInt3869 = class98_sub11.packet.position;
+			Class62.anInt490 += class98_sub11.anInt3869;
+			class98_sub11.packet.position = 0;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("qaa.E(" + bool + ',' + (class98_sub11 != null ? "{...}" : "null") + ')'));
 		}
@@ -127,8 +127,8 @@ final class Class98_Sub10_Sub29 extends Class98_Sub10 {
 
 	final int[] method990(int i, int i_30_) {
 		try {
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_30_);
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
+			int[] is = this.aClass16_3863.method237((byte) 98, i_30_);
+			if (this.aClass16_3863.aBoolean198) {
 				int i_31_ = Class25.anInt268 / anInt5707;
 				int i_32_ = Class63.anInt492 / anInt5708;
 				int[] is_33_;
@@ -157,7 +157,7 @@ final class Class98_Sub10_Sub29 extends Class98_Sub10 {
 		try {
 			if (i_38_ >= -64)
 				return true;
-			if ((i & 0x20 ^ 0xffffffff) == -1)
+			if ((i & 0x20) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

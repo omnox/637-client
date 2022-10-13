@@ -25,7 +25,7 @@ final class Class49 {
 		try {
 			if (i != 13)
 				aClass171_413 = null;
-			aLong412 |= (long) (((Class169) class169).anInt1300 << Class169.anInt1304 * anInt411++);
+			aLong412 |= class169.anInt1300 << Class169.anInt1304 * anInt411++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("dia.E(" + (class169 != null ? "{...}" : "null") + ',' + i + ')'));
 		}
@@ -75,7 +75,7 @@ final class Class49 {
 	Class49(Class169 class169) {
 		try {
 			anInt411 = 1;
-			aLong412 = (long) ((Class169) class169).anInt1300;
+			aLong412 = class169.anInt1300;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "dia.<init>(" + (class169 != null ? "{...}" : "null") + ')');
 		}
@@ -83,7 +83,7 @@ final class Class49 {
 
 	Class49(Class169[] class169s) {
 		try {
-			for (int i = 0; (class169s.length ^ 0xffffffff) < (i ^ 0xffffffff); i++)
+			for (int i = 0; i < class169s.length; i++)
 				method478(class169s[i], 13);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "dia.<init>(" + (class169s != null ? "{...}" : "null") + ')');

@@ -25,9 +25,9 @@ final class Class18 {
 
 	static final String method247(long l, int i) {
 		try {
-			if ((l ^ 0xffffffffffffffffL) >= -1L || l >= 6582952005840035281L)
+			if (l <= 0 || l >= 6582952005840035281L)
 				return null;
-			if ((l % 37L ^ 0xffffffffffffffffL) == -1L)
+			if (l % 37L == 0)
 				return null;
 			int i_0_ = 0;
 			if (i > -59)
@@ -39,7 +39,7 @@ final class Class18 {
 				long l_2_ = l;
 				l /= 37L;
 				char c = Exception_Sub1.aCharArray45[(int) (l_2_ + -(l * 37L))];
-				if ((c ^ 0xffffffff) == -96) {
+				if (c == 95) {
 					int i_3_ = stringbuffer.length() - 1;
 					stringbuffer.setCharAt(i_3_, Character.toUpperCase(stringbuffer.charAt(i_3_)));
 					c = '\u00a0';
@@ -56,7 +56,7 @@ final class Class18 {
 
 	Class18(boolean bool) {
 		try {
-			((Class18) this).aBoolean209 = bool;
+			this.aBoolean209 = bool;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "bga.<init>(" + bool + ')');
 		}
@@ -66,7 +66,7 @@ final class Class18 {
 		try {
 			if (bool) {
 				Class98_Sub10_Sub9.anInt5580--;
-				if ((Class98_Sub10_Sub9.anInt5580 ^ 0xffffffff) == -1)
+				if (Class98_Sub10_Sub9.anInt5580 == 0)
 					Class208.anIntArray1579 = null;
 			}
 			if (bool_4_) {
@@ -84,12 +84,12 @@ final class Class18 {
 	final void method249(int i) {
 		do {
 			try {
-				if (((Class18) this).anInterface2_Impl2_208 != null)
-					((Class18) this).anInterface2_Impl2_208.method72(false);
-				((Class18) this).aBoolean207 = false;
+				if (this.anInterface2_Impl2_208 != null)
+					this.anInterface2_Impl2_208.method72(false);
+				this.aBoolean207 = false;
 				if (i == 0)
 					break;
-				((Class18) this).anInterface2_Impl2_208 = null;
+				this.anInterface2_Impl2_208 = null;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "bga.E(" + i + ')');
 			}
@@ -101,7 +101,7 @@ final class Class18 {
 		try {
 			if (i >= -19)
 				method248(false, 117, true);
-			if (!((Class18) this).aBoolean207 || ((Class18) this).aBoolean209)
+			if (!this.aBoolean207 || this.aBoolean209)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

@@ -18,22 +18,22 @@ class Class284_Sub2 extends Class284 {
 	final void method3356(int i, int i_0_, int i_1_) {
 		do {
 			try {
-				if ((i ^ 0xffffffff) == -1) {
-					anInt5188 = (-((i_0_ ^ 0xffffffff) > -1 ? -i_0_ : i_0_) + anInt5179);
+				if (i == 0) {
+					anInt5188 = (-(i_0_ < 0 ? -i_0_ : i_0_) + anInt5179);
 					anInt5183 = 4096;
-					anInt5188 = anInt5188 * anInt5188 >> 419437836;
+					anInt5188 = anInt5188 * anInt5188 >> 12;
 					anInt5185 = anInt5188;
 				} else {
-					anInt5183 = anInt5187 * anInt5188 >> 1860817932;
-					if ((anInt5183 ^ 0xffffffff) > -1)
+					anInt5183 = anInt5187 * anInt5188 >> 12;
+					if (anInt5183 < 0)
 						anInt5183 = 0;
 					else if (anInt5183 > 4096)
 						anInt5183 = 4096;
-					anInt5188 = anInt5179 + -((i_0_ ^ 0xffffffff) <= -1 ? i_0_ : -i_0_);
-					anInt5188 = anInt5188 * anInt5188 >> -1937288276;
-					anInt5188 = anInt5183 * anInt5188 >> -133065620;
-					anInt5185 += anInt5182 * anInt5188 >> 1705588460;
-					anInt5182 = anInt5189 * anInt5182 >> -387876148;
+					anInt5188 = anInt5179 + -(i_0_ >= 0 ? i_0_ : -i_0_);
+					anInt5188 = anInt5188 * anInt5188 >> 12;
+					anInt5188 = anInt5183 * anInt5188 >> 12;
+					anInt5185 += anInt5182 * anInt5188 >> 12;
+					anInt5182 = anInt5189 * anInt5182 >> 12;
 				}
 				if (i_1_ == 255)
 					break;
@@ -50,8 +50,8 @@ class Class284_Sub2 extends Class284 {
 			anInt5185 >>= 4;
 			anInt5182 = anInt5189;
 			do {
-				if ((anInt5185 ^ 0xffffffff) <= -1) {
-					if ((anInt5185 ^ 0xffffffff) >= -256)
+				if (anInt5185 >= 0) {
+					if (anInt5185 <= 255)
 						break;
 					anInt5185 = 255;
 					if (!client.aBoolean3553)
@@ -81,8 +81,8 @@ class Class284_Sub2 extends Class284 {
 		try {
 			if (i_3_ != 14764)
 				method3376(-123);
-			if (!((ha_Sub1) var_ha_Sub1).aBoolean4426 && (!Class81.method815(i_5_, 0) || !Class81.method815(i_2_, 0))) {
-				if (!((ha_Sub1) var_ha_Sub1).aBoolean4378)
+			if (!var_ha_Sub1.aBoolean4426 && (!Class81.method815(i_5_, 0) || !Class81.method815(i_2_, 0))) {
+				if (!var_ha_Sub1.aBoolean4378)
 					return new Class42_Sub1_Sub1(var_ha_Sub1, i_4_, i_5_, i_2_, Class48.method453(423660257, i_5_), Class48.method453(423660257, i_2_), is, i);
 				return new Class42_Sub1_Sub1(var_ha_Sub1, 34037, i_4_, i_5_, i_2_, bool, is, i);
 			}
@@ -106,7 +106,7 @@ class Class284_Sub2 extends Class284 {
 		try {
 			anInt5187 = (int) (f_14_ * 4096.0F);
 			anInt5179 = (int) (f_13_ * 4096.0F);
-			anInt5182 = anInt5189 = (int) (Math.pow(0.5, (double) -f) * 4096.0);
+			anInt5182 = anInt5189 = (int) (Math.pow(0.5, -f) * 4096.0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("gt.<init>(" + i + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + f + ',' + f_13_ + ',' + f_14_ + ')'));
 		}

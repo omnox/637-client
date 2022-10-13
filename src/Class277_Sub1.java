@@ -8,7 +8,7 @@ final class Class277_Sub1 extends Class277 {
 		try {
 			if (i > -24)
 				return null;
-			class98_sub46_sub20_sub1 = (new Class98_Sub46_Sub20_Sub1((((Class98_Sub46_Sub20) class98_sub46_sub20).anInterface20_6071), class98_sub46_sub20.method1635(44), ((Class98_Sub46_Sub20) class98_sub46_sub20).anInt6072));
+			class98_sub46_sub20_sub1 = (new Class98_Sub46_Sub20_Sub1((class98_sub46_sub20.anInterface20_6071), class98_sub46_sub20.method1635(44), class98_sub46_sub20.anInt6072));
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}

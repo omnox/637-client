@@ -32,7 +32,7 @@ abstract class Class240 {
 			OpenGL.glBindProgramARB(i, i_2_);
 			OpenGL.glProgramRawARB(i, 34933, is);
 			OpenGL.glGetIntegerv(34379, Class4.anIntArray83, 0);
-			if ((Class4.anIntArray83[0] ^ 0xffffffff) != 0) {
+			if (Class4.anIntArray83[0] != -1) {
 				OpenGL.glBindProgramARB(i, 0);
 				return null;
 			}

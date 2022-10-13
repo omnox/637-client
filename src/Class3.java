@@ -24,7 +24,7 @@ final class Class3 {
 	static final void method172(int i) {
 		do {
 			try {
-				if ((Class15.anInt185 ^ 0xffffffff) != 0) {
+				if (Class15.anInt185 != -1) {
 					int i_0_ = Class2.aClass299_73.method3514(61);
 					int i_1_ = Class2.aClass299_73.method3507((byte) 80);
 					Class98_Sub17 class98_sub17 = ((Class98_Sub17) Class167.aClass148_1284.method2418(32));

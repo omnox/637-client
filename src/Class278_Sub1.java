@@ -25,7 +25,7 @@ final class Class278_Sub1 extends Class278 {
 		try {
 			ha var_ha = Class265.aHa1974;
 			boolean bool = false;
-			if ((((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 123) ^ 0xffffffff) != -1) {
+			if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 123) != 0) {
 				Canvas canvas = new Canvas();
 				canvas.setSize(100, 100);
 				bool = true;

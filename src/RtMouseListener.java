@@ -28,11 +28,11 @@ abstract class RtMouseListener {
 			if (i != 2742)
 				method3511(85);
 			Collision class243 = new Collision();
-			((Collision) class243).anInt1855 = -1;
-			((Collision) class243).anInt1854 = -1;
-			((Collision) class243).flagArrayLengthY = 6 + i_0_;
-			((Collision) class243).flagArrayLengthX = 1 + (i_1_ - -5);
-			((Collision) class243).flags = (new int[((Collision) class243).flagArrayLengthX][((Collision) class243).flagArrayLengthY]);
+			class243.anInt1855 = -1;
+			class243.anInt1854 = -1;
+			class243.flagArrayLengthY = 6 + i_0_;
+			class243.flagArrayLengthX = 1 + (i_1_ - -5);
+			class243.flags = (new int[class243.flagArrayLengthX][class243.flagArrayLengthY]);
 			class243.method2950((byte) -99);
 			return class243;
 		} catch (RuntimeException runtimeexception) {
@@ -67,12 +67,12 @@ abstract class RtMouseListener {
 		try {
 			int i = 0;
 			if (Class98_Sub9.aClass98_Sub27_3856 != null)
-				i = ((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub16_4040.method614((byte) 127);
+				i = Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub16_4040.method614((byte) 127);
 			if (bool != false)
 				method3511(6);
-			if ((i ^ 0xffffffff) != -3) {
-				if ((i ^ 0xffffffff) == -2) {
-					int i_2_ = ((Class188.anInt1453 ^ 0xffffffff) < -1025 ? 1024 : Class188.anInt1453);
+			if (i != 2) {
+				if (i == 1) {
+					int i_2_ = (Class188.anInt1453 > 1024 ? 1024 : Class188.anInt1453);
 					Class39_Sub1.anInt3593 = i_2_;
 					int i_3_ = (Class123_Sub1.anInt4744 <= 768 ? Class123_Sub1.anInt4744 : 768);
 					Class98_Sub46_Sub10.anInt6022 = (Class188.anInt1453 + -i_2_) / 2;

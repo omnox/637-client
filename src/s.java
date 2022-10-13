@@ -16,17 +16,17 @@ abstract class s {
 
 	final int method3417(int i, int i_4_, boolean bool) {
 		try {
-			int i_5_ = i >> ((s) this).anInt2200;
+			int i_5_ = i >> this.anInt2200;
 			if (bool != true)
 				return -46;
-			int i_6_ = i_4_ >> ((s) this).anInt2200;
-			if ((i_5_ ^ 0xffffffff) > -1 || i_6_ < 0 || ((s) this).anInt2203 + -1 < i_5_ || i_6_ > -1 + ((s) this).anInt2204)
+			int i_6_ = i_4_ >> this.anInt2200;
+			if (i_5_ < 0 || i_6_ < 0 || this.anInt2203 + -1 < i_5_ || i_6_ > -1 + this.anInt2204)
 				return 0;
-			int i_7_ = i & -1 + ((s) this).anInt2206;
-			int i_8_ = i_4_ & ((s) this).anInt2206 - 1;
-			int i_9_ = ((((-i_7_ + ((s) this).anInt2206) * ((s) this).anIntArrayArray2201[i_5_][i_6_]) + i_7_ * ((s) this).anIntArrayArray2201[1 + i_5_][i_6_]) >> ((s) this).anInt2200);
-			int i_10_ = ((((-i_7_ + ((s) this).anInt2206) * ((s) this).anIntArrayArray2201[i_5_][1 + i_6_]) - -(((s) this).anIntArrayArray2201[i_5_ - -1][1 + i_6_] * i_7_)) >> ((s) this).anInt2200);
-			return (i_8_ * i_10_ + (((s) this).anInt2206 - i_8_) * i_9_ >> ((s) this).anInt2200);
+			int i_7_ = i & -1 + this.anInt2206;
+			int i_8_ = i_4_ & this.anInt2206 - 1;
+			int i_9_ = ((((-i_7_ + this.anInt2206) * this.anIntArrayArray2201[i_5_][i_6_]) + i_7_ * this.anIntArrayArray2201[1 + i_5_][i_6_]) >> this.anInt2200);
+			int i_10_ = ((((-i_7_ + this.anInt2206) * this.anIntArrayArray2201[i_5_][1 + i_6_]) - -(this.anIntArrayArray2201[i_5_ - -1][1 + i_6_] * i_7_)) >> this.anInt2200);
+			return (i_8_ * i_10_ + (this.anInt2206 - i_8_) * i_9_ >> this.anInt2200);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("s.R(" + i + ',' + i_4_ + ',' + bool + ')'));
 		}
@@ -37,7 +37,7 @@ abstract class s {
 	static final boolean method3419(int i, int i_14_) {
 		try {
 			int i_15_ = -123 % ((i - -2) / 48);
-			if ((i_14_ ^ 0xffffffff) > -5 || (i_14_ ^ 0xffffffff) < -9)
+			if (i_14_ < 4 || i_14_ > 8)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -49,7 +49,7 @@ abstract class s {
 		try {
 			if (i_16_ != -12639)
 				method3425(110, 4);
-			return ((s) this).anIntArrayArray2201[i_17_][i];
+			return this.anIntArrayArray2201[i_17_][i];
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("s.Q(" + i + ',' + i_16_ + ',' + i_17_ + ')'));
 		}
@@ -86,14 +86,14 @@ abstract class s {
 
 	s(int i, int i_57_, int i_58_, int[][] is) {
 		try {
-			((s) this).anInt2203 = i;
-			((s) this).anInt2204 = i_57_;
+			this.anInt2203 = i;
+			this.anInt2204 = i_57_;
 			int i_59_ = 0;
 			for (/**/; i_58_ > 1; i_58_ >>= 1)
 				i_59_++;
-			((s) this).anInt2206 = 1 << i_59_;
-			((s) this).anIntArrayArray2201 = is;
-			((s) this).anInt2200 = i_59_;
+			this.anInt2206 = 1 << i_59_;
+			this.anIntArrayArray2201 = is;
+			this.anInt2200 = i_59_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("s.<init>(" + i + ',' + i_57_ + ',' + i_58_ + ',' + (is != null ? "{...}" : "null") + ')'));
 		}

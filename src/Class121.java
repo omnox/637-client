@@ -18,8 +18,8 @@ final class Class121 {
 			}
 			if (i_0_ != 126)
 				anIntArray1006 = null;
-			synchronized (((Class121) this).aClass79_1003) {
-				((Class121) this).aClass79_1003.method800((byte) 62, i);
+			synchronized (this.aClass79_1003) {
+				this.aClass79_1003.method800((byte) 62, i);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hv.A(" + i + ',' + i_0_ + ')');
@@ -41,8 +41,8 @@ final class Class121 {
 			synchronized (aClass79_1007) {
 				aClass79_1007.method806((byte) -104);
 			}
-			synchronized (((Class121) this).aClass79_1003) {
-				((Class121) this).aClass79_1003.method806((byte) 49);
+			synchronized (this.aClass79_1003) {
+				this.aClass79_1003.method806((byte) 49);
 			}
 			if (i != 0)
 				method2191(66, (byte) -78);
@@ -56,7 +56,7 @@ final class Class121 {
 			Class86 class86;
 			synchronized (aClass79_1007) {
 				int i_2_ = -98 % ((i - 32) / 44);
-				class86 = (Class86) aClass79_1007.get((long) i_1_);
+				class86 = (Class86) aClass79_1007.get(i_1_);
 			}
 			if (class86 != null)
 				return class86;
@@ -65,11 +65,11 @@ final class Class121 {
 				is = aClass207_1002.readArchive(i_1_, 46);
 			}
 			class86 = new Class86();
-			((Class86) class86).aClass121_644 = this;
+			class86.aClass121_644 = this;
 			if (is != null)
 				class86.method851(new RSByteBuffer(is), -1);
 			synchronized (aClass79_1007) {
-				aClass79_1007.put((long) i_1_, class86);
+				aClass79_1007.put(i_1_, class86);
 			}
 			return class86;
 		} catch (RuntimeException runtimeexception) {
@@ -82,7 +82,7 @@ final class Class121 {
 			if (i != 30574)
 				anIntArray1006 = null;
 			Class2.anInt71 = 0;
-			for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > -2049; i_3_++) {
+			for (int i_3_ = 0; i_3_ < 2048; i_3_++) {
 				Class224_Sub3_Sub1.aClass98_Sub22Array6146[i_3_] = null;
 				Class98_Sub10_Sub21.aByteArray5642[i_3_] = (byte) 1;
 				Class306.aClass376Array2562[i_3_] = null;
@@ -111,8 +111,8 @@ final class Class121 {
 					method2193(-47);
 				aClass79_1007.method794(95);
 			}
-			synchronized (((Class121) this).aClass79_1003) {
-				((Class121) this).aClass79_1003.method794(94);
+			synchronized (this.aClass79_1003) {
+				this.aClass79_1003.method794(94);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hv.F(" + i + ')');
@@ -133,12 +133,12 @@ final class Class121 {
 				aClass171_1001 = null;
 			for (int i_13_ = i_11_; i_13_ < 0; i_13_++) {
 				for (int i_14_ = i_12_; i_14_ < 0; i_14_++) {
-					if ((is[i] ^ 0xffffffff) == -1)
+					if (is[i] == 0)
 						return true;
 					i += i_6_;
 				}
 				i -= i_10_;
-				if ((is[-1 + i] ^ 0xffffffff) == -1)
+				if (is[-1 + i] == 0)
 					return true;
 				i += i_4_;
 			}
@@ -151,7 +151,7 @@ final class Class121 {
 	Class121(Class279 class279, int i, RuneScapeCache class207, RuneScapeCache class207_15_) {
 		try {
 			aClass207_1002 = class207;
-			((Class121) this).aClass207_1005 = class207_15_;
+			this.aClass207_1005 = class207_15_;
 			aClass207_1002.method2761(0, 46);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("hv.<init>(" + (class279 != null ? "{...}" : "null") + ',' + i + ',' + (class207 != null ? "{...}" : "null") + ',' + (class207_15_ != null ? "{...}" : "null") + ')'));

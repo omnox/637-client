@@ -29,32 +29,32 @@ final class Class98_Sub10_Sub17 extends Class98_Sub10 {
 
 	final int[] method990(int i, int i_0_) {
 		try {
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_0_);
+			int[] is = this.aClass16_3863.method237((byte) 98, i_0_);
 			if (i != 255)
 				return null;
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
+			if (this.aClass16_3863.aBoolean198) {
 				int i_1_ = Class352.anIntArray3001[i_0_];
-				for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > (Class25.anInt268 ^ 0xffffffff); i_2_++) {
+				for (int i_2_ = 0; Class25.anInt268 > i_2_; i_2_++) {
 					int i_3_ = Class64_Sub1.anIntArray3640[i_2_];
-					if ((anInt5622 ^ 0xffffffff) > (i_3_ ^ 0xffffffff) && i_3_ < 4096 - anInt5622 && -anInt5622 + 2048 < i_1_ && (anInt5622 + 2048 ^ 0xffffffff) < (i_1_ ^ 0xffffffff)) {
+					if (i_3_ > anInt5622 && i_3_ < 4096 - anInt5622 && -anInt5622 + 2048 < i_1_ && i_1_ < anInt5622 + 2048) {
 						int i_4_ = -i_3_ + 2048;
 						i_4_ = i_4_ >= 0 ? i_4_ : -i_4_;
 						i_4_ <<= 12;
 						i_4_ /= 2048 + -anInt5622;
 						is[i_2_] = -i_4_ + 4096;
-					} else if ((i_3_ ^ 0xffffffff) < (2048 - anInt5622 ^ 0xffffffff) && i_3_ < 2048 + anInt5622) {
+					} else if (2048 - anInt5622 < i_3_ && i_3_ < 2048 + anInt5622) {
 						int i_5_ = i_1_ + -2048;
-						i_5_ = (i_5_ ^ 0xffffffff) > -1 ? -i_5_ : i_5_;
+						i_5_ = i_5_ < 0 ? -i_5_ : i_5_;
 						i_5_ -= anInt5622;
 						i_5_ <<= 12;
 						is[i_2_] = i_5_ / (2048 + -anInt5622);
-					} else if (i_1_ < anInt5622 || (i_1_ ^ 0xffffffff) < (-anInt5622 + 4096 ^ 0xffffffff)) {
+					} else if (i_1_ < anInt5622 || -anInt5622 + 4096 < i_1_) {
 						int i_6_ = -2048 + i_3_;
 						i_6_ = i_6_ < 0 ? -i_6_ : i_6_;
 						i_6_ -= anInt5622;
 						i_6_ <<= 12;
 						is[i_2_] = i_6_ / (2048 + -anInt5622);
-					} else if ((i_3_ ^ 0xffffffff) > (anInt5622 ^ 0xffffffff) || ((4096 + -anInt5622 ^ 0xffffffff) > (i_3_ ^ 0xffffffff))) {
+					} else if (anInt5622 > i_3_ || (i_3_ > 4096 + -anInt5622)) {
 						int i_7_ = -i_1_ + 2048;
 						i_7_ = i_7_ < 0 ? -i_7_ : i_7_;
 						i_7_ <<= 12;
@@ -75,7 +75,7 @@ final class Class98_Sub10_Sub17 extends Class98_Sub10 {
 			if (i_8_ > -92)
 				anInt5623 = -16;
 			int i_9_ = i;
-			if ((i_9_ ^ 0xffffffff) == -1)
+			if (i_9_ == 0)
 				anInt5622 = class98_sub22.readShort();
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ks.A(" + i + ',' + (class98_sub22 != null ? "{...}" : "null") + ',' + i_8_ + ')'));

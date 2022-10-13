@@ -22,7 +22,7 @@ final class Class366 {
 				method3946(true, -13, null);
 			for (;;) {
 				int i_0_ = class98_sub22.readUnsignedByte();
-				if ((i_0_ ^ 0xffffffff) == -1)
+				if (i_0_ == 0)
 					break;
 				method3946(false, i_0_, class98_sub22);
 			}
@@ -35,9 +35,9 @@ final class Class366 {
 		try {
 			if (bool == false) {
 				if (i == 1) {
-					((Class366) this).anInt3115 = class98_sub22.readShort();
-					((Class366) this).anInt3116 = class98_sub22.readUnsignedByte();
-					((Class366) this).anInt3118 = class98_sub22.readUnsignedByte();
+					this.anInt3115 = class98_sub22.readShort();
+					this.anInt3116 = class98_sub22.readUnsignedByte();
+					this.anInt3118 = class98_sub22.readUnsignedByte();
 				}
 			}
 		} catch (RuntimeException runtimeexception) {

@@ -26,13 +26,13 @@ abstract class Class98_Sub46_Sub13 extends Class98_Sub46 {
 					int i_8_ = i_5_ + -Class98_Sub46_Sub10.renderX;
 					int i_9_ = -Class79.renderY + i_7_;
 					int i_10_ = -Class134.renderZ + i_6_;
-					int i_11_ = (int) Math.sqrt((double) (i_8_ * i_8_ + i_10_ * i_10_));
-					GameWorld.cameraPitch = 0x3fff & (int) (2607.5945876176133 * Math.atan2((double) i_9_, (double) i_11_));
-					GameWorld.cameraYaw = 0x3fff & (int) (Math.atan2((double) i_8_, (double) i_10_) * -2607.5945876176133);
+					int i_11_ = (int) Math.sqrt(i_8_ * i_8_ + i_10_ * i_10_);
+					GameWorld.cameraPitch = 0x3fff & (int) (2607.5945876176133 * Math.atan2(i_9_, i_11_));
+					GameWorld.cameraYaw = 0x3fff & (int) (Math.atan2(i_8_, i_10_) * -2607.5945876176133);
 					Class308.anInt2584 = 0;
-					if ((GameWorld.cameraPitch ^ 0xffffffff) > -1025)
+					if (GameWorld.cameraPitch < 1024)
 						GameWorld.cameraPitch = 1024;
-					if ((GameWorld.cameraPitch ^ 0xffffffff) < -3073)
+					if (GameWorld.cameraPitch > 3072)
 						GameWorld.cameraPitch = 3072;
 				}
 				Class98_Sub46_Sub20_Sub2.anInt6319 = 2;

@@ -58,7 +58,7 @@ final class Class98_Sub26 extends Node {
 			for (int i_10_ = i_4_; i_10_ > i_7_; i_10_--)
 				Class333.method3761(i_3_, Class97.anIntArrayArray814[i_10_], i_5_, i_1_, (byte) 81);
 			int i_11_ = i_2_ + i_5_;
-			for (int i_12_ = i_6_; (i_12_ ^ 0xffffffff) >= (i_7_ ^ 0xffffffff); i_12_++) {
+			for (int i_12_ = i_6_; i_7_ >= i_12_; i_12_++) {
 				int[] is = Class97.anIntArrayArray814[i_12_];
 				Class333.method3761(i_3_, is, i_5_, i_11_, (byte) -127);
 				Class333.method3761(i_3_, is, i_9_, i_1_, (byte) -126);
@@ -70,8 +70,8 @@ final class Class98_Sub26 extends Node {
 
 	Class98_Sub26(int i, int i_13_) {
 		try {
-			((Class98_Sub26) this).anInt4031 = i;
-			((Class98_Sub26) this).anInt4032 = i_13_;
+			this.anInt4031 = i;
+			this.anInt4032 = i_13_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("kaa.<init>(" + i + ',' + i_13_ + ')'));
 		}

@@ -18,9 +18,9 @@ final class Class98_Sub46_Sub14 extends Class98_Sub46 implements Interface3 {
 	static final void method1602(int i, int i_0_, int i_1_) {
 		Class172 class172 = Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[i][i_0_][i_1_];
 		if (class172 != null) {
-			Class129.method2227(((Class172) class172).aClass246_Sub3_Sub1_1332);
-			if (((Class172) class172).aClass246_Sub3_Sub1_1332 != null)
-				((Class172) class172).aClass246_Sub3_Sub1_1332 = null;
+			Class129.method2227(class172.aClass246_Sub3_Sub1_1332);
+			if (class172.aClass246_Sub3_Sub1_1332 != null)
+				class172.aClass246_Sub3_Sub1_1332 = null;
 		}
 	}
 
@@ -93,7 +93,7 @@ final class Class98_Sub46_Sub14 extends Class98_Sub46 implements Interface3 {
 				method1607(null, (byte) 113);
 			if (class228 == null)
 				return false;
-			return s_Sub1.method3427(((Class228) class228).anInt1713, (((Class228) class228).anInt1714 - ((Class228) class228).anInt1712), (((Class228) class228).anInt1708 - ((Class228) class228).anInt1713), (((Class228) class228).anInt1709 - ((Class228) class228).anInt1715), (byte) 16, ((Class228) class228).anInt1715, ((Class228) class228).anInt1712);
+			return s_Sub1.method3427(class228.anInt1713, (class228.anInt1714 - class228.anInt1712), (class228.anInt1708 - class228.anInt1713), (class228.anInt1709 - class228.anInt1715), (byte) 16, class228.anInt1715, class228.anInt1712);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("is.D(" + (class228 != null ? "{...}" : "null") + ',' + i + ')'));
 		}
@@ -124,13 +124,13 @@ final class Class98_Sub46_Sub14 extends Class98_Sub46 implements Interface3 {
 		try {
 			anInt5379 = i;
 			aHa_Sub1_5373 = var_ha_Sub1;
-			((Class98_Sub46_Sub14) this).anInt5377 = i_5_;
-			((Class98_Sub46_Sub14) this).anInt5376 = i_4_;
+			this.anInt5377 = i_5_;
+			this.anInt5376 = i_4_;
 			OpenGL.glGenRenderbuffersEXT(1, Class76_Sub9.anIntArray3785, 0);
 			anInt5381 = Class76_Sub9.anIntArray3785[0];
 			OpenGL.glBindRenderbufferEXT(36161, anInt5381);
-			OpenGL.glRenderbufferStorageEXT(36161, anInt5379, (((Class98_Sub46_Sub14) this).anInt5376), (((Class98_Sub46_Sub14) this).anInt5377));
-			anInt5374 = (((Class98_Sub46_Sub14) this).anInt5376 * (((Class98_Sub46_Sub14) this).anInt5377 * aHa_Sub1_5373.method1866(-96, anInt5379)));
+			OpenGL.glRenderbufferStorageEXT(36161, anInt5379, (this.anInt5376), (this.anInt5377));
+			anInt5374 = (this.anInt5376 * (this.anInt5377 * aHa_Sub1_5373.method1866(-96, anInt5379)));
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("is.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ')'));
 		}
@@ -140,13 +140,13 @@ final class Class98_Sub46_Sub14 extends Class98_Sub46 implements Interface3 {
 		try {
 			aHa_Sub1_5373 = var_ha_Sub1;
 			anInt5379 = i;
-			((Class98_Sub46_Sub14) this).anInt5376 = i_6_;
-			((Class98_Sub46_Sub14) this).anInt5377 = i_7_;
+			this.anInt5376 = i_6_;
+			this.anInt5377 = i_7_;
 			OpenGL.glGenRenderbuffersEXT(1, Class76_Sub9.anIntArray3785, 0);
 			anInt5381 = Class76_Sub9.anIntArray3785[0];
 			OpenGL.glBindRenderbufferEXT(36161, anInt5381);
-			OpenGL.glRenderbufferStorageMultisampleEXT(36161, i_8_, anInt5379, ((Class98_Sub46_Sub14) this).anInt5376, ((Class98_Sub46_Sub14) this).anInt5377);
-			anInt5374 = (((Class98_Sub46_Sub14) this).anInt5377 * ((Class98_Sub46_Sub14) this).anInt5376 * aHa_Sub1_5373.method1866(-121, anInt5379));
+			OpenGL.glRenderbufferStorageMultisampleEXT(36161, i_8_, anInt5379, this.anInt5376, this.anInt5377);
+			anInt5374 = (this.anInt5377 * this.anInt5376 * aHa_Sub1_5373.method1866(-121, anInt5379));
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("is.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ',' + i + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ')'));
 		}

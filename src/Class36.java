@@ -31,9 +31,9 @@ final class Class36 {
 		try {
 			if (i_0_ > -23)
 				method341(34, -5);
-			if ((i ^ 0xffffffff) == -11 || i == 25 || (i ^ 0xffffffff) == -12 || (i ^ 0xffffffff) == -13 || i == 17)
+			if (i == 10 || i == 25 || i == 11 || i == 12 || i == 17)
 				return true;
-			if ((i ^ 0xffffffff) == -49 || (i ^ 0xffffffff) == -1003)
+			if (i == 48 || i == 1002)
 				return true;
 			return false;
 		} catch (RuntimeException runtimeexception) {

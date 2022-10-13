@@ -41,8 +41,8 @@ final class Class196 {
 	static final void method2666(int i, boolean bool, GameInterface class98_sub18, boolean bool_0_) {
 		do {
 			try {
-				int i_1_ = ((GameInterface) class98_sub18).interfaceID;
-				int i_2_ = (int) ((Node) class98_sub18).uid;
+				int i_1_ = class98_sub18.interfaceID;
+				int i_2_ = (int) class98_sub18.uid;
 				class98_sub18.remove();
 				if (bool_0_)
 					Class246.method2964(false, i_1_);
@@ -51,7 +51,7 @@ final class Class196 {
 				if (class293 != null)
 					Class341.method3812(1, class293);
 				Class230.method2869(106);
-				if (!bool && (Class15.anInt185 ^ 0xffffffff) != 0)
+				if (!bool && Class15.anInt185 != -1)
 					RuneScapeCache.method2764(1, Class15.anInt185, -44);
 				Class61 class61 = new Class61(Class116.aClass377_964);
 				for (GameInterface class98_sub18_3_ = (GameInterface) class61.method541(0); class98_sub18_3_ != null; class98_sub18_3_ = (GameInterface) class61.method539(i + -16396)) {
@@ -60,9 +60,9 @@ final class Class196 {
 						if (class98_sub18_3_ == null)
 							break;
 					}
-					if ((((GameInterface) class98_sub18_3_).interfaceClickThrough ^ 0xffffffff) == -4) {
-						int i_4_ = (int) ((Node) class98_sub18_3_).uid;
-						if ((i_1_ ^ 0xffffffff) == (i_4_ >>> 330667472 ^ 0xffffffff))
+					if (class98_sub18_3_.interfaceClickThrough == 3) {
+						int i_4_ = (int) class98_sub18_3_.uid;
+						if (i_4_ >>> 16 == i_1_)
 							method2666(16398, bool, class98_sub18_3_, true);
 					}
 				}
@@ -109,7 +109,7 @@ final class Class196 {
 
 	Class196(String string, String string_6_, String string_7_, int i) {
 		try {
-			((Class196) this).anInt1510 = i;
+			this.anInt1510 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("mu.<init>(" + (string != null ? "{...}" : "null") + ',' + (string_6_ != null ? "{...}" : "null") + ',' + (string_7_ != null ? "{...}" : "null") + ',' + i + ')'));
 		}

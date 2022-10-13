@@ -39,7 +39,7 @@ final class Class69_Sub1 extends Class69 implements Interface2_Impl2 {
 	public final boolean method79(byte i) {
 		try {
 			int i_0_ = 116 % ((-46 - i) / 32);
-			return super.method703((byte) -68, (((ha_Sub3_Sub2) ((Class69) this).aHa_Sub3_Sub2_3217).aMapBuffer6125));
+			return super.method703((byte) -68, (this.aHa_Sub3_Sub2_3217.aMapBuffer6125));
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ud.N(" + i + ')');
 		}
@@ -49,7 +49,7 @@ final class Class69_Sub1 extends Class69 implements Interface2_Impl2 {
 		try {
 			if (i > -79)
 				anInt5330 = 20;
-			return super.method694(bool, (((ha_Sub3_Sub2) ((Class69) this).aHa_Sub3_Sub2_3217).aMapBuffer6125), -15793);
+			return super.method694(bool, (this.aHa_Sub3_Sub2_3217.aMapBuffer6125), -15793);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ud.O(" + bool + ',' + i + ')');
 		}
@@ -57,7 +57,7 @@ final class Class69_Sub1 extends Class69 implements Interface2_Impl2 {
 
 	public final void method76(int i, int i_1_) {
 		try {
-			super.method76(((Class162) aClass162_5331).anInt1263 * i, i_1_);
+			super.method76(aClass162_5331.anInt1263 * i, i_1_);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ud.G(" + i + ',' + i_1_ + ')');
 		}

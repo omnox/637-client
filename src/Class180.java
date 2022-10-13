@@ -15,10 +15,10 @@ final class Class180 implements Interface14 {
 	static final boolean method2603(byte i, Interface19 interface19) {
 		try {
 			Class352 class352 = Class130.aClass302_1028.method3546(interface19.method64(30472), (byte) 119);
-			if ((((Class352) class352).anInt2990 ^ 0xffffffff) == 0)
+			if (class352.anInt2990 == -1)
 				return true;
-			Class9 class9 = Class98_Sub10_Sub23.aClass335_5662.method3766(((Class352) class352).anInt2990, (byte) -73);
-			if ((((Class9) class9).anInt114 ^ 0xffffffff) == 0)
+			Class9 class9 = Class98_Sub10_Sub23.aClass335_5662.method3766(class352.anInt2990, (byte) -73);
+			if (class9.anInt114 == -1)
 				return true;
 			if (i != 76)
 				return true;
@@ -42,9 +42,9 @@ final class Class180 implements Interface14 {
 		try {
 			if (i_0_ != -21568)
 				aShortArrayArray3402 = null;
-			((OutgoingPacket) class98_sub11).packet.writeInt(1571862888, i_1_);
-			((OutgoingPacket) class98_sub11).packet.writeLEShortA(i, i_0_ + 21696);
-			((OutgoingPacket) class98_sub11).packet.writeShort(i_2_);
+			class98_sub11.packet.writeInt(1571862888, i_1_);
+			class98_sub11.packet.writeLEShortA(i, i_0_ + 21696);
+			class98_sub11.packet.writeShort(i_2_);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("maa.A(" + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + (class98_sub11 != null ? "{...}" : "null") + ')'));
 		}

@@ -13,7 +13,7 @@ final class Class139 {
 			synchronized (aClass79_1089) {
 				aClass79_1089.method794(4);
 				if (i > -102)
-					((Class139) this).anInt1086 = 56;
+					this.anInt1086 = 56;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "jj.D(" + i + ')');
@@ -24,21 +24,21 @@ final class Class139 {
 		try {
 			Class167 class167;
 			synchronized (aClass79_1089) {
-				class167 = (Class167) aClass79_1089.get((long) i);
+				class167 = (Class167) aClass79_1089.get(i);
 			}
 			if (class167 != null)
 				return class167;
 			byte[] is;
 			synchronized (aClass207_1088) {
 				if (i_0_ != 16)
-					((Class139) this).anInt1086 = 120;
+					this.anInt1086 = 120;
 				is = aClass207_1088.readArchive(i, 16);
 			}
 			class167 = new Class167();
 			if (is != null)
 				class167.method2527(new RSByteBuffer(is), -2);
 			synchronized (aClass79_1089) {
-				aClass79_1089.put((long) i, class167);
+				aClass79_1089.put(i, class167);
 			}
 			return class167;
 		} catch (RuntimeException runtimeexception) {
@@ -73,9 +73,9 @@ final class Class139 {
 		try {
 			aClass207_1088 = class207;
 			if (aClass207_1088 == null)
-				((Class139) this).anInt1086 = 0;
+				this.anInt1086 = 0;
 			else
-				((Class139) this).anInt1086 = aClass207_1088.method2761(0, 16);
+				this.anInt1086 = aClass207_1088.method2761(0, 16);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("jj.<init>(" + (class279 != null ? "{...}" : "null") + ',' + i + ',' + (class207 != null ? "{...}" : "null") + ')'));
 		}

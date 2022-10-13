@@ -25,12 +25,12 @@ final class Class252 {
 		try {
 			if (bool != true)
 				return null;
-			Class98_Sub46 class98_sub46 = (((Class98_Sub46) ((Class215) aClass215_1922).aClass98_Sub46_1615).aClass98_Sub46_4262);
-			if (class98_sub46 == ((Class215) aClass215_1922).aClass98_Sub46_1615) {
+			Class98_Sub46 class98_sub46 = (aClass215_1922.aClass98_Sub46_1615.aClass98_Sub46_4262);
+			if (class98_sub46 == aClass215_1922.aClass98_Sub46_1615) {
 				aClass98_Sub46_1925 = null;
 				return null;
 			}
-			aClass98_Sub46_1925 = ((Class98_Sub46) class98_sub46).aClass98_Sub46_4262;
+			aClass98_Sub46_1925 = class98_sub46.aClass98_Sub46_4262;
 			return class98_sub46;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "pq.C(" + bool + ')');
@@ -42,11 +42,11 @@ final class Class252 {
 			if (i != 0)
 				method3172(-48);
 			Class98_Sub46 class98_sub46 = aClass98_Sub46_1925;
-			if (((Class215) aClass215_1922).aClass98_Sub46_1615 == class98_sub46) {
+			if (aClass215_1922.aClass98_Sub46_1615 == class98_sub46) {
 				aClass98_Sub46_1925 = null;
 				return null;
 			}
-			aClass98_Sub46_1925 = ((Class98_Sub46) class98_sub46).aClass98_Sub46_4262;
+			aClass98_Sub46_1925 = class98_sub46.aClass98_Sub46_4262;
 			return class98_sub46;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "pq.B(" + i + ')');

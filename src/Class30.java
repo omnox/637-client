@@ -9,7 +9,7 @@ final class Class30 {
 			int i_0_ = class98_sub22.readUnsignedByte();
 			if (i_0_ != 2)
 				return false;
-			boolean bool = (class98_sub22.readUnsignedByte() ^ 0xffffffff) == -2;
+			boolean bool = class98_sub22.readUnsignedByte() == 1;
 			if (bool)
 				ha_Sub1.method1853(2, class98_sub22);
 			int i_1_ = -95 % ((-30 - i) / 48);

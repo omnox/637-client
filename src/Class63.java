@@ -30,7 +30,7 @@ final class Class63 {
 			if (i_4_ <= 0)
 				throw new IllegalArgumentException();
 			if (Class81.method815(i_4_, 0))
-				return (int) (((0xffffffffL & (long) random.nextInt()) * (long) i_4_) >> -1163578144);
+				return (int) (((0xffffffffL & (long) random.nextInt()) * (long) i_4_) >> 32);
 			if (i != -28737)
 				method549(null, false, (byte) 77);
 			int i_5_ = -(int) (4294967296L % (long) i_4_) + -2147483648;
@@ -50,9 +50,9 @@ final class Class63 {
 				anInt492 = 76;
 			if (!Class98_Sub17.aBoolean3942 || !Class135.aBoolean1052)
 				return false;
-			if ((Class4.anInt81 ^ 0xffffffff) > -101)
+			if (Class4.anInt81 < 100)
 				return false;
-			if ((i_9_ ^ 0xffffffff) == (i ^ 0xffffffff) && i_10_ == i_7_) {
+			if (i == i_9_ && i_10_ == i_7_) {
 				if (!Class76_Sub5.method758((byte) 105, i_11_, i_7_, i))
 					return false;
 				if (Class98_Sub46_Sub14.method1607(class228, (byte) 86)) {
@@ -61,8 +61,8 @@ final class Class63 {
 				}
 				return false;
 			}
-			for (int i_12_ = i; (i_9_ ^ 0xffffffff) <= (i_12_ ^ 0xffffffff); i_12_++) {
-				for (int i_13_ = i_7_; (i_13_ ^ 0xffffffff) >= (i_10_ ^ 0xffffffff); i_13_++) {
+			for (int i_12_ = i; i_12_ <= i_9_; i_12_++) {
+				for (int i_13_ = i_7_; i_10_ >= i_13_; i_13_++) {
 					if ((Class98_Sub46_Sub13_Sub2.anIntArrayArrayArray6311[i_11_][i_12_][i_13_]) == -Class356.anInt3020)
 						return false;
 				}
@@ -101,16 +101,16 @@ final class Class63 {
 	static final void method549(GameInterfaceData class293, boolean bool, byte i) {
 		do {
 			try {
-				int i_14_ = (((GameInterfaceData) class293).anInt2290 != 0 ? ((GameInterfaceData) class293).anInt2290 : ((GameInterfaceData) class293).anInt2311);
-				int i_15_ = ((((GameInterfaceData) class293).anInt2228 ^ 0xffffffff) == -1 ? ((GameInterfaceData) class293).anInt2258 : ((GameInterfaceData) class293).anInt2228);
-				Class224_Sub2.method2837(bool, (Class159.gameInterfaces[(((GameInterfaceData) class293).anInt2248 >> 949187376)]), i_14_, true, i_15_, ((GameInterfaceData) class293).anInt2248);
+				int i_14_ = (class293.anInt2290 != 0 ? class293.anInt2290 : class293.anInt2311);
+				int i_15_ = (class293.anInt2228 == 0 ? class293.anInt2258 : class293.anInt2228);
+				Class224_Sub2.method2837(bool, (Class159.gameInterfaces[(class293.anInt2248 >> 16)]), i_14_, true, i_15_, class293.anInt2248);
 				int i_16_ = -112 % ((3 - i) / 40);
-				if (((GameInterfaceData) class293).interfaceComponents != null)
-					Class224_Sub2.method2837(bool, (((GameInterfaceData) class293).interfaceComponents), i_14_, true, i_15_, ((GameInterfaceData) class293).anInt2248);
-				GameInterface class98_sub18 = ((GameInterface) Class116.aClass377_964.method3990((long) (((GameInterfaceData) class293).anInt2248), -1));
+				if (class293.interfaceComponents != null)
+					Class224_Sub2.method2837(bool, (class293.interfaceComponents), i_14_, true, i_15_, class293.anInt2248);
+				GameInterface class98_sub18 = ((GameInterface) Class116.aClass377_964.method3990(class293.anInt2248, -1));
 				if (class98_sub18 == null)
 					break;
-				Class378.method4005(i_14_, ((GameInterface) class98_sub18).interfaceID, -1, bool, i_15_);
+				Class378.method4005(i_14_, class98_sub18.interfaceID, -1, bool, i_15_);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("ee.E(" + (class293 != null ? "{...}" : "null") + ',' + bool + ',' + i + ')'));
 			}

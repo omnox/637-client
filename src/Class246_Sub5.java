@@ -25,16 +25,16 @@ final class Class246_Sub5 extends Class246 {
 	}
 
 	final Class242 method3115() {
-		((Class242) ((Class246_Sub5) this).aClass242_5104).aClass358_1850.method3886((byte) -17);
-		for (int i = 0; i < (((Class246_Sub5) this).aClass246_Sub4_Sub2_Sub1Array5095).length; i++) {
-			if ((((Class246_Sub5) this).aClass246_Sub4_Sub2_Sub1Array5095[i] != null) && ((Class246_Sub4_Sub2_Sub1) (((Class246_Sub5) this).aClass246_Sub4_Sub2_Sub1Array5095[i])).aClass246_Sub9_6492 != null)
-				((Class242) ((Class246_Sub5) this).aClass242_5104).aClass358_1850.method3891((((Class246_Sub5) this).aClass246_Sub4_Sub2_Sub1Array5095[i]), 8);
+		this.aClass242_5104.aClass358_1850.method3886((byte) -17);
+		for (int i = 0; i < (this.aClass246_Sub4_Sub2_Sub1Array5095).length; i++) {
+			if ((this.aClass246_Sub4_Sub2_Sub1Array5095[i] != null) && this.aClass246_Sub4_Sub2_Sub1Array5095[i].aClass246_Sub9_6492 != null)
+				this.aClass242_5104.aClass358_1850.method3891((this.aClass246_Sub4_Sub2_Sub1Array5095[i]), 8);
 		}
-		return ((Class246_Sub5) this).aClass242_5104;
+		return this.aClass242_5104;
 	}
 
 	final Class242 method3116() {
-		return ((Class246_Sub5) this).aClass242_5104;
+		return this.aClass242_5104;
 	}
 
 	static final Class246_Sub5 method3117(int i, boolean bool) {
@@ -48,7 +48,7 @@ final class Class246_Sub5 extends Class246 {
 	}
 
 	final void method3118(ha var_ha) {
-		((Class242) ((Class246_Sub5) this).aClass242_5104).aClass358_1850.method3886((byte) 99);
+		this.aClass242_5104.aClass358_1850.method3886((byte) 99);
 		for (Class246_Sub9 class246_sub9 = (Class246_Sub9) aClass218_5097.method2803((byte) 15); class246_sub9 != null; class246_sub9 = (Class246_Sub9) aClass218_5097.method2809(false))
 			class246_sub9.method3134(aLong5100, var_ha, (byte) 38);
 	}
@@ -59,20 +59,20 @@ final class Class246_Sub5 extends Class246 {
 		while_102_: for (Class246_Sub9 class246_sub9 = (Class246_Sub9) aClass218_5097.method2803((byte) 15); class246_sub9 != null; class246_sub9 = (Class246_Sub9) aClass218_5097.method2809(false)) {
 			if (class87s != null) {
 				for (int i = 0; i < class87s.length; i++) {
-					if ((((Class246_Sub9) class246_sub9).aClass87_5131 == class87s[i]) || (((Class246_Sub9) class246_sub9).aClass87_5131 == ((Class87) class87s[i]).aClass87_657)) {
+					if ((class246_sub9.aClass87_5131 == class87s[i]) || (class246_sub9.aClass87_5131 == class87s[i].aClass87_657)) {
 						aBooleanArray5098[i] = true;
 						class246_sub9.method3138(-1);
-						((Class246_Sub9) class246_sub9).aBoolean5139 = false;
+						class246_sub9.aBoolean5139 = false;
 						continue while_102_;
 					}
 				}
 			}
 			if (!bool) {
-				if (((Class246_Sub9) class246_sub9).anInt5135 == 0) {
+				if (class246_sub9.anInt5135 == 0) {
 					class246_sub9.method2965((byte) 122);
 					anInt5103--;
 				} else
-					((Class246_Sub9) class246_sub9).aBoolean5139 = true;
+					class246_sub9.aBoolean5139 = true;
 			}
 		}
 		if (class87s != null) {
@@ -90,7 +90,7 @@ final class Class246_Sub5 extends Class246 {
 	}
 
 	final void method3120(ha var_ha, long l, Class87[] class87s, Class35[] class35s, boolean bool) {
-		if (!((Class246_Sub5) this).aBoolean5099) {
+		if (!this.aBoolean5099) {
 			method3119(var_ha, class87s, bool);
 			method3122(class35s, bool);
 			aLong5101 = l;
@@ -109,7 +109,7 @@ final class Class246_Sub5 extends Class246 {
 		int i = (int) (l - aLong5100);
 		if (aBoolean5107) {
 			for (Class246_Sub9 class246_sub9 = (Class246_Sub9) aClass218_5097.method2803((byte) 15); class246_sub9 != null; class246_sub9 = (Class246_Sub9) aClass218_5097.method2809(false)) {
-				for (int i_0_ = 0; i_0_ < ((Class92) (((Class246_Sub9) class246_sub9).aClass92_5132)).anInt784; i_0_++)
+				for (int i_0_ = 0; i_0_ < class246_sub9.aClass92_5132.anInt784; i_0_++)
 					class246_sub9.method3135(var_ha, !aBoolean5096, l, -64, 1);
 			}
 			aBoolean5107 = false;
@@ -123,10 +123,10 @@ final class Class246_Sub5 extends Class246 {
 	private final void method3122(Class35[] class35s, boolean bool) {
 		for (int i = 0; i < 8; i++)
 			aBooleanArray5094[i] = false;
-		while_104_: for (Class98_Sub46_Sub6 class98_sub46_sub6 = ((Class98_Sub46_Sub6) ((Class246_Sub5) this).aClass148_5102.method2418(32)); class98_sub46_sub6 != null; class98_sub46_sub6 = ((Class98_Sub46_Sub6) ((Class246_Sub5) this).aClass148_5102.method2417(91))) {
+		while_104_: for (Class98_Sub46_Sub6 class98_sub46_sub6 = ((Class98_Sub46_Sub6) this.aClass148_5102.method2418(32)); class98_sub46_sub6 != null; class98_sub46_sub6 = ((Class98_Sub46_Sub6) this.aClass148_5102.method2417(91))) {
 			if (class35s != null) {
 				for (int i = 0; i < class35s.length; i++) {
-					if ((((Class98_Sub46_Sub6) class98_sub46_sub6).aClass35_5971) == class35s[i] || ((((Class98_Sub46_Sub6) class98_sub46_sub6).aClass35_5971) == ((Class35) class35s[i]).aClass35_328)) {
+					if ((class98_sub46_sub6.aClass35_5971) == class35s[i] || ((class98_sub46_sub6.aClass35_5971) == class35s[i].aClass35_328)) {
 						aBooleanArray5094[i] = true;
 						class98_sub46_sub6.method1547(-121);
 						continue while_104_;
@@ -148,14 +148,14 @@ final class Class246_Sub5 extends Class246 {
 					break;
 				if (!aBooleanArray5094[i]) {
 					Class98_Sub46_Sub6 class98_sub46_sub6 = null;
-					if ((((Class66) class35s[i].method331((byte) 110)).anInt508 == 1) && Class340.anInt2849 < 32) {
+					if ((class35s[i].method331((byte) 110).anInt508 == 1) && Class340.anInt2849 < 32) {
 						class98_sub46_sub6 = new Class98_Sub46_Sub6(class35s[i], this);
-						Class246_Sub3_Sub3.aClass254_6152.method3185((byte) -14, class98_sub46_sub6, (long) ((Class35) class35s[i]).anInt329);
+						Class246_Sub3_Sub3.aClass254_6152.method3185((byte) -14, class98_sub46_sub6, class35s[i].anInt329);
 						Class340.anInt2849++;
 					}
 					if (class98_sub46_sub6 == null)
 						class98_sub46_sub6 = new Class98_Sub46_Sub6(class35s[i], this);
-					((Class246_Sub5) this).aClass148_5102.add_last(class98_sub46_sub6, -20911);
+					this.aClass148_5102.add_last(class98_sub46_sub6, -20911);
 					anInt5105++;
 					aBooleanArray5094[i] = true;
 				}
@@ -164,15 +164,15 @@ final class Class246_Sub5 extends Class246 {
 	}
 
 	final void method3123(int i, int i_1_, int i_2_, int i_3_, int i_4_) {
-		((Class246_Sub5) this).anInt5106 = i;
+		this.anInt5106 = i;
 	}
 
 	private final void method3124(int i, boolean bool) {
 		Class267.aClass218_2002.method2808(true, this);
-		aLong5101 = (long) i;
-		aLong5100 = (long) i;
+		aLong5101 = i;
+		aLong5100 = i;
 		aBoolean5107 = true;
-		((Class246_Sub5) this).aBoolean5108 = bool;
+		this.aBoolean5108 = bool;
 	}
 
 	public static void method3125() {
@@ -193,21 +193,21 @@ final class Class246_Sub5 extends Class246 {
 	}
 
 	final void method3129() {
-		((Class246_Sub5) this).aBoolean5099 = true;
-		for (Class98_Sub46_Sub6 class98_sub46_sub6 = ((Class98_Sub46_Sub6) ((Class246_Sub5) this).aClass148_5102.method2418(32)); class98_sub46_sub6 != null; class98_sub46_sub6 = ((Class98_Sub46_Sub6) ((Class246_Sub5) this).aClass148_5102.method2417(111))) {
-			if (((Class66) (((Class98_Sub46_Sub6) class98_sub46_sub6).aClass66_5973)).anInt508 == 1)
+		this.aBoolean5099 = true;
+		for (Class98_Sub46_Sub6 class98_sub46_sub6 = ((Class98_Sub46_Sub6) this.aClass148_5102.method2418(32)); class98_sub46_sub6 != null; class98_sub46_sub6 = ((Class98_Sub46_Sub6) this.aClass148_5102.method2417(111))) {
+			if (class98_sub46_sub6.aClass66_5973.anInt508 == 1)
 				class98_sub46_sub6.method1524((byte) -90);
 		}
-		for (int i = 0; i < (((Class246_Sub5) this).aClass246_Sub4_Sub2_Sub1Array5095).length; i++) {
-			if (((Class246_Sub5) this).aClass246_Sub4_Sub2_Sub1Array5095[i] != null) {
-				((Class246_Sub5) this).aClass246_Sub4_Sub2_Sub1Array5095[i].method3113();
-				((Class246_Sub5) this).aClass246_Sub4_Sub2_Sub1Array5095[i] = null;
+		for (int i = 0; i < (this.aClass246_Sub4_Sub2_Sub1Array5095).length; i++) {
+			if (this.aClass246_Sub4_Sub2_Sub1Array5095[i] != null) {
+				this.aClass246_Sub4_Sub2_Sub1Array5095[i].method3113();
+				this.aClass246_Sub4_Sub2_Sub1Array5095[i] = null;
 			}
 		}
-		((Class246_Sub5) this).anInt5093 = 0;
+		this.anInt5093 = 0;
 		aClass218_5097 = new Class218();
 		anInt5103 = 0;
-		((Class246_Sub5) this).aClass148_5102 = new LinkedList();
+		this.aClass148_5102 = new LinkedList();
 		anInt5105 = 0;
 		this.method2965((byte) 127);
 		Class373_Sub2.aClass246_Sub5Array5469[Class273.anInt2039] = this;
@@ -218,12 +218,12 @@ final class Class246_Sub5 extends Class246 {
 		aBoolean5096 = false;
 		aClass218_5097 = new Class218();
 		anInt5103 = 0;
-		((Class246_Sub5) this).aClass148_5102 = new LinkedList();
+		this.aClass148_5102 = new LinkedList();
 		anInt5105 = 0;
-		((Class246_Sub5) this).aBoolean5108 = false;
+		this.aBoolean5108 = false;
 		aBoolean5107 = false;
-		((Class246_Sub5) this).aClass242_5104 = new Class242();
-		((Class246_Sub5) this).aClass246_Sub4_Sub2_Sub1Array5095 = new Class246_Sub4_Sub2_Sub1[8192];
+		this.aClass242_5104 = new Class242();
+		this.aClass246_Sub4_Sub2_Sub1Array5095 = new Class246_Sub4_Sub2_Sub1[8192];
 		method3124(i, bool);
 	}
 }

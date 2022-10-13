@@ -17,12 +17,12 @@ final class Class98_Sub10_Sub34 extends Class98_Sub10 {
 
 	static final String method1103(int i, boolean bool, int i_0_, int i_1_) {
 		try {
-			if ((i_1_ ^ 0xffffffff) > -3 || i_1_ > 36)
+			if (i_1_ < 2 || i_1_ > 36)
 				throw new IllegalArgumentException("Invalid radix:" + i_1_);
-			if (!bool || (i ^ 0xffffffff) > -1)
+			if (!bool || i < 0)
 				return Integer.toString(i, i_1_);
 			int i_2_ = 2;
-			for (int i_3_ = i / i_1_; (i_3_ ^ 0xffffffff) != -1; i_3_ /= i_1_)
+			for (int i_3_ = i / i_1_; i_3_ != 0; i_3_ /= i_1_)
 				i_2_++;
 			if (i_0_ != 328)
 				return null;
@@ -86,7 +86,7 @@ final class Class98_Sub10_Sub34 extends Class98_Sub10 {
 				while_176_: do {
 					while_175_: do {
 						do {
-							if ((i_9_ ^ 0xffffffff) != -1) {
+							if (i_9_ != 0) {
 								if (i_9_ == 1)
 									break;
 								if (i_9_ == 2)
@@ -117,25 +117,25 @@ final class Class98_Sub10_Sub34 extends Class98_Sub10 {
 		try {
 			if (i != 255)
 				return null;
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_10_);
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
+			int[] is = this.aClass16_3863.method237((byte) 98, i_10_);
+			if (this.aClass16_3863.aBoolean198) {
 				for (int i_11_ = 0; i_11_ < Class25.anInt268; i_11_++) {
-					int i_12_ = ((Class64_Sub1.anIntArray3640[i_11_] << 1511869708) / anInt5726 + anInt5727);
-					int i_13_ = anInt5725 + (Class352.anIntArray3001[i_10_] << 1223121772) / anInt5726;
+					int i_12_ = ((Class64_Sub1.anIntArray3640[i_11_] << 12) / anInt5726 + anInt5727);
+					int i_13_ = anInt5725 + (Class352.anIntArray3001[i_10_] << 12) / anInt5726;
 					int i_14_ = i_12_;
 					int i_15_ = i_13_;
 					int i_16_ = i_12_;
 					int i_17_ = i_13_;
-					int i_18_ = i_12_ * i_12_ >> -74704404;
-					int i_19_ = i_13_ * i_13_ >> 476654668;
+					int i_18_ = i_12_ * i_12_ >> 12;
+					int i_19_ = i_13_ * i_13_ >> 12;
 					int i_20_;
-					for (i_20_ = 0; ((i_19_ + i_18_ ^ 0xffffffff) > -16385 && (i_20_ ^ 0xffffffff) > (anInt5729 ^ 0xffffffff)); i_19_ = i_17_ * i_17_ >> -973863668) {
-						i_17_ = (i_16_ * i_17_ >> 1013466860) * 2 + i_15_;
+					for (i_20_ = 0; (i_19_ + i_18_ < 16384 && anInt5729 > i_20_); i_19_ = i_17_ * i_17_ >> 12) {
+						i_17_ = (i_16_ * i_17_ >> 12) * 2 + i_15_;
 						i_16_ = i_14_ + (i_18_ - i_19_);
-						i_18_ = i_16_ * i_16_ >> -998006516;
+						i_18_ = i_16_ * i_16_ >> 12;
 						i_20_++;
 					}
-					is[i_11_] = ((anInt5729 + -1 ^ 0xffffffff) < (i_20_ ^ 0xffffffff) ? (i_20_ << -1736488308) / anInt5729 : 0);
+					is[i_11_] = (i_20_ < anInt5729 + -1 ? (i_20_ << 12) / anInt5729 : 0);
 				}
 			}
 			return is;

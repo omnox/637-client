@@ -20,7 +20,7 @@ final class Class338 {
 
 	static final void method3778(byte i) {
 		try {
-			if ((Class98_Sub22_Sub1.anInt5789 ^ 0xffffffff) != 0) {
+			if (Class98_Sub22_Sub1.anInt5789 != -1) {
 				Class119.method2176(-1, false, Class98_Sub22_Sub1.anInt5789, (byte) 89, -1);
 				Class98_Sub22_Sub1.anInt5789 = -1;
 			}
@@ -60,7 +60,7 @@ final class Class338 {
 			int i_5_ = class98_sub22.readShort();
 			int i_6_ = class98_sub22.readShort();
 			int i_7_ = class98_sub22.readShort();
-			return new Class93_Sub1(((Class93) class93).aClass63_3509, ((Class93) class93).aClass110_3511, ((Class93) class93).anInt3505, ((Class93) class93).anInt3507, ((Class93) class93).anInt3514, ((Class93) class93).anInt3504, ((Class93) class93).anInt3508, ((Class93) class93).anInt3506, ((Class93) class93).anInt3513, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_);
+			return new Class93_Sub1(class93.aClass63_3509, class93.aClass110_3511, class93.anInt3505, class93.anInt3507, class93.anInt3514, class93.anInt3504, class93.anInt3508, class93.anInt3506, class93.anInt3513, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ul.D(" + i + ',' + (class98_sub22 != null ? "{...}" : "null") + ')'));
 		}
@@ -69,8 +69,8 @@ final class Class338 {
 	final boolean method3782(int i) {
 		try {
 			if (i != -4)
-				((Class338) this).aClass246_Sub3_2834 = null;
-			if (((Class338) this).aByte2840 != 2 && (((Class338) this).aByte2840 ^ 0xffffffff) != -4)
+				this.aClass246_Sub3_2834 = null;
+			if (this.aByte2840 != 2 && this.aByte2840 != 3)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -80,14 +80,14 @@ final class Class338 {
 
 	Class338(byte i, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_, AnimableEntity class246_sub3) {
 		try {
-			((Class338) this).anInt2832 = i_10_;
-			((Class338) this).anInt2843 = i_13_;
-			((Class338) this).anInt2830 = i_8_;
-			((Class338) this).anInt2841 = i_11_;
-			((Class338) this).anInt2837 = i_12_;
-			((Class338) this).aClass246_Sub3_2834 = class246_sub3;
-			((Class338) this).anInt2831 = i_9_;
-			((Class338) this).aByte2840 = i;
+			this.anInt2832 = i_10_;
+			this.anInt2843 = i_13_;
+			this.anInt2830 = i_8_;
+			this.anInt2841 = i_11_;
+			this.anInt2837 = i_12_;
+			this.aClass246_Sub3_2834 = class246_sub3;
+			this.anInt2831 = i_9_;
+			this.aByte2840 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ul.<init>(" + i + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (class246_sub3 != null ? "{...}" : "null") + ')'));
 		}

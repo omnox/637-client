@@ -14,7 +14,7 @@ abstract class Class98_Sub43 extends Node {
 	static final void method1481(int i) {
 		do {
 			try {
-				for (int i_0_ = 0; (i_0_ ^ 0xffffffff) > -101; i_0_++)
+				for (int i_0_ = 0; i_0_ < 100; i_0_++)
 					aa_Sub3.aBooleanArray3574[i_0_] = true;
 				if (i == 2)
 					break;
@@ -31,47 +31,47 @@ abstract class Class98_Sub43 extends Node {
 	static final void method1483(int i, Class246_Sub3_Sub4_Sub2_Sub1 class246_sub3_sub4_sub2_sub1, int i_1_, int[] is) {
 		do {
 			try {
-				if ((((Mobile) class246_sub3_sub4_sub2_sub1).anIntArray6373) != null) {
+				if ((class246_sub3_sub4_sub2_sub1.anIntArray6373) != null) {
 					boolean bool = true;
-					for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > ((((Mobile) class246_sub3_sub4_sub2_sub1).anIntArray6373).length ^ 0xffffffff); i_2_++) {
-						if (((Mobile) class246_sub3_sub4_sub2_sub1).anIntArray6373[i_2_] != is[i_2_]) {
+					for (int i_2_ = 0; (class246_sub3_sub4_sub2_sub1.anIntArray6373).length > i_2_; i_2_++) {
+						if (class246_sub3_sub4_sub2_sub1.anIntArray6373[i_2_] != is[i_2_]) {
 							bool = false;
 							break;
 						}
 					}
-					if (bool && ((Mobile) class246_sub3_sub4_sub2_sub1).anInt6413 != -1) {
-						Class97 class97 = (Class151_Sub7.aClass183_5001.method2623(((Mobile) class246_sub3_sub4_sub2_sub1).anInt6413, 16383));
-						int i_3_ = ((Class97) class97).anInt819;
+					if (bool && class246_sub3_sub4_sub2_sub1.anInt6413 != -1) {
+						Class97 class97 = (Class151_Sub7.aClass183_5001.method2623(class246_sub3_sub4_sub2_sub1.anInt6413, 16383));
+						int i_3_ = class97.anInt819;
 						if (i_3_ == 1) {
-							((Mobile) class246_sub3_sub4_sub2_sub1).anInt6405 = 0;
-							((Mobile) class246_sub3_sub4_sub2_sub1).anInt6400 = i;
-							((Mobile) class246_sub3_sub4_sub2_sub1).anInt6393 = 0;
-							((Mobile) class246_sub3_sub4_sub2_sub1).anInt6366 = 0;
-							((Mobile) class246_sub3_sub4_sub2_sub1).anInt6361 = 1;
-							if (!((Mobile) class246_sub3_sub4_sub2_sub1).aBoolean6371)
-								Class349.method3840((byte) -126, class246_sub3_sub4_sub2_sub1, ((Mobile) class246_sub3_sub4_sub2_sub1).anInt6393, class97);
+							class246_sub3_sub4_sub2_sub1.anInt6405 = 0;
+							class246_sub3_sub4_sub2_sub1.anInt6400 = i;
+							class246_sub3_sub4_sub2_sub1.anInt6393 = 0;
+							class246_sub3_sub4_sub2_sub1.anInt6366 = 0;
+							class246_sub3_sub4_sub2_sub1.anInt6361 = 1;
+							if (!class246_sub3_sub4_sub2_sub1.aBoolean6371)
+								Class349.method3840((byte) -126, class246_sub3_sub4_sub2_sub1, class246_sub3_sub4_sub2_sub1.anInt6393, class97);
 						}
 						if (i_3_ == 2)
-							((Mobile) class246_sub3_sub4_sub2_sub1).anInt6405 = 0;
+							class246_sub3_sub4_sub2_sub1.anInt6405 = 0;
 					}
 				}
 				if (i_1_ != 1)
 					method1483(58, null, 36, null);
 				boolean bool = true;
-				for (int i_4_ = 0; (is.length ^ 0xffffffff) < (i_4_ ^ 0xffffffff); i_4_++) {
+				for (int i_4_ = 0; i_4_ < is.length; i_4_++) {
 					if (is[i_4_] != -1)
 						bool = false;
-					if (((Mobile) class246_sub3_sub4_sub2_sub1).anIntArray6373 == null || (((Mobile) class246_sub3_sub4_sub2_sub1).anIntArray6373[i_4_] == -1) || (((((Class97) Class151_Sub7.aClass183_5001.method2623(is[i_4_], 16383)).anInt829) ^ 0xffffffff) <= (((Class97) (Class151_Sub7.aClass183_5001.method2623((((Mobile) class246_sub3_sub4_sub2_sub1).anIntArray6373[i_4_]), i_1_ ^ 0x3ffe))).anInt829 ^ 0xffffffff))) {
-						((Mobile) class246_sub3_sub4_sub2_sub1).anIntArray6373 = is;
-						((Mobile) class246_sub3_sub4_sub2_sub1).anInt6436 = ((Mobile) class246_sub3_sub4_sub2_sub1).anInt6434;
-						((Mobile) class246_sub3_sub4_sub2_sub1).anInt6400 = i;
+					if (class246_sub3_sub4_sub2_sub1.anIntArray6373 == null || (class246_sub3_sub4_sub2_sub1.anIntArray6373[i_4_] == -1) || (Class151_Sub7.aClass183_5001.method2623((class246_sub3_sub4_sub2_sub1.anIntArray6373[i_4_]), i_1_ ^ 0x3ffe).anInt829 <= (Class151_Sub7.aClass183_5001.method2623(is[i_4_], 16383).anInt829))) {
+						class246_sub3_sub4_sub2_sub1.anIntArray6373 = is;
+						class246_sub3_sub4_sub2_sub1.anInt6436 = class246_sub3_sub4_sub2_sub1.anInt6434;
+						class246_sub3_sub4_sub2_sub1.anInt6400 = i;
 					}
 				}
 				if (!bool)
 					break;
-				((Mobile) class246_sub3_sub4_sub2_sub1).anInt6400 = i;
-				((Mobile) class246_sub3_sub4_sub2_sub1).anInt6436 = (((Mobile) class246_sub3_sub4_sub2_sub1).anInt6434);
-				((Mobile) class246_sub3_sub4_sub2_sub1).anIntArray6373 = is;
+				class246_sub3_sub4_sub2_sub1.anInt6400 = i;
+				class246_sub3_sub4_sub2_sub1.anInt6436 = (class246_sub3_sub4_sub2_sub1.anInt6434);
+				class246_sub3_sub4_sub2_sub1.anIntArray6373 = is;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("rd.P(" + i + ',' + ((class246_sub3_sub4_sub2_sub1 != null) ? "{...}" : "null") + ',' + i_1_ + ',' + (is != null ? "{...}" : "null") + ')'));
 			}
@@ -91,7 +91,7 @@ abstract class Class98_Sub43 extends Node {
 
 	Class98_Sub43(OggStreamState oggstreamstate) {
 		try {
-			((Class98_Sub43) this).anOggStreamState4241 = oggstreamstate;
+			this.anOggStreamState4241 = oggstreamstate;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("rd.<init>(" + (oggstreamstate != null ? "{...}" : "null") + ')'));
 		}
@@ -116,7 +116,7 @@ abstract class Class98_Sub43 extends Node {
 			method1482(oggpacket, false);
 			if (i != 21000)
 				aBoolean4243 = false;
-			((Class98_Sub43) this).anInt4240++;
+			this.anInt4240++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("rd.L(" + (oggpacket != null ? "{...}" : "null") + ',' + i + ')'));
 		}

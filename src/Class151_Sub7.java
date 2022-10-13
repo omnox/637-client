@@ -20,9 +20,9 @@ final class Class151_Sub7 extends Class151 {
 			aClass91_5003.method888('\001', false);
 			if (i <= 25)
 				aClass326_5009 = null;
-			((Class151) this).aHa_Sub1_1215.method1845(1, 847872872);
-			((Class151) this).aHa_Sub1_1215.method1863(1, null);
-			((Class151) this).aHa_Sub1_1215.method1845(0, 847872872);
+			this.aHa_Sub1_1215.method1845(1, 847872872);
+			this.aHa_Sub1_1215.method1863(1, null);
+			this.aHa_Sub1_1215.method1845(0, 847872872);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "sl.E(" + i + ')');
 		}
@@ -61,8 +61,8 @@ final class Class151_Sub7 extends Class151 {
 			aClass51_5002 = class51;
 			aClass91_5003 = new Class91(var_ha_Sub1, 2);
 			aClass91_5003.method887(0, -30389);
-			((Class151) this).aHa_Sub1_1215.method1845(1, 847872872);
-			if (((Class51) aClass51_5002).aBoolean424) {
+			this.aHa_Sub1_1215.method1845(1, 847872872);
+			if (aClass51_5002.aBoolean424) {
 				OpenGL.glTexGeni(8194, 9472, 9217);
 				OpenGL.glEnable(3170);
 			}
@@ -70,15 +70,15 @@ final class Class151_Sub7 extends Class151 {
 			OpenGL.glTexGeni(8193, 9472, 9216);
 			OpenGL.glEnable(3168);
 			OpenGL.glEnable(3169);
-			((Class151) this).aHa_Sub1_1215.method1845(0, 847872872);
+			this.aHa_Sub1_1215.method1845(0, 847872872);
 			aClass91_5003.method886((byte) -50);
 			aClass91_5003.method887(1, -30389);
-			((Class151) this).aHa_Sub1_1215.method1845(1, 847872872);
-			if (((Class51) aClass51_5002).aBoolean424)
+			this.aHa_Sub1_1215.method1845(1, 847872872);
+			if (aClass51_5002.aBoolean424)
 				OpenGL.glDisable(3170);
 			OpenGL.glDisable(3168);
 			OpenGL.glDisable(3169);
-			((Class151) this).aHa_Sub1_1215.method1845(0, 847872872);
+			this.aHa_Sub1_1215.method1845(0, 847872872);
 			aClass91_5003.method886((byte) 53);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("sl.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ',' + (class51 != null ? "{...}" : "null") + ')'));
@@ -111,8 +111,8 @@ final class Class151_Sub7 extends Class151 {
 	final void method2442(Class42 class42, boolean bool, int i) {
 		do {
 			try {
-				((Class151) this).aHa_Sub1_1215.method1863(1, class42);
-				((Class151) this).aHa_Sub1_1215.method1896(260, i);
+				this.aHa_Sub1_1215.method1863(1, class42);
+				this.aHa_Sub1_1215.method1896(260, i);
 				if (bool == false)
 					break;
 				method2466(-73);
@@ -126,12 +126,12 @@ final class Class151_Sub7 extends Class151 {
 	final void method2441(int i, int i_0_, int i_1_) {
 		try {
 			float f = (float) ((0x3 & i) - -1) * -5.0E-4F;
-			float f_2_ = (float) (1 + ((0x1d & i) >> -1356659485)) * 5.0E-4F;
-			float f_3_ = (0x40 & i ^ 0xffffffff) != -1 ? 9.765625E-4F : 4.8828125E-4F;
+			float f_2_ = (float) (1 + ((0x1d & i) >> 3)) * 5.0E-4F;
+			float f_3_ = (0x40 & i) != 0 ? 9.765625E-4F : 4.8828125E-4F;
 			if (i_1_ > -2)
 				aClass91_5003 = null;
-			((Class151) this).aHa_Sub1_1215.method1845(1, 847872872);
-			boolean bool = (i & 0x80 ^ 0xffffffff) != -1;
+			this.aHa_Sub1_1215.method1845(1, 847872872);
+			boolean bool = (i & 0x80) != 0;
 			if (bool) {
 				Class98_Sub43_Sub4.aFloatArray5940[0] = f_3_;
 				Class98_Sub43_Sub4.aFloatArray5940[2] = 0.0F;
@@ -146,20 +146,20 @@ final class Class151_Sub7 extends Class151 {
 			OpenGL.glTexGenfv(8192, 9474, Class98_Sub43_Sub4.aFloatArray5940, 0);
 			Class98_Sub43_Sub4.aFloatArray5940[0] = 0.0F;
 			Class98_Sub43_Sub4.aFloatArray5940[1] = f_3_;
-			Class98_Sub43_Sub4.aFloatArray5940[3] = (float) (((ha_Sub1) ((Class151) this).aHa_Sub1_1215).anInt4321) * f % 1.0F;
+			Class98_Sub43_Sub4.aFloatArray5940[3] = (float) (this.aHa_Sub1_1215.anInt4321) * f % 1.0F;
 			Class98_Sub43_Sub4.aFloatArray5940[2] = 0.0F;
 			OpenGL.glTexGenfv(8193, 9474, Class98_Sub43_Sub4.aFloatArray5940, 0);
-			if (((Class51) aClass51_5002).aBoolean424) {
+			if (aClass51_5002.aBoolean424) {
 				Class98_Sub43_Sub4.aFloatArray5940[0] = 0.0F;
-				Class98_Sub43_Sub4.aFloatArray5940[3] = (f_2_ * (float) (((ha_Sub1) ((Class151) this).aHa_Sub1_1215).anInt4321) % 1.0F);
+				Class98_Sub43_Sub4.aFloatArray5940[3] = (f_2_ * (float) (this.aHa_Sub1_1215.anInt4321) % 1.0F);
 				Class98_Sub43_Sub4.aFloatArray5940[2] = 0.0F;
 				Class98_Sub43_Sub4.aFloatArray5940[1] = 0.0F;
 				OpenGL.glTexGenfv(8194, 9473, Class98_Sub43_Sub4.aFloatArray5940, 0);
 			} else {
-				int i_4_ = (int) (16.0F * (f_2_ * (float) (((ha_Sub1) (((Class151) this).aHa_Sub1_1215)).anInt4321)));
-				((Class151) this).aHa_Sub1_1215.method1863(1, (((Class51) aClass51_5002).aClass42_Sub1Array420[i_4_ % 16]));
+				int i_4_ = (int) (16.0F * (f_2_ * (float) (this.aHa_Sub1_1215.anInt4321)));
+				this.aHa_Sub1_1215.method1863(1, (aClass51_5002.aClass42_Sub1Array420[i_4_ % 16]));
 			}
-			((Class151) this).aHa_Sub1_1215.method1845(0, 847872872);
+			this.aHa_Sub1_1215.method1845(0, 847872872);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("sl.G(" + i + ',' + i_0_ + ',' + i_1_ + ')'));
 		}
@@ -169,11 +169,11 @@ final class Class151_Sub7 extends Class151 {
 		do {
 			try {
 				aClass91_5003.method888('\0', bool);
-				if (!((Class51) aClass51_5002).aBoolean424)
+				if (!aClass51_5002.aBoolean424)
 					break;
-				((Class151) this).aHa_Sub1_1215.method1845(1, 847872872);
-				((Class151) this).aHa_Sub1_1215.method1863(1, ((Class51) aClass51_5002).aClass42_Sub4_425);
-				((Class151) this).aHa_Sub1_1215.method1845(0, 847872872);
+				this.aHa_Sub1_1215.method1845(1, 847872872);
+				this.aHa_Sub1_1215.method1863(1, aClass51_5002.aClass42_Sub4_425);
+				this.aHa_Sub1_1215.method1845(0, 847872872);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("sl.D(" + bool + ',' + bool_5_ + ')'));
 			}

@@ -21,11 +21,11 @@ final class Class28 {
 
 	final void method297(int i, RSByteBuffer class98_sub22) {
 		try {
-			((Class28) this).aFloat295 = (float) (8 * class98_sub22.readUnsignedByte()) / 255.0F;
-			((Class28) this).aFloat291 = (float) (class98_sub22.readUnsignedByte() * 8) / 255.0F;
+			this.aFloat295 = (float) (8 * class98_sub22.readUnsignedByte()) / 255.0F;
+			this.aFloat291 = (float) (class98_sub22.readUnsignedByte() * 8) / 255.0F;
 			if (i != -50)
 				method297(-51, null);
-			((Class28) this).aFloat293 = (float) (8 * class98_sub22.readUnsignedByte()) / 255.0F;
+			this.aFloat293 = (float) (8 * class98_sub22.readUnsignedByte()) / 255.0F;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ca.A(" + i + ',' + (class98_sub22 != null ? "{...}" : "null") + ')'));
 		}
@@ -50,7 +50,7 @@ final class Class28 {
 		try {
 			if (bool != true)
 				return false;
-			if (((((Class28) this).anInt290 ^ 0xffffffff) != (((Class28) class28_0_).anInt290 ^ 0xffffffff)) || (((Class28) this).aFloat281 != ((Class28) class28_0_).aFloat281) || (((Class28) this).aFloat288 != ((Class28) class28_0_).aFloat288) || (((Class28) this).aFloat289 != ((Class28) class28_0_).aFloat289) || (((Class28) class28_0_).aFloat291 != ((Class28) this).aFloat291) || (((Class28) class28_0_).aFloat295 != ((Class28) this).aFloat295) || (((Class28) class28_0_).aFloat293 != ((Class28) this).aFloat293) || ((((Class28) class28_0_).anInt285 ^ 0xffffffff) != (((Class28) this).anInt285 ^ 0xffffffff)) || ((Class28) this).anInt283 != ((Class28) class28_0_).anInt283 || (((Class28) this).aClass48_287 != ((Class28) class28_0_).aClass48_287))
+			if ((class28_0_.anInt290 != this.anInt290) || (this.aFloat281 != class28_0_.aFloat281) || (this.aFloat288 != class28_0_.aFloat288) || (this.aFloat289 != class28_0_.aFloat289) || (class28_0_.aFloat291 != this.aFloat291) || (class28_0_.aFloat295 != this.aFloat295) || (class28_0_.aFloat293 != this.aFloat293) || (this.anInt285 != class28_0_.anInt285) || this.anInt283 != class28_0_.anInt283 || (this.aClass48_287 != class28_0_.aClass48_287))
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -60,16 +60,16 @@ final class Class28 {
 
 	public Class28() {
 		try {
-			((Class28) this).aFloat288 = 0.69921875F;
-			((Class28) this).anInt282 = -50;
-			((Class28) this).aClass48_287 = Class246_Sub7.aClass48_5119;
-			((Class28) this).anInt292 = -50;
-			((Class28) this).anInt285 = Class189.anInt1455;
-			((Class28) this).anInt284 = -60;
-			((Class28) this).anInt290 = Class299_Sub2.anInt5298;
-			((Class28) this).anInt283 = 0;
-			((Class28) this).aFloat281 = 1.1523438F;
-			((Class28) this).aFloat289 = 1.2F;
+			this.aFloat288 = 0.69921875F;
+			this.anInt282 = -50;
+			this.aClass48_287 = Class246_Sub7.aClass48_5119;
+			this.anInt292 = -50;
+			this.anInt285 = Class189.anInt1455;
+			this.anInt284 = -60;
+			this.anInt290 = Class299_Sub2.anInt5298;
+			this.anInt283 = 0;
+			this.aFloat281 = 1.1523438F;
+			this.aFloat289 = 1.2F;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ca.<init>(" + ')');
 		}
@@ -78,56 +78,56 @@ final class Class28 {
 	Class28(RSByteBuffer class98_sub22) {
 		try {
 			int i = class98_sub22.readUnsignedByte();
-			if ((((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub10_4070.method592((byte) 126) ^ 0xffffffff) == -2 && Class98_Sub37.aHa4185.method1822() > 0) {
-				if ((0x1 & i ^ 0xffffffff) != -1)
-					((Class28) this).anInt290 = class98_sub22.readInt(-2);
+			if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub10_4070.method592((byte) 126) == 1 && Class98_Sub37.aHa4185.method1822() > 0) {
+				if ((0x1 & i) != 0)
+					this.anInt290 = class98_sub22.readInt(-2);
 				else
-					((Class28) this).anInt290 = Class299_Sub2.anInt5298;
+					this.anInt290 = Class299_Sub2.anInt5298;
 				if ((0x2 & i) == 0)
-					((Class28) this).aFloat281 = 1.1523438F;
+					this.aFloat281 = 1.1523438F;
 				else
-					((Class28) this).aFloat281 = ((float) class98_sub22.readShort() / 256.0F);
+					this.aFloat281 = ((float) class98_sub22.readShort() / 256.0F);
 				if ((0x4 & i) != 0)
-					((Class28) this).aFloat288 = ((float) class98_sub22.readShort() / 256.0F);
+					this.aFloat288 = ((float) class98_sub22.readShort() / 256.0F);
 				else
-					((Class28) this).aFloat288 = 0.69921875F;
-				if ((0x8 & i ^ 0xffffffff) != -1)
-					((Class28) this).aFloat289 = ((float) class98_sub22.readShort() / 256.0F);
+					this.aFloat288 = 0.69921875F;
+				if ((0x8 & i) != 0)
+					this.aFloat289 = ((float) class98_sub22.readShort() / 256.0F);
 				else
-					((Class28) this).aFloat289 = 1.2F;
+					this.aFloat289 = 1.2F;
 			} else {
-				if ((0x1 & i ^ 0xffffffff) != -1)
+				if ((0x1 & i) != 0)
 					class98_sub22.readInt(-2);
-				if ((0x2 & i ^ 0xffffffff) != -1)
+				if ((0x2 & i) != 0)
 					class98_sub22.readShort();
 				if ((0x4 & i) != 0)
 					class98_sub22.readShort();
 				if ((i & 0x8) != 0)
 					class98_sub22.readShort();
-				((Class28) this).aFloat281 = 1.1523438F;
-				((Class28) this).aFloat289 = 1.2F;
-				((Class28) this).anInt290 = Class299_Sub2.anInt5298;
-				((Class28) this).aFloat288 = 0.69921875F;
+				this.aFloat281 = 1.1523438F;
+				this.aFloat289 = 1.2F;
+				this.anInt290 = Class299_Sub2.anInt5298;
+				this.aFloat288 = 0.69921875F;
 			}
 			if ((0x10 & i) != 0) {
-				((Class28) this).anInt282 = class98_sub22.readUShort(false);
-				((Class28) this).anInt284 = class98_sub22.readUShort(false);
-				((Class28) this).anInt292 = class98_sub22.readUShort(false);
+				this.anInt282 = class98_sub22.readUShort(false);
+				this.anInt284 = class98_sub22.readUShort(false);
+				this.anInt292 = class98_sub22.readUShort(false);
 			} else {
-				((Class28) this).anInt284 = -60;
-				((Class28) this).anInt292 = -50;
-				((Class28) this).anInt282 = -50;
+				this.anInt284 = -60;
+				this.anInt292 = -50;
+				this.anInt282 = -50;
 			}
-			if ((0x20 & i ^ 0xffffffff) == -1)
-				((Class28) this).anInt285 = Class189.anInt1455;
+			if ((0x20 & i) == 0)
+				this.anInt285 = Class189.anInt1455;
 			else
-				((Class28) this).anInt285 = class98_sub22.readInt(-2);
+				this.anInt285 = class98_sub22.readInt(-2);
 			if ((i & 0x40) == 0)
-				((Class28) this).anInt283 = 0;
+				this.anInt283 = 0;
 			else
-				((Class28) this).anInt283 = class98_sub22.readShort();
+				this.anInt283 = class98_sub22.readShort();
 			if ((i & 0x80) == 0)
-				((Class28) this).aClass48_287 = Class246_Sub7.aClass48_5119;
+				this.aClass48_287 = Class246_Sub7.aClass48_5119;
 			else {
 				int i_1_ = class98_sub22.readShort();
 				int i_2_ = class98_sub22.readShort();
@@ -135,7 +135,7 @@ final class Class28 {
 				int i_4_ = class98_sub22.readShort();
 				int i_5_ = class98_sub22.readShort();
 				int i_6_ = class98_sub22.readShort();
-				((Class28) this).aClass48_287 = Class13.method217(5, i_4_, i_6_, i_5_, i_3_, i_1_, i_2_);
+				this.aClass48_287 = Class13.method217(5, i_4_, i_6_, i_5_, i_3_, i_1_, i_2_);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ca.<init>(" + (class98_sub22 != null ? "{...}" : "null") + ')');

@@ -22,13 +22,13 @@ final class n extends Class43 implements Interface9 {
 		int[] is_13_ = new int[class324s.length];
 		int[] is_14_ = new int[class324s.length];
 		for (int i = 0; i < class324s.length; i++) {
-			is[i] = ((Class324) class324s[i]).aByteArray2717;
-			is_11_[i] = ((Class324) class324s[i]).anInt2722;
-			is_12_[i] = ((Class324) class324s[i]).anInt2720;
-			is_13_[i] = ((Class324) class324s[i]).anInt2725;
-			is_14_[i] = ((Class324) class324s[i]).anInt2721;
+			is[i] = class324s[i].aByteArray2717;
+			is_11_[i] = class324s[i].anInt2722;
+			is_12_[i] = class324s[i].anInt2720;
+			is_13_[i] = class324s[i].anInt2725;
+			is_14_[i] = class324s[i].anInt2721;
 		}
-		S(var_oa, var_ya, is, ((Class324) class324s[0]).anIntArray2718, is_11_, is_12_, is_13_, is_14_);
+		S(var_oa, var_ya, is, class324s[0].anIntArray2718, is_11_, is_12_, is_13_, is_14_);
 	}
 
 	final void method409(char c, int i, int i_15_, int i_16_, boolean bool, aa var_aa, int i_17_, int i_18_) {
@@ -36,7 +36,7 @@ final class n extends Class43 implements Interface9 {
 	}
 
 	protected final void finalize() {
-		if (((n) this).nativeid != 0L)
+		if (this.nativeid != 0L)
 			Class192.method2654(false, this);
 	}
 }

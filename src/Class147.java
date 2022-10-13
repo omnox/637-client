@@ -19,7 +19,7 @@ final class Class147 {
 			Class268.anInt2007 = i;
 			for (int i_0_ = 0; Class63.anInt493 > i_0_; i_0_++) {
 				int i_1_ = Class191.anInt1477 * i_0_;
-				for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > (Class191.anInt1477 ^ 0xffffffff); i_2_++) {
+				for (int i_2_ = 0; Class191.anInt1477 > i_2_; i_2_++) {
 					int i_3_ = i_2_ + i_1_;
 					Class172.anInterface17Array1327[i_3_].method56(Class197.anInt1513 * i_2_, Class98_Sub10_Sub38.anInt5761 * i_0_, Class197.anInt1513, Class98_Sub10_Sub38.anInt5761, 0, 0, true, true);
 				}
@@ -36,7 +36,7 @@ final class Class147 {
 			Class98_Sub10_Sub6.anInt5569 = 0;
 			Class65.anInt496 = 0;
 			IncomingOpcode.aClass58_5641 = null;
-			((RSByteBuffer) IncomingMessages.packetStream).position = 0;
+			IncomingMessages.packetStream.position = 0;
 			IncomingOpcode.currentIncommingOpcode = null;
 			IncomingOpcode.aClass58_3262 = null;
 			Class224_Sub1.anInt5031 = 0;
@@ -44,13 +44,13 @@ final class Class147 {
 			Class248.method3159(0);
 			if (i > -94)
 				anInt1194 = -63;
-			for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > -2049; i_4_++)
+			for (int i_4_ = 0; i_4_ < 2048; i_4_++)
 				Class151_Sub9.playerArray[i_4_] = null;
 			Player.selfPlayer = null;
 			for (int i_5_ = 0; i_5_ < Class98_Sub10_Sub20.anInt5640; i_5_++) {
-				Class246_Sub3_Sub4_Sub2_Sub1 class246_sub3_sub4_sub2_sub1 = (((Class98_Sub39) Class163.aClass98_Sub39Array3516[i_5_]).aClass246_Sub3_Sub4_Sub2_Sub1_4187);
+				Class246_Sub3_Sub4_Sub2_Sub1 class246_sub3_sub4_sub2_sub1 = (Class163.aClass98_Sub39Array3516[i_5_].aClass246_Sub3_Sub4_Sub2_Sub1_4187);
 				if (class246_sub3_sub4_sub2_sub1 != null)
-					((Mobile) class246_sub3_sub4_sub2_sub1).anInt6364 = -1;
+					class246_sub3_sub4_sub2_sub1.anInt6364 = -1;
 			}
 			Class98_Sub10_Sub34.method1106((byte) -61);
 			Class116.anInt967 = Class64_Sub26.anInt3712 = -1;
@@ -68,14 +68,14 @@ final class Class147 {
 
 	static final void method2413(Class98_Sub22_Sub1 class98_sub22_sub1, int i) {
 		try {
-			for (int i_7_ = 0; (Class38.anInt354 ^ 0xffffffff) < (i_7_ ^ 0xffffffff); i_7_++) {
+			for (int i_7_ = 0; i_7_ < Class38.anInt354; i_7_++) {
 				int i_8_ = Class65.anIntArray501[i_7_];
 				Player class246_sub3_sub4_sub2_sub2 = (Class151_Sub9.playerArray[i_8_]);
 				int i_9_ = class98_sub22_sub1.readUnsignedByte();
 				if ((0x20 & i_9_) != 0)
-					i_9_ += (class98_sub22_sub1.readUnsignedByte() << -475812536);
+					i_9_ += (class98_sub22_sub1.readUnsignedByte() << 8);
 				if ((0x800 & i_9_) != 0)
-					i_9_ += (class98_sub22_sub1.readUnsignedByte() << 1299142480);
+					i_9_ += (class98_sub22_sub1.readUnsignedByte() << 16);
 				PlayerUpdateMask.method709(class246_sub3_sub4_sub2_sub2, i_9_, class98_sub22_sub1, (byte) 82, i_8_);
 			}
 			if (i != 8429)

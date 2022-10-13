@@ -29,7 +29,7 @@ final class Class98_Sub10_Sub18 extends Class98_Sub10 {
 		try {
 			if (i_1_ != -11)
 				aLong5627 = -40L;
-			if (!(Class373_Sub2.method3974(i_0_, i, i_1_ + -101) | (0x70000 & i ^ 0xffffffff) != -1) && !Class76_Sub7.method763(i, i_0_, false))
+			if (!(Class373_Sub2.method3974(i_0_, i, i_1_ + -101) | (0x70000 & i) != 0) && !Class76_Sub7.method763(i, i_0_, false))
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

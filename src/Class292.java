@@ -54,13 +54,13 @@ final class Class292 implements Interface10 {
 	static final void method3446(int i) {
 		try {
 			for (Class98_Sub42 class98_sub42 = ((Class98_Sub42) Class98_Sub10_Sub37.aClass148_5748.method2418(32)); class98_sub42 != null; class98_sub42 = ((Class98_Sub42) Class98_Sub10_Sub37.aClass148_5748.method2417(88))) {
-				if (((Class98_Sub42) class98_sub42).aBoolean4207)
+				if (class98_sub42.aBoolean4207)
 					class98_sub42.method1478(true);
 			}
 			if (i != 3)
 				aLong3356 = 44L;
 			for (Class98_Sub42 class98_sub42 = (Class98_Sub42) Class358.aClass148_3032.method2418(32); class98_sub42 != null; class98_sub42 = ((Class98_Sub42) Class358.aClass148_3032.method2417(103))) {
-				if (((Class98_Sub42) class98_sub42).aBoolean4207)
+				if (class98_sub42.aBoolean4207)
 					class98_sub42.method1478(true);
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -162,18 +162,18 @@ final class Class292 implements Interface10 {
 	static final int method3451(int i, int i_3_, boolean bool, int i_4_, int i_5_, int i_6_, int i_7_) {
 		try {
 			i_5_ &= 0x3;
-			if ((i_3_ & 0x1 ^ 0xffffffff) == -2) {
+			if ((i_3_ & 0x1) == 1) {
 				int i_8_ = i_6_;
 				i_6_ = i_7_;
 				i_7_ = i_8_;
 			}
 			if (bool != false)
 				anInt3359 = -70;
-			if ((i_5_ ^ 0xffffffff) == -1)
+			if (i_5_ == 0)
 				return i;
 			if (i_5_ == 1)
 				return i_4_;
-			if ((i_5_ ^ 0xffffffff) == -3)
+			if (i_5_ == 2)
 				return -i + 7 - i_6_ - -1;
 			return -i_7_ + 1 + -i_4_ + 7;
 		} catch (RuntimeException runtimeexception) {
@@ -281,7 +281,7 @@ final class Class292 implements Interface10 {
 						graphics_13_.drawImage(anImage3344, (method3453(i_14_, 7) - (-anInt3332 - -(anInt3343 / 2))), (method3450(i_17_, 0) + anInt3354), null);
 						int i_20_ = i_14_ + (anInt3332 + -(anInt3343 / 2));
 						int i_21_ = anInt3332 + anInt3343 / 2;
-						for (int i_22_ = i_20_; (i_21_ ^ 0xffffffff) <= (i_22_ ^ 0xffffffff); i_22_ += i_16_)
+						for (int i_22_ = i_20_; i_22_ <= i_21_; i_22_ += i_16_)
 							graphics_13_.drawImage(anImage3342, (method3453(i_14_, 7) + anInt3332 - -i_22_), (method3450(i_19_, 0) + anInt3354), null);
 						graphics_13_.drawImage(anImage3341, (method3453(i_15_, 7) - (-anInt3332 + -(anInt3343 / 2))), (method3450(i_18_, 0) + anInt3354), null);
 						int i_23_ = anImage3345.getWidth(null);
@@ -303,7 +303,7 @@ final class Class292 implements Interface10 {
 						Graphics graphics_35_ = anImage3346.getGraphics();
 						for (int i_36_ = 0; i_36_ < -i_25_ + (-i_23_ + anInt3333); i_36_ += i_28_)
 							graphics_35_.drawImage(anImage3336, i_36_, 0, null);
-						for (int i_37_ = 0; ((i_37_ ^ 0xffffffff) > (-i_25_ + (-i_23_ + anInt3333) ^ 0xffffffff)); i_37_ += i_30_)
+						for (int i_37_ = 0; (-i_25_ + (-i_23_ + anInt3333) > i_37_); i_37_ += i_30_)
 							graphics_35_.drawImage(anImage3353, i_37_, anInt3335 + -i_27_, null);
 						int i_38_ = i_12_ * (-i_25_ + (-i_23_ + anInt3333)) / 100;
 						if (i_38_ > 0) {
@@ -311,13 +311,13 @@ final class Class292 implements Interface10 {
 							int i_39_ = image.getWidth(null);
 							Graphics graphics_40_ = image.getGraphics();
 							int i_41_ = (anInt3338 * RuntimeException_Sub1.method4012(true) / 10 % i_31_);
-							for (int i_42_ = i_41_ + -i_31_; (i_42_ ^ 0xffffffff) > (i_39_ ^ 0xffffffff); i_42_ += i_31_)
+							for (int i_42_ = i_41_ + -i_31_; i_39_ > i_42_; i_42_ += i_31_)
 								graphics_40_.drawImage(anImage3352, i_42_, 0, null);
 							graphics_35_.drawImage(image, 0, i_29_, null);
 						}
 						int i_43_ = i_38_;
 						i_38_ = -i_38_ + -i_25_ + anInt3333 - i_23_;
-						if ((i_38_ ^ 0xffffffff) < -1) {
+						if (i_38_ > 0) {
 							Image image = (Class42_Sub3.aCanvas5361.createImage(i_38_, -i_27_ + (-i_29_ + anInt3335)));
 							int i_44_ = image.getWidth(null);
 							Graphics graphics_45_ = image.getGraphics();

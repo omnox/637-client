@@ -37,7 +37,7 @@ final class Class255 implements Interface1 {
 			}
 			if (Class77_Sub1.aClass348_3801 == class348 || class348 == Class359.aClass348_3046) {
 				ItemDefinition class297 = Class98_Sub46_Sub19.getItemDefs.getItemDefs((int) l);
-				return ((ItemDefinition) class297).name;
+				return class297.name;
 			}
 			if (class348 == Class42_Sub3.aClass348_5363 || class348 == Class98_Sub36.aClass348_4156 || Class151_Sub7.aClass348_5008 == class348)
 				return Class98_Sub10_Sub16.aClass29_5620.method302(is[0], 1028602529).method3594((int) l, (byte) 127);

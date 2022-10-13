@@ -37,7 +37,7 @@ final class Class160 {
 	static final void method2513(byte i, int i_1_, int i_2_, int i_3_, int i_4_) {
 		try {
 			do {
-				if ((i_2_ ^ 0xffffffff) < (i_3_ ^ 0xffffffff)) {
+				if (i_3_ < i_2_) {
 					Class333.method3761(i_1_, Class97.anIntArrayArray814[i_4_], i_3_, i_2_, (byte) 65);
 					if (!client.aBoolean3553)
 						break;

@@ -29,7 +29,7 @@ abstract class Class98_Sub17 extends Node {
 			String string_0_ = "";
 			if (Class89.aString716 != null)
 				string_0_ = "/p=" + Class89.aString716;
-			return ("http://" + string + "." + ((Class279) Class4.aClass279_86).aString2098 + ".com/l=" + Class374.anInt3159 + "/a=" + Class98_Sub10_Sub15.anInt5619 + string_0_ + "/");
+			return ("http://" + string + "." + Class4.aClass279_86.aString2098 + ".com/l=" + Class374.anInt3159 + "/a=" + Class98_Sub10_Sub15.anInt5619 + string_0_ + "/");
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hfa.J(" + i + ')');
 		}

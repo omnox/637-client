@@ -28,11 +28,11 @@ final class LinkedList {
 		try {
 			int i_0_ = -103 % ((i - -66) / 47);
 			Node class98 = aClass98_1199;
-			if (class98 == ((LinkedList) this).aClass98_1198) {
+			if (class98 == this.aClass98_1198) {
 				aClass98_1199 = null;
 				return null;
 			}
-			aClass98_1199 = ((Node) class98).aClass98_833;
+			aClass98_1199 = class98.aClass98_833;
 			return class98;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "kba.C(" + i + ')');
@@ -42,11 +42,11 @@ final class LinkedList {
 	final Node method2417(int i) {
 		try {
 			Node class98 = aClass98_1199;
-			if (((LinkedList) this).aClass98_1198 == class98) {
+			if (this.aClass98_1198 == class98) {
 				aClass98_1199 = null;
 				return null;
 			}
-			aClass98_1199 = ((Node) class98).aClass98_836;
+			aClass98_1199 = class98.aClass98_836;
 			return class98;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "kba.F(" + i + ')');
@@ -57,12 +57,12 @@ final class LinkedList {
 		try {
 			if (i != 32)
 				return null;
-			Node class98 = ((Node) ((LinkedList) this).aClass98_1198).aClass98_836;
-			if (((LinkedList) this).aClass98_1198 == class98) {
+			Node class98 = this.aClass98_1198.aClass98_836;
+			if (this.aClass98_1198 == class98) {
 				aClass98_1199 = null;
 				return null;
 			}
-			aClass98_1199 = ((Node) class98).aClass98_836;
+			aClass98_1199 = class98.aClass98_836;
 			return class98;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "kba.D(" + i + ')');
@@ -72,15 +72,15 @@ final class LinkedList {
 	final void add_last(Node class98, int i) {
 		do {
 			try {
-				if (((Node) class98).aClass98_833 != null)
+				if (class98.aClass98_833 != null)
 					class98.remove();
-				((Node) class98).aClass98_833 = ((Node) ((LinkedList) this).aClass98_1198).aClass98_833;
-				((Node) class98).aClass98_836 = ((LinkedList) this).aClass98_1198;
-				((Node) ((Node) class98).aClass98_833).aClass98_836 = class98;
-				((Node) ((Node) class98).aClass98_836).aClass98_833 = class98;
+				class98.aClass98_833 = this.aClass98_1198.aClass98_833;
+				class98.aClass98_836 = this.aClass98_1198;
+				class98.aClass98_833.aClass98_836 = class98;
+				class98.aClass98_836.aClass98_833 = class98;
 				if (i == -20911)
 					break;
-				((LinkedList) this).aClass98_1198 = null;
+				this.aClass98_1198 = null;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("kba.B(" + (class98 != null ? "{...}" : "null") + ',' + i + ')'));
 			}
@@ -92,7 +92,7 @@ final class LinkedList {
 		try {
 			if (i > -123)
 				anIntArray1196 = null;
-			if (((LinkedList) this).aClass98_1198 != ((Node) ((LinkedList) this).aClass98_1198).aClass98_836)
+			if (this.aClass98_1198 != this.aClass98_1198.aClass98_836)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -102,8 +102,8 @@ final class LinkedList {
 
 	final Node method2421(int i) {
 		try {
-			Node class98 = ((Node) ((LinkedList) this).aClass98_1198).aClass98_836;
-			if (((LinkedList) this).aClass98_1198 == class98)
+			Node class98 = this.aClass98_1198.aClass98_836;
+			if (this.aClass98_1198 == class98)
 				return null;
 			class98.remove();
 			if (i != 6494)
@@ -118,8 +118,8 @@ final class LinkedList {
 		do {
 			try {
 				for (;;) {
-					Node class98 = (((Node) ((LinkedList) this).aClass98_1198).aClass98_836);
-					if (class98 == ((LinkedList) this).aClass98_1198)
+					Node class98 = (this.aClass98_1198.aClass98_836);
+					if (class98 == this.aClass98_1198)
 						break;
 					class98.remove();
 				}
@@ -137,12 +137,12 @@ final class LinkedList {
 	final void method2423(int i, Node class98) {
 		do {
 			try {
-				if (((Node) class98).aClass98_833 != null)
+				if (class98.aClass98_833 != null)
 					class98.remove();
-				((Node) class98).aClass98_833 = ((LinkedList) this).aClass98_1198;
-				((Node) class98).aClass98_836 = ((Node) ((LinkedList) this).aClass98_1198).aClass98_836;
-				((Node) ((Node) class98).aClass98_833).aClass98_836 = class98;
-				((Node) ((Node) class98).aClass98_836).aClass98_833 = class98;
+				class98.aClass98_833 = this.aClass98_1198;
+				class98.aClass98_836 = this.aClass98_1198.aClass98_836;
+				class98.aClass98_833.aClass98_836 = class98;
+				class98.aClass98_836.aClass98_833 = class98;
 				if (i == -2)
 					break;
 				method2427(100);
@@ -156,7 +156,7 @@ final class LinkedList {
 	final int method2424(int i) {
 		try {
 			int i_1_ = i;
-			for (Node class98 = (((Node) ((LinkedList) this).aClass98_1198).aClass98_836); ((LinkedList) this).aClass98_1198 != class98; class98 = ((Node) class98).aClass98_836)
+			for (Node class98 = (this.aClass98_1198.aClass98_836); this.aClass98_1198 != class98; class98 = class98.aClass98_836)
 				i_1_++;
 			return i_1_;
 		} catch (RuntimeException runtimeexception) {
@@ -167,7 +167,7 @@ final class LinkedList {
 	final void method2425(LinkedList class148_2_, int i) {
 		try {
 			int i_3_ = -55 % ((11 - i) / 57);
-			method2426(class148_2_, (((Node) ((LinkedList) this).aClass98_1198).aClass98_836), (byte) -123);
+			method2426(class148_2_, (this.aClass98_1198.aClass98_836), (byte) -123);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("kba.N(" + (class148_2_ != null ? "{...}" : "null") + ',' + i + ')'));
 		}
@@ -178,15 +178,15 @@ final class LinkedList {
 			try {
 				if (i > -57)
 					method2421(-21);
-				Node class98_5_ = ((Node) ((LinkedList) this).aClass98_1198).aClass98_833;
-				((Node) ((LinkedList) this).aClass98_1198).aClass98_833 = ((Node) class98).aClass98_833;
-				((Node) ((Node) class98).aClass98_833).aClass98_836 = ((LinkedList) this).aClass98_1198;
-				if (class98 == ((LinkedList) this).aClass98_1198)
+				Node class98_5_ = this.aClass98_1198.aClass98_833;
+				this.aClass98_1198.aClass98_833 = class98.aClass98_833;
+				class98.aClass98_833.aClass98_836 = this.aClass98_1198;
+				if (class98 == this.aClass98_1198)
 					break;
-				((Node) class98).aClass98_833 = (((Node) ((LinkedList) class148_4_).aClass98_1198).aClass98_833);
-				((Node) ((Node) class98).aClass98_833).aClass98_836 = class98;
-				((Node) ((LinkedList) class148_4_).aClass98_1198).aClass98_833 = class98_5_;
-				((Node) class98_5_).aClass98_836 = ((LinkedList) class148_4_).aClass98_1198;
+				class98.aClass98_833 = (class148_4_.aClass98_1198.aClass98_833);
+				class98.aClass98_833.aClass98_836 = class98;
+				class148_4_.aClass98_1198.aClass98_833 = class98_5_;
+				class98_5_.aClass98_836 = class148_4_.aClass98_1198;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("kba.O(" + (class148_4_ != null ? "{...}" : "null") + ',' + (class98 != null ? "{...}" : "null") + ',' + i + ')'));
 			}
@@ -198,12 +198,12 @@ final class LinkedList {
 		try {
 			if (i > -39)
 				return null;
-			Node class98 = ((Node) ((LinkedList) this).aClass98_1198).aClass98_833;
-			if (((LinkedList) this).aClass98_1198 == class98) {
+			Node class98 = this.aClass98_1198.aClass98_833;
+			if (this.aClass98_1198 == class98) {
 				aClass98_1199 = null;
 				return null;
 			}
-			aClass98_1199 = ((Node) class98).aClass98_833;
+			aClass98_1199 = class98.aClass98_833;
 			return class98;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "kba.H(" + i + ')');
@@ -215,27 +215,27 @@ final class LinkedList {
 			try {
 				if (i != 15697)
 					aClass314_1195 = null;
-				if (((Class98_Sub33) class98_sub33).aBoolean4124) {
-					if (((Class98_Sub33) class98_sub33).anInt4119 < 0 || Class358.method3889((((Class98_Sub33) class98_sub33).anInt4115), (((Class98_Sub33) class98_sub33).anInt4119), false)) {
+				if (class98_sub33.aBoolean4124) {
+					if (class98_sub33.anInt4119 < 0 || Class358.method3889((class98_sub33.anInt4115), (class98_sub33.anInt4119), false)) {
 						if (!bool)
-							Canvas_Sub1.method119(((Class98_Sub33) class98_sub33).anInt4119, ((Class98_Sub33) class98_sub33).anInt4113, ((Class98_Sub33) class98_sub33).anInt4118, ((Class98_Sub33) class98_sub33).anInt4121, ((Class98_Sub33) class98_sub33).anInt4116, i ^ ~0x3d50, ((Class98_Sub33) class98_sub33).anInt4112, -1, ((Class98_Sub33) class98_sub33).anInt4115);
+							Canvas_Sub1.method119(class98_sub33.anInt4119, class98_sub33.anInt4113, class98_sub33.anInt4118, class98_sub33.anInt4121, class98_sub33.anInt4116, i ^ ~0x3d50, class98_sub33.anInt4112, -1, class98_sub33.anInt4115);
 						else
-							Class64_Sub13.method601(null, ((Class98_Sub33) class98_sub33).anInt4113, ((Class98_Sub33) class98_sub33).anInt4116, ((Class98_Sub33) class98_sub33).anInt4112, ((Class98_Sub33) class98_sub33).anInt4118, 6093);
+							Class64_Sub13.method601(null, class98_sub33.anInt4113, class98_sub33.anInt4116, class98_sub33.anInt4112, class98_sub33.anInt4118, 6093);
 						class98_sub33.remove();
 					}
 				} else {
-					if (!((Class98_Sub33) class98_sub33).aBoolean4123 || ((Class98_Sub33) class98_sub33).anInt4112 < 1 || (((Class98_Sub33) class98_sub33).anInt4113 ^ 0xffffffff) > -2 || (GameWorld.size_x - 2 < ((Class98_Sub33) class98_sub33).anInt4112) || ((GameWorld.size_y + -2 ^ 0xffffffff) > (((Class98_Sub33) class98_sub33).anInt4113 ^ 0xffffffff)))
+					if (!class98_sub33.aBoolean4123 || class98_sub33.anInt4112 < 1 || class98_sub33.anInt4113 < 1 || (GameWorld.size_x - 2 < class98_sub33.anInt4112) || (class98_sub33.anInt4113 > GameWorld.size_y + -2))
 						break;
-					if ((((Class98_Sub33) class98_sub33).anInt4114 ^ 0xffffffff) > -1 || Class358.method3889((((Class98_Sub33) class98_sub33).anInt4122), (((Class98_Sub33) class98_sub33).anInt4114), false)) {
+					if (class98_sub33.anInt4114 < 0 || Class358.method3889((class98_sub33.anInt4122), (class98_sub33.anInt4114), false)) {
 						if (!bool)
-							Canvas_Sub1.method119(((Class98_Sub33) class98_sub33).anInt4114, ((Class98_Sub33) class98_sub33).anInt4113, ((Class98_Sub33) class98_sub33).anInt4118, ((Class98_Sub33) class98_sub33).anInt4120, ((Class98_Sub33) class98_sub33).anInt4116, -2, ((Class98_Sub33) class98_sub33).anInt4112, -1, ((Class98_Sub33) class98_sub33).anInt4122);
+							Canvas_Sub1.method119(class98_sub33.anInt4114, class98_sub33.anInt4113, class98_sub33.anInt4118, class98_sub33.anInt4120, class98_sub33.anInt4116, -2, class98_sub33.anInt4112, -1, class98_sub33.anInt4122);
 						else
-							Class64_Sub13.method601((((Class98_Sub33) class98_sub33).aClass185_4125), ((Class98_Sub33) class98_sub33).anInt4113, ((Class98_Sub33) class98_sub33).anInt4116, ((Class98_Sub33) class98_sub33).anInt4112, ((Class98_Sub33) class98_sub33).anInt4118, 6093);
-						((Class98_Sub33) class98_sub33).aBoolean4123 = false;
-						if (!bool && (((Class98_Sub33) class98_sub33).anInt4119 == ((Class98_Sub33) class98_sub33).anInt4114) && ((Class98_Sub33) class98_sub33).anInt4119 == -1)
+							Class64_Sub13.method601((class98_sub33.aClass185_4125), class98_sub33.anInt4113, class98_sub33.anInt4116, class98_sub33.anInt4112, class98_sub33.anInt4118, 6093);
+						class98_sub33.aBoolean4123 = false;
+						if (!bool && (class98_sub33.anInt4119 == class98_sub33.anInt4114) && class98_sub33.anInt4119 == -1)
 							class98_sub33.remove();
 						else {
-							if (bool || ((((Class98_Sub33) class98_sub33).anInt4114 ^ 0xffffffff) != ((((Class98_Sub33) class98_sub33).anInt4119) ^ 0xffffffff)) || (((Class98_Sub33) class98_sub33).anInt4121 != (((Class98_Sub33) class98_sub33).anInt4120)) || ((((Class98_Sub33) class98_sub33).anInt4115 ^ 0xffffffff) != ((((Class98_Sub33) class98_sub33).anInt4122) ^ 0xffffffff)))
+							if (bool || ((class98_sub33.anInt4119) != class98_sub33.anInt4114) || (class98_sub33.anInt4121 != (class98_sub33.anInt4120)) || ((class98_sub33.anInt4122) != class98_sub33.anInt4115))
 								break;
 							class98_sub33.remove();
 						}
@@ -260,8 +260,8 @@ final class LinkedList {
 
 	public LinkedList() {
 		try {
-			((Node) ((LinkedList) this).aClass98_1198).aClass98_833 = ((LinkedList) this).aClass98_1198;
-			((Node) ((LinkedList) this).aClass98_1198).aClass98_836 = ((LinkedList) this).aClass98_1198;
+			this.aClass98_1198.aClass98_833 = this.aClass98_1198;
+			this.aClass98_1198.aClass98_836 = this.aClass98_1198;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "kba.<init>(" + ')');
 		}

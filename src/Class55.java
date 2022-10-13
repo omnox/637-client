@@ -42,17 +42,17 @@ final class Class55 {
 		try {
 			bool_1_ &= aHa_Sub1_435.method1747();
 			if (bool_3_ == true) {
-				if (!bool_1_ && ((i_4_ ^ 0xffffffff) == -5 || (i_4_ ^ 0xffffffff) == -9 || i_4_ == 9)) {
-					if ((i_4_ ^ 0xffffffff) == -5)
+				if (!bool_1_ && (i_4_ == 4 || i_4_ == 8 || i_4_ == 9)) {
+					if (i_4_ == 4)
 						i = i_2_;
 					i_4_ = 2;
 				}
-				if ((i_4_ ^ 0xffffffff) != -1 && bool)
+				if (i_4_ != 0 && bool)
 					i_4_ |= ~0x7fffffff;
 				if (anInt436 == i_4_) {
 					if (anInt436 != 0) {
 						aClass151Array437[0x7fffffff & anInt436].method2443(bool, 255);
-						if ((anInt434 ^ 0xffffffff) != (i_2_ ^ 0xffffffff) || (anInt438 ^ 0xffffffff) != (i ^ 0xffffffff)) {
+						if (i_2_ != anInt434 || i != anInt438) {
 							aClass151Array437[0x7fffffff & anInt436].method2441(i_2_, i, -57);
 							anInt438 = i;
 							anInt434 = i_2_;
@@ -61,7 +61,7 @@ final class Class55 {
 				} else {
 					if (anInt436 != 0)
 						aClass151Array437[anInt436 & 0x7fffffff].method2445((byte) 61);
-					if ((i_4_ ^ 0xffffffff) != -1) {
+					if (i_4_ != 0) {
 						aClass151Array437[i_4_ & 0x7fffffff].method2440(!bool_3_, bool);
 						aClass151Array437[0x7fffffff & i_4_].method2443(bool, 255);
 						aClass151Array437[0x7fffffff & i_4_].method2441(i_2_, i, -51);
@@ -100,7 +100,7 @@ final class Class55 {
 				aClass151Array437[5] = new Class151_Sub7(var_ha_Sub1, aClass51_439);
 				aClass151Array437[6] = new Class151_Sub5(var_ha_Sub1);
 				aClass151Array437[7] = new Class151_Sub8(var_ha_Sub1);
-				aClass151Array437[3] = ((Class55) this).aClass151_Sub9_432 = new Class151_Sub9(var_ha_Sub1);
+				aClass151Array437[3] = this.aClass151_Sub9_432 = new Class151_Sub9(var_ha_Sub1);
 				aClass151Array437[8] = new Class151_Sub4(var_ha_Sub1, aClass51_439);
 				aClass151Array437[9] = new Class151_Sub2(var_ha_Sub1, aClass51_439);
 				if (!aClass151Array437[8].method2439(31565))

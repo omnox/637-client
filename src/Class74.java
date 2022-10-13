@@ -25,7 +25,7 @@ final class Class74 {
 
 	private final void method723(int i, Interface20 interface20, Object object, boolean bool) {
 		try {
-			if ((i ^ 0xffffffff) < (anInt548 ^ 0xffffffff))
+			if (anInt548 < i)
 				throw new IllegalStateException("s>cs");
 			method731(interface20, bool);
 			anInt550 -= i;
@@ -36,7 +36,7 @@ final class Class74 {
 			Class98_Sub46_Sub20_Sub2 class98_sub46_sub20_sub2 = new Class98_Sub46_Sub20_Sub2(interface20, object, i);
 			aClass377_545.method3996(class98_sub46_sub20_sub2, interface20.method69(!bool), -1);
 			aClass215_549.method2785(class98_sub46_sub20_sub2, -51);
-			((Class98_Sub46) class98_sub46_sub20_sub2).aLong4259 = 0L;
+			class98_sub46_sub20_sub2.aLong4259 = 0L;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ep.I(" + i + ',' + (interface20 != null ? "{...}" : "null") + ',' + (object != null ? "{...}" : "null") + ',' + bool + ')'));
 		}
@@ -50,11 +50,11 @@ final class Class74 {
 						if (class98_sub46_sub20.method1635(121) == null) {
 							class98_sub46_sub20.remove();
 							class98_sub46_sub20.method1524((byte) -90);
-							anInt550 += (((Class98_Sub46_Sub20) class98_sub46_sub20).anInt6072);
+							anInt550 += (class98_sub46_sub20.anInt6072);
 						}
-					} else if (++((Class98_Sub46) class98_sub46_sub20).aLong4259 > (long) i_0_) {
+					} else if (++class98_sub46_sub20.aLong4259 > (long) i_0_) {
 						Class98_Sub46_Sub20 class98_sub46_sub20_1_ = Class39_Sub1.aClass277_3590.method3290(class98_sub46_sub20, (byte) -33);
-						aClass377_545.method3996(class98_sub46_sub20_1_, (((Node) class98_sub46_sub20).uid), -1);
+						aClass377_545.method3996(class98_sub46_sub20_1_, (class98_sub46_sub20.uid), -1);
 						Class101.method1697(class98_sub46_sub20, (byte) 37, class98_sub46_sub20_1_);
 						class98_sub46_sub20.remove();
 						class98_sub46_sub20.method1524((byte) -90);
@@ -74,7 +74,7 @@ final class Class74 {
 					if (class98_sub46_sub20.method1638(i ^ 0x35f1)) {
 						class98_sub46_sub20.remove();
 						class98_sub46_sub20.method1524((byte) -90);
-						anInt550 += (((Class98_Sub46_Sub20) class98_sub46_sub20).anInt6072);
+						anInt550 += (class98_sub46_sub20.anInt6072);
 					}
 				}
 				if (i == 13937)
@@ -119,7 +119,7 @@ final class Class74 {
 				if (class98_sub46_sub20 != null) {
 					class98_sub46_sub20.remove();
 					class98_sub46_sub20.method1524((byte) -90);
-					anInt550 += (((Class98_Sub46_Sub20) class98_sub46_sub20).anInt6072);
+					anInt550 += (class98_sub46_sub20.anInt6072);
 				}
 				if (i == -100)
 					break;
@@ -155,7 +155,7 @@ final class Class74 {
 				method728(null, (byte) -125);
 			long l = interface20.method69(!bool);
 			for (Class98_Sub46_Sub20 class98_sub46_sub20 = (Class98_Sub46_Sub20) aClass377_545.method3990(l, -1); class98_sub46_sub20 != null; class98_sub46_sub20 = (Class98_Sub46_Sub20) aClass377_545.method3993(122)) {
-				if (((Class98_Sub46_Sub20) class98_sub46_sub20).anInterface20_6071.method68(22000, interface20)) {
+				if (class98_sub46_sub20.anInterface20_6071.method68(22000, interface20)) {
 					method728(class98_sub46_sub20, (byte) -100);
 					break;
 				}
@@ -170,24 +170,24 @@ final class Class74 {
 			if (i != 0)
 				return null;
 			long l = interface20.method69(true);
-			for (Class98_Sub46_Sub20 class98_sub46_sub20 = ((Class98_Sub46_Sub20) aClass377_545.method3990(l, i ^ 0xffffffff)); class98_sub46_sub20 != null; class98_sub46_sub20 = (Class98_Sub46_Sub20) aClass377_545.method3993(-123)) {
-				if (((Class98_Sub46_Sub20) class98_sub46_sub20).anInterface20_6071.method68(22000, interface20)) {
+			for (Class98_Sub46_Sub20 class98_sub46_sub20 = ((Class98_Sub46_Sub20) aClass377_545.method3990(l, ~i)); class98_sub46_sub20 != null; class98_sub46_sub20 = (Class98_Sub46_Sub20) aClass377_545.method3993(-123)) {
+				if (class98_sub46_sub20.anInterface20_6071.method68(22000, interface20)) {
 					Object object = class98_sub46_sub20.method1635(-97);
 					if (object == null) {
 						class98_sub46_sub20.remove();
 						class98_sub46_sub20.method1524((byte) -90);
-						anInt550 += (((Class98_Sub46_Sub20) class98_sub46_sub20).anInt6072);
+						anInt550 += (class98_sub46_sub20.anInt6072);
 					} else {
 						if (class98_sub46_sub20.method1638(896)) {
-							Class98_Sub46_Sub20_Sub2 class98_sub46_sub20_sub2 = (new Class98_Sub46_Sub20_Sub2(interface20, object, ((Class98_Sub46_Sub20) class98_sub46_sub20).anInt6072));
-							aClass377_545.method3996(class98_sub46_sub20_sub2, (((Node) class98_sub46_sub20).uid), -1);
+							Class98_Sub46_Sub20_Sub2 class98_sub46_sub20_sub2 = (new Class98_Sub46_Sub20_Sub2(interface20, object, class98_sub46_sub20.anInt6072));
+							aClass377_545.method3996(class98_sub46_sub20_sub2, (class98_sub46_sub20.uid), -1);
 							aClass215_549.method2785(class98_sub46_sub20_sub2, i + -68);
-							((Class98_Sub46) class98_sub46_sub20_sub2).aLong4259 = 0L;
+							class98_sub46_sub20_sub2.aLong4259 = 0L;
 							class98_sub46_sub20.remove();
 							class98_sub46_sub20.method1524((byte) -90);
 						} else {
 							aClass215_549.method2785(class98_sub46_sub20, -97);
-							((Class98_Sub46) class98_sub46_sub20).aLong4259 = 0L;
+							class98_sub46_sub20.aLong4259 = 0L;
 						}
 						return object;
 					}
@@ -204,7 +204,7 @@ final class Class74 {
 			anInt550 = i;
 			anInt548 = i;
 			int i_3_;
-			for (i_3_ = 1; (i_3_ + i_3_ ^ 0xffffffff) > (i ^ 0xffffffff); i_3_ += i_3_) {
+			for (i_3_ = 1; i > i_3_ + i_3_; i_3_ += i_3_) {
 				/* empty */
 			}
 			aClass377_545 = new Class377(i_3_);

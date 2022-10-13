@@ -45,8 +45,8 @@ final class Class93_Sub3 extends Class93 {
 	Class93_Sub3(Class63 class63, Class110 class110, int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_) {
 		super(class63, class110, i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_);
 		try {
-			((Class93_Sub3) this).anInt5495 = i_7_;
-			((Class93_Sub3) this).anInt5496 = i_6_;
+			this.anInt5495 = i_7_;
+			this.anInt5496 = i_6_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("uu.<init>(" + (class63 != null ? "{...}" : "null") + ',' + (class110 != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'));
 		}

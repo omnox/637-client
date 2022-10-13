@@ -15,7 +15,7 @@ final class Class350 {
 
 	Class350(int i) {
 		try {
-			((Class350) this).anInt2920 = i;
+			this.anInt2920 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "vg.<init>(" + i + ')');
 		}

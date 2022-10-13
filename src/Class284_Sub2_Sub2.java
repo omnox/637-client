@@ -35,7 +35,7 @@ final class Class284_Sub2_Sub2 extends Class284_Sub2 {
 			int i_3_ = i * 2;
 			aByteArray6196[i_3_++] = (byte) -1;
 			int i_4_ = 0xff & i_1_;
-			aByteArray6196[i_3_] = (byte) (3 * i_4_ >> 737825957);
+			aByteArray6196[i_3_] = (byte) (3 * i_4_ >> 5);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("kh.L(" + i + ',' + i_0_ + ',' + i_1_ + ')'));
 		}
@@ -57,7 +57,7 @@ final class Class284_Sub2_Sub2 extends Class284_Sub2 {
 		anIntArray6200 = new int[16384];
 		anIntArray6202 = new int[16384];
 		double d = 3.834951969714103E-4;
-		for (int i = 0; (i ^ 0xffffffff) > -16385; i++) {
+		for (int i = 0; i < 16384; i++) {
 			anIntArray6200[i] = (int) (16384.0 * Math.sin((double) i * d));
 			anIntArray6202[i] = (int) (Math.cos(d * (double) i) * 16384.0);
 		}

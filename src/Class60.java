@@ -17,15 +17,15 @@ final class Class60 {
 		try {
 			if (i < 1)
 				method535(101, 11, -47, -9, null, null, null, null, null, null, -9, (byte) -87, 72, -113, false, true, -44, -71, false);
-			if ((i_0_ ^ 0xffffffff) == -2)
-				((Class60) this).anInt470 = class98_sub22.readShort();
+			if (i_0_ == 1)
+				this.anInt470 = class98_sub22.readShort();
 			else if (i_0_ != 2) {
 				if (i_0_ == 3)
-					((Class60) this).anInt472 = class98_sub22.readUnsignedByte();
+					this.anInt472 = class98_sub22.readUnsignedByte();
 			} else {
-				((Class60) this).anIntArray473 = new int[class98_sub22.readUnsignedByte()];
-				for (int i_1_ = 0; i_1_ < ((Class60) this).anIntArray473.length; i_1_++)
-					((Class60) this).anIntArray473[i_1_] = class98_sub22.readShort();
+				this.anIntArray473 = new int[class98_sub22.readUnsignedByte()];
+				for (int i_1_ = 0; i_1_ < this.anIntArray473.length; i_1_++)
+					this.anIntArray473[i_1_] = class98_sub22.readShort();
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("eba.A(" + i + ',' + (class98_sub22 != null ? "{...}" : "null") + ',' + i_0_ + ')'));
@@ -144,8 +144,8 @@ final class Class60 {
 			Class135.aBoolean1052 = false;
 		}
 		Class64_Sub7.method580(Class98_Sub10_Sub30.aHa5709, 59);
-		if (!((Class84) Class98_Sub10_Sub27.aClass84_5692).aBoolean637) {
-			Class218 class218 = ((Class84) Class98_Sub10_Sub27.aClass84_5692).aClass218_635;
+		if (!Class98_Sub10_Sub27.aClass84_5692.aBoolean637) {
+			Class218 class218 = Class98_Sub10_Sub27.aClass84_5692.aClass218_635;
 			for (Class246_Sub1 class246_sub1 = (Class246_Sub1) class218.method2803((byte) 15); class246_sub1 != null; class246_sub1 = (Class246_Sub1) class218.method2809(false)) {
 				class246_sub1.method2965((byte) -37);
 				Class35.method333(class246_sub1, 84);

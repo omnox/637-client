@@ -14,7 +14,7 @@ final class Class365 {
 				aBoolean3110 = true;
 			int i_1_ = -1;
 			for (int i_2_ = i_0_; i_2_ < i; i_2_++)
-				i_1_ = (Class287_Sub1.anIntArray3419[0xff & (is[i_2_] ^ i_1_)] ^ i_1_ >>> -26165528);
+				i_1_ = (Class287_Sub1.anIntArray3419[0xff & (is[i_2_] ^ i_1_)] ^ i_1_ >>> 8);
 			i_1_ ^= 0xffffffff;
 			return i_1_;
 		} catch (RuntimeException runtimeexception) {
@@ -37,7 +37,7 @@ final class Class365 {
 		try {
 			GameInterfaceData class293_4_ = client.method102(class293);
 			if (class293_4_ == null)
-				class293_4_ = ((GameInterfaceData) class293).aClass293_2219;
+				class293_4_ = class293.aClass293_2219;
 			if (i != 4456)
 				method3939(54, null);
 			return class293_4_;
@@ -52,7 +52,7 @@ final class Class365 {
 				return null;
 			ParamType class149;
 			synchronized (aClass79_3108) {
-				class149 = (ParamType) aClass79_3108.get((long) i_5_);
+				class149 = (ParamType) aClass79_3108.get(i_5_);
 			}
 			if (class149 != null)
 				return class149;
@@ -64,7 +64,7 @@ final class Class365 {
 			if (is != null)
 				class149.method2431(new RSByteBuffer(is), -1);
 			synchronized (aClass79_3108) {
-				aClass79_3108.put((long) i_5_, class149);
+				aClass79_3108.put(i_5_, class149);
 			}
 			return class149;
 		} catch (RuntimeException runtimeexception) {
@@ -86,7 +86,7 @@ final class Class365 {
 				Class343.aString2863 += "linux/";
 			if (i != -1)
 				method3937(63, null, -15, false);
-			if (((Class88) Class242.aClass88_1848).aBoolean675)
+			if (Class242.aClass88_1848.aBoolean675)
 				Class343.aString2863 += "msjava/";
 			else if (!Class19.aString3442.startsWith("amd64") && !Class19.aString3442.startsWith("x86_64")) {
 				if (!Class19.aString3442.startsWith("i386") && !Class19.aString3442.startsWith("i486") && !Class19.aString3442.startsWith("i586") && !Class19.aString3442.startsWith("x86")) {

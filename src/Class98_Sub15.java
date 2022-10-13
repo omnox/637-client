@@ -32,7 +32,7 @@ final class Class98_Sub15 extends Node {
 
 	Class98_Sub15(String string) {
 		try {
-			((Class98_Sub15) this).aString3917 = string;
+			this.aString3917 = string;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "gia.<init>(" + (string != null ? "{...}" : "null") + ')');
 		}

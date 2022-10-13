@@ -27,11 +27,11 @@ final class Class132 {
 			if (i_1_ != 98)
 				anIntArray1044 = null;
 			int i_2_;
-			if ((i ^ 0xffffffff) >= -20001) {
+			if (i <= 20000) {
 				if (i > 10000) {
 					i_2_ = 3;
 					Class98_Sub50.method1672((byte) 19);
-				} else if ((i ^ 0xffffffff) < -5001) {
+				} else if (i > 5000) {
 					Class287.method3385((byte) 66);
 					i_2_ = 2;
 				} else {
@@ -42,8 +42,8 @@ final class Class132 {
 				Class98_Sub27.method1284(1);
 				i_2_ = 4;
 			}
-			if ((((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 125) ^ 0xffffffff) != (i_0_ ^ 0xffffffff)) {
-				Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, i_0_, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4062));
+			if (i_0_ != Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 125)) {
+				Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, i_0_, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4062));
 				Class76_Sub4.method754(i_0_, false, i_1_ + -215);
 			}
 			Class310.method3618(-5964);
@@ -57,28 +57,28 @@ final class Class132 {
 		do {
 			try {
 				OutgoingPacket class98_sub11 = Class98_Sub46_Sub9.method1556(false);
-				((OutgoingPacket) class98_sub11).packet.writeByte(((Class222) Class298.aClass222_2485).anInt1668);
-				((OutgoingPacket) class98_sub11).packet.writeShort(0);
-				int i_5_ = (((RSByteBuffer) (((OutgoingPacket) class98_sub11).packet)).position);
-				((OutgoingPacket) class98_sub11).packet.writeShort(637);
+				class98_sub11.packet.writeByte(Class298.aClass222_2485.anInt1668);
+				class98_sub11.packet.writeShort(0);
+				int i_5_ = (class98_sub11.packet.position);
+				class98_sub11.packet.writeShort(637);
 				int[] is = Class42_Sub2.method389(12206, class98_sub11);
-				int i_6_ = (((RSByteBuffer) (((OutgoingPacket) class98_sub11).packet)).position);
-				((OutgoingPacket) class98_sub11).packet.method1188(string_3_, (byte) 113);
-				((OutgoingPacket) class98_sub11).packet.writeShort(Class98_Sub10_Sub15.anInt5619);
-				((OutgoingPacket) class98_sub11).packet.method1188(string, (byte) 113);
-				((OutgoingPacket) class98_sub11).packet.method1221(-75, Class197.aLong1515);
-				((OutgoingPacket) class98_sub11).packet.writeByte(Class374.anInt3159);
-				((OutgoingPacket) class98_sub11).packet.writeByte(((Class279) Class4.aClass279_86).anInt2095);
-				ParamType.method2430((((OutgoingPacket) class98_sub11).packet), (byte) 0);
+				int i_6_ = (class98_sub11.packet.position);
+				class98_sub11.packet.method1188(string_3_, (byte) 113);
+				class98_sub11.packet.writeShort(Class98_Sub10_Sub15.anInt5619);
+				class98_sub11.packet.method1188(string, (byte) 113);
+				class98_sub11.packet.method1221(-75, Class197.aLong1515);
+				class98_sub11.packet.writeByte(Class374.anInt3159);
+				class98_sub11.packet.writeByte(Class4.aClass279_86.anInt2095);
+				ParamType.method2430((class98_sub11.packet), (byte) 0);
 				String string_7_ = Class98_Sub10_Sub7.aString5573;
-				((OutgoingPacket) class98_sub11).packet.writeByte(string_7_ == null ? 0 : 1);
+				class98_sub11.packet.writeByte(string_7_ == null ? 0 : 1);
 				if (string_7_ != null)
-					((OutgoingPacket) class98_sub11).packet.method1188(string_7_, (byte) 113);
-				((OutgoingPacket) class98_sub11).packet.writeByte(i_4_);
-				((OutgoingPacket) class98_sub11).packet.writeByte(bool ? 1 : 0);
-				((RSByteBuffer) (((OutgoingPacket) class98_sub11).packet)).position += 7;
-				((OutgoingPacket) class98_sub11).packet.method1235(true, is, i_6_, ((RSByteBuffer) (((OutgoingPacket) class98_sub11).packet)).position);
-				((OutgoingPacket) class98_sub11).packet.method1207((byte) 90, -i_5_ + (((RSByteBuffer) (((OutgoingPacket) class98_sub11).packet)).position));
+					class98_sub11.packet.method1188(string_7_, (byte) 113);
+				class98_sub11.packet.writeByte(i_4_);
+				class98_sub11.packet.writeByte(bool ? 1 : 0);
+				class98_sub11.packet.position += 7;
+				class98_sub11.packet.method1235(true, is, i_6_, class98_sub11.packet.position);
+				class98_sub11.packet.method1207((byte) 90, -i_5_ + (class98_sub11.packet.position));
 				Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 				Class21_Sub4.anInt5394 = 1;
 				Class372.anInt3150 = i;
@@ -99,7 +99,7 @@ final class Class132 {
 		try {
 			Class90 class90;
 			synchronized (aClass79_1049) {
-				class90 = (Class90) aClass79_1049.get((long) i);
+				class90 = (Class90) aClass79_1049.get(i);
 			}
 			if (class90 != null)
 				return class90;
@@ -113,7 +113,7 @@ final class Class132 {
 			if (is != null)
 				class90.method885(new RSByteBuffer(is), -23453);
 			synchronized (aClass79_1049) {
-				aClass79_1049.put((long) i, class90);
+				aClass79_1049.put(i, class90);
 			}
 			return class90;
 		} catch (RuntimeException runtimeexception) {
@@ -124,7 +124,7 @@ final class Class132 {
 	Class132(Class279 class279, int i, RuneScapeCache class207) {
 		try {
 			aClass207_1045 = class207;
-			((Class132) this).anInt1047 = aClass207_1045.method2761(0, 19);
+			this.anInt1047 = aClass207_1045.method2761(0, 19);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("iu.<init>(" + (class279 != null ? "{...}" : "null") + ',' + i + ',' + (class207 != null ? "{...}" : "null") + ')'));
 		}

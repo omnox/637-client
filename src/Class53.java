@@ -12,7 +12,7 @@ abstract class Class53 {
 		try {
 			if (i != 9811)
 				method496((byte) -66);
-			if ((((Class53) this).anInt427 & 0x2 ^ 0xffffffff) == -1)
+			if ((this.anInt427 & 0x2) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -38,7 +38,7 @@ abstract class Class53 {
 		try {
 			if (i <= 119)
 				method494((byte) -66);
-			if ((((Class53) this).anInt427 & 0x8) == 0)
+			if ((this.anInt427 & 0x8) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -50,7 +50,7 @@ abstract class Class53 {
 		try {
 			if (i <= 42)
 				method496((byte) 70);
-			if ((((Class53) this).anInt427 & 0x4) == 0)
+			if ((this.anInt427 & 0x4) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -62,7 +62,7 @@ abstract class Class53 {
 		try {
 			if (bool != false)
 				return true;
-			if ((0x1 & ((Class53) this).anInt427) == 0)
+			if ((0x1 & this.anInt427) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

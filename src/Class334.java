@@ -49,20 +49,20 @@ final class Class334 implements Interface18 {
 			try {
 				if (i >= -81)
 					aClass332_3471 = null;
-				Class368 class368 = aClass363_3467.method3929(23885, (((Class52) aClass52_3469).anInt3501));
+				Class368 class368 = aClass363_3467.method3929(23885, (aClass52_3469.anInt3501));
 				if (class368 == null)
 					break;
-				int i_0_ = ((((Class52) aClass52_3469).aClass63_3502.method545(Class98_Sub17_Sub1.anInt5782, ((Class52) aClass52_3469).anInt3496, (byte) 110)) - -((Class52) aClass52_3469).anInt3498);
-				int i_1_ = ((((Class52) aClass52_3469).aClass110_3499.method2088(((Class52) aClass52_3469).anInt3497, Class246_Sub2.anInt5072, (byte) -56)) + ((Class52) aClass52_3469).anInt3490);
-				if (((Class52) aClass52_3469).aBoolean3495)
-					Class265.aHa1974.method1779(i_0_, i_1_, ((Class52) aClass52_3469).anInt3496, ((Class52) aClass52_3469).anInt3497, ((Class52) aClass52_3469).anInt3489, 0);
-				i_1_ += method3764(5, i_1_, Class98_Sub10_Sub34.aClass43_5730, ((Class368) class368).aString3127, true, i_0_) * 12;
+				int i_0_ = ((aClass52_3469.aClass63_3502.method545(Class98_Sub17_Sub1.anInt5782, aClass52_3469.anInt3496, (byte) 110)) - -aClass52_3469.anInt3498);
+				int i_1_ = ((aClass52_3469.aClass110_3499.method2088(aClass52_3469.anInt3497, Class246_Sub2.anInt5072, (byte) -56)) + aClass52_3469.anInt3490);
+				if (aClass52_3469.aBoolean3495)
+					Class265.aHa1974.method1779(i_0_, i_1_, aClass52_3469.anInt3496, aClass52_3469.anInt3497, aClass52_3469.anInt3489, 0);
+				i_1_ += method3764(5, i_1_, Class98_Sub10_Sub34.aClass43_5730, class368.aString3127, true, i_0_) * 12;
 				i_1_ += 8;
-				if (((Class52) aClass52_3469).aBoolean3495)
-					Class265.aHa1974.method1795(i_0_, i_1_, i_0_ + (((Class52) aClass52_3469).anInt3496 - 1), i_1_, ((Class52) aClass52_3469).anInt3489, 0);
-				i_1_ = (++i_1_ + 12 * method3764(5, i_1_, Class98_Sub10_Sub34.aClass43_5730, ((Class368) class368).aString3123, true, i_0_));
+				if (aClass52_3469.aBoolean3495)
+					Class265.aHa1974.method1795(i_0_, i_1_, i_0_ + (aClass52_3469.anInt3496 - 1), i_1_, aClass52_3469.anInt3489, 0);
+				i_1_ = (++i_1_ + 12 * method3764(5, i_1_, Class98_Sub10_Sub34.aClass43_5730, class368.aString3123, true, i_0_));
 				i_1_ += 5;
-				i_1_ += method3764(5, i_1_, Class98_Sub10_Sub34.aClass43_5730, ((Class368) class368).aString3125, true, i_0_) * 12;
+				i_1_ += method3764(5, i_1_, Class98_Sub10_Sub34.aClass43_5730, class368.aString3125, true, i_0_) * 12;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "uha.B(" + bool + ',' + i + ')');
 			}
@@ -74,7 +74,7 @@ final class Class334 implements Interface18 {
 		try {
 			if (bool != true)
 				aClass363_3467 = null;
-			return (class43.method408(i + i_3_, null, -(i * 2) + ((Class52) aClass52_3469).anInt3496, string, 0, ((Class52) aClass52_3469).anInt3491, null, 0, (byte) -119, ((Class52) aClass52_3469).anInt3492, null, 0, 0, 0, i + i_2_, -(i * 2) + ((Class52) aClass52_3469).anInt3497));
+			return (class43.method408(i + i_3_, null, -(i * 2) + aClass52_3469.anInt3496, string, 0, aClass52_3469.anInt3491, null, 0, (byte) -119, aClass52_3469.anInt3492, null, 0, 0, 0, i + i_2_, -(i * 2) + aClass52_3469.anInt3497));
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("uha.D(" + i + ',' + i_2_ + ',' + (class43 != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + bool + ',' + i_3_ + ')'));
 		}

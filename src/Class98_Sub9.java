@@ -65,8 +65,8 @@ final class Class98_Sub9 extends Node {
 
 	Class98_Sub9(int i, int i_0_) {
 		try {
-			((Class98_Sub9) this).anInt3852 = i;
-			((Class98_Sub9) this).anInt3853 = i_0_;
+			this.anInt3852 = i;
+			this.anInt3853 = i_0_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("daa.<init>(" + i + ',' + i_0_ + ')'));
 		}

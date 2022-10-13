@@ -19,7 +19,7 @@ final class Class308 {
 			i_2_ <<= 3;
 			i_0_ <<= 3;
 			GameWorld.cameraGetHrot = (float) i;
-			if ((Class98_Sub46_Sub20_Sub2.anInt6319 ^ 0xffffffff) == -3) {
+			if (Class98_Sub46_Sub20_Sub2.anInt6319 == 2) {
 				GameWorld.cameraPitch = i_2_;
 				GameWorld.cameraYaw = i;
 				anInt2584 = i_0_;
@@ -34,13 +34,13 @@ final class Class308 {
 
 	private final Class98_Sub24_Sub1 method3609(int i, int i_4_, int i_5_, int[] is) {
 		try {
-			int i_6_ = (0xfff8 & i_4_ << -42388412 | i_4_ >>> 885159052) ^ i_5_;
-			i_6_ |= i_4_ << -1252543472;
+			int i_6_ = (0xfff8 & i_4_ << 4 | i_4_ >>> 12) ^ i_5_;
+			i_6_ |= i_4_ << 16;
 			long l = (long) i_6_ ^ 0x100000000L;
 			Class98_Sub24_Sub1 class98_sub24_sub1 = ((Class98_Sub24_Sub1) aClass377_2585.method3990(l, i ^ ~0x5177));
 			if (class98_sub24_sub1 != null)
 				return class98_sub24_sub1;
-			if (is != null && (is[0] ^ 0xffffffff) >= -1)
+			if (is != null && is[0] <= 0)
 				return null;
 			Class98_Sub13 class98_sub13 = (Class98_Sub13) aClass377_2579.method3990(l, -1);
 			if (class98_sub13 == null) {
@@ -81,9 +81,9 @@ final class Class308 {
 
 	final Class98_Sub24_Sub1 method3611(int i, int i_7_, int[] is) {
 		try {
-			if (i == (aClass207_2578.method2752((byte) -11) ^ 0xffffffff))
+			if (i == (~aClass207_2578.method2752((byte) -11)))
 				return method3612(14913, is, i_7_, 0);
-			if ((aClass207_2578.method2761(0, i_7_) ^ 0xffffffff) == -2)
+			if (aClass207_2578.method2761(0, i_7_) == 1)
 				return method3612(i + 14915, is, 0, i_7_);
 			throw new RuntimeException();
 		} catch (RuntimeException runtimeexception) {
@@ -93,13 +93,13 @@ final class Class308 {
 
 	private final Class98_Sub24_Sub1 method3612(int i, int[] is, int i_8_, int i_9_) {
 		try {
-			int i_10_ = i_8_ ^ ((~0x5ffff000 & i_9_) << -746085692 | i_9_ >>> -2070738644);
-			i_10_ |= i_9_ << 965219344;
-			long l = (long) i_10_;
+			int i_10_ = i_8_ ^ ((~0x5ffff000 & i_9_) << 4 | i_9_ >>> 12);
+			i_10_ |= i_9_ << 16;
+			long l = i_10_;
 			Class98_Sub24_Sub1 class98_sub24_sub1 = (Class98_Sub24_Sub1) aClass377_2585.method3990(l, -1);
 			if (class98_sub24_sub1 != null)
 				return class98_sub24_sub1;
-			if (is != null && (is[0] ^ 0xffffffff) >= -1)
+			if (is != null && is[0] <= 0)
 				return null;
 			Class37 class37 = Class37.method342(aClass207_2578, i_9_, i_8_);
 			if (class37 == null)
@@ -109,7 +109,7 @@ final class Class308 {
 			class98_sub24_sub1 = class37.method344();
 			aClass377_2585.method3996(class98_sub24_sub1, l, -1);
 			if (is != null)
-				is[0] -= (((Class98_Sub24_Sub1) class98_sub24_sub1).aByteArray5799).length;
+				is[0] -= (class98_sub24_sub1.aByteArray5799).length;
 			return class98_sub24_sub1;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("sv.B(" + i + ',' + (is != null ? "{...}" : "null") + ',' + i_8_ + ',' + i_9_ + ')'));
@@ -118,9 +118,9 @@ final class Class308 {
 
 	final Class98_Sub24_Sub1 method3613(int i, boolean bool, int[] is) {
 		try {
-			if ((aClass207_2577.method2752((byte) -11) ^ 0xffffffff) == -2)
+			if (aClass207_2577.method2752((byte) -11) == 1)
 				return method3609(20855, 0, i, is);
-			if ((aClass207_2577.method2761(0, i) ^ 0xffffffff) == -2)
+			if (aClass207_2577.method2761(0, i) == 1)
 				return method3609(20855, i, 0, is);
 			if (bool != true)
 				return null;

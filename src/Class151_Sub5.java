@@ -44,8 +44,8 @@ final class Class151_Sub5 extends Class151 {
 		try {
 			if (bool != false)
 				method2440(false, false);
-			((Class151) this).aHa_Sub1_1215.method1863(1, class42);
-			((Class151) this).aHa_Sub1_1215.method1896(260, i);
+			this.aHa_Sub1_1215.method1863(1, class42);
+			this.aHa_Sub1_1215.method1896(260, i);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("mca.F(" + (class42 != null ? "{...}" : "null") + ',' + bool + ',' + i + ')'));
 		}
@@ -59,7 +59,7 @@ final class Class151_Sub5 extends Class151 {
 		try {
 			if (bool != false)
 				IncomingOpcode.aClass58_4992 = null;
-			((Class151) this).aHa_Sub1_1215.method1905(true, 0);
+			this.aHa_Sub1_1215.method1905(true, 0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("mca.D(" + bool + ',' + bool_2_ + ')'));
 		}
@@ -77,7 +77,7 @@ final class Class151_Sub5 extends Class151 {
 	static final boolean method2462(int i, byte i_3_) {
 		try {
 			int i_4_ = -111 / ((-43 - i_3_) / 52);
-			if (i != 0 && (i ^ 0xffffffff) != -3)
+			if (i != 0 && i != 2)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -87,7 +87,7 @@ final class Class151_Sub5 extends Class151 {
 
 	final void method2445(byte i) {
 		try {
-			((Class151) this).aHa_Sub1_1215.method1905(false, 0);
+			this.aHa_Sub1_1215.method1905(false, 0);
 			if (i < 25)
 				aBoolean4991 = false;
 		} catch (RuntimeException runtimeexception) {

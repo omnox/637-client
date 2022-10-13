@@ -18,17 +18,17 @@ final class Class282 {
 		try {
 			if (i != 37)
 				aClass293_2129 = null;
-			if ((((Mobile) class246_sub3_sub4_sub2).anIntArray6373) != null) {
-				int i_1_ = (((Mobile) class246_sub3_sub4_sub2).anIntArray6373[i_0_ + 1]);
-				if (((((Mobile) class246_sub3_sub4_sub2).anInt6413) ^ 0xffffffff) != (i_1_ ^ 0xffffffff)) {
-					((Mobile) class246_sub3_sub4_sub2).anInt6413 = i_1_;
-					((Mobile) class246_sub3_sub4_sub2).anInt6366 = 0;
-					((Mobile) class246_sub3_sub4_sub2).anInt6436 = (((Mobile) class246_sub3_sub4_sub2).anInt6434);
-					((Mobile) class246_sub3_sub4_sub2).anInt6361 = 1;
-					((Mobile) class246_sub3_sub4_sub2).anInt6405 = 0;
-					((Mobile) class246_sub3_sub4_sub2).anInt6393 = 0;
-					if ((((Mobile) class246_sub3_sub4_sub2).anInt6413) != -1)
-						Class349.method3840((byte) -127, class246_sub3_sub4_sub2, (((Mobile) class246_sub3_sub4_sub2).anInt6393), (Class151_Sub7.aClass183_5001.method2623((((Mobile) class246_sub3_sub4_sub2).anInt6413), i + 16346)));
+			if ((class246_sub3_sub4_sub2.anIntArray6373) != null) {
+				int i_1_ = (class246_sub3_sub4_sub2.anIntArray6373[i_0_ + 1]);
+				if (i_1_ != (class246_sub3_sub4_sub2.anInt6413)) {
+					class246_sub3_sub4_sub2.anInt6413 = i_1_;
+					class246_sub3_sub4_sub2.anInt6366 = 0;
+					class246_sub3_sub4_sub2.anInt6436 = (class246_sub3_sub4_sub2.anInt6434);
+					class246_sub3_sub4_sub2.anInt6361 = 1;
+					class246_sub3_sub4_sub2.anInt6405 = 0;
+					class246_sub3_sub4_sub2.anInt6393 = 0;
+					if ((class246_sub3_sub4_sub2.anInt6413) != -1)
+						Class349.method3840((byte) -127, class246_sub3_sub4_sub2, (class246_sub3_sub4_sub2.anInt6393), (Class151_Sub7.aClass183_5001.method2623((class246_sub3_sub4_sub2.anInt6413), i + 16346)));
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -38,7 +38,7 @@ final class Class282 {
 
 	final int[] method3335(int i, byte i_2_) {
 		try {
-			if (i < 0 || (i ^ 0xffffffff) <= (anIntArrayArray2131.length ^ 0xffffffff)) {
+			if (i < 0 || anIntArrayArray2131.length <= i) {
 				if (anInt2124 != -1)
 					return new int[] { anInt2124 };
 				return new int[0];
@@ -47,11 +47,11 @@ final class Class282 {
 				return anIntArrayArray2131[i];
 			if (i_2_ < 86)
 				method3335(9, (byte) 114);
-			int i_3_ = (anInt2124 ^ 0xffffffff) == 0 ? 0 : 1;
+			int i_3_ = anInt2124 == -1 ? 0 : 1;
 			Random random = new Random();
 			int[] is = new int[anIntArrayArray2131[i].length];
 			Class236.method2891(anIntArrayArray2131[i], 0, is, 0, is.length);
-			for (int i_4_ = i_3_; (i_4_ ^ 0xffffffff) > (is.length ^ 0xffffffff); i_4_++) {
+			for (int i_4_ = i_3_; is.length > i_4_; i_4_++) {
 				int i_5_ = (Class63.method546(-28737, -i_3_ + is.length, random) - -i_3_);
 				int i_6_ = is[i_4_];
 				is[i_4_] = is[i_5_];
@@ -104,16 +104,16 @@ final class Class282 {
 			aClass207_2127.method2761(0, 1);
 			RSByteBuffer class98_sub22 = new RSByteBuffer(aClass207_2127.readArchive(0, 0));
 			int i_9_ = class98_sub22.readUnsignedByte();
-			if ((i_9_ ^ 0xffffffff) >= -4) {
+			if (i_9_ <= 3) {
 				int i_10_ = class98_sub22.readUnsignedByte();
 				Class113[] class113s = Class48_Sub2_Sub1.method476(false);
 				boolean bool = true;
-				if ((class113s.length ^ 0xffffffff) != (i_10_ ^ 0xffffffff))
+				if (i_10_ != class113s.length)
 					bool = false;
 				else {
 					for (int i_11_ = 0; class113s.length > i_11_; i_11_++) {
 						int i_12_ = class98_sub22.readUnsignedByte();
-						if ((i_12_ ^ 0xffffffff) != (((Class113) class113s[i_11_]).anInt955 ^ 0xffffffff)) {
+						if (class113s[i_11_].anInt955 != i_12_) {
 							bool = false;
 							break;
 						}
@@ -132,13 +132,13 @@ final class Class282 {
 						anInt2124 = class98_sub22.readUShort(false);
 					aBooleanArray2126 = new boolean[1 + i_14_];
 					anIntArrayArray2131 = new int[1 + i_14_][];
-					for (int i_15_ = 0; (i_15_ ^ 0xffffffff) > (i_13_ ^ 0xffffffff); i_15_++) {
+					for (int i_15_ = 0; i_13_ > i_15_; i_15_++) {
 						int i_16_ = class98_sub22.readUnsignedByte();
-						aBooleanArray2126[i_16_] = (class98_sub22.readUnsignedByte() ^ 0xffffffff) == -2;
+						aBooleanArray2126[i_16_] = class98_sub22.readUnsignedByte() == 1;
 						int i_17_ = class98_sub22.readShort();
 						if (anInt2124 == -1) {
 							anIntArrayArray2131[i_16_] = new int[i_17_];
-							for (int i_18_ = 0; (i_18_ ^ 0xffffffff) > (i_17_ ^ 0xffffffff); i_18_++)
+							for (int i_18_ = 0; i_17_ > i_18_; i_18_++)
 								anIntArrayArray2131[i_16_][i_18_] = class98_sub22.readShort();
 						} else {
 							anIntArrayArray2131[i_16_] = new int[i_17_ + 1];

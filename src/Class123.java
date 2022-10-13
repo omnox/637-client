@@ -27,7 +27,7 @@ abstract class Class123 {
 			int i_7_ = -1;
 			for (;;) {
 				int i_8_ = class98_sub22.method1208(3893);
-				if ((i_8_ ^ 0xffffffff) == -1)
+				if (i_8_ == 0)
 					break;
 				i_7_ += i_8_;
 				int i_9_ = 0;
@@ -35,17 +35,17 @@ abstract class Class123 {
 				for (;;) {
 					if (!bool_10_) {
 						int i_11_ = class98_sub22.readSmart(1689622712);
-						if ((i_11_ ^ 0xffffffff) == -1)
+						if (i_11_ == 0)
 							break;
 						i_9_ += i_11_ + -1;
 						int i_12_ = 0x3f & i_9_;
-						int i_13_ = 0x3f & i_9_ >> 145149062;
-						int i_14_ = (class98_sub22.readUnsignedByte() >> -2093245406);
+						int i_13_ = 0x3f & i_9_ >> 6;
+						int i_14_ = (class98_sub22.readUnsignedByte() >> 2);
 						int i_15_ = i_13_ - -i_3_;
 						int i_16_ = i_12_ - -i;
-						if ((i_15_ ^ 0xffffffff) < -1 && i_16_ > 0 && (-1 + i_4_ ^ 0xffffffff) < (i_15_ ^ 0xffffffff) && i_16_ < -1 + i_5_) {
+						if (i_15_ > 0 && i_16_ > 0 && i_15_ < -1 + i_4_ && i_16_ < -1 + i_5_) {
 							Class352 class352 = Class130.aClass302_1028.method3546(i_7_, (byte) 119);
-							if ((i_14_ ^ 0xffffffff) != -23 || (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub11_4038.method596((byte) 120) ^ 0xffffffff) != -1 || ((Class352) class352).anInt2998 != 0 || ((Class352) class352).actionCount == 1 || ((Class352) class352).aBoolean2969) {
+							if (i_14_ != 22 || Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub11_4038.method596((byte) 120) != 0 || class352.anInt2998 != 0 || class352.actionCount == 1 || class352.aBoolean2969) {
 								if (!class352.method3857(18182)) {
 									Class132.anInt1043++;
 									bool = false;
@@ -70,23 +70,23 @@ abstract class Class123 {
 	static final void method2206(GameInterfaceData class293, byte i) {
 		try {
 			if (i == 19) {
-				if (((GameInterfaceData) class293).contentType == Class375.anInt3168) {
-					if (((Player) Player.selfPlayer).displayName == null) {
-						((GameInterfaceData) class293).anInt2343 = 0;
-						((GameInterfaceData) class293).anInt2210 = 0;
+				if (class293.contentType == Class375.anInt3168) {
+					if (Player.selfPlayer.displayName == null) {
+						class293.anInt2343 = 0;
+						class293.anInt2210 = 0;
 					} else {
-						((GameInterfaceData) class293).anInt2310 = 150;
-						((GameInterfaceData) class293).anInt2218 = (int) (256.0 * Math.sin((double) Class215.anInt1614 / 40.0)) & 0x7ff;
-						((GameInterfaceData) class293).anInt2343 = za_Sub2.anInt6080;
-						((GameInterfaceData) class293).anInt2233 = 5;
-						((GameInterfaceData) class293).anInt2210 = (Class98_Sub32.method1438((((Player) Player.selfPlayer).displayName), i + 6224));
-						((GameInterfaceData) class293).anInt2312 = 0;
-						((GameInterfaceData) class293).anInt2303 = (((Mobile) Player.selfPlayer).anInt6350);
-						((GameInterfaceData) class293).anInt2287 = (((Mobile) Player.selfPlayer).anInt6419);
-						((GameInterfaceData) class293).anInt2208 = (((Mobile) Player.selfPlayer).anInt6385);
-						Class97 class97 = (((((GameInterfaceData) class293).anInt2208 ^ 0xffffffff) == 0) ? null : (Class151_Sub7.aClass183_5001.method2623(((GameInterfaceData) class293).anInt2208, 16383)));
+						class293.anInt2310 = 150;
+						class293.anInt2218 = (int) (256.0 * Math.sin((double) Class215.anInt1614 / 40.0)) & 0x7ff;
+						class293.anInt2343 = za_Sub2.anInt6080;
+						class293.anInt2233 = 5;
+						class293.anInt2210 = (Class98_Sub32.method1438((Player.selfPlayer.displayName), i + 6224));
+						class293.anInt2312 = 0;
+						class293.anInt2303 = (Player.selfPlayer.anInt6350);
+						class293.anInt2287 = (Player.selfPlayer.anInt6419);
+						class293.anInt2208 = (Player.selfPlayer.anInt6385);
+						Class97 class97 = ((class293.anInt2208 == -1) ? null : (Class151_Sub7.aClass183_5001.method2623(class293.anInt2208, 16383)));
 						if (class97 != null)
-							Class280.method3327((((GameInterfaceData) class293).anInt2303), class97, (byte) 93);
+							Class280.method3327((class293.anInt2303), class97, (byte) 93);
 					}
 				}
 			}

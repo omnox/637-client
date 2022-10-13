@@ -13,13 +13,13 @@ final class Class98_Sub50 extends Node {
 
 	static final int method1670(byte i, int i_0_) {
 		try {
-			i_0_ = (~0x2aaaaaaa & i_0_ >>> 2099622177) + (i_0_ & 0x55555555);
-			i_0_ = ((~0x33333331 & i_0_) >>> -1815143518) + (0x33333333 & i_0_);
-			i_0_ = (i_0_ >>> -954051964) + i_0_ & 0xf0f0f0f;
-			i_0_ += i_0_ >>> 810774152;
+			i_0_ = (~0x2aaaaaaa & i_0_ >>> 1) + (i_0_ & 0x55555555);
+			i_0_ = ((~0x33333331 & i_0_) >>> 2) + (0x33333333 & i_0_);
+			i_0_ = (i_0_ >>> 4) + i_0_ & 0xf0f0f0f;
+			i_0_ += i_0_ >>> 8;
 			if (i <= 88)
 				anInt4294 = -42;
-			i_0_ += i_0_ >>> -194578672;
+			i_0_ += i_0_ >>> 16;
 			return i_0_ & 0xff;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "wca.D(" + i + ',' + i_0_ + ')');
@@ -31,7 +31,7 @@ final class Class98_Sub50 extends Node {
 			try {
 				if (i_1_ != 0)
 					aClass171_4290 = null;
-				if (Class76_Sub8.anInt3778 > i || (i ^ 0xffffffff) < (Class3.anInt77 ^ 0xffffffff))
+				if (Class76_Sub8.anInt3778 > i || Class3.anInt77 < i)
 					break;
 				i_2_ = Class263.method3219(false, Class218.anInt1635, Class98_Sub10_Sub38.anInt5753, i_2_);
 				i_3_ = Class263.method3219(false, Class218.anInt1635, Class98_Sub10_Sub38.anInt5753, i_3_);
@@ -49,29 +49,29 @@ final class Class98_Sub50 extends Node {
 
 	static final void method1672(byte i) {
 		try {
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub3_4041));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub3_4076));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 2, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub15_4034));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 2, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub15_4058));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub11_4038));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub25_4039));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub24_4047));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub13_4063));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub26_4035));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub20_4056));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub7_4073));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub10_4070));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 0, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub28_4064));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub14_4049));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 0, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub23_4044));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 0, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub23_4055));
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub6_4033));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub3_4041));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub3_4076));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 2, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub15_4034));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 2, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub15_4058));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub11_4038));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub25_4039));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub24_4047));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub13_4063));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub26_4035));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub20_4056));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub7_4073));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub10_4070));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 0, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub28_4064));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub14_4049));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 0, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub23_4044));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 0, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub23_4055));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub6_4033));
 			if (i == 19) {
-				Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 0, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub17_4046));
-				Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 0, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub5_4065));
+				Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 0, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub17_4046));
+				Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 0, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub5_4065));
 				Class151_Sub1.method2450((byte) 101);
-				Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub16_4040));
-				Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 3, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub12_4048));
+				Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub16_4040));
+				Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 3, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub12_4048));
 				Class98_Sub46_Sub13_Sub1.method1593((byte) 62);
 				Class374.method3980((byte) 127);
 				Class33.aBoolean316 = true;
@@ -96,7 +96,7 @@ final class Class98_Sub50 extends Node {
 
 	Class98_Sub50(long l) {
 		try {
-			((Class98_Sub50) this).aLong4288 = l;
+			this.aLong4288 = l;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "wca.<init>(" + l + ')');
 		}

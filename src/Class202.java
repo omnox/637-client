@@ -38,7 +38,7 @@ final class Class202 {
 
 	protected final void finalize() throws Throwable {
 		try {
-			aHa_Sub1_1546.method1872(((Class202) this).anInt1549, 2834);
+			aHa_Sub1_1546.method1872(this.anInt1549, 2834);
 			super.finalize();
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ne.finalize(" + ')');
@@ -58,36 +58,36 @@ final class Class202 {
 
 	static final int method2700(int i, Class53_Sub1 class53_sub1, boolean bool, int i_6_, Class53_Sub1 class53_sub1_7_) {
 		try {
-			if ((i ^ 0xffffffff) == -2) {
-				int i_8_ = ((Class53) class53_sub1).anInt429;
-				int i_9_ = ((Class53) class53_sub1_7_).anInt429;
+			if (i == 1) {
+				int i_8_ = class53_sub1.anInt429;
+				int i_9_ = class53_sub1_7_.anInt429;
 				if (!bool) {
-					if ((i_9_ ^ 0xffffffff) == 0)
+					if (i_9_ == -1)
 						i_9_ = 2001;
-					if ((i_8_ ^ 0xffffffff) == 0)
+					if (i_8_ == -1)
 						i_8_ = 2001;
 				}
 				return i_8_ - i_9_;
 			}
-			if ((i ^ 0xffffffff) == -3)
-				return (Class336.method3772(((Class114) class53_sub1.method501(i_6_)).aString957, ((Class114) class53_sub1_7_.method501(-1)).aString957, Class374.anInt3159, 1166845806));
-			if ((i ^ 0xffffffff) == -4) {
-				if (!((Class53_Sub1) class53_sub1).aString3630.equals("-")) {
-					if (((Class53_Sub1) class53_sub1_7_).aString3630.equals("-")) {
+			if (i == 2)
+				return (Class336.method3772(class53_sub1.method501(i_6_).aString957, class53_sub1_7_.method501(-1).aString957, Class374.anInt3159, 1166845806));
+			if (i == 3) {
+				if (!class53_sub1.aString3630.equals("-")) {
+					if (class53_sub1_7_.aString3630.equals("-")) {
 						if (bool)
 							return 1;
 						return -1;
 					}
 				} else {
-					if (((Class53_Sub1) class53_sub1_7_).aString3630.equals("-"))
+					if (class53_sub1_7_.aString3630.equals("-"))
 						return 0;
 					if (bool)
 						return -1;
 					return 1;
 				}
-				return Class336.method3772((((Class53_Sub1) class53_sub1).aString3630), (((Class53_Sub1) class53_sub1_7_).aString3630), Class374.anInt3159, 1166845806);
+				return Class336.method3772((class53_sub1.aString3630), (class53_sub1_7_.aString3630), Class374.anInt3159, 1166845806);
 			}
-			if ((i ^ 0xffffffff) == -5) {
+			if (i == 4) {
 				if (!class53_sub1.method495((byte) 122)) {
 					if (class53_sub1_7_.method495((byte) 127))
 						return -1;
@@ -107,7 +107,7 @@ final class Class202 {
 					return -1;
 				return 0;
 			}
-			if ((i ^ 0xffffffff) == -7) {
+			if (i == 6) {
 				if (class53_sub1.method496((byte) 72)) {
 					if (!class53_sub1_7_.method496((byte) 90))
 						return 1;
@@ -119,7 +119,7 @@ final class Class202 {
 			}
 			if (i_6_ != -1)
 				method2700(-89, null, true, -108, null);
-			if ((i ^ 0xffffffff) == -8) {
+			if (i == 7) {
 				if (!class53_sub1.method497(false)) {
 					if (class53_sub1_7_.method497(false))
 						return -1;
@@ -129,9 +129,9 @@ final class Class202 {
 					return 0;
 				return 1;
 			}
-			if ((i ^ 0xffffffff) == -9) {
-				int i_10_ = ((Class53_Sub1) class53_sub1).anInt3631;
-				int i_11_ = ((Class53_Sub1) class53_sub1_7_).anInt3631;
+			if (i == 8) {
+				int i_10_ = class53_sub1.anInt3631;
+				int i_11_ = class53_sub1_7_.anInt3631;
 				do {
 					if (!bool) {
 						if (i_10_ == -1)
@@ -142,14 +142,14 @@ final class Class202 {
 						if (!client.aBoolean3553)
 							break;
 					}
-					if ((i_11_ ^ 0xffffffff) == -1001)
+					if (i_11_ == 1000)
 						i_11_ = -1;
 					if (i_10_ == 1000)
 						i_10_ = -1;
 				} while (false);
 				return -i_11_ + i_10_;
 			}
-			return (((Class53_Sub1) class53_sub1).anInt3632 - ((Class53_Sub1) class53_sub1_7_).anInt3632);
+			return (class53_sub1.anInt3632 - class53_sub1_7_.anInt3632);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ne.F(" + i + ',' + (class53_sub1 != null ? "{...}" : "null") + ',' + bool + ',' + i_6_ + ',' + (class53_sub1_7_ != null ? "{...}" : "null") + ')'));
 		}
@@ -160,7 +160,7 @@ final class Class202 {
 			try {
 				var_ha.KA(i, i_13_, i + i_12_, i_15_ + i_13_);
 				var_ha.method1760(i_12_, i_15_, i_13_, -16777216, (byte) -66, i);
-				if ((Class212.anInt1600 ^ 0xffffffff) <= -101) {
+				if (Class212.anInt1600 >= 100) {
 					float f = ((float) Class278.anInt2084 / (float) Class278.anInt2089);
 					int i_16_ = i_12_;
 					int i_17_ = i_15_;
@@ -194,16 +194,16 @@ final class Class202 {
 						else
 							i_23_ = -(Class287.anInt2186 * 5) + 500;
 						for (Class98_Sub47 class98_sub47 = ((Class98_Sub47) Class278.aClass148_2065.method2418(32)); class98_sub47 != null; class98_sub47 = ((Class98_Sub47) Class278.aClass148_2065.method2417(105))) {
-							Class24 class24 = (Class278.aClass341_2057.method3807(117, (((Class98_Sub47) class98_sub47).anInt4268)));
+							Class24 class24 = (Class278.aClass341_2057.method3807(117, (class98_sub47.anInt4268)));
 							if (Class87.method855(i_14_ + 215, class24)) {
-								if (Class98_Sub5_Sub2.anInt5536 == (((Class98_Sub47) class98_sub47).anInt4268)) {
-									int i_24_ = i + (i_16_ * ((Class98_Sub47) class98_sub47).anInt4272 / Class278.anInt2089);
-									int i_25_ = (i_13_ - -((-((Class98_Sub47) class98_sub47).anInt4267 + Class278.anInt2084) * i_17_ / Class278.anInt2084));
-									var_ha.method1760(4, 4, -2 + i_25_, (i_23_ << 2063784920 | 0xffff00), (byte) -66, i_24_ + -2);
-								} else if (((Class256.anInt1945 ^ 0xffffffff) != 0) && ((Class256.anInt1945 ^ 0xffffffff) == (((Class24) class24).anInt246 ^ 0xffffffff))) {
-									int i_26_ = ((i_16_ * (((Class98_Sub47) class98_sub47).anInt4272) / Class278.anInt2089) + i);
-									int i_27_ = ((i_17_ * (Class278.anInt2084 + -((Class98_Sub47) class98_sub47).anInt4267) / Class278.anInt2084) + i_13_);
-									var_ha.method1760(4, 4, -2 + i_27_, (0xffff00 | i_23_ << 1169738168), (byte) -66, -2 + i_26_);
+								if (Class98_Sub5_Sub2.anInt5536 == (class98_sub47.anInt4268)) {
+									int i_24_ = i + (i_16_ * class98_sub47.anInt4272 / Class278.anInt2089);
+									int i_25_ = (i_13_ - -((-class98_sub47.anInt4267 + Class278.anInt2084) * i_17_ / Class278.anInt2084));
+									var_ha.method1760(4, 4, -2 + i_25_, (i_23_ << 24 | 0xffff00), (byte) -66, i_24_ + -2);
+								} else if ((Class256.anInt1945 != -1) && (class24.anInt246 == Class256.anInt1945)) {
+									int i_26_ = ((i_16_ * (class98_sub47.anInt4272) / Class278.anInt2089) + i);
+									int i_27_ = ((i_17_ * (Class278.anInt2084 + -class98_sub47.anInt4267) / Class278.anInt2084) + i_13_);
+									var_ha.method1760(4, 4, -2 + i_27_, (0xffff00 | i_23_ << 24), (byte) -66, -2 + i_26_);
 								}
 							}
 						}
@@ -272,7 +272,7 @@ final class Class202 {
 	Class202(ha_Sub1 var_ha_Sub1, int i, int i_29_) {
 		try {
 			aHa_Sub1_1546 = var_ha_Sub1;
-			((Class202) this).anInt1549 = i_29_;
+			this.anInt1549 = i_29_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ne.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ',' + i + ',' + i_29_ + ')'));
 		}

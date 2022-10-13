@@ -33,8 +33,8 @@ abstract class AnimableEntity extends Class246 {
 			Class98_Sub47 class98_sub47 = (Class98_Sub47) Class98_Sub5.aClass157_3835.method2503(1000);
 			int i_2_ = -107 % ((i - 57) / 61);
 			for (/**/; class98_sub47 != null; class98_sub47 = (Class98_Sub47) Class98_Sub5.aClass157_3835.method2503(1000)) {
-				Class24 class24 = Class278.aClass341_2057.method3807(123, (((Class98_Sub47) class98_sub47).anInt4268));
-				if (class24 != null && ((Class24) class24).aBoolean241 && class24.method284(35, Class278.anInterface6_2060))
+				Class24 class24 = Class278.aClass341_2057.method3807(123, (class98_sub47.anInt4268));
+				if (class24 != null && class24.aBoolean241 && class24.method284(35, Class278.anInterface6_2060))
 					return class98_sub47;
 			}
 			return null;
@@ -64,8 +64,8 @@ abstract class AnimableEntity extends Class246 {
 			try {
 				Class98_Sub46_Sub17 class98_sub46_sub17 = Class185.setCS2StringOrVarc(i_9_, i_7_ + 2, 11);
 				class98_sub46_sub17.method1626((byte) -103);
-				((Class98_Sub46_Sub17) class98_sub46_sub17).anInt6054 = i_8_;
-				((Class98_Sub46_Sub17) class98_sub46_sub17).anInt6051 = i;
+				class98_sub46_sub17.anInt6054 = i_8_;
+				class98_sub46_sub17.anInt6051 = i;
 				if (i_7_ == -105)
 					break;
 				method2983((byte) 8);
@@ -96,7 +96,7 @@ abstract class AnimableEntity extends Class246 {
 		try {
 			if (bool != false)
 				method2988(null, -104);
-			long l = (Class373_Sub3.aLongArrayArrayArray5476[((AnimableEntity) this).height_level][i][i_10_]);
+			long l = (Class373_Sub3.aLongArrayArrayArray5476[this.height_level][i][i_10_]);
 			long l_11_ = 0L;
 			int i_12_ = 0;
 			while (l_11_ <= 48L) {
@@ -104,9 +104,9 @@ abstract class AnimableEntity extends Class246 {
 				if (i_13_ <= 0)
 					break;
 				l_11_ += 16L;
-				class98_sub5s[i_12_++] = ((Class1) (Class98_Sub10_Sub31.aClass1Array5717[-1 + i_13_])).aClass98_Sub5_55;
+				class98_sub5s[i_12_++] = Class98_Sub10_Sub31.aClass1Array5717[-1 + i_13_].aClass98_Sub5_55;
 			}
-			for (int i_14_ = i_12_; (i_14_ ^ 0xffffffff) > -5; i_14_++)
+			for (int i_14_ = i_12_; i_14_ < 4; i_14_++)
 				class98_sub5s[i_14_] = null;
 			return i_12_;
 		} catch (RuntimeException runtimeexception) {

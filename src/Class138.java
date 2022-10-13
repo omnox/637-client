@@ -16,7 +16,7 @@ final class Class138 {
 				anInt1085 = -116;
 			Class337 class337 = ha.method1796(9342, class98_sub22);
 			int i_0_ = class98_sub22.method1227((byte) -1);
-			return new Class337_Sub1(((Class337) class337).anInt3535, ((Class337) class337).aClass63_3538, ((Class337) class337).aClass110_3540, ((Class337) class337).anInt3541, ((Class337) class337).anInt3542, i_0_);
+			return new Class337_Sub1(class337.anInt3535, class337.aClass63_3538, class337.aClass110_3540, class337.anInt3541, class337.anInt3542, i_0_);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("jg.C(" + (class98_sub22 != null ? "{...}" : "null") + ',' + i + ')'));
 		}
@@ -46,7 +46,7 @@ final class Class138 {
 		try {
 			if (i != 49)
 				aClass218_1084 = null;
-			if ((i_1_ ^ 0xffffffff) > -1 || i_1_ >= 100)
+			if (i_1_ < 0 || i_1_ >= 100)
 				return null;
 			return Class98_Sub46_Sub3.aClass131Array5953[i_1_];
 		} catch (RuntimeException runtimeexception) {

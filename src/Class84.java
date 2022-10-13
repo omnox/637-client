@@ -20,7 +20,7 @@ final class Class84 {
 		do {
 			try {
 				for (;;) {
-					Class246_Sub1 class246_sub1 = (Class246_Sub1) ((Class84) this).aClass218_635.method2805((byte) -72);
+					Class246_Sub1 class246_sub1 = (Class246_Sub1) this.aClass218_635.method2805((byte) -72);
 					if (class246_sub1 == null)
 						break;
 					class246_sub1.method2965((byte) -96);
@@ -28,7 +28,7 @@ final class Class84 {
 				}
 				if (i == 0)
 					break;
-				((Class84) this).aClass218_635 = null;
+				this.aClass218_635 = null;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "fh.B(" + i + ')');
 			}
@@ -63,31 +63,31 @@ final class Class84 {
 
 	final void method836(int i, Class246_Sub1 class246_sub1) {
 		try {
-			AnimableEntity class246_sub3 = ((Class246_Sub1) class246_sub1).aClass246_Sub3_5069;
+			AnimableEntity class246_sub3 = class246_sub1.aClass246_Sub3_5069;
 			boolean bool = true;
-			Class246_Sub6[] class246_sub6s = ((Class246_Sub1) class246_sub1).aClass246_Sub6Array5067;
+			Class246_Sub6[] class246_sub6s = class246_sub1.aClass246_Sub6Array5067;
 			for (int i_2_ = i; class246_sub6s.length > i_2_; i_2_++) {
-				if (((Class246_Sub6) class246_sub6s[i_2_]).aBoolean5114) {
+				if (class246_sub6s[i_2_].aBoolean5114) {
 					bool = false;
 					break;
 				}
 			}
 			if (!bool) {
-				if (((Class84) this).aBoolean637) {
-					for (Class246_Sub1 class246_sub1_3_ = (Class246_Sub1) ((Class84) this).aClass218_635.method2803((byte) 15); class246_sub1_3_ != null; class246_sub1_3_ = (Class246_Sub1) ((Class84) this).aClass218_635.method2809(false)) {
-						if (class246_sub3 == (((Class246_Sub1) class246_sub1_3_).aClass246_Sub3_5069)) {
+				if (this.aBoolean637) {
+					for (Class246_Sub1 class246_sub1_3_ = (Class246_Sub1) this.aClass218_635.method2803((byte) 15); class246_sub1_3_ != null; class246_sub1_3_ = (Class246_Sub1) this.aClass218_635.method2809(false)) {
+						if (class246_sub3 == (class246_sub1_3_.aClass246_Sub3_5069)) {
 							class246_sub1_3_.method2965((byte) 18);
 							Class35.method333(class246_sub1_3_, -120);
 						}
 					}
 				}
-				for (Class246_Sub1 class246_sub1_4_ = (Class246_Sub1) ((Class84) this).aClass218_635.method2803((byte) 15); class246_sub1_4_ != null; class246_sub1_4_ = (Class246_Sub1) ((Class84) this).aClass218_635.method2809(false)) {
-					if (((AnimableEntity) (((Class246_Sub1) class246_sub1_4_).aClass246_Sub3_5069)).anInt5083 <= ((AnimableEntity) class246_sub3).anInt5083) {
+				for (Class246_Sub1 class246_sub1_4_ = (Class246_Sub1) this.aClass218_635.method2803((byte) 15); class246_sub1_4_ != null; class246_sub1_4_ = (Class246_Sub1) this.aClass218_635.method2809(false)) {
+					if (class246_sub1_4_.aClass246_Sub3_5069.anInt5083 <= class246_sub3.anInt5083) {
 						Class151_Sub3.method2458(class246_sub1, class246_sub1_4_, (byte) 27);
 						return;
 					}
 				}
-				((Class84) this).aClass218_635.method2808(true, class246_sub1);
+				this.aClass218_635.method2808(true, class246_sub1);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("fh.A(" + i + ',' + (class246_sub1 != null ? "{...}" : "null") + ')'));
@@ -96,7 +96,7 @@ final class Class84 {
 
 	Class84(boolean bool) {
 		try {
-			((Class84) this).aBoolean637 = bool;
+			this.aBoolean637 = bool;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "fh.<init>(" + bool + ')');
 		}

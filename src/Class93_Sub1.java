@@ -29,7 +29,7 @@ class Class93_Sub1 extends Class93 {
 
 	static final int method903(byte i) {
 		try {
-			if ((Class16.anInt196 ^ 0xffffffff) == -1) {
+			if (Class16.anInt196 == 0) {
 				Class102.aClass102_862.method1707((byte) 1, new Class54("jaclib"));
 				if (Class102.aClass102_862.method1709(107).method51((byte) 127) != 100)
 					return 1;
@@ -37,7 +37,7 @@ class Class93_Sub1 extends Class93 {
 					Class315.aClient3529.method82(-21568);
 				Class16.anInt196 = 1;
 			}
-			if ((Class16.anInt196 ^ 0xffffffff) == -2) {
+			if (Class16.anInt196 == 1) {
 				Class194.aClass102Array1496 = Class102.method1704(4);
 				Class102.aClass102_860.method1707((byte) 1, new PlayerUpdate(Class253.aClass207_1932));
 				Class102.aClass102_863.method1707((byte) 1, new Class54("jaggl"));
@@ -88,7 +88,7 @@ class Class93_Sub1 extends Class93 {
 			int i_6_ = 0;
 			boolean bool = true;
 			Class102[] class102s = Class194.aClass102Array1496;
-			for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > (class102s.length ^ 0xffffffff); i_7_++) {
+			for (int i_7_ = 0; class102s.length > i_7_; i_7_++) {
 				Class102 class102 = class102s[i_7_];
 				int i_8_ = class102.method1705(68);
 				int i_9_ = class102.method1709(97).method51((byte) 127);
@@ -118,12 +118,12 @@ class Class93_Sub1 extends Class93 {
 	Class93_Sub1(Class63 class63, Class110 class110, int i, int i_11_, int i_12_, int i_13_, int i_14_, int i_15_, int i_16_, int i_17_, int i_18_, int i_19_, int i_20_, int i_21_, int i_22_) {
 		super(class63, class110, i, i_11_, i_12_, i_13_, i_14_, i_15_, i_16_);
 		try {
-			((Class93_Sub1) this).anInt5478 = i_21_;
-			((Class93_Sub1) this).anInt5484 = i_22_;
-			((Class93_Sub1) this).anInt5480 = i_18_;
-			((Class93_Sub1) this).anInt5485 = i_19_;
-			((Class93_Sub1) this).anInt5483 = i_17_;
-			((Class93_Sub1) this).anInt5481 = i_20_;
+			this.anInt5478 = i_21_;
+			this.anInt5484 = i_22_;
+			this.anInt5480 = i_18_;
+			this.anInt5485 = i_19_;
+			this.anInt5483 = i_17_;
+			this.anInt5481 = i_20_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ij.<init>(" + (class63 != null ? "{...}" : "null") + ',' + (class110 != null ? "{...}" : "null") + ',' + i + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ')'));
 		}
@@ -134,9 +134,9 @@ class Class93_Sub1 extends Class93 {
 			if (Class208.anIntArray1579 == null) {
 				Class208.anIntArray1579 = new int[65536];
 				double d = 0.7 + (-0.015 + Math.random() * 0.03);
-				for (int i_24_ = 0; (i_24_ ^ 0xffffffff) > -65537; i_24_++) {
-					double d_25_ = ((double) (0x3f & i_24_ >> -239388310) / 64.0 + 0.0078125);
-					double d_26_ = (0.0625 + (double) ((0x3a8 & i_24_) >> 770038727) / 8.0);
+				for (int i_24_ = 0; i_24_ < 65536; i_24_++) {
+					double d_25_ = ((double) (0x3f & i_24_ >> 10) / 64.0 + 0.0078125);
+					double d_26_ = (0.0625 + (double) ((0x3a8 & i_24_) >> 7) / 8.0);
 					double d_27_ = (double) (0x7f & i_24_) / 128.0;
 					double d_28_ = d_27_;
 					double d_29_ = d_27_;
@@ -190,7 +190,7 @@ class Class93_Sub1 extends Class93 {
 					int i_36_ = (int) (256.0 * d_28_);
 					int i_37_ = (int) (d_29_ * 256.0);
 					int i_38_ = (int) (256.0 * d_30_);
-					int i_39_ = ((i_36_ << -13557424) + ((i_37_ << 394664072) + i_38_));
+					int i_39_ = ((i_36_ << 16) + ((i_37_ << 8) + i_38_));
 					Class208.anIntArray1579[i_24_] = i_39_;
 				}
 			}
@@ -203,7 +203,7 @@ class Class93_Sub1 extends Class93 {
 		try {
 			if (i_40_ > -35)
 				anInt5477 = -88;
-			if (!((0x70000 & i ^ 0xffffffff) != -1 | IncomingOpcode.method523(i_41_, -1, i)) && !Class238.method2919(-60, i, i_41_))
+			if (!((0x70000 & i) != 0 | IncomingOpcode.method523(i_41_, -1, i)) && !Class238.method2919(-60, i, i_41_))
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -249,8 +249,8 @@ class Class93_Sub1 extends Class93 {
 				Class63.anInt493 = (ParamType.anInt1208 / Class98_Sub10_Sub38.anInt5761 + (2 + Class151.anInt1214));
 				aa_Sub1.anInt3556 = Class197.anInt1513 * Class191.anInt1477;
 				IncomingMessages.anInt5519 = Class63.anInt493 * Class98_Sub10_Sub38.anInt5761;
-				Class377.anInt3183 = (-Class151_Sub7.anInt5005 + aa_Sub1.anInt3556 >> 881154753);
-				Class111_Sub3.anInt4701 = (-ParamType.anInt1208 + IncomingMessages.anInt5519 >> 1217660993);
+				Class377.anInt3183 = (-Class151_Sub7.anInt5005 + aa_Sub1.anInt3556 >> 1);
+				Class111_Sub3.anInt4701 = (-ParamType.anInt1208 + IncomingMessages.anInt5519 >> 1);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ij.E(" + i + ',' + i_42_ + ',' + i_43_ + ')'));

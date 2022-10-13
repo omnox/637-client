@@ -50,30 +50,30 @@ final class Class16 {
 				return null;
 			if (anInt192 != anInt188) {
 				if (anInt188 == 1) {
-					((Class16) this).aBoolean198 = (i_2_ ^ 0xffffffff) != (anInt187 ^ 0xffffffff);
+					this.aBoolean198 = anInt187 != i_2_;
 					anInt187 = i_2_;
 					return anIntArrayArray194[0];
 				}
 				Class98_Sub48 class98_sub48 = aClass98_Sub48Array195[i_2_];
 				if (class98_sub48 != null)
-					((Class16) this).aBoolean198 = false;
+					this.aBoolean198 = false;
 				else {
-					((Class16) this).aBoolean198 = true;
+					this.aBoolean198 = true;
 					if (anInt193 < anInt188) {
 						class98_sub48 = new Class98_Sub48(i_2_, anInt193);
 						anInt193++;
 					} else {
 						Class98_Sub48 class98_sub48_3_ = (Class98_Sub48) aClass148_189.method2427(-111);
-						class98_sub48 = new Class98_Sub48(i_2_, ((Class98_Sub48) class98_sub48_3_).anInt4282);
-						aClass98_Sub48Array195[((Class98_Sub48) class98_sub48_3_).anInt4278] = null;
+						class98_sub48 = new Class98_Sub48(i_2_, class98_sub48_3_.anInt4282);
+						aClass98_Sub48Array195[class98_sub48_3_.anInt4278] = null;
 						class98_sub48_3_.remove();
 					}
 					aClass98_Sub48Array195[i_2_] = class98_sub48;
 				}
 				aClass148_189.method2423(-2, class98_sub48);
-				return (anIntArrayArray194[((Class98_Sub48) class98_sub48).anInt4282]);
+				return (anIntArrayArray194[class98_sub48.anInt4282]);
 			}
-			((Class16) this).aBoolean198 = aClass98_Sub48Array195[i_2_] == null;
+			this.aBoolean198 = aClass98_Sub48Array195[i_2_] == null;
 			aClass98_Sub48Array195[i_2_] = Class132.aClass98_Sub48_1048;
 			return anIntArrayArray194[i_2_];
 		} catch (RuntimeException runtimeexception) {
@@ -83,7 +83,7 @@ final class Class16 {
 
 	final int[][] method238(int i) {
 		try {
-			if ((anInt188 ^ 0xffffffff) != (anInt192 ^ 0xffffffff))
+			if (anInt192 != anInt188)
 				throw new RuntimeException("Can only retrieve a full image cache");
 			int i_4_ = 71 % ((-66 - i) / 53);
 			for (int i_5_ = 0; anInt188 > i_5_; i_5_++)
@@ -96,7 +96,7 @@ final class Class16 {
 
 	Class16(int i, int i_6_, int i_7_) {
 		aClass148_189 = new LinkedList();
-		((Class16) this).aBoolean198 = false;
+		this.aBoolean198 = false;
 		try {
 			anInt192 = i_6_;
 			anInt188 = i;

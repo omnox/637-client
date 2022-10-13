@@ -16,7 +16,7 @@ abstract class Class98_Sub5 extends Node {
 		try {
 			if (i != 7019)
 				method957(70);
-			return ((Class98_Sub5) this).anInt3833;
+			return this.anInt3833;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cba.F(" + i + ')');
 		}
@@ -28,7 +28,7 @@ abstract class Class98_Sub5 extends Node {
 		try {
 			if (bool != false)
 				return -0.407301F;
-			return ((Class98_Sub5) this).aFloat3832;
+			return this.aFloat3832;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cba.G(" + bool + ')');
 		}
@@ -58,7 +58,7 @@ abstract class Class98_Sub5 extends Node {
 
 	static final boolean method960(int radiusX, int targetX, int i_5_, int checkY, int targetY, int checkX, int radiusY, int sizeY, int sizeX) {
 		try {
-			if ((checkX ^ 0xffffffff) <= (radiusX - -targetX ^ 0xffffffff) || (radiusX ^ 0xffffffff) <= (sizeX + checkX ^ 0xffffffff))
+			if (radiusX - -targetX <= checkX || sizeX + checkX <= radiusX)
 				return false;
 			if (targetY + radiusY <= checkY || radiusY >= checkY + sizeY)
 				return false;
@@ -84,7 +84,7 @@ abstract class Class98_Sub5 extends Node {
 		try {
 			if (i != 28699)
 				anInt3831 = -23;
-			return ((Class98_Sub5) this).anInt3834;
+			return this.anInt3834;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cba.H(" + i + ')');
 		}
@@ -94,7 +94,7 @@ abstract class Class98_Sub5 extends Node {
 		try {
 			if (i < 68)
 				method960(-59, -92, -21, -124, 59, -109, 69, 61, -32);
-			return ((Class98_Sub5) this).anInt3830;
+			return this.anInt3830;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cba.E(" + i + ')');
 		}
@@ -103,11 +103,11 @@ abstract class Class98_Sub5 extends Node {
 	Class98_Sub5(int i, int i_12_, int i_13_, int i_14_, int i_15_, float f) {
 		try {
 			anInt3831 = i_15_;
-			((Class98_Sub5) this).anInt3833 = i;
+			this.anInt3833 = i;
 			anInt3836 = i_14_;
-			((Class98_Sub5) this).aFloat3832 = f;
-			((Class98_Sub5) this).anInt3834 = i_13_;
-			((Class98_Sub5) this).anInt3830 = i_12_;
+			this.aFloat3832 = f;
+			this.anInt3834 = i_13_;
+			this.anInt3830 = i_12_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("cba.<init>(" + i + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ',' + i_15_ + ',' + f + ')'));
 		}

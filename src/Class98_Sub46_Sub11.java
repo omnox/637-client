@@ -28,9 +28,9 @@ final class Class98_Sub46_Sub11 extends Class98_Sub46 {
 	final void method1575(byte i) {
 		do {
 			try {
-				if (((Class98_Sub46_Sub11) this).anIntArray6029 != null) {
-					for (int i_0_ = 0; ((i_0_ ^ 0xffffffff) > (((Class98_Sub46_Sub11) this).anIntArray6029.length ^ 0xffffffff)); i_0_++)
-						((Class98_Sub46_Sub11) this).anIntArray6029[i_0_] = Class41.method366((((Class98_Sub46_Sub11) this).anIntArray6029[i_0_]), 32768);
+				if (this.anIntArray6029 != null) {
+					for (int i_0_ = 0; (this.anIntArray6029.length > i_0_); i_0_++)
+						this.anIntArray6029[i_0_] = Class41.method366((this.anIntArray6029[i_0_]), 32768);
 				}
 				if (i <= -115)
 					break;
@@ -48,7 +48,7 @@ final class Class98_Sub46_Sub11 extends Class98_Sub46 {
 			if (anIntArray6026 != null) {
 				for (int i_1_ = 0; i_1_ < anIntArray6026.length; i_1_++) {
 					stringbuffer.append(aStringArray6031[i_1_]);
-					stringbuffer.append(((Class98_Sub46_Sub11) this).aClass280_6028.method3326(method1580(i_1_, -41), anIntArrayArray6030[i_1_], (byte) 70, class98_sub22.method1248(((Class348) (Class98_Sub10_Sub7.method1025(anIntArray6026[i_1_], (byte) -65))).anInt2910, false)));
+					stringbuffer.append(this.aClass280_6028.method3326(method1580(i_1_, -41), anIntArrayArray6030[i_1_], (byte) 70, class98_sub22.method1248(Class98_Sub10_Sub7.method1025(anIntArray6026[i_1_], (byte) -65).anInt2910, false)));
 				}
 			}
 			if (i != 15281)
@@ -72,10 +72,10 @@ final class Class98_Sub46_Sub11 extends Class98_Sub46 {
 
 	private final void method1578(int i, int i_2_, RSByteBuffer class98_sub22) {
 		try {
-			if ((i ^ 0xffffffff) == -2)
+			if (i == 1)
 				aStringArray6031 = Class112.method2142(class98_sub22.readString(), '<', false);
-			else if ((i ^ 0xffffffff) != -3) {
-				if ((i ^ 0xffffffff) == -4) {
+			else if (i != 2) {
+				if (i == 3) {
 					int i_3_ = class98_sub22.readUnsignedByte();
 					anIntArrayArray6030 = new int[i_3_][];
 					anIntArray6026 = new int[i_3_];
@@ -84,18 +84,18 @@ final class Class98_Sub46_Sub11 extends Class98_Sub46 {
 						Class348 class348 = Class98_Sub10_Sub7.method1025(i_5_, (byte) -96);
 						if (class348 != null) {
 							anIntArray6026[i_4_] = i_5_;
-							anIntArrayArray6030[i_4_] = new int[((Class348) class348).anInt2915];
-							for (int i_6_ = 0; ((i_6_ ^ 0xffffffff) > (((Class348) class348).anInt2915 ^ 0xffffffff)); i_6_++)
+							anIntArrayArray6030[i_4_] = new int[class348.anInt2915];
+							for (int i_6_ = 0; (class348.anInt2915 > i_6_); i_6_++)
 								anIntArrayArray6030[i_4_][i_6_] = class98_sub22.readShort();
 						}
 					}
-				} else if ((i ^ 0xffffffff) == -5)
-					((Class98_Sub46_Sub11) this).aBoolean6027 = false;
+				} else if (i == 4)
+					this.aBoolean6027 = false;
 			} else {
 				int i_7_ = class98_sub22.readUnsignedByte();
-				((Class98_Sub46_Sub11) this).anIntArray6029 = new int[i_7_];
-				for (int i_8_ = 0; (i_7_ ^ 0xffffffff) < (i_8_ ^ 0xffffffff); i_8_++)
-					((Class98_Sub46_Sub11) this).anIntArray6029[i_8_] = class98_sub22.readShort();
+				this.anIntArray6029 = new int[i_7_];
+				for (int i_8_ = 0; i_8_ < i_7_; i_8_++)
+					this.anIntArray6029[i_8_] = class98_sub22.readShort();
 			}
 			if (i_2_ != -3)
 				return;
@@ -114,11 +114,11 @@ final class Class98_Sub46_Sub11 extends Class98_Sub46 {
 					for (;;) {
 						if (i_9_ >= anIntArray6026.length)
 							break while_93_;
-						if ((is.length ^ 0xffffffff) >= (i_9_ ^ 0xffffffff))
+						if (i_9_ >= is.length)
 							break;
-						int i_10_ = (((Class348) method1580(i_9_, i ^ 0x47)).anInt2913);
+						int i_10_ = (method1580(i_9_, i ^ 0x47).anInt2913);
 						if (i_10_ > 0)
-							class98_sub22.method1213(31498, (long) is[i_9_], i_10_);
+							class98_sub22.method1213(31498, is[i_9_], i_10_);
 						i_9_++;
 					}
 				}
@@ -131,7 +131,7 @@ final class Class98_Sub46_Sub11 extends Class98_Sub46 {
 
 	final Class348 method1580(int i, int i_11_) {
 		try {
-			if (anIntArray6026 == null || (i ^ 0xffffffff) > -1 || (i ^ 0xffffffff) < (anIntArray6026.length ^ 0xffffffff))
+			if (anIntArray6026 == null || i < 0 || anIntArray6026.length < i)
 				return null;
 			int i_12_ = -91 / ((i_11_ - 4) / 44);
 			return Class98_Sub10_Sub7.method1025(anIntArray6026[i], (byte) -109);
@@ -147,9 +147,9 @@ final class Class98_Sub46_Sub11 extends Class98_Sub46 {
 				aClass332Array6032 = null;
 			int i_13_ = class98_sub22.readUnsignedByte();
 			Class98_Sub10 class98_sub10 = PlayerAppearance.method3630(i_13_, 115);
-			((Class98_Sub10) class98_sub10).anInt3860 = class98_sub22.readUnsignedByte();
+			class98_sub10.anInt3860 = class98_sub22.readUnsignedByte();
 			int i_14_ = class98_sub22.readUnsignedByte();
-			for (int i_15_ = 0; (i_15_ ^ 0xffffffff) > (i_14_ ^ 0xffffffff); i_15_++) {
+			for (int i_15_ = 0; i_14_ > i_15_; i_15_++) {
 				int i_16_ = class98_sub22.readUnsignedByte();
 				class98_sub10.method991(i_16_, class98_sub22, (byte) -116);
 			}
@@ -168,7 +168,7 @@ final class Class98_Sub46_Sub11 extends Class98_Sub46 {
 			stringbuffer.append(aStringArray6031[0]);
 			if (bool != false)
 				return null;
-			for (int i = 1; (aStringArray6031.length ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
+			for (int i = 1; i < aStringArray6031.length; i++) {
 				stringbuffer.append("...");
 				stringbuffer.append(aStringArray6031[i]);
 			}
@@ -182,9 +182,9 @@ final class Class98_Sub46_Sub11 extends Class98_Sub46 {
 		try {
 			if (i < 41)
 				return -47;
-			if (anIntArray6026 == null || i_18_ < 0 || (i_18_ ^ 0xffffffff) < (anIntArray6026.length ^ 0xffffffff))
+			if (anIntArray6026 == null || i_18_ < 0 || anIntArray6026.length < i_18_)
 				return -1;
-			if (anIntArrayArray6030[i_18_] == null || (i_17_ ^ 0xffffffff) > -1 || anIntArrayArray6030[i_18_].length < i_17_)
+			if (anIntArrayArray6030[i_18_] == null || i_17_ < 0 || anIntArrayArray6030[i_18_].length < i_17_)
 				return -1;
 			return anIntArrayArray6030[i_18_][i_17_];
 		} catch (RuntimeException runtimeexception) {
@@ -198,7 +198,7 @@ final class Class98_Sub46_Sub11 extends Class98_Sub46 {
 				anIntArray6026 = null;
 			for (;;) {
 				int i_19_ = class98_sub22.readUnsignedByte();
-				if ((i_19_ ^ 0xffffffff) == -1)
+				if (i_19_ == 0)
 					break;
 				method1578(i_19_, -3, class98_sub22);
 			}

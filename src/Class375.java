@@ -14,7 +14,7 @@ final class Class375 {
 		try {
 			if (i_0_ != -108)
 				method3988(null, (byte) -13, -123);
-			if ((i ^ 0xffffffff) != -3 && (i ^ 0xffffffff) != -4)
+			if (i != 2 && i != 3)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

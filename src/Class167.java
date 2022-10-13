@@ -15,7 +15,7 @@ final class Class167 {
 			try {
 				for (;;) {
 					int i_0_ = class98_sub22.readUnsignedByte();
-					if ((i_0_ ^ 0xffffffff) == -1)
+					if (i_0_ == 0)
 						break;
 					method2530(i_0_, class98_sub22, i ^ ~0x3);
 				}
@@ -46,15 +46,15 @@ final class Class167 {
 	}
 
 	static final void method2529(AnimableEntity class246_sub3, boolean bool, boolean bool_1_) {
-		((AnimableEntity) class246_sub3).aBoolean5082 = bool_1_;
+		class246_sub3.aBoolean5082 = bool_1_;
 		if (Class375.aBoolean3170) {
 			if (bool)
 				Class98_Sub43_Sub3.aClass245Array5922[Class98_Sub43_Sub3.aClass245Array5922.length - 1].method2960(class246_sub3, 0);
 			else {
-				int i = Class200.method2692(((AnimableEntity) class246_sub3).anInt5085);
-				int i_2_ = (Class302.anIntArray2521[2] * class246_sub3.method2985(false) / ((AnimableEntity) class246_sub3).anInt5083);
-				int i_3_ = Class200.method2692((((AnimableEntity) class246_sub3).anInt5085) - i_2_);
-				int i_4_ = Class200.method2692((((AnimableEntity) class246_sub3).anInt5085) + i_2_);
+				int i = Class200.method2692(class246_sub3.anInt5085);
+				int i_2_ = (Class302.anIntArray2521[2] * class246_sub3.method2985(false) / class246_sub3.anInt5083);
+				int i_3_ = Class200.method2692((class246_sub3.anInt5085) - i_2_);
+				int i_4_ = Class200.method2692((class246_sub3.anInt5085) + i_2_);
 				if (i_3_ == i_4_)
 					Class98_Sub43_Sub3.aClass245Array5922[i].method2960(class246_sub3, 0);
 				else if (i_4_ - i_3_ == 1)
@@ -73,8 +73,8 @@ final class Class167 {
 	private final void method2530(int i, RSByteBuffer class98_sub22, int i_5_) {
 		do {
 			try {
-				if ((i ^ 0xffffffff) == -6)
-					((Class167) this).anInt1283 = class98_sub22.readShort();
+				if (i == 5)
+					this.anInt1283 = class98_sub22.readShort();
 				if (i_5_ == 2)
 					break;
 				method2531(null, -110);
@@ -88,19 +88,19 @@ final class Class167 {
 	static final byte[] method2531(String string, int i) {
 		try {
 			int i_6_ = string.length();
-			if ((i_6_ ^ 0xffffffff) == -1)
+			if (i_6_ == 0)
 				return new byte[0];
 			int i_7_ = 3 + i_6_ & ~0x3;
 			int i_8_ = i_7_ / 4 * 3;
 			if (i != 12705)
 				return null;
 			do {
-				if ((i_6_ ^ 0xffffffff) >= (i_7_ + -2 ^ 0xffffffff) || (Class64_Sub6.method574(112, string.charAt(i_7_ - 2)) == -1)) {
+				if (i_7_ + -2 >= i_6_ || (Class64_Sub6.method574(112, string.charAt(i_7_ - 2)) == -1)) {
 					i_8_ -= 2;
 					if (!client.aBoolean3553)
 						break;
 				}
-				if ((i_6_ ^ 0xffffffff) >= (-1 + i_7_ ^ 0xffffffff) || (Class64_Sub6.method574(74, string.charAt(i_7_ + -1)) == -1))
+				if (-1 + i_7_ >= i_6_ || (Class64_Sub6.method574(74, string.charAt(i_7_ + -1)) == -1))
 					i_8_--;
 			} while (false);
 			byte[] is = new byte[i_8_];

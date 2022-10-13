@@ -18,8 +18,8 @@ final class Class64_Sub2 extends Class64 {
 	final void method551(byte i) {
 		do {
 			try {
-				if ((((Class64) this).anInt494 ^ 0xffffffff) != -2 && ((Class64) this).anInt494 != 0)
-					((Class64) this).anInt494 = method552(0);
+				if (this.anInt494 != 1 && this.anInt494 != 0)
+					this.anInt494 = method552(0);
 				if (i >= 118)
 					break;
 				method562(null, -99, -101, -104, -34, -85);
@@ -37,18 +37,18 @@ final class Class64_Sub2 extends Class64 {
 					IncomingOpcode.aClass58_3642 = null;
 				if (i != Class25.anInt268) {
 					Class64_Sub1.anIntArray3640 = new int[i];
-					for (int i_1_ = 0; (i ^ 0xffffffff) < (i_1_ ^ 0xffffffff); i_1_++)
-						Class64_Sub1.anIntArray3640[i_1_] = (i_1_ << 715435980) / i;
+					for (int i_1_ = 0; i_1_ < i; i_1_++)
+						Class64_Sub1.anIntArray3640[i_1_] = (i_1_ << 12) / i;
 					Class329.anInt2761 = -1 + i;
 					Class246_Sub3_Sub4_Sub1.anInt6241 = i * 32;
 					Class25.anInt268 = i;
 				}
 				if (i_0_ == Class63.anInt492)
 					break;
-				if ((Class25.anInt268 ^ 0xffffffff) != (i_0_ ^ 0xffffffff)) {
+				if (i_0_ != Class25.anInt268) {
 					Class352.anIntArray3001 = new int[i_0_];
 					for (int i_2_ = 0; i_2_ < i_0_; i_2_++)
-						Class352.anIntArray3001[i_2_] = (i_2_ << 1275810284) / i_0_;
+						Class352.anIntArray3001[i_2_] = (i_2_ << 12) / i_0_;
 				} else
 					Class352.anIntArray3001 = Class64_Sub1.anIntArray3640;
 				Class63.anInt492 = i_0_;
@@ -68,7 +68,7 @@ final class Class64_Sub2 extends Class64 {
 		try {
 			if (i <= 119)
 				method556(-57, 123);
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "av.E(" + i + ')');
 		}
@@ -83,8 +83,8 @@ final class Class64_Sub2 extends Class64 {
 			if (i != -95)
 				method562(null, -47, -58, -94, -118, -95);
 			int i_4_ = i_3_ & 0x3f;
-			int i_5_ = 0x3 & i_3_ >> -1593233914;
-			if ((i_4_ ^ 0xffffffff) == -19) {
+			int i_5_ = 0x3 & i_3_ >> 6;
+			if (i_4_ == 18) {
 				if (i_5_ == 0)
 					return 1;
 				if (i_5_ == 1)
@@ -93,14 +93,14 @@ final class Class64_Sub2 extends Class64 {
 					return 4;
 				if (i_5_ == 3)
 					return 8;
-			} else if ((i_4_ ^ 0xffffffff) == -20 || i_4_ == 21) {
+			} else if (i_4_ == 19 || i_4_ == 21) {
 				if (i_5_ == 0)
 					return 16;
-				if ((i_5_ ^ 0xffffffff) == -2)
+				if (i_5_ == 1)
 					return 32;
-				if ((i_5_ ^ 0xffffffff) == -3)
+				if (i_5_ == 2)
 					return 64;
-				if ((i_5_ ^ 0xffffffff) == -4)
+				if (i_5_ == 3)
 					return 128;
 			}
 			return 0;
@@ -124,18 +124,18 @@ final class Class64_Sub2 extends Class64 {
 								Class172 class172 = (Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[i_14_][i_15_][i_16_]);
 								if (class172 != null) {
 									int i_17_ = (((Class78.activeTileHeightMap[i_14_].method3420(i_16_, -12639, i_15_)) + (Class78.activeTileHeightMap[i_14_].method3420(i_16_, -12639, i_15_ + 1)) + (Class78.activeTileHeightMap[i_14_].method3420(i_16_ + 1, -12639, i_15_)) + (Class78.activeTileHeightMap[i_14_].method3420(i_16_ + 1, -12639, i_15_ + 1))) / 4 - ((Class78.activeTileHeightMap[i].method3420(i_7_, -12639, i_6_)) + (Class78.activeTileHeightMap[i].method3420(i_7_, -12639, i_6_ + 1)) + (Class78.activeTileHeightMap[i].method3420(i_7_ + 1, -12639, i_6_)) + (Class78.activeTileHeightMap[i].method3420(i_7_ + 1, -12639, i_6_ + 1))) / 4);
-									Class246_Sub3_Sub3 class246_sub3_sub3 = (((Class172) class172).aClass246_Sub3_Sub3_1324);
-									Class246_Sub3_Sub3 class246_sub3_sub3_18_ = (((Class172) class172).aClass246_Sub3_Sub3_1333);
+									Class246_Sub3_Sub3 class246_sub3_sub3 = (class172.aClass246_Sub3_Sub3_1324);
+									Class246_Sub3_Sub3 class246_sub3_sub3_18_ = (class172.aClass246_Sub3_Sub3_1333);
 									if (class246_sub3_sub3 != null && class246_sub3_sub3.method2982((byte) -84))
 										class246_sub3.method2981(class246_sub3_sub3, (byte) -124, bool, ((i_15_ - i_6_) * r_Sub2.anInt6333 + ((1 - i_8_) * RuneScapeCache.anInt1577)), Class98_Sub10_Sub30.aHa5709, i_17_, ((i_16_ - i_7_) * r_Sub2.anInt6333 + ((1 - i_9_) * RuneScapeCache.anInt1577)));
 									if (class246_sub3_sub3_18_ != null && class246_sub3_sub3_18_.method2982((byte) -71))
 										class246_sub3.method2981(class246_sub3_sub3_18_, (byte) 88, bool, ((i_15_ - i_6_) * r_Sub2.anInt6333 + ((1 - i_8_) * RuneScapeCache.anInt1577)), Class98_Sub10_Sub30.aHa5709, i_17_, ((i_16_ - i_7_) * r_Sub2.anInt6333 + ((1 - i_9_) * RuneScapeCache.anInt1577)));
-									for (Class154 class154 = (((Class172) class172).aClass154_1325); class154 != null; class154 = (((Class154) class154).aClass154_1233)) {
-										Class246_Sub3_Sub4 class246_sub3_sub4 = (((Class154) class154).aClass246_Sub3_Sub4_1232);
-										if (class246_sub3_sub4 != null && class246_sub3_sub4.method2982((byte) -125) && (i_15_ == (((Class246_Sub3_Sub4) class246_sub3_sub4).aShort6158) || i_15_ == i_10_) && (i_16_ == (((Class246_Sub3_Sub4) class246_sub3_sub4).aShort6157) || i_16_ == i_12_)) {
-											int i_19_ = ((((Class246_Sub3_Sub4) class246_sub3_sub4).aShort6160) - (((Class246_Sub3_Sub4) class246_sub3_sub4).aShort6158) + 1);
-											int i_20_ = ((((Class246_Sub3_Sub4) class246_sub3_sub4).aShort6159) - (((Class246_Sub3_Sub4) class246_sub3_sub4).aShort6157) + 1);
-											class246_sub3.method2981(class246_sub3_sub4, (byte) -126, bool, (((((Class246_Sub3_Sub4) class246_sub3_sub4).aShort6158) - i_6_) * r_Sub2.anInt6333 + ((i_19_ - i_8_) * RuneScapeCache.anInt1577)), Class98_Sub10_Sub30.aHa5709, i_17_, (((((Class246_Sub3_Sub4) class246_sub3_sub4).aShort6157) - i_7_) * r_Sub2.anInt6333 + ((i_20_ - i_9_) * RuneScapeCache.anInt1577)));
+									for (Class154 class154 = (class172.aClass154_1325); class154 != null; class154 = (class154.aClass154_1233)) {
+										Class246_Sub3_Sub4 class246_sub3_sub4 = (class154.aClass246_Sub3_Sub4_1232);
+										if (class246_sub3_sub4 != null && class246_sub3_sub4.method2982((byte) -125) && (i_15_ == (class246_sub3_sub4.aShort6158) || i_15_ == i_10_) && (i_16_ == (class246_sub3_sub4.aShort6157) || i_16_ == i_12_)) {
+											int i_19_ = ((class246_sub3_sub4.aShort6160) - (class246_sub3_sub4.aShort6158) + 1);
+											int i_20_ = ((class246_sub3_sub4.aShort6159) - (class246_sub3_sub4.aShort6157) + 1);
+											class246_sub3.method2981(class246_sub3_sub4, (byte) -126, bool, (((class246_sub3_sub4.aShort6158) - i_6_) * r_Sub2.anInt6333 + ((i_19_ - i_8_) * RuneScapeCache.anInt1577)), Class98_Sub10_Sub30.aHa5709, i_17_, (((class246_sub3_sub4.aShort6157) - i_7_) * r_Sub2.anInt6333 + ((i_20_ - i_9_) * RuneScapeCache.anInt1577)));
 										}
 									}
 								}
@@ -151,7 +151,7 @@ final class Class64_Sub2 extends Class64 {
 
 	final void method550(int i, int i_21_) {
 		try {
-			((Class64) this).anInt494 = i_21_;
+			this.anInt494 = i_21_;
 			int i_22_ = -24 / ((-26 - i) / 41);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "av.B(" + i + ',' + i_21_ + ')');

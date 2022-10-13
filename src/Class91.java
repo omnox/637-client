@@ -57,16 +57,16 @@ final class Class91 {
 			int i_7_ = -i_2_ + i_3_;
 			int i_8_ = -i_6_ + i_4_;
 			if (i_8_ == 0) {
-				if ((i_7_ ^ 0xffffffff) != -1)
+				if (i_7_ != 0)
 					Class48_Sub2_Sub1.method471(i_6_, (byte) -123, i, i_2_, i_3_);
-			} else if ((i_7_ ^ 0xffffffff) == -1)
+			} else if (i_7_ == 0)
 				Class160.method2513((byte) -83, i, i_6_, i_4_, i_2_);
 			else {
 				if (i_7_ < 0)
 					i_7_ = -i_7_;
-				if ((i_8_ ^ 0xffffffff) > -1)
+				if (i_8_ < 0)
 					i_8_ = -i_8_;
-				boolean bool = (i_8_ ^ 0xffffffff) > (i_7_ ^ 0xffffffff);
+				boolean bool = i_7_ > i_8_;
 				if (bool) {
 					int i_9_ = i_6_;
 					i_6_ = i_2_;
@@ -75,7 +75,7 @@ final class Class91 {
 					i_2_ = i_9_;
 					i_3_ = i_10_;
 				}
-				if ((i_4_ ^ 0xffffffff) > (i_6_ ^ 0xffffffff)) {
+				if (i_6_ > i_4_) {
 					int i_11_ = i_6_;
 					int i_12_ = i_2_;
 					i_6_ = i_4_;
@@ -87,15 +87,15 @@ final class Class91 {
 					int i_13_ = i_2_;
 					int i_14_ = i_4_ + -i_6_;
 					int i_15_ = i_3_ - i_2_;
-					int i_16_ = -(i_14_ >> -1811836063);
-					int i_17_ = (i_2_ ^ 0xffffffff) > (i_3_ ^ 0xffffffff) ? 1 : -1;
+					int i_16_ = -(i_14_ >> 1);
+					int i_17_ = i_3_ > i_2_ ? 1 : -1;
 					if (i_15_ < 0)
 						i_15_ = -i_15_;
 					if (!bool) {
 						for (int i_18_ = i_6_; i_4_ >= i_18_; i_18_++) {
 							i_16_ += i_15_;
 							Class97.anIntArrayArray814[i_13_][i_18_] = i;
-							if ((i_16_ ^ 0xffffffff) < -1) {
+							if (i_16_ > 0) {
 								i_13_ += i_17_;
 								i_16_ -= i_14_;
 							}

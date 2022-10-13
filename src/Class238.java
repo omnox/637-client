@@ -32,9 +32,9 @@ final class Class238 {
 				return 89;
 			int i_0_ = class98_sub22_sub1.readBits((byte) -115, 2);
 			int i_1_;
-			if ((i_0_ ^ 0xffffffff) != -1) {
-				if ((i_0_ ^ 0xffffffff) != -2) {
-					if ((i_0_ ^ 0xffffffff) == -3)
+			if (i_0_ != 0) {
+				if (i_0_ != 1) {
+					if (i_0_ == 2)
 						i_1_ = class98_sub22_sub1.readBits((byte) -58, 8);
 					else
 						i_1_ = class98_sub22_sub1.readBits((byte) -110, 11);
@@ -73,9 +73,9 @@ final class Class238 {
 	static final void method2920(int i) {
 		do {
 			try {
-				for (int i_4_ = 0; ((i_4_ ^ 0xffffffff) > (Class281.tileSettings.length ^ 0xffffffff)); i_4_++) {
+				for (int i_4_ = 0; (Class281.tileSettings.length > i_4_); i_4_++) {
 					for (int i_5_ = 0; i_5_ < Class281.tileSettings[0].length; i_5_++) {
-						for (int i_6_ = 0; ((i_6_ ^ 0xffffffff) > (Class281.tileSettings[0][0].length ^ 0xffffffff)); i_6_++)
+						for (int i_6_ = 0; (Class281.tileSettings[0][0].length > i_6_); i_6_++)
 							Class281.tileSettings[i_4_][i_5_][i_6_] = (byte) 0;
 					}
 				}

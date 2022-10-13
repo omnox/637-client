@@ -66,15 +66,15 @@ final class Class174 implements Runnable {
 				Class246 class246 = aClass245_1350.method2956(0);
 				if (class246 instanceof AnimableEntity) {
 					AnimableEntity class246_sub3 = (AnimableEntity) class246;
-					if (((AnimableEntity) class246_sub3).aBoolean5078)
+					if (class246_sub3.aBoolean5078)
 						class246_sub3.method2988(Class98_Sub10_Sub30.aHa5709, 116);
 					else {
 						Class289.method3407(class246_sub3, aClass98_Sub5Array1345);
 						if (Class284_Sub1.aClass43_5177 != null)
-							Class284_Sub1.aClass43_5177.method411((byte) 53, ((AnimableEntity) class246_sub3).anInt5080, ((Class245) aClass245_1350).aString1866, -256, -16777216, ((AnimableEntity) class246_sub3).anInt5085);
+							Class284_Sub1.aClass43_5177.method411((byte) 53, class246_sub3.anInt5080, aClass245_1350.aString1866, -256, -16777216, class246_sub3.anInt5085);
 					}
 				} else {
-					int i = (((Class246_Sub10) (Class246_Sub10) class246).anInt5151);
+					int i = (((Class246_Sub10) class246).anInt5151);
 					if (i >= 1 && i <= 4) {
 						s var_s = Class78.activeTileHeightMap[i - 1];
 						for (int i_0_ = 0; i_0_ < Class259.anInt1959 + Class259.anInt1959; i_0_++) {
@@ -82,7 +82,7 @@ final class Class174 implements Runnable {
 								if (Class34.aBooleanArrayArrayArray325[i - 1][i_0_][i_1_]) {
 									int i_2_ = (Class241.anInt1845 - Class259.anInt1959 + i_0_);
 									int i_3_ = (Class64_Sub26.anInt3714 - Class259.anInt1959 + i_1_);
-									if (i_2_ >= 0 && i_2_ < ((s) var_s).anInt2203 && i_3_ >= 0 && i_3_ < ((s) var_s).anInt2204) {
+									if (i_2_ >= 0 && i_2_ < var_s.anInt2203 && i_3_ >= 0 && i_3_ < var_s.anInt2204) {
 										Class98_Sub10_Sub30.aHa5709.H(i_2_ << Class151_Sub8.anInt5015, var_s.method3420(i_3_, -12639, i_2_), i_3_ << Class151_Sub8.anInt5015, anIntArray1347);
 										if (Class200.method2692(anIntArray1347[0]) == anInt1353 - 1)
 											var_s.method3425(i_2_, i_3_);

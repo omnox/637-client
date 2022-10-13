@@ -31,7 +31,7 @@ final class IComponentSettings extends Node {
 		try {
 			if (i != 1)
 				return 24;
-			return (0x1df9b4 & ((IComponentSettings) this).optionMask) >> 682065522;
+			return (0x1df9b4 & this.optionMask) >> 18;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "waa.F(" + i + ')');
 		}
@@ -41,7 +41,7 @@ final class IComponentSettings extends Node {
 		try {
 			if (i != -1)
 				canDrag(-109);
-			if (((((IComponentSettings) this).optionMask & 0x325ce0) >> 548331733 ^ 0xffffffff) == -1)
+			if ((this.optionMask & 0x325ce0) >> 21 == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -63,7 +63,7 @@ final class IComponentSettings extends Node {
 		try {
 			if (i != -72)
 				return false;
-			if ((0x1 & ((IComponentSettings) this).optionMask >> 1 + i_3_) == 0)
+			if ((0x1 & this.optionMask >> 1 + i_3_) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -74,7 +74,7 @@ final class IComponentSettings extends Node {
 	final boolean method1667(byte i) {
 		try {
 			int i_4_ = -125 % ((i - -72) / 42);
-			if ((0x1 & ((IComponentSettings) this).optionMask >> -1566073674 ^ 0xffffffff) == -1)
+			if ((0x1 & this.optionMask >> 22) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -86,7 +86,7 @@ final class IComponentSettings extends Node {
 		try {
 			if (i != -1)
 				method1669(-124);
-			return aa_Sub3.method157(((IComponentSettings) this).optionMask, (byte) 64);
+			return aa_Sub3.method157(this.optionMask, (byte) 64);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "waa.D(" + i + ')');
 		}
@@ -96,7 +96,7 @@ final class IComponentSettings extends Node {
 		try {
 			if (i != 1964468)
 				return false;
-			if ((0x1 & ((IComponentSettings) this).optionMask ^ 0xffffffff) == -1)
+			if ((0x1 & this.optionMask) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -106,8 +106,8 @@ final class IComponentSettings extends Node {
 
 	IComponentSettings(int i, int i_5_) {
 		try {
-			((IComponentSettings) this).anInt4285 = i_5_;
-			((IComponentSettings) this).optionMask = i;
+			this.anInt4285 = i_5_;
+			this.optionMask = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("waa.<init>(" + i + ',' + i_5_ + ')'));
 		}

@@ -16,26 +16,26 @@ final class Class289 {
 			int i;
 			int i_1_;
 			if (class246_sub3 instanceof Class246_Sub3_Sub4) {
-				i = (((Class246_Sub3_Sub4) (Class246_Sub3_Sub4) class246_sub3).aShort6158);
-				i_1_ = ((Class246_Sub3_Sub4) (Class246_Sub3_Sub4) class246_sub3).aShort6157;
+				i = (((Class246_Sub3_Sub4) class246_sub3).aShort6158);
+				i_1_ = ((Class246_Sub3_Sub4) class246_sub3).aShort6157;
 			} else {
-				i = (((AnimableEntity) class246_sub3).localXPos >> Class151_Sub8.anInt5015);
-				i_1_ = (((AnimableEntity) class246_sub3).localYPos >> Class151_Sub8.anInt5015);
+				i = (class246_sub3.localXPos >> Class151_Sub8.anInt5015);
+				i_1_ = (class246_sub3.localYPos >> Class151_Sub8.anInt5015);
 			}
-			Class98_Sub10_Sub30.aHa5709.EA((Class98_Sub46_Sub2_Sub2.aSArray6298[0].method3417(((AnimableEntity) class246_sub3).localXPos, ((AnimableEntity) class246_sub3).localYPos, true)), PlayerAppearance.method3636(i, i_1_), IOException_Sub1.method127(i, i_1_), Class98_Sub46_Sub20.method1639(i, i_1_));
+			Class98_Sub10_Sub30.aHa5709.EA((Class98_Sub46_Sub2_Sub2.aSArray6298[0].method3417(class246_sub3.localXPos, class246_sub3.localYPos, true)), PlayerAppearance.method3636(i, i_1_), IOException_Sub1.method127(i, i_1_), Class98_Sub46_Sub20.method1639(i, i_1_));
 		}
 		Class246_Sub1 class246_sub1 = class246_sub3.method2975(Class98_Sub10_Sub30.aHa5709, -30);
 		if (class246_sub1 != null) {
-			if (((AnimableEntity) class246_sub3).aBoolean5082) {
-				Class246_Sub6[] class246_sub6s = ((Class246_Sub1) class246_sub1).aClass246_Sub6Array5067;
+			if (class246_sub3.aBoolean5082) {
+				Class246_Sub6[] class246_sub6s = class246_sub1.aClass246_Sub6Array5067;
 				for (int i = 0; i < class246_sub6s.length; i++) {
 					Class246_Sub6 class246_sub6 = class246_sub6s[i];
-					if (((Class246_Sub6) class246_sub6).aBoolean5114)
-						Class93_Sub1_Sub1.method908((((Class246_Sub6) class246_sub6).anInt5112 + ((Class246_Sub6) class246_sub6).anInt5109), (((Class246_Sub6) class246_sub6).anInt5113 - ((Class246_Sub6) class246_sub6).anInt5109), false, (((Class246_Sub6) class246_sub6).anInt5111 - ((Class246_Sub6) class246_sub6).anInt5109), (((Class246_Sub6) class246_sub6).anInt5110 + ((Class246_Sub6) class246_sub6).anInt5109));
+					if (class246_sub6.aBoolean5114)
+						Class93_Sub1_Sub1.method908((class246_sub6.anInt5112 + class246_sub6.anInt5109), (class246_sub6.anInt5113 - class246_sub6.anInt5109), false, (class246_sub6.anInt5111 - class246_sub6.anInt5109), (class246_sub6.anInt5110 + class246_sub6.anInt5109));
 				}
 			}
-			if (((Class246_Sub1) class246_sub1).aBoolean5070) {
-				((Class246_Sub1) class246_sub1).aClass246_Sub3_5069 = class246_sub3;
+			if (class246_sub1.aBoolean5070) {
+				class246_sub1.aClass246_Sub3_5069 = class246_sub3;
 				if (Class375.aBoolean3170) {
 					synchronized (Class98_Sub10_Sub27.aClass84_5692) {
 						Class98_Sub10_Sub27.aClass84_5692.method836(0, class246_sub1);
@@ -52,10 +52,10 @@ final class Class289 {
 			if (i < 79)
 				method3410(67);
 			for (Class98_Sub36 class98_sub36 = ((Class98_Sub36) Class156_Sub1.aClass377_3277.start_iteration(126)); class98_sub36 != null; class98_sub36 = (Class98_Sub36) Class156_Sub1.aClass377_3277.iterate_next(-1)) {
-				if (!((Class98_Sub36) class98_sub36).aBoolean4158)
-					OutgoingPacket.method1127((byte) 67, (((Class98_Sub36) class98_sub36).anInt4160));
+				if (!class98_sub36.aBoolean4158)
+					OutgoingPacket.method1127((byte) 67, (class98_sub36.anInt4160));
 				else
-					((Class98_Sub36) class98_sub36).aBoolean4158 = false;
+					class98_sub36.aBoolean4158 = false;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "rs.A(" + i + ')');
@@ -78,7 +78,7 @@ final class Class289 {
 
 	static final OutgoingPacket method3410(int i) {
 		try {
-			if (i == (Class98_Sub33.anInt4117 ^ 0xffffffff))
+			if (i == (~Class98_Sub33.anInt4117))
 				return new OutgoingPacket();
 			return (Class98_Sub46_Sub2_Sub2.aClass98_Sub11Array6302[--Class98_Sub33.anInt4117]);
 		} catch (RuntimeException runtimeexception) {

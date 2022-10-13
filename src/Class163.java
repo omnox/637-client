@@ -29,8 +29,8 @@ final class Class163 implements Interface21 {
 				int i_10_ = 0;
 				for (Class98_Sub46_Sub8 class98_sub46_sub8 = ((Class98_Sub46_Sub8) Class33.aClass148_315.method2418(32)); class98_sub46_sub8 != null; class98_sub46_sub8 = ((Class98_Sub46_Sub8) Class33.aClass148_315.method2417(94))) {
 					int i_11_ = ((-i_10_ + -1 + Class359.anInt3058) * 16 + (13 + i_3_) - -i_6_);
-					if (((Class38.anInt355 - -i_0_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff)) && ((i_8_ ^ 0xffffffff) > ((i_0_ + Class38.anInt355 - -Class246_Sub3_Sub4_Sub4.anInt6488) ^ 0xffffffff)) && i_11_ - 13 < i_9_ && (4 + i_11_ ^ 0xffffffff) < (i_9_ ^ 0xffffffff) && (((Class98_Sub46_Sub8) class98_sub46_sub8).aBoolean5984))
-						var_ha.aa(i_0_ + Class38.anInt355, i_11_ - 12, Class246_Sub3_Sub4_Sub4.anInt6488, 16, (Class93_Sub1_Sub1.anInt6289 | 255 - Class264.anInt1971 << 1099846840), 1);
+					if ((i_8_ > Class38.anInt355 - -i_0_) && ((i_0_ + Class38.anInt355 - -Class246_Sub3_Sub4_Sub4.anInt6488) > i_8_) && i_11_ - 13 < i_9_ && i_9_ < 4 + i_11_ && (class98_sub46_sub8.aBoolean5984))
+						var_ha.aa(i_0_ + Class38.anInt355, i_11_ - 12, Class246_Sub3_Sub4_Sub4.anInt6488, 16, (Class93_Sub1_Sub1.anInt6289 | 255 - Class264.anInt1971 << 24), 1);
 					i_10_++;
 				}
 			} else {
@@ -38,16 +38,16 @@ final class Class163 implements Interface21 {
 				for (Class98_Sub46_Sub9 class98_sub46_sub9 = ((Class98_Sub46_Sub9) GameInterface.aClass215_3949.method2792(-1)); class98_sub46_sub9 != null; class98_sub46_sub9 = ((Class98_Sub46_Sub9) GameInterface.aClass215_3949.method2787(0))) {
 					int i_13_ = i_3_ + (i_6_ + 13 - -(16 * i_12_));
 					i_12_++;
-					if (i_8_ > i_0_ + Class38.anInt355 && (i_0_ + (Class38.anInt355 - -Class246_Sub3_Sub4_Sub4.anInt6488) ^ 0xffffffff) < (i_8_ ^ 0xffffffff) && (i_9_ ^ 0xffffffff) < (-13 + i_13_ ^ 0xffffffff) && (i_9_ ^ 0xffffffff) > (i_13_ + 4 ^ 0xffffffff) && ((((Class98_Sub46_Sub9) class98_sub46_sub9).anInt6001) > 1 || ((Class98_Sub46_Sub8) (Class98_Sub46_Sub8) (((Class98_Sub46) ((Class215) (((Class98_Sub46_Sub9) class98_sub46_sub9).aClass215_5999)).aClass98_Sub46_1615).aClass98_Sub46_4262)).aBoolean5984))
-						var_ha.aa(Class38.anInt355 + i_0_, -12 + i_13_, Class246_Sub3_Sub4_Sub4.anInt6488, 16, (-Class264.anInt1971 + 255 << 2128249016 | Class93_Sub1_Sub1.anInt6289), 1);
+					if (i_8_ > i_0_ + Class38.anInt355 && i_8_ < i_0_ + (Class38.anInt355 - -Class246_Sub3_Sub4_Sub4.anInt6488) && -13 + i_13_ < i_9_ && i_13_ + 4 > i_9_ && ((class98_sub46_sub9.anInt6001) > 1 || ((Class98_Sub46_Sub8) class98_sub46_sub9.aClass215_5999.aClass98_Sub46_1615.aClass98_Sub46_4262).aBoolean5984))
+						var_ha.aa(Class38.anInt355 + i_0_, -12 + i_13_, Class246_Sub3_Sub4_Sub4.anInt6488, 16, (-Class264.anInt1971 + 255 << 24 | Class93_Sub1_Sub1.anInt6289), 1);
 				}
 				if (Class308.aClass98_Sub46_Sub9_2583 != null) {
-					Class17.method241(i_6_, var_ha, Class5.anInt3439, Class98_Sub43_Sub4.anInt5938, (byte) 58, Class282.anInt2128, anInt3518, (((Class98_Sub46_Sub9) Class308.aClass98_Sub46_Sub9_2583).aString5998));
+					Class17.method241(i_6_, var_ha, Class5.anInt3439, Class98_Sub43_Sub4.anInt5938, (byte) 58, Class282.anInt2128, anInt3518, (Class308.aClass98_Sub46_Sub9_2583.aString5998));
 					i_12_ = 0;
-					for (Class98_Sub46_Sub8 class98_sub46_sub8 = ((Class98_Sub46_Sub8) ((Class98_Sub46_Sub9) Class308.aClass98_Sub46_Sub9_2583).aClass215_5999.method2792(-1)); class98_sub46_sub8 != null; class98_sub46_sub8 = ((Class98_Sub46_Sub8) ((Class98_Sub46_Sub9) Class308.aClass98_Sub46_Sub9_2583).aClass215_5999.method2787(0))) {
+					for (Class98_Sub46_Sub8 class98_sub46_sub8 = ((Class98_Sub46_Sub8) Class308.aClass98_Sub46_Sub9_2583.aClass215_5999.method2792(-1)); class98_sub46_sub8 != null; class98_sub46_sub8 = ((Class98_Sub46_Sub8) Class308.aClass98_Sub46_Sub9_2583.aClass215_5999.method2787(0))) {
 						int i_14_ = i_12_ * 16 + 13 + anInt3518 - -i_6_;
-						if ((i_8_ ^ 0xffffffff) < (Class282.anInt2128 ^ 0xffffffff) && ((i_8_ ^ 0xffffffff) > (Class282.anInt2128 + Class5.anInt3439 ^ 0xffffffff)) && i_14_ + -13 < i_9_ && (i_9_ ^ 0xffffffff) > (4 + i_14_ ^ 0xffffffff) && (((Class98_Sub46_Sub8) class98_sub46_sub8).aBoolean5984))
-							var_ha.aa(Class282.anInt2128, i_14_ + -12, Class5.anInt3439, 16, (Class93_Sub1_Sub1.anInt6289 | (255 - Class264.anInt1971 << 2118045208)), 1);
+						if (Class282.anInt2128 < i_8_ && (Class282.anInt2128 + Class5.anInt3439 > i_8_) && i_14_ + -13 < i_9_ && 4 + i_14_ > i_9_ && (class98_sub46_sub8.aBoolean5984))
+							var_ha.aa(Class282.anInt2128, i_14_ + -12, Class5.anInt3439, 16, (Class93_Sub1_Sub1.anInt6289 | (255 - Class264.anInt1971 << 24)), 1);
 						i_12_++;
 					}
 					Class249.method3164(Class5.anInt3439, i_6_, var_ha, anInt3518, Class282.anInt2128, -22275, Class98_Sub43_Sub4.anInt5938);
@@ -65,15 +65,15 @@ final class Class163 implements Interface21 {
 				int i_17_ = 0;
 				for (Class98_Sub46_Sub9 class98_sub46_sub9 = ((Class98_Sub46_Sub9) GameInterface.aClass215_3949.method2792(-1)); class98_sub46_sub9 != null; class98_sub46_sub9 = ((Class98_Sub46_Sub9) GameInterface.aClass215_3949.method2787(0))) {
 					int i_18_ = (Class104.anInt897 + (i_1_ - -i_6_) + (13 - -(i_17_ * 16)));
-					if ((((Class98_Sub46_Sub9) class98_sub46_sub9).anInt6001 ^ 0xffffffff) != -2)
+					if (class98_sub46_sub9.anInt6001 != 1)
 						Class320.method3663(class98_sub46_sub9, ~0xffffff | Class147.anInt1194, i_8_, Class15.anInt172, i_9_, Class38.anInt355 - -i_0_, var_ha, i_18_, ~0xffffff | Class246.anInt1871, 0, Class246_Sub3_Sub4_Sub4.anInt6488, i_1_ + Class104.anInt897);
 					else
-						Class246_Sub3_Sub2_Sub1.method3009(Class15.anInt172, ((Class98_Sub46_Sub8) (((Class98_Sub46) ((Class215) (((Class98_Sub46_Sub9) class98_sub46_sub9).aClass215_5999)).aClass98_Sub46_1615).aClass98_Sub46_4262)), ~0xffffff | Class246.anInt1871, Class246_Sub3_Sub4_Sub4.anInt6488, i_18_, Class104.anInt897 + i_1_, i_8_, var_ha, i_9_, 0, Class147.anInt1194 | ~0xffffff, i_0_ + Class38.anInt355);
+						Class246_Sub3_Sub2_Sub1.method3009(Class15.anInt172, ((Class98_Sub46_Sub8) (class98_sub46_sub9.aClass215_5999.aClass98_Sub46_1615.aClass98_Sub46_4262)), ~0xffffff | Class246.anInt1871, Class246_Sub3_Sub4_Sub4.anInt6488, i_18_, Class104.anInt897 + i_1_, i_8_, var_ha, i_9_, 0, Class147.anInt1194 | ~0xffffff, i_0_ + Class38.anInt355);
 					i_17_++;
 				}
 				if (Class308.aClass98_Sub46_Sub9_2583 != null) {
 					i_17_ = 0;
-					for (Class98_Sub46_Sub8 class98_sub46_sub8 = ((Class98_Sub46_Sub8) ((Class98_Sub46_Sub9) Class308.aClass98_Sub46_Sub9_2583).aClass215_5999.method2792(-1)); class98_sub46_sub8 != null; class98_sub46_sub8 = ((Class98_Sub46_Sub8) ((Class98_Sub46_Sub9) Class308.aClass98_Sub46_Sub9_2583).aClass215_5999.method2787(0))) {
+					for (Class98_Sub46_Sub8 class98_sub46_sub8 = ((Class98_Sub46_Sub8) Class308.aClass98_Sub46_Sub9_2583.aClass215_5999.method2792(-1)); class98_sub46_sub8 != null; class98_sub46_sub8 = ((Class98_Sub46_Sub8) Class308.aClass98_Sub46_Sub9_2583.aClass215_5999.method2787(0))) {
 						int i_19_ = i_17_ * 16 + anInt3518 - (-i_6_ + -13);
 						i_17_++;
 						Class246_Sub3_Sub2_Sub1.method3009(Class98_Sub43_Sub4.anInt5938, class98_sub46_sub8, Class246.anInt1871 | ~0xffffff, Class5.anInt3439, i_19_, anInt3518, i_8_, var_ha, i_9_, 0, ~0xffffff | Class147.anInt1194, Class282.anInt2128);
@@ -118,7 +118,7 @@ final class Class163 implements Interface21 {
 
 	Class163(int i) {
 		try {
-			((Class163) this).anInt3515 = i;
+			this.anInt3515 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "kr.<init>(" + i + ')');
 		}

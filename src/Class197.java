@@ -29,7 +29,7 @@ final class Class197 {
 			int i_4_ = 0;
 			for (int i_5_ = 0; i_5_ < i_3_; i_5_++) {
 				int i_6_ = method2676((byte) 64, class332s, Class54.aStringArray3393[i_5_]);
-				if ((i_4_ ^ 0xffffffff) > (i_6_ ^ 0xffffffff))
+				if (i_6_ > i_4_)
 					i_4_ = i_6_;
 			}
 			return i_4_;
@@ -55,10 +55,10 @@ final class Class197 {
 			if (bool != true)
 				return 61;
 			if (i_8_ == 0)
-				i_8_ = ((Class197) this).anInt1518;
+				i_8_ = this.anInt1518;
 			int i_9_ = method2675(string, Class54.aStringArray3393, new int[] { i }, class332s, -1);
 			int i_10_ = (i_9_ - 1) * i_8_;
-			return (((Class197) this).anInt1514 + ((Class197) this).anInt1517 - -i_10_);
+			return (this.anInt1514 + this.anInt1517 - -i_10_);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("mv.C(" + (class332s != null ? "{...}" : "null") + ',' + i + ',' + i_8_ + ',' + (string != null ? "{...}" : "null") + ',' + bool + ')'));
 		}
@@ -106,11 +106,11 @@ final class Class197 {
 					if (i_18_ == -1) {
 						i_25_ = i_22_;
 						i_24_ += method2673((byte) -117, i_23_);
-						if (aByteArrayArray1516 != null && (i_19_ ^ 0xffffffff) != 0)
+						if (aByteArrayArray1516 != null && i_19_ != -1)
 							i_24_ += aByteArrayArray1516[i_19_][i_23_];
 						i_19_ = i_23_;
 					} else {
-						if ((i_23_ ^ 0xffffffff) != -63)
+						if (i_23_ != 62)
 							continue;
 						i_25_ = i_18_;
 						String string_26_ = string.substring(i_18_ - -1, i_22_);
@@ -118,7 +118,7 @@ final class Class197 {
 						if (!string_26_.equals("br")) {
 							if (string_26_.equals("lt")) {
 								i_24_ += method2673((byte) 49, 60);
-								if (aByteArrayArray1516 != null && (i_19_ ^ 0xffffffff) != 0)
+								if (aByteArrayArray1516 != null && i_19_ != -1)
 									i_24_ += aByteArrayArray1516[i_19_][60];
 								i_19_ = 60;
 							} else if (!string_26_.equals("gt")) {
@@ -126,12 +126,12 @@ final class Class197 {
 									if (!string_26_.equals("shy")) {
 										if (string_26_.equals("times")) {
 											i_24_ += method2673((byte) 77, 215);
-											if (aByteArrayArray1516 != null && (i_19_ ^ 0xffffffff) != 0)
+											if (aByteArrayArray1516 != null && i_19_ != -1)
 												i_24_ += (aByteArrayArray1516[i_19_][215]);
 											i_19_ = 215;
 										} else if (string_26_.equals("euro")) {
 											i_24_ += method2673((byte) -124, 8364);
-											if (aByteArrayArray1516 != null && (i_19_ ^ 0xffffffff) != 0)
+											if (aByteArrayArray1516 != null && i_19_ != -1)
 												i_24_ += (aByteArrayArray1516[i_19_][8364]);
 											i_19_ = 8364;
 										} else if (!string_26_.equals("copy")) {
@@ -147,7 +147,7 @@ final class Class197 {
 												}
 											} else {
 												i_24_ += method2673((byte) 5, 174);
-												if (aByteArrayArray1516 != null && ((i_19_ ^ 0xffffffff) != 0))
+												if (aByteArrayArray1516 != null && (i_19_ != -1))
 													i_24_ += (aByteArrayArray1516[i_19_][174]);
 												i_19_ = 174;
 											}
@@ -159,7 +159,7 @@ final class Class197 {
 										}
 									} else {
 										i_24_ += method2673((byte) -114, 173);
-										if (aByteArrayArray1516 != null && (i_19_ ^ 0xffffffff) != 0)
+										if (aByteArrayArray1516 != null && i_19_ != -1)
 											i_24_ += (aByteArrayArray1516[i_19_][173]);
 										i_19_ = 173;
 									}
@@ -171,7 +171,7 @@ final class Class197 {
 								}
 							} else {
 								i_24_ += method2673((byte) 51, 62);
-								if (aByteArrayArray1516 != null && (i_19_ ^ 0xffffffff) != 0)
+								if (aByteArrayArray1516 != null && i_19_ != -1)
 									i_24_ += aByteArrayArray1516[i_19_][62];
 								i_19_ = 62;
 							}
@@ -195,7 +195,7 @@ final class Class197 {
 								i_16_ = i_13_;
 								i_15_ = i_22_;
 							}
-							if ((is[((i_20_ ^ 0xffffffff) > (is.length ^ 0xffffffff) ? i_20_ : is.length - 1)] ^ 0xffffffff) > (i_13_ ^ 0xffffffff)) {
+							if (i_13_ > is[(is.length > i_20_ ? i_20_ : is.length - 1)]) {
 								if (i_15_ < 0) {
 									strings[i_20_] = string.substring(i_14_, i_25_);
 									if (++i_20_ >= strings.length)
@@ -224,7 +224,7 @@ final class Class197 {
 					}
 				}
 			}
-			if ((string.length() ^ 0xffffffff) < (i_14_ ^ 0xffffffff)) {
+			if (i_14_ < string.length()) {
 				strings[i_20_] = string.substring(i_14_, string.length());
 				i_20_++;
 			}
@@ -238,7 +238,7 @@ final class Class197 {
 		try {
 			RSByteBuffer class98_sub22 = new RSByteBuffer(is);
 			int i = class98_sub22.readUnsignedByte();
-			if ((i ^ 0xffffffff) != -1)
+			if (i != 0)
 				throw new RuntimeException("");
 			boolean bool = class98_sub22.readUnsignedByte() == 1;
 			aByteArray1519 = new byte[256];
@@ -246,9 +246,9 @@ final class Class197 {
 			if (bool) {
 				int[] is_28_ = new int[256];
 				int[] is_29_ = new int[256];
-				for (int i_30_ = 0; (i_30_ ^ 0xffffffff) > -257; i_30_++)
+				for (int i_30_ = 0; i_30_ < 256; i_30_++)
 					is_28_[i_30_] = class98_sub22.readUnsignedByte();
-				for (int i_31_ = 0; (i_31_ ^ 0xffffffff) > -257; i_31_++)
+				for (int i_31_ = 0; i_31_ < 256; i_31_++)
 					is_29_[i_31_] = class98_sub22.readUnsignedByte();
 				byte[][] is_32_ = new byte[256][];
 				for (int i_33_ = 0; i_33_ < 256; i_33_++) {
@@ -260,7 +260,7 @@ final class Class197 {
 					}
 				}
 				byte[][] is_36_ = new byte[256][];
-				for (int i_37_ = 0; (i_37_ ^ 0xffffffff) > -257; i_37_++) {
+				for (int i_37_ = 0; i_37_ < 256; i_37_++) {
 					is_36_[i_37_] = new byte[is_28_[i_37_]];
 					byte i_38_ = 0;
 					for (int i_39_ = 0; i_39_ < is_36_[i_37_].length; i_39_++) {
@@ -269,7 +269,7 @@ final class Class197 {
 					}
 				}
 				aByteArrayArray1516 = new byte[256][256];
-				for (int i_40_ = 0; (i_40_ ^ 0xffffffff) > -257; i_40_++) {
+				for (int i_40_ = 0; i_40_ < 256; i_40_++) {
 					if (i_40_ != 32 && i_40_ != 160) {
 						for (int i_41_ = 0; i_41_ < 256; i_41_++) {
 							if (i_41_ != 32 && i_41_ != 160)
@@ -277,13 +277,13 @@ final class Class197 {
 						}
 					}
 				}
-				((Class197) this).anInt1518 = is_28_[32] + is_29_[32];
+				this.anInt1518 = is_28_[32] + is_29_[32];
 			} else
-				((Class197) this).anInt1518 = class98_sub22.readUnsignedByte();
+				this.anInt1518 = class98_sub22.readUnsignedByte();
 			class98_sub22.readUnsignedByte();
 			class98_sub22.readUnsignedByte();
-			((Class197) this).anInt1517 = class98_sub22.readUnsignedByte();
-			((Class197) this).anInt1514 = class98_sub22.readUnsignedByte();
+			this.anInt1517 = class98_sub22.readUnsignedByte();
+			this.anInt1514 = class98_sub22.readUnsignedByte();
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "mv.<init>(" + (is != null ? "{...}" : "null") + ')');
 		}
@@ -299,12 +299,12 @@ final class Class197 {
 			int i_45_ = string.length();
 			int i_46_ = 0;
 			int i_47_ = 75 / ((i - 7) / 57);
-			for (/**/; (i_46_ ^ 0xffffffff) > (i_45_ ^ 0xffffffff); i_46_++) {
+			for (/**/; i_45_ > i_46_; i_46_++) {
 				char c = string.charAt(i_46_);
 				if (c == 60)
 					i_42_ = i_46_;
 				else {
-					if (c == 62 && (i_42_ ^ 0xffffffff) != 0) {
+					if (c == 62 && i_42_ != -1) {
 						String string_48_ = string.substring(i_42_ + 1, i_46_);
 						i_42_ = -1;
 						if (string_48_.equals("lt"))
@@ -338,7 +338,7 @@ final class Class197 {
 						} else
 							c = '\u00ad';
 					}
-					if ((i_42_ ^ 0xffffffff) == 0) {
+					if (i_42_ == -1) {
 						i_44_ += 0xff & (aByteArray1519[(Class349.method3843((byte) 88, c) & 0xff)]);
 						if (aByteArrayArray1516 != null && i_43_ != -1)
 							i_44_ += aByteArrayArray1516[i_43_][c];
@@ -354,7 +354,7 @@ final class Class197 {
 
 	final String method2677(String string, boolean bool, Class332[] class332s, int i) {
 		try {
-			if ((i ^ 0xffffffff) <= (method2676((byte) -110, class332s, string) ^ 0xffffffff))
+			if (method2676((byte) -110, class332s, string) <= i)
 				return string;
 			i -= method2676((byte) 87, null, "...");
 			int i_50_ = -1;
@@ -364,9 +364,9 @@ final class Class197 {
 				aByteArrayArray1516 = null;
 			int i_53_ = string.length();
 			String string_54_ = "";
-			for (int i_55_ = 0; (i_55_ ^ 0xffffffff) > (i_53_ ^ 0xffffffff); i_55_++) {
+			for (int i_55_ = 0; i_53_ > i_55_; i_55_++) {
 				char c = string.charAt(i_55_);
-				if ((c ^ 0xffffffff) == -61)
+				if (c == 60)
 					i_50_ = i_55_;
 				else {
 					if (c == 62 && i_50_ != -1) {
@@ -390,7 +390,7 @@ final class Class197 {
 													int i_57_ = (PacketSender.method3607(-96, (string_56_.substring(4))));
 													i_51_ = -1;
 													i_52_ += class332s[i_57_].method3737();
-													if ((i ^ 0xffffffff) > (i_52_ ^ 0xffffffff))
+													if (i_52_ > i)
 														return (string_54_ + "...");
 													string_54_ = (string.substring(0, 1 + i_55_));
 												} catch (Exception exception) {
@@ -416,7 +416,7 @@ final class Class197 {
 						int i_58_ = i_52_;
 						if (aByteArrayArray1516 != null)
 							i_58_ += aByteArrayArray1516[c][46];
-						if ((i_58_ ^ 0xffffffff) < (i ^ 0xffffffff))
+						if (i < i_58_)
 							return string_54_ + "...";
 						string_54_ = string.substring(0, i_55_ + 1);
 					}

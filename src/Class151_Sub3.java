@@ -21,8 +21,8 @@ final class Class151_Sub3 extends Class151 {
 		try {
 			if (bool != false)
 				method2457(null, true, -76);
-			((Class151) this).aHa_Sub1_1215.method1863(1, class42);
-			((Class151) this).aHa_Sub1_1215.method1896(260, i);
+			this.aHa_Sub1_1215.method1863(1, class42);
+			this.aHa_Sub1_1215.method1896(260, i);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("eq.F(" + (class42 != null ? "{...}" : "null") + ',' + bool + ',' + i + ')'));
 		}
@@ -56,23 +56,23 @@ final class Class151_Sub3 extends Class151 {
 			try {
 				if (aClass91_4980 != null) {
 					aClass91_4980.method888('\0', bool);
-					((Class151) this).aHa_Sub1_1215.method1845(1, 847872872);
+					this.aHa_Sub1_1215.method1845(1, 847872872);
 					OpenGL.glMatrixMode(5890);
-					OpenGL.glLoadMatrixf(((ha_Sub1) ((Class151) this).aHa_Sub1_1215).aClass111_Sub1_4354.method2113(-110), 0);
+					OpenGL.glLoadMatrixf(this.aHa_Sub1_1215.aClass111_Sub1_4354.method2113(-110), 0);
 					OpenGL.glMatrixMode(5888);
-					((Class151) this).aHa_Sub1_1215.method1845(0, 847872872);
-					if ((anInt4978 ^ 0xffffffff) == ((((ha_Sub1) ((Class151) this).aHa_Sub1_1215).anInt4321) ^ 0xffffffff))
+					this.aHa_Sub1_1215.method1845(0, 847872872);
+					if ((this.aHa_Sub1_1215.anInt4321) == anInt4978)
 						break;
-					int i = 128 * ((((ha_Sub1) ((Class151) this).aHa_Sub1_1215).anInt4321) % 5000) / 5000;
-					for (int i_1_ = 0; (i_1_ ^ 0xffffffff) > -65; i_1_++) {
+					int i = 128 * ((this.aHa_Sub1_1215.anInt4321) % 5000) / 5000;
+					for (int i_1_ = 0; i_1_ < 64; i_1_++) {
 						OpenGL.glProgramLocalParameter4fvARB(34336, i_1_, aFloatArray4982, i);
 						i += 2;
 					}
-					if (((Class51) aClass51_4976).aBoolean424)
-						aFloat4979 = (float) (((ha_Sub1) (((Class151) this).aHa_Sub1_1215)).anInt4321 % 4000) / 4000.0F;
+					if (aClass51_4976.aBoolean424)
+						aFloat4979 = (float) (this.aHa_Sub1_1215.anInt4321 % 4000) / 4000.0F;
 					else
 						OpenGL.glProgramLocalParameter4fARB(34336, 65, 0.0F, 0.0F, 0.0F, 1.0F);
-					anInt4978 = (((ha_Sub1) ((Class151) this).aHa_Sub1_1215).anInt4321);
+					anInt4978 = (this.aHa_Sub1_1215.anInt4321);
 				}
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("eq.D(" + bool + ',' + bool_0_ + ')'));
@@ -86,31 +86,31 @@ final class Class151_Sub3 extends Class151 {
 			if (i_3_ > -2)
 				method2440(true, true);
 			if (aClass91_4980 != null) {
-				((Class151) this).aHa_Sub1_1215.method1845(1, 847872872);
+				this.aHa_Sub1_1215.method1845(1, 847872872);
 				if ((0x80 & i) == 0) {
-					if ((0x1 & i_2_ ^ 0xffffffff) == -2) {
-						if (!((Class51) aClass51_4976).aBoolean424) {
-							int i_4_ = ((((ha_Sub1) ((Class151) this).aHa_Sub1_1215).anInt4321) % 4000 * 16 / 4000);
-							((Class151) this).aHa_Sub1_1215.method1863(1, (((Class51) aClass51_4976).aClass42_Sub1Array423[i_4_]));
+					if ((0x1 & i_2_) == 1) {
+						if (!aClass51_4976.aBoolean424) {
+							int i_4_ = ((this.aHa_Sub1_1215.anInt4321) % 4000 * 16 / 4000);
+							this.aHa_Sub1_1215.method1863(1, (aClass51_4976.aClass42_Sub1Array423[i_4_]));
 							OpenGL.glProgramLocalParameter4fARB(34336, 65, 0.0F, 0.0F, 0.0F, 1.0F);
 						} else {
-							((Class151) this).aHa_Sub1_1215.method1863(1, ((Class51) aClass51_4976).aClass42_Sub4_422);
+							this.aHa_Sub1_1215.method1863(1, aClass51_4976.aClass42_Sub4_422);
 							OpenGL.glProgramLocalParameter4fARB(34336, 65, aFloat4979, 0.0F, 0.0F, 1.0F);
 						}
 					} else {
-						if (!((Class51) aClass51_4976).aBoolean424)
-							((Class151) this).aHa_Sub1_1215.method1863(1, (((Class51) aClass51_4976).aClass42_Sub1Array423[0]));
+						if (!aClass51_4976.aBoolean424)
+							this.aHa_Sub1_1215.method1863(1, (aClass51_4976.aClass42_Sub1Array423[0]));
 						else
-							((Class151) this).aHa_Sub1_1215.method1863(1, ((Class51) aClass51_4976).aClass42_Sub4_422);
+							this.aHa_Sub1_1215.method1863(1, aClass51_4976.aClass42_Sub4_422);
 						OpenGL.glProgramLocalParameter4fARB(34336, 65, 0.0F, 0.0F, 0.0F, 1.0F);
 					}
 				} else
-					((Class151) this).aHa_Sub1_1215.method1863(1, null);
-				((Class151) this).aHa_Sub1_1215.method1845(0, 847872872);
-				if ((0x40 & i ^ 0xffffffff) == -1) {
-					Class269.aFloatArray2027[0] = ((((ha_Sub1) ((Class151) this).aHa_Sub1_1215).aFloat4413) * (((ha_Sub1) ((Class151) this).aHa_Sub1_1215).aFloat4433));
-					Class269.aFloatArray2027[2] = ((((ha_Sub1) ((Class151) this).aHa_Sub1_1215).aFloat4413) * (((ha_Sub1) ((Class151) this).aHa_Sub1_1215).aFloat4458));
-					Class269.aFloatArray2027[1] = ((((ha_Sub1) ((Class151) this).aHa_Sub1_1215).aFloat4413) * (((ha_Sub1) ((Class151) this).aHa_Sub1_1215).aFloat4420));
+					this.aHa_Sub1_1215.method1863(1, null);
+				this.aHa_Sub1_1215.method1845(0, 847872872);
+				if ((0x40 & i) == 0) {
+					Class269.aFloatArray2027[0] = ((this.aHa_Sub1_1215.aFloat4413) * (this.aHa_Sub1_1215.aFloat4433));
+					Class269.aFloatArray2027[2] = ((this.aHa_Sub1_1215.aFloat4413) * (this.aHa_Sub1_1215.aFloat4458));
+					Class269.aFloatArray2027[1] = ((this.aHa_Sub1_1215.aFloat4413) * (this.aHa_Sub1_1215.aFloat4420));
 					OpenGL.glProgramLocalParameter4fvARB(34336, 66, (Class269.aFloatArray2027), 0);
 				} else
 					OpenGL.glProgramLocalParameter4fARB(34336, 66, 1.0F, 1.0F, 1.0F, 1.0F);
@@ -129,12 +129,12 @@ final class Class151_Sub3 extends Class151 {
 
 	static final void method2453(int i, boolean bool, int i_6_, int i_7_, int i_8_, int i_9_) {
 		try {
-			if ((i_6_ ^ 0xffffffff) > -2)
+			if (i_6_ < 1)
 				i_6_ = 1;
 			if (i_8_ < 1)
 				i_8_ = 1;
 			int i_10_ = -334 + i_8_;
-			if ((i_10_ ^ 0xffffffff) <= -1) {
+			if (i_10_ >= 0) {
 				if (i_10_ > 100)
 					i_10_ = 100;
 			} else
@@ -146,7 +146,7 @@ final class Class151_Sub3 extends Class151 {
 			} else
 				i_11_ = Class284_Sub2_Sub2.aShort6201;
 			int i_12_ = i_11_ * i_8_ * 512 / (i_6_ * 334);
-			if ((i_12_ ^ 0xffffffff) > (Class42.aShort3231 ^ 0xffffffff)) {
+			if (Class42.aShort3231 > i_12_) {
 				i_12_ = Class42.aShort3231;
 				i_11_ = 334 * (i_12_ * i_6_) / (512 * i_8_);
 				if (Class112.aShort948 < i_11_) {
@@ -164,7 +164,7 @@ final class Class151_Sub3 extends Class151 {
 			} else if (Class260.aShort3256 < i_12_) {
 				i_12_ = Class260.aShort3256;
 				i_11_ = 334 * (i_12_ * i_6_) / (512 * i_8_);
-				if ((Class284_Sub2_Sub2.aShort6201 ^ 0xffffffff) < (i_11_ ^ 0xffffffff)) {
+				if (i_11_ < Class284_Sub2_Sub2.aShort6201) {
 					i_11_ = Class284_Sub2_Sub2.aShort6201;
 					int i_15_ = i_6_ * i_12_ * 334 / (i_11_ * 512);
 					int i_16_ = (i_8_ - i_15_) / 2;
@@ -192,9 +192,9 @@ final class Class151_Sub3 extends Class151 {
 		do {
 			try {
 				aClass51_4976 = class51;
-				if (!((ha_Sub1) ((Class151) this).aHa_Sub1_1215).aBoolean4431 || (((ha_Sub1) ((Class151) this).aHa_Sub1_1215).anInt4410 ^ 0xffffffff) > -3)
+				if (!this.aHa_Sub1_1215.aBoolean4431 || this.aHa_Sub1_1215.anInt4410 < 2)
 					break;
-				aClass202_4981 = (Class347.method3835(0, ((Class151) this).aHa_Sub1_1215, 34336, "!!ARBvp1.0\nOPTION  ARB_position_invariant;\nATTRIB  iPos         = vertex.position;\nATTRIB  iColour      = vertex.color;\nATTRIB  iTexCoord    = vertex.texcoord[0];\nOUTPUT  oColour      = result.color;\nOUTPUT  oTexCoord0   = result.texcoord[0];\nOUTPUT  oTexCoord1   = result.texcoord[1];\nOUTPUT  oFogCoord    = result.fogcoord;\nPARAM   time         = program.local[65];\nPARAM   turbulence   = program.local[64];\nPARAM   lightAmbient = program.local[66]; \nPARAM   pMatrix[4]   = { state.matrix.projection };\nPARAM   mvMatrix[4]  = { state.matrix.modelview };\nPARAM   ivMatrix[4]  = { state.matrix.texture[1] };\nPARAM   texMatrix[4]  = { state.matrix.texture[0] };\nPARAM   fNoise[64]   = { program.local[0..63] };\nTEMP    noise, viewPos, worldPos, texCoord;\nADDRESS noiseAddr;\nDP4   viewPos.x, mvMatrix[0], iPos;\nDP4   viewPos.y, mvMatrix[1], iPos;\nDP4   viewPos.z, mvMatrix[2], iPos;\nDP4   viewPos.w, mvMatrix[3], iPos;\nMOV   oFogCoord.x, -viewPos.z;\nDP4   worldPos.x, ivMatrix[0], viewPos;\nDP4   worldPos.y, ivMatrix[1], viewPos;\nDP4   worldPos.z, ivMatrix[2], viewPos;\nDP4   worldPos.w, ivMatrix[3], viewPos;\nADD   noise.x, worldPos.x, worldPos.z;SUB   noise.y, worldPos.z, worldPos.x;MUL   noise, noise, 0.0001220703125;\nFRC   noise, noise;\nMUL   noise, noise, 64;\nARL   noiseAddr.x, noise.x;\nMOV   noise.x, fNoise[noiseAddr.x].x;\nARL   noiseAddr.x, noise.y;\nMOV   noise.y, fNoise[noiseAddr.x].y;\nMUL   noise, noise, turbulence.x;\nDP4   texCoord.x, texMatrix[0], iTexCoord;\nDP4   texCoord.y, texMatrix[1], iTexCoord;\nADD   oTexCoord0.xy, texCoord, noise;\nMOV   oTexCoord0.z, 0;\nMOV   oTexCoord0.w, 1;\nMUL   oTexCoord1.xy, texCoord, 0.125;\nMOV   oTexCoord1.zw, time.xxxw;\nMUL   oColour.xyz, iColour, lightAmbient;\nMOV   oColour.w, iColour.w;\nEND"));
+				aClass202_4981 = (Class347.method3835(0, this.aHa_Sub1_1215, 34336, "!!ARBvp1.0\nOPTION  ARB_position_invariant;\nATTRIB  iPos         = vertex.position;\nATTRIB  iColour      = vertex.color;\nATTRIB  iTexCoord    = vertex.texcoord[0];\nOUTPUT  oColour      = result.color;\nOUTPUT  oTexCoord0   = result.texcoord[0];\nOUTPUT  oTexCoord1   = result.texcoord[1];\nOUTPUT  oFogCoord    = result.fogcoord;\nPARAM   time         = program.local[65];\nPARAM   turbulence   = program.local[64];\nPARAM   lightAmbient = program.local[66]; \nPARAM   pMatrix[4]   = { state.matrix.projection };\nPARAM   mvMatrix[4]  = { state.matrix.modelview };\nPARAM   ivMatrix[4]  = { state.matrix.texture[1] };\nPARAM   texMatrix[4]  = { state.matrix.texture[0] };\nPARAM   fNoise[64]   = { program.local[0..63] };\nTEMP    noise, viewPos, worldPos, texCoord;\nADDRESS noiseAddr;\nDP4   viewPos.x, mvMatrix[0], iPos;\nDP4   viewPos.y, mvMatrix[1], iPos;\nDP4   viewPos.z, mvMatrix[2], iPos;\nDP4   viewPos.w, mvMatrix[3], iPos;\nMOV   oFogCoord.x, -viewPos.z;\nDP4   worldPos.x, ivMatrix[0], viewPos;\nDP4   worldPos.y, ivMatrix[1], viewPos;\nDP4   worldPos.z, ivMatrix[2], viewPos;\nDP4   worldPos.w, ivMatrix[3], viewPos;\nADD   noise.x, worldPos.x, worldPos.z;SUB   noise.y, worldPos.z, worldPos.x;MUL   noise, noise, 0.0001220703125;\nFRC   noise, noise;\nMUL   noise, noise, 64;\nARL   noiseAddr.x, noise.x;\nMOV   noise.x, fNoise[noiseAddr.x].x;\nARL   noiseAddr.x, noise.y;\nMOV   noise.y, fNoise[noiseAddr.x].y;\nMUL   noise, noise, turbulence.x;\nDP4   texCoord.x, texMatrix[0], iTexCoord;\nDP4   texCoord.y, texMatrix[1], iTexCoord;\nADD   oTexCoord0.xy, texCoord, noise;\nMOV   oTexCoord0.z, 0;\nMOV   oTexCoord0.w, 1;\nMUL   oTexCoord1.xy, texCoord, 0.125;\nMOV   oTexCoord1.zw, time.xxxw;\nMUL   oColour.xyz, iColour, lightAmbient;\nMOV   oColour.w, iColour.w;\nEND"));
 				if (aClass202_4981 != null) {
 					int[][] is = Class135.method2258(3, 256, false, 64, 0.4F, 0, 4, (byte) -63, 4);
 					int[][] is_17_ = Class135.method2258(3, 256, false, 64, 0.4F, 8, 4, (byte) -63, 4);
@@ -219,26 +219,26 @@ final class Class151_Sub3 extends Class151 {
 
 	private final void method2454(int i) {
 		try {
-			aClass91_4980 = new Class91(((Class151) this).aHa_Sub1_1215, 2);
+			aClass91_4980 = new Class91(this.aHa_Sub1_1215, 2);
 			aClass91_4980.method887(0, -30389);
-			((Class151) this).aHa_Sub1_1215.method1845(1, 847872872);
-			((Class151) this).aHa_Sub1_1215.method1882(-16777216, i + -13509);
-			((Class151) this).aHa_Sub1_1215.method1899(7681, i + -4442, 260);
-			((Class151) this).aHa_Sub1_1215.method1886(770, 0, 34200, 34166);
-			((Class151) this).aHa_Sub1_1215.method1845(0, 847872872);
-			OpenGL.glBindProgramARB(34336, ((Class202) aClass202_4981).anInt1549);
+			this.aHa_Sub1_1215.method1845(1, 847872872);
+			this.aHa_Sub1_1215.method1882(-16777216, i + -13509);
+			this.aHa_Sub1_1215.method1899(7681, i + -4442, 260);
+			this.aHa_Sub1_1215.method1886(770, 0, 34200, 34166);
+			this.aHa_Sub1_1215.method1845(0, 847872872);
+			OpenGL.glBindProgramARB(34336, aClass202_4981.anInt1549);
 			OpenGL.glEnable(34336);
 			aClass91_4980.method886((byte) -56);
 			aClass91_4980.method887(1, i + -43791);
-			((Class151) this).aHa_Sub1_1215.method1845(1, i ^ 0x3289b732);
+			this.aHa_Sub1_1215.method1845(1, i ^ 0x3289b732);
 			OpenGL.glMatrixMode(5890);
 			OpenGL.glLoadIdentity();
 			if (i != 13402)
 				method2458(null, null, (byte) -62);
 			OpenGL.glMatrixMode(5888);
-			((Class151) this).aHa_Sub1_1215.method1896(260, 0);
-			((Class151) this).aHa_Sub1_1215.method1886(770, 0, i ^ 0xb1c2, 5890);
-			((Class151) this).aHa_Sub1_1215.method1845(0, 847872872);
+			this.aHa_Sub1_1215.method1896(260, 0);
+			this.aHa_Sub1_1215.method1886(770, 0, i ^ 0xb1c2, 5890);
+			this.aHa_Sub1_1215.method1845(0, 847872872);
 			OpenGL.glBindProgramARB(34336, 0);
 			OpenGL.glDisable(34336);
 			OpenGL.glDisable(34820);
@@ -253,7 +253,7 @@ final class Class151_Sub3 extends Class151 {
 			if (i != -78)
 				return null;
 			for (int i_22_ = 0; i_22_ < fs.length; i_22_++) {
-				for (int i_23_ = 0; (is[i_22_].length ^ 0xffffffff) < (i_23_ ^ 0xffffffff); i_23_++)
+				for (int i_23_ = 0; i_23_ < is[i_22_].length; i_23_++)
 					is[i_22_][i_23_] = (short) (int) (16383.0F * fs[i_22_][i_23_]);
 			}
 			return is;
@@ -292,9 +292,9 @@ final class Class151_Sub3 extends Class151 {
 				aClass91_4980.method888('\001', false);
 				if (i <= 25)
 					method2442(null, false, 69);
-				((Class151) this).aHa_Sub1_1215.method1845(1, 847872872);
-				((Class151) this).aHa_Sub1_1215.method1863(1, null);
-				((Class151) this).aHa_Sub1_1215.method1845(0, 847872872);
+				this.aHa_Sub1_1215.method1845(1, 847872872);
+				this.aHa_Sub1_1215.method1863(1, null);
+				this.aHa_Sub1_1215.method1845(0, 847872872);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "eq.E(" + i + ')');
@@ -303,14 +303,14 @@ final class Class151_Sub3 extends Class151 {
 
 	static final void method2458(Class246 class246, Class246 class246_24_, byte i) {
 		try {
-			if (((Class246) class246).aClass246_1873 != null)
+			if (class246.aClass246_1873 != null)
 				class246.method2965((byte) 127);
 			if (i != 27)
 				method2458(null, null, (byte) 98);
-			((Class246) class246).aClass246_1873 = ((Class246) class246_24_).aClass246_1873;
-			((Class246) class246).aClass246_1874 = class246_24_;
-			((Class246) ((Class246) class246).aClass246_1873).aClass246_1874 = class246;
-			((Class246) ((Class246) class246).aClass246_1874).aClass246_1873 = class246;
+			class246.aClass246_1873 = class246_24_.aClass246_1873;
+			class246.aClass246_1874 = class246_24_;
+			class246.aClass246_1873.aClass246_1874 = class246;
+			class246.aClass246_1874.aClass246_1873 = class246;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("eq.K(" + (class246 != null ? "{...}" : "null") + ',' + (class246_24_ != null ? "{...}" : "null") + ',' + i + ')'));
 		}

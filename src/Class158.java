@@ -28,7 +28,7 @@ public final class Class158 implements Interface11 {
 
 	public final void method32(int i, boolean bool, int i_0_) throws Exception {
 		try {
-			if ((anInt3363 ^ 0xffffffff) == -1 || aDirectSoundBufferArray3371[i_0_] != null)
+			if (anInt3363 == 0 || aDirectSoundBufferArray3371[i_0_] != null)
 				throw new IllegalStateException();
 			int i_1_ = 65536 * anInt3369;
 			if (aByteArrayArray3373[i_0_] == null || i_1_ != aByteArrayArray3373[i_0_].length) {
@@ -157,7 +157,7 @@ public final class Class158 implements Interface11 {
 		try {
 			aDirectSound3368 = new DirectSound();
 			aWaveFormatEx3365 = new WaveFormatEx();
-			for (int i = 0; (i ^ 0xffffffff) > -3; i++)
+			for (int i = 0; i < 2; i++)
 				aDSBufferDescArray3370[i] = new DSBufferDesc();
 			for (int i = 0; i < 2; i++)
 				aDSCursorsArray3362[i] = new DSCursors();

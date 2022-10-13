@@ -17,7 +17,7 @@ final class Class231 {
 				aClass324_1733 = null;
 			if (Player.aBoolean6540 || Class266.aClass98_Sub46_Sub8_1994 == null)
 				return "";
-			return (((Class98_Sub46_Sub8) Class266.aClass98_Sub46_Sub8_1994).aString5994);
+			return (Class266.aClass98_Sub46_Sub8_1994.aString5994);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "op.C(" + i + ')');
 		}
@@ -32,18 +32,18 @@ final class Class231 {
 				return null;
 			Mobile class246_sub3_sub4_sub2 = null;
 			int i_3_ = -1;
-			for (Class154 class154 = ((Class172) class172).aClass154_1325; class154 != null; class154 = ((Class154) class154).aClass154_1233) {
-				Class246_Sub3_Sub4 class246_sub3_sub4 = ((Class154) class154).aClass246_Sub3_Sub4_1232;
+			for (Class154 class154 = class172.aClass154_1325; class154 != null; class154 = class154.aClass154_1233) {
+				Class246_Sub3_Sub4 class246_sub3_sub4 = class154.aClass246_Sub3_Sub4_1232;
 				if (class246_sub3_sub4 instanceof Mobile) {
 					Mobile class246_sub3_sub4_sub2_4_ = (Mobile) class246_sub3_sub4;
 					int i_5_ = (class246_sub3_sub4_sub2_4_.getSize() * 256 + -256 - -252);
-					int i_6_ = -i_5_ + (((AnimableEntity) class246_sub3_sub4_sub2_4_).localXPos) >> 734785737;
-					int i_7_ = ((((AnimableEntity) class246_sub3_sub4_sub2_4_).localYPos) + -i_5_ >> -1810572375);
-					int i_8_ = ((((AnimableEntity) class246_sub3_sub4_sub2_4_).localXPos) + i_5_ >> 1460607529);
-					int i_9_ = ((((AnimableEntity) class246_sub3_sub4_sub2_4_).localYPos) + i_5_ >> -397287991);
-					if (i_0_ >= i_6_ && i_1_ >= i_7_ && (i_0_ ^ 0xffffffff) >= (i_8_ ^ 0xffffffff) && (i_1_ ^ 0xffffffff) >= (i_9_ ^ 0xffffffff)) {
+					int i_6_ = -i_5_ + (class246_sub3_sub4_sub2_4_.localXPos) >> 9;
+					int i_7_ = ((class246_sub3_sub4_sub2_4_.localYPos) + -i_5_ >> 9);
+					int i_8_ = ((class246_sub3_sub4_sub2_4_.localXPos) + i_5_ >> 9);
+					int i_9_ = ((class246_sub3_sub4_sub2_4_.localYPos) + i_5_ >> 9);
+					if (i_0_ >= i_6_ && i_1_ >= i_7_ && i_8_ >= i_0_ && i_9_ >= i_1_) {
 						int i_10_ = (i_9_ + 1 - i_1_) * (i_8_ + 1 + -i_0_);
-						if ((i_10_ ^ 0xffffffff) < (i_3_ ^ 0xffffffff)) {
+						if (i_3_ < i_10_) {
 							i_3_ = i_10_;
 							class246_sub3_sub4_sub2 = class246_sub3_sub4_sub2_4_;
 						}
@@ -58,7 +58,7 @@ final class Class231 {
 
 	static final void method2875(int i, int i_11_) {
 		try {
-			if (Class331.anIntArray2810 == null || ((Class331.anIntArray2810.length ^ 0xffffffff) > (i_11_ ^ 0xffffffff)))
+			if (Class331.anIntArray2810 == null || (i_11_ > Class331.anIntArray2810.length))
 				Class331.anIntArray2810 = new int[i_11_];
 			if (i != 256)
 				method2875(-98, 95);
@@ -71,12 +71,12 @@ final class Class231 {
 		try {
 			if (i != 126)
 				anInt1739 = -116;
-			Class324 class324 = ((Class324) ((Class11) ((Class231) this).aClass11_1737).aClass79_126.get((long) anInt1735));
+			Class324 class324 = ((Class324) this.aClass11_1737.aClass79_126.get(anInt1735));
 			if (class324 != null)
 				return class324;
-			class324 = Class324.method3685((((Class11) ((Class231) this).aClass11_1737).aClass207_124), anInt1735, 0);
+			class324 = Class324.method3685((this.aClass11_1737.aClass207_124), anInt1735, 0);
 			if (class324 != null)
-				((Class11) ((Class231) this).aClass11_1737).aClass79_126.put((long) anInt1735, class324);
+				this.aClass11_1737.aClass79_126.put(anInt1735, class324);
 			return class324;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "op.B(" + i + ')');
@@ -110,10 +110,10 @@ final class Class231 {
 		try {
 			do {
 				if (i != 1) {
-					if ((i ^ 0xffffffff) != -3)
+					if (i != 2)
 						break;
-					((Class231) this).anInt1738 = class98_sub22.readUnsignedByte();
-					((Class231) this).anInt1736 = class98_sub22.readUnsignedByte();
+					this.anInt1738 = class98_sub22.readUnsignedByte();
+					this.anInt1736 = class98_sub22.readUnsignedByte();
 					if (!client.aBoolean3553)
 						break;
 				}

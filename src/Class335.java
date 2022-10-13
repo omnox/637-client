@@ -27,7 +27,7 @@ final class Class335 {
 		try {
 			Class9 class9;
 			synchronized (aClass79_2813) {
-				class9 = (Class9) aClass79_2813.get((long) i);
+				class9 = (Class9) aClass79_2813.get(i);
 			}
 			if (class9 != null)
 				return class9;
@@ -37,11 +37,11 @@ final class Class335 {
 				is = aClass207_2815.readArchive(i, 34);
 			}
 			class9 = new Class9();
-			((Class9) class9).aClass335_117 = this;
+			class9.aClass335_117 = this;
 			if (is != null)
 				class9.method192(new RSByteBuffer(is), false);
 			synchronized (aClass79_2813) {
-				aClass79_2813.put((long) i, class9);
+				aClass79_2813.put(i, class9);
 			}
 			return class9;
 		} catch (RuntimeException runtimeexception) {
@@ -56,8 +56,8 @@ final class Class335 {
 				if (i != 56)
 					method3768(-12);
 			}
-			synchronized (((Class335) this).aClass79_2818) {
-				((Class335) this).aClass79_2818.method800((byte) 62, i_2_);
+			synchronized (this.aClass79_2818) {
+				this.aClass79_2818.method800((byte) 62, i_2_);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ui.F(" + i + ',' + i_2_ + ')');
@@ -69,10 +69,10 @@ final class Class335 {
 			synchronized (aClass79_2813) {
 				aClass79_2813.method806((byte) 36);
 			}
-			synchronized (((Class335) this).aClass79_2818) {
+			synchronized (this.aClass79_2818) {
 				if (i != 10673)
 					method3771(65, -107, -65);
-				((Class335) this).aClass79_2818.method806((byte) -117);
+				this.aClass79_2818.method806((byte) -117);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ui.D(" + i + ')');
@@ -99,11 +99,11 @@ final class Class335 {
 			synchronized (aClass79_2813) {
 				aClass79_2813.method794(21);
 			}
-			synchronized (((Class335) this).aClass79_2818) {
-				((Class335) this).aClass79_2818.method794(108);
+			synchronized (this.aClass79_2818) {
+				this.aClass79_2818.method794(108);
 			}
 			if (i != 34)
-				((Class335) this).aClass79_2818 = null;
+				this.aClass79_2818 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ui.A(" + i + ')');
 		}
@@ -114,7 +114,7 @@ final class Class335 {
 			aClass79_2813 = new Class79(i_3_);
 			if (i < 107)
 				method3767(37, 14);
-			((Class335) this).aClass79_2818 = new Class79(i_4_);
+			this.aClass79_2818 = new Class79(i_4_);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ui.E(" + i + ',' + i_3_ + ',' + i_4_ + ')'));
 		}
@@ -123,7 +123,7 @@ final class Class335 {
 	Class335(Class279 class279, int i, RuneScapeCache class207, RuneScapeCache class207_5_) {
 		try {
 			aClass207_2815 = class207;
-			((Class335) this).aClass207_2814 = class207_5_;
+			this.aClass207_2814 = class207_5_;
 			aClass207_2815.method2761(0, 34);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ui.<init>(" + (class279 != null ? "{...}" : "null") + ',' + i + ',' + (class207 != null ? "{...}" : "null") + ',' + (class207_5_ != null ? "{...}" : "null") + ')'));

@@ -15,11 +15,11 @@ final class Class98_Sub4 extends Node {
 			if (Class248.aBoolean1896) {
 				for (Class98_Sub46_Sub9 class98_sub46_sub9 = ((Class98_Sub46_Sub9) GameInterface.aClass215_3949.method2792(-1)); class98_sub46_sub9 != null; class98_sub46_sub9 = ((Class98_Sub46_Sub9) GameInterface.aClass215_3949.method2787(0))) {
 					int i_3_;
-					if ((((Class98_Sub46_Sub9) class98_sub46_sub9).anInt6001 ^ 0xffffffff) != -2)
+					if (class98_sub46_sub9.anInt6001 != 1)
 						i_3_ = Class98_Sub10_Sub25.method1079(class98_sub46_sub9, 21);
 					else
-						i_3_ = Class222.method2824((byte) 81, ((Class98_Sub46_Sub8) (((Class98_Sub46) (((Class215) (((Class98_Sub46_Sub9) class98_sub46_sub9).aClass215_5999)).aClass98_Sub46_1615)).aClass98_Sub46_4262)));
-					if ((i_3_ ^ 0xffffffff) < (i_1_ ^ 0xffffffff))
+						i_3_ = Class222.method2824((byte) 81, ((Class98_Sub46_Sub8) (class98_sub46_sub9.aClass215_5999.aClass98_Sub46_1615.aClass98_Sub46_4262)));
+					if (i_1_ < i_3_)
 						i_1_ = i_3_;
 				}
 				i_1_ += 8;
@@ -28,7 +28,7 @@ final class Class98_Sub4 extends Node {
 			} else {
 				for (Class98_Sub46_Sub8 class98_sub46_sub8 = ((Class98_Sub46_Sub8) Class33.aClass148_315.method2418(32)); class98_sub46_sub8 != null; class98_sub46_sub8 = ((Class98_Sub46_Sub8) Class33.aClass148_315.method2417(119))) {
 					int i_4_ = Class222.method2824((byte) 75, class98_sub46_sub8);
-					if ((i_1_ ^ 0xffffffff) > (i_4_ ^ 0xffffffff))
+					if (i_4_ > i_1_)
 						i_1_ = i_4_;
 				}
 				i_1_ += 8;
@@ -36,15 +36,15 @@ final class Class98_Sub4 extends Node {
 				i_2_ = 21 + Class359.anInt3058 * 16;
 			}
 			int i_5_ = i_0_ + -(i_1_ / 2);
-			if ((Class39_Sub1.anInt3593 ^ 0xffffffff) > (i_5_ - -i_1_ ^ 0xffffffff))
+			if (i_5_ - -i_1_ > Class39_Sub1.anInt3593)
 				i_5_ = Class39_Sub1.anInt3593 - i_1_;
-			if ((i_5_ ^ 0xffffffff) > -1)
+			if (i_5_ < 0)
 				i_5_ = 0;
 			int i_6_ = i;
 			if (i_2_ + i_6_ > Class98_Sub25.anInt4024)
 				i_6_ = -i_2_ + Class98_Sub25.anInt4024;
 			Class38.anInt355 = i_5_;
-			if ((i_6_ ^ 0xffffffff) > -1)
+			if (i_6_ < 0)
 				i_6_ = 0;
 			Class104.anInt897 = i_6_;
 			Player.aBoolean6540 = bool;
@@ -56,7 +56,7 @@ final class Class98_Sub4 extends Node {
 
 	Class98_Sub4(String string) {
 		try {
-			((Class98_Sub4) this).aString3829 = string;
+			this.aString3829 = string;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "bfa.<init>(" + (string != null ? "{...}" : "null") + ')');
 		}

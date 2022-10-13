@@ -14,7 +14,7 @@ final class Class98_Sub17_Sub2 extends Class98_Sub17 {
 		try {
 			if (bool != true)
 				return 71L;
-			l = ((Class98_Sub17_Sub2) this).aLong5788;
+			l = this.aLong5788;
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -25,8 +25,8 @@ final class Class98_Sub17_Sub2 extends Class98_Sub17 {
 		int i_0_;
 		try {
 			if (i != -5)
-				((Class98_Sub17_Sub2) this).anInt5784 = -40;
-			i_0_ = ((Class98_Sub17_Sub2) this).anInt5786;
+				this.anInt5784 = -40;
+			i_0_ = this.anInt5786;
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -37,7 +37,7 @@ final class Class98_Sub17_Sub2 extends Class98_Sub17 {
 		int i_1_;
 		try {
 			int i_2_ = 64 % ((i - 72) / 49);
-			i_1_ = ((Class98_Sub17_Sub2) this).anInt5787;
+			i_1_ = this.anInt5787;
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -49,7 +49,7 @@ final class Class98_Sub17_Sub2 extends Class98_Sub17 {
 		try {
 			if (i <= 34)
 				return 1;
-			i_3_ = ((Class98_Sub17_Sub2) this).anInt5785;
+			i_3_ = this.anInt5785;
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -61,7 +61,7 @@ final class Class98_Sub17_Sub2 extends Class98_Sub17 {
 		try {
 			if (i != 2)
 				return 57;
-			i_4_ = ((Class98_Sub17_Sub2) this).anInt5784;
+			i_4_ = this.anInt5784;
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}

@@ -35,15 +35,15 @@ final class Class76_Sub1 extends Class76 {
 					aBoolean3722 = true;
 				if (!aBoolean3725)
 					break;
-				IDirect3DDevice idirect3ddevice = (((ha_Sub3_Sub1) aHa_Sub3_Sub1_3727).anIDirect3DDevice6098);
-				if (-1 <= ((((ha_Sub3) ((Class76_Sub1) this).aHa_Sub3_585).anInt4581) ^ 0xffffffff))
+				IDirect3DDevice idirect3ddevice = (aHa_Sub3_Sub1_3727.anIDirect3DDevice6098);
+				if ((this.aHa_Sub3_585.anInt4581) <= 0)
 					idirect3ddevice.b(16, 0.0F, 0.0F, 0.0F, 0.0F);
 				else {
-					float f = (((ha_Sub3) ((Class76_Sub1) this).aHa_Sub3_585).aFloat4592);
-					float f_1_ = (((ha_Sub3) ((Class76_Sub1) this).aHa_Sub3_585).aFloat4615);
+					float f = (this.aHa_Sub3_585.aFloat4592);
+					float f_1_ = (this.aHa_Sub3_585.aFloat4615);
 					idirect3ddevice.b(16, f, 1.0F / (f - f_1_), 0.0F, 0.0F);
 				}
-				idirect3ddevice.a(0, (float) ((0xff21e2 & ((ha_Sub3) (((Class76_Sub1) this).aHa_Sub3_585)).anInt4636) >> -2101860432) / 255.0F, (float) (((((ha_Sub3) ((Class76_Sub1) this).aHa_Sub3_585).anInt4636) & 0xff68) >> 1976566696) / 255.0F, (float) (0xff & (((ha_Sub3) ((Class76_Sub1) this).aHa_Sub3_585).anInt4636)) / 255.0F, 0.0F);
+				idirect3ddevice.a(0, (float) ((0xff21e2 & this.aHa_Sub3_585.anInt4636) >> 16) / 255.0F, (float) (((this.aHa_Sub3_585.anInt4636) & 0xff68) >> 8) / 255.0F, (float) (0xff & (this.aHa_Sub3_585.anInt4636)) / 255.0F, 0.0F);
 			} catch (RuntimeException runtimeexception) {
 				throw runtimeexception;
 			}
@@ -54,7 +54,7 @@ final class Class76_Sub1 extends Class76 {
 	final void method741(byte i) {
 		try {
 			if (aBoolean3725) {
-				IDirect3DDevice idirect3ddevice = (((ha_Sub3_Sub1) aHa_Sub3_Sub1_3727).anIDirect3DDevice6098);
+				IDirect3DDevice idirect3ddevice = (aHa_Sub3_Sub1_3727.anIDirect3DDevice6098);
 				Class111_Sub3 class111_sub3 = aHa_Sub3_Sub1_3727.method2027(0);
 				idirect3ddevice.a(0, class111_sub3.method2128(109, aFloatArray3724));
 			}
@@ -71,7 +71,7 @@ final class Class76_Sub1 extends Class76 {
 					anIDirect3DVertexShader3726 = null;
 				if (!aBoolean3725)
 					break;
-				IDirect3DDevice idirect3ddevice = (((ha_Sub3_Sub1) aHa_Sub3_Sub1_3727).anIDirect3DDevice6098);
+				IDirect3DDevice idirect3ddevice = (aHa_Sub3_Sub1_3727.anIDirect3DDevice6098);
 				Class111_Sub3 class111_sub3 = aHa_Sub3_Sub1_3727.method1956((byte) 78);
 				Class111_Sub3 class111_sub3_3_ = aHa_Sub3_Sub1_3727.method2027(0);
 				idirect3ddevice.a(0, class111_sub3_3_.method2128(122, aFloatArray3724));
@@ -101,13 +101,13 @@ final class Class76_Sub1 extends Class76 {
 		try {
 			aClass195_3721 = class195;
 			aHa_Sub3_Sub1_3727 = var_ha_Sub3_Sub1;
-			if (null == class207 || !((ha_Sub3) ((Class76_Sub1) this).aHa_Sub3_585).aBoolean4569 || !((ha_Sub3) ((Class76_Sub1) this).aHa_Sub3_585).aBoolean4588 || (0xffff & (((ha_Sub3_Sub1) aHa_Sub3_Sub1_3727).aD3DCAPS6093.VertexShaderVersion)) < 257) {
+			if (null == class207 || !this.aHa_Sub3_585.aBoolean4569 || !this.aHa_Sub3_585.aBoolean4588 || (0xffff & (aHa_Sub3_Sub1_3727.aD3DCAPS6093.VertexShaderVersion)) < 257) {
 				anIDirect3DVertexShader3726 = null;
 				aBoolean3722 = false;
 				anIDirect3DPixelShader3723 = null;
 			} else {
-				anIDirect3DVertexShader3726 = (((ha_Sub3_Sub1) aHa_Sub3_Sub1_3727).anIDirect3DDevice6098.a(class207.method2739("dx", "environment_mapped_water_v", -32734)));
-				anIDirect3DPixelShader3723 = (((ha_Sub3_Sub1) aHa_Sub3_Sub1_3727).anIDirect3DDevice6098.b(class207.method2739("dx", "environment_mapped_water_f", -32734)));
+				anIDirect3DVertexShader3726 = (aHa_Sub3_Sub1_3727.anIDirect3DDevice6098.a(class207.method2739("dx", "environment_mapped_water_v", -32734)));
+				anIDirect3DPixelShader3723 = (aHa_Sub3_Sub1_3727.anIDirect3DDevice6098.b(class207.method2739("dx", "environment_mapped_water_f", -32734)));
 				aBoolean3722 = (null != anIDirect3DVertexShader3726 && null != anIDirect3DPixelShader3723 && aClass195_3721.method2664(-119));
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -119,8 +119,8 @@ final class Class76_Sub1 extends Class76 {
 		do {
 			try {
 				if (aBoolean3725) {
-					IDirect3DDevice idirect3ddevice = (((ha_Sub3_Sub1) aHa_Sub3_Sub1_3727).anIDirect3DDevice6098);
-					Class111_Sub3 class111_sub3 = ((Class76_Sub1) this).aHa_Sub3_585.method2061(i + -7);
+					IDirect3DDevice idirect3ddevice = (aHa_Sub3_Sub1_3727.anIDirect3DDevice6098);
+					Class111_Sub3 class111_sub3 = this.aHa_Sub3_585.method2061(i + -7);
 					idirect3ddevice.SetVertexShaderConstantF(12, class111_sub3.method2129(aFloatArray3724, 4), 2);
 				}
 				if (i == 8)
@@ -137,8 +137,8 @@ final class Class76_Sub1 extends Class76 {
 		do {
 			try {
 				if (aBoolean3725) {
-					IDirect3DDevice idirect3ddevice = (((ha_Sub3_Sub1) aHa_Sub3_Sub1_3727).anIDirect3DDevice6098);
-					idirect3ddevice.a(8, ((Class76_Sub1) this).aHa_Sub3_585.method2040(aFloatArray3724, 32227));
+					IDirect3DDevice idirect3ddevice = (aHa_Sub3_Sub1_3727.anIDirect3DDevice6098);
+					idirect3ddevice.a(8, this.aHa_Sub3_585.method2040(aFloatArray3724, 32227));
 				}
 				if (i < -49)
 					break;
@@ -154,12 +154,12 @@ final class Class76_Sub1 extends Class76 {
 		do {
 			try {
 				if (aBoolean3725) {
-					IDirect3DDevice idirect3ddevice = (((ha_Sub3_Sub1) aHa_Sub3_Sub1_3727).anIDirect3DDevice6098);
+					IDirect3DDevice idirect3ddevice = (aHa_Sub3_Sub1_3727.anIDirect3DDevice6098);
 					int i_6_ = 1 << (i & 0x3);
-					float f = (float) (1 << ((i & 0x3a) >> 1073146595)) / 32.0F;
+					float f = (float) (1 << ((i & 0x3a) >> 3)) / 32.0F;
 					int i_7_ = 0xffff & i_4_;
-					float f_8_ = (float) ((0x367af & i_4_) >> 1913070960) / 8.0F;
-					idirect3ddevice.b(14, (float) (i_6_ * ((ha_Sub3) (((Class76_Sub1) this).aHa_Sub3_585)).anInt4556 % 40000) / 40000.0F, 0.0F, 0.0F, 0.0F);
+					float f_8_ = (float) ((0x367af & i_4_) >> 16) / 8.0F;
+					idirect3ddevice.b(14, (float) (i_6_ * this.aHa_Sub3_585.anInt4556 % 40000) / 40000.0F, 0.0F, 0.0F, 0.0F);
 					idirect3ddevice.b(15, f, 0.0F, 0.0F, 0.0F);
 					idirect3ddevice.a(4, (float) i_7_, 0.0F, 0.0F, 0.0F);
 					idirect3ddevice.a(5, f_8_, 0.0F, 0.0F, 0.0F);
@@ -180,10 +180,10 @@ final class Class76_Sub1 extends Class76 {
 				if (aBoolean3725) {
 					aHa_Sub3_Sub1_3727.method2070(null, true);
 					aHa_Sub3_Sub1_3727.method2075(28, null);
-					((Class76_Sub1) this).aHa_Sub3_585.method1951((byte) 120, 1);
-					((Class76_Sub1) this).aHa_Sub3_585.method2005(null, -127);
-					((Class76_Sub1) this).aHa_Sub3_585.method1951((byte) 120, 0);
-					((Class76_Sub1) this).aHa_Sub3_585.method2005(null, 39);
+					this.aHa_Sub3_585.method1951((byte) 120, 1);
+					this.aHa_Sub3_585.method2005(null, -127);
+					this.aHa_Sub3_585.method1951((byte) 120, 0);
+					this.aHa_Sub3_585.method2005(null, 39);
 					aBoolean3725 = false;
 				}
 				if (i == -2)
@@ -199,23 +199,23 @@ final class Class76_Sub1 extends Class76 {
 	final void method748(int i, boolean bool) {
 		do {
 			try {
-				Interface4_Impl3 interface4_impl3 = ((Class76_Sub1) this).aHa_Sub3_585.method1939(-113);
+				Interface4_Impl3 interface4_impl3 = this.aHa_Sub3_585.method1939(-113);
 				if (aBoolean3722 && interface4_impl3 != null) {
-					IDirect3DDevice idirect3ddevice = (((ha_Sub3_Sub1) aHa_Sub3_Sub1_3727).anIDirect3DDevice6098);
+					IDirect3DDevice idirect3ddevice = (aHa_Sub3_Sub1_3727.anIDirect3DDevice6098);
 					aHa_Sub3_Sub1_3727.method2070(anIDirect3DVertexShader3726, true);
 					aHa_Sub3_Sub1_3727.method2075(28, anIDirect3DPixelShader3723);
-					((Class76_Sub1) this).aHa_Sub3_585.method1951((byte) 120, 1);
-					((Class76_Sub1) this).aHa_Sub3_585.method2005(interface4_impl3, 7);
-					((Class76_Sub1) this).aHa_Sub3_585.method1951((byte) 120, 0);
-					((Class76_Sub1) this).aHa_Sub3_585.method2005(((Class195) aClass195_3721).anInterface4_Impl1_1500, i ^ ~0x3e);
+					this.aHa_Sub3_585.method1951((byte) 120, 1);
+					this.aHa_Sub3_585.method2005(interface4_impl3, 7);
+					this.aHa_Sub3_585.method1951((byte) 120, 0);
+					this.aHa_Sub3_585.method2005(aClass195_3721.anInterface4_Impl1_1500, i ^ ~0x3e);
 					aBoolean3725 = true;
 					method737(2899);
 					method749(8);
 					method740(-71);
 					method738(i ^ ~0x72);
-					idirect3ddevice.a(1, -(((ha_Sub3) ((Class76_Sub1) this).aHa_Sub3_585).aFloatArray4596[0]), -(((ha_Sub3) ((Class76_Sub1) this).aHa_Sub3_585).aFloatArray4596[1]), -(((ha_Sub3) ((Class76_Sub1) this).aHa_Sub3_585).aFloatArray4596[2]), 0.0F);
-					idirect3ddevice.a(2, ((ha_Sub3) (((Class76_Sub1) this).aHa_Sub3_585)).aFloat4611, ((ha_Sub3) (((Class76_Sub1) this).aHa_Sub3_585)).aFloat4549, ((ha_Sub3) (((Class76_Sub1) this).aHa_Sub3_585)).aFloat4591, 1.0F);
-					idirect3ddevice.a(3, (Math.abs(((ha_Sub3) ((Class76_Sub1) this).aHa_Sub3_585).aFloatArray4596[1]) * 928.0F + 96.0F), 0.0F, 0.0F, 0.0F);
+					idirect3ddevice.a(1, -(this.aHa_Sub3_585.aFloatArray4596[0]), -(this.aHa_Sub3_585.aFloatArray4596[1]), -(this.aHa_Sub3_585.aFloatArray4596[2]), 0.0F);
+					idirect3ddevice.a(2, this.aHa_Sub3_585.aFloat4611, this.aHa_Sub3_585.aFloat4549, this.aHa_Sub3_585.aFloat4591, 1.0F);
+					idirect3ddevice.a(3, (Math.abs(this.aHa_Sub3_585.aFloatArray4596[1]) * 928.0F + 96.0F), 0.0F, 0.0F, 0.0F);
 				}
 				if (i == 69)
 					break;

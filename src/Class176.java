@@ -26,16 +26,16 @@ final class Class176 {
 					int i_21_ = -i_11_ + i_13_;
 					int i_22_ = i_14_ - i_12_;
 					for (int i_23_ = 128; i_23_ <= 4096; i_23_ += 128) {
-						int i_24_ = i_23_ * i_23_ >> -1499707220;
-						int i_25_ = i_24_ * i_23_ >> -1727145204;
+						int i_24_ = i_23_ * i_23_ >> 12;
+						int i_25_ = i_24_ * i_23_ >> 12;
 						int i_26_ = i_17_ * i_25_;
 						int i_27_ = i_18_ * i_25_;
 						int i_28_ = i_19_ * i_24_;
 						int i_29_ = i_20_ * i_24_;
 						int i_30_ = i_23_ * i_21_;
 						int i_31_ = i_22_ * i_23_;
-						int i_32_ = i_3_ + (i_26_ - -i_28_ - -i_30_ >> 390504332);
-						int i_33_ = i + (i_29_ + (i_27_ + i_31_) >> 1323025196);
+						int i_32_ = i_3_ + (i_26_ - -i_28_ - -i_30_ >> 12);
+						int i_33_ = i + (i_29_ + (i_27_ + i_31_) >> 12);
 						Class91.method890(i_4_, i_10_, i_33_, i_32_, (byte) -36, i_9_);
 						i_9_ = i_32_;
 						i_10_ = i_33_;
@@ -54,7 +54,7 @@ final class Class176 {
 	static final void method2580(int i, String string) {
 		try {
 			if (string != null) {
-				if (((Class314.anInt2692 ^ 0xffffffff) <= -201 && !Class64_Sub18.aBoolean3690) || Class314.anInt2692 >= 200) {
+				if ((Class314.anInt2692 >= 200 && !Class64_Sub18.aBoolean3690) || Class314.anInt2692 >= 200) {
 					za_Sub2.method1684(TextResources.FRIENDS_LIST_IS_FULL.get_text(Class374.anInt3159), 4, (byte) 49);
 					String string_34_ = TextResources.aClass309_2597.get_text(Class374.anInt3159);
 					if (string_34_ != null)
@@ -62,7 +62,7 @@ final class Class176 {
 				} else {
 					String string_35_ = Class353.method3867(-1, string);
 					if (string_35_ != null && i == 4) {
-						for (int i_36_ = 0; ((Class314.anInt2692 ^ 0xffffffff) < (i_36_ ^ 0xffffffff)); i_36_++) {
+						for (int i_36_ = 0; (i_36_ < Class314.anInt2692); i_36_++) {
 							String string_37_ = Class353.method3867(-1, (Class98_Sub25.aStringArray4026[i_36_]));
 							if (string_37_ != null && string_37_.equals(string_35_)) {
 								za_Sub2.method1684((string + (TextResources.aClass309_2624.get_text(Class374.anInt3159))), 4, (byte) -32);
@@ -90,12 +90,12 @@ final class Class176 {
 								}
 							}
 						}
-						if (Class353.method3867(-1, (((Player) Player.selfPlayer).displayName)).equals(string_35_))
+						if (Class353.method3867(-1, (Player.selfPlayer.displayName)).equals(string_35_))
 							za_Sub2.method1684((TextResources.aClass309_2627.get_text(Class374.anInt3159)), 4, (byte) -100);
 						else {
 							OutgoingPacket class98_sub11 = (Class246_Sub3_Sub4.method3023(260, Class246_Sub3_Sub4_Sub3.aClass171_6446, Class331.aClass117_2811));
-							((OutgoingPacket) class98_sub11).packet.writeByte(r_Sub2.method1650(string, (byte) 88));
-							((OutgoingPacket) class98_sub11).packet.method1188(string, (byte) 113);
+							class98_sub11.packet.writeByte(r_Sub2.method1650(string, (byte) 88));
+							class98_sub11.packet.method1188(string, (byte) 113);
 							Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 						}
 					}

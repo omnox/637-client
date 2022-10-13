@@ -49,7 +49,7 @@ final class Class69_Sub2 extends Class69 implements Interface2_Impl1 {
 		try {
 			if (i != 13623)
 				method2(94);
-			return super.method703((byte) -68, (((ha_Sub3_Sub2) ((Class69) this).aHa_Sub3_Sub2_3217).aMapBuffer6128));
+			return super.method703((byte) -68, (this.aHa_Sub3_Sub2_3217.aMapBuffer6128));
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "va.N(" + i + ')');
 		}
@@ -127,7 +127,7 @@ final class Class69_Sub2 extends Class69 implements Interface2_Impl1 {
 		try {
 			if (i != 27)
 				return null;
-			return super.method694(bool, (((ha_Sub3_Sub2) ((Class69) this).aHa_Sub3_Sub2_3217).aMapBuffer6128), -15793);
+			return super.method694(bool, (this.aHa_Sub3_Sub2_3217.aMapBuffer6128), -15793);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "va.U(" + bool + ',' + i + ')');
 		}

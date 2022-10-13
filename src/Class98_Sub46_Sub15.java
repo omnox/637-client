@@ -12,7 +12,7 @@ final class Class98_Sub46_Sub15 extends Class98_Sub46 {
 		try {
 			if (i != 2)
 				return -37L;
-			return (long) ((((Class98_Sub46_Sub15) this).aShortArrayArray6040[0]).length | (((Class98_Sub46_Sub15) this).aShortArrayArray6040).length << -2104658688);
+			return (this.aShortArrayArray6040[0]).length | (this.aShortArrayArray6040).length;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "jba.A(" + i + ')');
 		}
@@ -22,12 +22,12 @@ final class Class98_Sub46_Sub15 extends Class98_Sub46 {
 		try {
 			if (Class85.getInterfaceData(i, 11) && i_0_ == -12889) {
 				GameInterfaceData[] class293s = Class159.gameInterfaces[i];
-				for (int i_1_ = 0; (class293s.length ^ 0xffffffff) < (i_1_ ^ 0xffffffff); i_1_++) {
+				for (int i_1_ = 0; i_1_ < class293s.length; i_1_++) {
 					GameInterfaceData class293 = class293s[i_1_];
 					if (class293 != null) {
-						((GameInterfaceData) class293).anInt2303 = 0;
-						((GameInterfaceData) class293).anInt2312 = 0;
-						((GameInterfaceData) class293).anInt2287 = 1;
+						class293.anInt2303 = 0;
+						class293.anInt2312 = 0;
+						class293.anInt2287 = 1;
 					}
 				}
 			}
@@ -43,7 +43,7 @@ final class Class98_Sub46_Sub15 extends Class98_Sub46 {
 			if (!bool && Class242.aClass244Array1851 != null)
 				return Class2.anIntArray70.length * 2;
 			int i_2_ = 0;
-			for (int i_3_ = 0; ((Class2.anIntArray70.length ^ 0xffffffff) < (i_3_ ^ 0xffffffff)); i_3_++) {
+			for (int i_3_ = 0; (i_3_ < Class2.anIntArray70.length); i_3_++) {
 				int i_4_ = Class2.anIntArray70[i_3_];
 				if (Class64_Sub16.aClass207_3683.method2742(i + -161, i_4_))
 					i_2_++;
@@ -62,7 +62,7 @@ final class Class98_Sub46_Sub15 extends Class98_Sub46 {
 		try {
 			if (i < 117)
 				method1612(false);
-			if (((c ^ 0xffffffff) > -66 || (c ^ 0xffffffff) < -91) && ((c ^ 0xffffffff) > -98 || (c ^ 0xffffffff) < -123))
+			if ((c < 65 || c > 90) && (c < 97 || c > 122))
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -72,8 +72,8 @@ final class Class98_Sub46_Sub15 extends Class98_Sub46 {
 
 	Class98_Sub46_Sub15(short[][] is, double d) {
 		try {
-			((Class98_Sub46_Sub15) this).aShortArrayArray6040 = is;
-			((Class98_Sub46_Sub15) this).aDouble6042 = d;
+			this.aShortArrayArray6040 = is;
+			this.aDouble6042 = d;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("jba.<init>(" + (is != null ? "{...}" : "null") + ',' + d + ')'));
 		}

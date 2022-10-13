@@ -12,7 +12,7 @@ final class Class217 implements Interface14 {
 		try {
 			if (i_1_ <= 71)
 				method2800(-42);
-			if ((i_0_ ^ 0xffffffff) > -8001 || (i_0_ ^ 0xffffffff) < -48001)
+			if (i_0_ < 8000 || i_0_ > 48000)
 				throw new IllegalArgumentException();
 			PlayerUpdateMask.anInt529 = i;
 			Class64_Sub15.anInt3678 = i_0_;

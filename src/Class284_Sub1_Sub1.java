@@ -47,7 +47,7 @@ final class Class284_Sub1_Sub1 extends Class284_Sub1 {
 		try {
 			if (i_4_ == 42) {
 				int i_5_ = 2 * i_3_;
-				i = (byte) (127 + ((i & 0xff) >> 768033697));
+				i = (byte) (127 + ((i & 0xff) >> 1));
 				aByteArray6188[i_5_++] = i;
 				aByteArray6188[i_5_] = i;
 			}
@@ -58,13 +58,13 @@ final class Class284_Sub1_Sub1 extends Class284_Sub1 {
 
 	static final int method3368(int i, String string, RSByteBuffer class98_sub22) {
 		try {
-			int i_6_ = ((RSByteBuffer) class98_sub22).position;
+			int i_6_ = class98_sub22.position;
 			byte[] is = aa.method152(0, string);
 			class98_sub22.method1237(is.length, -120);
 			if (i != 127)
 				aClass263_6189 = null;
-			((RSByteBuffer) class98_sub22).position += (Class146_Sub3.aClass213_4949.method2780(is.length, ((RSByteBuffer) class98_sub22).data, 0, ((RSByteBuffer) class98_sub22).position, is, 6350));
-			return -i_6_ + ((RSByteBuffer) class98_sub22).position;
+			class98_sub22.position += (Class146_Sub3.aClass213_4949.method2780(is.length, class98_sub22.data, 0, class98_sub22.position, is, 6350));
+			return -i_6_ + class98_sub22.position;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ed.N(" + i + ',' + (string != null ? "{...}" : "null") + ',' + (class98_sub22 != null ? "{...}" : "null") + ')'));
 		}

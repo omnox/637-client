@@ -10,8 +10,8 @@ final class Class98_Sub10_Sub27 extends Class98_Sub10 {
 		try {
 			if (i > -76)
 				return null;
-			int[][] is = ((Class98_Sub10) this).aClass223_3859.method2828(i_0_, 0);
-			if (((Class223) ((Class98_Sub10) this).aClass223_3859).aBoolean1683) {
+			int[][] is = this.aClass223_3859.method2828(i_0_, 0);
+			if (this.aClass223_3859.aBoolean1683) {
 				int[] is_1_ = is[0];
 				int[] is_2_ = is[1];
 				int[] is_3_ = is[2];
@@ -33,9 +33,9 @@ final class Class98_Sub10_Sub27 extends Class98_Sub10 {
 		try {
 			if (i != 255)
 				return null;
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_6_);
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
-				for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > (Class25.anInt268 ^ 0xffffffff); i_7_++) {
+			int[] is = this.aClass16_3863.method237((byte) 98, i_6_);
+			if (this.aClass16_3863.aBoolean198) {
+				for (int i_7_ = 0; Class25.anInt268 > i_7_; i_7_++) {
 					method1087(-2048, i_6_, i_7_);
 					int[] is_8_ = this.method1000(Class134.anInt3464, 0, i ^ 0xff);
 					is[i_7_] = is_8_[Class98_Sub10_Sub23.anInt5661];
@@ -52,9 +52,9 @@ final class Class98_Sub10_Sub27 extends Class98_Sub10 {
 			try {
 				if (i_9_ > -92)
 					method990(-69, 63);
-				if ((i ^ 0xffffffff) != -1)
+				if (i != 0)
 					break;
-				((Class98_Sub10) this).aBoolean3861 = (class98_sub22.readUnsignedByte() ^ 0xffffffff) == -2;
+				this.aBoolean3861 = class98_sub22.readUnsignedByte() == 1;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("ow.A(" + i + ',' + (class98_sub22 != null ? "{...}" : "null") + ',' + i_9_ + ')'));
 			}
@@ -87,7 +87,7 @@ final class Class98_Sub10_Sub27 extends Class98_Sub10 {
 		try {
 			int i_12_ = Class64_Sub1.anIntArray3640[i_11_];
 			int i_13_ = Class352.anIntArray3001[i_10_];
-			float f = (float) Math.atan2((double) (i_12_ + i), (double) (i_13_ + -2048));
+			float f = (float) Math.atan2(i_12_ + i, i_13_ + -2048);
 			if ((double) f >= -3.141592653589793 && (double) f <= -2.356194490192345) {
 				Class134.anInt3464 = i_10_;
 				Class98_Sub10_Sub23.anInt5661 = i_11_;

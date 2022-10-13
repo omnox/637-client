@@ -28,13 +28,13 @@ abstract class Class69 implements Interface2 {
 		try {
 			if (anInt3216 == 0) {
 				method702((byte) -72);
-				if ((anInt3219 ^ 0xffffffff) < -1) {
+				if (anInt3219 > 0) {
 					OpenGL.glBindBufferARB(anInt3212, anInt3219);
 					if (bool) {
 						OpenGL.glBufferDataARBub(anInt3212, anInt3214, null, 0, aBoolean3221 ? 35040 : 35044);
-						if (anInt3218 <= (((ha_Sub3) ((Class69) this).aHa_Sub3_Sub2_3217).aNativeHeapBuffer4521.c)) {
+						if (anInt3218 <= (this.aHa_Sub3_Sub2_3217.aNativeHeapBuffer4521.c)) {
 							anInt3216 = 1;
-							return (((ha_Sub3) ((Class69) this).aHa_Sub3_Sub2_3217).aNativeHeapBuffer4521);
+							return (this.aHa_Sub3_Sub2_3217.aNativeHeapBuffer4521);
 						}
 					}
 					if (!mapbuffer.a() && mapbuffer.a(anInt3212, anInt3218, 35001)) {
@@ -57,8 +57,8 @@ abstract class Class69 implements Interface2 {
 	final long method695(int i) {
 		try {
 			if (i != -30277)
-				((Class69) this).aHa_Sub3_Sub2_3217 = null;
-			if ((anInt3219 ^ 0xffffffff) != -1)
+				this.aHa_Sub3_Sub2_3217 = null;
+			if (anInt3219 != 0)
 				return 0L;
 			return aNativeHeapBuffer3215.getAddress();
 		} catch (RuntimeException runtimeexception) {
@@ -96,11 +96,11 @@ abstract class Class69 implements Interface2 {
 			do {
 				if (i_5_ > anInt3214) {
 					method702((byte) -76);
-					if ((anInt3219 ^ 0xffffffff) >= -1)
+					if (anInt3219 <= 0)
 						throw new RuntimeException("ARGH!");
 					OpenGL.glBindBufferARB(anInt3212, anInt3219);
 					OpenGL.glBufferDataARBa(anInt3212, i_5_, source.getAddress(), aBoolean3221 ? 35040 : 35044);
-					((ha_Sub3) ((Class69) this).aHa_Sub3_Sub2_3217).anInt4538 += i_5_ - anInt3218;
+					this.aHa_Sub3_Sub2_3217.anInt4538 += i_5_ - anInt3218;
 					anInt3214 = i_5_;
 					if (!client.aBoolean3553)
 						break;
@@ -109,7 +109,7 @@ abstract class Class69 implements Interface2 {
 					throw new RuntimeException("ARGH!");
 				OpenGL.glBindBufferARB(anInt3212, anInt3219);
 				OpenGL.glBufferSubDataARBa(anInt3212, 0, anInt3218, source.getAddress());
-				((ha_Sub3) ((Class69) this).aHa_Sub3_Sub2_3217).anInt4538 += -anInt3218 + i_5_;
+				this.aHa_Sub3_Sub2_3217.anInt4538 += -anInt3218 + i_5_;
 			} while (false);
 			anInt3218 = i_5_;
 			if (i != 1)
@@ -125,7 +125,7 @@ abstract class Class69 implements Interface2 {
 			try {
 				if (i != 18569)
 					anInt3214 = -80;
-				if (!((ha_Sub3_Sub2) ((Class69) this).aHa_Sub3_Sub2_3217).aBoolean6137)
+				if (!this.aHa_Sub3_Sub2_3217.aBoolean6137)
 					break;
 				OpenGL.glBindBufferARB(anInt3212, anInt3219);
 			} catch (RuntimeException runtimeexception) {
@@ -163,17 +163,17 @@ abstract class Class69 implements Interface2 {
 	void method76(int i, int i_6_) {
 		do {
 			try {
-				if ((i ^ 0xffffffff) < (anInt3214 ^ 0xffffffff)) {
+				if (anInt3214 < i) {
 					method702((byte) -85);
 					do {
-						if ((anInt3219 ^ 0xffffffff) < -1) {
+						if (anInt3219 > 0) {
 							OpenGL.glBindBufferARB(anInt3212, anInt3219);
 							OpenGL.glBufferDataARBub(anInt3212, i, null, 0, (!aBoolean3221 ? 35044 : 35040));
-							((ha_Sub3) ((Class69) this).aHa_Sub3_Sub2_3217).anInt4538 += -anInt3214 + i;
+							this.aHa_Sub3_Sub2_3217.anInt4538 += -anInt3214 + i;
 							if (!client.aBoolean3553)
 								break;
 						}
-						aNativeHeapBuffer3215 = ((Class69) this).aHa_Sub3_Sub2_3217.method1947(i, false, i_6_ ^ 0x512b);
+						aNativeHeapBuffer3215 = this.aHa_Sub3_Sub2_3217.method1947(i, false, i_6_ ^ 0x512b);
 					} while (false);
 					anInt3214 = i;
 				}
@@ -194,31 +194,31 @@ abstract class Class69 implements Interface2 {
 		Class353.anInt3009 = 0;
 		Class356.anInt3020++;
 		if ((i_9_ & 0x2) == 0) {
-			for (AnimableEntity class246_sub3 = Class379.aClass246_Sub3Array3198[i_11_]; class246_sub3 != null; class246_sub3 = ((AnimableEntity) class246_sub3).aClass246_Sub3_5090) {
+			for (AnimableEntity class246_sub3 = Class379.aClass246_Sub3Array3198[i_11_]; class246_sub3 != null; class246_sub3 = class246_sub3.aClass246_Sub3_5090) {
 				if (!InputStream_Sub1.method121(class246_sub3, bool, is, i, i_7_)) {
 					Class111.method2098(class246_sub3);
-					if (((AnimableEntity) class246_sub3).anInt5083 != -1)
+					if (class246_sub3.anInt5083 != -1)
 						Class32.aClass246_Sub3Array307[Class302.anInt2523++] = class246_sub3;
 				}
 			}
 		}
 		if ((i_9_ & 0x1) == 0) {
-			for (AnimableEntity class246_sub3 = Class359.aClass246_Sub3Array3056[i_11_]; class246_sub3 != null; class246_sub3 = ((AnimableEntity) class246_sub3).aClass246_Sub3_5090) {
+			for (AnimableEntity class246_sub3 = Class359.aClass246_Sub3Array3056[i_11_]; class246_sub3 != null; class246_sub3 = class246_sub3.aClass246_Sub3_5090) {
 				if (!InputStream_Sub1.method121(class246_sub3, bool, is, i, i_7_)) {
 					Class111.method2098(class246_sub3);
-					if (((AnimableEntity) class246_sub3).anInt5083 != -1)
+					if (class246_sub3.anInt5083 != -1)
 						Class246_Sub4_Sub2.aClass246_Sub3Array6173[Class353.anInt3009++] = class246_sub3;
 				}
 			}
-			for (AnimableEntity class246_sub3 = Class130.aClass246_Sub3Array1029[i_11_]; class246_sub3 != null; class246_sub3 = ((AnimableEntity) class246_sub3).aClass246_Sub3_5090) {
+			for (AnimableEntity class246_sub3 = Class130.aClass246_Sub3Array1029[i_11_]; class246_sub3 != null; class246_sub3 = class246_sub3.aClass246_Sub3_5090) {
 				if (!InputStream_Sub1.method121(class246_sub3, bool, is, i, i_7_)) {
 					if (class246_sub3.method2987(6540)) {
 						Class111.method2098(class246_sub3);
-						if (((AnimableEntity) class246_sub3).anInt5083 != -1)
+						if (class246_sub3.anInt5083 != -1)
 							Class246_Sub4_Sub2.aClass246_Sub3Array6173[Class353.anInt3009++] = class246_sub3;
 					} else {
 						Class111.method2098(class246_sub3);
-						if (((AnimableEntity) class246_sub3).anInt5083 != -1)
+						if (class246_sub3.anInt5083 != -1)
 							Class32.aClass246_Sub3Array307[Class302.anInt2523++] = class246_sub3;
 					}
 				}
@@ -227,7 +227,7 @@ abstract class Class69 implements Interface2 {
 				for (int i_12_ = 0; i_12_ < Class347.anInt2907; i_12_++) {
 					if (!InputStream_Sub1.method121((Class246_Sub3_Sub5_Sub2.aClass246_Sub3_Sub4Array6273[i_12_]), bool, is, i, i_7_)) {
 						Class111.method2098(Class246_Sub3_Sub5_Sub2.aClass246_Sub3_Sub4Array6273[i_12_]);
-						if (((AnimableEntity) (Class246_Sub3_Sub5_Sub2.aClass246_Sub3_Sub4Array6273[i_12_])).anInt5083 != -1) {
+						if (Class246_Sub3_Sub5_Sub2.aClass246_Sub3_Sub4Array6273[i_12_].anInt5083 != -1) {
 							if (Class246_Sub3_Sub5_Sub2.aClass246_Sub3_Sub4Array6273[i_12_].method2987(6540))
 								Class246_Sub4_Sub2.aClass246_Sub3Array6173[Class353.anInt3009++] = (Class246_Sub3_Sub5_Sub2.aClass246_Sub3_Sub4Array6273[i_12_]);
 							else
@@ -264,7 +264,7 @@ abstract class Class69 implements Interface2 {
 								if (Class74.aBooleanArrayArray551[i_17_][i_19_]) {
 									int i_20_ = (i_19_ + OutgoingOpcode.anInt1318 - Class98_Sub37.anInt4184);
 									for (int i_21_ = i_14_; i_21_ >= 0; i_21_--) {
-										if ((Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[i_21_][i_18_][i_20_]) != null && (((Class172) (Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[i_21_][i_18_][i_20_])).aByte1322) == i_14_) {
+										if ((Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[i_21_][i_18_][i_20_]) != null && (Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[i_21_][i_18_][i_20_].aByte1322) == i_14_) {
 											if (i_21_ >= i && (is[i_21_][i_18_][i_20_]) == i_7_ || (Class76_Sub5.method758((byte) 95, i_14_, i_20_, i_18_)))
 												bools[i_17_][i_19_] = false;
 											else
@@ -368,8 +368,8 @@ abstract class Class69 implements Interface2 {
 	void method72(boolean bool) {
 		do {
 			try {
-				if ((anInt3219 ^ 0xffffffff) < -1) {
-					((Class69) this).aHa_Sub3_Sub2_3217.method2084(1, anInt3218, anInt3219);
+				if (anInt3219 > 0) {
+					this.aHa_Sub3_Sub2_3217.method2084(1, anInt3218, anInt3219);
 					anInt3219 = -1;
 				}
 				if (bool == false)
@@ -395,7 +395,7 @@ abstract class Class69 implements Interface2 {
 	private final void method702(byte i) {
 		try {
 			if (i < -53 && anInt3219 < 0) {
-				if (((ha_Sub3_Sub2) ((Class69) this).aHa_Sub3_Sub2_3217).aBoolean6137) {
+				if (this.aHa_Sub3_Sub2_3217.aBoolean6137) {
 					OpenGL.glGenBuffersARB(1, Class190.anIntArray1463, 0);
 					anInt3219 = Class190.anIntArray1463[0];
 					OpenGL.glBindBufferARB(anInt3212, anInt3219);
@@ -410,7 +410,7 @@ abstract class Class69 implements Interface2 {
 	Class69(ha_Sub3_Sub2 var_ha_Sub3_Sub2, int i, boolean bool) {
 		try {
 			aBoolean3221 = bool;
-			((Class69) this).aHa_Sub3_Sub2_3217 = var_ha_Sub3_Sub2;
+			this.aHa_Sub3_Sub2_3217 = var_ha_Sub3_Sub2;
 			anInt3212 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ei.<init>(" + (var_ha_Sub3_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + bool + ')'));
@@ -431,7 +431,7 @@ abstract class Class69 implements Interface2 {
 							if (!client.aBoolean3553)
 								break;
 						}
-						OpenGL.glBufferSubDataARBa(anInt3212, 0, anInt3214, ((ha_Sub3) (((Class69) this).aHa_Sub3_Sub2_3217)).aNativeHeapBuffer4521.getAddress());
+						OpenGL.glBufferSubDataARBa(anInt3212, 0, anInt3214, this.aHa_Sub3_Sub2_3217.aNativeHeapBuffer4521.getAddress());
 					}
 				} while (false);
 				anInt3216 = 0;

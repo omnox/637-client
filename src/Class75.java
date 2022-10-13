@@ -107,13 +107,13 @@ final class Class75 {
 
 	private Class75(int i, TextResources class309, TextResources class309_5_, int i_6_, int i_7_, boolean bool, boolean bool_8_) {
 		try {
-			((Class75) this).aBoolean554 = bool;
-			((Class75) this).aBoolean553 = bool_8_;
-			((Class75) this).aClass309_555 = class309_5_;
-			((Class75) this).aClass309_560 = class309;
+			this.aBoolean554 = bool;
+			this.aBoolean553 = bool_8_;
+			this.aClass309_555 = class309_5_;
+			this.aClass309_560 = class309;
 			anInt556 = i;
-			((Class75) this).anInt552 = i_6_;
-			((Class75) this).anInt557 = i_7_;
+			this.anInt552 = i_6_;
+			this.anInt557 = i_7_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("es.<init>(" + i + ',' + (class309 != null ? "{...}" : "null") + ',' + (class309_5_ != null ? "{...}" : "null") + ',' + i_6_ + ',' + i_7_ + ',' + bool + ',' + bool_8_ + ')'));
 		}

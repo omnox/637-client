@@ -57,13 +57,13 @@ final class Class109 {
 					return false;
 				aClass98_Sub46_Sub13_Sub1_932 = aClass135_928.method2252(255, (byte) 0, 255, 112, true);
 			}
-			if (((Class98_Sub46_Sub13) aClass98_Sub46_Sub13_Sub1_932).aBoolean6038)
+			if (aClass98_Sub46_Sub13_Sub1_932.aBoolean6038)
 				return false;
 			RSByteBuffer class98_sub22 = new RSByteBuffer(aClass98_Sub46_Sub13_Sub1_932.method1591(87));
-			((RSByteBuffer) class98_sub22).position = 5;
+			class98_sub22.position = 5;
 			int i_7_ = class98_sub22.readUnsignedByte();
-			((RSByteBuffer) class98_sub22).position += 72 * i_7_;
-			byte[] is = (new byte[(((RSByteBuffer) class98_sub22).data.length - ((RSByteBuffer) class98_sub22).position)]);
+			class98_sub22.position += 72 * i_7_;
+			byte[] is = (new byte[(class98_sub22.data.length - class98_sub22.position)]);
 			class98_sub22.method1190(is, true, is.length, 0);
 			//	    byte[] is_8_;
 			//	    if (aBigInteger927 != null && aBigInteger929 != null) {
@@ -98,7 +98,7 @@ final class Class109 {
 	final void method1736(int i) {
 		try {
 			if (aClass339_Sub1Array931 != null) {
-				for (int i_12_ = i; ((aClass339_Sub1Array931.length ^ 0xffffffff) < (i_12_ ^ 0xffffffff)); i_12_++) {
+				for (int i_12_ = i; (i_12_ < aClass339_Sub1Array931.length); i_12_++) {
 					if (aClass339_Sub1Array931[i_12_] != null)
 						aClass339_Sub1Array931[i_12_].method3797(-1);
 				}
@@ -155,7 +155,7 @@ final class Class109 {
 				throw new RuntimeException();
 			if (aClass339_Sub1Array931[i] != null)
 				return aClass339_Sub1Array931[i];
-			((RSByteBuffer) aClass98_Sub22_930).position = 72 * i - -6;
+			aClass98_Sub22_930.position = 72 * i - -6;
 			int i_18_ = aClass98_Sub22_930.readInt(-2);
 			int i_19_ = aClass98_Sub22_930.readInt(-2);
 			int i_20_ = 9 / ((i_17_ - 46) / 43);

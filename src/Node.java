@@ -21,7 +21,7 @@ class Node {
 
 	final boolean method941(byte i) {
 		try {
-			if (((Node) this).aClass98_833 == null)
+			if (this.aClass98_833 == null)
 				return false;
 			if (i != 78)
 				method943(null, false, true);
@@ -33,11 +33,11 @@ class Node {
 
 	final void remove() {
 		try {
-			if (((Node) this).aClass98_833 != null) {
-				((Node) ((Node) this).aClass98_833).aClass98_836 = ((Node) this).aClass98_836;
-				((Node) ((Node) this).aClass98_836).aClass98_833 = ((Node) this).aClass98_833;
-				((Node) this).aClass98_833 = null;
-				((Node) this).aClass98_836 = null;
+			if (this.aClass98_833 != null) {
+				this.aClass98_833.aClass98_836 = this.aClass98_836;
+				this.aClass98_836.aClass98_833 = this.aClass98_833;
+				this.aClass98_833 = null;
+				this.aClass98_836 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "gda.V(");
@@ -54,7 +54,7 @@ class Node {
 				Class98_Sub10_Sub28.aClass98_Sub22_5705.method1217(is, is.length, -1, 0);
 				if (!bool)
 					break;
-				Class30.method304(120, (((RSByteBuffer) Class98_Sub10_Sub28.aClass98_Sub22_5705).data));
+				Class30.method304(120, (Class98_Sub10_Sub28.aClass98_Sub22_5705.data));
 				Class98_Sub28_Sub1.aClass53_Sub1Array5805 = new Class53_Sub1[Class42_Sub3.anInt5366];
 				int i = 0;
 				for (int i_1_ = Class164.anInt1274; Class101.anInt854 >= i_1_; i_1_++) {
@@ -76,7 +76,7 @@ class Node {
 		try {
 			if (i_3_ != 85)
 				method944(43, 69, (byte) 22);
-			if ((0x22 & i ^ 0xffffffff) == -1)
+			if ((0x22 & i) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

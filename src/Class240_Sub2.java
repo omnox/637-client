@@ -56,8 +56,8 @@ final class Class240_Sub2 extends Class240 {
 			do {
 				i_1_++;
 				aLong5055 += l;
-			} while (10 > i_1_ && ((aLong5055 ^ 0xffffffffffffffffL) > (aLong5056 ^ 0xffffffffffffffffL)));
-			if ((aLong5056 ^ 0xffffffffffffffffL) < (aLong5055 ^ 0xffffffffffffffffL))
+			} while (10 > i_1_ && (aLong5056 > aLong5055));
+			if (aLong5055 < aLong5056)
 				aLong5055 = aLong5056;
 			i_0_ = i_1_;
 		} catch (RuntimeException runtimeexception) {
@@ -84,14 +84,14 @@ final class Class240_Sub2 extends Class240 {
 			long l_2_ = System.nanoTime();
 			long l_3_ = -aLong5060 + l_2_;
 			aLong5060 = l_2_;
-			if (4999999999L > (l_3_ ^ 0xffffffffffffffffL) && 5000000000L > l_3_) {
+			if (l_3_ > -5000000000L && 5000000000L > l_3_) {
 				aLongArray5057[anInt5058] = l_3_;
 				anInt5058 = (1 + anInt5058) % 10;
-				if ((anInt5059 ^ 0xffffffff) > -2)
+				if (anInt5059 < 1)
 					anInt5059++;
 			}
 			long l_4_ = 0L;
-			for (int i_5_ = 1; (anInt5059 ^ 0xffffffff) <= (i_5_ ^ 0xffffffff); i_5_++)
+			for (int i_5_ = 1; i_5_ <= anInt5059; i_5_++)
 				l_4_ += aLongArray5057[(10 + anInt5058 + -i_5_) % 10];
 			int i_6_ = 28 / ((i - -84) / 38);
 			l = l_4_ / (long) anInt5059;

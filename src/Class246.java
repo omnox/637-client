@@ -60,11 +60,11 @@ class Class246 {
 
 	final void method2965(byte i) {
 		try {
-			if (((Class246) this).aClass246_1873 != null) {
-				((Class246) ((Class246) this).aClass246_1873).aClass246_1874 = ((Class246) this).aClass246_1874;
-				((Class246) ((Class246) this).aClass246_1874).aClass246_1873 = ((Class246) this).aClass246_1873;
-				((Class246) this).aClass246_1874 = null;
-				((Class246) this).aClass246_1873 = null;
+			if (this.aClass246_1873 != null) {
+				this.aClass246_1873.aClass246_1874 = this.aClass246_1874;
+				this.aClass246_1874.aClass246_1873 = this.aClass246_1873;
+				this.aClass246_1874 = null;
+				this.aClass246_1873 = null;
 				int i_0_ = 77 % ((89 - i) / 32);
 			}
 		} catch (RuntimeException runtimeexception) {

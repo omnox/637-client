@@ -33,8 +33,8 @@ final class Class279 {
 
 	Class279(String string, int i) {
 		try {
-			((Class279) this).aString2098 = string;
-			((Class279) this).anInt2095 = i;
+			this.aString2098 = string;
+			this.anInt2095 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("rga.<init>(" + (string != null ? "{...}" : "null") + ',' + i + ')'));
 		}
@@ -42,14 +42,14 @@ final class Class279 {
 
 	static final void method3322(Node class98, Node class98_0_, byte i) {
 		try {
-			if (((Node) class98_0_).aClass98_833 != null)
+			if (class98_0_.aClass98_833 != null)
 				class98_0_.remove();
 			if (i != 24)
 				anInt2099 = 4;
-			((Node) class98_0_).aClass98_833 = ((Node) class98).aClass98_833;
-			((Node) class98_0_).aClass98_836 = class98;
-			((Node) ((Node) class98_0_).aClass98_833).aClass98_836 = class98_0_;
-			((Node) ((Node) class98_0_).aClass98_836).aClass98_833 = class98_0_;
+			class98_0_.aClass98_833 = class98.aClass98_833;
+			class98_0_.aClass98_836 = class98;
+			class98_0_.aClass98_833.aClass98_836 = class98_0_;
+			class98_0_.aClass98_836.aClass98_833 = class98_0_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("rga.B(" + (class98 != null ? "{...}" : "null") + ',' + (class98_0_ != null ? "{...}" : "null") + ',' + i + ')'));
 		}
@@ -57,11 +57,11 @@ final class Class279 {
 
 	static final byte[] method3323(int i, int i_1_) {
 		try {
-			Class98_Sub46_Sub7 class98_sub46_sub7 = ((Class98_Sub46_Sub7) Class81.aClass100_617.method1694((byte) 117, (long) i));
+			Class98_Sub46_Sub7 class98_sub46_sub7 = ((Class98_Sub46_Sub7) Class81.aClass100_617.method1694((byte) 117, i));
 			if (class98_sub46_sub7 == null) {
 				byte[] is = new byte[512];
-				Random random = new Random((long) i);
-				for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > -256; i_2_++)
+				Random random = new Random(i);
+				for (int i_2_ = 0; i_2_ < 255; i_2_++)
 					is[i_2_] = (byte) i_2_;
 				for (int i_3_ = 0; i_3_ < 255; i_3_++) {
 					int i_4_ = -i_3_ + 255;
@@ -71,11 +71,11 @@ final class Class279 {
 					is[i_4_] = is[-i_3_ + 511] = i_6_;
 				}
 				class98_sub46_sub7 = new Class98_Sub46_Sub7(is);
-				Class81.aClass100_617.method1695(26404, class98_sub46_sub7, (long) i);
+				Class81.aClass100_617.method1695(26404, class98_sub46_sub7, i);
 			}
 			if (i_1_ != 512)
 				method3322(null, null, (byte) 75);
-			return ((Class98_Sub46_Sub7) class98_sub46_sub7).aByteArray5981;
+			return class98_sub46_sub7.aByteArray5981;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "rga.C(" + i + ',' + i_1_ + ')');
 		}

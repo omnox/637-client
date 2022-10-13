@@ -19,6 +19,6 @@ final class Class98_Sub33 extends Node {
 	Class185 aClass185_4125;
 
 	public Class98_Sub33() {
-		((Class98_Sub33) this).aBoolean4123 = true;
+		this.aBoolean4123 = true;
 	}
 }

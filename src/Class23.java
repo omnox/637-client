@@ -18,14 +18,14 @@ final class Class23 {
 
 	static final int method282(int i, int i_1_) {
 		try {
-			int i_2_ = i_1_ >>> -219070399;
-			i_2_ |= i_2_ >>> 1968182145;
-			i_2_ |= i_2_ >>> -2008770942;
-			i_2_ |= i_2_ >>> -17314684;
-			i_2_ |= i_2_ >>> -9788344;
-			i_2_ |= i_2_ >>> 1245334000;
+			int i_2_ = i_1_ >>> 1;
+			i_2_ |= i_2_ >>> 1;
+			i_2_ |= i_2_ >>> 2;
+			i_2_ |= i_2_ >>> 4;
+			i_2_ |= i_2_ >>> 8;
+			i_2_ |= i_2_ >>> 16;
 			int i_3_ = 44 / ((-35 - i) / 61);
-			return (i_2_ ^ 0xffffffff) & i_1_;
+			return (~i_2_) & i_1_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "bm.C(" + i + ',' + i_1_ + ')');
 		}
@@ -46,7 +46,7 @@ final class Class23 {
 						class98_sub22.writeInt(1571862888, (Class76_Sub5.anIntArray3744[i_5_]));
 					}
 				}
-				class356.method3882((((RSByteBuffer) class98_sub22).data), 4657, 0, ((RSByteBuffer) class98_sub22).position);
+				class356.method3882((class98_sub22.data), 4657, 0, class98_sub22.position);
 			} catch (Exception exception) {
 				/* empty */
 			}

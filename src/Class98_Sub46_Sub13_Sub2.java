@@ -11,7 +11,7 @@ final class Class98_Sub46_Sub13_Sub2 extends Class98_Sub46_Sub13 {
 
 	static final int method1598(int i) {
 		try {
-			return i >>> 1951350663;
+			return i >>> 7;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "rba.E(" + i + ')');
 		}
@@ -30,7 +30,7 @@ final class Class98_Sub46_Sub13_Sub2 extends Class98_Sub46_Sub13 {
 		try {
 			if (i != 100)
 				return -47;
-			if (((Class98_Sub46_Sub13) this).aBoolean6038)
+			if (this.aBoolean6038)
 				return 0;
 			return 100;
 		} catch (RuntimeException runtimeexception) {
@@ -50,7 +50,7 @@ final class Class98_Sub46_Sub13_Sub2 extends Class98_Sub46_Sub13 {
 
 	static final Class98_Sub46_Sub4 method1601(int i, int i_1_) {
 		try {
-			Class98_Sub46_Sub4 class98_sub46_sub4 = ((Class98_Sub46_Sub4) Class38.aClass100_357.method1694((byte) 117, (long) i));
+			Class98_Sub46_Sub4 class98_sub46_sub4 = ((Class98_Sub46_Sub4) Class38.aClass100_357.method1694((byte) 117, i));
 			if (class98_sub46_sub4 != null)
 				return class98_sub46_sub4;
 			byte[] is = Class52.aClass207_3494.readArchive(0, i);
@@ -63,7 +63,7 @@ final class Class98_Sub46_Sub13_Sub2 extends Class98_Sub46_Sub13 {
 			} catch (Exception exception) {
 				throw new RuntimeException(exception.getMessage() + " S: " + i);
 			}
-			Class38.aClass100_357.method1695(26404, class98_sub46_sub4, (long) i);
+			Class38.aClass100_357.method1695(26404, class98_sub46_sub4, i);
 			return class98_sub46_sub4;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "rba.D(" + i + ',' + i_1_ + ')');
@@ -73,10 +73,10 @@ final class Class98_Sub46_Sub13_Sub2 extends Class98_Sub46_Sub13 {
 	final byte[] method1591(int i) {
 		try {
 			if (i < 5)
-				((Class98_Sub46_Sub13_Sub2) this).aClass17_6312 = null;
-			if (((Class98_Sub46_Sub13) this).aBoolean6038)
+				this.aClass17_6312 = null;
+			if (this.aBoolean6038)
 				throw new RuntimeException();
-			return ((Class98_Sub46_Sub13_Sub2) this).aByteArray6313;
+			return this.aByteArray6313;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "rba.C(" + i + ')');
 		}

@@ -37,8 +37,8 @@ final class Class42_Sub3 extends Class42 {
 	final void method393(int i, boolean bool) {
 		try {
 			if (i == 3552) {
-				((Class42) this).aHa_Sub1_3227.method1863(1, this);
-				OpenGL.glTexParameteri(((Class42) this).anInt3226, 10242, !bool ? 33071 : 10497);
+				this.aHa_Sub1_3227.method1863(1, this);
+				OpenGL.glTexParameteri(this.anInt3226, 10242, !bool ? 33071 : 10497);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "pea.C(" + i + ',' + bool + ')');
@@ -64,9 +64,9 @@ final class Class42_Sub3 extends Class42 {
 		super(var_ha_Sub1, 3552, i, i_3_, false);
 		try {
 			anInt5362 = i_3_;
-			((Class42) this).aHa_Sub1_3227.method1863(1, this);
+			this.aHa_Sub1_3227.method1863(1, this);
 			OpenGL.glPixelStorei(3317, 1);
-			OpenGL.glTexImage1Dub(((Class42) this).anInt3226, 0, ((Class42) this).anInt3230, anInt5362, 0, i_4_, 5121, is, 0);
+			OpenGL.glTexImage1Dub(this.anInt3226, 0, this.anInt3230, anInt5362, 0, i_4_, 5121, is, 0);
 			OpenGL.glPixelStorei(3317, 4);
 			this.method372(-28003, true);
 		} catch (RuntimeException runtimeexception) {

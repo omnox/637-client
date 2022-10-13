@@ -19,10 +19,10 @@ final class Class98_Sub46_Sub6 extends Class98_Sub46 {
 			int i_2_ = 0;
 			if (i_1_ >= -49)
 				method1548(-78, 47, 80, 103, (byte) -48, -72, 123);
-			for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > (i ^ 0xffffffff); i_3_++) {
+			for (int i_3_ = 0; i > i_3_; i_3_++) {
 				int i_4_ = is[i_0_ + i_3_] & 0xff;
-				if ((i_4_ ^ 0xffffffff) != -1) {
-					if ((i_4_ ^ 0xffffffff) <= -129 && i_4_ < 160) {
+				if (i_4_ != 0) {
+					if (i_4_ >= 128 && i_4_ < 160) {
 						int i_5_ = Class65.aCharArray497[-128 + i_4_];
 						if (i_5_ == 0)
 							i_5_ = 63;
@@ -39,14 +39,14 @@ final class Class98_Sub46_Sub6 extends Class98_Sub46 {
 
 	final void method1547(int i) {
 		try {
-			((Class98_Sub46_Sub6) this).anInt5974 = (((Class35) ((Class98_Sub46_Sub6) this).aClass35_5971).anInt330);
-			((Class98_Sub46_Sub6) this).anInt5978 = (((Class35) ((Class98_Sub46_Sub6) this).aClass35_5971).anInt337);
+			this.anInt5974 = (this.aClass35_5971.anInt330);
+			this.anInt5978 = (this.aClass35_5971.anInt337);
 			int i_6_ = 87 % ((i - -1) / 44);
-			((Class98_Sub46_Sub6) this).anInt5972 = (((Class35) ((Class98_Sub46_Sub6) this).aClass35_5971).anInt331);
-			if ((((Class35) ((Class98_Sub46_Sub6) this).aClass35_5971).aClass111_334) != null)
-				((Class35) ((Class98_Sub46_Sub6) this).aClass35_5971).aClass111_334.method2099((((Class66) ((Class98_Sub46_Sub6) this).aClass66_5973).anInt506), (((Class66) ((Class98_Sub46_Sub6) this).aClass66_5973).anInt511), (((Class66) ((Class98_Sub46_Sub6) this).aClass66_5973).anInt505), Class210.anIntArray3329);
-			((Class98_Sub46_Sub6) this).anInt5977 = Class210.anIntArray3329[2];
-			((Class98_Sub46_Sub6) this).anInt5976 = Class210.anIntArray3329[0];
+			this.anInt5972 = (this.aClass35_5971.anInt331);
+			if ((this.aClass35_5971.aClass111_334) != null)
+				this.aClass35_5971.aClass111_334.method2099((this.aClass66_5973.anInt506), (this.aClass66_5973.anInt511), (this.aClass66_5973.anInt505), Class210.anIntArray3329);
+			this.anInt5977 = Class210.anIntArray3329[2];
+			this.anInt5976 = Class210.anIntArray3329[0];
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "dh.D(" + i + ')');
 		}
@@ -84,7 +84,7 @@ final class Class98_Sub46_Sub6 extends Class98_Sub46 {
 			Class244 class244 = Class114.method2151(i, true, var_ha, true);
 			if (class244 == null)
 				return null;
-			return ((Class244) class244).aClass197_1858;
+			return class244.aClass197_1858;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("dh.B(" + i + ',' + i_13_ + ',' + (var_ha != null ? "{...}" : "null") + ')'));
 		}
@@ -92,8 +92,8 @@ final class Class98_Sub46_Sub6 extends Class98_Sub46 {
 
 	Class98_Sub46_Sub6(Class35 class35, Class246_Sub5 class246_sub5) {
 		try {
-			((Class98_Sub46_Sub6) this).aClass35_5971 = class35;
-			((Class98_Sub46_Sub6) this).aClass66_5973 = ((Class98_Sub46_Sub6) this).aClass35_5971.method331((byte) 93);
+			this.aClass35_5971 = class35;
+			this.aClass66_5973 = this.aClass35_5971.method331((byte) 93);
 			method1547(-102);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("dh.<init>(" + (class35 != null ? "{...}" : "null") + ',' + (class246_sub5 != null ? "{...}" : "null") + ')'));

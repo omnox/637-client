@@ -22,7 +22,7 @@ final class Class64_Sub17 extends Class64 {
 		try {
 			if (i <= 119)
 				return -123;
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "nm.E(" + i + ')');
 		}
@@ -44,17 +44,17 @@ final class Class64_Sub17 extends Class64 {
 
 	final void method551(byte i) {
 		try {
-			int i_1_ = ((Class64) this).aClass98_Sub27_495.method1289(-101).method2318(-1);
+			int i_1_ = this.aClass98_Sub27_495.method1289(-101).method2318(-1);
 			if (i_1_ < 96)
-				((Class64) this).anInt494 = 0;
+				this.anInt494 = 0;
 			if (i < 118)
 				aFloat3686 = 0.5277947F;
-			if (((Class64) this).anInt494 > 1 && (i_1_ ^ 0xffffffff) > -129)
-				((Class64) this).anInt494 = 1;
-			if (((Class64) this).anInt494 > 2 && i_1_ < 192)
-				((Class64) this).anInt494 = 2;
-			if (((Class64) this).anInt494 < 0 || (((Class64) this).anInt494 ^ 0xffffffff) < -4)
-				((Class64) this).anInt494 = method552(0);
+			if (this.anInt494 > 1 && i_1_ < 128)
+				this.anInt494 = 1;
+			if (this.anInt494 > 2 && i_1_ < 192)
+				this.anInt494 = 2;
+			if (this.anInt494 < 0 || this.anInt494 > 3)
+				this.anInt494 = method552(0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "nm.C(" + i + ')');
 		}
@@ -82,7 +82,7 @@ final class Class64_Sub17 extends Class64 {
 	final void method550(int i, int i_12_) {
 		try {
 			int i_13_ = -60 / ((-26 - i) / 41);
-			((Class64) this).anInt494 = i_12_;
+			this.anInt494 = i_12_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "nm.B(" + i + ',' + i_12_ + ')');
 		}
@@ -90,15 +90,15 @@ final class Class64_Sub17 extends Class64 {
 
 	static final void method619(Class1 class1) {
 		if (Class226.anInt1705 < 65535) {
-			Class98_Sub5 class98_sub5 = ((Class1) class1).aClass98_Sub5_55;
+			Class98_Sub5 class98_sub5 = class1.aClass98_Sub5_55;
 			Class98_Sub10_Sub31.aClass1Array5717[Class226.anInt1705] = class1;
 			Class21_Sub4.aBooleanArray5399[Class226.anInt1705] = false;
 			Class226.anInt1705++;
-			int i = ((Class1) class1).anInt57;
-			if (((Class1) class1).aBoolean54)
+			int i = class1.anInt57;
+			if (class1.aBoolean54)
 				i = 0;
-			int i_14_ = ((Class1) class1).anInt57;
-			if (((Class1) class1).aBoolean58)
+			int i_14_ = class1.anInt57;
+			if (class1.aBoolean58)
 				i_14_ = Class364.anInt3103 - 1;
 			for (int i_15_ = i; i_15_ <= i_14_; i_15_++) {
 				int i_16_ = 0;
@@ -111,7 +111,7 @@ final class Class64_Sub17 extends Class64 {
 				if (i_18_ >= Class64_Sub9.anInt3662)
 					i_18_ = Class64_Sub9.anInt3662 - 1;
 				for (int i_19_ = i_17_; i_19_ <= i_18_; i_19_++) {
-					int i_20_ = ((Class1) class1).aShortArray59[i_16_++];
+					int i_20_ = class1.aShortArray59[i_16_++];
 					int i_21_ = ((class98_sub5.method954(7019) - class98_sub5.method958(126) + RuneScapeCache.anInt1577) >> Class151_Sub8.anInt5015) + (i_20_ >>> 8);
 					int i_22_ = i_21_ + (i_20_ & 0xff) - 1;
 					if (i_21_ < 0)
@@ -136,7 +136,7 @@ final class Class64_Sub17 extends Class64 {
 
 	final int method556(int i, int i_24_) {
 		try {
-			int i_25_ = ((Class64) this).aClass98_Sub27_495.method1289(-108).method2318(-1);
+			int i_25_ = this.aClass98_Sub27_495.method1289(-108).method2318(-1);
 			if (i_25_ < 96)
 				return 3;
 			if (i > 1 && i_25_ < 128)
@@ -172,8 +172,8 @@ final class Class64_Sub17 extends Class64 {
 		try {
 			if (i != -1)
 				method619(null);
-			int i_29_ = ((Class64) this).aClass98_Sub27_495.method1289(-103).method2318(i);
-			if ((i_29_ ^ 0xffffffff) > -97)
+			int i_29_ = this.aClass98_Sub27_495.method1289(-103).method2318(i);
+			if (i_29_ < 96)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

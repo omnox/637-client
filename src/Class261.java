@@ -16,7 +16,7 @@ final class Class261 {
 		try {
 			if (i_3_ < i_1_) {
 				i_2_ += i_3_;
-				i_0_ = -i_3_ + i_1_ >> 93881506;
+				i_0_ = -i_3_ + i_1_ >> 2;
 				while (--i_0_ >= 0) {
 					is[i_2_++] = (byte) 1;
 					is[i_2_++] = (byte) 1;
@@ -54,8 +54,8 @@ final class Class261 {
 		try {
 			if (Class98_Sub10_Sub15.anInt5618 < 102)
 				Class98_Sub10_Sub15.anInt5618 += 6;
-			if ((Class169.anInt1306 ^ 0xffffffff) != 0 && ((Class343.method3819(-47) ^ 0xffffffffffffffffL) < (Class198.aLong1525 ^ 0xffffffffffffffffL))) {
-				for (int i_5_ = Class169.anInt1306; ((i_5_ ^ 0xffffffff) > (Class147.aStringArray1189.length ^ 0xffffffff)); i_5_++) {
+			if (Class169.anInt1306 != -1 && (Class198.aLong1525 < Class343.method3819(-47))) {
+				for (int i_5_ = Class169.anInt1306; (Class147.aStringArray1189.length > i_5_); i_5_++) {
 					if (!Class147.aStringArray1189[i_5_].startsWith("pause")) {
 						Class45.aString382 = Class147.aStringArray1189[i_5_];
 						Class295.method3484(false, false);
@@ -78,7 +78,7 @@ final class Class261 {
 				Class54.anInt3395 -= 5 * Class319.mouse_scroll_delta;
 				if (Class54.anInt3395 >= Class98_Sub28.anInt4080)
 					Class54.anInt3395 = -1 + Class98_Sub28.anInt4080;
-				if ((Class54.anInt3395 ^ 0xffffffff) > -1)
+				if (Class54.anInt3395 < 0)
 					Class54.anInt3395 = 0;
 				Class319.mouse_scroll_delta = 0;
 			}
@@ -89,12 +89,12 @@ final class Class261 {
 					int i_8_ = interface7.method17(true);
 					char c = interface7.method15(13313);
 					int i_9_ = interface7.method16((byte) 82);
-					if ((i_8_ ^ 0xffffffff) == -85)
+					if (i_8_ == 84)
 						Class295.method3484(false, false);
-					if ((i_8_ ^ 0xffffffff) == -81)
+					if (i_8_ == 80)
 						Class295.method3484(true, false);
-					else if ((i_8_ ^ 0xffffffff) != -67 || (0x4 & i_9_) == 0) {
-						if (i_8_ != 67 || (i_9_ & 0x4 ^ 0xffffffff) == -1) {
+					else if (i_8_ != 66 || (0x4 & i_9_) == 0) {
+						if (i_8_ != 67 || (i_9_ & 0x4) == 0) {
 							if (i_8_ == 85 && Class198.anInt1524 > 0) {
 								Class45.aString382 = ((Class45.aString382.substring(0, -1 + Class198.anInt1524)) + Class45.aString382.substring(Class198.anInt1524));
 								Class198.anInt1524--;
@@ -102,17 +102,17 @@ final class Class261 {
 								Class45.aString382 = (Class45.aString382.substring(0, Class198.anInt1524) + (Class45.aString382.substring(1 + Class198.anInt1524)));
 							else if (i_8_ == 96 && Class198.anInt1524 > 0)
 								Class198.anInt1524--;
-							else if ((i_8_ ^ 0xffffffff) != -98 || (Class198.anInt1524 >= Class45.aString382.length())) {
+							else if (i_8_ != 97 || (Class198.anInt1524 >= Class45.aString382.length())) {
 								if (i_8_ == 102)
 									Class198.anInt1524 = 0;
 								else if (i_8_ == 103)
 									Class198.anInt1524 = Class45.aString382.length();
 								else if (i_8_ != 104 || (Class98_Sub31_Sub2.anInt5822 >= (Class98_Sub46_Sub20.aStringArray6073).length)) {
-									if ((i_8_ ^ 0xffffffff) == -106 && (Class98_Sub31_Sub2.anInt5822 ^ 0xffffffff) < -1) {
+									if (i_8_ == 105 && Class98_Sub31_Sub2.anInt5822 > 0) {
 										Class98_Sub31_Sub2.anInt5822--;
 										Class206.method2724((byte) 123);
 										Class198.anInt1524 = Class45.aString382.length();
-									} else if (Class114.method2147(c, i ^ 0x4) || (c ^ 0xffffffff) == -93 || c == 47 || c == 46 || (c ^ 0xffffffff) == -59 || c == 44 || c == 32 || (c ^ 0xffffffff) == -96 || (c ^ 0xffffffff) == -46 || c == 43 || (c ^ 0xffffffff) == -92 || c == 93) {
+									} else if (Class114.method2147(c, i ^ 0x4) || c == 92 || c == 47 || c == 46 || c == 58 || c == 44 || c == 32 || c == 95 || c == 45 || c == 43 || c == 91 || c == 93) {
 										Class45.aString382 = ((Class45.aString382.substring(0, Class198.anInt1524)) + Class21_Sub1.anInterface7Array5385[i_7_].method15(13313) + (Class45.aString382.substring(Class198.anInt1524)));
 										Class198.anInt1524++;
 									}
@@ -140,7 +140,7 @@ final class Class261 {
 					} else if (Class8.aClipboard113 != null) {
 						String string = "";
 						for (int i_10_ = -1 + (Class98_Sub46_Sub20.aStringArray6073).length; i_10_ >= 0; i_10_--) {
-							if ((Class98_Sub46_Sub20.aStringArray6073[i_10_] != null) && (Class98_Sub46_Sub20.aStringArray6073[i_10_].length() ^ 0xffffffff) < -1)
+							if ((Class98_Sub46_Sub20.aStringArray6073[i_10_] != null) && Class98_Sub46_Sub20.aStringArray6073[i_10_].length() > 0)
 								string += (Class98_Sub46_Sub20.aStringArray6073[i_10_]) + '\n';
 						}
 						Class8.aClipboard113.setContents(new StringSelection(string), null);

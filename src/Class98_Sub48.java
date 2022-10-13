@@ -35,8 +35,8 @@ final class Class98_Sub48 extends Node {
 
 	Class98_Sub48(int i, int i_10_) {
 		try {
-			((Class98_Sub48) this).anInt4278 = i;
-			((Class98_Sub48) this).anInt4282 = i_10_;
+			this.anInt4278 = i;
+			this.anInt4282 = i_10_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("vfa.<init>(" + i + ',' + i_10_ + ')'));
 		}

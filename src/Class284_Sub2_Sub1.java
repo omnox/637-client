@@ -21,8 +21,8 @@ final class Class284_Sub2_Sub1 extends Class284_Sub2 {
 		try {
 			int i_5_ = i * 2;
 			int i_6_ = 0xff & i_4_;
-			aByteArray6195[i_5_++] = (byte) (i_6_ * 3 >> -320652859);
-			aByteArray6195[i_5_] = (byte) (i_6_ * 3 >> 451584293);
+			aByteArray6195[i_5_++] = (byte) (i_6_ * 3 >> 5);
+			aByteArray6195[i_5_] = (byte) (i_6_ * 3 >> 5);
 			int i_7_ = -116 % ((i_3_ - -46) / 44);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("in.L(" + i + ',' + i_3_ + ',' + i_4_ + ')'));

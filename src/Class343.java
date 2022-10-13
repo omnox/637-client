@@ -8,7 +8,7 @@ final class Class343 {
 	static final boolean method3817(byte i, int i_0_) {
 		try {
 			int i_1_ = -25 % ((i - 54) / 38);
-			if ((i_0_ ^ 0xffffffff) != -47 && (i_0_ ^ 0xffffffff) != -51 && i_0_ != 48 && (i_0_ ^ 0xffffffff) != -59 && (i_0_ ^ 0xffffffff) != -6 && i_0_ != 57 && i_0_ != 59)
+			if (i_0_ != 46 && i_0_ != 50 && i_0_ != 48 && i_0_ != 58 && i_0_ != 5 && i_0_ != 57 && i_0_ != 59)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

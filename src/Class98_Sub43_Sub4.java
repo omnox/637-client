@@ -35,10 +35,10 @@ final class Class98_Sub43_Sub4 extends Class98_Sub43 {
 			if (i != -16255)
 				method1508(-54, -22, null);
 			for (Class98_Sub42 class98_sub42 = ((Class98_Sub42) Class358.aClass148_3032.method2418(i + 16287)); class98_sub42 != null; class98_sub42 = ((Class98_Sub42) Class358.aClass148_3032.method2417(i ^ ~0x3f24))) {
-				if ((((Class98_Sub42) class98_sub42).aClass246_Sub3_Sub4_Sub2_Sub1_4209) == class246_sub3_sub4_sub2_sub1) {
-					if ((((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232) != null) {
-						Class81.aClass98_Sub31_Sub3_619.method1374(((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232);
-						((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232 = null;
+				if ((class98_sub42.aClass246_Sub3_Sub4_Sub2_Sub1_4209) == class246_sub3_sub4_sub2_sub1) {
+					if ((class98_sub42.aClass98_Sub31_Sub5_4232) != null) {
+						Class81.aClass98_Sub31_Sub3_619.method1374(class98_sub42.aClass98_Sub31_Sub5_4232);
+						class98_sub42.aClass98_Sub31_Sub5_4232 = null;
 					}
 					class98_sub42.remove();
 					break;
@@ -52,42 +52,42 @@ final class Class98_Sub43_Sub4 extends Class98_Sub43 {
 	final void method1482(OggPacket oggpacket, boolean bool) {
 		do {
 			try {
-				if (((Class98_Sub43) this).anInt4240 <= 0 || "SUB".equals(aString5931)) {
+				if (this.anInt4240 <= 0 || "SUB".equals(aString5931)) {
 					RSByteBuffer class98_sub22 = new RSByteBuffer(oggpacket.getData());
 					if (bool != false)
 						method1510(-72);
 					int i = class98_sub22.readUnsignedByte();
-					if (((Class98_Sub43) this).anInt4240 > 8) {
+					if (this.anInt4240 > 8) {
 						if (i == 0) {
 							long l = class98_sub22.method1189((byte) -53);
 							long l_0_ = class98_sub22.method1189((byte) -63);
 							long l_1_ = class98_sub22.method1189((byte) -110);
-							if (l < 0L || (l_0_ ^ 0xffffffffffffffffL) > -1L || l_1_ < 0L || ((l_1_ ^ 0xffffffffffffffffL) < (l ^ 0xffffffffffffffffL)))
+							if (l < 0L || l_0_ < 0 || l_1_ < 0L || (l < l_1_))
 								throw new IllegalStateException();
 							aFloat5939 = ((float) ((long) anInt5936 * l) / (float) anInt5930);
 							aFloat5935 = ((float) ((long) anInt5936 * (l - -l_0_)) / (float) anInt5930);
 							int i_2_ = class98_sub22.method1202((byte) -75);
-							if ((i_2_ ^ 0xffffffff) > -1 || i_2_ > ((((RSByteBuffer) class98_sub22).data).length - (((RSByteBuffer) class98_sub22).position)))
+							if (i_2_ < 0 || i_2_ > ((class98_sub22.data).length - (class98_sub22.position)))
 								throw new IllegalStateException();
-							aString5937 = za_Sub1.method1679(((RSByteBuffer) class98_sub22).position, i_2_, (byte) -51, (((RSByteBuffer) class98_sub22).data));
+							aString5937 = za_Sub1.method1679(class98_sub22.position, i_2_, (byte) -51, (class98_sub22.data));
 						}
 						if ((0x80 | i) != 0)
 							break;
 					} else {
-						if (((i | 0x80) ^ 0xffffffff) == -1)
+						if ((i | 0x80) == 0)
 							throw new IllegalStateException();
-						if ((((Class98_Sub43) this).anInt4240 ^ 0xffffffff) != -1)
+						if (this.anInt4240 != 0)
 							break;
-						((RSByteBuffer) class98_sub22).position += 23;
+						class98_sub22.position += 23;
 						anInt5930 = class98_sub22.method1202((byte) -51);
 						anInt5936 = class98_sub22.method1202((byte) -108);
 						if (anInt5930 == 0 || anInt5936 == 0)
 							throw new IllegalStateException();
 						RSByteBuffer class98_sub22_3_ = new RSByteBuffer(16);
-						class98_sub22.method1190((((RSByteBuffer) class98_sub22_3_).data), true, 16, 0);
+						class98_sub22.method1190((class98_sub22_3_.data), true, 16, 0);
 						aString5933 = class98_sub22_3_.readString();
-						((RSByteBuffer) class98_sub22_3_).position = 0;
-						class98_sub22.method1190((((RSByteBuffer) class98_sub22_3_).data), !bool, 16, 0);
+						class98_sub22_3_.position = 0;
+						class98_sub22.method1190((class98_sub22_3_.data), !bool, 16, 0);
 						aString5931 = class98_sub22_3_.readString();
 					}
 				}
@@ -129,26 +129,26 @@ final class Class98_Sub43_Sub4 extends Class98_Sub43 {
 			int readerPointer = 0;
 			Class359.pathBufferX[writerPointer] = checkX;
 			Class75.pathBufferY[writerPointer++] = checkY;
-			int[][] flags = ((Collision) collision).flags;
+			int[][] flags = collision.flags;
 			while (writerPointer != readerPointer) {
 				checkX = Class359.pathBufferX[readerPointer];
 				checkY = Class75.pathBufferY[readerPointer];
 				localX = checkX - absoluteX;
 				localY = -absoluteY + checkY;
-				int flagOffsetX = -((Collision) collision).anInt1854 + checkX;
+				int flagOffsetX = -collision.anInt1854 + checkX;
 				readerPointer = 1 + readerPointer & 0xfff;
-				int flagOffsetY = checkY + -((Collision) collision).anInt1855;
+				int flagOffsetY = checkY + -collision.anInt1855;
 				int cost = entityCost;
 				while_249_: do {
 					while_248_: do {
 						while_247_: do {
 							while_246_: do {
 								do {
-									if ((cost ^ 0xffffffff) != 3) {
-										if ((cost ^ 0xffffffff) != 2) {
+									if (cost != -4) {
+										if (cost != -3) {
 											if (cost != -2) {
 												if (cost != -1) {
-													if (((cost ^ 0xffffffff) == -1) || cost == 1 || cost == 2 || cost == 3 || ((cost ^ 0xffffffff) == -10))
+													if ((cost == 0) || cost == 1 || cost == 2 || cost == 3 || (cost == 9))
 														break while_247_;
 													break while_248_;
 												}
@@ -157,7 +157,7 @@ final class Class98_Sub43_Sub4 extends Class98_Sub43 {
 											break while_246_;
 										}
 									} else {
-										if (((radiusX ^ 0xffffffff) == (checkX ^ 0xffffffff)) && checkY == radiusY) {
+										if ((checkX == radiusX) && checkY == radiusY) {
 											Class22.pathEndY = checkY;
 											Class199.pathEndX = checkX;
 											return true;
@@ -199,56 +199,56 @@ final class Class98_Sub43_Sub4 extends Class98_Sub43 {
 					}
 				} while (false);
 				cost = Class339.pathCosts[localX][localY] + 1;
-				if (localX > 0 && (PlayerUpdateMask.pathDirections[localX + -1][localY] ^ 0xffffffff) == -1 && ((flags[flagOffsetX + -1][flagOffsetY] & 0x42240000 ^ 0xffffffff) == -1)) {
+				if (localX > 0 && PlayerUpdateMask.pathDirections[localX + -1][localY] == 0 && ((flags[flagOffsetX + -1][flagOffsetY] & 0x42240000) == 0)) {
 					Class359.pathBufferX[writerPointer] = checkX - 1;
 					Class75.pathBufferY[writerPointer] = checkY;
 					PlayerUpdateMask.pathDirections[localX - 1][localY] = 2;
 					writerPointer = 0xfff & 1 + writerPointer;
 					Class339.pathCosts[localX + -1][localY] = cost;
 				}
-				if ((localX ^ 0xffffffff) > -128 && PlayerUpdateMask.pathDirections[1 + localX][localY] == 0 && ((0x60240000 & flags[1 + flagOffsetX][flagOffsetY] ^ 0xffffffff) == -1)) {
+				if (localX < 127 && PlayerUpdateMask.pathDirections[1 + localX][localY] == 0 && ((0x60240000 & flags[1 + flagOffsetX][flagOffsetY]) == 0)) {
 					Class359.pathBufferX[writerPointer] = 1 + checkX;
 					Class75.pathBufferY[writerPointer] = checkY;
 					PlayerUpdateMask.pathDirections[1 + localX][localY] = 8;
 					writerPointer = writerPointer + 1 & 0xfff;
 					Class339.pathCosts[1 + localX][localY] = cost;
 				}
-				if (localY > 0 && (PlayerUpdateMask.pathDirections[localX][-1 + localY] ^ 0xffffffff) == -1 && (flags[flagOffsetX][-1 + flagOffsetY] & 0x40a40000) == 0) {
+				if (localY > 0 && PlayerUpdateMask.pathDirections[localX][-1 + localY] == 0 && (flags[flagOffsetX][-1 + flagOffsetY] & 0x40a40000) == 0) {
 					Class359.pathBufferX[writerPointer] = checkX;
 					Class75.pathBufferY[writerPointer] = checkY - 1;
 					PlayerUpdateMask.pathDirections[localX][localY - 1] = 1;
 					writerPointer = writerPointer + 1 & 0xfff;
 					Class339.pathCosts[localX][localY + -1] = cost;
 				}
-				if (localY < 127 && PlayerUpdateMask.pathDirections[localX][localY - -1] == 0 && ((flags[flagOffsetX][1 + flagOffsetY] & 0x48240000 ^ 0xffffffff) == -1)) {
+				if (localY < 127 && PlayerUpdateMask.pathDirections[localX][localY - -1] == 0 && ((flags[flagOffsetX][1 + flagOffsetY] & 0x48240000) == 0)) {
 					Class359.pathBufferX[writerPointer] = checkX;
 					Class75.pathBufferY[writerPointer] = checkY - -1;
 					writerPointer = writerPointer + 1 & 0xfff;
 					PlayerUpdateMask.pathDirections[localX][localY - -1] = 4;
 					Class339.pathCosts[localX][1 + localY] = cost;
 				}
-				if (localX > 0 && (localY ^ 0xffffffff) < -1 && (PlayerUpdateMask.pathDirections[-1 + localX][localY - 1] ^ 0xffffffff) == -1 && (flags[flagOffsetX + -1][flagOffsetY - 1] & 0x43a40000) == 0 && (flags[-1 + flagOffsetX][flagOffsetY] & 0x42240000 ^ 0xffffffff) == -1 && (0x40a40000 & flags[flagOffsetX][-1 + flagOffsetY]) == 0) {
+				if (localX > 0 && localY > 0 && PlayerUpdateMask.pathDirections[-1 + localX][localY - 1] == 0 && (flags[flagOffsetX + -1][flagOffsetY - 1] & 0x43a40000) == 0 && (flags[-1 + flagOffsetX][flagOffsetY] & 0x42240000) == 0 && (0x40a40000 & flags[flagOffsetX][-1 + flagOffsetY]) == 0) {
 					Class359.pathBufferX[writerPointer] = -1 + checkX;
 					Class75.pathBufferY[writerPointer] = checkY + -1;
 					writerPointer = 0xfff & 1 + writerPointer;
 					PlayerUpdateMask.pathDirections[-1 + localX][-1 + localY] = 3;
 					Class339.pathCosts[-1 + localX][-1 + localY] = cost;
 				}
-				if (localX < 127 && localY > 0 && PlayerUpdateMask.pathDirections[localX + 1][-1 + localY] == 0 && ((flags[1 + flagOffsetX][flagOffsetY - 1] & 0x60e40000 ^ 0xffffffff) == -1) && (flags[1 + flagOffsetX][flagOffsetY] & 0x60240000) == 0 && (flags[flagOffsetX][flagOffsetY - 1] & 0x40a40000) == 0) {
+				if (localX < 127 && localY > 0 && PlayerUpdateMask.pathDirections[localX + 1][-1 + localY] == 0 && ((flags[1 + flagOffsetX][flagOffsetY - 1] & 0x60e40000) == 0) && (flags[1 + flagOffsetX][flagOffsetY] & 0x60240000) == 0 && (flags[flagOffsetX][flagOffsetY - 1] & 0x40a40000) == 0) {
 					Class359.pathBufferX[writerPointer] = checkX - -1;
 					Class75.pathBufferY[writerPointer] = checkY - 1;
 					writerPointer = 0xfff & 1 + writerPointer;
 					PlayerUpdateMask.pathDirections[localX - -1][-1 + localY] = 9;
 					Class339.pathCosts[1 + localX][localY + -1] = cost;
 				}
-				if ((localX ^ 0xffffffff) < -1 && (localY ^ 0xffffffff) > -128 && (PlayerUpdateMask.pathDirections[-1 + localX][localY + 1] ^ 0xffffffff) == -1 && (flags[-1 + flagOffsetX][flagOffsetY + 1] & 0x4e240000) == 0 && (0x42240000 & flags[flagOffsetX - 1][flagOffsetY]) == 0 && (0x48240000 & flags[flagOffsetX][flagOffsetY + 1]) == 0) {
+				if (localX > 0 && localY < 127 && PlayerUpdateMask.pathDirections[-1 + localX][localY + 1] == 0 && (flags[-1 + flagOffsetX][flagOffsetY + 1] & 0x4e240000) == 0 && (0x42240000 & flags[flagOffsetX - 1][flagOffsetY]) == 0 && (0x48240000 & flags[flagOffsetX][flagOffsetY + 1]) == 0) {
 					Class359.pathBufferX[writerPointer] = -1 + checkX;
 					Class75.pathBufferY[writerPointer] = checkY - -1;
 					PlayerUpdateMask.pathDirections[-1 + localX][1 + localY] = 6;
 					writerPointer = 1 + writerPointer & 0xfff;
 					Class339.pathCosts[localX + -1][localY + 1] = cost;
 				}
-				if ((localX ^ 0xffffffff) > -128 && (localY ^ 0xffffffff) > -128 && (PlayerUpdateMask.pathDirections[localX - -1][localY + 1] ^ 0xffffffff) == -1 && (0x78240000 & flags[flagOffsetX + 1][1 + flagOffsetY]) == 0 && (0x60240000 & flags[1 + flagOffsetX][flagOffsetY]) == 0 && (0x48240000 & flags[flagOffsetX][1 + flagOffsetY]) == 0) {
+				if (localX < 127 && localY < 127 && PlayerUpdateMask.pathDirections[localX - -1][localY + 1] == 0 && (0x78240000 & flags[flagOffsetX + 1][1 + flagOffsetY]) == 0 && (0x60240000 & flags[1 + flagOffsetX][flagOffsetY]) == 0 && (0x48240000 & flags[flagOffsetX][1 + flagOffsetY]) == 0) {
 					Class359.pathBufferX[writerPointer] = 1 + checkX;
 					Class75.pathBufferY[writerPointer] = checkY + 1;
 					PlayerUpdateMask.pathDirections[localX - -1][localY - -1] = 12;

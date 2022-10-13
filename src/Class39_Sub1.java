@@ -43,7 +43,7 @@ final class Class39_Sub1 extends Class39 {
 				int i_27_ = anIntArray3595[i_17_ + i_22_];
 				int i_28_ = anIntArray3595[i_21_ - -i_18_];
 				int i_29_ = anIntArray3595[i_18_ + i_22_];
-				for (int i_30_ = 0; (i_30_ ^ 0xffffffff) > (i_6_ ^ 0xffffffff); i_30_++) {
+				for (int i_30_ = 0; i_6_ > i_30_; i_30_++) {
 					float f_31_ = f_4_ * (float) i_30_;
 					int i_32_ = (int) f_31_;
 					int i_33_ = i_32_ - -1;
@@ -87,8 +87,8 @@ final class Class39_Sub1 extends Class39 {
 
 	Class39_Sub1(int i) {
 		try {
-			Random random = new Random((long) i);
-			for (int i_38_ = 0; (i_38_ ^ 0xffffffff) > -257; i_38_++)
+			Random random = new Random(i);
+			for (int i_38_ = 0; i_38_ < 256; i_38_++)
 				anIntArray3595[i_38_] = anIntArray3595[i_38_ + 256] = i_38_;
 			for (int i_39_ = 0; i_39_ < 256; i_39_++) {
 				int i_40_ = random.nextInt() & 0xff;

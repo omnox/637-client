@@ -24,7 +24,7 @@ final class Class234 {
 		try {
 			if (i_1_ > -101)
 				return -25;
-			return i >>> -2139410934;
+			return i >>> 10;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ot.B(" + i + ',' + i_1_ + ')');
 		}

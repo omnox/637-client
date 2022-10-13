@@ -17,12 +17,12 @@ final class Class224_Sub2_Sub1 extends Class224_Sub2 {
 	}
 
 	static final void method2839(int i, int i_1_, int i_2_) {
-		boolean bool = ((Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[0][i_1_][i_2_] != null) && ((Class172) (Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[0][i_1_][i_2_])).aClass172_1330 != null);
+		boolean bool = ((Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[0][i_1_][i_2_] != null) && Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[0][i_1_][i_2_].aClass172_1330 != null);
 		for (int i_3_ = i; i_3_ >= 0; i_3_--) {
 			if ((Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[i_3_][i_1_][i_2_]) == null) {
 				Class172 class172 = (Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[i_3_][i_1_][i_2_] = new Class172(i_3_));
 				if (bool)
-					((Class172) class172).aByte1322++;
+					class172.aByte1322++;
 			}
 		}
 	}

@@ -17,7 +17,7 @@ final class Class342 {
 				Class369.method3952(3, (byte) -55);
 			else {
 				Class76_Sub9.aBoolean3788 = false;
-				if ((Class98_Sub46_Sub20_Sub2.anInt6317 ^ 0xffffffff) != -2) {
+				if (Class98_Sub46_Sub20_Sub2.anInt6317 != 1) {
 					Class98_Sub48.anInt4277 = 0;
 					Class69_Sub1.anInt5330 = -1;
 				}

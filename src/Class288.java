@@ -33,15 +33,15 @@ final class Class288 implements Interface12 {
 
 	private final void method3396(int i, int i_1_, Class42_Sub2 class42_sub2, int i_2_, int i_3_) {
 		try {
-			if ((anInt3382 ^ 0xffffffff) == i_3_)
+			if ((~anInt3382) == i_3_)
 				throw new RuntimeException();
 			int i_4_ = 1 << i_1_;
-			if (((i_4_ ^ 0xffffffff) & anInt3377 ^ 0xffffffff) != -1) {
-				if (((((Class42_Sub2) class42_sub2).anInt5357 ^ 0xffffffff) != (anInt3379 ^ 0xffffffff)) || ((anInt3380 ^ 0xffffffff) != (((Class42_Sub2) class42_sub2).anInt5357 ^ 0xffffffff)))
+			if (((~i_4_) & anInt3377) != 0) {
+				if ((anInt3379 != class42_sub2.anInt5357) || (class42_sub2.anInt5357 != anInt3380))
 					throw new RuntimeException();
 			} else {
-				anInt3380 = ((Class42_Sub2) class42_sub2).anInt5357;
-				anInt3379 = ((Class42_Sub2) class42_sub2).anInt5357;
+				anInt3380 = class42_sub2.anInt5357;
+				anInt3379 = class42_sub2.anInt5357;
 			}
 			class42_sub2.method391(i, Class358.anIntArray3034[i_1_], i_2_, anInt3382, (byte) -99);
 			anInterface3Array3378[i_1_] = class42_sub2;
@@ -107,9 +107,9 @@ final class Class288 implements Interface12 {
 		try {
 			if ((0x4 & anInt3384) != 0)
 				return 36160;
-			if ((0x2 & anInt3384 ^ 0xffffffff) != -1)
+			if ((0x2 & anInt3384) != 0)
 				return 36009;
-			if ((anInt3384 & 0x1 ^ 0xffffffff) != -1)
+			if ((anInt3384 & 0x1) != 0)
 				return 36008;
 			if (i != 3)
 				aClass128_3381 = null;
@@ -125,39 +125,39 @@ final class Class288 implements Interface12 {
 				i_11_ = Class64_Sub3.anInt3646;
 			if (i < 0)
 				i = 0;
-			if ((i_11_ ^ 0xffffffff) >= (i ^ 0xffffffff))
+			if (i >= i_11_)
 				return true;
 			if (i_10_ >= -18)
 				aClass128_3381 = null;
 			i_9_ += i * i_6_;
-			i_8_ = i_11_ - i >> -595607166;
+			i_8_ = i_11_ - i >> 2;
 			i_7_ += i - 1;
-			if ((Class287.anInt2190 ^ 0xffffffff) == -2) {
+			if (Class287.anInt2190 == 1) {
 				Class4.anInt81 += i_8_;
 				while (--i_8_ >= 0) {
 					if (i_9_ < is[++i_7_])
 						is[i_7_] = i_9_;
 					i_9_ += i_6_;
-					if ((is[++i_7_] ^ 0xffffffff) < (i_9_ ^ 0xffffffff))
+					if (i_9_ < is[++i_7_])
 						is[i_7_] = i_9_;
 					i_9_ += i_6_;
-					if ((i_9_ ^ 0xffffffff) > (is[++i_7_] ^ 0xffffffff))
+					if (is[++i_7_] > i_9_)
 						is[i_7_] = i_9_;
 					i_9_ += i_6_;
-					if ((i_9_ ^ 0xffffffff) > (is[++i_7_] ^ 0xffffffff))
+					if (is[++i_7_] > i_9_)
 						is[i_7_] = i_9_;
 					i_9_ += i_6_;
 				}
 				i_8_ = i_11_ - i & 0x3;
-				while ((--i_8_ ^ 0xffffffff) <= -1) {
-					if ((i_9_ ^ 0xffffffff) > (is[++i_7_] ^ 0xffffffff))
+				while (--i_8_ >= 0) {
+					if (is[++i_7_] > i_9_)
 						is[i_7_] = i_9_;
 					i_9_ += i_6_;
 				}
 			} else {
 				i_9_ -= 38400;
-				while ((--i_8_ ^ 0xffffffff) <= -1) {
-					if ((is[++i_7_] ^ 0xffffffff) < (i_9_ ^ 0xffffffff))
+				while (--i_8_ >= 0) {
+					if (i_9_ < is[++i_7_])
 						return false;
 					i_9_ += i_6_;
 					if (is[++i_7_] > i_9_)
@@ -213,7 +213,7 @@ final class Class288 implements Interface12 {
 				method40((byte) 2);
 			if (anInterface3Array3378[i] != null)
 				anInterface3Array3378[i].method3((byte) -120);
-			anInt3377 &= 1 << i ^ 0xffffffff;
+			anInt3377 &= ~(1 << i);
 			anInterface3Array3378[i] = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "rr.E(" + i + ',' + bool + ')');
@@ -264,7 +264,7 @@ final class Class288 implements Interface12 {
 
 	final void method3404(int i, int i_15_) {
 		try {
-			if ((anInt3382 ^ 0xffffffff) == i)
+			if ((~anInt3382) == i)
 				throw new RuntimeException();
 			OpenGL.glDrawBuffer(Class358.anIntArray3034[i_15_]);
 		} catch (RuntimeException runtimeexception) {
@@ -277,12 +277,12 @@ final class Class288 implements Interface12 {
 			if (anInt3382 == -1)
 				throw new RuntimeException();
 			int i_18_ = 1 << i_17_;
-			if ((anInt3377 & (i_18_ ^ 0xffffffff)) != 0) {
-				if (((anInt3379 ^ 0xffffffff) != (((Class42_Sub1) class42_sub1).anInt5355 ^ 0xffffffff)) || ((anInt3380 ^ 0xffffffff) != (((Class42_Sub1) class42_sub1).anInt5352 ^ 0xffffffff)))
+			if ((anInt3377 & (~i_18_)) != 0) {
+				if ((class42_sub1.anInt5355 != anInt3379) || (class42_sub1.anInt5352 != anInt3380))
 					throw new RuntimeException();
 			} else {
-				anInt3379 = ((Class42_Sub1) class42_sub1).anInt5355;
-				anInt3380 = ((Class42_Sub1) class42_sub1).anInt5352;
+				anInt3379 = class42_sub1.anInt5355;
+				anInt3380 = class42_sub1.anInt5352;
 			}
 			if (i_16_ >= -89)
 				anInterface3Array3378 = null;
@@ -302,13 +302,13 @@ final class Class288 implements Interface12 {
 				anInt3382 = -95;
 			int i_20_ = 1 << i_19_;
 			do {
-				if (((i_20_ ^ 0xffffffff) & anInt3377) == 0) {
-					anInt3380 = (((Class98_Sub46_Sub14) class98_sub46_sub14).anInt5377);
-					anInt3379 = (((Class98_Sub46_Sub14) class98_sub46_sub14).anInt5376);
+				if (((~i_20_) & anInt3377) == 0) {
+					anInt3380 = (class98_sub46_sub14.anInt5377);
+					anInt3379 = (class98_sub46_sub14.anInt5376);
 					if (!client.aBoolean3553)
 						break;
 				}
-				if ((((Class98_Sub46_Sub14) class98_sub46_sub14).anInt5376 ^ 0xffffffff) != (anInt3379 ^ 0xffffffff) || ((anInt3380 ^ 0xffffffff) != ((((Class98_Sub46_Sub14) class98_sub46_sub14).anInt5377) ^ 0xffffffff)))
+				if (anInt3379 != class98_sub46_sub14.anInt5376 || ((class98_sub46_sub14.anInt5377) != anInt3380))
 					throw new RuntimeException();
 			} while (false);
 			class98_sub46_sub14.method1605(0, anInt3382, Class358.anIntArray3034[i_19_]);
@@ -333,7 +333,7 @@ final class Class288 implements Interface12 {
 
 	Class288(ha_Sub1 var_ha_Sub1) {
 		try {
-			if (!((ha_Sub1) var_ha_Sub1).aBoolean4460)
+			if (!var_ha_Sub1.aBoolean4460)
 				throw new IllegalStateException("");
 			aHa_Sub1_3374 = var_ha_Sub1;
 			OpenGL.glGenFramebuffersEXT(1, Class195.anIntArray1497, 0);

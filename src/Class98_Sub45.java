@@ -38,8 +38,8 @@ final class Class98_Sub45 extends Node {
 					if (!client.aBoolean3553)
 						break;
 				}
-				i = ((GameInterfaceData) class293_0_).anInt2258;
-				i_1_ = ((GameInterfaceData) class293_0_).anInt2311;
+				i = class293_0_.anInt2258;
+				i_1_ = class293_0_.anInt2311;
 			} while (false);
 			Class253.method3180(i, i_1_, 1375731712, class293, false);
 			Class98_Sub8.method986(i_1_, i, class293, 115);
@@ -52,7 +52,7 @@ final class Class98_Sub45 extends Node {
 		try {
 			if (i_2_ != 14883)
 				anIntArray4257 = null;
-			Class92 class92 = (Class92) Class142.aClass79_1158.get((long) i);
+			Class92 class92 = (Class92) Class142.aClass79_1158.get(i);
 			if (class92 != null)
 				return class92;
 			byte[] is = Class42_Sub1_Sub1.aClass207_6206.readArchive(i, 0);
@@ -60,7 +60,7 @@ final class Class98_Sub45 extends Node {
 			if (is != null)
 				class92.method894(-62, new RSByteBuffer(is));
 			class92.method897((byte) 115);
-			Class142.aClass79_1158.put((long) i, class92);
+			Class142.aClass79_1158.put(i, class92);
 			return class92;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "tia.A(" + i + ',' + i_2_ + ')');

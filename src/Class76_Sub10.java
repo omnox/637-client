@@ -19,7 +19,7 @@ final class Class76_Sub10 extends Class76 {
 		try {
 			if (i != -2)
 				method770(13);
-			((Class76) this).aHa_Sub3_585.method2029((byte) -62, false);
+			this.aHa_Sub3_585.method2029((byte) -62, false);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "vga.C(" + i + ')');
 		}
@@ -28,8 +28,8 @@ final class Class76_Sub10 extends Class76 {
 	final void method742(int i, int i_2_, Interface4 interface4) {
 		do {
 			try {
-				((Class76) this).aHa_Sub3_585.method2005(interface4, 63);
-				((Class76) this).aHa_Sub3_585.method2015(i_2_, (byte) -118);
+				this.aHa_Sub3_585.method2005(interface4, 63);
+				this.aHa_Sub3_585.method2015(i_2_, (byte) -118);
 				if (i == 6)
 					break;
 				method742(-90, 37, null);
@@ -44,43 +44,43 @@ final class Class76_Sub10 extends Class76 {
 		try {
 			if (i_3_ > -66)
 				return '|';
-			if (c >= 192 && (c ^ 0xffffffff) >= -256) {
-				if ((c ^ 0xffffffff) <= -193 && (c ^ 0xffffffff) >= -199)
+			if (c >= 192 && c <= 255) {
+				if (c >= 192 && c <= 198)
 					return 'A';
 				if (c == 199)
 					return 'C';
 				if (c >= 200 && c <= 203)
 					return 'E';
-				if ((c ^ 0xffffffff) <= -205 && c <= 207)
+				if (c >= 204 && c <= 207)
 					return 'I';
-				if ((c ^ 0xffffffff) <= -211 && (c ^ 0xffffffff) >= -215)
+				if (c >= 210 && c <= 214)
 					return 'O';
-				if (c >= 217 && (c ^ 0xffffffff) >= -221)
+				if (c >= 217 && c <= 220)
 					return 'U';
-				if ((c ^ 0xffffffff) == -222)
+				if (c == 221)
 					return 'Y';
-				if ((c ^ 0xffffffff) == -224)
+				if (c == 223)
 					return 's';
 				if (c >= 224 && c <= 230)
 					return 'a';
 				if (c == 231)
 					return 'c';
-				if ((c ^ 0xffffffff) <= -233 && c <= 235)
+				if (c >= 232 && c <= 235)
 					return 'e';
 				if (c >= 236 && c <= 239)
 					return 'i';
-				if ((c ^ 0xffffffff) <= -243 && c <= 246)
+				if (c >= 242 && c <= 246)
 					return 'o';
-				if ((c ^ 0xffffffff) <= -250 && (c ^ 0xffffffff) >= -253)
+				if (c >= 249 && c <= 252)
 					return 'u';
-				if (c == 253 || (c ^ 0xffffffff) == -256)
+				if (c == 253 || c == 255)
 					return 'y';
 			}
-			if ((c ^ 0xffffffff) == -339)
+			if (c == 338)
 				return 'O';
-			if ((c ^ 0xffffffff) == -340)
+			if (c == 339)
 				return 'o';
-			if ((c ^ 0xffffffff) == -377)
+			if (c == 376)
 				return 'Y';
 			return c;
 		} catch (RuntimeException runtimeexception) {
@@ -95,21 +95,21 @@ final class Class76_Sub10 extends Class76 {
 				int[] is = Class319.anIntArray2705;
 				for (int i_5_ = 0; i_5_ < i_4_; i_5_++) {
 					Player class246_sub3_sub4_sub2_sub2 = (Class151_Sub9.playerArray[is[i_5_]]);
-					if (class246_sub3_sub4_sub2_sub2 != null && (((Mobile) class246_sub3_sub4_sub2_sub2).anInt6384 ^ 0xffffffff) < -1) {
-						((Mobile) class246_sub3_sub4_sub2_sub2).anInt6384--;
-						if ((((Mobile) class246_sub3_sub4_sub2_sub2).anInt6384 ^ 0xffffffff) == -1)
-							((Mobile) class246_sub3_sub4_sub2_sub2).aString6374 = null;
+					if (class246_sub3_sub4_sub2_sub2 != null && class246_sub3_sub4_sub2_sub2.anInt6384 > 0) {
+						class246_sub3_sub4_sub2_sub2.anInt6384--;
+						if (class246_sub3_sub4_sub2_sub2.anInt6384 == 0)
+							class246_sub3_sub4_sub2_sub2.aString6374 = null;
 					}
 				}
 				for (int i_6_ = 0; Class150.anInt1211 > i_6_; i_6_++) {
-					long l = (long) Class325.anIntArray2726[i_6_];
+					long l = Class325.anIntArray2726[i_6_];
 					Class98_Sub39 class98_sub39 = ((Class98_Sub39) Class260.aClass377_3254.method3990(l, -1));
 					if (class98_sub39 != null) {
-						Class246_Sub3_Sub4_Sub2_Sub1 class246_sub3_sub4_sub2_sub1 = (((Class98_Sub39) class98_sub39).aClass246_Sub3_Sub4_Sub2_Sub1_4187);
-						if (((Mobile) class246_sub3_sub4_sub2_sub1).anInt6384 > 0) {
-							((Mobile) class246_sub3_sub4_sub2_sub1).anInt6384--;
-							if ((((Mobile) class246_sub3_sub4_sub2_sub1).anInt6384 ^ 0xffffffff) == -1)
-								((Mobile) class246_sub3_sub4_sub2_sub1).aString6374 = null;
+						Class246_Sub3_Sub4_Sub2_Sub1 class246_sub3_sub4_sub2_sub1 = (class98_sub39.aClass246_Sub3_Sub4_Sub2_Sub1_4187);
+						if (class246_sub3_sub4_sub2_sub1.anInt6384 > 0) {
+							class246_sub3_sub4_sub2_sub1.anInt6384--;
+							if (class246_sub3_sub4_sub2_sub1.anInt6384 == 0)
+								class246_sub3_sub4_sub2_sub1.aString6374 = null;
 						}
 					}
 				}
@@ -140,7 +140,7 @@ final class Class76_Sub10 extends Class76 {
 		try {
 			if (i != 69)
 				method739(77);
-			((Class76) this).aHa_Sub3_585.method2029((byte) -93, true);
+			this.aHa_Sub3_585.method2029((byte) -93, true);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "vga.B(" + i + ',' + bool + ')');
 		}

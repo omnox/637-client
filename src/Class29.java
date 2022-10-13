@@ -33,7 +33,7 @@ final class Class29 {
 		try {
 			Class306 class306;
 			synchronized (aClass79_297) {
-				class306 = (Class306) aClass79_297.get((long) i);
+				class306 = (Class306) aClass79_297.get(i);
 			}
 			if (class306 != null)
 				return class306;
@@ -42,7 +42,7 @@ final class Class29 {
 			if (is != null)
 				class306.method3593(new RSByteBuffer(is), 4);
 			synchronized (aClass79_297) {
-				aClass79_297.put((long) i, class306);
+				aClass79_297.put(i, class306);
 				if (i_1_ != 1028602529)
 					method303(46, 67, -18, (byte) 67, 54, 98, -114);
 			}
@@ -66,7 +66,7 @@ final class Class29 {
 			int i_14_ = 28 / ((i_4_ - 17) / 58);
 			int i_15_ = -1;
 			int i_16_ = -1;
-			if ((Class98_Sub10_Sub38.anInt5753 ^ 0xffffffff) >= (i_5_ ^ 0xffffffff) && (Class218.anInt1635 ^ 0xffffffff) <= (i_5_ ^ 0xffffffff)) {
+			if (i_5_ >= Class98_Sub10_Sub38.anInt5753 && i_5_ <= Class218.anInt1635) {
 				int[] is = Class97.anIntArrayArray814[i_5_];
 				int i_17_ = Class263.method3219(false, Class3.anInt77, Class76_Sub8.anInt3778, i_6_ + -i);
 				int i_18_ = Class263.method3219(false, Class3.anInt77, Class76_Sub8.anInt3778, i + i_6_);
@@ -81,24 +81,24 @@ final class Class29 {
 				i_15_ += 2;
 				i_13_ += i_16_;
 				i_11_ += i_15_;
-				if ((i_13_ ^ 0xffffffff) <= -1 && (i_12_ ^ 0xffffffff) <= -2) {
+				if (i_13_ >= 0 && i_12_ >= 1) {
 					i_12_--;
-					i_13_ -= i_12_ << 1028602529;
+					i_13_ -= i_12_ << 1;
 					Class331.anIntArray2810[i_12_] = i_8_;
 				}
 				i_8_++;
 				if (i_11_ >= 0) {
 					i_10_--;
-					i_11_ -= i_10_ << 173127649;
+					i_11_ -= i_10_ << 1;
 					int i_21_ = i_5_ + -i_10_;
 					int i_22_ = i_10_ + i_5_;
 					if (Class98_Sub10_Sub38.anInt5753 <= i_22_ && Class218.anInt1635 >= i_21_) {
 						if (i_9_ <= i_10_) {
 							int i_23_ = Class263.method3219(false, Class3.anInt77, Class76_Sub8.anInt3778, i_6_ - -i_8_);
 							int i_24_ = Class263.method3219(false, Class3.anInt77, Class76_Sub8.anInt3778, i_6_ - i_8_);
-							if ((i_22_ ^ 0xffffffff) >= (Class218.anInt1635 ^ 0xffffffff))
+							if (Class218.anInt1635 >= i_22_)
 								Class333.method3761(i_2_, (Class97.anIntArrayArray814[i_22_]), i_24_, i_23_, (byte) 50);
-							if ((i_21_ ^ 0xffffffff) <= (Class98_Sub10_Sub38.anInt5753 ^ 0xffffffff))
+							if (Class98_Sub10_Sub38.anInt5753 <= i_21_)
 								Class333.method3761(i_2_, (Class97.anIntArrayArray814[i_21_]), i_24_, i_23_, (byte) 14);
 						} else {
 							int i_25_ = Class331.anIntArray2810[i_10_];
@@ -112,7 +112,7 @@ final class Class29 {
 								Class333.method3761(i_3_, is, i_29_, i_28_, (byte) 24);
 								Class333.method3761(i_2_, is, i_28_, i_26_, (byte) -127);
 							}
-							if ((i_21_ ^ 0xffffffff) <= (Class98_Sub10_Sub38.anInt5753 ^ 0xffffffff)) {
+							if (Class98_Sub10_Sub38.anInt5753 <= i_21_) {
 								int[] is = Class97.anIntArrayArray814[i_21_];
 								Class333.method3761(i_2_, is, i_27_, i_29_, (byte) -123);
 								Class333.method3761(i_3_, is, i_29_, i_28_, (byte) 81);
@@ -123,14 +123,14 @@ final class Class29 {
 				}
 				int i_30_ = i_5_ + -i_8_;
 				int i_31_ = i_8_ + i_5_;
-				if (i_31_ >= Class98_Sub10_Sub38.anInt5753 && (Class218.anInt1635 ^ 0xffffffff) <= (i_30_ ^ 0xffffffff)) {
+				if (i_31_ >= Class98_Sub10_Sub38.anInt5753 && i_30_ <= Class218.anInt1635) {
 					int i_32_ = i_6_ - -i_10_;
 					int i_33_ = -i_10_ + i_6_;
-					if (Class76_Sub8.anInt3778 <= i_32_ && (i_33_ ^ 0xffffffff) >= (Class3.anInt77 ^ 0xffffffff)) {
+					if (Class76_Sub8.anInt3778 <= i_32_ && Class3.anInt77 >= i_33_) {
 						i_32_ = Class263.method3219(false, Class3.anInt77, Class76_Sub8.anInt3778, i_32_);
 						i_33_ = Class263.method3219(false, Class3.anInt77, Class76_Sub8.anInt3778, i_33_);
-						if ((i_8_ ^ 0xffffffff) <= (i_9_ ^ 0xffffffff)) {
-							if ((i_31_ ^ 0xffffffff) >= (Class218.anInt1635 ^ 0xffffffff))
+						if (i_9_ <= i_8_) {
+							if (Class218.anInt1635 >= i_31_)
 								Class333.method3761(i_2_, (Class97.anIntArrayArray814[i_31_]), i_33_, i_32_, (byte) 122);
 							if (Class98_Sub10_Sub38.anInt5753 <= i_30_)
 								Class333.method3761(i_2_, (Class97.anIntArrayArray814[i_30_]), i_33_, i_32_, (byte) -128);
@@ -138,7 +138,7 @@ final class Class29 {
 							int i_34_ = (i_8_ <= i_12_ ? i_12_ : Class331.anIntArray2810[i_8_]);
 							int i_35_ = Class263.method3219(false, Class3.anInt77, Class76_Sub8.anInt3778, i_6_ + i_34_);
 							int i_36_ = Class263.method3219(false, Class3.anInt77, Class76_Sub8.anInt3778, i_6_ + -i_34_);
-							if ((Class218.anInt1635 ^ 0xffffffff) <= (i_31_ ^ 0xffffffff)) {
+							if (i_31_ <= Class218.anInt1635) {
 								int[] is = Class97.anIntArrayArray814[i_31_];
 								Class333.method3761(i_2_, is, i_33_, i_36_, (byte) -123);
 								Class333.method3761(i_3_, is, i_36_, i_35_, (byte) -127);

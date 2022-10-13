@@ -24,9 +24,9 @@ final class Class370 {
 
 	Class370(int i) {
 		try {
-			((Class370) this).anInt3137 = i;
-			((Class370) this).anIntArray3133 = new int[((Class370) this).anInt3137];
-			((Class370) this).anIntArray3138 = new int[((Class370) this).anInt3137];
+			this.anInt3137 = i;
+			this.anIntArray3133 = new int[this.anInt3137];
+			this.anIntArray3138 = new int[this.anInt3137];
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "wf.<init>(" + i + ')');
 		}

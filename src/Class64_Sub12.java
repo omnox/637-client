@@ -10,8 +10,8 @@ final class Class64_Sub12 extends Class64 {
 	final void method551(byte i) {
 		do {
 			try {
-				if (((Class64) this).anInt494 < 0 || ((Class64) this).anInt494 > 4)
-					((Class64) this).anInt494 = method552(0);
+				if (this.anInt494 < 0 || this.anInt494 > 4)
+					this.anInt494 = method552(0);
 				if (i > 118)
 					break;
 				method550(-40, 88);
@@ -56,7 +56,7 @@ final class Class64_Sub12 extends Class64 {
 
 	final void method550(int i, int i_0_) {
 		try {
-			((Class64) this).anInt494 = i_0_;
+			this.anInt494 = i_0_;
 			int i_1_ = -121 % ((i - -26) / 41);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hp.B(" + i + ',' + i_0_ + ')');
@@ -77,7 +77,7 @@ final class Class64_Sub12 extends Class64 {
 		try {
 			if (i <= 119)
 				method551((byte) -101);
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "hp.E(" + i + ')');
 		}

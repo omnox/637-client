@@ -13,7 +13,7 @@ final class Class94 {
 		Class172 class172 = Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[i][i_0_][i_1_];
 		if (class172 == null)
 			return null;
-		return ((Class172) class172).aClass154_1325;
+		return class172.aClass154_1325;
 	}
 
 	static final Class246_Sub1 method915(int i, byte i_2_, boolean bool) {
@@ -28,11 +28,11 @@ final class Class94 {
 					Class1.anIntArray65[i]--;
 				} else {
 					class246_sub1 = new Class246_Sub1();
-					((Class246_Sub1) class246_sub1).aClass246_Sub6Array5067 = new Class246_Sub6[i];
+					class246_sub1.aClass246_Sub6Array5067 = new Class246_Sub6[i];
 					for (int i_3_ = 0; i > i_3_; i_3_++)
-						((Class246_Sub1) class246_sub1).aClass246_Sub6Array5067[i_3_] = new Class246_Sub6();
+						class246_sub1.aClass246_Sub6Array5067[i_3_] = new Class246_Sub6();
 				}
-				((Class246_Sub1) class246_sub1).aBoolean5070 = bool;
+				class246_sub1.aBoolean5070 = bool;
 				return class246_sub1;
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -58,7 +58,7 @@ final class Class94 {
 		try {
 			if (i > -90)
 				return false;
-			if (!(Class195.method2663(i_8_, i_7_, false) | (i_8_ & 0x70000 ^ 0xffffffff) != -1) && !Class76_Sub7.method763(i_8_, i_7_, false))
+			if (!(Class195.method2663(i_8_, i_7_, false) | (i_8_ & 0x70000) != 0) && !Class76_Sub7.method763(i_8_, i_7_, false))
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -87,7 +87,7 @@ final class Class94 {
 			try {
 				Class98_Sub46_Sub17 class98_sub46_sub17 = Class185.setCS2StringOrVarc(cs2StringIndex, -78, 2);
 				class98_sub46_sub17.method1626((byte) -103);
-				((Class98_Sub46_Sub17) class98_sub46_sub17).aString6052 = string;
+				class98_sub46_sub17.aString6052 = string;
 				if (i_9_ >= 28)
 					break;
 				method915(30, (byte) -45, true);

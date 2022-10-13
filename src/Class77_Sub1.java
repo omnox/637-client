@@ -86,9 +86,9 @@ final class Class77_Sub1 extends RtKeyListener implements KeyListener, FocusList
 			if (i != 61)
 				aBooleanArray3808 = null;
 			if (i_2_ != 0) {
-				if (i_2_ >= 0 && (i_2_ ^ 0xffffffff) > (Class87.anIntArray667.length ^ 0xffffffff)) {
+				if (i_2_ >= 0 && Class87.anIntArray667.length > i_2_) {
 					i_2_ = Class87.anIntArray667[i_2_];
-					if (i_1_ != 0 || (i_2_ & 0x80 ^ 0xffffffff) == -1)
+					if (i_1_ != 0 || (i_2_ & 0x80) == 0)
 						i_2_ &= ~0x80;
 					else
 						i_2_ = 0;
@@ -96,7 +96,7 @@ final class Class77_Sub1 extends RtKeyListener implements KeyListener, FocusList
 					i_2_ = 0;
 			} else
 				i_2_ = 0;
-			if ((i_2_ ^ 0xffffffff) != -1) {
+			if (i_2_ != 0) {
 				method786(i_1_, i_2_, '\0', false);
 				keyevent.consume();
 			}
@@ -127,40 +127,40 @@ final class Class77_Sub1 extends RtKeyListener implements KeyListener, FocusList
 			try {
 				aClass148_3802.method2422((byte) 47);
 				for (Class98_Sub8 class98_sub8 = (Class98_Sub8) aClass148_3806.method2421(6494); class98_sub8 != null; class98_sub8 = (Class98_Sub8) aClass148_3806.method2421(6494)) {
-					((Class98_Sub8) class98_sub8).anInt3266 = method784((byte) 127);
-					if (((Class98_Sub8) class98_sub8).anInt3268 != 0) {
-						if ((((Class98_Sub8) class98_sub8).anInt3268 ^ 0xffffffff) == -2) {
-							if (aBooleanArray3808[((Class98_Sub8) class98_sub8).anInt3269]) {
+					class98_sub8.anInt3266 = method784((byte) 127);
+					if (class98_sub8.anInt3268 != 0) {
+						if (class98_sub8.anInt3268 == 1) {
+							if (aBooleanArray3808[class98_sub8.anInt3269]) {
 								aClass148_3802.add_last(class98_sub8, -20911);
-								aBooleanArray3808[((Class98_Sub8) class98_sub8).anInt3269] = false;
+								aBooleanArray3808[class98_sub8.anInt3269] = false;
 							}
-						} else if (((Class98_Sub8) class98_sub8).anInt3268 == -1) {
-							for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > -113; i_4_++) {
+						} else if (class98_sub8.anInt3268 == -1) {
+							for (int i_4_ = 0; i_4_ < 112; i_4_++) {
 								if (aBooleanArray3808[i_4_]) {
 									Class98_Sub8 class98_sub8_5_ = new Class98_Sub8();
-									((Class98_Sub8) class98_sub8_5_).anInt3266 = (((Class98_Sub8) class98_sub8).anInt3266);
-									((Class98_Sub8) class98_sub8_5_).anInt3269 = i_4_;
-									((Class98_Sub8) class98_sub8_5_).aLong3267 = (((Class98_Sub8) class98_sub8).aLong3267);
-									((Class98_Sub8) class98_sub8_5_).anInt3268 = 1;
-									((Class98_Sub8) class98_sub8_5_).aChar3265 = '\0';
+									class98_sub8_5_.anInt3266 = (class98_sub8.anInt3266);
+									class98_sub8_5_.anInt3269 = i_4_;
+									class98_sub8_5_.aLong3267 = (class98_sub8.aLong3267);
+									class98_sub8_5_.anInt3268 = 1;
+									class98_sub8_5_.aChar3265 = '\0';
 									aClass148_3802.add_last(class98_sub8_5_, -20911);
 									aBooleanArray3808[i_4_] = false;
 								}
 							}
-						} else if (((Class98_Sub8) class98_sub8).anInt3268 == 3)
+						} else if (class98_sub8.anInt3268 == 3)
 							aClass148_3802.add_last(class98_sub8, -20911);
 					} else {
-						if (!aBooleanArray3808[((Class98_Sub8) class98_sub8).anInt3269]) {
+						if (!aBooleanArray3808[class98_sub8.anInt3269]) {
 							Class98_Sub8 class98_sub8_6_ = new Class98_Sub8();
-							((Class98_Sub8) class98_sub8_6_).aLong3267 = ((Class98_Sub8) class98_sub8).aLong3267;
-							((Class98_Sub8) class98_sub8_6_).anInt3266 = ((Class98_Sub8) class98_sub8).anInt3266;
-							((Class98_Sub8) class98_sub8_6_).anInt3268 = 0;
-							((Class98_Sub8) class98_sub8_6_).aChar3265 = '\0';
-							((Class98_Sub8) class98_sub8_6_).anInt3269 = ((Class98_Sub8) class98_sub8).anInt3269;
+							class98_sub8_6_.aLong3267 = class98_sub8.aLong3267;
+							class98_sub8_6_.anInt3266 = class98_sub8.anInt3266;
+							class98_sub8_6_.anInt3268 = 0;
+							class98_sub8_6_.aChar3265 = '\0';
+							class98_sub8_6_.anInt3269 = class98_sub8.anInt3269;
 							aClass148_3802.add_last(class98_sub8_6_, -20911);
-							aBooleanArray3808[(((Class98_Sub8) class98_sub8).anInt3269)] = true;
+							aBooleanArray3808[(class98_sub8.anInt3269)] = true;
 						}
-						((Class98_Sub8) class98_sub8).anInt3268 = 2;
+						class98_sub8.anInt3268 = 2;
 						aClass148_3802.add_last(class98_sub8, -20911);
 					}
 				}
@@ -197,10 +197,10 @@ final class Class77_Sub1 extends RtKeyListener implements KeyListener, FocusList
 	private final void method786(int i, int i_7_, char c, boolean bool) {
 		try {
 			Class98_Sub8 class98_sub8 = new Class98_Sub8();
-			((Class98_Sub8) class98_sub8).anInt3269 = i_7_;
-			((Class98_Sub8) class98_sub8).aChar3265 = c;
-			((Class98_Sub8) class98_sub8).anInt3268 = i;
-			((Class98_Sub8) class98_sub8).aLong3267 = Class343.method3819(-47);
+			class98_sub8.anInt3269 = i_7_;
+			class98_sub8.aChar3265 = c;
+			class98_sub8.anInt3268 = i;
+			class98_sub8.aLong3267 = Class343.method3819(-47);
 			if (bool != false)
 				aClass326_3805 = null;
 			aClass148_3806.add_last(class98_sub8, -20911);
@@ -255,17 +255,17 @@ final class Class77_Sub1 extends RtKeyListener implements KeyListener, FocusList
 	static final void method789(int i) {
 		try {
 			for (Class98_Sub33 class98_sub33 = (Class98_Sub33) Class191.aClass148_1478.method2418(32); class98_sub33 != null; class98_sub33 = ((Class98_Sub33) Class191.aClass148_1478.method2417(94))) {
-				if (((Class98_Sub33) class98_sub33).aBoolean4124)
+				if (class98_sub33.aBoolean4124)
 					class98_sub33.remove();
 				else {
-					((Class98_Sub33) class98_sub33).aBoolean4123 = true;
-					if (((Class98_Sub33) class98_sub33).anInt4112 >= 0 && ((Class98_Sub33) class98_sub33).anInt4113 >= 0 && (((Class98_Sub33) class98_sub33).anInt4112 ^ 0xffffffff) > (GameWorld.size_x ^ 0xffffffff) && ((((Class98_Sub33) class98_sub33).anInt4113 ^ 0xffffffff) > (GameWorld.size_y ^ 0xffffffff)))
+					class98_sub33.aBoolean4123 = true;
+					if (class98_sub33.anInt4112 >= 0 && class98_sub33.anInt4113 >= 0 && GameWorld.size_x > class98_sub33.anInt4112 && (GameWorld.size_y > class98_sub33.anInt4113))
 						Class98_Sub46_Sub9.method1558((byte) 109, class98_sub33);
 				}
 			}
 			for (Class98_Sub33 class98_sub33 = ((Class98_Sub33) OutgoingPacket.aClass148_3866.method2418(32)); class98_sub33 != null; class98_sub33 = (Class98_Sub33) OutgoingPacket.aClass148_3866.method2417(98)) {
-				if (!((Class98_Sub33) class98_sub33).aBoolean4124)
-					((Class98_Sub33) class98_sub33).aBoolean4123 = true;
+				if (!class98_sub33.aBoolean4124)
+					class98_sub33.aBoolean4123 = true;
 				else
 					class98_sub33.remove();
 			}
@@ -277,7 +277,7 @@ final class Class77_Sub1 extends RtKeyListener implements KeyListener, FocusList
 
 	final boolean is_key_down(int i, int i_10_) {
 		try {
-			if ((i ^ 0xffffffff) > -1 || i >= 112)
+			if (i < 0 || i >= 112)
 				return false;
 			if (i_10_ != 5503)
 				return true;

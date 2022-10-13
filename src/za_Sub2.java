@@ -15,7 +15,7 @@ final class za_Sub2 extends za {
 			if (i_1_ == 9767) {
 				Class98_Sub46_Sub17 class98_sub46_sub17 = Class185.setCS2StringOrVarc(i_0_, -68, 6);
 				class98_sub46_sub17.method1626((byte) -103);
-				((Class98_Sub46_Sub17) class98_sub46_sub17).anInt6054 = i;
+				class98_sub46_sub17.anInt6054 = i;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ig.D(" + i + ',' + i_0_ + ',' + i_1_ + ')'));
@@ -25,7 +25,7 @@ final class za_Sub2 extends za {
 	final void method1681(byte i) {
 		do {
 			try {
-				((za_Sub2) this).aNativeHeap6082.b();
+				this.aNativeHeap6082.b();
 				if (i == 36)
 					break;
 				method1682(-128, -23, -19);
@@ -50,7 +50,7 @@ final class za_Sub2 extends za {
 
 	za_Sub2(int i) {
 		try {
-			((za_Sub2) this).aNativeHeap6082 = new NativeHeap(i);
+			this.aNativeHeap6082 = new NativeHeap(i);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ig.<init>(" + i + ')');
 		}
@@ -60,7 +60,7 @@ final class za_Sub2 extends za {
 		try {
 			if (i != -11297)
 				return false;
-			if (i_4_ != 10 && (i_4_ ^ 0xffffffff) != -12 && i_4_ != 12)
+			if (i_4_ != 10 && i_4_ != 11 && i_4_ != 12)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -81,7 +81,7 @@ final class za_Sub2 extends za {
 		do {
 			try {
 				do {
-					if (i_7_ >= Class76_Sub8.anInt3778 && Class3.anInt77 >= i_7_ && ((Class76_Sub8.anInt3778 ^ 0xffffffff) >= (i ^ 0xffffffff)) && (i ^ 0xffffffff) >= (Class3.anInt77 ^ 0xffffffff) && ((Class76_Sub8.anInt3778 ^ 0xffffffff) >= (i_8_ ^ 0xffffffff)) && (Class3.anInt77 ^ 0xffffffff) <= (i_8_ ^ 0xffffffff) && i_14_ >= Class76_Sub8.anInt3778 && (Class3.anInt77 ^ 0xffffffff) <= (i_14_ ^ 0xffffffff) && i_13_ >= Class98_Sub10_Sub38.anInt5753 && (i_13_ ^ 0xffffffff) >= (Class218.anInt1635 ^ 0xffffffff) && Class98_Sub10_Sub38.anInt5753 <= i_10_ && (i_10_ ^ 0xffffffff) >= (Class218.anInt1635 ^ 0xffffffff) && i_9_ >= Class98_Sub10_Sub38.anInt5753 && Class218.anInt1635 >= i_9_ && ((Class98_Sub10_Sub38.anInt5753 ^ 0xffffffff) >= (i_11_ ^ 0xffffffff)) && ((Class218.anInt1635 ^ 0xffffffff) <= (i_11_ ^ 0xffffffff))) {
+					if (i_7_ >= Class76_Sub8.anInt3778 && Class3.anInt77 >= i_7_ && (i >= Class76_Sub8.anInt3778) && Class3.anInt77 >= i && (i_8_ >= Class76_Sub8.anInt3778) && i_8_ <= Class3.anInt77 && i_14_ >= Class76_Sub8.anInt3778 && i_14_ <= Class3.anInt77 && i_13_ >= Class98_Sub10_Sub38.anInt5753 && Class218.anInt1635 >= i_13_ && Class98_Sub10_Sub38.anInt5753 <= i_10_ && Class218.anInt1635 >= i_10_ && i_9_ >= Class98_Sub10_Sub38.anInt5753 && Class218.anInt1635 >= i_9_ && (i_11_ >= Class98_Sub10_Sub38.anInt5753) && (i_11_ <= Class218.anInt1635)) {
 						Class176.method2579(i_13_, i_9_, i_11_, i, i_7_, i_12_, i_8_, i_14_, i_10_, 22024);
 						if (!client.aBoolean3553)
 							break;

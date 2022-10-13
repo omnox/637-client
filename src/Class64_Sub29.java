@@ -37,7 +37,7 @@ final class Class64_Sub29 extends Class64 {
 					Class278.method3309(var_ha);
 					LinkedList class148 = Class278.method3315(var_ha);
 					Class86.method843(0, var_ha, class148, -1, 0);
-					if ((Class64_Sub25.anInt3711 ^ 0xffffffff) < -1) {
+					if (Class64_Sub25.anInt3711 > 0) {
 						Class287.anInt2186--;
 						if (Class287.anInt2186 == 0) {
 							Class64_Sub25.anInt3711--;
@@ -53,7 +53,7 @@ final class Class64_Sub29 extends Class64 {
 					Runtime runtime = Runtime.getRuntime();
 					int i_14_ = (int) ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L);
 					int i_15_ = 16776960;
-					if ((i_14_ ^ 0xffffffff) < -65537)
+					if (i_14_ > 65536)
 						i_15_ = 16711680;
 					Class195.aClass43_1499.method397(i_15_, 0, i_12_, -1, "Mem:" + i_14_ + "k", i_13_);
 					i_13_ -= 15;
@@ -82,7 +82,7 @@ final class Class64_Sub29 extends Class64 {
 	final void method550(int i, int i_16_) {
 		try {
 			int i_17_ = -101 % ((i - -26) / 41);
-			((Class64) this).anInt494 = i_16_;
+			this.anInt494 = i_16_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "wfa.B(" + i + ',' + i_16_ + ')');
 		}
@@ -91,8 +91,8 @@ final class Class64_Sub29 extends Class64 {
 	final void method551(byte i) {
 		do {
 			try {
-				if ((((Class64) this).anInt494 ^ 0xffffffff) != -2 && (((Class64) this).anInt494 ^ 0xffffffff) != -1)
-					((Class64) this).anInt494 = method552(0);
+				if (this.anInt494 != 1 && this.anInt494 != 0)
+					this.anInt494 = method552(0);
 				if (i >= 118)
 					break;
 				method675(103, 107);
@@ -107,7 +107,7 @@ final class Class64_Sub29 extends Class64 {
 		do {
 			try {
 				int i_22_ = 25 % ((35 - i_21_) / 51);
-				if ((i_20_ ^ 0xffffffff) >= -1) {
+				if (i_20_ <= 0) {
 					s_Sub1.method3434(class207, bool, i, i_19_, i_18_, -16523);
 					if (!client.aBoolean3553)
 						break;
@@ -133,11 +133,11 @@ final class Class64_Sub29 extends Class64 {
 			String string = Integer.toString(i);
 			if (i_23_ != 16474)
 				aClass196_3720 = null;
-			for (int i_24_ = string.length() + -3; (i_24_ ^ 0xffffffff) < -1; i_24_ -= 3)
+			for (int i_24_ = string.length() + -3; i_24_ > 0; i_24_ -= 3)
 				string = (string.substring(0, i_24_) + "," + string.substring(i_24_));
 			if (string.length() > 9)
 				return (" <col=00ff80>" + string.substring(0, -8 + string.length()) + TextResources.aClass309_2619.get_text(Class374.anInt3159) + " (" + string + ")</col>");
-			if ((string.length() ^ 0xffffffff) < -7)
+			if (string.length() > 6)
 				return (" <col=ffffff>" + string.substring(0, -4 + string.length()) + TextResources.aClass309_2621.get_text(Class374.anInt3159) + " (" + string + ")</col>");
 			return " <col=ffff00>" + string + "</col>";
 		} catch (RuntimeException runtimeexception) {
@@ -169,7 +169,7 @@ final class Class64_Sub29 extends Class64 {
 		try {
 			if (i < 119)
 				aClass196_3720 = null;
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "wfa.E(" + i + ')');
 		}

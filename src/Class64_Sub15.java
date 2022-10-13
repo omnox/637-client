@@ -11,12 +11,12 @@ final class Class64_Sub15 extends Class64 {
 		try {
 			int[] is = new int[i_0_];
 			Class98_Sub10_Sub35 class98_sub10_sub35 = new Class98_Sub10_Sub35();
-			((Class98_Sub10_Sub35) class98_sub10_sub35).anInt5733 = i_1_;
-			((Class98_Sub10_Sub35) class98_sub10_sub35).anInt5739 = (int) (f * 4096.0F);
-			((Class98_Sub10_Sub35) class98_sub10_sub35).aBoolean5731 = bool;
-			((Class98_Sub10_Sub35) class98_sub10_sub35).anInt5737 = i_4_;
-			((Class98_Sub10_Sub35) class98_sub10_sub35).anInt5734 = i_3_;
-			((Class98_Sub10_Sub35) class98_sub10_sub35).anInt5740 = i;
+			class98_sub10_sub35.anInt5733 = i_1_;
+			class98_sub10_sub35.anInt5739 = (int) (f * 4096.0F);
+			class98_sub10_sub35.aBoolean5731 = bool;
+			class98_sub10_sub35.anInt5737 = i_4_;
+			class98_sub10_sub35.anInt5734 = i_3_;
+			class98_sub10_sub35.anInt5740 = i;
 			class98_sub10_sub35.method1001((byte) 66);
 			Class64_Sub2.method559(bool_2_, i_0_, 1);
 			class98_sub10_sub35.method1107((byte) -76, is, 0);
@@ -28,11 +28,11 @@ final class Class64_Sub15 extends Class64 {
 
 	final void method551(byte i) {
 		try {
-			if (((Class98_Sub27) ((Class64) this).aClass98_Sub27_495).aClass64_Sub18_4071.method625((byte) -123) && ((Class64) this).anInt494 == 2)
-				((Class64) this).anInt494 = 1;
+			if (this.aClass98_Sub27_495.aClass64_Sub18_4071.method625((byte) -123) && this.anInt494 == 2)
+				this.anInt494 = 1;
 			if (i >= 118) {
-				if (((Class64) this).anInt494 < 0 || ((Class64) this).anInt494 > 2)
-					((Class64) this).anInt494 = method552(0);
+				if (this.anInt494 < 0 || this.anInt494 > 2)
+					this.anInt494 = method552(0);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "lia.C(" + i + ')');
@@ -72,7 +72,7 @@ final class Class64_Sub15 extends Class64 {
 		try {
 			if (i <= 119)
 				method556(63, 110);
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "lia.E(" + i + ')');
 		}
@@ -81,7 +81,7 @@ final class Class64_Sub15 extends Class64 {
 	final void method550(int i, int i_6_) {
 		try {
 			int i_7_ = -37 % ((-26 - i) / 41);
-			((Class64) this).anInt494 = i_6_;
+			this.anInt494 = i_6_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "lia.B(" + i + ',' + i_6_ + ')');
 		}

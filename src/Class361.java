@@ -31,7 +31,7 @@ final class Class361 implements Runnable {
 			if (i != -5133)
 				anInt3089 = -25;
 			int i_0_ = Class45.aClass75_381.method736((byte) -10);
-			if ((i_0_ ^ 0xffffffff) > (Class98_Sub10_Sub1.aClass75Array5542.length + -1 ^ 0xffffffff))
+			if (Class98_Sub10_Sub1.aClass75Array5542.length + -1 > i_0_)
 				Class45.aClass75_381 = Class98_Sub10_Sub1.aClass75Array5542[1 + i_0_];
 			return 100;
 		} catch (RuntimeException runtimeexception) {
@@ -93,51 +93,51 @@ final class Class361 implements Runnable {
 			Class98_Sub19 class98_sub19 = (Class98_Sub19) Class186.aClass148_3428.method2418(32);
 			if (class98_sub19 != null) {
 				boolean bool = false;
-				for (int i_1_ = 0; ((i_1_ ^ 0xffffffff) > (((Class98_Sub19) class98_sub19).anInt3960 ^ 0xffffffff)); i_1_++) {
-					if ((((Class98_Sub19) class98_sub19).aClass143Array3962[i_1_]) != null) {
-						if ((((Class98_Sub19) class98_sub19).aClass143Array3962[i_1_].anInt1163) == 2)
-							((Class98_Sub19) class98_sub19).anIntArray3957[i_1_] = -5;
-						if (((((Class98_Sub19) class98_sub19).aClass143Array3962[i_1_].anInt1163) ^ 0xffffffff) == -1)
+				for (int i_1_ = 0; (class98_sub19.anInt3960 > i_1_); i_1_++) {
+					if ((class98_sub19.aClass143Array3962[i_1_]) != null) {
+						if ((class98_sub19.aClass143Array3962[i_1_].anInt1163) == 2)
+							class98_sub19.anIntArray3957[i_1_] = -5;
+						if ((class98_sub19.aClass143Array3962[i_1_].anInt1163) == 0)
 							bool = true;
 					}
-					if ((((Class98_Sub19) class98_sub19).aClass143Array3961[i_1_]) != null) {
-						if ((((Class98_Sub19) class98_sub19).aClass143Array3961[i_1_].anInt1163) == 2)
-							((Class98_Sub19) class98_sub19).anIntArray3957[i_1_] = -6;
-						if (((((Class98_Sub19) class98_sub19).aClass143Array3961[i_1_].anInt1163) ^ 0xffffffff) == -1)
+					if ((class98_sub19.aClass143Array3961[i_1_]) != null) {
+						if ((class98_sub19.aClass143Array3961[i_1_].anInt1163) == 2)
+							class98_sub19.anIntArray3957[i_1_] = -6;
+						if ((class98_sub19.aClass143Array3961[i_1_].anInt1163) == 0)
 							bool = true;
 					}
 				}
 				if (!bool) {
-					int i_2_ = ((RSByteBuffer) class98_sub22_sub1).position;
-					class98_sub22_sub1.writeInt(i + 1571862949, ((Class98_Sub19) class98_sub19).anInt3954);
+					int i_2_ = class98_sub22_sub1.position;
+					class98_sub22_sub1.writeInt(i + 1571862949, class98_sub19.anInt3954);
 					if (i != -61)
 						anInt3089 = 82;
-					for (int i_3_ = 0; ((Class98_Sub19) class98_sub19).anInt3960 > i_3_; i_3_++) {
-						if (((((Class98_Sub19) class98_sub19).anIntArray3957[i_3_]) ^ 0xffffffff) != -1)
-							class98_sub22_sub1.writeByte((((Class98_Sub19) class98_sub19).anIntArray3957[i_3_]));
+					for (int i_3_ = 0; class98_sub19.anInt3960 > i_3_; i_3_++) {
+						if ((class98_sub19.anIntArray3957[i_3_]) != 0)
+							class98_sub22_sub1.writeByte((class98_sub19.anIntArray3957[i_3_]));
 						else {
 							try {
-								int i_4_ = (((Class98_Sub19) class98_sub19).anIntArray3953[i_3_]);
+								int i_4_ = (class98_sub19.anIntArray3953[i_3_]);
 								if (i_4_ == 0) {
-									Field field = ((Field) (((Class98_Sub19) class98_sub19).aClass143Array3962[i_3_].anObject1162));
+									Field field = ((Field) (class98_sub19.aClass143Array3962[i_3_].anObject1162));
 									int i_5_ = field.getInt(null);
 									class98_sub22_sub1.writeByte(0);
 									class98_sub22_sub1.writeInt(i ^ ~0x5db0b954, i_5_);
-								} else if ((i_4_ ^ 0xffffffff) == -2) {
-									Field field = ((Field) (((Class98_Sub19) class98_sub19).aClass143Array3962[i_3_].anObject1162));
-									field.setInt(null, (((Class98_Sub19) class98_sub19).anIntArray3959[i_3_]));
+								} else if (i_4_ == 1) {
+									Field field = ((Field) (class98_sub19.aClass143Array3962[i_3_].anObject1162));
+									field.setInt(null, (class98_sub19.anIntArray3959[i_3_]));
 									class98_sub22_sub1.writeByte(0);
 								} else if (i_4_ == 2) {
-									Field field = ((Field) (((Class98_Sub19) class98_sub19).aClass143Array3962[i_3_].anObject1162));
+									Field field = ((Field) (class98_sub19.aClass143Array3962[i_3_].anObject1162));
 									int i_6_ = field.getModifiers();
 									class98_sub22_sub1.writeByte(0);
 									class98_sub22_sub1.writeInt(1571862888, i_6_);
 								}
-								if ((i_4_ ^ 0xffffffff) == -4) {
-									Method method = ((Method) (((Class98_Sub19) class98_sub19).aClass143Array3961[i_3_].anObject1162));
-									byte[][] is = (((Class98_Sub19) class98_sub19).aByteArrayArrayArray3958[i_3_]);
+								if (i_4_ == 3) {
+									Method method = ((Method) (class98_sub19.aClass143Array3961[i_3_].anObject1162));
+									byte[][] is = (class98_sub19.aByteArrayArrayArray3958[i_3_]);
 									Object[] objects = new Object[is.length];
-									for (int i_7_ = 0; ((is.length ^ 0xffffffff) < (i_7_ ^ 0xffffffff)); i_7_++) {
+									for (int i_7_ = 0; (i_7_ < is.length); i_7_++) {
 										ObjectInputStream objectinputstream = (new ObjectInputStream(new ByteArrayInputStream(is[i_7_])));
 										objects[i_7_] = objectinputstream.readObject();
 									}
@@ -156,7 +156,7 @@ final class Class361 implements Runnable {
 									} else
 										class98_sub22_sub1.writeByte(0);
 								} else if (i_4_ == 4) {
-									Method method = ((Method) (((Class98_Sub19) class98_sub19).aClass143Array3961[i_3_].anObject1162));
+									Method method = ((Method) (class98_sub19.aClass143Array3961[i_3_].anObject1162));
 									int i_8_ = method.getModifiers();
 									class98_sub22_sub1.writeByte(0);
 									class98_sub22_sub1.writeInt(1571862888, i_8_);
@@ -207,10 +207,10 @@ final class Class361 implements Runnable {
 				if (aByteArray3086 == null)
 					aByteArray3086 = new byte[anInt3080];
 				synchronized (this) {
-					for (int i_11_ = 0; (i_10_ ^ 0xffffffff) < (i_11_ ^ 0xffffffff); i_11_++) {
+					for (int i_11_ = 0; i_11_ < i_10_; i_11_++) {
 						aByteArray3086[anInt3085] = is[i_11_ + i_9_];
 						anInt3085 = (1 + anInt3085) % anInt3080;
-						if ((anInt3085 ^ 0xffffffff) == ((anInt3087 - (-anInt3080 - -100)) % anInt3080 ^ 0xffffffff))
+						if ((anInt3087 - (-anInt3080 - -100)) % anInt3080 == anInt3085)
 							throw new IOException();
 					}
 					if (i != 77)
@@ -233,7 +233,7 @@ final class Class361 implements Runnable {
 				int i_13_;
 				for (/**/; i_12_ > 0; i_12_ -= i_13_) {
 					i_13_ = anInputStream3084.read(is, i, i_12_);
-					if ((i_13_ ^ 0xffffffff) >= -1)
+					if (i_13_ <= 0)
 						throw new EOFException();
 					i += i_13_;
 				}
@@ -273,9 +273,9 @@ final class Class361 implements Runnable {
 					this.notifyAll();
 				}
 				if (aClass143_3079 != null) {
-					while ((aClass143_3079.anInt1163 ^ 0xffffffff) == -1)
+					while (aClass143_3079.anInt1163 == 0)
 						Class246_Sub7.method3131(0, 1L);
-					if ((aClass143_3079.anInt1163 ^ 0xffffffff) == -2) {
+					if (aClass143_3079.anInt1163 == 1) {
 						try {
 							((Thread) aClass143_3079.anObject1162).join();
 						} catch (InterruptedException interruptedexception) {
@@ -297,7 +297,7 @@ final class Class361 implements Runnable {
 					int i;
 					int i_15_;
 					synchronized (this) {
-						if ((anInt3085 ^ 0xffffffff) == (anInt3087 ^ 0xffffffff)) {
+						if (anInt3087 == anInt3085) {
 							if (aBoolean3088)
 								break;
 							try {
@@ -307,12 +307,12 @@ final class Class361 implements Runnable {
 							}
 						}
 						i = anInt3087;
-						if ((anInt3085 ^ 0xffffffff) > (anInt3087 ^ 0xffffffff))
+						if (anInt3087 > anInt3085)
 							i_15_ = -anInt3087 + anInt3080;
 						else
 							i_15_ = anInt3085 - anInt3087;
 					}
-					if ((i_15_ ^ 0xffffffff) < -1) {
+					if (i_15_ > 0) {
 						try {
 							anOutputStream3082.write(aByteArray3086, i, i_15_);
 						} catch (IOException ioexception) {
@@ -320,7 +320,7 @@ final class Class361 implements Runnable {
 						}
 						anInt3087 = (i_15_ + anInt3087) % anInt3080;
 						try {
-							if ((anInt3085 ^ 0xffffffff) == (anInt3087 ^ 0xffffffff))
+							if (anInt3087 == anInt3085)
 								anOutputStream3082.flush();
 						} catch (IOException ioexception) {
 							aBoolean3078 = true;

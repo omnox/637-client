@@ -55,12 +55,12 @@ final class Class265 implements Runnable {
 				}
 				int i;
 				try {
-					byte[] is = InetAddress.getByName(((Class98_Sub4) class98_sub4).aString3829).getAddress();
+					byte[] is = InetAddress.getByName(class98_sub4.aString3829).getAddress();
 					i = jagmisc.ping(is[0], is[1], is[2], is[3], 1000L);
 				} catch (Throwable throwable) {
 					i = 1000;
 				}
-				((Class98_Sub4) class98_sub4).anInt3827 = i;
+				class98_sub4.anInt3827 = i;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "qia.run(" + ')');
@@ -86,7 +86,7 @@ final class Class265 implements Runnable {
 	static final boolean method3230(int i, int i_0_) {
 		try {
 			int i_1_ = -80 / ((i - -67) / 47);
-			if ((i_0_ ^ 0xffffffff) != -1 && i_0_ != 1 && i_0_ != 2)
+			if (i_0_ != 0 && i_0_ != 1 && i_0_ != 2)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

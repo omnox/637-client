@@ -12,9 +12,9 @@ final class Class323 {
 			if (bool != true)
 				aClass207_2716 = null;
 			class98_sub46_sub17.method1626((byte) -103);
-			((Class98_Sub46_Sub17) class98_sub46_sub17).anInt6051 = i_1_;
-			((Class98_Sub46_Sub17) class98_sub46_sub17).anInt6054 = i_0_;
-			((Class98_Sub46_Sub17) class98_sub46_sub17).anInt6053 = i_2_;
+			class98_sub46_sub17.anInt6051 = i_1_;
+			class98_sub46_sub17.anInt6054 = i_0_;
+			class98_sub46_sub17.anInt6053 = i_2_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("tt.D(" + i + ',' + i_0_ + ',' + bool + ',' + i_1_ + ',' + i_2_ + ')'));
 		}
@@ -23,10 +23,10 @@ final class Class323 {
 	static final void method3676(int i, int i_3_, int i_4_, int i_5_, byte[] is, boolean bool, int i_6_, byte[] is_7_, int i_8_) {
 		try {
 			if (bool == false) {
-				int i_9_ = -(i_5_ >> -1495816926);
+				int i_9_ = -(i_5_ >> 2);
 				i_5_ = -(i_5_ & 0x3);
 				for (int i_10_ = -i; i_10_ < 0; i_10_++) {
-					for (int i_11_ = i_9_; (i_11_ ^ 0xffffffff) > -1; i_11_++) {
+					for (int i_11_ = i_9_; i_11_ < 0; i_11_++) {
 						is[i_8_++] += -is_7_[i_6_++];
 						is[i_8_++] += -is_7_[i_6_++];
 						is[i_8_++] += -is_7_[i_6_++];
@@ -46,11 +46,11 @@ final class Class323 {
 	static final GameInterface createInterface(boolean bool, int i, int interfaceID, int interfaceMask, int clickThrough) {
 		try {
 			GameInterface window = new GameInterface();
-			((GameInterface) window).interfaceClickThrough = clickThrough;
-			((GameInterface) window).interfaceID = interfaceID;
+			window.interfaceClickThrough = clickThrough;
+			window.interfaceID = interfaceID;
 			if (i >= -125)
 				return null;
-			Class116.aClass377_964.method3996(window, (long) interfaceMask, -1);
+			Class116.aClass377_964.method3996(window, interfaceMask, -1);
 			Class98_Sub46_Sub15.method1609(interfaceID, -12889);
 			GameInterfaceData class293 = Class159.method2509(interfaceMask, -9820);
 			if (class293 != null)

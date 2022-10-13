@@ -21,7 +21,7 @@ final class Class98_Sub47 extends Node {
 			else {
 				if (i_2_ != 16977)
 					IncomingOpcode.aClass58_4270 = null;
-				if ((Class76_Sub8.anInt3778 ^ 0xffffffff) >= (-i_1_ + i_0_ ^ 0xffffffff) && i_0_ + i_1_ <= Class3.anInt77 && -i_3_ + i >= Class98_Sub10_Sub38.anInt5753 && (Class218.anInt1635 ^ 0xffffffff) <= (i + i_3_ ^ 0xffffffff))
+				if (-i_1_ + i_0_ >= Class76_Sub8.anInt3778 && i_0_ + i_1_ <= Class3.anInt77 && -i_3_ + i >= Class98_Sub10_Sub38.anInt5753 && i + i_3_ <= Class218.anInt1635)
 					Class284.method3362(i, i_1_, i_4_, (byte) -119, i_0_, i_3_);
 				else
 					Class40.method364(i_3_, i_0_, i_1_, i, i_2_ + -17066, i_4_);
@@ -45,7 +45,7 @@ final class Class98_Sub47 extends Node {
 	Class98_Sub47(int i) {
 		try {
 			//i = sprite id or something, yet to figure it out lelele
-			((Class98_Sub47) this).anInt4268 = i;
+			this.anInt4268 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uca.<init>(" + i + ')');
 		}

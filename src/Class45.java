@@ -14,7 +14,7 @@ final class Class45 {
 			try {
 				Class98_Sub46_Sub17 class98_sub46_sub17 = Class185.setCS2StringOrVarc(i_0_, -126, 14);
 				class98_sub46_sub17.method1626((byte) -103);
-				((Class98_Sub46_Sub17) class98_sub46_sub17).anInt6054 = i;
+				class98_sub46_sub17.anInt6054 = i;
 				if (bool == true)
 					break;
 				method432((byte) 111);

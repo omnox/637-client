@@ -85,7 +85,7 @@ final class Class47 implements Runnable {
 						anInt401++;
 						if (!(anInterface10_398 instanceof Class292)) {
 							long l_2_ = Class343.method3819(-47);
-							if (Class265.aHa1974 == null || anInterface10_402 == null || anInterface10_402.method25(-24591) == 0 || ((aLong406 ^ 0xffffffffffffffffL) > (-(long) anInterface10_402.method25(-24591) + l_2_ ^ 0xffffffffffffffffL))) {
+							if (Class265.aHa1974 == null || anInterface10_402 == null || anInterface10_402.method25(-24591) == 0 || (-(long) anInterface10_402.method25(-24591) + l_2_ > aLong406)) {
 								if (anInterface10_402 != null) {
 									aBoolean397 = true;
 									anInterface10_402.method24(-26363);
@@ -101,8 +101,8 @@ final class Class47 implements Runnable {
 								int i = (int) ((l_2_ - aLong406) * 255L / (long) anInterface10_402.method25(-24591));
 								int i_3_ = -i + 255;
 								Class263.method3216(14059);
-								i_3_ = 0xffffff | i_3_ << 511614744;
-								i = 0xffffff | i << -1078525736;
+								i_3_ = 0xffffff | i_3_ << 24;
+								i = 0xffffff | i << 24;
 								Class265.aHa1974.GA(0);
 								Class332 class332 = (Class265.aHa1974.method1739(Class39_Sub1.anInt3593, Class98_Sub25.anInt4024, true));
 								Class265.aHa1974.method1763(-74, class332);
@@ -137,7 +137,7 @@ final class Class47 implements Runnable {
 						if (Class284.aFrame2168 == container)
 							Class284.aFrame2168.getInsets();
 						aBoolean397 = false;
-						if (Class265.aHa1974 != null && !(anInterface10_398 instanceof Class292) && ((aClass75_408.method736((byte) -10) ^ 0xffffffff) > (Class75.aClass75_577.method736((byte) -10) ^ 0xffffffff)))
+						if (Class265.aHa1974 != null && !(anInterface10_398 instanceof Class292) && (Class75.aClass75_577.method736((byte) -10) > aClass75_408.method736((byte) -10)))
 							Class98_Sub31_Sub2.method1336((byte) -90);
 					} catch (Exception exception) {
 						continue;
@@ -145,8 +145,8 @@ final class Class47 implements Runnable {
 				}
 				long l_4_ = Class343.method3819(-47);
 				int i = (int) (20L + l + -l_4_);
-				if ((i ^ 0xffffffff) < -1)
-					Class246_Sub7.method3131(0, (long) i);
+				if (i > 0)
+					Class246_Sub7.method3131(0, i);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "dga.run(" + ')');
@@ -172,13 +172,13 @@ final class Class47 implements Runnable {
 			if (aClass75_408 == null)
 				return 0;
 			int i_7_ = aClass75_408.method736((byte) -10);
-			if (((Class75) aClass75_408).aBoolean553 && (anInt404 ^ 0xffffffff) > (((Class75) aClass75_408).anInt557 ^ 0xffffffff))
+			if (aClass75_408.aBoolean553 && aClass75_408.anInt557 > anInt404)
 				return anInt404 + 1;
-			if ((i_7_ ^ 0xffffffff) > -1 || i_7_ >= -1 + Class98_Sub10_Sub1.aClass75Array5542.length)
+			if (i_7_ < 0 || i_7_ >= -1 + Class98_Sub10_Sub1.aClass75Array5542.length)
 				return 100;
-			if ((anInt404 ^ 0xffffffff) == (((Class75) aClass75_408).anInt552 ^ 0xffffffff))
-				return ((Class75) aClass75_408).anInt557;
-			return ((Class75) aClass75_408).anInt552;
+			if (aClass75_408.anInt552 == anInt404)
+				return aClass75_408.anInt557;
+			return aClass75_408.anInt552;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "dga.B(" + i + ')');
 		}
@@ -221,14 +221,14 @@ final class Class47 implements Runnable {
 				Class259[] class259s = Class52.method490(Class98_Sub43_Sub2.aClass88_5907, (byte) -68);
 				Class259[] class259s_9_ = new Class259[class259s.length];
 				int i_10_ = 0;
-				int i_11_ = ((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub16_4040.method614((byte) 123);
+				int i_11_ = Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub16_4040.method614((byte) 123);
 				while_55_: for (int i_12_ = 0; class259s.length > i_12_; i_12_++) {
 					Class259 class259 = class259s[i_12_];
-					if (((((Class259) class259).anInt1955 ^ 0xffffffff) >= -1 || ((((Class259) class259).anInt1955 ^ 0xffffffff) <= -25)) && ((Class259) class259).anInt1953 >= 800 && ((((Class259) class259).anInt1956 ^ 0xffffffff) <= -601) && ((i_11_ ^ 0xffffffff) != -3 || (((Class259) class259).anInt1953 <= 800 && ((Class259) class259).anInt1956 <= 600)) && ((i_11_ ^ 0xffffffff) != -2 || (((Class259) class259).anInt1953 <= 1024 && (((Class259) class259).anInt1956 ^ 0xffffffff) >= -769))) {
+					if ((class259.anInt1955 <= 0 || (class259.anInt1955 >= 24)) && class259.anInt1953 >= 800 && (class259.anInt1956 >= 600) && (i_11_ != 2 || (class259.anInt1953 <= 800 && class259.anInt1956 <= 600)) && (i_11_ != 1 || (class259.anInt1953 <= 1024 && class259.anInt1956 <= 768))) {
 						for (int i_13_ = 0; i_10_ > i_13_; i_13_++) {
 							Class259 class259_14_ = class259s_9_[i_13_];
-							if (((((Class259) class259_14_).anInt1953 ^ 0xffffffff) == (((Class259) class259).anInt1953 ^ 0xffffffff)) && ((((Class259) class259_14_).anInt1956 ^ 0xffffffff) == (((Class259) class259).anInt1956 ^ 0xffffffff))) {
-								if (((Class259) class259).anInt1955 > ((Class259) class259_14_).anInt1955)
+							if ((class259.anInt1953 == class259_14_.anInt1953) && (class259.anInt1956 == class259_14_.anInt1956)) {
+								if (class259.anInt1955 > class259_14_.anInt1955)
 									class259s_9_[i_13_] = class259;
 								continue while_55_;
 							}
@@ -240,9 +240,9 @@ final class Class47 implements Runnable {
 				PlayerUpdateMask.aClass259Array527 = new Class259[i_10_];
 				Class236.method2892(class259s_9_, 0, PlayerUpdateMask.aClass259Array527, 0, i_10_);
 				int[] is = new int[PlayerUpdateMask.aClass259Array527.length];
-				for (int i_15_ = 0; ((i_15_ ^ 0xffffffff) > (PlayerUpdateMask.aClass259Array527.length ^ 0xffffffff)); i_15_++) {
+				for (int i_15_ = 0; (PlayerUpdateMask.aClass259Array527.length > i_15_); i_15_++) {
 					Class259 class259 = PlayerUpdateMask.aClass259Array527[i_15_];
-					is[i_15_] = (((Class259) class259).anInt1956 * ((Class259) class259).anInt1953);
+					is[i_15_] = (class259.anInt1956 * class259.anInt1953);
 				}
 				Class98_Sub46_Sub13_Sub1.method1597(is, PlayerUpdateMask.aClass259Array527, 0);
 			}

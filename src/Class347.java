@@ -32,10 +32,10 @@ final class Class347 {
 		try {
 			if (i_2_ > -69)
 				return -103;
-			int i_3_ = c << -1402494108;
+			int i_3_ = c << 4;
 			if (Character.isUpperCase(c) || Character.isTitleCase(c)) {
 				c = Character.toLowerCase(c);
-				i_3_ = 1 + (c << -1894868316);
+				i_3_ = 1 + (c << 4);
 			}
 			return i_3_;
 		} catch (RuntimeException runtimeexception) {

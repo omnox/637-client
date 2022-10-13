@@ -9,12 +9,12 @@ final class xa implements Interface13, Interface9 {
 	private final native void va(long l, boolean bool);
 
 	protected final void finalize() {
-		if (((xa) this).nativeid != 0L)
+		if (this.nativeid != 0L)
 			Class192.method2654(false, this);
 	}
 
 	public final void w(boolean bool) {
-		va(((xa) this).nativeid, bool);
+		va(this.nativeid, bool);
 	}
 
 	private final native void r(int i, int i_0_);

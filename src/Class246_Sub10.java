@@ -25,7 +25,7 @@ final class Class246_Sub10 extends Class246 {
 			int i_2_ = class98_sub22.readInt(-2);
 			int i_3_ = -102 / ((-42 - i) / 35);
 			int i_4_ = class98_sub22.readInt(-2);
-			return new Class93_Sub3(((Class93) class93).aClass63_3509, ((Class93) class93).aClass110_3511, ((Class93) class93).anInt3505, ((Class93) class93).anInt3507, ((Class93) class93).anInt3514, ((Class93) class93).anInt3504, ((Class93) class93).anInt3508, ((Class93) class93).anInt3506, ((Class93) class93).anInt3513, i_2_, i_4_);
+			return new Class93_Sub3(class93.aClass63_3509, class93.aClass110_3511, class93.anInt3505, class93.anInt3507, class93.anInt3514, class93.anInt3504, class93.anInt3508, class93.anInt3506, class93.anInt3513, i_2_, i_4_);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("qe.A(" + (class98_sub22 != null ? "{...}" : "null") + ',' + i + ')'));
 		}
@@ -33,7 +33,7 @@ final class Class246_Sub10 extends Class246 {
 
 	Class246_Sub10(int i) {
 		try {
-			((Class246_Sub10) this).anInt5151 = i;
+			this.anInt5151 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "qe.<init>(" + i + ')');
 		}

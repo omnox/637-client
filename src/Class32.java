@@ -63,7 +63,7 @@ final class Class32 {
 			OutputStream_Sub1.aClass240_36.method2923(bool);
 			for (int i = 0; i < 32; i++)
 				Class89.aLongArray709[i] = 0L;
-			for (int i = 0; (i ^ 0xffffffff) > -33; i++)
+			for (int i = 0; i < 32; i++)
 				Class271.aLongArray2034[i] = 0L;
 			if (bool != false)
 				anInt308 = 51;
@@ -77,7 +77,7 @@ final class Class32 {
 		try {
 			Class199 class199;
 			synchronized (aClass79_310) {
-				class199 = (Class199) aClass79_310.get((long) i_1_);
+				class199 = (Class199) aClass79_310.get(i_1_);
 			}
 			if (class199 != null)
 				return class199;
@@ -86,13 +86,13 @@ final class Class32 {
 				is = aClass207_306.readArchive(i_1_, i);
 			}
 			class199 = new Class199();
-			((Class199) class199).anInt1536 = i_1_;
-			((Class199) class199).aClass32_1528 = this;
+			class199.anInt1536 = i_1_;
+			class199.aClass32_1528 = this;
 			if (is != null)
 				class199.method2688(i + 107, new RSByteBuffer(is));
 			class199.method2691((byte) 80);
 			synchronized (aClass79_310) {
-				aClass79_310.put((long) i_1_, class199);
+				aClass79_310.put(i_1_, class199);
 			}
 			return class199;
 		} catch (RuntimeException runtimeexception) {
@@ -115,7 +115,7 @@ final class Class32 {
 			synchronized (aClass79_310) {
 				aClass79_310.method794(92);
 				if (i != -117)
-					((Class32) this).anInt312 = 123;
+					this.anInt312 = 123;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cfa.B(" + i + ')');
@@ -125,7 +125,7 @@ final class Class32 {
 	Class32(Class279 class279, int i, RuneScapeCache class207) {
 		try {
 			aClass207_306 = class207;
-			((Class32) this).anInt309 = aClass207_306.method2761(0, 4);
+			this.anInt309 = aClass207_306.method2761(0, 4);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("cfa.<init>(" + (class279 != null ? "{...}" : "null") + ',' + i + ',' + (class207 != null ? "{...}" : "null") + ')'));
 		}

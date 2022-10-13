@@ -11,13 +11,13 @@ final class Class273 {
 
 	static final void method3280(byte i) {
 		try {
-			for (int i_0_ = 0; (Class306.anInt2566 ^ 0xffffffff) < (i_0_ ^ 0xffffffff); i_0_++) {
+			for (int i_0_ = 0; i_0_ < Class306.anInt2566; i_0_++) {
 				Class338 class338 = Class245.aClass338Array1865[i_0_];
-				if ((((Class338) class338).aByte2840 ^ 0xffffffff) == -4) {
-					if (((Class338) class338).aClass98_Sub31_Sub5_2836 != null)
-						Class81.aClass98_Sub31_Sub3_619.method1374(((Class338) class338).aClass98_Sub31_Sub5_2836);
+				if (class338.aByte2840 == 3) {
+					if (class338.aClass98_Sub31_Sub5_2836 != null)
+						Class81.aClass98_Sub31_Sub3_619.method1374(class338.aClass98_Sub31_Sub5_2836);
 					else
-						((Class338) class338).anInt2832 = -2147483648;
+						class338.anInt2832 = -2147483648;
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -27,7 +27,7 @@ final class Class273 {
 
 	protected final void finalize() throws Throwable {
 		try {
-			aHa_Sub3_Sub2_2041.method2085(true, ((Class273) this).anInt2040);
+			aHa_Sub3_Sub2_2041.method2085(true, this.anInt2040);
 			super.finalize();
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "qv.finalize(" + ')');
@@ -45,7 +45,7 @@ final class Class273 {
 
 	Class273(ha_Sub3_Sub2 var_ha_Sub3_Sub2, int i, int i_2_) {
 		try {
-			((Class273) this).anInt2040 = i_2_;
+			this.anInt2040 = i_2_;
 			aHa_Sub3_Sub2_2041 = var_ha_Sub3_Sub2;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("qv.<init>(" + (var_ha_Sub3_Sub2 != null ? "{...}" : "null") + ',' + i + ',' + i_2_ + ')'));

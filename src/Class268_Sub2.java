@@ -53,7 +53,7 @@ final class Class268_Sub2 extends Class268 {
 		if (Class151_Sub7.aBoolean5007)
 			i <<= 1;
 		for (int i_0_ = 0; i_0_ < i; i_0_++) {
-			int i_1_ = ((Class268_Sub2) this).anIntArray2005[i_0_];
+			int i_1_ = this.anIntArray2005[i_0_];
 			if ((i_1_ + 8388608 & ~0xffffff) != 0)
 				i_1_ = 0x7fffff ^ i_1_ >> 31;
 			aByteArray5163[i_0_ * 2] = (byte) (i_1_ >> 8);
@@ -71,7 +71,7 @@ final class Class268_Sub2 extends Class268 {
 					Mixer.Info info = infos_2_[i];
 					if (null != info) {
 						String string = info.getName();
-						if (null != string && (string.toLowerCase().indexOf("soundmax") ^ 0xffffffff) <= -1)
+						if (null != string && string.toLowerCase().indexOf("soundmax") >= 0)
 							aBoolean5162 = true;
 					}
 				}
@@ -92,7 +92,7 @@ final class Class268_Sub2 extends Class268 {
 				aSourceDataLine5166.start();
 				anInt5165 = i;
 			} catch (LineUnavailableException lineunavailableexception) {
-				if ((Class98_Sub50.method1670((byte) 116, i) ^ 0xffffffff) != -2)
+				if (Class98_Sub50.method1670((byte) 116, i) != 1)
 					method3250(Class48.method453(423660257, i));
 				else {
 					aSourceDataLine5166 = null;

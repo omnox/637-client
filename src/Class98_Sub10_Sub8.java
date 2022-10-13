@@ -18,16 +18,16 @@ final class Class98_Sub10_Sub8 extends Class98_Sub10 {
 
 	static final int method1027(int i, int i_0_, int i_1_) {
 		try {
-			if ((i_0_ ^ 0xffffffff) == 0)
+			if (i_0_ == -1)
 				return 12345678;
-			i = i * (i_0_ & 0x7f) >> 2041991591;
+			i = i * (i_0_ & 0x7f) >> 7;
 			do {
-				if ((i ^ 0xffffffff) > -3) {
+				if (i < 2) {
 					i = 2;
 					if (!client.aBoolean3553)
 						break;
 				}
-				if ((i ^ 0xffffffff) < -127)
+				if (i > 126)
 					i = 126;
 			} while (false);
 			if (i_1_ >= -73)
@@ -42,10 +42,10 @@ final class Class98_Sub10_Sub8 extends Class98_Sub10 {
 		try {
 			if (i != 255)
 				aBooleanArray5579 = null;
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_2_);
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
+			int[] is = this.aClass16_3863.method237((byte) 98, i_2_);
+			if (this.aClass16_3863.aBoolean198) {
 				int i_3_ = Class352.anIntArray3001[i_2_];
-				for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > (Class25.anInt268 ^ 0xffffffff); i_4_++)
+				for (int i_4_ = 0; Class25.anInt268 > i_4_; i_4_++)
 					is[i_4_] = method1030(Class64_Sub1.anIntArray3640[i_4_], (byte) 3, i_3_) % 4096;
 			}
 			return is;
@@ -74,7 +74,7 @@ final class Class98_Sub10_Sub8 extends Class98_Sub10 {
 			Class350[] class350s = Class306.method3595((byte) 67);
 			for (int i_6_ = 0; i_6_ < class350s.length; i_6_++) {
 				Class350 class350 = class350s[i_6_];
-				if (i_5_ == ((Class350) class350).anInt2920)
+				if (i_5_ == class350.anInt2920)
 					return class350;
 			}
 			return null;
@@ -88,7 +88,7 @@ final class Class98_Sub10_Sub8 extends Class98_Sub10 {
 			int i_9_ = 57 * i_8_ + i;
 			if (i_7_ != 3)
 				method1027(-5, 93, 26);
-			i_9_ = i_9_ << -924402879 ^ i_9_;
+			i_9_ = i_9_ << 1 ^ i_9_;
 			return (-(((789221 + i_9_ * i_9_ * 15731) * i_9_ - -1376312589 & 0x7fffffff) / 262144) + 4096);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ej.H(" + i + ',' + i_7_ + ',' + i_8_ + ')'));

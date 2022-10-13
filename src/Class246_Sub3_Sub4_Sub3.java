@@ -25,26 +25,26 @@ final class Class246_Sub3_Sub4_Sub3 extends Class246_Sub3_Sub4 {
 		anInt6444 = 0;
 		anInt6454 = -1;
 		anInt6456 = 0;
-		((Class246_Sub3_Sub4_Sub3) this).aBoolean6450 = false;
+		this.aBoolean6450 = false;
 		anInt6452 = 0;
 		anInt6453 = 0;
 		do {
 			try {
 				anInt6453 = i_11_;
-				((Class246_Sub3_Sub4_Sub3) this).anInt6445 = i_1_ - -i_0_;
+				this.anInt6445 = i_1_ - -i_0_;
 				anInt6455 = i;
 				Class107 class107 = Class196.aClass304_1509.method3564(2, anInt6455);
-				int i_12_ = ((Class107) class107).anInt910;
+				int i_12_ = class107.anInt910;
 				do {
 					if (i_12_ != -1) {
 						aClass97_6458 = Class151_Sub7.aClass183_5001.method2623(i_12_, 16383);
-						((Class246_Sub3_Sub4_Sub3) this).aBoolean6450 = false;
+						this.aBoolean6450 = false;
 						if (!client.aBoolean3553)
 							break;
 					}
-					((Class246_Sub3_Sub4_Sub3) this).aBoolean6450 = true;
+					this.aBoolean6450 = true;
 				} while (false);
-				if ((i_1_ ^ 0xffffffff) != (((Class246_Sub3_Sub4_Sub3) this).anInt6445 ^ 0xffffffff))
+				if (this.anInt6445 != i_1_)
 					break;
 				Class349.method3840((byte) -127, this, anInt6456, aClass97_6458);
 			} catch (RuntimeException runtimeexception) {
@@ -81,14 +81,14 @@ final class Class246_Sub3_Sub4_Sub3 extends Class246_Sub3_Sub4 {
 				class146.method2343(class111);
 				Class87[] class87s = class146.method2320();
 				Class35[] class35s = class146.method2322();
-				if ((aClass246_Sub5_6448 == null || ((Class246_Sub5) aClass246_Sub5_6448).aBoolean5099) && (class87s != null || class35s != null))
+				if ((aClass246_Sub5_6448 == null || aClass246_Sub5_6448.aBoolean5099) && (class87s != null || class35s != null))
 					aClass246_Sub5_6448 = Class246_Sub5.method3117(Class215.anInt1614, true);
 				if (i != -17770)
 					method2975(null, 84);
 				if (aClass246_Sub5_6448 == null)
 					break;
-				aClass246_Sub5_6448.method3120(var_ha, (long) Class215.anInt1614, class87s, class35s, false);
-				aClass246_Sub5_6448.method3123(((AnimableEntity) this).height_level, ((Class246_Sub3_Sub4) this).aShort6158, ((Class246_Sub3_Sub4) this).aShort6160, ((Class246_Sub3_Sub4) this).aShort6157, ((Class246_Sub3_Sub4) this).aShort6159);
+				aClass246_Sub5_6448.method3120(var_ha, Class215.anInt1614, class87s, class35s, false);
+				aClass246_Sub5_6448.method3123(this.height_level, this.aShort6158, this.aShort6160, this.aShort6157, this.aShort6159);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("or.E(" + (class146 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + (class111 != null ? "{...}" : "null") + ')'));
 			}
@@ -99,13 +99,13 @@ final class Class246_Sub3_Sub4_Sub3 extends Class246_Sub3_Sub4 {
 	private final AbstractModel method3069(ha var_ha, int i, int i_13_, int i_14_) {
 		try {
 			Class107 class107 = Class196.aClass304_1509.method3564(2, i_14_);
-			s var_s = (Class98_Sub46_Sub2_Sub2.aSArray6298[((AnimableEntity) this).height_level]);
-			s var_s_15_ = (((AnimableEntity) this).aByte5081 < 3 ? (Class98_Sub46_Sub2_Sub2.aSArray6298[((AnimableEntity) this).aByte5081 + 1]) : null);
+			s var_s = (Class98_Sub46_Sub2_Sub2.aSArray6298[this.height_level]);
+			s var_s_15_ = (this.aByte5081 < 3 ? (Class98_Sub46_Sub2_Sub2.aSArray6298[this.aByte5081 + 1]) : null);
 			if (i_13_ != -18981)
 				method3067(92);
-			if (((Class246_Sub3_Sub4_Sub3) this).aBoolean6450)
-				return class107.method1722(var_ha, Class151_Sub7.aClass183_5001, -1, i, ((AnimableEntity) this).localXPos, true, var_s_15_, ((AnimableEntity) this).anInt5089, 0, var_s, ((AnimableEntity) this).localYPos, -1, (byte) 2);
-			return class107.method1722(var_ha, Class151_Sub7.aClass183_5001, anInt6456, i, ((AnimableEntity) this).localXPos, true, var_s_15_, ((AnimableEntity) this).anInt5089, anInt6452, var_s, ((AnimableEntity) this).localYPos, anInt6454, (byte) 2);
+			if (this.aBoolean6450)
+				return class107.method1722(var_ha, Class151_Sub7.aClass183_5001, -1, i, this.localXPos, true, var_s_15_, this.anInt5089, 0, var_s, this.localYPos, -1, (byte) 2);
+			return class107.method1722(var_ha, Class151_Sub7.aClass183_5001, anInt6456, i, this.localXPos, true, var_s_15_, this.anInt5089, anInt6452, var_s, this.localYPos, anInt6454, (byte) 2);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("or.C(" + (var_ha != null ? "{...}" : "null") + ',' + i + ',' + i_13_ + ',' + i_14_ + ')'));
 		}
@@ -148,7 +148,7 @@ final class Class246_Sub3_Sub4_Sub3 extends Class246_Sub3_Sub4 {
 			if (i > -2)
 				aClass171_6446 = null;
 			Class98_Sub17 class98_sub17 = (Class98_Sub17) Class167.aClass148_1284.method2418(32);
-			boolean bool = (Class255.draggedComponent != null || (Class156_Sub2.anInt3423 ^ 0xffffffff) < -1);
+			boolean bool = (Class255.draggedComponent != null || Class156_Sub2.anInt3423 > 0);
 			int i_20_ = class98_sub17.method1155(-115);
 			int i_21_ = class98_sub17.method1151(112);
 			if (bool)
@@ -164,21 +164,21 @@ final class Class246_Sub3_Sub4_Sub3 extends Class246_Sub3_Sub4 {
 
 	final Class246_Sub1 method2975(ha var_ha, int i) {
 		try {
-			AbstractModel class146 = method3069(var_ha, 0x800 | ((anInt6453 ^ 0xffffffff) != -1 ? 5 : 0), -18981, anInt6455);
+			AbstractModel class146 = method3069(var_ha, 0x800 | (anInt6453 != 0 ? 5 : 0), -18981, anInt6455);
 			if (class146 == null)
 				return null;
-			if ((anInt6453 ^ 0xffffffff) != -1)
+			if (anInt6453 != 0)
 				class146.a(2048 * anInt6453);
 			if (i > -12)
 				anInt6452 = -121;
 			Class111 class111 = var_ha.method1793();
-			class111.method2100(((AnimableEntity) this).localXPos, ((AnimableEntity) this).anInt5089, ((AnimableEntity) this).localYPos);
+			class111.method2100(this.localXPos, this.anInt5089, this.localYPos);
 			method3068(class146, var_ha, -17770, class111);
 			Class246_Sub1 class246_sub1 = Class94.method915(1, (byte) -47, false);
 			if (Class239.aBoolean1839)
-				class146.method2329(class111, (((Class246_Sub1) class246_sub1).aClass246_Sub6Array5067[0]), Class16.anInt197, 0);
+				class146.method2329(class111, (class246_sub1.aClass246_Sub6Array5067[0]), Class16.anInt197, 0);
 			else
-				class146.method2325(class111, (((Class246_Sub1) class246_sub1).aClass246_Sub6Array5067[0]), 0);
+				class146.method2325(class111, (class246_sub1.aClass246_Sub6Array5067[0]), 0);
 			if (aClass246_Sub5_6448 != null) {
 				Class242 class242 = aClass246_Sub5_6448.method3116();
 				if (!Class239.aBoolean1839)
@@ -198,9 +198,9 @@ final class Class246_Sub3_Sub4_Sub3 extends Class246_Sub3_Sub4 {
 	static final void method3071(int i, int i_22_, int i_23_, int i_24_, int i_25_) {
 		try {
 			if (i_22_ == -1) {
-				for (int i_26_ = 0; ((Class69_Sub2.anInt5335 ^ 0xffffffff) < (i_26_ ^ 0xffffffff)); i_26_++) {
+				for (int i_26_ = 0; (i_26_ < Class69_Sub2.anInt5335); i_26_++) {
 					Rectangle rectangle = Class98_Sub35.aRectangleArray4144[i_26_];
-					if (i_24_ < rectangle.width + rectangle.x && (rectangle.x ^ 0xffffffff) > (i_23_ + i_24_ ^ 0xffffffff) && ((i_25_ ^ 0xffffffff) > (rectangle.y - -rectangle.height ^ 0xffffffff)) && i + i_25_ > rectangle.y)
+					if (i_24_ < rectangle.width + rectangle.x && i_23_ + i_24_ > rectangle.x && (rectangle.y - -rectangle.height > i_25_) && i + i_25_ > rectangle.y)
 						aa_Sub3.aBooleanArray3574[i_26_] = true;
 				}
 				Class93_Sub1_Sub1.method908(i + i_25_, i_25_, false, i_24_, i_23_ + i_24_);
@@ -249,17 +249,17 @@ final class Class246_Sub3_Sub4_Sub3 extends Class246_Sub3_Sub4 {
 	final void method3073(byte i, int i_29_) {
 		do {
 			try {
-				if (!((Class246_Sub3_Sub4_Sub3) this).aBoolean6450) {
+				if (!this.aBoolean6450) {
 					anInt6452 += i_29_;
-					while ((anInt6452 ^ 0xffffffff) < ((((Class97) aClass97_6458).anIntArray811[anInt6456]) ^ 0xffffffff)) {
-						anInt6452 -= (((Class97) aClass97_6458).anIntArray811[anInt6456]);
+					while ((aClass97_6458.anIntArray811[anInt6456]) < anInt6452) {
+						anInt6452 -= (aClass97_6458.anIntArray811[anInt6456]);
 						anInt6456++;
-						if (anInt6456 >= (((Class97) aClass97_6458).anIntArray818).length) {
-							((Class246_Sub3_Sub4_Sub3) this).aBoolean6450 = true;
+						if (anInt6456 >= (aClass97_6458.anIntArray818).length) {
+							this.aBoolean6450 = true;
 							break;
 						}
 					}
-					if (((Class246_Sub3_Sub4_Sub3) this).aBoolean6450)
+					if (this.aBoolean6450)
 						break;
 					Class349.method3840((byte) -126, this, anInt6456, aClass97_6458);
 				}
@@ -277,7 +277,7 @@ final class Class246_Sub3_Sub4_Sub3 extends Class246_Sub3_Sub4 {
 				if (class146 == null)
 					break;
 				Class111 class111 = var_ha.method1793();
-				class111.method2100(((AnimableEntity) this).localXPos, ((AnimableEntity) this).anInt5089, ((AnimableEntity) this).localYPos);
+				class111.method2100(this.localXPos, this.anInt5089, this.localYPos);
 				method3068(class146, var_ha, -17770, class111);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("or.MA(" + (var_ha != null ? "{...}" : "null") + ',' + i + ')'));

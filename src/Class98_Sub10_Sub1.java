@@ -10,22 +10,22 @@ final class Class98_Sub10_Sub1 extends Class98_Sub10 {
 
 	final int[] method990(int i, int i_0_) {
 		try {
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_0_);
+			int[] is = this.aClass16_3863.method237((byte) 98, i_0_);
 			if (i != 255)
 				anInt5543 = 92;
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
+			if (this.aClass16_3863.aBoolean198) {
 				int[] is_1_ = this.method1000(i_0_ + -1 & za_Sub1.anInt6075, 0, i ^ 0xff);
 				int[] is_2_ = this.method1000(i_0_, 0, 0);
 				int[] is_3_ = this.method1000(za_Sub1.anInt6075 & 1 + i_0_, 0, 0);
-				for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > (Class25.anInt268 ^ 0xffffffff); i_4_++) {
+				for (int i_4_ = 0; Class25.anInt268 > i_4_; i_4_++) {
 					int i_5_ = anInt5541 * (is_3_[i_4_] - is_1_[i_4_]);
 					int i_6_ = ((is_2_[i_4_ - -1 & Class329.anInt2761] - is_2_[Class329.anInt2761 & i_4_ + -1]) * anInt5541);
-					int i_7_ = i_6_ >> 1820664684;
-					int i_8_ = i_5_ >> 1009040556;
-					int i_9_ = i_7_ * i_7_ >> 466133996;
-					int i_10_ = i_8_ * i_8_ >> -1631782228;
-					int i_11_ = (int) (4096.0 * Math.sqrt((double) ((float) (i_9_ - -i_10_ + 4096) / 4096.0F)));
-					int i_12_ = (i_11_ ^ 0xffffffff) != -1 ? 16777216 / i_11_ : 0;
+					int i_7_ = i_6_ >> 12;
+					int i_8_ = i_5_ >> 12;
+					int i_9_ = i_7_ * i_7_ >> 12;
+					int i_10_ = i_8_ * i_8_ >> 12;
+					int i_11_ = (int) (4096.0 * Math.sqrt((float) (i_9_ - -i_10_ + 4096) / 4096.0F));
+					int i_12_ = i_11_ != 0 ? 16777216 / i_11_ : 0;
 					is[i_4_] = 4096 + -i_12_;
 				}
 			}
@@ -82,7 +82,7 @@ final class Class98_Sub10_Sub1 extends Class98_Sub10 {
 			try {
 				if (i_13_ >= -92)
 					aClass207_5544 = null;
-				if ((i ^ 0xffffffff) != -1)
+				if (i != 0)
 					break;
 				anInt5541 = class98_sub22.readShort();
 			} catch (RuntimeException runtimeexception) {
@@ -148,7 +148,7 @@ final class Class98_Sub10_Sub1 extends Class98_Sub10 {
 
 	static final void method1004(int i, int i_15_) {
 		try {
-			if ((i_15_ ^ 0xffffffff) > -1 || (i_15_ ^ 0xffffffff) < -3)
+			if (i_15_ < 0 || i_15_ > 2)
 				i_15_ = 0;
 			if (i > -41)
 				aClass75Array5542 = null;
@@ -165,7 +165,7 @@ final class Class98_Sub10_Sub1 extends Class98_Sub10 {
 		try {
 			if (i_17_ != -23)
 				aClass207_5544 = null;
-			if ((0x800 & i ^ 0xffffffff) == -1 || (i_16_ & 0x37 ^ 0xffffffff) == -1)
+			if ((0x800 & i) == 0 || (i_16_ & 0x37) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

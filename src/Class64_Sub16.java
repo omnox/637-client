@@ -12,8 +12,8 @@ final class Class64_Sub16 extends Class64 {
 		try {
 			if (i != 0)
 				return 97;
-			if (!((Class64) this).aClass98_Sub27_495.method1291((byte) 118)) {
-				if (((Class98_Sub27) ((Class64) this).aClass98_Sub27_495).aClass64_Sub8_4042.method586(true) && Class151_Sub5.method2462(((Class98_Sub27) (((Class64) this).aClass98_Sub27_495)).aClass64_Sub8_4042.method583((byte) 124), (byte) 20))
+			if (!this.aClass98_Sub27_495.method1291((byte) 118)) {
+				if (this.aClass98_Sub27_495.aClass64_Sub8_4042.method586(true) && Class151_Sub5.method2462(this.aClass98_Sub27_495.aClass64_Sub8_4042.method583((byte) 124), (byte) 20))
 					return 1;
 				return 0;
 			}
@@ -27,7 +27,7 @@ final class Class64_Sub16 extends Class64 {
 		try {
 			if (i_0_ != 29053)
 				aClass65_3681 = null;
-			if (((Class64) this).aClass98_Sub27_495.method1291((byte) 117))
+			if (this.aClass98_Sub27_495.method1291((byte) 117))
 				return 3;
 			return 1;
 		} catch (RuntimeException runtimeexception) {
@@ -42,7 +42,7 @@ final class Class64_Sub16 extends Class64 {
 	final void method550(int i, int i_1_) {
 		try {
 			int i_2_ = -57 / ((-26 - i) / 41);
-			((Class64) this).anInt494 = i_1_;
+			this.anInt494 = i_1_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "mf.B(" + i + ',' + i_1_ + ')');
 		}
@@ -52,7 +52,7 @@ final class Class64_Sub16 extends Class64 {
 		try {
 			if (i != -1)
 				method614((byte) -99);
-			if (!((Class64) this).aClass98_Sub27_495.method1291((byte) 122))
+			if (!this.aClass98_Sub27_495.method1291((byte) 122))
 				return true;
 			return false;
 		} catch (RuntimeException runtimeexception) {
@@ -68,7 +68,7 @@ final class Class64_Sub16 extends Class64 {
 		try {
 			if (i <= 119)
 				anInt3680 = -41;
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "mf.E(" + i + ')');
 		}
@@ -78,10 +78,10 @@ final class Class64_Sub16 extends Class64 {
 		try {
 			if (i <= 118)
 				aClass207_3683 = null;
-			if (((Class64) this).aClass98_Sub27_495.method1291((byte) 117))
-				((Class64) this).anInt494 = 2;
-			if ((((Class64) this).anInt494 ^ 0xffffffff) > -1 || ((Class64) this).anInt494 > 2)
-				((Class64) this).anInt494 = method552(0);
+			if (this.aClass98_Sub27_495.method1291((byte) 117))
+				this.anInt494 = 2;
+			if (this.anInt494 < 0 || this.anInt494 > 2)
+				this.anInt494 = method552(0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "mf.C(" + i + ')');
 		}

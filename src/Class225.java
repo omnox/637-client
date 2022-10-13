@@ -56,27 +56,27 @@ final class Class225 {
 	private final void method2845(int i) throws IOException {
 		try {
 			if (aLong1693 != (long) i) {
-				if ((aLong1693 ^ 0xffffffffffffffffL) != (aLong1688 ^ 0xffffffffffffffffL)) {
+				if (aLong1688 != aLong1693) {
 					aClass356_1692.method3877((byte) 97, aLong1693);
 					aLong1688 = aLong1693;
 				}
 				aClass356_1692.method3882(aByteArray1691, 4657, 0, anInt1698);
-				aLong1688 += (long) anInt1698;
+				aLong1688 += anInt1698;
 				if (aLong1688 > aLong1690)
 					aLong1690 = aLong1688;
 				long l = -1L;
 				if (aLong1694 > aLong1693 || aLong1693 >= (long) anInt1696 + aLong1694) {
-					if (((aLong1693 ^ 0xffffffffffffffffL) >= (aLong1694 ^ 0xffffffffffffffffL)) && ((aLong1694 ^ 0xffffffffffffffffL) > ((long) anInt1698 + aLong1693 ^ 0xffffffffffffffffL)))
+					if ((aLong1694 >= aLong1693) && ((long) anInt1698 + aLong1693 > aLong1694))
 						l = aLong1694;
 				} else
 					l = aLong1693;
 				long l_0_ = -1L;
-				if ((((long) anInt1698 + aLong1693 ^ 0xffffffffffffffffL) >= (aLong1694 ^ 0xffffffffffffffffL)) || (aLong1693 + (long) anInt1698 > aLong1694 + (long) anInt1696)) {
-					if (((aLong1693 ^ 0xffffffffffffffffL) > (aLong1694 + (long) anInt1696 ^ 0xffffffffffffffffL)) && (((long) anInt1698 + aLong1693 ^ 0xffffffffffffffffL) <= (aLong1694 + (long) anInt1696 ^ 0xffffffffffffffffL)))
+				if ((aLong1694 >= (long) anInt1698 + aLong1693) || (aLong1693 + (long) anInt1698 > aLong1694 + (long) anInt1696)) {
+					if ((aLong1694 + (long) anInt1696 > aLong1693) && (aLong1694 + (long) anInt1696 <= (long) anInt1698 + aLong1693))
 						l_0_ = (long) anInt1696 + aLong1694;
 				} else
 					l_0_ = (long) anInt1698 + aLong1693;
-				if ((l ^ 0xffffffffffffffffL) < 0L && l < l_0_) {
+				if (l > -1 && l < l_0_) {
 					int i_1_ = (int) (-l + l_0_);
 					Class236.method2894(aByteArray1691, (int) (l - aLong1693), aByteArray1687, (int) (l + -aLong1694), i_1_);
 				}
@@ -91,7 +91,7 @@ final class Class225 {
 	final void method2846(long l, int i) throws IOException {
 		do {
 			try {
-				if ((l ^ 0xffffffffffffffffL) > -1L)
+				if (l < 0)
 					throw new IOException("Invalid seek to " + l + " in file " + method2844((byte) -127));
 				aLong1697 = l;
 				if (i == 0)
@@ -118,7 +118,7 @@ final class Class225 {
 		try {
 			Class98_Sub46_Sub17 class98_sub46_sub17 = Class185.setCS2StringOrVarc(i, -113, i_2_);
 			class98_sub46_sub17.method1626((byte) -103);
-			((Class98_Sub46_Sub17) class98_sub46_sub17).anInt6054 = i_3_;
+			class98_sub46_sub17.anInt6054 = i_3_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ofa.J(" + i + ',' + i_2_ + ',' + i_3_ + ')'));
 		}
@@ -127,53 +127,53 @@ final class Class225 {
 	final void method2849(int i, byte[] is, int i_4_, int i_5_) throws IOException {
 		try {
 			try {
-				if ((is.length ^ 0xffffffff) > (i_5_ + i ^ 0xffffffff))
+				if (i_5_ + i > is.length)
 					throw new ArrayIndexOutOfBoundsException(i_5_ + i - is.length);
 				if (i_4_ != -12913)
 					return;
-				if (aLong1693 != -1L && ((aLong1693 ^ 0xffffffffffffffffL) >= (aLong1697 ^ 0xffffffffffffffffL)) && (((long) i_5_ + aLong1697 ^ 0xffffffffffffffffL) >= (aLong1693 - -(long) anInt1698 ^ 0xffffffffffffffffL))) {
+				if (aLong1693 != -1L && (aLong1697 >= aLong1693) && (aLong1693 - -(long) anInt1698 >= (long) i_5_ + aLong1697)) {
 					Class236.method2894(aByteArray1691, (int) (aLong1697 - aLong1693), is, i, i_5_);
-					aLong1697 += (long) i_5_;
+					aLong1697 += i_5_;
 					return;
 				}
 				long l = aLong1697;
 				int i_6_ = i;
 				int i_7_ = i_5_;
-				if (((aLong1697 ^ 0xffffffffffffffffL) <= (aLong1694 ^ 0xffffffffffffffffL)) && (((long) anInt1696 + aLong1694 ^ 0xffffffffffffffffL) < (aLong1697 ^ 0xffffffffffffffffL))) {
+				if ((aLong1694 <= aLong1697) && (aLong1697 < (long) anInt1696 + aLong1694)) {
 					int i_8_ = (int) ((long) anInt1696 + -aLong1697 + aLong1694);
-					if ((i_5_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff))
+					if (i_8_ > i_5_)
 						i_8_ = i_5_;
 					Class236.method2894(aByteArray1687, (int) (aLong1697 - aLong1694), is, i, i_8_);
 					i += i_8_;
-					aLong1697 += (long) i_8_;
+					aLong1697 += i_8_;
 					i_5_ -= i_8_;
 				}
 				if (i_5_ <= aByteArray1687.length) {
 					if (i_5_ > 0) {
 						method2850((byte) 113);
 						int i_9_ = i_5_;
-						if ((anInt1696 ^ 0xffffffff) > (i_9_ ^ 0xffffffff))
+						if (i_9_ > anInt1696)
 							i_9_ = anInt1696;
 						Class236.method2894(aByteArray1687, 0, is, i, i_9_);
 						i += i_9_;
 						i_5_ -= i_9_;
-						aLong1697 += (long) i_9_;
+						aLong1697 += i_9_;
 					}
 				} else {
 					aClass356_1692.method3877((byte) -121, aLong1697);
 					aLong1688 = aLong1697;
-					while ((i_5_ ^ 0xffffffff) < -1) {
+					while (i_5_ > 0) {
 						int i_10_ = aClass356_1692.method3879(i_5_, (byte) -26, i, is);
 						if (i_10_ == -1)
 							break;
 						i += i_10_;
-						aLong1688 += (long) i_10_;
+						aLong1688 += i_10_;
 						i_5_ -= i_10_;
-						aLong1697 += (long) i_10_;
+						aLong1697 += i_10_;
 					}
 				}
 				if (aLong1693 != -1L) {
-					if (((aLong1697 ^ 0xffffffffffffffffL) > (aLong1693 ^ 0xffffffffffffffffL)) && i_5_ > 0) {
+					if ((aLong1693 > aLong1697) && i_5_ > 0) {
 						int i_11_ = (int) (aLong1693 - aLong1697) + i;
 						if (i_11_ > i_5_ + i)
 							i_11_ = i_5_ + i;
@@ -186,12 +186,12 @@ final class Class225 {
 					long l_12_ = -1L;
 					if (l <= aLong1693 && l + (long) i_7_ > aLong1693)
 						l_12_ = aLong1693;
-					else if (((l ^ 0xffffffffffffffffL) <= (aLong1693 ^ 0xffffffffffffffffL)) && l < (long) anInt1698 + aLong1693)
+					else if ((aLong1693 <= l) && l < (long) anInt1698 + aLong1693)
 						l_12_ = l;
 					long l_13_ = -1L;
 					if (l < aLong1693 + (long) anInt1698 && (long) anInt1698 + aLong1693 <= l + (long) i_7_)
 						l_13_ = aLong1693 - -(long) anInt1698;
-					else if (((l + (long) i_7_ ^ 0xffffffffffffffffL) < (aLong1693 ^ 0xffffffffffffffffL)) && ((l - -(long) i_7_ ^ 0xffffffffffffffffL) >= ((long) anInt1698 + aLong1693 ^ 0xffffffffffffffffL)))
+					else if ((aLong1693 < l + (long) i_7_) && ((long) anInt1698 + aLong1693 >= l - -(long) i_7_))
 						l_13_ = (long) i_7_ + l;
 					if (l_12_ > -1L && l_12_ < l_13_) {
 						int i_14_ = (int) (l_13_ - l_12_);
@@ -206,7 +206,7 @@ final class Class225 {
 				aLong1688 = -1L;
 				throw ioexception;
 			}
-			if ((i_5_ ^ 0xffffffff) < -1)
+			if (i_5_ > 0)
 				throw new EOFException();
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ofa.C(" + i + ',' + (is != null ? "{...}" : "null") + ',' + i_4_ + ',' + i_5_ + ')'));
@@ -216,7 +216,7 @@ final class Class225 {
 	private final void method2850(byte i) throws IOException {
 		try {
 			anInt1696 = 0;
-			if ((aLong1688 ^ 0xffffffffffffffffL) != (aLong1697 ^ 0xffffffffffffffffL)) {
+			if (aLong1697 != aLong1688) {
 				aClass356_1692.method3877((byte) -74, aLong1697);
 				aLong1688 = aLong1697;
 			}
@@ -231,7 +231,7 @@ final class Class225 {
 				i_15_ = aClass356_1692.method3879(i_16_, (byte) -26, anInt1696, aByteArray1687);
 				if (i_15_ == -1)
 					break;
-				aLong1688 += (long) i_15_;
+				aLong1688 += i_15_;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ofa.H(" + i + ')');
@@ -250,49 +250,49 @@ final class Class225 {
 	final void method2852(int i, int i_17_, int i_18_, byte[] is) throws IOException {
 		try {
 			try {
-				if (((long) i + aLong1697 ^ 0xffffffffffffffffL) < (aLong1689 ^ 0xffffffffffffffffL))
+				if (aLong1689 < (long) i + aLong1697)
 					aLong1689 = aLong1697 - -(long) i;
-				if ((aLong1693 ^ 0xffffffffffffffffL) != 0L && (aLong1697 < aLong1693 || ((aLong1697 ^ 0xffffffffffffffffL) < ((long) anInt1698 + aLong1693 ^ 0xffffffffffffffffL))))
+				if (aLong1693 != -1 && (aLong1697 < aLong1693 || ((long) anInt1698 + aLong1693 < aLong1697)))
 					method2845(-1);
-				if (aLong1693 != (long) i_18_ && ((aLong1693 + (long) aByteArray1691.length ^ 0xffffffffffffffffL) > (aLong1697 + (long) i ^ 0xffffffffffffffffL))) {
+				if (aLong1693 != (long) i_18_ && (aLong1697 + (long) i > aLong1693 + (long) aByteArray1691.length)) {
 					int i_19_ = (int) ((long) aByteArray1691.length - (aLong1697 + -aLong1693));
 					Class236.method2894(is, i_17_, aByteArray1691, (int) (aLong1697 - aLong1693), i_19_);
-					aLong1697 += (long) i_19_;
+					aLong1697 += i_19_;
 					i_17_ += i_19_;
 					i -= i_19_;
 					anInt1698 = aByteArray1691.length;
 					method2845(-1);
 				}
-				if ((i ^ 0xffffffff) < (aByteArray1691.length ^ 0xffffffff)) {
-					if ((aLong1697 ^ 0xffffffffffffffffL) != (aLong1688 ^ 0xffffffffffffffffL)) {
+				if (aByteArray1691.length < i) {
+					if (aLong1688 != aLong1697) {
 						aClass356_1692.method3877((byte) -23, aLong1697);
 						aLong1688 = aLong1697;
 					}
 					aClass356_1692.method3882(is, i_18_ + 4658, i_17_, i);
-					aLong1688 += (long) i;
+					aLong1688 += i;
 					if (aLong1690 < aLong1688)
 						aLong1690 = aLong1688;
 					long l = -1L;
 					long l_20_ = -1L;
-					if (((aLong1694 ^ 0xffffffffffffffffL) >= (aLong1697 ^ 0xffffffffffffffffL)) && aLong1694 - -(long) anInt1696 > aLong1697)
+					if ((aLong1697 >= aLong1694) && aLong1694 - -(long) anInt1696 > aLong1697)
 						l = aLong1697;
-					else if (((aLong1694 ^ 0xffffffffffffffffL) <= (aLong1697 ^ 0xffffffffffffffffL)) && (long) i + aLong1697 > aLong1694)
+					else if ((aLong1697 <= aLong1694) && (long) i + aLong1697 > aLong1694)
 						l = aLong1694;
-					if (aLong1694 < aLong1697 - -(long) i && (((long) anInt1696 + aLong1694 ^ 0xffffffffffffffffL) <= (aLong1697 + (long) i ^ 0xffffffffffffffffL)))
+					if (aLong1694 < aLong1697 - -(long) i && (aLong1697 + (long) i <= (long) anInt1696 + aLong1694))
 						l_20_ = (long) i + aLong1697;
-					else if (aLong1697 < (long) anInt1696 + aLong1694 && ((aLong1694 + (long) anInt1696 ^ 0xffffffffffffffffL) >= (aLong1697 + (long) i ^ 0xffffffffffffffffL)))
+					else if (aLong1697 < (long) anInt1696 + aLong1694 && (aLong1697 + (long) i >= aLong1694 + (long) anInt1696))
 						l_20_ = aLong1694 - -(long) anInt1696;
 					if (l > -1L && l_20_ > l) {
 						int i_21_ = (int) (-l + l_20_);
 						Class236.method2894(is, (int) (-aLong1697 + l + (long) i_17_), aByteArray1687, (int) (l + -aLong1694), i_21_);
 					}
-					aLong1697 += (long) i;
+					aLong1697 += i;
 				} else if (i > 0) {
-					if ((aLong1693 ^ 0xffffffffffffffffL) == 0L)
+					if (aLong1693 == -1)
 						aLong1693 = aLong1697;
 					Class236.method2894(is, i_17_, aByteArray1691, (int) (aLong1697 - aLong1693), i);
-					aLong1697 += (long) i;
-					if (((long) anInt1698 ^ 0xffffffffffffffffL) > (aLong1697 - aLong1693 ^ 0xffffffffffffffffL))
+					aLong1697 += i;
+					if (aLong1697 - aLong1693 > (long) anInt1698)
 						anInt1698 = (int) (aLong1697 + -aLong1693);
 				}
 			} catch (IOException ioexception) {

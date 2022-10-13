@@ -47,7 +47,7 @@ final class Class59 {
 		try {
 			Class60 class60;
 			synchronized (aClass79_467) {
-				class60 = (Class60) aClass79_467.get((long) i);
+				class60 = (Class60) aClass79_467.get(i);
 			}
 			if (class60 != null)
 				return class60;
@@ -61,7 +61,7 @@ final class Class59 {
 			if (is != null)
 				class60.method533(new RSByteBuffer(is), 0);
 			synchronized (aClass79_467) {
-				aClass79_467.put((long) i, class60);
+				aClass79_467.put(i, class60);
 			}
 			return class60;
 		} catch (RuntimeException runtimeexception) {
@@ -75,14 +75,14 @@ final class Class59 {
 				anInt466 = 103;
 			Class175[] class175s = null;
 			Class60 class60 = method527(i_6_, (byte) -120);
-			if (((Class60) class60).anIntArray473 != null) {
-				class175s = new Class175[((Class60) class60).anIntArray473.length];
+			if (class60.anIntArray473 != null) {
+				class175s = new Class175[class60.anIntArray473.length];
 				for (int i_10_ = 0; i_10_ < class175s.length; i_10_++) {
-					Class266 class266 = class115.method2157((((Class60) class60).anIntArray473[i_10_]), (byte) -87);
-					class175s[i_10_] = new Class175(((Class266) class266).anInt1993, ((Class266) class266).anInt1995, ((Class266) class266).anInt1990, ((Class266) class266).anInt1989, ((Class266) class266).anInt1987, ((Class266) class266).anInt1984, ((Class266) class266).anInt1991, ((Class266) class266).aBoolean1985);
+					Class266 class266 = class115.method2157((class60.anIntArray473[i_10_]), (byte) -87);
+					class175s[i_10_] = new Class175(class266.anInt1993, class266.anInt1995, class266.anInt1990, class266.anInt1989, class266.anInt1987, class266.anInt1984, class266.anInt1991, class266.aBoolean1985);
 				}
 			}
-			return new Class346(((Class60) class60).anInt470, class175s, ((Class60) class60).anInt472, i_8_, i_7_, i_9_);
+			return new Class346(class60.anInt470, class175s, class60.anInt472, i_8_, i_7_, i_9_);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("eaa.G(" + i + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (class115 != null ? "{...}" : "null") + ',' + i_9_ + ')'));
 		}

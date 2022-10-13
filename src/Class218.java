@@ -15,7 +15,7 @@ final class Class218 {
 		try {
 			int i_0_ = 72 / ((-43 - i) / 56);
 			for (;;) {
-				Class246 class246 = ((Class246) aClass246_1632).aClass246_1874;
+				Class246 class246 = aClass246_1632.aClass246_1874;
 				if (aClass246_1632 == class246)
 					break;
 				class246.method2965((byte) -2);
@@ -30,12 +30,12 @@ final class Class218 {
 		try {
 			if (i != 15)
 				aClass348_1630 = null;
-			Class246 class246 = ((Class246) aClass246_1632).aClass246_1874;
+			Class246 class246 = aClass246_1632.aClass246_1874;
 			if (class246 == aClass246_1632) {
 				aClass246_1633 = null;
 				return null;
 			}
-			aClass246_1633 = ((Class246) class246).aClass246_1874;
+			aClass246_1633 = class246.aClass246_1874;
 			return class246;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "o.I(" + i + ')');
@@ -58,7 +58,7 @@ final class Class218 {
 		try {
 			if (i != -72)
 				aClass212_1634 = null;
-			Class246 class246 = ((Class246) aClass246_1632).aClass246_1874;
+			Class246 class246 = aClass246_1632.aClass246_1874;
 			if (aClass246_1632 == class246)
 				return null;
 			class246.method2965((byte) -63);
@@ -74,7 +74,7 @@ final class Class218 {
 				method2806(-21, -126, true);
 			Class98_Sub46_Sub17 class98_sub46_sub17 = Class185.setCS2StringOrVarc(i, -104, 5);
 			class98_sub46_sub17.method1626((byte) -103);
-			((Class98_Sub46_Sub17) class98_sub46_sub17).anInt6054 = i_2_;
+			class98_sub46_sub17.anInt6054 = i_2_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("o.K(" + i + ',' + i_2_ + ',' + bool + ')'));
 		}
@@ -83,12 +83,12 @@ final class Class218 {
 	static final void method2807(int i, int i_3_, int i_4_) {
 		Class172 class172 = Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[i][i_3_][i_4_];
 		if (class172 != null) {
-			Class129.method2227(((Class172) class172).aClass246_Sub3_Sub5_1334);
-			Class129.method2227(((Class172) class172).aClass246_Sub3_Sub5_1326);
-			if (((Class172) class172).aClass246_Sub3_Sub5_1334 != null)
-				((Class172) class172).aClass246_Sub3_Sub5_1334 = null;
-			if (((Class172) class172).aClass246_Sub3_Sub5_1326 != null)
-				((Class172) class172).aClass246_Sub3_Sub5_1326 = null;
+			Class129.method2227(class172.aClass246_Sub3_Sub5_1334);
+			Class129.method2227(class172.aClass246_Sub3_Sub5_1326);
+			if (class172.aClass246_Sub3_Sub5_1334 != null)
+				class172.aClass246_Sub3_Sub5_1334 = null;
+			if (class172.aClass246_Sub3_Sub5_1326 != null)
+				class172.aClass246_Sub3_Sub5_1326 = null;
 		}
 	}
 
@@ -96,12 +96,12 @@ final class Class218 {
 		try {
 			if (bool != true)
 				method2811(119);
-			if (((Class246) class246).aClass246_1873 != null)
+			if (class246.aClass246_1873 != null)
 				class246.method2965((byte) 127);
-			((Class246) class246).aClass246_1873 = ((Class246) aClass246_1632).aClass246_1873;
-			((Class246) class246).aClass246_1874 = aClass246_1632;
-			((Class246) ((Class246) class246).aClass246_1873).aClass246_1874 = class246;
-			((Class246) ((Class246) class246).aClass246_1874).aClass246_1873 = class246;
+			class246.aClass246_1873 = aClass246_1632.aClass246_1873;
+			class246.aClass246_1874 = aClass246_1632;
+			class246.aClass246_1873.aClass246_1874 = class246;
+			class246.aClass246_1874.aClass246_1873 = class246;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("o.G(" + bool + ',' + (class246 != null ? "{...}" : "null") + ')'));
 		}
@@ -116,7 +116,7 @@ final class Class218 {
 			}
 			if (bool != false)
 				return null;
-			aClass246_1633 = ((Class246) class246).aClass246_1874;
+			aClass246_1633 = class246.aClass246_1874;
 			return class246;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "o.H(" + bool + ')');
@@ -125,14 +125,14 @@ final class Class218 {
 
 	final Class246 method2810(byte i) {
 		try {
-			Class246 class246 = ((Class246) aClass246_1632).aClass246_1873;
+			Class246 class246 = aClass246_1632.aClass246_1873;
 			if (i > -33)
 				aString1636 = null;
 			if (aClass246_1632 == class246) {
 				aClass246_1633 = null;
 				return null;
 			}
-			aClass246_1633 = ((Class246) class246).aClass246_1873;
+			aClass246_1633 = class246.aClass246_1873;
 			return class246;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "o.E(" + i + ')');
@@ -144,9 +144,9 @@ final class Class218 {
 			if (i != 15)
 				method2804((byte) -5);
 			int i_5_ = 0;
-			Class246 class246 = ((Class246) aClass246_1632).aClass246_1874;
+			Class246 class246 = aClass246_1632.aClass246_1874;
 			while (class246 != aClass246_1632) {
-				class246 = ((Class246) class246).aClass246_1874;
+				class246 = class246.aClass246_1874;
 				i_5_++;
 			}
 			return i_5_;
@@ -159,7 +159,7 @@ final class Class218 {
 		try {
 			if (bool != true)
 				aString1636 = null;
-			if (((Class246) aClass246_1632).aClass246_1874 != aClass246_1632)
+			if (aClass246_1632.aClass246_1874 != aClass246_1632)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -169,8 +169,8 @@ final class Class218 {
 
 	public Class218() {
 		try {
-			((Class246) aClass246_1632).aClass246_1874 = aClass246_1632;
-			((Class246) aClass246_1632).aClass246_1873 = aClass246_1632;
+			aClass246_1632.aClass246_1874 = aClass246_1632;
+			aClass246_1632.aClass246_1873 = aClass246_1632;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "o.<init>(" + ')');
 		}

@@ -56,7 +56,7 @@ final class Class98_Sub5_Sub1 extends Class98_Sub5 {
 			Class265.aHa1974.method1768();
 			Class265.aHa1974.method1802();
 			Class265.aHa1974.method1756();
-			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, !bool ? 0 : 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub5_4065));
+			Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, !bool ? 0 : 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub5_4065));
 			Class310.method3618(-5964);
 			return true;//
 		} catch (RuntimeException runtimeexception) {
@@ -66,11 +66,11 @@ final class Class98_Sub5_Sub1 extends Class98_Sub5 {
 
 	final void method955(int i, byte i_3_, int i_4_, int i_5_) {
 		try {
-			((Class98_Sub5) this).anInt3833 = i_4_;
-			((Class98_Sub5) this).anInt3834 = i;
+			this.anInt3833 = i_4_;
+			this.anInt3834 = i;
 			if (i_3_ > -120)
 				aClass348_5534 = null;
-			((Class98_Sub5) this).anInt3830 = i_5_;
+			this.anInt3830 = i_5_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("fi.A(" + i + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'));
 		}
@@ -94,7 +94,7 @@ final class Class98_Sub5_Sub1 extends Class98_Sub5 {
 	final void method959(float f, int i) {
 		do {
 			try {
-				((Class98_Sub5) this).aFloat3832 = f;
+				this.aFloat3832 = f;
 				if (i > 12)
 					break;
 				method955(55, (byte) 80, -52, 106);

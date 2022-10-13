@@ -29,7 +29,7 @@ final class t extends s implements Interface9 {
 				if (bools[i_21_][i_22_]) {
 					int i_23_ = i - i_17_ + i_21_;
 					int i_24_ = i_16_ - i_17_ + i_22_;
-					if (i_23_ >= 0 && i_23_ < ((s) this).anInt2203 && i_24_ >= 0 && i_24_ < ((s) this).anInt2204)
+					if (i_23_ >= 0 && i_23_ < this.anInt2203 && i_24_ >= 0 && i_24_ < this.anInt2204)
 						method3425(i_23_, i_24_);
 				}
 			}
@@ -52,7 +52,7 @@ final class t extends s implements Interface9 {
 				if (bools[i_33_][i_34_]) {
 					int i_35_ = i - i_30_ + i_33_;
 					int i_36_ = i_29_ - i_30_ + i_34_;
-					if (i_35_ >= 0 && i_35_ < ((s) this).anInt2203 && i_36_ >= 0 && i_36_ < ((s) this).anInt2204)
+					if (i_35_ >= 0 && i_35_ < this.anInt2203 && i_36_ >= 0 && i_36_ < this.anInt2204)
 						method3425(i_35_, i_36_);
 				}
 			}
@@ -147,7 +147,7 @@ final class t extends s implements Interface9 {
 	}
 
 	protected final void finalize() {
-		if (((t) this).nativeid != 0L)
+		if (this.nativeid != 0L)
 			Class192.method2654(false, this);
 	}
 
@@ -162,6 +162,6 @@ final class t extends s implements Interface9 {
 	t(oa var_oa, ya var_ya, int i, int i_89_, int[][] is, int[][] is_90_, int i_91_, int i_92_, int i_93_) {
 		super(i, i_89_, i_91_, is);
 		anOa3325 = var_oa;
-		ga(anOa3325, var_ya, i, i_89_, ((s) this).anIntArrayArray2201, is_90_, i_91_, i_92_, i_93_);
+		ga(anOa3325, var_ya, i, i_89_, this.anIntArrayArray2201, is_90_, i_91_, i_92_, i_93_);
 	}
 }

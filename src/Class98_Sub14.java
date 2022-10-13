@@ -7,7 +7,7 @@ final class Class98_Sub14 extends Node {
 
 	Class98_Sub14(byte[] is) {
 		try {
-			((Class98_Sub14) this).aByteArray3914 = is;
+			this.aByteArray3914 = is;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ga.<init>(" + (is != null ? "{...}" : "null") + ')');
 		}

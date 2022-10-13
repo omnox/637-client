@@ -36,12 +36,12 @@ final class Class101 {
 	static final void method1697(Class98_Sub46 class98_sub46, byte i, Class98_Sub46 class98_sub46_0_) {
 		try {
 			if (i == 37) {
-				if (((Class98_Sub46) class98_sub46_0_).aClass98_Sub46_4265 != null)
+				if (class98_sub46_0_.aClass98_Sub46_4265 != null)
 					class98_sub46_0_.method1524((byte) -90);
-				((Class98_Sub46) class98_sub46_0_).aClass98_Sub46_4262 = ((Class98_Sub46) class98_sub46).aClass98_Sub46_4262;
-				((Class98_Sub46) class98_sub46_0_).aClass98_Sub46_4265 = class98_sub46;
-				((Class98_Sub46) (((Class98_Sub46) class98_sub46_0_).aClass98_Sub46_4265)).aClass98_Sub46_4262 = class98_sub46_0_;
-				((Class98_Sub46) (((Class98_Sub46) class98_sub46_0_).aClass98_Sub46_4262)).aClass98_Sub46_4265 = class98_sub46_0_;
+				class98_sub46_0_.aClass98_Sub46_4262 = class98_sub46.aClass98_Sub46_4262;
+				class98_sub46_0_.aClass98_Sub46_4265 = class98_sub46;
+				class98_sub46_0_.aClass98_Sub46_4265.aClass98_Sub46_4262 = class98_sub46_0_;
+				class98_sub46_0_.aClass98_Sub46_4262.aClass98_Sub46_4265 = class98_sub46_0_;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("gf.E(" + (class98_sub46 != null ? "{...}" : "null") + ',' + i + ',' + (class98_sub46_0_ != null ? "{...}" : "null") + ')'));
@@ -66,7 +66,7 @@ final class Class101 {
 			Class287_Sub2.method3391(dimension.height, dimension.width, 2);
 			if (i != 7)
 				method1699(null, -101);
-			if ((Class98_Sub46.anInt4261 ^ 0xffffffff) != -2)
+			if (Class98_Sub46.anInt4261 != 1)
 				Class154.aHa1231.method1741(canvas, Class151_Sub7.anInt5005, ParamType.anInt1208);
 			else
 				Class154.aHa1231.method1741(canvas, aa_Sub1.anInt3556, IncomingMessages.anInt5519);
@@ -78,7 +78,7 @@ final class Class101 {
 	final int method1700(int i) {
 		try {
 			if (i != 7)
-				((Class101) this).anInt851 = 29;
+				this.anInt851 = 29;
 			return 0x7 & aByte855;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "gf.A(" + i + ')');
@@ -89,7 +89,7 @@ final class Class101 {
 		Class172 class172 = Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[i][i_1_][i_2_];
 		if (class172 == null)
 			return null;
-		return ((Class172) class172).aClass246_Sub3_Sub5_1334;
+		return class172.aClass246_Sub3_Sub5_1334;
 	}
 
 	public Class101() {
@@ -120,11 +120,11 @@ final class Class101 {
 	Class101(RSByteBuffer class98_sub22) {
 		try {
 			aByte855 = class98_sub22.readSignedByte();
-			((Class101) this).anInt852 = class98_sub22.readShort();
-			((Class101) this).anInt847 = class98_sub22.readInt(-2);
-			((Class101) this).anInt853 = class98_sub22.readInt(-2);
-			((Class101) this).anInt851 = class98_sub22.readInt(-2);
-			((Class101) this).anInt850 = class98_sub22.readInt(-2);
+			this.anInt852 = class98_sub22.readShort();
+			this.anInt847 = class98_sub22.readInt(-2);
+			this.anInt853 = class98_sub22.readInt(-2);
+			this.anInt851 = class98_sub22.readInt(-2);
+			this.anInt850 = class98_sub22.readInt(-2);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "gf.<init>(" + (class98_sub22 != null ? "{...}" : "null") + ')');
 		}

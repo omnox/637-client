@@ -12,8 +12,8 @@ final class Class296 {
 	}
 
 	Class296(Class296 class296_0_) {
-		((Class296) this).anInt2411 = ((Class296) class296_0_).anInt2411;
-		((Class296) this).anInt2412 = ((Class296) class296_0_).anInt2412;
-		((Class296) this).anInt2413 = ((Class296) class296_0_).anInt2413;
+		this.anInt2411 = class296_0_.anInt2411;
+		this.anInt2412 = class296_0_.anInt2412;
+		this.anInt2413 = class296_0_.anInt2413;
 	}
 }

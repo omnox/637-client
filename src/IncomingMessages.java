@@ -22,7 +22,7 @@ final class IncomingMessages extends Class48_Sub1 {
 	final boolean method464(byte i, Class42_Sub2 class42_sub2, float f, Class42_Sub2 class42_sub2_0_) {
 		try {
 			boolean bool = true;
-			Class288 class288 = ((ha_Sub1) aHa_Sub1_5517).aClass288_4363;
+			Class288 class288 = aHa_Sub1_5517.aClass288_4363;
 			aHa_Sub1_5517.K(Class21.anIntArray3232);
 			aHa_Sub1_5517.la();
 			aHa_Sub1_5517.method1867(i + 29479);
@@ -32,7 +32,7 @@ final class IncomingMessages extends Class48_Sub1 {
 			OpenGL.glMatrixMode(5888);
 			OpenGL.glLoadIdentity();
 			OpenGL.glPushAttrib(2048);
-			OpenGL.glViewport(0, 0, ((Class42_Sub2) aClass42_Sub2_5516).anInt5357, ((Class42_Sub2) aClass42_Sub2_5516).anInt5357);
+			OpenGL.glViewport(0, 0, aClass42_Sub2_5516.anInt5357, aClass42_Sub2_5516.anInt5357);
 			aHa_Sub1_5517.method1856(false, i ^ ~0x1b16);
 			aHa_Sub1_5517.method1851(false, false);
 			aHa_Sub1_5517.method1881(false, false);
@@ -46,7 +46,7 @@ final class IncomingMessages extends Class48_Sub1 {
 			aHa_Sub1_5517.method1896(260, 1);
 			aHa_Sub1_5517.method1863(1, class42_sub2);
 			aHa_Sub1_5517.method1898(true, class288);
-			for (int i_1_ = 0; (i_1_ ^ 0xffffffff) > -7; i_1_++) {
+			for (int i_1_ = 0; i_1_ < 6; i_1_++) {
 				int i_2_ = i_1_ + 34069;
 				class288.method3402(i_2_, i + 21, 0, aClass42_Sub2_5516);
 				class288.method3404(0, 0);
@@ -61,12 +61,12 @@ final class IncomingMessages extends Class48_Sub1 {
 						while_45_: do {
 							while_44_: do {
 								do {
-									if ((i_3_ ^ 0xffffffff) != -34070) {
-										if ((i_3_ ^ 0xffffffff) != -34071) {
+									if (i_3_ != 34069) {
+										if (i_3_ != 34070) {
 											if (i_3_ != 34071) {
 												if (i_3_ != 34072) {
 													if (i_3_ != 34073) {
-														if ((i_3_ ^ 0xffffffff) != -34075)
+														if (i_3_ != 34074)
 															break while_47_;
 													} else
 														break while_45_;
@@ -173,7 +173,7 @@ final class IncomingMessages extends Class48_Sub1 {
 				method466(true);
 			OpenGL.glPopAttrib();
 			aHa_Sub1_5517.KA(Class21.anIntArray3232[0], Class21.anIntArray3232[1], Class21.anIntArray3232[2], Class21.anIntArray3232[3]);
-			if (bool && !((ha_Sub1) aHa_Sub1_5517).aBoolean4406)
+			if (bool && !aHa_Sub1_5517.aBoolean4406)
 				aClass42_Sub2_5516.method371(69);
 			return bool;
 		} catch (RuntimeException runtimeexception) {
@@ -185,7 +185,7 @@ final class IncomingMessages extends Class48_Sub1 {
 		try {
 			if (i != -65534)
 				method467(-59);
-			return ((Class42_Sub2) aClass42_Sub2_5516).anInt5357;
+			return aClass42_Sub2_5516.anInt5357;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cv.J(" + i + ')');
 		}
@@ -232,7 +232,7 @@ final class IncomingMessages extends Class48_Sub1 {
 
 	static final boolean method468(boolean bool, int i, int i_4_, String string) {
 		try {
-			if ((i_4_ ^ 0xffffffff) > -3 || (i_4_ ^ 0xffffffff) < -37)
+			if (i_4_ < 2 || i_4_ > 36)
 				throw new IllegalArgumentException("Invalid radix:" + i_4_);
 			if (i != 30883)
 				return false;
@@ -240,7 +240,7 @@ final class IncomingMessages extends Class48_Sub1 {
 			boolean bool_6_ = false;
 			int i_7_ = 0;
 			int i_8_ = string.length();
-			for (int i_9_ = 0; (i_8_ ^ 0xffffffff) < (i_9_ ^ 0xffffffff); i_9_++) {
+			for (int i_9_ = 0; i_9_ < i_8_; i_9_++) {
 				int i_10_ = string.charAt(i_9_);
 				if (i_9_ == 0) {
 					if (i_10_ == 45) {
@@ -252,14 +252,14 @@ final class IncomingMessages extends Class48_Sub1 {
 				}
 				if (i_10_ >= 48 && i_10_ <= 57)
 					i_10_ -= 48;
-				else if ((i_10_ ^ 0xffffffff) <= -66 && i_10_ <= 90)
+				else if (i_10_ >= 65 && i_10_ <= 90)
 					i_10_ -= 55;
 				else {
-					if ((i_10_ ^ 0xffffffff) > -98 || (i_10_ ^ 0xffffffff) < -123)
+					if (i_10_ < 97 || i_10_ > 122)
 						return false;
 					i_10_ -= 87;
 				}
-				if ((i_10_ ^ 0xffffffff) <= (i_4_ ^ 0xffffffff))
+				if (i_4_ <= i_10_)
 					return false;
 				if (bool_5_)
 					i_10_ = -i_10_;

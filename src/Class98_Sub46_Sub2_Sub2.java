@@ -27,11 +27,11 @@ final class Class98_Sub46_Sub2_Sub2 extends Class98_Sub46_Sub2 {
 	static final int method1537(int i, int i_0_) {
 		try {
 			int i_1_;
-			if ((i ^ 0xffffffff) < -12001) {
+			if (i > 12000) {
 				i_1_ = 4;
 				Class98_Sub27.method1284(1);
 			} else if (i <= 5000) {
-				if ((i ^ 0xffffffff) < -2001) {
+				if (i > 2000) {
 					i_1_ = 2;
 					Class287.method3385((byte) 30);
 				} else {
@@ -42,8 +42,8 @@ final class Class98_Sub46_Sub2_Sub2 extends Class98_Sub46_Sub2 {
 				Class98_Sub50.method1672((byte) 19);
 				i_1_ = 3;
 			}
-			if (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4042.method583((byte) 126) != 2) {
-				Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 2, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub8_4062));
+			if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4042.method583((byte) 126) != 2) {
+				Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 2, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub8_4062));
 				Class76_Sub4.method754(2, false, i_0_ + -4885);
 			}
 			Class310.method3618(i_0_ ^ ~0x4c3);

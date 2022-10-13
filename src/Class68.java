@@ -75,11 +75,11 @@ public final class Class68 {
 			frame.setUndecorated(true);
 			frame.enableInputMethods(false);
 			method691((byte) -92, frame);
-			if (-1 == (i_3_ ^ 0xffffffff)) {
+			if (i_3_ == 0) {
 				int i_4_ = aDisplayMode522.getRefreshRate();
 				DisplayMode[] displaymodes = aGraphicsDevice523.getDisplayModes();
 				boolean bool = false;
-				for (int i_5_ = 0; (i_5_ ^ 0xffffffff) > (displaymodes.length ^ 0xffffffff); i_5_++) {
+				for (int i_5_ = 0; displaymodes.length > i_5_; i_5_++) {
 					if (displaymodes[i_5_].getWidth() == i && i_1_ == displaymodes[i_5_].getHeight() && displaymodes[i_5_].getBitDepth() == i_2_) {
 						int i_6_ = displaymodes[i_5_].getRefreshRate();
 						if (!bool || (Math.abs(-i_4_ + i_6_) < Math.abs(-i_4_ + i_3_))) {
@@ -101,12 +101,12 @@ public final class Class68 {
 		int[] is;
 		try {
 			DisplayMode[] displaymodes = aGraphicsDevice523.getDisplayModes();
-			int[] is_7_ = new int[displaymodes.length << 754645378];
+			int[] is_7_ = new int[displaymodes.length << 2];
 			for (int i = 0; i < displaymodes.length; i++) {
-				is_7_[i << 670030594] = displaymodes[i].getWidth();
-				is_7_[1 + (i << 697150050)] = displaymodes[i].getHeight();
-				is_7_[2 + (i << -399684990)] = displaymodes[i].getBitDepth();
-				is_7_[(i << -1626028094) - -3] = displaymodes[i].getRefreshRate();
+				is_7_[i << 2] = displaymodes[i].getWidth();
+				is_7_[1 + (i << 2)] = displaymodes[i].getHeight();
+				is_7_[2 + (i << 2)] = displaymodes[i].getBitDepth();
+				is_7_[(i << 2) - -3] = displaymodes[i].getRefreshRate();
 			}
 			is = is_7_;
 		} catch (RuntimeException runtimeexception) {
@@ -122,7 +122,7 @@ public final class Class68 {
 			if (!aGraphicsDevice523.isFullScreenSupported()) {
 				GraphicsDevice[] graphicsdevices = graphicsenvironment.getScreenDevices();
 				GraphicsDevice[] graphicsdevices_8_ = graphicsdevices;
-				for (int i = 0; ((graphicsdevices_8_.length ^ 0xffffffff) < (i ^ 0xffffffff)); i++) {
+				for (int i = 0; (i < graphicsdevices_8_.length); i++) {
 					GraphicsDevice graphicsdevice = graphicsdevices_8_[i];
 					if (null != graphicsdevice && graphicsdevice.isFullScreenSupported()) {
 						aGraphicsDevice523 = graphicsdevice;

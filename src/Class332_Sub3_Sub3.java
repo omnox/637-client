@@ -13,58 +13,58 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 	}
 
 	final void method3745(int i, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_) {
-		if (((Class332_Sub3) this).aHa_Sub2_5434.method1920())
+		if (this.aHa_Sub2_5434.method1920())
 			throw new IllegalStateException();
 		if (i_3_ > 0 && i_4_ > 0) {
 			int i_9_ = 0;
 			int i_10_ = 0;
-			int i_11_ = ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4505;
-			int i_12_ = (((Class332_Sub3) this).anInt5446 + ((Class332_Sub3) this).anInt5433 + ((Class332_Sub3) this).anInt5455);
-			int i_13_ = (((Class332_Sub3) this).anInt5439 + ((Class332_Sub3) this).anInt5454 + ((Class332_Sub3) this).anInt5447);
+			int i_11_ = this.aHa_Sub2_5434.anInt4505;
+			int i_12_ = (this.anInt5446 + this.anInt5433 + this.anInt5455);
+			int i_13_ = (this.anInt5439 + this.anInt5454 + this.anInt5447);
 			int i_14_ = (i_12_ << 16) / i_3_;
 			int i_15_ = (i_13_ << 16) / i_4_;
-			if (((Class332_Sub3) this).anInt5446 > 0) {
-				int i_16_ = (((((Class332_Sub3) this).anInt5446 << 16) + i_14_ - 1) / i_14_);
+			if (this.anInt5446 > 0) {
+				int i_16_ = (((this.anInt5446 << 16) + i_14_ - 1) / i_14_);
 				i += i_16_;
-				i_9_ += i_16_ * i_14_ - (((Class332_Sub3) this).anInt5446 << 16);
+				i_9_ += i_16_ * i_14_ - (this.anInt5446 << 16);
 			}
-			if (((Class332_Sub3) this).anInt5439 > 0) {
-				int i_17_ = (((((Class332_Sub3) this).anInt5439 << 16) + i_15_ - 1) / i_15_);
+			if (this.anInt5439 > 0) {
+				int i_17_ = (((this.anInt5439 << 16) + i_15_ - 1) / i_15_);
 				i_2_ += i_17_;
-				i_10_ += i_17_ * i_15_ - (((Class332_Sub3) this).anInt5439 << 16);
+				i_10_ += i_17_ * i_15_ - (this.anInt5439 << 16);
 			}
-			if (((Class332_Sub3) this).anInt5433 < i_12_)
-				i_3_ = ((((Class332_Sub3) this).anInt5433 << 16) - i_9_ + i_14_ - 1) / i_14_;
-			if (((Class332_Sub3) this).anInt5454 < i_13_)
-				i_4_ = ((((Class332_Sub3) this).anInt5454 << 16) - i_10_ + i_15_ - 1) / i_15_;
+			if (this.anInt5433 < i_12_)
+				i_3_ = ((this.anInt5433 << 16) - i_9_ + i_14_ - 1) / i_14_;
+			if (this.anInt5454 < i_13_)
+				i_4_ = ((this.anInt5454 << 16) - i_10_ + i_15_ - 1) / i_15_;
 			int i_18_ = i + i_2_ * i_11_;
 			int i_19_ = i_11_ - i_3_;
-			if (i_2_ + i_4_ > ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4492)
-				i_4_ -= i_2_ + i_4_ - ((ha_Sub2) (((Class332_Sub3) this).aHa_Sub2_5434)).anInt4492;
-			if (i_2_ < ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4495) {
-				int i_20_ = ((((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4495) - i_2_);
+			if (i_2_ + i_4_ > this.aHa_Sub2_5434.anInt4492)
+				i_4_ -= i_2_ + i_4_ - this.aHa_Sub2_5434.anInt4492;
+			if (i_2_ < this.aHa_Sub2_5434.anInt4495) {
+				int i_20_ = ((this.aHa_Sub2_5434.anInt4495) - i_2_);
 				i_4_ -= i_20_;
 				i_18_ += i_20_ * i_11_;
 				i_10_ += i_15_ * i_20_;
 			}
-			if (i + i_3_ > ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4507) {
-				int i_21_ = i + i_3_ - ((ha_Sub2) (((Class332_Sub3) this).aHa_Sub2_5434)).anInt4507;
+			if (i + i_3_ > this.aHa_Sub2_5434.anInt4507) {
+				int i_21_ = i + i_3_ - this.aHa_Sub2_5434.anInt4507;
 				i_3_ -= i_21_;
 				i_19_ += i_21_;
 			}
-			if (i < ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4509) {
-				int i_22_ = ((((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4509) - i);
+			if (i < this.aHa_Sub2_5434.anInt4509) {
+				int i_22_ = ((this.aHa_Sub2_5434.anInt4509) - i);
 				i_3_ -= i_22_;
 				i_18_ += i_22_;
 				i_9_ += i_14_ * i_22_;
 				i_19_ += i_22_;
 			}
-			int[] is = (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anIntArray4504);
+			int[] is = (this.aHa_Sub2_5434.anIntArray4504);
 			if (i_7_ == 0) {
 				if (i_5_ == 1) {
 					int i_23_ = i_9_;
 					for (int i_24_ = -i_4_; i_24_ < 0; i_24_++) {
-						int i_25_ = (i_10_ >> 16) * ((Class332_Sub3) this).anInt5433;
+						int i_25_ = (i_10_ >> 16) * this.anInt5433;
 						for (int i_26_ = -i_3_; i_26_ < 0; i_26_++) {
 							is[i_18_++] = (anIntArray6214[(aByteArray6215[(i_9_ >> 16) + i_25_] & 0xff)]);
 							i_9_ += i_14_;
@@ -81,7 +81,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					int i_29_ = i_6_ & 0xff;
 					int i_30_ = i_9_;
 					for (int i_31_ = -i_4_; i_31_ < 0; i_31_++) {
-						int i_32_ = (i_10_ >> 16) * ((Class332_Sub3) this).anInt5433;
+						int i_32_ = (i_10_ >> 16) * this.anInt5433;
 						for (int i_33_ = -i_3_; i_33_ < 0; i_33_++) {
 							int i_34_ = (anIntArray6214[(aByteArray6215[(i_9_ >> 16) + i_32_] & 0xff)]);
 							int i_35_ = (i_34_ & 0xff0000) * i_27_ & ~0xffffff;
@@ -99,7 +99,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 				if (i_5_ == 3) {
 					int i_38_ = i_9_;
 					for (int i_39_ = -i_4_; i_39_ < 0; i_39_++) {
-						int i_40_ = (i_10_ >> 16) * ((Class332_Sub3) this).anInt5433;
+						int i_40_ = (i_10_ >> 16) * this.anInt5433;
 						for (int i_41_ = -i_3_; i_41_ < 0; i_41_++) {
 							byte i_42_ = aByteArray6215[(i_9_ >> 16) + i_40_];
 							int i_43_ = i_42_ > 0 ? anIntArray6214[i_42_] : 0;
@@ -123,7 +123,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					i_6_ = (i_49_ | i_50_) >>> 8;
 					int i_51_ = i_9_;
 					for (int i_52_ = -i_4_; i_52_ < 0; i_52_++) {
-						int i_53_ = (i_10_ >> 16) * ((Class332_Sub3) this).anInt5433;
+						int i_53_ = (i_10_ >> 16) * this.anInt5433;
 						for (int i_54_ = -i_3_; i_54_ < 0; i_54_++) {
 							int i_55_ = (anIntArray6214[(aByteArray6215[(i_9_ >> 16) + i_53_] & 0xff)]);
 							i_49_ = (i_55_ & 0xff00ff) * i_47_ & ~0xff00ff;
@@ -143,7 +143,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 				if (i_5_ == 1) {
 					int i_56_ = i_9_;
 					for (int i_57_ = -i_4_; i_57_ < 0; i_57_++) {
-						int i_58_ = (i_10_ >> 16) * ((Class332_Sub3) this).anInt5433;
+						int i_58_ = (i_10_ >> 16) * this.anInt5433;
 						for (int i_59_ = -i_3_; i_59_ < 0; i_59_++) {
 							int i_60_ = aByteArray6215[(i_9_ >> 16) + i_58_];
 							if (i_60_ != 0)
@@ -164,7 +164,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						int i_62_ = i_6_ >>> 24;
 						int i_63_ = 256 - i_62_;
 						for (int i_64_ = -i_4_; i_64_ < 0; i_64_++) {
-							int i_65_ = ((i_10_ >> 16) * ((Class332_Sub3) this).anInt5433);
+							int i_65_ = ((i_10_ >> 16) * this.anInt5433);
 							for (int i_66_ = -i_3_; i_66_ < 0; i_66_++) {
 								int i_67_ = aByteArray6215[(i_9_ >> 16) + i_65_];
 								if (i_67_ != 0) {
@@ -186,7 +186,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						int i_73_ = i_6_ >>> 24;
 						int i_74_ = 256 - i_73_;
 						for (int i_75_ = -i_4_; i_75_ < 0; i_75_++) {
-							int i_76_ = ((i_10_ >> 16) * ((Class332_Sub3) this).anInt5433);
+							int i_76_ = ((i_10_ >> 16) * this.anInt5433);
 							for (int i_77_ = -i_3_; i_77_ < 0; i_77_++) {
 								int i_78_ = aByteArray6215[(i_9_ >> 16) + i_76_];
 								if (i_78_ != 0) {
@@ -221,7 +221,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					int i_88_ = i_6_ >>> 24;
 					int i_89_ = 256 - i_88_;
 					for (int i_90_ = -i_4_; i_90_ < 0; i_90_++) {
-						int i_91_ = (i_10_ >> 16) * ((Class332_Sub3) this).anInt5433;
+						int i_91_ = (i_10_ >> 16) * this.anInt5433;
 						for (int i_92_ = -i_3_; i_92_ < 0; i_92_++) {
 							byte i_93_ = aByteArray6215[(i_9_ >> 16) + i_91_];
 							int i_94_ = i_93_ > 0 ? anIntArray6214[i_93_] : 0;
@@ -251,7 +251,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					i_6_ = (i_100_ | i_101_) >>> 8;
 					int i_102_ = i_9_;
 					for (int i_103_ = -i_4_; i_103_ < 0; i_103_++) {
-						int i_104_ = (i_10_ >> 16) * ((Class332_Sub3) this).anInt5433;
+						int i_104_ = (i_10_ >> 16) * this.anInt5433;
 						for (int i_105_ = -i_3_; i_105_ < 0; i_105_++) {
 							int i_106_ = aByteArray6215[(i_9_ >> 16) + i_104_];
 							if (i_106_ != 0) {
@@ -275,7 +275,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 				if (i_5_ == 1) {
 					int i_108_ = i_9_;
 					for (int i_109_ = -i_4_; i_109_ < 0; i_109_++) {
-						int i_110_ = (i_10_ >> 16) * ((Class332_Sub3) this).anInt5433;
+						int i_110_ = (i_10_ >> 16) * this.anInt5433;
 						for (int i_111_ = -i_3_; i_111_ < 0; i_111_++) {
 							int i_112_ = aByteArray6215[(i_9_ >> 16) + i_110_];
 							if (i_112_ != 0) {
@@ -301,7 +301,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					int i_119_ = (i_6_ & 0xff00) >> 8;
 					int i_120_ = i_6_ & 0xff;
 					for (int i_121_ = -i_4_; i_121_ < 0; i_121_++) {
-						int i_122_ = (i_10_ >> 16) * ((Class332_Sub3) this).anInt5433;
+						int i_122_ = (i_10_ >> 16) * this.anInt5433;
 						for (int i_123_ = -i_3_; i_123_ < 0; i_123_++) {
 							int i_124_ = aByteArray6215[(i_9_ >> 16) + i_122_];
 							if (i_124_ != 0) {
@@ -328,7 +328,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 				if (i_5_ == 3) {
 					int i_132_ = i_9_;
 					for (int i_133_ = -i_4_; i_133_ < 0; i_133_++) {
-						int i_134_ = (i_10_ >> 16) * ((Class332_Sub3) this).anInt5433;
+						int i_134_ = (i_10_ >> 16) * this.anInt5433;
 						for (int i_135_ = -i_3_; i_135_ < 0; i_135_++) {
 							byte i_136_ = aByteArray6215[(i_9_ >> 16) + i_134_];
 							int i_137_ = i_136_ > 0 ? anIntArray6214[i_136_] : 0;
@@ -357,7 +357,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					i_6_ = (i_143_ | i_144_) >>> 8;
 					int i_145_ = i_9_;
 					for (int i_146_ = -i_4_; i_146_ < 0; i_146_++) {
-						int i_147_ = (i_10_ >> 16) * ((Class332_Sub3) this).anInt5433;
+						int i_147_ = (i_10_ >> 16) * this.anInt5433;
 						for (int i_148_ = -i_3_; i_148_ < 0; i_148_++) {
 							int i_149_ = aByteArray6215[(i_9_ >> 16) + i_147_];
 							if (i_149_ != 0) {
@@ -394,53 +394,53 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 		if (i_161_ > 0 && i_162_ > 0) {
 			int i_167_ = 0;
 			int i_168_ = 0;
-			int i_169_ = (((Class332_Sub3) this).anInt5446 + ((Class332_Sub3) this).anInt5433 + ((Class332_Sub3) this).anInt5455);
-			int i_170_ = (((Class332_Sub3) this).anInt5439 + ((Class332_Sub3) this).anInt5454 + ((Class332_Sub3) this).anInt5447);
+			int i_169_ = (this.anInt5446 + this.anInt5433 + this.anInt5455);
+			int i_170_ = (this.anInt5439 + this.anInt5454 + this.anInt5447);
 			int i_171_ = (i_169_ << 16) / i_161_;
 			int i_172_ = (i_170_ << 16) / i_162_;
-			if (((Class332_Sub3) this).anInt5446 > 0) {
-				int i_173_ = (((((Class332_Sub3) this).anInt5446 << 16) + i_171_ - 1) / i_171_);
+			if (this.anInt5446 > 0) {
+				int i_173_ = (((this.anInt5446 << 16) + i_171_ - 1) / i_171_);
 				i += i_173_;
-				i_167_ += i_173_ * i_171_ - (((Class332_Sub3) this).anInt5446 << 16);
+				i_167_ += i_173_ * i_171_ - (this.anInt5446 << 16);
 			}
-			if (((Class332_Sub3) this).anInt5439 > 0) {
-				int i_174_ = (((((Class332_Sub3) this).anInt5439 << 16) + i_172_ - 1) / i_172_);
+			if (this.anInt5439 > 0) {
+				int i_174_ = (((this.anInt5439 << 16) + i_172_ - 1) / i_172_);
 				i_159_ += i_174_;
-				i_168_ += i_174_ * i_172_ - (((Class332_Sub3) this).anInt5439 << 16);
+				i_168_ += i_174_ * i_172_ - (this.anInt5439 << 16);
 			}
-			if (((Class332_Sub3) this).anInt5433 < i_169_)
-				i_161_ = ((((Class332_Sub3) this).anInt5433 << 16) - i_167_ + i_171_ - 1) / i_171_;
-			if (((Class332_Sub3) this).anInt5454 < i_170_)
-				i_162_ = ((((Class332_Sub3) this).anInt5454 << 16) - i_168_ + i_172_ - 1) / i_172_;
-			int i_175_ = i + i_159_ * ((ha_Sub2) (((Class332_Sub3) this).aHa_Sub2_5434)).anInt4505;
-			int i_176_ = (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4505 - i_161_);
-			if (i_159_ + i_162_ > ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4492)
-				i_162_ -= (i_159_ + i_162_ - (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4492));
-			if (i_159_ < ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4495) {
-				int i_177_ = ((((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4495) - i_159_);
+			if (this.anInt5433 < i_169_)
+				i_161_ = ((this.anInt5433 << 16) - i_167_ + i_171_ - 1) / i_171_;
+			if (this.anInt5454 < i_170_)
+				i_162_ = ((this.anInt5454 << 16) - i_168_ + i_172_ - 1) / i_172_;
+			int i_175_ = i + i_159_ * this.aHa_Sub2_5434.anInt4505;
+			int i_176_ = (this.aHa_Sub2_5434.anInt4505 - i_161_);
+			if (i_159_ + i_162_ > this.aHa_Sub2_5434.anInt4492)
+				i_162_ -= (i_159_ + i_162_ - (this.aHa_Sub2_5434.anInt4492));
+			if (i_159_ < this.aHa_Sub2_5434.anInt4495) {
+				int i_177_ = ((this.aHa_Sub2_5434.anInt4495) - i_159_);
 				i_162_ -= i_177_;
-				i_175_ += i_177_ * ((ha_Sub2) (((Class332_Sub3) this).aHa_Sub2_5434)).anInt4505;
+				i_175_ += i_177_ * this.aHa_Sub2_5434.anInt4505;
 				i_168_ += i_172_ * i_177_;
 			}
-			if (i + i_161_ > ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4507) {
-				int i_178_ = (i + i_161_ - (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4507));
+			if (i + i_161_ > this.aHa_Sub2_5434.anInt4507) {
+				int i_178_ = (i + i_161_ - (this.aHa_Sub2_5434.anInt4507));
 				i_161_ -= i_178_;
 				i_176_ += i_178_;
 			}
-			if (i < ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4509) {
-				int i_179_ = ((((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4509) - i);
+			if (i < this.aHa_Sub2_5434.anInt4509) {
+				int i_179_ = ((this.aHa_Sub2_5434.anInt4509) - i);
 				i_161_ -= i_179_;
 				i_175_ += i_179_;
 				i_167_ += i_171_ * i_179_;
 				i_176_ += i_179_;
 			}
-			float[] fs = (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).aFloatArray4487);
-			int[] is = (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anIntArray4504);
+			float[] fs = (this.aHa_Sub2_5434.aFloatArray4487);
+			int[] is = (this.aHa_Sub2_5434.anIntArray4504);
 			if (i_165_ == 0) {
 				if (i_163_ == 1) {
 					int i_180_ = i_167_;
 					for (int i_181_ = -i_162_; i_181_ < 0; i_181_++) {
-						int i_182_ = ((i_168_ >> 16) * ((Class332_Sub3) this).anInt5433);
+						int i_182_ = ((i_168_ >> 16) * this.anInt5433);
 						for (int i_183_ = -i_161_; i_183_ < 0; i_183_++) {
 							if ((float) i_160_ < fs[i_175_]) {
 								is[i_175_] = (anIntArray6214[(aByteArray6215[(i_167_ >> 16) + i_182_]) & 0xff]);
@@ -461,7 +461,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					int i_186_ = i_164_ & 0xff;
 					int i_187_ = i_167_;
 					for (int i_188_ = -i_162_; i_188_ < 0; i_188_++) {
-						int i_189_ = ((i_168_ >> 16) * ((Class332_Sub3) this).anInt5433);
+						int i_189_ = ((i_168_ >> 16) * this.anInt5433);
 						for (int i_190_ = -i_161_; i_190_ < 0; i_190_++) {
 							if ((float) i_160_ < fs[i_175_]) {
 								int i_191_ = (anIntArray6214[(aByteArray6215[(i_167_ >> 16) + i_189_]) & 0xff]);
@@ -483,7 +483,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 				if (i_163_ == 3) {
 					int i_195_ = i_167_;
 					for (int i_196_ = -i_162_; i_196_ < 0; i_196_++) {
-						int i_197_ = ((i_168_ >> 16) * ((Class332_Sub3) this).anInt5433);
+						int i_197_ = ((i_168_ >> 16) * this.anInt5433);
 						for (int i_198_ = -i_161_; i_198_ < 0; i_198_++) {
 							if ((float) i_160_ < fs[i_175_]) {
 								byte i_199_ = aByteArray6215[(i_167_ >> 16) + i_197_];
@@ -511,7 +511,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					i_164_ = (i_206_ | i_207_) >>> 8;
 					int i_208_ = i_167_;
 					for (int i_209_ = -i_162_; i_209_ < 0; i_209_++) {
-						int i_210_ = ((i_168_ >> 16) * ((Class332_Sub3) this).anInt5433);
+						int i_210_ = ((i_168_ >> 16) * this.anInt5433);
 						for (int i_211_ = -i_161_; i_211_ < 0; i_211_++) {
 							if ((float) i_160_ < fs[i_175_]) {
 								int i_212_ = (anIntArray6214[(aByteArray6215[(i_167_ >> 16) + i_210_]) & 0xff]);
@@ -535,7 +535,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 				if (i_163_ == 1) {
 					int i_213_ = i_167_;
 					for (int i_214_ = -i_162_; i_214_ < 0; i_214_++) {
-						int i_215_ = ((i_168_ >> 16) * ((Class332_Sub3) this).anInt5433);
+						int i_215_ = ((i_168_ >> 16) * this.anInt5433);
 						for (int i_216_ = -i_161_; i_216_ < 0; i_216_++) {
 							if ((float) i_160_ < fs[i_175_]) {
 								int i_217_ = aByteArray6215[(i_167_ >> 16) + i_215_];
@@ -559,7 +559,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						int i_219_ = i_164_ >>> 24;
 						int i_220_ = 256 - i_219_;
 						for (int i_221_ = -i_162_; i_221_ < 0; i_221_++) {
-							int i_222_ = ((i_168_ >> 16) * ((Class332_Sub3) this).anInt5433);
+							int i_222_ = ((i_168_ >> 16) * this.anInt5433);
 							for (int i_223_ = -i_161_; i_223_ < 0; i_223_++) {
 								if ((float) i_160_ < fs[i_175_]) {
 									int i_224_ = (aByteArray6215[(i_167_ >> 16) + i_222_]);
@@ -584,7 +584,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						int i_230_ = i_164_ >>> 24;
 						int i_231_ = 256 - i_230_;
 						for (int i_232_ = -i_162_; i_232_ < 0; i_232_++) {
-							int i_233_ = ((i_168_ >> 16) * ((Class332_Sub3) this).anInt5433);
+							int i_233_ = ((i_168_ >> 16) * this.anInt5433);
 							for (int i_234_ = -i_161_; i_234_ < 0; i_234_++) {
 								if ((float) i_160_ < fs[i_175_]) {
 									int i_235_ = (aByteArray6215[(i_167_ >> 16) + i_233_]);
@@ -623,7 +623,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					int i_245_ = i_164_ >>> 24;
 					int i_246_ = 256 - i_245_;
 					for (int i_247_ = -i_162_; i_247_ < 0; i_247_++) {
-						int i_248_ = ((i_168_ >> 16) * ((Class332_Sub3) this).anInt5433);
+						int i_248_ = ((i_168_ >> 16) * this.anInt5433);
 						for (int i_249_ = -i_161_; i_249_ < 0; i_249_++) {
 							if ((float) i_160_ < fs[i_175_]) {
 								byte i_250_ = aByteArray6215[(i_167_ >> 16) + i_248_];
@@ -657,7 +657,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					i_164_ = (i_257_ | i_258_) >>> 8;
 					int i_259_ = i_167_;
 					for (int i_260_ = -i_162_; i_260_ < 0; i_260_++) {
-						int i_261_ = ((i_168_ >> 16) * ((Class332_Sub3) this).anInt5433);
+						int i_261_ = ((i_168_ >> 16) * this.anInt5433);
 						for (int i_262_ = -i_161_; i_262_ < 0; i_262_++) {
 							if ((float) i_160_ < fs[i_175_]) {
 								int i_263_ = aByteArray6215[(i_167_ >> 16) + i_261_];
@@ -684,7 +684,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 				if (i_163_ == 1) {
 					int i_265_ = i_167_;
 					for (int i_266_ = -i_162_; i_266_ < 0; i_266_++) {
-						int i_267_ = ((i_168_ >> 16) * ((Class332_Sub3) this).anInt5433);
+						int i_267_ = ((i_168_ >> 16) * this.anInt5433);
 						for (int i_268_ = -i_161_; i_268_ < 0; i_268_++) {
 							if ((float) i_160_ < fs[i_175_]) {
 								int i_269_ = aByteArray6215[(i_167_ >> 16) + i_267_];
@@ -713,7 +713,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					int i_276_ = (i_164_ & 0xff00) >> 8;
 					int i_277_ = i_164_ & 0xff;
 					for (int i_278_ = -i_162_; i_278_ < 0; i_278_++) {
-						int i_279_ = ((i_168_ >> 16) * ((Class332_Sub3) this).anInt5433);
+						int i_279_ = ((i_168_ >> 16) * this.anInt5433);
 						for (int i_280_ = -i_161_; i_280_ < 0; i_280_++) {
 							if ((float) i_160_ < fs[i_175_]) {
 								int i_281_ = aByteArray6215[(i_167_ >> 16) + i_279_];
@@ -743,7 +743,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 				if (i_163_ == 3) {
 					int i_289_ = i_167_;
 					for (int i_290_ = -i_162_; i_290_ < 0; i_290_++) {
-						int i_291_ = ((i_168_ >> 16) * ((Class332_Sub3) this).anInt5433);
+						int i_291_ = ((i_168_ >> 16) * this.anInt5433);
 						for (int i_292_ = -i_161_; i_292_ < 0; i_292_++) {
 							if ((float) i_160_ < fs[i_175_]) {
 								byte i_293_ = aByteArray6215[(i_167_ >> 16) + i_291_];
@@ -776,7 +776,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					i_164_ = (i_300_ | i_301_) >>> 8;
 					int i_302_ = i_167_;
 					for (int i_303_ = -i_162_; i_303_ < 0; i_303_++) {
-						int i_304_ = ((i_168_ >> 16) * ((Class332_Sub3) this).anInt5433);
+						int i_304_ = ((i_168_ >> 16) * this.anInt5433);
 						for (int i_305_ = -i_161_; i_305_ < 0; i_305_++) {
 							if ((float) i_160_ < fs[i_175_]) {
 								int i_306_ = aByteArray6215[(i_167_ >> 16) + i_304_];
@@ -809,51 +809,51 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 	}
 
 	final void method3729(int i, int i_311_, aa var_aa, int i_312_, int i_313_) {
-		if (((Class332_Sub3) this).aHa_Sub2_5434.method1920())
+		if (this.aHa_Sub2_5434.method1920())
 			throw new IllegalStateException();
-		i += ((Class332_Sub3) this).anInt5446;
-		i_311_ += ((Class332_Sub3) this).anInt5439;
+		i += this.anInt5446;
+		i_311_ += this.anInt5439;
 		int i_314_ = 0;
-		int i_315_ = ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4505;
-		int i_316_ = ((Class332_Sub3) this).anInt5433;
-		int i_317_ = ((Class332_Sub3) this).anInt5454;
+		int i_315_ = this.aHa_Sub2_5434.anInt4505;
+		int i_316_ = this.anInt5433;
+		int i_317_ = this.anInt5454;
 		int i_318_ = i_315_ - i_316_;
 		int i_319_ = 0;
 		int i_320_ = i + i_311_ * i_315_;
-		if (i_311_ < ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4495) {
-			int i_321_ = (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4495 - i_311_);
+		if (i_311_ < this.aHa_Sub2_5434.anInt4495) {
+			int i_321_ = (this.aHa_Sub2_5434.anInt4495 - i_311_);
 			i_317_ -= i_321_;
-			i_311_ = ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4495;
+			i_311_ = this.aHa_Sub2_5434.anInt4495;
 			i_314_ += i_321_ * i_316_;
 			i_320_ += i_321_ * i_315_;
 		}
-		if (i_311_ + i_317_ > ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4492)
-			i_317_ -= i_311_ + i_317_ - ((ha_Sub2) (((Class332_Sub3) this).aHa_Sub2_5434)).anInt4492;
-		if (i < ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4509) {
-			int i_322_ = (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4509 - i);
+		if (i_311_ + i_317_ > this.aHa_Sub2_5434.anInt4492)
+			i_317_ -= i_311_ + i_317_ - this.aHa_Sub2_5434.anInt4492;
+		if (i < this.aHa_Sub2_5434.anInt4509) {
+			int i_322_ = (this.aHa_Sub2_5434.anInt4509 - i);
 			i_316_ -= i_322_;
-			i = ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4509;
+			i = this.aHa_Sub2_5434.anInt4509;
 			i_314_ += i_322_;
 			i_320_ += i_322_;
 			i_319_ += i_322_;
 			i_318_ += i_322_;
 		}
-		if (i + i_316_ > ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4507) {
-			int i_323_ = (i + i_316_ - (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4507));
+		if (i + i_316_ > this.aHa_Sub2_5434.anInt4507) {
+			int i_323_ = (i + i_316_ - (this.aHa_Sub2_5434.anInt4507));
 			i_316_ -= i_323_;
 			i_319_ += i_323_;
 			i_318_ += i_323_;
 		}
 		if (i_316_ > 0 && i_317_ > 0) {
 			aa_Sub1 var_aa_Sub1 = (aa_Sub1) var_aa;
-			int[] is = ((aa_Sub1) var_aa_Sub1).anIntArray3555;
-			int[] is_324_ = ((aa_Sub1) var_aa_Sub1).anIntArray3557;
-			int[] is_325_ = (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anIntArray4504);
+			int[] is = var_aa_Sub1.anIntArray3555;
+			int[] is_324_ = var_aa_Sub1.anIntArray3557;
+			int[] is_325_ = (this.aHa_Sub2_5434.anIntArray4504);
 			int i_326_ = i_311_;
 			if (i_313_ > i_326_) {
 				i_326_ = i_313_;
 				i_320_ += (i_313_ - i_311_) * i_315_;
-				i_314_ += (i_313_ - i_311_) * ((Class332_Sub3) this).anInt5433;
+				i_314_ += (i_313_ - i_311_) * this.anInt5433;
 			}
 			int i_327_ = (i_313_ + is.length < i_311_ + i_317_ ? i_313_ + is.length : i_311_ + i_317_);
 			for (int i_328_ = i_326_; i_328_ < i_327_; i_328_++) {
@@ -902,7 +902,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 	}
 
 	final void method3759(int i, int i_339_) {
-		int[] is = ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anIntArray4504;
+		int[] is = this.aHa_Sub2_5434.anIntArray4504;
 		if (Class332_Sub3.anInt5444 == 0) {
 			if (Class332_Sub3.anInt5436 == 0) {
 				int i_340_ = Class332_Sub3.anInt5431;
@@ -911,9 +911,9 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					int i_342_ = Class332_Sub3.anInt5450;
 					int i_343_ = Class332_Sub3.anInt5443;
 					int i_344_ = Class332_Sub3.anInt5448;
-					if (i_342_ >= 0 && i_343_ >= 0 && (i_342_ - (((Class332_Sub3) this).anInt5433 << 12) < 0) && (i_343_ - (((Class332_Sub3) this).anInt5454 << 12) < 0)) {
+					if (i_342_ >= 0 && i_343_ >= 0 && (i_342_ - (this.anInt5433 << 12) < 0) && (i_343_ - (this.anInt5454 << 12) < 0)) {
 						for (/**/; i_344_ < 0; i_344_++) {
-							int i_345_ = (((i_343_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_342_ >> 12));
+							int i_345_ = (((i_343_ >> 12) * this.anInt5433) + (i_342_ >> 12));
 							int i_346_ = i_341_++;
 							int[] is_347_ = is;
 							int i_348_ = i;
@@ -1060,9 +1060,9 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					int i_413_ = Class332_Sub3.anInt5450;
 					int i_414_ = Class332_Sub3.anInt5443 + Class332_Sub3.anInt5456;
 					int i_415_ = Class332_Sub3.anInt5448;
-					if (i_413_ >= 0 && (i_413_ - (((Class332_Sub3) this).anInt5433 << 12) < 0)) {
+					if (i_413_ >= 0 && (i_413_ - (this.anInt5433 << 12) < 0)) {
 						int i_416_;
-						if ((i_416_ = i_414_ - (((Class332_Sub3) this).anInt5454 << 12)) >= 0) {
+						if ((i_416_ = i_414_ - (this.anInt5454 << 12)) >= 0) {
 							i_416_ = ((Class332_Sub3.anInt5436 - i_416_) / Class332_Sub3.anInt5436);
 							i_415_ += i_416_;
 							i_414_ += Class332_Sub3.anInt5436 * i_416_;
@@ -1071,7 +1071,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						if ((i_416_ = ((i_414_ - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436)) > i_415_)
 							i_415_ = i_416_;
 						for (/**/; i_415_ < 0; i_415_++) {
-							int i_417_ = (((i_414_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_413_ >> 12));
+							int i_417_ = (((i_414_ >> 12) * this.anInt5433) + (i_413_ >> 12));
 							int i_418_ = i_412_++;
 							int[] is_419_ = is;
 							int i_420_ = i;
@@ -1220,7 +1220,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					int i_485_ = Class332_Sub3.anInt5450;
 					int i_486_ = Class332_Sub3.anInt5443 + Class332_Sub3.anInt5456;
 					int i_487_ = Class332_Sub3.anInt5448;
-					if (i_485_ >= 0 && (i_485_ - (((Class332_Sub3) this).anInt5433 << 12) < 0)) {
+					if (i_485_ >= 0 && (i_485_ - (this.anInt5433 << 12) < 0)) {
 						if (i_486_ < 0) {
 							int i_488_ = ((Class332_Sub3.anInt5436 - 1 - i_486_) / Class332_Sub3.anInt5436);
 							i_487_ += i_488_;
@@ -1228,10 +1228,10 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 							i_484_ += i_488_;
 						}
 						int i_489_;
-						if ((i_489_ = ((1 + i_486_ - (((Class332_Sub3) this).anInt5454 << 12) - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436)) > i_487_)
+						if ((i_489_ = ((1 + i_486_ - (this.anInt5454 << 12) - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436)) > i_487_)
 							i_487_ = i_489_;
 						for (/**/; i_487_ < 0; i_487_++) {
-							int i_490_ = (((i_486_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_485_ >> 12));
+							int i_490_ = (((i_486_ >> 12) * this.anInt5433) + (i_485_ >> 12));
 							int i_491_ = i_484_++;
 							int[] is_492_ = is;
 							int i_493_ = i;
@@ -1382,9 +1382,9 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					int i_558_ = Class332_Sub3.anInt5450 + Class332_Sub3.anInt5425;
 					int i_559_ = Class332_Sub3.anInt5443;
 					int i_560_ = Class332_Sub3.anInt5448;
-					if (i_559_ >= 0 && (i_559_ - (((Class332_Sub3) this).anInt5454 << 12) < 0)) {
+					if (i_559_ >= 0 && (i_559_ - (this.anInt5454 << 12) < 0)) {
 						int i_561_;
-						if ((i_561_ = i_558_ - (((Class332_Sub3) this).anInt5433 << 12)) >= 0) {
+						if ((i_561_ = i_558_ - (this.anInt5433 << 12)) >= 0) {
 							i_561_ = ((Class332_Sub3.anInt5444 - i_561_) / Class332_Sub3.anInt5444);
 							i_560_ += i_561_;
 							i_558_ += Class332_Sub3.anInt5444 * i_561_;
@@ -1393,7 +1393,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						if ((i_561_ = ((i_558_ - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444)) > i_560_)
 							i_560_ = i_561_;
 						for (/**/; i_560_ < 0; i_560_++) {
-							int i_562_ = (((i_559_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_558_ >> 12));
+							int i_562_ = (((i_559_ >> 12) * this.anInt5433) + (i_558_ >> 12));
 							int i_563_ = i_557_++;
 							int[] is_564_ = is;
 							int i_565_ = i;
@@ -1543,7 +1543,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					int i_631_ = Class332_Sub3.anInt5443 + Class332_Sub3.anInt5456;
 					int i_632_ = Class332_Sub3.anInt5448;
 					int i_633_;
-					if ((i_633_ = i_630_ - (((Class332_Sub3) this).anInt5433 << 12)) >= 0) {
+					if ((i_633_ = i_630_ - (this.anInt5433 << 12)) >= 0) {
 						i_633_ = ((Class332_Sub3.anInt5444 - i_633_) / Class332_Sub3.anInt5444);
 						i_632_ += i_633_;
 						i_630_ += Class332_Sub3.anInt5444 * i_633_;
@@ -1552,7 +1552,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					}
 					if ((i_633_ = ((i_630_ - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444)) > i_632_)
 						i_632_ = i_633_;
-					if ((i_633_ = i_631_ - (((Class332_Sub3) this).anInt5454 << 12)) >= 0) {
+					if ((i_633_ = i_631_ - (this.anInt5454 << 12)) >= 0) {
 						i_633_ = ((Class332_Sub3.anInt5436 - i_633_) / Class332_Sub3.anInt5436);
 						i_632_ += i_633_;
 						i_630_ += Class332_Sub3.anInt5444 * i_633_;
@@ -1562,7 +1562,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					if ((i_633_ = ((i_631_ - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436)) > i_632_)
 						i_632_ = i_633_;
 					for (/**/; i_632_ < 0; i_632_++) {
-						int i_634_ = (((i_631_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_630_ >> 12));
+						int i_634_ = (((i_631_ >> 12) * this.anInt5433) + (i_630_ >> 12));
 						int i_635_ = i_629_++;
 						int[] is_636_ = is;
 						int i_637_ = i;
@@ -1713,7 +1713,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					int i_703_ = Class332_Sub3.anInt5443 + Class332_Sub3.anInt5456;
 					int i_704_ = Class332_Sub3.anInt5448;
 					int i_705_;
-					if ((i_705_ = i_702_ - (((Class332_Sub3) this).anInt5433 << 12)) >= 0) {
+					if ((i_705_ = i_702_ - (this.anInt5433 << 12)) >= 0) {
 						i_705_ = ((Class332_Sub3.anInt5444 - i_705_) / Class332_Sub3.anInt5444);
 						i_704_ += i_705_;
 						i_702_ += Class332_Sub3.anInt5444 * i_705_;
@@ -1729,10 +1729,10 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						i_703_ += Class332_Sub3.anInt5436 * i_705_;
 						i_701_ += i_705_;
 					}
-					if ((i_705_ = ((1 + i_703_ - (((Class332_Sub3) this).anInt5454 << 12) - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436)) > i_704_)
+					if ((i_705_ = ((1 + i_703_ - (this.anInt5454 << 12) - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436)) > i_704_)
 						i_704_ = i_705_;
 					for (/**/; i_704_ < 0; i_704_++) {
-						int i_706_ = (((i_703_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_702_ >> 12));
+						int i_706_ = (((i_703_ >> 12) * this.anInt5433) + (i_702_ >> 12));
 						int i_707_ = i_701_++;
 						int[] is_708_ = is;
 						int i_709_ = i;
@@ -1883,7 +1883,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 				int i_774_ = Class332_Sub3.anInt5450 + Class332_Sub3.anInt5425;
 				int i_775_ = Class332_Sub3.anInt5443;
 				int i_776_ = Class332_Sub3.anInt5448;
-				if (i_775_ >= 0 && i_775_ - (((Class332_Sub3) this).anInt5454 << 12) < 0) {
+				if (i_775_ >= 0 && i_775_ - (this.anInt5454 << 12) < 0) {
 					if (i_774_ < 0) {
 						int i_777_ = ((Class332_Sub3.anInt5444 - 1 - i_774_) / Class332_Sub3.anInt5444);
 						i_776_ += i_777_;
@@ -1891,10 +1891,10 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						i_773_ += i_777_;
 					}
 					int i_778_;
-					if ((i_778_ = ((1 + i_774_ - (((Class332_Sub3) this).anInt5433 << 12) - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444)) > i_776_)
+					if ((i_778_ = ((1 + i_774_ - (this.anInt5433 << 12) - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444)) > i_776_)
 						i_776_ = i_778_;
 					for (/**/; i_776_ < 0; i_776_++) {
-						int i_779_ = (((i_775_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_774_ >> 12));
+						int i_779_ = (((i_775_ >> 12) * this.anInt5433) + (i_774_ >> 12));
 						int i_780_ = i_773_++;
 						int[] is_781_ = is;
 						int i_782_ = i;
@@ -2051,9 +2051,9 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					i_846_ += i_850_;
 				}
 				int i_851_;
-				if ((i_851_ = (1 + i_847_ - (((Class332_Sub3) this).anInt5433 << 12) - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444) > i_849_)
+				if ((i_851_ = (1 + i_847_ - (this.anInt5433 << 12) - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444) > i_849_)
 					i_849_ = i_851_;
-				if ((i_851_ = i_848_ - (((Class332_Sub3) this).anInt5454 << 12)) >= 0) {
+				if ((i_851_ = i_848_ - (this.anInt5454 << 12)) >= 0) {
 					i_851_ = ((Class332_Sub3.anInt5436 - i_851_) / Class332_Sub3.anInt5436);
 					i_849_ += i_851_;
 					i_847_ += Class332_Sub3.anInt5444 * i_851_;
@@ -2063,7 +2063,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 				if ((i_851_ = ((i_848_ - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436)) > i_849_)
 					i_849_ = i_851_;
 				for (/**/; i_849_ < 0; i_849_++) {
-					int i_852_ = ((i_848_ >> 12) * ((Class332_Sub3) this).anInt5433 + (i_847_ >> 12));
+					int i_852_ = ((i_848_ >> 12) * this.anInt5433 + (i_847_ >> 12));
 					int i_853_ = i_846_++;
 					int[] is_854_ = is;
 					int i_855_ = i;
@@ -2219,7 +2219,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					i_919_ += i_923_;
 				}
 				int i_924_;
-				if ((i_924_ = (1 + i_920_ - (((Class332_Sub3) this).anInt5433 << 12) - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444) > i_922_)
+				if ((i_924_ = (1 + i_920_ - (this.anInt5433 << 12) - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444) > i_922_)
 					i_922_ = i_924_;
 				if (i_921_ < 0) {
 					i_924_ = ((Class332_Sub3.anInt5436 - 1 - i_921_) / Class332_Sub3.anInt5436);
@@ -2228,10 +2228,10 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					i_921_ += Class332_Sub3.anInt5436 * i_924_;
 					i_919_ += i_924_;
 				}
-				if ((i_924_ = (1 + i_921_ - (((Class332_Sub3) this).anInt5454 << 12) - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436) > i_922_)
+				if ((i_924_ = (1 + i_921_ - (this.anInt5454 << 12) - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436) > i_922_)
 					i_922_ = i_924_;
 				for (/**/; i_922_ < 0; i_922_++) {
-					int i_925_ = ((i_921_ >> 12) * ((Class332_Sub3) this).anInt5433 + (i_920_ >> 12));
+					int i_925_ = ((i_921_ >> 12) * this.anInt5433 + (i_920_ >> 12));
 					int i_926_ = i_919_++;
 					int[] is_927_ = is;
 					int i_928_ = i;
@@ -2377,43 +2377,43 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 	}
 
 	final void method3748(int i, int i_991_, int i_992_, int i_993_, int i_994_) {
-		if (((Class332_Sub3) this).aHa_Sub2_5434.method1920())
+		if (this.aHa_Sub2_5434.method1920())
 			throw new IllegalStateException();
-		int i_995_ = ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4505;
-		i += ((Class332_Sub3) this).anInt5446;
-		i_991_ += ((Class332_Sub3) this).anInt5439;
+		int i_995_ = this.aHa_Sub2_5434.anInt4505;
+		i += this.anInt5446;
+		i_991_ += this.anInt5439;
 		int i_996_ = i_991_ * i_995_ + i;
 		int i_997_ = 0;
-		int i_998_ = ((Class332_Sub3) this).anInt5454;
-		int i_999_ = ((Class332_Sub3) this).anInt5433;
+		int i_998_ = this.anInt5454;
+		int i_999_ = this.anInt5433;
 		int i_1000_ = i_995_ - i_999_;
 		int i_1001_ = 0;
-		if (i_991_ < ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4495) {
-			int i_1002_ = (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4495 - i_991_);
+		if (i_991_ < this.aHa_Sub2_5434.anInt4495) {
+			int i_1002_ = (this.aHa_Sub2_5434.anInt4495 - i_991_);
 			i_998_ -= i_1002_;
-			i_991_ = ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4495;
+			i_991_ = this.aHa_Sub2_5434.anInt4495;
 			i_997_ += i_1002_ * i_999_;
 			i_996_ += i_1002_ * i_995_;
 		}
-		if (i_991_ + i_998_ > ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4492)
-			i_998_ -= i_991_ + i_998_ - ((ha_Sub2) (((Class332_Sub3) this).aHa_Sub2_5434)).anInt4492;
-		if (i < ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4509) {
-			int i_1003_ = (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4509 - i);
+		if (i_991_ + i_998_ > this.aHa_Sub2_5434.anInt4492)
+			i_998_ -= i_991_ + i_998_ - this.aHa_Sub2_5434.anInt4492;
+		if (i < this.aHa_Sub2_5434.anInt4509) {
+			int i_1003_ = (this.aHa_Sub2_5434.anInt4509 - i);
 			i_999_ -= i_1003_;
-			i = ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4509;
+			i = this.aHa_Sub2_5434.anInt4509;
 			i_997_ += i_1003_;
 			i_996_ += i_1003_;
 			i_1001_ += i_1003_;
 			i_1000_ += i_1003_;
 		}
-		if (i + i_999_ > ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4507) {
-			int i_1004_ = (i + i_999_ - (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anInt4507));
+		if (i + i_999_ > this.aHa_Sub2_5434.anInt4507) {
+			int i_1004_ = (i + i_999_ - (this.aHa_Sub2_5434.anInt4507));
 			i_999_ -= i_1004_;
 			i_1001_ += i_1004_;
 			i_1000_ += i_1004_;
 		}
 		if (i_999_ > 0 && i_998_ > 0) {
-			int[] is = (((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anIntArray4504);
+			int[] is = (this.aHa_Sub2_5434.anIntArray4504);
 			if (i_994_ == 0) {
 				if (i_992_ == 1) {
 					for (int i_1005_ = -i_998_; i_1005_ < 0; i_1005_++) {
@@ -2700,7 +2700,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 	}
 
 	final void method3758(int[] is, int[] is_1114_, int i, int i_1115_) {
-		int[] is_1116_ = ((ha_Sub2) ((Class332_Sub3) this).aHa_Sub2_5434).anIntArray4504;
+		int[] is_1116_ = this.aHa_Sub2_5434.anIntArray4504;
 		if (Class332_Sub3.anInt5444 == 0) {
 			if (Class332_Sub3.anInt5436 == 0) {
 				int i_1117_ = Class332_Sub3.anInt5431;
@@ -2713,7 +2713,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						int i_1120_ = Class332_Sub3.anInt5450;
 						int i_1121_ = Class332_Sub3.anInt5443;
 						int i_1122_ = Class332_Sub3.anInt5448;
-						if (i_1120_ >= 0 && i_1121_ >= 0 && i_1120_ - (((Class332_Sub3) this).anInt5433 << 12) < 0 && i_1121_ - (((Class332_Sub3) this).anInt5454 << 12) < 0) {
+						if (i_1120_ >= 0 && i_1121_ >= 0 && i_1120_ - (this.anInt5433 << 12) < 0 && i_1121_ - (this.anInt5454 << 12) < 0) {
 							int i_1123_ = is[i_1118_] - i;
 							int i_1124_ = -is_1114_[i_1118_];
 							int i_1125_ = (i_1123_ - (i_1119_ - Class332_Sub3.anInt5451));
@@ -2727,7 +2727,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 							if (i_1122_ < i_1124_)
 								i_1122_ = i_1124_;
 							for (/**/; i_1122_ < 0; i_1122_++) {
-								int i_1126_ = (aByteArray6215[(((i_1121_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_1120_ >> 12))]);
+								int i_1126_ = (aByteArray6215[(((i_1121_ >> 12) * this.anInt5433) + (i_1120_ >> 12))]);
 								if (i_1126_ != 0)
 									is_1116_[i_1119_++] = anIntArray6214[i_1126_ & 0xff];
 								else
@@ -2749,9 +2749,9 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						int i_1130_ = Class332_Sub3.anInt5450;
 						int i_1131_ = (Class332_Sub3.anInt5443 + Class332_Sub3.anInt5456);
 						int i_1132_ = Class332_Sub3.anInt5448;
-						if (i_1130_ >= 0 && i_1130_ - (((Class332_Sub3) this).anInt5433 << 12) < 0) {
+						if (i_1130_ >= 0 && i_1130_ - (this.anInt5433 << 12) < 0) {
 							int i_1133_;
-							if ((i_1133_ = i_1131_ - (((Class332_Sub3) this).anInt5454 << 12)) >= 0) {
+							if ((i_1133_ = i_1131_ - (this.anInt5454 << 12)) >= 0) {
 								i_1133_ = ((Class332_Sub3.anInt5436 - i_1133_) / Class332_Sub3.anInt5436);
 								i_1132_ += i_1133_;
 								i_1131_ += Class332_Sub3.anInt5436 * i_1133_;
@@ -2772,7 +2772,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 							if (i_1132_ < i_1135_)
 								i_1132_ = i_1135_;
 							for (/**/; i_1132_ < 0; i_1132_++) {
-								int i_1137_ = (aByteArray6215[(((i_1131_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_1130_ >> 12))]);
+								int i_1137_ = (aByteArray6215[(((i_1131_ >> 12) * this.anInt5433) + (i_1130_ >> 12))]);
 								if (i_1137_ != 0)
 									is_1116_[i_1129_++] = anIntArray6214[i_1137_ & 0xff];
 								else
@@ -2796,7 +2796,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						int i_1141_ = Class332_Sub3.anInt5450;
 						int i_1142_ = (Class332_Sub3.anInt5443 + Class332_Sub3.anInt5456);
 						int i_1143_ = Class332_Sub3.anInt5448;
-						if (i_1141_ >= 0 && i_1141_ - (((Class332_Sub3) this).anInt5433 << 12) < 0) {
+						if (i_1141_ >= 0 && i_1141_ - (this.anInt5433 << 12) < 0) {
 							if (i_1142_ < 0) {
 								int i_1144_ = ((Class332_Sub3.anInt5436 - 1 - i_1142_) / Class332_Sub3.anInt5436);
 								i_1143_ += i_1144_;
@@ -2804,7 +2804,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 								i_1140_ += i_1144_;
 							}
 							int i_1145_;
-							if ((i_1145_ = ((1 + i_1142_ - (((Class332_Sub3) this).anInt5454 << 12) - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436)) > i_1143_)
+							if ((i_1145_ = ((1 + i_1142_ - (this.anInt5454 << 12) - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436)) > i_1143_)
 								i_1143_ = i_1145_;
 							int i_1146_ = is[i_1139_] - i;
 							int i_1147_ = -is_1114_[i_1139_];
@@ -2819,7 +2819,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 							if (i_1143_ < i_1147_)
 								i_1143_ = i_1147_;
 							for (/**/; i_1143_ < 0; i_1143_++) {
-								int i_1149_ = (aByteArray6215[(((i_1142_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_1141_ >> 12))]);
+								int i_1149_ = (aByteArray6215[(((i_1142_ >> 12) * this.anInt5433) + (i_1141_ >> 12))]);
 								if (i_1149_ != 0)
 									is_1116_[i_1140_++] = anIntArray6214[i_1149_ & 0xff];
 								else
@@ -2845,9 +2845,9 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						int i_1153_ = (Class332_Sub3.anInt5450 + Class332_Sub3.anInt5425);
 						int i_1154_ = Class332_Sub3.anInt5443;
 						int i_1155_ = Class332_Sub3.anInt5448;
-						if (i_1154_ >= 0 && i_1154_ - (((Class332_Sub3) this).anInt5454 << 12) < 0) {
+						if (i_1154_ >= 0 && i_1154_ - (this.anInt5454 << 12) < 0) {
 							int i_1156_;
-							if ((i_1156_ = i_1153_ - (((Class332_Sub3) this).anInt5433 << 12)) >= 0) {
+							if ((i_1156_ = i_1153_ - (this.anInt5433 << 12)) >= 0) {
 								i_1156_ = ((Class332_Sub3.anInt5444 - i_1156_) / Class332_Sub3.anInt5444);
 								i_1155_ += i_1156_;
 								i_1153_ += Class332_Sub3.anInt5444 * i_1156_;
@@ -2868,7 +2868,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 							if (i_1155_ < i_1158_)
 								i_1155_ = i_1158_;
 							for (/**/; i_1155_ < 0; i_1155_++) {
-								int i_1160_ = (aByteArray6215[(((i_1154_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_1153_ >> 12))]);
+								int i_1160_ = (aByteArray6215[(((i_1154_ >> 12) * this.anInt5433) + (i_1153_ >> 12))]);
 								if (i_1160_ != 0)
 									is_1116_[i_1152_++] = anIntArray6214[i_1160_ & 0xff];
 								else
@@ -2893,7 +2893,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						int i_1165_ = (Class332_Sub3.anInt5443 + Class332_Sub3.anInt5456);
 						int i_1166_ = Class332_Sub3.anInt5448;
 						int i_1167_;
-						if ((i_1167_ = i_1164_ - (((Class332_Sub3) this).anInt5433 << 12)) >= 0) {
+						if ((i_1167_ = i_1164_ - (this.anInt5433 << 12)) >= 0) {
 							i_1167_ = ((Class332_Sub3.anInt5444 - i_1167_) / Class332_Sub3.anInt5444);
 							i_1166_ += i_1167_;
 							i_1164_ += Class332_Sub3.anInt5444 * i_1167_;
@@ -2902,7 +2902,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						}
 						if ((i_1167_ = ((i_1164_ - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444)) > i_1166_)
 							i_1166_ = i_1167_;
-						if ((i_1167_ = i_1165_ - (((Class332_Sub3) this).anInt5454 << 12)) >= 0) {
+						if ((i_1167_ = i_1165_ - (this.anInt5454 << 12)) >= 0) {
 							i_1167_ = ((Class332_Sub3.anInt5436 - i_1167_) / Class332_Sub3.anInt5436);
 							i_1166_ += i_1167_;
 							i_1164_ += Class332_Sub3.anInt5444 * i_1167_;
@@ -2924,7 +2924,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						if (i_1166_ < i_1169_)
 							i_1166_ = i_1169_;
 						for (/**/; i_1166_ < 0; i_1166_++) {
-							int i_1171_ = (aByteArray6215[(((i_1165_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_1164_ >> 12))]);
+							int i_1171_ = (aByteArray6215[(((i_1165_ >> 12) * this.anInt5433) + (i_1164_ >> 12))]);
 							if (i_1171_ != 0)
 								is_1116_[i_1163_++] = anIntArray6214[i_1171_ & 0xff];
 							else
@@ -2950,7 +2950,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						int i_1176_ = (Class332_Sub3.anInt5443 + Class332_Sub3.anInt5456);
 						int i_1177_ = Class332_Sub3.anInt5448;
 						int i_1178_;
-						if ((i_1178_ = i_1175_ - (((Class332_Sub3) this).anInt5433 << 12)) >= 0) {
+						if ((i_1178_ = i_1175_ - (this.anInt5433 << 12)) >= 0) {
 							i_1178_ = ((Class332_Sub3.anInt5444 - i_1178_) / Class332_Sub3.anInt5444);
 							i_1177_ += i_1178_;
 							i_1175_ += Class332_Sub3.anInt5444 * i_1178_;
@@ -2966,7 +2966,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 							i_1176_ += Class332_Sub3.anInt5436 * i_1178_;
 							i_1174_ += i_1178_;
 						}
-						if ((i_1178_ = ((1 + i_1176_ - (((Class332_Sub3) this).anInt5454 << 12) - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436)) > i_1177_)
+						if ((i_1178_ = ((1 + i_1176_ - (this.anInt5454 << 12) - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436)) > i_1177_)
 							i_1177_ = i_1178_;
 						int i_1179_ = is[i_1173_] - i;
 						int i_1180_ = -is_1114_[i_1173_];
@@ -2981,7 +2981,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						if (i_1177_ < i_1180_)
 							i_1177_ = i_1180_;
 						for (/**/; i_1177_ < 0; i_1177_++) {
-							int i_1182_ = (aByteArray6215[(((i_1176_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_1175_ >> 12))]);
+							int i_1182_ = (aByteArray6215[(((i_1176_ >> 12) * this.anInt5433) + (i_1175_ >> 12))]);
 							if (i_1182_ != 0)
 								is_1116_[i_1174_++] = anIntArray6214[i_1182_ & 0xff];
 							else
@@ -3007,7 +3007,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					int i_1186_ = Class332_Sub3.anInt5450 + Class332_Sub3.anInt5425;
 					int i_1187_ = Class332_Sub3.anInt5443;
 					int i_1188_ = Class332_Sub3.anInt5448;
-					if (i_1187_ >= 0 && (i_1187_ - (((Class332_Sub3) this).anInt5454 << 12) < 0)) {
+					if (i_1187_ >= 0 && (i_1187_ - (this.anInt5454 << 12) < 0)) {
 						if (i_1186_ < 0) {
 							int i_1189_ = ((Class332_Sub3.anInt5444 - 1 - i_1186_) / Class332_Sub3.anInt5444);
 							i_1188_ += i_1189_;
@@ -3015,7 +3015,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 							i_1185_ += i_1189_;
 						}
 						int i_1190_;
-						if ((i_1190_ = ((1 + i_1186_ - (((Class332_Sub3) this).anInt5433 << 12) - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444)) > i_1188_)
+						if ((i_1190_ = ((1 + i_1186_ - (this.anInt5433 << 12) - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444)) > i_1188_)
 							i_1188_ = i_1190_;
 						int i_1191_ = is[i_1184_] - i;
 						int i_1192_ = -is_1114_[i_1184_];
@@ -3030,7 +3030,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						if (i_1188_ < i_1192_)
 							i_1188_ = i_1192_;
 						for (/**/; i_1188_ < 0; i_1188_++) {
-							int i_1194_ = (aByteArray6215[(((i_1187_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_1186_ >> 12))]);
+							int i_1194_ = (aByteArray6215[(((i_1187_ >> 12) * this.anInt5433) + (i_1186_ >> 12))]);
 							if (i_1194_ != 0)
 								is_1116_[i_1185_++] = anIntArray6214[i_1194_ & 0xff];
 							else
@@ -3063,9 +3063,9 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						i_1197_ += i_1201_;
 					}
 					int i_1202_;
-					if ((i_1202_ = ((1 + i_1198_ - (((Class332_Sub3) this).anInt5433 << 12) - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444)) > i_1200_)
+					if ((i_1202_ = ((1 + i_1198_ - (this.anInt5433 << 12) - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444)) > i_1200_)
 						i_1200_ = i_1202_;
-					if ((i_1202_ = i_1199_ - (((Class332_Sub3) this).anInt5454 << 12)) >= 0) {
+					if ((i_1202_ = i_1199_ - (this.anInt5454 << 12)) >= 0) {
 						i_1202_ = ((Class332_Sub3.anInt5436 - i_1202_) / Class332_Sub3.anInt5436);
 						i_1200_ += i_1202_;
 						i_1198_ += Class332_Sub3.anInt5444 * i_1202_;
@@ -3087,7 +3087,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					if (i_1200_ < i_1204_)
 						i_1200_ = i_1204_;
 					for (/**/; i_1200_ < 0; i_1200_++) {
-						int i_1206_ = (aByteArray6215[(((i_1199_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_1198_ >> 12))]);
+						int i_1206_ = (aByteArray6215[(((i_1199_ >> 12) * this.anInt5433) + (i_1198_ >> 12))]);
 						if (i_1206_ != 0)
 							is_1116_[i_1197_++] = anIntArray6214[i_1206_ & 0xff];
 						else
@@ -3120,7 +3120,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						i_1209_ += i_1213_;
 					}
 					int i_1214_;
-					if ((i_1214_ = ((1 + i_1210_ - (((Class332_Sub3) this).anInt5433 << 12) - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444)) > i_1212_)
+					if ((i_1214_ = ((1 + i_1210_ - (this.anInt5433 << 12) - Class332_Sub3.anInt5444) / Class332_Sub3.anInt5444)) > i_1212_)
 						i_1212_ = i_1214_;
 					if (i_1211_ < 0) {
 						i_1214_ = ((Class332_Sub3.anInt5436 - 1 - i_1211_) / Class332_Sub3.anInt5436);
@@ -3129,7 +3129,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 						i_1211_ += Class332_Sub3.anInt5436 * i_1214_;
 						i_1209_ += i_1214_;
 					}
-					if ((i_1214_ = ((1 + i_1211_ - (((Class332_Sub3) this).anInt5454 << 12) - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436)) > i_1212_)
+					if ((i_1214_ = ((1 + i_1211_ - (this.anInt5454 << 12) - Class332_Sub3.anInt5436) / Class332_Sub3.anInt5436)) > i_1212_)
 						i_1212_ = i_1214_;
 					int i_1215_ = is[i_1208_] - i;
 					int i_1216_ = -is_1114_[i_1208_];
@@ -3144,7 +3144,7 @@ final class Class332_Sub3_Sub3 extends Class332_Sub3 {
 					if (i_1212_ < i_1216_)
 						i_1212_ = i_1216_;
 					for (/**/; i_1212_ < 0; i_1212_++) {
-						int i_1218_ = (aByteArray6215[(((i_1211_ >> 12) * ((Class332_Sub3) this).anInt5433) + (i_1210_ >> 12))]);
+						int i_1218_ = (aByteArray6215[(((i_1211_ >> 12) * this.anInt5433) + (i_1210_ >> 12))]);
 						if (i_1218_ != 0)
 							is_1116_[i_1209_++] = anIntArray6214[i_1218_ & 0xff];
 						else

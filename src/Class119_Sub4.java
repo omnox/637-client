@@ -12,11 +12,11 @@ final class Class119_Sub4 extends Class119 {
 	final void method2178(int i, int i_0_, int i_1_) {
 		try {
 			int i_2_ = 41 / ((i - -3) / 32);
-			int i_3_ = i_0_ * anInt4738 >> -282666356;
-			int i_4_ = i_0_ * anInt4736 >> 151121132;
-			int i_5_ = anInt4737 * i_1_ >> -444889972;
-			int i_6_ = i_1_ * anInt4741 >> 150376812;
-			Class98_Sub47.method1658(i_5_, i_3_, i_4_, 16977, i_6_, ((Class119) this).anInt988);
+			int i_3_ = i_0_ * anInt4738 >> 12;
+			int i_4_ = i_0_ * anInt4736 >> 12;
+			int i_5_ = anInt4737 * i_1_ >> 12;
+			int i_6_ = i_1_ * anInt4741 >> 12;
+			Class98_Sub47.method1658(i_5_, i_3_, i_4_, 16977, i_6_, this.anInt988);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("sr.B(" + i + ',' + i_0_ + ',' + i_1_ + ')'));
 		}
@@ -24,12 +24,12 @@ final class Class119_Sub4 extends Class119 {
 
 	final void method2174(int i, int i_7_, int i_8_) {
 		try {
-			int i_9_ = i * anInt4738 >> 263929676;
-			int i_10_ = i * anInt4736 >> -496298516;
+			int i_9_ = i * anInt4738 >> 12;
+			int i_10_ = i * anInt4736 >> 12;
 			if (i_8_ == -5515) {
-				int i_11_ = anInt4737 * i_7_ >> -1264175348;
-				int i_12_ = anInt4741 * i_7_ >> 226072012;
-				za.method1675(i_10_, ((Class119) this).anInt987, i_12_, i_11_, ((Class119) this).anInt985, i_9_, ((Class119) this).anInt988, (byte) -89);
+				int i_11_ = anInt4737 * i_7_ >> 12;
+				int i_12_ = anInt4741 * i_7_ >> 12;
+				za.method1675(i_10_, this.anInt987, i_12_, i_11_, this.anInt985, i_9_, this.anInt988, (byte) -89);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("sr.C(" + i + ',' + i_7_ + ',' + i_8_ + ')'));

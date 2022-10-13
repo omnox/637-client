@@ -9,7 +9,7 @@ final class Class64_Sub10 extends Class64 {
 
 	final void method550(int i, int i_0_) {
 		try {
-			((Class64) this).anInt494 = i_0_;
+			this.anInt494 = i_0_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "fe.B(" + i + ',' + i_0_ + ')');
 		}
@@ -23,7 +23,7 @@ final class Class64_Sub10 extends Class64 {
 		try {
 			if (i < 119)
 				anInt3666 = -111;
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "fe.E(" + i + ')');
 		}
@@ -34,9 +34,9 @@ final class Class64_Sub10 extends Class64 {
 			try {
 				if (i <= 118)
 					method593(44);
-				if ((((Class64) this).anInt494 ^ 0xffffffff) == -2 || (((Class64) this).anInt494 ^ 0xffffffff) == -1)
+				if (this.anInt494 == 1 || this.anInt494 == 0)
 					break;
-				((Class64) this).anInt494 = method552(0);
+				this.anInt494 = method552(0);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "fe.C(" + i + ')');
 			}
@@ -79,7 +79,7 @@ final class Class64_Sub10 extends Class64 {
 		try {
 			if (i_4_ != 6)
 				return true;
-			if ((i & 0x100100 ^ 0xffffffff) == -1)
+			if ((i & 0x100100) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

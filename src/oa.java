@@ -89,7 +89,7 @@ final class oa extends ha implements Interface9 {
 				if (!Class134_Sub1.method2246("sw3d", (byte) -36))
 					throw new RuntimeException("");
 				Class192.method2655(-374);
-				MA(((ha) this).aD938, 0, 0);
+				MA(this.aD938, 0, 0);
 				Class101.method1702(8, false, true);
 				aBoolean3318 = true;
 				aClass111_3314 = new ja();
@@ -118,15 +118,15 @@ final class oa extends ha implements Interface9 {
 		int i_18_ = 0;
 		int i_19_ = 0;
 		int i_20_ = 0;
-		for (Class246_Sub4_Sub2 class246_sub4_sub2 = (Class246_Sub4_Sub2) ((Class242) class242).aClass358_1850.method3890((byte) 71); class246_sub4_sub2 != null; class246_sub4_sub2 = ((Class246_Sub4_Sub2) ((Class242) class242).aClass358_1850.method3884(101))) {
-			anIntArray3301[i++] = ((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6176;
-			anIntArray3301[i++] = ((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6177;
-			anIntArray3301[i++] = ((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6175;
-			anIntArray3304[i_17_++] = ((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6178;
-			aShortArray3305[i_19_++] = (short) ((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6180;
-			anIntArray3309[i_18_++] = ((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6179;
+		for (Class246_Sub4_Sub2 class246_sub4_sub2 = (Class246_Sub4_Sub2) class242.aClass358_1850.method3890((byte) 71); class246_sub4_sub2 != null; class246_sub4_sub2 = ((Class246_Sub4_Sub2) class242.aClass358_1850.method3884(101))) {
+			anIntArray3301[i++] = class246_sub4_sub2.anInt6176;
+			anIntArray3301[i++] = class246_sub4_sub2.anInt6177;
+			anIntArray3301[i++] = class246_sub4_sub2.anInt6175;
+			anIntArray3304[i_17_++] = class246_sub4_sub2.anInt6178;
+			aShortArray3305[i_19_++] = (short) class246_sub4_sub2.anInt6180;
+			anIntArray3309[i_18_++] = class246_sub4_sub2.anInt6179;
 			if (bool)
-				aByteArray3300[i_20_++] = ((Class246_Sub4_Sub2) class246_sub4_sub2).aByte6183;
+				aByteArray3300[i_20_++] = class246_sub4_sub2.aByte6183;
 		}
 	}
 
@@ -157,8 +157,8 @@ final class oa extends ha implements Interface9 {
 	}
 
 	final Class332 method1758(Class324 class324, boolean bool) {
-		j var_j = new j(this, ((Class324) class324).anIntArray2718, ((Class324) class324).aByteArray2717, ((Class324) class324).aByteArray2723, 0, ((Class324) class324).anInt2722, ((Class324) class324).anInt2722, ((Class324) class324).anInt2720);
-		var_j.method3740(((Class324) class324).anInt2725, ((Class324) class324).anInt2721, ((Class324) class324).anInt2719, ((Class324) class324).anInt2724);
+		j var_j = new j(this, class324.anIntArray2718, class324.aByteArray2717, class324.aByteArray2723, 0, class324.anInt2722, class324.anInt2722, class324.anInt2720);
+		var_j.method3740(class324.anInt2725, class324.anInt2721, class324.anInt2719, class324.anInt2724);
 		return var_j;
 	}
 
@@ -186,13 +186,13 @@ final class oa extends ha implements Interface9 {
 
 	final void a(Class111 class111) {
 		aClass111_3310 = class111;
-		ma(((ja) (ja) class111).nativeid);
+		ma(((ja) class111).nativeid);
 	}
 
 	final void method1820(Class242 class242) {
-		if (((Class242) class242).aClass358_1850.method3885(true) != 0) {
+		if (class242.aClass358_1850.method3885(true) != 0) {
 			method1927(class242, false);
-			method1930().method142(this, anIntArray3301, anIntArray3304, anIntArray3309, aShortArray3305, ((Class242) class242).aClass358_1850.method3885(true));
+			method1930().method142(this, anIntArray3301, anIntArray3304, anIntArray3309, aShortArray3305, class242.aClass358_1850.method3885(true));
 		}
 	}
 
@@ -258,9 +258,9 @@ final class oa extends ha implements Interface9 {
 		int[] is_102_ = new int[class324s.length];
 		boolean bool_103_ = false;
 		for (int i = 0; i < class324s.length; i++) {
-			is[i] = ((Class324) class324s[i]).anInt2722;
-			is_102_[i] = ((Class324) class324s[i]).anInt2720;
-			if (((Class324) class324s[i]).aByteArray2723 != null)
+			is[i] = class324s[i].anInt2722;
+			is_102_[i] = class324s[i].anInt2720;
+			if (class324s[i].aByteArray2723 != null)
 				bool_103_ = true;
 		}
 		if (bool) {
@@ -275,7 +275,7 @@ final class oa extends ha implements Interface9 {
 
 	final void method1750(Canvas canvas) {
 		if (canvas != null) {
-			p var_p = (p) aClass377_3315.method3990((long) canvas.hashCode(), -1);
+			p var_p = (p) aClass377_3315.method3990(canvas.hashCode(), -1);
 			aP3307 = var_p;
 			t(var_p);
 		} else {
@@ -287,18 +287,18 @@ final class oa extends ha implements Interface9 {
 	final native void ra(int i, int i_104_, int i_105_, int i_106_);
 
 	private final boolean method1928(short i) {
-		synchronized (((ha) this).aD938) {
-			if (!((ha) this).aD938.method8(-126, i))
+		synchronized (this.aD938) {
+			if (!this.aD938.method8(-126, i))
 				return false;
-			Class238 class238 = ((ha) this).aD938.method11(i, -28755);
+			Class238 class238 = this.aD938.method11(i, -28755);
 			if (class238 == null)
 				return false;
 			int[] is;
-			if (((Class238) class238).anInt1818 != 2)
-				is = ((ha) this).aD938.method9(i, (byte) -126, 128, 0.7F, true, 128);
+			if (class238.anInt1818 != 2)
+				is = this.aD938.method9(i, (byte) -126, 128, 0.7F, true, 128);
 			else
-				is = ((ha) this).aD938.method13(121, 128, i, 0.7F, true, 128);
-			CA(i, is, ((Class238) class238).aShort1831, ((Class238) class238).anInt1818, ((Class238) class238).aByte1820, ((Class238) class238).aByte1816, ((Class238) class238).anInt1835, ((Class238) class238).aBoolean1822, ((Class238) class238).aByte1830, ((Class238) class238).aByte1829, ((Class238) class238).aByte1823, ((Class238) class238).aByte1837, ((Class238) class238).aBoolean1825, ((Class238) class238).aBoolean1833, ((Class238) class238).aBoolean1827, ((Class238) class238).aBoolean1826, ((Class238) class238).aBoolean1819, ((Class238) class238).aByte1832, ((Class238) class238).aBoolean1817, ((Class238) class238).aBoolean1824, ((Class238) class238).anInt1821);
+				is = this.aD938.method13(121, 128, i, 0.7F, true, 128);
+			CA(i, is, class238.aShort1831, class238.anInt1818, class238.aByte1820, class238.aByte1816, class238.anInt1835, class238.aBoolean1822, class238.aByte1830, class238.aByte1829, class238.aByte1823, class238.aByte1837, class238.aBoolean1825, class238.aBoolean1833, class238.aBoolean1827, class238.aBoolean1826, class238.aBoolean1819, class238.aByte1832, class238.aBoolean1817, class238.aBoolean1824, class238.anInt1821);
 		}
 		return true;
 	}
@@ -320,7 +320,7 @@ final class oa extends ha implements Interface9 {
 	}
 
 	final void method1776() {
-		method1750(((p) aP3307).aCanvas3320);
+		method1750(aP3307.aCanvas3320);
 	}
 
 	final int method1822() {
@@ -339,19 +339,19 @@ final class oa extends ha implements Interface9 {
 
 	private final boolean method1929(short i) {
 		synchronized (this) {
-			Class238 class238 = ((ha) this).aD938.method11(i, -28755);
+			Class238 class238 = this.aD938.method11(i, -28755);
 			if (class238 == null)
 				return false;
-			AA(i, ((Class238) class238).aShort1831, ((Class238) class238).anInt1818, ((Class238) class238).aByte1820, ((Class238) class238).aByte1816, ((Class238) class238).anInt1835, ((Class238) class238).aBoolean1822, ((Class238) class238).aByte1830, ((Class238) class238).aByte1829, ((Class238) class238).aByte1823, ((Class238) class238).aByte1837, ((Class238) class238).aBoolean1825, ((Class238) class238).aBoolean1833, ((Class238) class238).aBoolean1827, ((Class238) class238).aBoolean1826, ((Class238) class238).aBoolean1819, ((Class238) class238).aByte1832, ((Class238) class238).aBoolean1817, ((Class238) class238).aBoolean1824, ((Class238) class238).anInt1821);
+			AA(i, class238.aShort1831, class238.anInt1818, class238.aByte1820, class238.aByte1816, class238.anInt1835, class238.aBoolean1822, class238.aByte1830, class238.aByte1829, class238.aByte1823, class238.aByte1837, class238.aBoolean1825, class238.aBoolean1833, class238.aBoolean1827, class238.aBoolean1826, class238.aBoolean1819, class238.aByte1832, class238.aBoolean1817, class238.aBoolean1824, class238.anInt1821);
 		}
 		return true;
 	}
 
 	final void method1798(int i) {
 		anInt3312 = anInt3311 = i;
-		if (((oa) this).anInt3316 > 1)
+		if (this.anInt3316 > 1)
 			throw new IllegalStateException("No MT");
-		method1783(((oa) this).anInt3316);
+		method1783(this.anInt3316);
 		method1807(0);
 	}
 
@@ -371,7 +371,7 @@ final class oa extends ha implements Interface9 {
 
 	final void method1785(Class242 class242, int i) {
 		method1927(class242, false);
-		method1930().method142(this, anIntArray3301, anIntArray3304, anIntArray3309, aShortArray3305, ((Class242) class242).aClass358_1850.method3885(true));
+		method1930().method142(this, anIntArray3301, anIntArray3304, anIntArray3309, aShortArray3305, class242.aClass358_1850.method3885(true));
 	}
 
 	final boolean method1824() {
@@ -396,7 +396,7 @@ final class oa extends ha implements Interface9 {
 
 	protected final synchronized void finalize() {
 		this.method1743(-1);
-		if (((oa) this).nativeid != 0L)
+		if (this.nativeid != 0L)
 			Class192.method2654(false, this);
 	}
 
@@ -419,7 +419,7 @@ final class oa extends ha implements Interface9 {
 	}
 
 	final void method1801(int[] is) {
-		Dimension dimension = ((p) aP3307).aCanvas3320.getSize();
+		Dimension dimension = aP3307.aCanvas3320.getSize();
 		is[0] = dimension.width;
 		is[1] = dimension.height;
 	}
@@ -441,9 +441,9 @@ final class oa extends ha implements Interface9 {
 	private final native void n(long l, long l_173_);
 
 	final void method1783(int i) {
-		((oa) this).anInt3316 = i;
-		anAArray3317 = new a[((oa) this).anInt3316];
-		for (int i_174_ = 0; i_174_ < ((oa) this).anInt3316; i_174_++)
+		this.anInt3316 = i;
+		anAArray3317 = new a[this.anInt3316];
+		for (int i_174_ = 0; i_174_ < this.anInt3316; i_174_++)
 			anAArray3317[i_174_] = new a(this, anInt3312, anInt3311);
 	}
 
@@ -454,9 +454,9 @@ final class oa extends ha implements Interface9 {
 	}
 
 	final void method1786(Canvas canvas) {
-		if (((p) aP3307).aCanvas3320 == canvas)
+		if (aP3307.aCanvas3320 == canvas)
 			method1750(null);
-		p var_p = (p) aClass377_3315.method3990((long) canvas.hashCode(), -1);
+		p var_p = (p) aClass377_3315.method3990(canvas.hashCode(), -1);
 		if (var_p != null) {
 			var_p.remove();
 			var_p.method1449();
@@ -492,8 +492,8 @@ final class oa extends ha implements Interface9 {
 	}
 
 	final a method1930() {
-		for (int i = 0; i < ((oa) this).anInt3316; i++) {
-			if (((a) anAArray3317[i]).aRunnable3281 == Thread.currentThread())
+		for (int i = 0; i < this.anInt3316; i++) {
+			if (anAArray3317[i].aRunnable3281 == Thread.currentThread())
 				return anAArray3317[i];
 		}
 		return null;
@@ -543,7 +543,7 @@ final class oa extends ha implements Interface9 {
 
 	final void method1740(Interface17 interface17) {
 		wa var_wa = (wa) interface17;
-		n(((j) ((wa) var_wa).aJ3435).nativeid, ((xa) ((wa) var_wa).aXa3436).nativeid);
+		n(var_wa.aJ3435.nativeid, var_wa.aXa3436.nativeid);
 	}
 
 	private final native void N(int i, int[] is, float[] fs);
@@ -551,7 +551,7 @@ final class oa extends ha implements Interface9 {
 	final native void DA(int i, int i_203_, int i_204_, int i_205_);
 
 	final void method1741(Canvas canvas, int i, int i_206_) {
-		p var_p = (p) aClass377_3315.method3990((long) canvas.hashCode(), -1);
+		p var_p = (p) aClass377_3315.method3990(canvas.hashCode(), -1);
 		if (var_p == null) {
 			try {
 				Class var_class = Class.forName("java.awt.Canvas");
@@ -561,8 +561,8 @@ final class oa extends ha implements Interface9 {
 				/* empty */
 			}
 			var_p = new p(this, canvas, i, i_206_);
-			aClass377_3315.method3996(var_p, (long) canvas.hashCode(), -1);
-		} else if (((p) var_p).anInt3319 != i || ((p) var_p).anInt3322 != i_206_)
+			aClass377_3315.method3996(var_p, canvas.hashCode(), -1);
+		} else if (var_p.anInt3319 != i || var_p.anInt3322 != i_206_)
 			var_p.method1448(canvas, i, i_206_);
 	}
 
@@ -571,9 +571,9 @@ final class oa extends ha implements Interface9 {
 	}
 
 	final void method1782(Canvas canvas, int i, int i_207_) {
-		p var_p = (p) aClass377_3315.method3990((long) canvas.hashCode(), -1);
+		p var_p = (p) aClass377_3315.method3990(canvas.hashCode(), -1);
 		var_p.method1448(canvas, i, i_207_);
-		if (canvas != null && canvas == ((p) aP3307).aCanvas3320)
+		if (canvas != null && canvas == aP3307.aCanvas3320)
 			method1750(canvas);
 	}
 

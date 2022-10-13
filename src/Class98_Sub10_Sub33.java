@@ -14,22 +14,22 @@ final class Class98_Sub10_Sub33 extends Class98_Sub10 {
 		try {
 			if (i > -76)
 				anIntArrayArray5724 = null;
-			int[][] is = ((Class98_Sub10) this).aClass223_3859.method2828(i_0_, 0);
-			if (((Class223) ((Class98_Sub10) this).aClass223_3859).aBoolean1683) {
+			int[][] is = this.aClass223_3859.method2828(i_0_, 0);
+			if (this.aClass223_3859.aBoolean1683) {
 				int[] is_1_ = this.method1000(i_0_, 0, 0);
 				int[] is_2_ = is[0];
 				int[] is_3_ = is[1];
 				int[] is_4_ = is[2];
 				for (int i_5_ = 0; i_5_ < Class25.anInt268; i_5_++) {
-					int i_6_ = is_1_[i_5_] >> -1995832092;
+					int i_6_ = is_1_[i_5_] >> 4;
 					if (i_6_ < 0)
 						i_6_ = 0;
-					if ((i_6_ ^ 0xffffffff) < -257)
+					if (i_6_ > 256)
 						i_6_ = 256;
 					i_6_ = anIntArray5723[i_6_];
-					is_2_[i_5_] = Class202.method2702(4080, i_6_ >> -604582996);
-					is_3_[i_5_] = Class202.method2702(i_6_ >> 1240244164, 4080);
-					is_4_[i_5_] = Class202.method2702(i_6_ << 1317982468, 4080);
+					is_2_[i_5_] = Class202.method2702(4080, i_6_ >> 12);
+					is_3_[i_5_] = Class202.method2702(i_6_ >> 4, 4080);
+					is_4_[i_5_] = Class202.method2702(i_6_ << 4, 4080);
 				}
 			}
 			return is;
@@ -42,7 +42,7 @@ final class Class98_Sub10_Sub33 extends Class98_Sub10 {
 		try {
 			Class98_Sub46_Sub17 class98_sub46_sub17 = Class185.setCS2StringOrVarc(i, -123, 13);
 			class98_sub46_sub17.method1626((byte) -103);
-			((Class98_Sub46_Sub17) class98_sub46_sub17).anInt6054 = i_7_;
+			class98_sub46_sub17.anInt6054 = i_7_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("sg.D(" + i + ',' + i_7_ + ',' + i_8_ + ')'));
 		}
@@ -63,7 +63,7 @@ final class Class98_Sub10_Sub33 extends Class98_Sub10 {
 		do {
 			try {
 				while_172_: do {
-					if ((i_9_ ^ 0xffffffff) != -1) {
+					if (i_9_ != 0) {
 						int i_10_ = i_9_;
 						while_171_: do {
 							while_170_: do {
@@ -71,7 +71,7 @@ final class Class98_Sub10_Sub33 extends Class98_Sub10 {
 									while_168_: do {
 										do {
 											if (i_10_ != 1) {
-												if ((i_10_ ^ 0xffffffff) != -3) {
+												if (i_10_ != 2) {
 													if (i_10_ != 3) {
 														if (i_10_ != 4) {
 															if (i_10_ != 5) {
@@ -336,17 +336,17 @@ final class Class98_Sub10_Sub33 extends Class98_Sub10 {
 		try {
 			if (i_12_ >= -92)
 				anIntArray5723 = null;
-			if ((i ^ 0xffffffff) == -1) {
+			if (i == 0) {
 				int i_13_ = class98_sub22.readUnsignedByte();
 				if (i_13_ != 0)
 					method1100(10, i_13_);
 				else {
 					anIntArrayArray5724 = new int[class98_sub22.readUnsignedByte()][4];
-					for (int i_14_ = 0; ((anIntArrayArray5724.length ^ 0xffffffff) < (i_14_ ^ 0xffffffff)); i_14_++) {
+					for (int i_14_ = 0; (i_14_ < anIntArrayArray5724.length); i_14_++) {
 						anIntArrayArray5724[i_14_][0] = class98_sub22.readShort();
-						anIntArrayArray5724[i_14_][1] = (class98_sub22.readUnsignedByte() << -1113289820);
-						anIntArrayArray5724[i_14_][2] = class98_sub22.readUnsignedByte() << 801224932;
-						anIntArrayArray5724[i_14_][3] = (class98_sub22.readUnsignedByte() << 1705896548);
+						anIntArrayArray5724[i_14_][1] = (class98_sub22.readUnsignedByte() << 4);
+						anIntArrayArray5724[i_14_][2] = class98_sub22.readUnsignedByte() << 4;
+						anIntArrayArray5724[i_14_][3] = (class98_sub22.readUnsignedByte() << 4);
 					}
 				}
 			}
@@ -360,28 +360,28 @@ final class Class98_Sub10_Sub33 extends Class98_Sub10 {
 			try {
 				int i_15_ = anIntArrayArray5724.length;
 				if (i == 3) {
-					if ((i_15_ ^ 0xffffffff) >= -1)
+					if (i_15_ <= 0)
 						break;
-					for (int i_16_ = 0; (i_16_ ^ 0xffffffff) > -258; i_16_++) {
+					for (int i_16_ = 0; i_16_ < 257; i_16_++) {
 						int i_17_ = 0;
-						int i_18_ = i_16_ << 2145521988;
+						int i_18_ = i_16_ << 4;
 						for (int i_19_ = 0; i_15_ > i_19_; i_19_++) {
-							if ((i_18_ ^ 0xffffffff) > (anIntArrayArray5724[i_19_][0] ^ 0xffffffff))
+							if (anIntArrayArray5724[i_19_][0] > i_18_)
 								break;
 							i_17_++;
 						}
 						int i_20_;
 						int i_21_;
 						int i_22_;
-						if ((i_15_ ^ 0xffffffff) < (i_17_ ^ 0xffffffff)) {
+						if (i_17_ < i_15_) {
 							int[] is = anIntArrayArray5724[i_17_];
 							if (i_17_ > 0) {
 								int[] is_23_ = anIntArrayArray5724[i_17_ + -1];
-								int i_24_ = ((i_18_ + -is_23_[0] << 1394646828) / (is[0] - is_23_[0]));
+								int i_24_ = ((i_18_ + -is_23_[0] << 12) / (is[0] - is_23_[0]));
 								int i_25_ = -i_24_ + 4096;
-								i_22_ = (is[2] * i_24_ + is_23_[2] * i_25_ >> -1318458580);
-								i_21_ = (is_23_[3] * i_25_ + i_24_ * is[3] >> -1229726772);
-								i_20_ = (i_24_ * is[1] - -(is_23_[1] * i_25_) >> 2142671148);
+								i_22_ = (is[2] * i_24_ + is_23_[2] * i_25_ >> 12);
+								i_21_ = (is_23_[3] * i_25_ + i_24_ * is[3] >> 12);
+								i_20_ = (i_24_ * is[1] - -(is_23_[1] * i_25_) >> 12);
 							} else {
 								i_21_ = is[3];
 								i_22_ = is[2];
@@ -396,19 +396,19 @@ final class Class98_Sub10_Sub33 extends Class98_Sub10 {
 						i_20_ >>= 4;
 						i_22_ >>= 4;
 						i_21_ >>= 4;
-						if ((i_22_ ^ 0xffffffff) > -1)
+						if (i_22_ < 0)
 							i_22_ = 0;
 						else if (i_22_ > 255)
 							i_22_ = 255;
 						if (i_21_ < 0)
 							i_21_ = 0;
-						else if ((i_21_ ^ 0xffffffff) < -256)
+						else if (i_21_ > 255)
 							i_21_ = 255;
-						if ((i_20_ ^ 0xffffffff) > -1)
+						if (i_20_ < 0)
 							i_20_ = 0;
-						else if ((i_20_ ^ 0xffffffff) < -256)
+						else if (i_20_ > 255)
 							i_20_ = 255;
-						anIntArray5723[i_16_] = (Class41.method366(i_21_, Class41.method366(i_20_ << 1113026160, i_22_ << -1375834648)));
+						anIntArray5723[i_16_] = (Class41.method366(i_21_, Class41.method366(i_20_ << 16, i_22_ << 8)));
 					}
 				}
 			} catch (RuntimeException runtimeexception) {

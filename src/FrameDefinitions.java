@@ -31,21 +31,21 @@ final class FrameDefinitions {
 	}
 
 	FrameDefinitions(byte[] is, Class98_Sub1 class98_sub1) {
-		((FrameDefinitions) this).aBoolean95 = false;
-		((FrameDefinitions) this).aBoolean104 = false;
-		((FrameDefinitions) this).framemap = class98_sub1;
+		this.aBoolean95 = false;
+		this.aBoolean104 = false;
+		this.framemap = class98_sub1;
 		try {
 			RSByteBuffer class98_sub22 = new RSByteBuffer(is);
 			RSByteBuffer class98_sub22_0_ = new RSByteBuffer(is);
 			class98_sub22.readUnsignedByte();
-			((RSByteBuffer) class98_sub22).position += 2;
+			class98_sub22.position += 2;
 			int i = class98_sub22.readUnsignedByte();
 			int i_1_ = 0;
 			int i_2_ = -1;
 			int i_3_ = -1;
-			((RSByteBuffer) class98_sub22_0_).position = ((RSByteBuffer) class98_sub22).position + i;
+			class98_sub22_0_.position = class98_sub22.position + i;
 			for (int i_4_ = 0; i_4_ < i; i_4_++) {
-				int i_5_ = (((Class98_Sub1) ((FrameDefinitions) this).framemap).anIntArray3812[i_4_]);
+				int i_5_ = (this.framemap.anIntArray3812[i_4_]);
 				if (i_5_ == 0)
 					i_2_ = i_4_;
 				int i_6_ = class98_sub22.readUnsignedByte();
@@ -81,35 +81,35 @@ final class FrameDefinitions {
 							i_3_ = i_2_;
 						}
 					} else if (i_5_ == 5)
-						((FrameDefinitions) this).aBoolean102 = true;
+						this.aBoolean102 = true;
 					else if (i_5_ == 7)
-						((FrameDefinitions) this).aBoolean104 = true;
+						this.aBoolean104 = true;
 					else if (i_5_ == 9 || i_5_ == 10 || i_5_ == 8)
-						((FrameDefinitions) this).aBoolean95 = true;
+						this.aBoolean95 = true;
 					i_1_++;
 				}
 			}
-			if (((RSByteBuffer) class98_sub22_0_).position != is.length)
+			if (class98_sub22_0_.position != is.length)
 				throw new RuntimeException();
-			((FrameDefinitions) this).anInt100 = i_1_;
-			((FrameDefinitions) this).aShortArray108 = new short[i_1_];
-			((FrameDefinitions) this).aShortArray94 = new short[i_1_];
-			((FrameDefinitions) this).aShortArray105 = new short[i_1_];
-			((FrameDefinitions) this).aShortArray106 = new short[i_1_];
-			((FrameDefinitions) this).aShortArray107 = new short[i_1_];
-			((FrameDefinitions) this).aByteArray99 = new byte[i_1_];
+			this.anInt100 = i_1_;
+			this.aShortArray108 = new short[i_1_];
+			this.aShortArray94 = new short[i_1_];
+			this.aShortArray105 = new short[i_1_];
+			this.aShortArray106 = new short[i_1_];
+			this.aShortArray107 = new short[i_1_];
+			this.aByteArray99 = new byte[i_1_];
 			for (int i_8_ = 0; i_8_ < i_1_; i_8_++) {
-				((FrameDefinitions) this).aShortArray108[i_8_] = aShortArray103[i_8_];
-				((FrameDefinitions) this).aShortArray94[i_8_] = aShortArray101[i_8_];
-				((FrameDefinitions) this).aShortArray105[i_8_] = aShortArray96[i_8_];
-				((FrameDefinitions) this).aShortArray106[i_8_] = aShortArray92[i_8_];
-				((FrameDefinitions) this).aShortArray107[i_8_] = aShortArray98[i_8_];
-				((FrameDefinitions) this).aByteArray99[i_8_] = aByteArray97[i_8_];
+				this.aShortArray108[i_8_] = aShortArray103[i_8_];
+				this.aShortArray94[i_8_] = aShortArray101[i_8_];
+				this.aShortArray105[i_8_] = aShortArray96[i_8_];
+				this.aShortArray106[i_8_] = aShortArray92[i_8_];
+				this.aShortArray107[i_8_] = aShortArray98[i_8_];
+				this.aByteArray99[i_8_] = aByteArray97[i_8_];
 			}
 		} catch (Exception exception) {
-			((FrameDefinitions) this).anInt100 = 0;
-			((FrameDefinitions) this).aBoolean102 = false;
-			((FrameDefinitions) this).aBoolean104 = false;
+			this.anInt100 = 0;
+			this.aBoolean102 = false;
+			this.aBoolean104 = false;
 		}
 	}
 

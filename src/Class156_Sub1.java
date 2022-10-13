@@ -22,7 +22,7 @@ final class Class156_Sub1 extends Class156 implements Interface8 {
 		try {
 			if (i != 20260)
 				return -35L;
-			return ((Class156) this).aBuffer1247.getAddress();
+			return this.aBuffer1247.getAddress();
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "qs.I(" + i + ')');
 		}
@@ -74,15 +74,15 @@ final class Class156_Sub1 extends Class156 implements Interface8 {
 				return 0;
 			Class98_Sub3 class98_sub3 = Class64_Sub28.method669(i, bool, 6);
 			if (class98_sub3 == null)
-				return (((Class98_Sub46_Sub18) Class98_Sub46_Sub14.aClass8_5378.method185(9, i)).anInt6055);
+				return (Class98_Sub46_Sub14.aClass8_5378.method185(9, i).anInt6055);
 			int i_4_ = 0;
-			for (int i_5_ = 0; ((Class98_Sub3) class98_sub3).anIntArray3824.length > i_5_; i_5_++) {
-				if (((Class98_Sub3) class98_sub3).anIntArray3824[i_5_] == -1)
+			for (int i_5_ = 0; class98_sub3.anIntArray3824.length > i_5_; i_5_++) {
+				if (class98_sub3.anIntArray3824[i_5_] == -1)
 					i_4_++;
 			}
 			if (i_3_ <= 93)
 				return -9;
-			i_4_ += (((Class98_Sub46_Sub18) Class98_Sub46_Sub14.aClass8_5378.method185(9, i)).anInt6055 - ((Class98_Sub3) class98_sub3).anIntArray3824.length);
+			i_4_ += (Class98_Sub46_Sub14.aClass8_5378.method185(9, i).anInt6055 - class98_sub3.anIntArray3824.length);
 			return i_4_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("qs.C(" + i + ',' + i_3_ + ',' + bool + ')'));

@@ -24,7 +24,7 @@ final class Class212 {
 
 	final Class98_Sub46_Sub1 method2777(int i, int i_0_) {
 		try {
-			Class98_Sub46_Sub1 class98_sub46_sub1 = ((Class98_Sub46_Sub1) aClass79_1598.get((long) i_0_));
+			Class98_Sub46_Sub1 class98_sub46_sub1 = ((Class98_Sub46_Sub1) aClass79_1598.get(i_0_));
 			if (class98_sub46_sub1 != null)
 				return class98_sub46_sub1;
 			byte[] is;
@@ -41,9 +41,9 @@ final class Class212 {
 				return null;
 			if (is != null)
 				class98_sub46_sub1.method1532(new RSByteBuffer(is), true);
-			if ((i_0_ ^ 0xffffffff) <= -32769)
+			if (i_0_ >= 32768)
 				class98_sub46_sub1.method1531(i ^ 0xef8f);
-			aClass79_1598.put((long) i_0_, class98_sub46_sub1);
+			aClass79_1598.put(i_0_, class98_sub46_sub1);
 			return class98_sub46_sub1;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "np.A(" + i + ',' + i_0_ + ')');

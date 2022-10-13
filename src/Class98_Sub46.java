@@ -19,7 +19,7 @@ class Class98_Sub46 extends Node {
 		try {
 			if (i <= 34)
 				anInt4260 = -110;
-			if (((Class98_Sub46) this).aClass98_Sub46_4265 == null)
+			if (this.aClass98_Sub46_4265 == null)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -39,13 +39,13 @@ class Class98_Sub46 extends Node {
 
 	final void method1524(byte i) {
 		try {
-			if (((Class98_Sub46) this).aClass98_Sub46_4265 != null) {
-				((Class98_Sub46) ((Class98_Sub46) this).aClass98_Sub46_4265).aClass98_Sub46_4262 = ((Class98_Sub46) this).aClass98_Sub46_4262;
-				((Class98_Sub46) ((Class98_Sub46) this).aClass98_Sub46_4262).aClass98_Sub46_4265 = ((Class98_Sub46) this).aClass98_Sub46_4265;
-				((Class98_Sub46) this).aClass98_Sub46_4262 = null;
+			if (this.aClass98_Sub46_4265 != null) {
+				this.aClass98_Sub46_4265.aClass98_Sub46_4262 = this.aClass98_Sub46_4262;
+				this.aClass98_Sub46_4262.aClass98_Sub46_4265 = this.aClass98_Sub46_4265;
+				this.aClass98_Sub46_4262 = null;
 				if (i != -90)
 					method1523(-94);
-				((Class98_Sub46) this).aClass98_Sub46_4265 = null;
+				this.aClass98_Sub46_4265 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "tm.J(" + i + ')');
@@ -63,8 +63,8 @@ class Class98_Sub46 extends Node {
 			int i_3_ = ParamType.aCalendar1200.get(13);
 			String string_4_ = (Integer.toString(i_1_ / 10) + i_1_ % 10 + ":" + i_2_ / 10 + i_2_ % 10 + ":" + i_3_ / 10 + i_3_ % 10);
 			String[] strings = Class112.method2142(string, '\n', false);
-			for (int i_5_ = 0; (i_5_ ^ 0xffffffff) > (strings.length ^ 0xffffffff); i_5_++) {
-				for (int i_6_ = Class98_Sub28.anInt4080; (i_6_ ^ 0xffffffff) < -1; i_6_--)
+			for (int i_5_ = 0; strings.length > i_5_; i_5_++) {
+				for (int i_6_ = Class98_Sub28.anInt4080; i_6_ > 0; i_6_--)
 					Class98_Sub46_Sub20.aStringArray6073[i_6_] = Class98_Sub46_Sub20.aStringArray6073[-1 + i_6_];
 				Class98_Sub46_Sub20.aStringArray6073[0] = string_4_ + ": " + strings[i_5_];
 				if (Class264.aFileOutputStream1969 != null) {
@@ -75,7 +75,7 @@ class Class98_Sub46 extends Node {
 					}
 				}
 				if (Class98_Sub28.anInt4080 < Class98_Sub46_Sub20.aStringArray6073.length + -1) {
-					if ((Class54.anInt3395 ^ 0xffffffff) < -1)
+					if (Class54.anInt3395 > 0)
 						Class54.anInt3395++;
 					Class98_Sub28.anInt4080++;
 				}
@@ -91,7 +91,7 @@ class Class98_Sub46 extends Node {
 
 	static final Class230 method1526(byte[] is, ha_Sub3_Sub2 var_ha_Sub3_Sub2, int i, int i_7_) {
 		try {
-			if (is == null || (is.length ^ 0xffffffff) == -1)
+			if (is == null || is.length == 0)
 				return null;
 			long l = OpenGL.glCreateShaderObjectARB(i_7_);
 			OpenGL.glShaderSourceRawARB(l, is);
@@ -99,16 +99,16 @@ class Class98_Sub46 extends Node {
 				anInt4260 = 21;
 			OpenGL.glCompileShaderARB(l);
 			OpenGL.glGetObjectParameterivARB(l, 35713, Class231.anIntArray1734, 0);
-			if ((Class231.anIntArray1734[0] ^ 0xffffffff) == -1) {
+			if (Class231.anIntArray1734[0] == 0) {
 				if (Class231.anIntArray1734[0] == 0)
 					System.out.println("Shader compile failed:");
 				OpenGL.glGetObjectParameterivARB(l, 35716, Class231.anIntArray1734, 1);
-				if ((Class231.anIntArray1734[1] ^ 0xffffffff) < -2) {
+				if (Class231.anIntArray1734[1] > 1) {
 					byte[] is_8_ = new byte[Class231.anIntArray1734[1]];
 					OpenGL.glGetInfoLogARB(l, Class231.anIntArray1734[1], Class231.anIntArray1734, 0, is_8_, 0);
 					System.out.println(new String(is_8_));
 				}
-				if ((Class231.anIntArray1734[0] ^ 0xffffffff) == -1) {
+				if (Class231.anIntArray1734[0] == 0) {
 					OpenGL.glDeleteObjectARB(l);
 					return null;
 				}

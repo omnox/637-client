@@ -18,12 +18,12 @@ final class Class125 implements Interface2_Impl2 {
 	public final Buffer method78(boolean bool, int i) {
 		Buffer buffer;
 		try {
-			if (((Class125) this).anIDirect3DIndexBuffer5350 == null)
+			if (this.anIDirect3DIndexBuffer5350 == null)
 				return null;
 			bool &= aBoolean5347;
-			if (!aBoolean5348 && kg.a(-21593, (((Class125) this).anIDirect3DIndexBuffer5350.Lock(0, anInt5345, bool ? 8192 : 0, (((ha_Sub3_Sub1) aHa_Sub3_Sub1_5346).aGeometryBuffer6086))))) {
+			if (!aBoolean5348 && kg.a(-21593, (this.anIDirect3DIndexBuffer5350.Lock(0, anInt5345, bool ? 8192 : 0, (aHa_Sub3_Sub1_5346.aGeometryBuffer6086))))) {
 				aBoolean5348 = true;
-				return ((ha_Sub3_Sub1) aHa_Sub3_Sub1_5346).aGeometryBuffer6086;
+				return aHa_Sub3_Sub1_5346.aGeometryBuffer6086;
 			}
 			if (i > -79)
 				anInt5349 = -35;
@@ -62,9 +62,9 @@ final class Class125 implements Interface2_Impl2 {
 		try {
 			if (bool)
 				method2(71);
-			if (null != ((Class125) this).anIDirect3DIndexBuffer5350) {
-				((Class125) this).anIDirect3DIndexBuffer5350.b(31);
-				((Class125) this).anIDirect3DIndexBuffer5350 = null;
+			if (null != this.anIDirect3DIndexBuffer5350) {
+				this.anIDirect3DIndexBuffer5350.b(31);
+				this.anIDirect3DIndexBuffer5350 = null;
 			}
 			anInt5345 = 0;
 			anInt5349 = 0;
@@ -77,7 +77,7 @@ final class Class125 implements Interface2_Impl2 {
 		boolean bool;
 		try {
 			int i_1_ = -29 / ((-46 - i) / 32);
-			if (aBoolean5348 && kg.a(-21593, ((Class125) this).anIDirect3DIndexBuffer5350.Unlock())) {
+			if (aBoolean5348 && kg.a(-21593, this.anIDirect3DIndexBuffer5350.Unlock())) {
 				aBoolean5348 = false;
 				return true;
 			}
@@ -91,7 +91,7 @@ final class Class125 implements Interface2_Impl2 {
 	public final void method76(int i, int i_2_) {
 		do {
 			try {
-				anInt5349 = i * ((Class162) aClass162_5344).anInt1263;
+				anInt5349 = i * aClass162_5344.anInt1263;
 				if (anInt5349 > anInt5345) {
 					int i_3_ = 8;
 					int i_4_;
@@ -101,9 +101,9 @@ final class Class125 implements Interface2_Impl2 {
 						i_4_ = 0;
 						i_3_ |= 0x200;
 					}
-					if (((Class125) this).anIDirect3DIndexBuffer5350 != null)
-						((Class125) this).anIDirect3DIndexBuffer5350.b(i_2_ + -20747);
-					((Class125) this).anIDirect3DIndexBuffer5350 = (((ha_Sub3_Sub1) aHa_Sub3_Sub1_5346).anIDirect3DDevice6098.a(anInt5349, i_3_, (aClass162_5344 == Class162.aClass162_1267 ? 101 : 102), i_4_, ((Class125) this).anIDirect3DIndexBuffer5350));
+					if (this.anIDirect3DIndexBuffer5350 != null)
+						this.anIDirect3DIndexBuffer5350.b(i_2_ + -20747);
+					this.anIDirect3DIndexBuffer5350 = (aHa_Sub3_Sub1_5346.anIDirect3DDevice6098.a(anInt5349, i_3_, (aClass162_5344 == Class162.aClass162_1267 ? 101 : 102), i_4_, this.anIDirect3DIndexBuffer5350));
 					anInt5345 = anInt5349;
 				}
 				if (i_2_ == 20779)

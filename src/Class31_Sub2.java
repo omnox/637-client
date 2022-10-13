@@ -34,7 +34,7 @@ public final class Class31_Sub2 extends Class31 {
 			if (proxy.type() != Proxy.Type.HTTP) {
 				if (proxy.type() == Proxy.Type.SOCKS) {
 					Socket socket_0_ = new Socket(proxy);
-					socket_0_.connect(new InetSocketAddress(((Class31_Sub2) this).aString299, ((Class31_Sub2) this).anInt302));
+					socket_0_.connect(new InetSocketAddress(this.aString299, this.anInt302));
 					return socket_0_;
 				}
 			} else {
@@ -53,7 +53,7 @@ public final class Class31_Sub2 extends Class31 {
 							Method method_3_ = (var_class.getDeclaredMethod("getHeaderValue", (new Class[] { (aClass3589 == null ? (aClass3589 = method312("java.net.URL")) : aClass3589), (aClass3588 == null ? (aClass3588 = method312("java.lang.String")) : aClass3588) })));
 							method_3_.setAccessible(true);
 							String string_4_ = ((String) method_2_.invoke(object, new Object[0]));
-							String string_5_ = ((String) (method_3_.invoke(object, new Object[] { new URL("https://" + ((Class31_Sub2) this).aString299 + "/"), "https" })));
+							String string_5_ = ((String) (method_3_.invoke(object, new Object[] { new URL("https://" + this.aString299 + "/"), "https" })));
 							string = string_4_ + ": " + string_5_;
 						}
 					}
@@ -79,12 +79,12 @@ public final class Class31_Sub2 extends Class31 {
 			boolean bool = (Boolean.parseBoolean(System.getProperty("java.net.useSystemProxies")));
 			if (!bool)
 				System.setProperty("java.net.useSystemProxies", "true");
-			boolean bool_6_ = -444 == (((Class31_Sub2) this).anInt302 ^ 0xffffffff);
+			boolean bool_6_ = this.anInt302 == 443;
 			List list;
 			List list_7_;
 			try {
-				list = aProxySelector3587.select(new URI((!bool_6_ ? "http" : "https") + "://" + ((Class31_Sub2) this).aString299));
-				list_7_ = aProxySelector3587.select(new URI((bool_6_ ? "http" : "https") + "://" + ((Class31_Sub2) this).aString299));
+				list = aProxySelector3587.select(new URI((!bool_6_ ? "http" : "https") + "://" + this.aString299));
+				list_7_ = aProxySelector3587.select(new URI((bool_6_ ? "http" : "https") + "://" + this.aString299));
 			} catch (URISyntaxException urisyntaxexception) {
 				return method308((byte) -53);
 			}
@@ -92,7 +92,7 @@ public final class Class31_Sub2 extends Class31 {
 			Object[] objects = list.toArray();
 			IOException_Sub1 ioexception_sub1 = null;
 			Object[] objects_8_ = objects;
-			for (int i_9_ = 0; (objects_8_.length ^ 0xffffffff) < (i_9_ ^ 0xffffffff); i_9_++) {
+			for (int i_9_ = 0; i_9_ < objects_8_.length; i_9_++) {
 				Object object = objects_8_[i_9_];
 				Proxy proxy = (Proxy) object;
 				Socket socket_10_;
@@ -125,9 +125,9 @@ public final class Class31_Sub2 extends Class31 {
 			socket_14_.setSoTimeout(10000);
 			OutputStream outputstream = socket_14_.getOutputStream();
 			if (null == string_13_)
-				outputstream.write(("CONNECT " + ((Class31_Sub2) this).aString299 + ":" + ((Class31_Sub2) this).anInt302 + " HTTP/1.0\n\n").getBytes(Charset.forName("ISO-8859-1")));
+				outputstream.write(("CONNECT " + this.aString299 + ":" + this.anInt302 + " HTTP/1.0\n\n").getBytes(Charset.forName("ISO-8859-1")));
 			else
-				outputstream.write(("CONNECT " + ((Class31_Sub2) this).aString299 + ":" + ((Class31_Sub2) this).anInt302 + " HTTP/1.0\n" + string_13_ + "\n\n").getBytes(Charset.forName("ISO-8859-1")));
+				outputstream.write(("CONNECT " + this.aString299 + ":" + this.anInt302 + " HTTP/1.0\n" + string_13_ + "\n\n").getBytes(Charset.forName("ISO-8859-1")));
 			outputstream.flush();
 			BufferedReader bufferedreader = (new BufferedReader(new InputStreamReader(socket_14_.getInputStream())));
 			String string_15_ = bufferedreader.readLine();

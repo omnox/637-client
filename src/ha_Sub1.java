@@ -226,7 +226,7 @@ final class ha_Sub1 extends ha {
 
 	final void method1817() {
 		try {
-			if (aBoolean4439 && ((ha_Sub1) this).anInt4305 > 0 && ((ha_Sub1) this).anInt4304 > 0) {
+			if (aBoolean4439 && this.anInt4305 > 0 && this.anInt4304 > 0) {
 				int i = anInt4370;
 				int i_0_ = anInt4432;
 				int i_1_ = anInt4402;
@@ -249,7 +249,7 @@ final class ha_Sub1 extends ha {
 				OpenGL.glMatrixMode(5888);
 				OpenGL.glLoadIdentity();
 				OpenGL.glRasterPos2i(0, 0);
-				OpenGL.glCopyPixels(0, 0, ((ha_Sub1) this).anInt4305, ((ha_Sub1) this).anInt4304, 6144);
+				OpenGL.glCopyPixels(0, 0, this.anInt4305, this.anInt4304, 6144);
 				OpenGL.glFlush();
 				OpenGL.glReadBuffer(1029);
 				OpenGL.glDrawBuffer(1029);
@@ -263,12 +263,12 @@ final class ha_Sub1 extends ha {
 	private final void method1828(byte i) {
 		try {
 			do {
-				if (anInt4370 > anInt4432 || (anInt4402 ^ 0xffffffff) < (anInt4414 ^ 0xffffffff)) {
+				if (anInt4370 > anInt4432 || anInt4414 < anInt4402) {
 					OpenGL.glScissor(0, 0, 0, 0);
 					if (!client.aBoolean3553)
 						break;
 				}
-				OpenGL.glScissor(anInt4415 + anInt4370, (-anInt4414 + anInt4409 - -((ha_Sub1) this).anInt4304), anInt4432 + -anInt4370, anInt4414 - anInt4402);
+				OpenGL.glScissor(anInt4415 + anInt4370, (-anInt4414 + anInt4409 - -this.anInt4304), anInt4432 + -anInt4370, anInt4414 - anInt4402);
 			} while (false);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.G(" + i + ')');
@@ -280,7 +280,7 @@ final class ha_Sub1 extends ha {
 			try {
 				if (i >= -78)
 					anInt4384 = -7;
-				if ((anInt4350 ^ 0xffffffff) == -3)
+				if (anInt4350 == 2)
 					break;
 				method1877((byte) -60);
 				method1856(false, 6914);
@@ -303,28 +303,28 @@ final class ha_Sub1 extends ha {
 	final int JA(int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_) {
 		try {
 			int i_9_ = 0;
-			float f = ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4677) + ((float) i_4_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4676) + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4684) * (float) i + (float) i_5_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4673)));
+			float f = ((this.aClass111_Sub1_4348.aFloat4677) + ((float) i_4_ * (this.aClass111_Sub1_4348.aFloat4676) + (this.aClass111_Sub1_4348.aFloat4684) * (float) i + (float) i_5_ * (this.aClass111_Sub1_4348.aFloat4673)));
 			if (f < 1.0F)
 				f = 1.0F;
-			float f_10_ = ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4677) + ((float) i_6_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4684) + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4676) * (float) i_7_ + (float) i_8_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4673)));
+			float f_10_ = ((this.aClass111_Sub1_4348.aFloat4677) + ((float) i_6_ * (this.aClass111_Sub1_4348.aFloat4684) + (this.aClass111_Sub1_4348.aFloat4676) * (float) i_7_ + (float) i_8_ * (this.aClass111_Sub1_4348.aFloat4673)));
 			if (f_10_ < 1.0F)
 				f_10_ = 1.0F;
-			if (!((float) ((ha_Sub1) this).anInt4404 > f) || !(f_10_ < (float) ((ha_Sub1) this).anInt4404)) {
+			if (!((float) this.anInt4404 > f) || !(f_10_ < (float) this.anInt4404)) {
 				if (f > (float) anInt4389 && (float) anInt4389 < f_10_)
 					i_9_ |= 0x20;
 			} else
 				i_9_ |= 0x10;
-			int i_11_ = (int) ((float) ((ha_Sub1) this).anInt4419 * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4674 + ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4679) * (float) i_4_ + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4686) * (float) i + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4680) * (float) i_5_)) / f);
-			int i_12_ = (int) ((float) ((ha_Sub1) this).anInt4419 * ((float) i_8_ * ((Class111_Sub1) (((ha_Sub1) this).aClass111_Sub1_4348)).aFloat4680 + (((float) i_6_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4686)) + ((float) i_7_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4679))) + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4674)) / f_10_);
-			if ((float) i_11_ < ((ha_Sub1) this).aFloat4421 && ((ha_Sub1) this).aFloat4421 > (float) i_12_)
+			int i_11_ = (int) ((float) this.anInt4419 * (this.aClass111_Sub1_4348.aFloat4674 + ((this.aClass111_Sub1_4348.aFloat4679) * (float) i_4_ + (this.aClass111_Sub1_4348.aFloat4686) * (float) i + (this.aClass111_Sub1_4348.aFloat4680) * (float) i_5_)) / f);
+			int i_12_ = (int) ((float) this.anInt4419 * ((float) i_8_ * this.aClass111_Sub1_4348.aFloat4680 + (((float) i_6_ * (this.aClass111_Sub1_4348.aFloat4686)) + ((float) i_7_ * (this.aClass111_Sub1_4348.aFloat4679))) + (this.aClass111_Sub1_4348.aFloat4674)) / f_10_);
+			if ((float) i_11_ < this.aFloat4421 && this.aFloat4421 > (float) i_12_)
 				i_9_ |= 0x1;
-			else if ((float) i_11_ > ((ha_Sub1) this).aFloat4364 && ((ha_Sub1) this).aFloat4364 < (float) i_12_)
+			else if ((float) i_11_ > this.aFloat4364 && this.aFloat4364 < (float) i_12_)
 				i_9_ |= 0x2;
-			int i_13_ = (int) ((float) ((ha_Sub1) this).anInt4381 * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4683 + (((float) i_5_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4687)) + ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4678) * (float) i + ((float) i_4_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4675))))) / f);
-			int i_14_ = (int) ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4683 + ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4678 * (float) i_6_) + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4675) * (float) i_7_ + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4687) * (float) i_8_)) * (float) ((ha_Sub1) this).anInt4381 / f_10_);
-			if ((float) i_13_ < ((ha_Sub1) this).aFloat4359 && (float) i_14_ < ((ha_Sub1) this).aFloat4359)
+			int i_13_ = (int) ((float) this.anInt4381 * (this.aClass111_Sub1_4348.aFloat4683 + (((float) i_5_ * (this.aClass111_Sub1_4348.aFloat4687)) + ((this.aClass111_Sub1_4348.aFloat4678) * (float) i + ((float) i_4_ * (this.aClass111_Sub1_4348.aFloat4675))))) / f);
+			int i_14_ = (int) ((this.aClass111_Sub1_4348.aFloat4683 + ((this.aClass111_Sub1_4348.aFloat4678 * (float) i_6_) + (this.aClass111_Sub1_4348.aFloat4675) * (float) i_7_ + (this.aClass111_Sub1_4348.aFloat4687) * (float) i_8_)) * (float) this.anInt4381 / f_10_);
+			if ((float) i_13_ < this.aFloat4359 && (float) i_14_ < this.aFloat4359)
 				i_9_ |= 0x4;
-			else if ((float) i_13_ > ((ha_Sub1) this).aFloat4437 && ((ha_Sub1) this).aFloat4437 < (float) i_14_)
+			else if ((float) i_13_ > this.aFloat4437 && this.aFloat4437 < (float) i_14_)
 				i_9_ |= 0x8;
 			return i_9_;
 		} catch (RuntimeException runtimeexception) {
@@ -335,15 +335,15 @@ final class ha_Sub1 extends ha {
 	final void A(int i, aa var_aa, int i_15_, int i_16_) {
 		try {
 			aa_Sub3 var_aa_Sub3 = (aa_Sub3) var_aa;
-			Class42_Sub1_Sub1 class42_sub1_sub1 = ((aa_Sub3) var_aa_Sub3).aClass42_Sub1_Sub1_3568;
+			Class42_Sub1_Sub1 class42_sub1_sub1 = var_aa_Sub3.aClass42_Sub1_Sub1_3568;
 			method1829((byte) -90);
-			method1863(1, ((aa_Sub3) var_aa_Sub3).aClass42_Sub1_Sub1_3568);
+			method1863(1, var_aa_Sub3.aClass42_Sub1_Sub1_3568);
 			method1870((byte) -50, 1);
 			method1899(8448, 8960, 7681);
 			method1840(0, 768, 108, 34167);
-			float f = (((Class42_Sub1_Sub1) class42_sub1_sub1).aFloat6205 / (float) (((Class42_Sub1_Sub1) class42_sub1_sub1).anInt6207));
-			float f_17_ = (((Class42_Sub1_Sub1) class42_sub1_sub1).aFloat6209 / (float) (((Class42_Sub1_Sub1) class42_sub1_sub1).anInt6204));
-			OpenGL.glColor4ub((byte) (i >> 1933103952), (byte) (i >> -419860344), (byte) i, (byte) (i >> -1429152424));
+			float f = (class42_sub1_sub1.aFloat6205 / (float) (class42_sub1_sub1.anInt6207));
+			float f_17_ = (class42_sub1_sub1.aFloat6209 / (float) (class42_sub1_sub1.anInt6204));
+			OpenGL.glColor4ub((byte) (i >> 16), (byte) (i >> 8), (byte) i, (byte) (i >> 24));
 			OpenGL.glBegin(7);
 			OpenGL.glTexCoord2f((float) (-i_15_ + anInt4370) * f, (float) (anInt4402 - i_16_) * f_17_);
 			OpenGL.glVertex2i(anInt4370, anInt4402);
@@ -362,7 +362,7 @@ final class ha_Sub1 extends ha {
 
 	final Class48 method1803(int i, int i_18_, int i_19_, int i_20_, int i_21_, int i_22_) {
 		try {
-			if (!((ha_Sub1) this).aBoolean4391)
+			if (!this.aBoolean4391)
 				return null;
 			return new Class48_Sub1_Sub1(this, i, i_18_, i_19_, i_20_, i_21_, i_22_);
 		} catch (RuntimeException runtimeexception) {
@@ -422,8 +422,8 @@ final class ha_Sub1 extends ha {
 	final void method1831(int i) {
 		try {
 			if (i <= 125)
-				((ha_Sub1) this).aBoolean4366 = false;
-			OpenGL.glLightfv(16384, 4611, ((ha_Sub1) this).aFloatArray4438, 0);
+				this.aBoolean4366 = false;
+			OpenGL.glLightfv(16384, 4611, this.aFloatArray4438, 0);
 			OpenGL.glLightfv(16385, 4611, aFloatArray4463, 0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.MA(" + i + ')');
@@ -438,7 +438,7 @@ final class ha_Sub1 extends ha {
 			if (i < 16)
 				anInt4390 = -56;
 			interface12.method38(-27095);
-			if ((anInt4324 ^ 0xffffffff) <= -1) {
+			if (anInt4324 >= 0) {
 				anInterface12_4325 = anInterface12Array4329[anInt4324];
 				anInterface12_4325.method37((byte) 77);
 			} else
@@ -452,9 +452,9 @@ final class ha_Sub1 extends ha {
 		do {
 			try {
 				OpenGL.glLoadIdentity();
-				OpenGL.glMultMatrixf(((ha_Sub1) this).aClass111_Sub1_4353.method2113(i + -114), 0);
+				OpenGL.glMultMatrixf(this.aClass111_Sub1_4353.method2113(i + -114), 0);
 				if (aBoolean4448)
-					((Class55) aClass55_4314).aClass151_Sub9_432.method2471((byte) 34);
+					aClass55_4314.aClass151_Sub9_432.method2471((byte) 34);
 				method1831(127);
 				method1842(103);
 				if (i == 4)
@@ -469,14 +469,14 @@ final class ha_Sub1 extends ha {
 
 	final void H(int i, int i_24_, int i_25_, int[] is) {
 		try {
-			float f = ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4677) + ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4673) * (float) i_25_ + (((float) i_24_ * ((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4676) + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4684 * (float) i))));
+			float f = ((this.aClass111_Sub1_4348.aFloat4677) + ((this.aClass111_Sub1_4348.aFloat4673) * (float) i_25_ + (((float) i_24_ * this.aClass111_Sub1_4348.aFloat4676) + (this.aClass111_Sub1_4348.aFloat4684 * (float) i))));
 			if (f == 0.0F)
 				is[0] = is[1] = is[2] = -1;
 			else {
-				int i_26_ = (int) (((float) i * ((Class111_Sub1) (((ha_Sub1) this).aClass111_Sub1_4348)).aFloat4686 + ((float) i_24_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4679)) + ((float) i_25_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4680)) + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4674)) * (float) ((ha_Sub1) this).anInt4419 / f);
-				is[0] = (int) (-((ha_Sub1) this).aFloat4421 + (float) i_26_);
-				int i_27_ = (int) ((float) ((ha_Sub1) this).anInt4381 * ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4683) + (((float) i_25_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4687)) + ((float) i * (((Class111_Sub1) (((ha_Sub1) this).aClass111_Sub1_4348)).aFloat4678) + ((float) i_24_ * (((Class111_Sub1) (((ha_Sub1) this).aClass111_Sub1_4348)).aFloat4675))))) / f);
-				is[1] = (int) (-((ha_Sub1) this).aFloat4359 + (float) i_27_);
+				int i_26_ = (int) (((float) i * this.aClass111_Sub1_4348.aFloat4686 + ((float) i_24_ * (this.aClass111_Sub1_4348.aFloat4679)) + ((float) i_25_ * (this.aClass111_Sub1_4348.aFloat4680)) + (this.aClass111_Sub1_4348.aFloat4674)) * (float) this.anInt4419 / f);
+				is[0] = (int) (-this.aFloat4421 + (float) i_26_);
+				int i_27_ = (int) ((float) this.anInt4381 * ((this.aClass111_Sub1_4348.aFloat4683) + (((float) i_25_ * (this.aClass111_Sub1_4348.aFloat4687)) + ((float) i * (this.aClass111_Sub1_4348.aFloat4678) + ((float) i_24_ * (this.aClass111_Sub1_4348.aFloat4675))))) / f);
+				is[1] = (int) (-this.aFloat4359 + (float) i_27_);
 				is[2] = (int) f;
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -498,12 +498,12 @@ final class ha_Sub1 extends ha {
 
 	final void f(int i, int i_30_) {
 		try {
-			if (i != ((ha_Sub1) this).anInt4404 || anInt4389 != i_30_) {
+			if (i != this.anInt4404 || anInt4389 != i_30_) {
 				anInt4389 = i_30_;
-				((ha_Sub1) this).anInt4404 = i;
+				this.anInt4404 = i;
 				method1847(true);
 				method1852((byte) -66);
-				if ((anInt4385 ^ 0xffffffff) != -4) {
+				if (anInt4385 != 3) {
 					if (anInt4385 == 2)
 						method1885((byte) -125);
 				} else
@@ -516,10 +516,10 @@ final class ha_Sub1 extends ha {
 
 	final void la() {
 		try {
-			anInt4432 = ((ha_Sub1) this).anInt4305;
+			anInt4432 = this.anInt4305;
 			anInt4370 = 0;
 			anInt4402 = 0;
-			anInt4414 = ((ha_Sub1) this).anInt4304;
+			anInt4414 = this.anInt4304;
 			OpenGL.glDisable(3089);
 			method1906(4353);
 		} catch (RuntimeException runtimeexception) {
@@ -529,7 +529,7 @@ final class ha_Sub1 extends ha {
 
 	final void method1835(Interface12 interface12, int i) {
 		try {
-			if ((anInt4327 ^ 0xffffffff) <= -4)
+			if (anInt4327 >= 3)
 				throw new RuntimeException();
 			if (anInt4327 >= i)
 				anInterface12Array4326[anInt4327].method40((byte) -30);
@@ -542,10 +542,10 @@ final class ha_Sub1 extends ha {
 
 	final void L(int i, int i_31_, int i_32_) {
 		try {
-			if ((((ha_Sub1) this).anInt4455 ^ 0xffffffff) != (i ^ 0xffffffff) || (i_31_ ^ 0xffffffff) != (((ha_Sub1) this).anInt4441 ^ 0xffffffff) || ((ha_Sub1) this).anInt4427 != i_32_) {
-				((ha_Sub1) this).anInt4455 = i;
-				((ha_Sub1) this).anInt4427 = i_32_;
-				((ha_Sub1) this).anInt4441 = i_31_;
+			if (i != this.anInt4455 || this.anInt4441 != i_31_ || this.anInt4427 != i_32_) {
+				this.anInt4455 = i;
+				this.anInt4427 = i_32_;
+				this.anInt4441 = i_31_;
 				method1852((byte) -98);
 				method1893(109);
 			}
@@ -556,7 +556,7 @@ final class ha_Sub1 extends ha {
 
 	final Class111 method1752() {
 		try {
-			return ((ha_Sub1) this).aClass111_Sub1_4348;
+			return this.aClass111_Sub1_4348;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.NE(" + ')');
 		}
@@ -564,9 +564,9 @@ final class ha_Sub1 extends ha {
 
 	final void method1778(int i) {
 		try {
-			if (i < 128 || (i ^ 0xffffffff) < -1025)
+			if (i < 128 || i > 1024)
 				throw new IllegalArgumentException();
-			((ha_Sub1) this).anInt4309 = i;
+			this.anInt4309 = i;
 			aClass364_4308.method3934((byte) 100);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.CH(" + i + ')');
@@ -590,10 +590,10 @@ final class ha_Sub1 extends ha {
 	final void method1776() {
 		try {
 			do {
-				if (!((ha_Sub1) this).aBoolean4460) {
+				if (!this.aBoolean4460) {
 					if (!aBoolean4388)
 						throw new RuntimeException("");
-					aClass332_Sub1_4330.method3736(0, 0, ((ha_Sub1) this).anInt4305, ((ha_Sub1) this).anInt4304, 0, 0);
+					aClass332_Sub1_4330.method3736(0, 0, this.anInt4305, this.anInt4304, 0, 0);
 					anOpenGL4298.setSurface(aLong4302);
 					if (!client.aBoolean3553)
 						break;
@@ -605,8 +605,8 @@ final class ha_Sub1 extends ha {
 				method1907(aClass288_4333, -1);
 			} while (false);
 			aClass332_Sub1_4330 = null;
-			((ha_Sub1) this).anInt4304 = anInt4297;
-			((ha_Sub1) this).anInt4305 = anInt4301;
+			this.anInt4304 = anInt4297;
+			this.anInt4305 = anInt4301;
 			method1867(29458);
 			method1844((byte) 60);
 			la();
@@ -638,7 +638,7 @@ final class ha_Sub1 extends ha {
 		try {
 			int[] is = new int[i_38_ * i_37_];
 			for (int i_39_ = 0; i_39_ < i_38_; i_39_++)
-				OpenGL.glReadPixelsi(i, (-i_39_ + -i_36_ + ((ha_Sub1) this).anInt4304), i_37_, 1, 32993, ((ha_Sub1) this).anInt4425, is, i_39_ * i_37_);
+				OpenGL.glReadPixelsi(i, (-i_39_ + -i_36_ + this.anInt4304), i_37_, 1, 32993, this.anInt4425, is, i_39_ * i_37_);
 			return is;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ac.na(" + i + ',' + i_36_ + ',' + i_37_ + ',' + i_38_ + ')'));
@@ -678,11 +678,11 @@ final class ha_Sub1 extends ha {
 
 	final int method1839(int i, int i_43_) {
 		try {
-			if (i_43_ == (i ^ 0xffffffff) || i == 5120)
+			if (i_43_ == (~i) || i == 5120)
 				return 1;
-			if ((i ^ 0xffffffff) == -5124 || (i ^ 0xffffffff) == -5123)
+			if (i == 5123 || i == 5122)
 				return 2;
-			if ((i ^ 0xffffffff) == -5126 || i == 5124 || (i ^ 0xffffffff) == -5127)
+			if (i == 5125 || i == 5124 || i == 5126)
 				return 4;
 			throw new IllegalArgumentException("");
 		} catch (RuntimeException runtimeexception) {
@@ -692,7 +692,7 @@ final class ha_Sub1 extends ha {
 
 	final void method1783(int i) {
 		try {
-			if ((i ^ 0xffffffff) != -2)
+			if (i != 1)
 				throw new IllegalArgumentException("");
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.OF(" + i + ')');
@@ -711,12 +711,12 @@ final class ha_Sub1 extends ha {
 	final void a(za var_za) {
 		do {
 			try {
-				((ha_Sub1) this).aNativeHeap4323 = ((za_Sub2) (za_Sub2) var_za).aNativeHeap6082;
+				this.aNativeHeap4323 = ((za_Sub2) var_za).aNativeHeap6082;
 				if (anInterface16_4464 != null)
 					break;
 				Class98_Sub22_Sub2 class98_sub22_sub2 = new Class98_Sub22_Sub2(80);
 				do {
-					if (!((ha_Sub1) this).aBoolean4397) {
+					if (!this.aBoolean4397) {
 						class98_sub22_sub2.method1265((byte) -52, -1.0F);
 						class98_sub22_sub2.method1265((byte) -52, -1.0F);
 						class98_sub22_sub2.method1265((byte) -52, 0.0F);
@@ -761,9 +761,9 @@ final class ha_Sub1 extends ha {
 					class98_sub22_sub2.method1264((byte) -105, 0.0F);
 					class98_sub22_sub2.method1264((byte) -120, 0.0F);
 				} while (false);
-				anInterface16_4464 = method1878((((RSByteBuffer) class98_sub22_sub2).position), false, 20, -54, (((RSByteBuffer) class98_sub22_sub2).data));
-				((ha_Sub1) this).aClass104_4365 = new Class104(anInterface16_4464, 5126, 3, 0);
-				((ha_Sub1) this).aClass104_4436 = new Class104(anInterface16_4464, 5126, 2, 12);
+				anInterface16_4464 = method1878((class98_sub22_sub2.position), false, 20, -54, (class98_sub22_sub2.data));
+				this.aClass104_4365 = new Class104(anInterface16_4464, 5126, 3, 0);
+				this.aClass104_4436 = new Class104(anInterface16_4464, 5126, 2, 12);
 				aClass360_4313.method3912(this, 196584);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "ac.EH(" + (var_za != null ? "{...}" : "null") + ')');
@@ -781,7 +781,7 @@ final class ha_Sub1 extends ha {
 				method1859(-24);
 				float f_55_ = (float) i_50_ + f_53_;
 				method1870((byte) -30, i_52_);
-				OpenGL.glColor4ub((byte) (i_51_ >> 993788880), (byte) (i_51_ >> 848547304), (byte) i_51_, (byte) (i_51_ >> -1134524424));
+				OpenGL.glColor4ub((byte) (i_51_ >> 16), (byte) (i_51_ >> 8), (byte) i_51_, (byte) (i_51_ >> 24));
 				if (aBoolean4360)
 					OpenGL.glDisable(32925);
 				OpenGL.glBegin(7);
@@ -827,15 +827,15 @@ final class ha_Sub1 extends ha {
 				OpenGL.glLightfv(i_57_, 4611, Class98_Sub15.aFloatArray3916, 0);
 				int i_58_ = class98_sub5.method961((byte) -78);
 				float f = class98_sub5.method956(false) / 255.0F;
-				Class98_Sub15.aFloatArray3916[1] = f * (float) (Class202.method2702(i_58_, 65311) >> 1265447176);
+				Class98_Sub15.aFloatArray3916[1] = f * (float) (Class202.method2702(i_58_, 65311) >> 8);
 				Class98_Sub15.aFloatArray3916[2] = (float) Class202.method2702(i_58_, 255) * f;
-				Class98_Sub15.aFloatArray3916[0] = f * (float) Class202.method2702(255, i_58_ >> 411401808);
+				Class98_Sub15.aFloatArray3916[0] = f * (float) Class202.method2702(255, i_58_ >> 16);
 				OpenGL.glLightfv(i_57_, 4609, Class98_Sub15.aFloatArray3916, 0);
 				OpenGL.glLightf(i_57_, 4617, (1.0F / (float) (class98_sub5.method958(-76) * class98_sub5.method958(-105))));
 				OpenGL.glEnable(i_57_);
 			}
 			if (i <= 13)
-				((ha_Sub1) this).anInt4404 = -99;
+				this.anInt4404 = -99;
 			for (/**/; i_56_ < anInt4411; i_56_++)
 				OpenGL.glDisable(16386 + i_56_);
 			anInt4411 = anInt4384;
@@ -858,7 +858,7 @@ final class ha_Sub1 extends ha {
 
 	private final void method1844(byte i) {
 		try {
-			OpenGL.glViewport(anInt4415, anInt4409, ((ha_Sub1) this).anInt4305, ((ha_Sub1) this).anInt4304);
+			OpenGL.glViewport(anInt4415, anInt4409, this.anInt4305, this.anInt4304);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.WD(" + i + ')');
 		}
@@ -893,16 +893,16 @@ final class ha_Sub1 extends ha {
 	final void DA(int i, int i_70_, int i_71_, int i_72_) {
 		do {
 			try {
-				((ha_Sub1) this).anInt4394 = i_70_;
-				((ha_Sub1) this).anInt4419 = i_71_;
-				((ha_Sub1) this).anInt4451 = i;
-				((ha_Sub1) this).anInt4381 = i_72_;
+				this.anInt4394 = i_70_;
+				this.anInt4419 = i_71_;
+				this.anInt4451 = i;
+				this.anInt4381 = i_72_;
 				method1847(true);
 				method1906(4353);
 				if (anInt4385 == 3)
 					method1884((byte) 121);
 				else {
-					if ((anInt4385 ^ 0xffffffff) != -3)
+					if (anInt4385 != 2)
 						break;
 					method1885((byte) -127);
 				}
@@ -942,7 +942,7 @@ final class ha_Sub1 extends ha {
 	final synchronized void method1846(int i, int i_74_, int i_75_) {
 		try {
 			Class98_Sub34 class98_sub34 = new Class98_Sub34(i_75_);
-			((Node) class98_sub34).uid = (long) i;
+			class98_sub34.uid = i;
 			if (i_74_ <= 36)
 				anInt4324 = -29;
 			aClass148_4341.add_last(class98_sub34, -20911);
@@ -981,10 +981,10 @@ final class ha_Sub1 extends ha {
 			float[] fs = aFloatArray4440;
 			if (bool != true)
 				method1880(42, null);
-			float f = ((float) (-((ha_Sub1) this).anInt4451 * ((ha_Sub1) this).anInt4404) / (float) ((ha_Sub1) this).anInt4419);
-			float f_76_ = ((float) (((ha_Sub1) this).anInt4404 * (-((ha_Sub1) this).anInt4451 + ((ha_Sub1) this).anInt4305)) / (float) ((ha_Sub1) this).anInt4419);
-			float f_77_ = ((float) (((ha_Sub1) this).anInt4394 * ((ha_Sub1) this).anInt4404) / (float) ((ha_Sub1) this).anInt4381);
-			float f_78_ = ((float) ((-((ha_Sub1) this).anInt4304 + ((ha_Sub1) this).anInt4394) * ((ha_Sub1) this).anInt4404) / (float) ((ha_Sub1) this).anInt4381);
+			float f = ((float) (-this.anInt4451 * this.anInt4404) / (float) this.anInt4419);
+			float f_76_ = ((float) (this.anInt4404 * (-this.anInt4451 + this.anInt4305)) / (float) this.anInt4419);
+			float f_77_ = ((float) (this.anInt4394 * this.anInt4404) / (float) this.anInt4381);
+			float f_78_ = ((float) ((-this.anInt4304 + this.anInt4394) * this.anInt4404) / (float) this.anInt4381);
 			do {
 				if (f == f_76_ || f_78_ == f_77_) {
 					fs[6] = 0.0F;
@@ -1006,9 +1006,9 @@ final class ha_Sub1 extends ha {
 					if (!client.aBoolean3553)
 						break;
 				}
-				float f_79_ = 2.0F * (float) ((ha_Sub1) this).anInt4404;
+				float f_79_ = 2.0F * (float) this.anInt4404;
 				fs[5] = f_79_ / (f_77_ - f_78_);
-				fs[14] = aFloat4416 = (-(f_79_ * (float) anInt4389) / (float) (anInt4389 - ((ha_Sub1) this).anInt4404));
+				fs[14] = aFloat4416 = (-(f_79_ * (float) anInt4389) / (float) (anInt4389 - this.anInt4404));
 				fs[11] = -1.0F;
 				fs[1] = 0.0F;
 				fs[9] = (f_77_ + f_78_) / (-f_78_ + f_77_);
@@ -1019,7 +1019,7 @@ final class ha_Sub1 extends ha {
 				fs[12] = 0.0F;
 				fs[7] = 0.0F;
 				fs[15] = 0.0F;
-				fs[10] = aFloat4371 = ((float) -(((ha_Sub1) this).anInt4404 + anInt4389) / (float) (anInt4389 - ((ha_Sub1) this).anInt4404));
+				fs[10] = aFloat4371 = ((float) -(this.anInt4404 + anInt4389) / (float) (anInt4389 - this.anInt4404));
 				fs[2] = 0.0F;
 				fs[6] = 0.0F;
 				fs[13] = 0.0F;
@@ -1032,25 +1032,25 @@ final class ha_Sub1 extends ha {
 
 	final int r(int i, int i_80_, int i_81_, int i_82_, int i_83_, int i_84_, int i_85_) {
 		try {
-			float f = ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4673) * (float) i_81_ + ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4676) * (float) i_80_ + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4684) * (float) i) + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4677));
-			float f_86_ = ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4673) * (float) i_84_ + ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4676) * (float) i_83_ + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4684) * (float) i_82_) + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4677));
+			float f = ((this.aClass111_Sub1_4348.aFloat4673) * (float) i_81_ + ((this.aClass111_Sub1_4348.aFloat4676) * (float) i_80_ + (this.aClass111_Sub1_4348.aFloat4684) * (float) i) + (this.aClass111_Sub1_4348.aFloat4677));
+			float f_86_ = ((this.aClass111_Sub1_4348.aFloat4673) * (float) i_84_ + ((this.aClass111_Sub1_4348.aFloat4676) * (float) i_83_ + (this.aClass111_Sub1_4348.aFloat4684) * (float) i_82_) + (this.aClass111_Sub1_4348.aFloat4677));
 			int i_87_ = 0;
-			if (!(f < (float) ((ha_Sub1) this).anInt4404) || !((float) ((ha_Sub1) this).anInt4404 > f_86_)) {
+			if (!(f < (float) this.anInt4404) || !((float) this.anInt4404 > f_86_)) {
 				if (f > (float) anInt4389 && f_86_ > (float) anInt4389)
 					i_87_ |= 0x20;
 			} else
 				i_87_ |= 0x10;
-			int i_88_ = (int) ((float) ((ha_Sub1) this).anInt4419 * ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4680) * (float) i_81_ + ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4679) * (float) i_80_ + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4686) * (float) i) + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4674)) / (float) i_85_);
-			int i_89_ = (int) ((((float) i_83_ * ((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4679) + (float) i_82_ * ((Class111_Sub1) (((ha_Sub1) this).aClass111_Sub1_4348)).aFloat4686 + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4680 * (float) i_84_) + ((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4674) * (float) ((ha_Sub1) this).anInt4419 / (float) i_85_);
-			if ((float) i_88_ < ((ha_Sub1) this).aFloat4421 && ((ha_Sub1) this).aFloat4421 > (float) i_89_)
+			int i_88_ = (int) ((float) this.anInt4419 * ((this.aClass111_Sub1_4348.aFloat4680) * (float) i_81_ + ((this.aClass111_Sub1_4348.aFloat4679) * (float) i_80_ + (this.aClass111_Sub1_4348.aFloat4686) * (float) i) + (this.aClass111_Sub1_4348.aFloat4674)) / (float) i_85_);
+			int i_89_ = (int) ((((float) i_83_ * this.aClass111_Sub1_4348.aFloat4679) + (float) i_82_ * this.aClass111_Sub1_4348.aFloat4686 + (this.aClass111_Sub1_4348.aFloat4680 * (float) i_84_) + this.aClass111_Sub1_4348.aFloat4674) * (float) this.anInt4419 / (float) i_85_);
+			if ((float) i_88_ < this.aFloat4421 && this.aFloat4421 > (float) i_89_)
 				i_87_ |= 0x1;
-			else if (((ha_Sub1) this).aFloat4364 < (float) i_88_ && (float) i_89_ > ((ha_Sub1) this).aFloat4364)
+			else if (this.aFloat4364 < (float) i_88_ && (float) i_89_ > this.aFloat4364)
 				i_87_ |= 0x2;
-			int i_90_ = (int) (((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4675 * (float) i_80_) + (float) i * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4678) + (float) i_81_ * ((Class111_Sub1) (((ha_Sub1) this).aClass111_Sub1_4348)).aFloat4687 + ((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4683) * (float) ((ha_Sub1) this).anInt4381 / (float) i_85_);
-			int i_91_ = (int) ((float) ((ha_Sub1) this).anInt4381 * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4683 + (((float) i_84_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4687)) + (((float) i_83_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4675)) + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4678) * (float) i_82_))) / (float) i_85_);
-			if (((ha_Sub1) this).aFloat4359 > (float) i_90_ && (float) i_91_ < ((ha_Sub1) this).aFloat4359)
+			int i_90_ = (int) (((this.aClass111_Sub1_4348.aFloat4675 * (float) i_80_) + (float) i * (this.aClass111_Sub1_4348.aFloat4678) + (float) i_81_ * this.aClass111_Sub1_4348.aFloat4687 + this.aClass111_Sub1_4348.aFloat4683) * (float) this.anInt4381 / (float) i_85_);
+			int i_91_ = (int) ((float) this.anInt4381 * (this.aClass111_Sub1_4348.aFloat4683 + (((float) i_84_ * (this.aClass111_Sub1_4348.aFloat4687)) + (((float) i_83_ * (this.aClass111_Sub1_4348.aFloat4675)) + (this.aClass111_Sub1_4348.aFloat4678) * (float) i_82_))) / (float) i_85_);
+			if (this.aFloat4359 > (float) i_90_ && (float) i_91_ < this.aFloat4359)
 				i_87_ |= 0x4;
-			else if ((float) i_90_ > ((ha_Sub1) this).aFloat4437 && ((ha_Sub1) this).aFloat4437 < (float) i_91_)
+			else if ((float) i_90_ > this.aFloat4437 && this.aFloat4437 < (float) i_91_)
 				i_87_ |= 0x8;
 			return i_87_;
 		} catch (RuntimeException runtimeexception) {
@@ -1063,7 +1063,7 @@ final class ha_Sub1 extends ha {
 			aFloat4392 = f;
 			aFloat4376 = f_92_;
 			if (bool != true)
-				((ha_Sub1) this).anInt4336 = 110;
+				this.anInt4336 = 110;
 			method1852((byte) -91);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ac.IB(" + f + ',' + bool + ',' + f_92_ + ')'));
@@ -1072,17 +1072,17 @@ final class ha_Sub1 extends ha {
 
 	final void da(int i, int i_93_, int i_94_, int[] is) {
 		try {
-			float f = ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4677) + ((float) i_93_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4676) + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4684) * (float) i + (float) i_94_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4673)));
-			if ((float) ((ha_Sub1) this).anInt4404 > f || f > (float) anInt4389)
+			float f = ((this.aClass111_Sub1_4348.aFloat4677) + ((float) i_93_ * (this.aClass111_Sub1_4348.aFloat4676) + (this.aClass111_Sub1_4348.aFloat4684) * (float) i + (float) i_94_ * (this.aClass111_Sub1_4348.aFloat4673)));
+			if ((float) this.anInt4404 > f || f > (float) anInt4389)
 				is[0] = is[1] = is[2] = -1;
 			else {
-				int i_95_ = (int) (((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4680) * (float) i_94_ + ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4679) * (float) i_93_ + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4686) * (float) i) + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4674)) * (float) ((ha_Sub1) this).anInt4419 / f);
-				int i_96_ = (int) ((float) ((ha_Sub1) this).anInt4381 * ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4675) * (float) i_93_ + ((float) i * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4678)) + ((float) i_94_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4687)) + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4683)) / f);
-				if (!((float) i_95_ >= ((ha_Sub1) this).aFloat4421) || !(((ha_Sub1) this).aFloat4364 >= (float) i_95_) || !(((ha_Sub1) this).aFloat4359 <= (float) i_96_) || !(((ha_Sub1) this).aFloat4437 >= (float) i_96_))
+				int i_95_ = (int) (((this.aClass111_Sub1_4348.aFloat4680) * (float) i_94_ + ((this.aClass111_Sub1_4348.aFloat4679) * (float) i_93_ + (this.aClass111_Sub1_4348.aFloat4686) * (float) i) + (this.aClass111_Sub1_4348.aFloat4674)) * (float) this.anInt4419 / f);
+				int i_96_ = (int) ((float) this.anInt4381 * ((this.aClass111_Sub1_4348.aFloat4675) * (float) i_93_ + ((float) i * (this.aClass111_Sub1_4348.aFloat4678)) + ((float) i_94_ * (this.aClass111_Sub1_4348.aFloat4687)) + (this.aClass111_Sub1_4348.aFloat4683)) / f);
+				if (!((float) i_95_ >= this.aFloat4421) || !(this.aFloat4364 >= (float) i_95_) || !(this.aFloat4359 <= (float) i_96_) || !(this.aFloat4437 >= (float) i_96_))
 					is[0] = is[1] = is[2] = -1;
 				else {
-					is[0] = (int) ((float) i_95_ - ((ha_Sub1) this).aFloat4421);
-					is[1] = (int) (-((ha_Sub1) this).aFloat4359 + (float) i_96_);
+					is[0] = (int) ((float) i_95_ - this.aFloat4421);
+					is[1] = (int) (-this.aFloat4359 + (float) i_96_);
 					is[2] = (int) f;
 				}
 			}
@@ -1101,8 +1101,8 @@ final class ha_Sub1 extends ha {
 
 	final void method1801(int[] is) {
 		try {
-			is[0] = ((ha_Sub1) this).anInt4305;
-			is[1] = ((ha_Sub1) this).anInt4304;
+			is[0] = this.anInt4305;
+			is[1] = this.anInt4304;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.UD(" + (is != null ? "{...}" : "null") + ')');
 		}
@@ -1115,12 +1115,12 @@ final class ha_Sub1 extends ha {
 			aString4403 = OpenGL.glGetString(7937).toLowerCase();
 			if (aString4430.indexOf("microsoft") != -1)
 				i_100_ |= 0x1;
-			if ((aString4430.indexOf("brian paul") ^ 0xffffffff) != 0 || aString4430.indexOf("mesa") != -1)
+			if (aString4430.indexOf("brian paul") != -1 || aString4430.indexOf("mesa") != -1)
 				i_100_ |= 0x1;
 			String string = OpenGL.glGetString(7938);
 			String[] strings = Class112.method2142(string.replace('.', ' '), ' ', false);
 			do {
-				if ((strings.length ^ 0xffffffff) > -3) {
+				if (strings.length < 2) {
 					i_100_ |= 0x4;
 					if (!client.aBoolean3553)
 						break;
@@ -1141,31 +1141,31 @@ final class ha_Sub1 extends ha {
 				i_100_ |= 0x20;
 			int[] is = new int[1];
 			OpenGL.glGetIntegerv(34018, is, 0);
-			((ha_Sub1) this).anInt4410 = is[0];
+			this.anInt4410 = is[0];
 			OpenGL.glGetIntegerv(34929, is, 0);
 			anInt4368 = is[0];
 			OpenGL.glGetIntegerv(34930, is, 0);
 			anInt4445 = is[0];
-			if (((ha_Sub1) this).anInt4410 < 2 || anInt4368 < 2 || (anInt4445 ^ 0xffffffff) > -3)
+			if (this.anInt4410 < 2 || anInt4368 < 2 || anInt4445 < 2)
 				i_100_ |= 0x10;
-			((ha_Sub1) this).aBoolean4397 = Stream.a();
+			this.aBoolean4397 = Stream.a();
 			aBoolean4388 = anOpenGL4298.arePbuffersAvailable();
 			aBoolean4449 = anOpenGL4298.a("GL_ARB_vertex_buffer_object");
 			aBoolean4360 = anOpenGL4298.a("GL_ARB_multisample");
-			((ha_Sub1) this).aBoolean4431 = anOpenGL4298.a("GL_ARB_vertex_program");
+			this.aBoolean4431 = anOpenGL4298.a("GL_ARB_vertex_program");
 			anOpenGL4298.a("GL_ARB_fragment_program");
-			((ha_Sub1) this).aBoolean4399 = anOpenGL4298.a("GL_ARB_vertex_shader");
-			((ha_Sub1) this).aBoolean4447 = anOpenGL4298.a("GL_ARB_fragment_shader");
-			((ha_Sub1) this).aBoolean4434 = anOpenGL4298.a("GL_EXT_texture3D");
-			((ha_Sub1) this).aBoolean4378 = anOpenGL4298.a("GL_ARB_texture_rectangle");
-			((ha_Sub1) this).aBoolean4391 = anOpenGL4298.a("GL_ARB_texture_cube_map");
-			((ha_Sub1) this).aBoolean4383 = anOpenGL4298.a("GL_ARB_texture_float");
-			((ha_Sub1) this).aBoolean4426 = false;
-			((ha_Sub1) this).aBoolean4460 = anOpenGL4298.a("GL_EXT_framebuffer_object");
-			((ha_Sub1) this).aBoolean4375 = anOpenGL4298.a("GL_EXT_framebuffer_blit");
-			((ha_Sub1) this).aBoolean4424 = anOpenGL4298.a("GL_EXT_framebuffer_multisample");
-			aBoolean4450 = (((ha_Sub1) this).aBoolean4375 & ((ha_Sub1) this).aBoolean4424);
-			((ha_Sub1) this).aBoolean4367 = Class19.aString3448.startsWith("mac");
+			this.aBoolean4399 = anOpenGL4298.a("GL_ARB_vertex_shader");
+			this.aBoolean4447 = anOpenGL4298.a("GL_ARB_fragment_shader");
+			this.aBoolean4434 = anOpenGL4298.a("GL_EXT_texture3D");
+			this.aBoolean4378 = anOpenGL4298.a("GL_ARB_texture_rectangle");
+			this.aBoolean4391 = anOpenGL4298.a("GL_ARB_texture_cube_map");
+			this.aBoolean4383 = anOpenGL4298.a("GL_ARB_texture_float");
+			this.aBoolean4426 = false;
+			this.aBoolean4460 = anOpenGL4298.a("GL_EXT_framebuffer_object");
+			this.aBoolean4375 = anOpenGL4298.a("GL_EXT_framebuffer_blit");
+			this.aBoolean4424 = anOpenGL4298.a("GL_EXT_framebuffer_multisample");
+			aBoolean4450 = (this.aBoolean4375 & this.aBoolean4424);
+			this.aBoolean4367 = Class19.aString3448.startsWith("mac");
 			OpenGL.glGetFloatv(2834, Class115.aFloatArray961, 0);
 			aFloat4400 = Class115.aFloatArray961[1];
 			aFloat4429 = Class115.aFloatArray961[0];
@@ -1190,8 +1190,8 @@ final class ha_Sub1 extends ha {
 				anInt4301 = anInt4297 = 0;
 			} while (false);
 			if (anInterface12_4328 == null) {
-				((ha_Sub1) this).anInt4305 = anInt4301;
-				((ha_Sub1) this).anInt4304 = anInt4297;
+				this.anInt4305 = anInt4301;
+				this.anInt4304 = anInt4297;
 				method1844((byte) 113);
 			}
 			method1867(i + 29489);
@@ -1204,13 +1204,13 @@ final class ha_Sub1 extends ha {
 
 	final void T(int i, int i_103_, int i_104_, int i_105_) {
 		try {
-			if ((anInt4414 ^ 0xffffffff) < (i_105_ ^ 0xffffffff))
+			if (i_105_ < anInt4414)
 				anInt4414 = i_105_;
-			if ((i ^ 0xffffffff) < (anInt4370 ^ 0xffffffff))
+			if (anInt4370 < i)
 				anInt4370 = i;
 			if (anInt4432 > i_104_)
 				anInt4432 = i_104_;
-			if ((i_103_ ^ 0xffffffff) < (anInt4402 ^ 0xffffffff))
+			if (anInt4402 < i_103_)
 				anInt4402 = i_103_;
 			OpenGL.glEnable(3089);
 			method1906(4353);
@@ -1225,7 +1225,7 @@ final class ha_Sub1 extends ha {
 			method1859(-106);
 			method1870((byte) -82, i_109_);
 			float f = 0.35F + (float) i;
-			OpenGL.glColor4ub((byte) (i_108_ >> -1500168624), (byte) (i_108_ >> -2018405784), (byte) i_108_, (byte) (i_108_ >> -1514779816));
+			OpenGL.glColor4ub((byte) (i_108_ >> 16), (byte) (i_108_ >> 8), (byte) i_108_, (byte) (i_108_ >> 24));
 			float f_110_ = 0.35F + (float) i_106_;
 			OpenGL.glBegin(1);
 			OpenGL.glVertex2f(f, f_110_);
@@ -1262,17 +1262,17 @@ final class ha_Sub1 extends ha {
 
 	private final void method1852(byte i) {
 		try {
-			aFloat4380 = ((float) (anInt4389 - ((ha_Sub1) this).anInt4427) - aFloat4376);
-			((ha_Sub1) this).aFloat4356 = aFloat4380 - aFloat4392 * (float) ((ha_Sub1) this).anInt4441;
-			if (((ha_Sub1) this).aFloat4356 < (float) ((ha_Sub1) this).anInt4404)
-				((ha_Sub1) this).aFloat4356 = (float) ((ha_Sub1) this).anInt4404;
+			aFloat4380 = ((float) (anInt4389 - this.anInt4427) - aFloat4376);
+			this.aFloat4356 = aFloat4380 - aFloat4392 * (float) this.anInt4441;
+			if (this.aFloat4356 < (float) this.anInt4404)
+				this.aFloat4356 = (float) this.anInt4404;
 			if (i >= -57)
 				aBoolean4345 = true;
-			OpenGL.glFogf(2915, ((ha_Sub1) this).aFloat4356);
+			OpenGL.glFogf(2915, this.aFloat4356);
 			OpenGL.glFogf(2916, aFloat4380);
-			Class115.aFloatArray961[0] = (float) Class202.method2702(((ha_Sub1) this).anInt4455, 16711680) / 1.671168E7F;
-			Class115.aFloatArray961[2] = ((float) Class202.method2702(255, ((ha_Sub1) this).anInt4455) / 255.0F);
-			Class115.aFloatArray961[1] = (float) Class202.method2702(((ha_Sub1) this).anInt4455, 65280) / 65280.0F;
+			Class115.aFloatArray961[0] = (float) Class202.method2702(this.anInt4455, 16711680) / 1.671168E7F;
+			Class115.aFloatArray961[2] = ((float) Class202.method2702(255, this.anInt4455) / 255.0F);
+			Class115.aFloatArray961[1] = (float) Class202.method2702(this.anInt4455, 65280) / 65280.0F;
 			OpenGL.glFogfv(2918, Class115.aFloatArray961, 0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.HD(" + i + ')');
@@ -1285,22 +1285,22 @@ final class ha_Sub1 extends ha {
 			i &= 0x7fffffff;
 			while (!aClass148_4338.method2420(-124)) {
 				Class98_Sub34 class98_sub34 = (Class98_Sub34) aClass148_4338.method2421(6494);
-				Class255.anIntArray3210[i_112_++] = (int) ((Node) class98_sub34).uid;
-				((ha_Sub1) this).anInt4336 -= ((Class98_Sub34) class98_sub34).anInt4126;
+				Class255.anIntArray3210[i_112_++] = (int) class98_sub34.uid;
+				this.anInt4336 -= class98_sub34.anInt4126;
 				if (i_112_ == 1000) {
 					OpenGL.glDeleteBuffersARB(i_112_, Class255.anIntArray3210, 0);
 					i_112_ = 0;
 				}
 			}
-			if ((i_112_ ^ 0xffffffff) < -1) {
+			if (i_112_ > 0) {
 				OpenGL.glDeleteBuffersARB(i_112_, Class255.anIntArray3210, 0);
 				i_112_ = 0;
 			}
 			while (!aClass148_4339.method2420(-125)) {
 				Class98_Sub34 class98_sub34 = (Class98_Sub34) aClass148_4339.method2421(6494);
-				Class255.anIntArray3210[i_112_++] = (int) ((Node) class98_sub34).uid;
-				((ha_Sub1) this).anInt4337 -= ((Class98_Sub34) class98_sub34).anInt4126;
-				if ((i_112_ ^ 0xffffffff) == -1001) {
+				Class255.anIntArray3210[i_112_++] = (int) class98_sub34.uid;
+				this.anInt4337 -= class98_sub34.anInt4126;
+				if (i_112_ == 1000) {
 					OpenGL.glDeleteTextures(i_112_, Class255.anIntArray3210, 0);
 					i_112_ = 0;
 				}
@@ -1311,51 +1311,51 @@ final class ha_Sub1 extends ha {
 			}
 			while (!aClass148_4340.method2420(-124)) {
 				Class98_Sub34 class98_sub34 = (Class98_Sub34) aClass148_4340.method2421(6494);
-				Class255.anIntArray3210[i_112_++] = ((Class98_Sub34) class98_sub34).anInt4126;
+				Class255.anIntArray3210[i_112_++] = class98_sub34.anInt4126;
 				if (i_112_ == 1000) {
 					OpenGL.glDeleteFramebuffersEXT(i_112_, Class255.anIntArray3210, 0);
 					i_112_ = 0;
 				}
 			}
-			if ((i_112_ ^ 0xffffffff) < -1) {
+			if (i_112_ > 0) {
 				OpenGL.glDeleteFramebuffersEXT(i_112_, Class255.anIntArray3210, 0);
 				i_112_ = 0;
 			}
 			while (!aClass148_4341.method2420(-125)) {
 				Class98_Sub34 class98_sub34 = (Class98_Sub34) aClass148_4341.method2421(6494);
-				Class255.anIntArray3210[i_112_++] = (int) ((Node) class98_sub34).uid;
-				anInt4335 -= ((Class98_Sub34) class98_sub34).anInt4126;
+				Class255.anIntArray3210[i_112_++] = (int) class98_sub34.uid;
+				anInt4335 -= class98_sub34.anInt4126;
 				if (i_112_ == 1000) {
 					OpenGL.glDeleteRenderbuffersEXT(i_112_, Class255.anIntArray3210, 0);
 					i_112_ = 0;
 				}
 			}
-			if ((i_112_ ^ 0xffffffff) < -1) {
+			if (i_112_ > 0) {
 				OpenGL.glDeleteRenderbuffersEXT(i_112_, Class255.anIntArray3210, 0);
 				boolean bool = false;
 			}
 			while (!aClass148_4334.method2420(-126)) {
 				Class98_Sub34 class98_sub34 = (Class98_Sub34) aClass148_4334.method2421(6494);
-				OpenGL.glDeleteLists((int) ((Node) class98_sub34).uid, (((Class98_Sub34) class98_sub34).anInt4126));
+				OpenGL.glDeleteLists((int) class98_sub34.uid, (class98_sub34.anInt4126));
 			}
 			while (!aClass148_4342.method2420(-126)) {
 				Node class98 = aClass148_4342.method2421(6494);
-				OpenGL.glDeleteProgramARB((int) ((Node) class98).uid);
+				OpenGL.glDeleteProgramARB((int) class98.uid);
 			}
 			while (!aClass148_4343.method2420(-126)) {
 				Node class98 = aClass148_4343.method2421(6494);
-				OpenGL.glDeleteObjectARB(((Node) class98).uid);
+				OpenGL.glDeleteObjectARB(class98.uid);
 			}
 			while (!aClass148_4334.method2420(-125)) {
 				Class98_Sub34 class98_sub34 = (Class98_Sub34) aClass148_4334.method2421(6494);
-				OpenGL.glDeleteLists((int) ((Node) class98_sub34).uid, (((Class98_Sub34) class98_sub34).anInt4126));
+				OpenGL.glDeleteLists((int) class98_sub34.uid, (class98_sub34.anInt4126));
 			}
 			aClass364_4308.method3933(0);
 			if (E() > 100663296 && 60000L + aLong4351 < Class343.method3819(-47)) {
 				System.gc();
 				aLong4351 = Class343.method3819(-47);
 			}
-			((ha_Sub1) this).anInt4321 = i;
+			this.anInt4321 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.UB(" + i + ')');
 		}
@@ -1363,14 +1363,14 @@ final class ha_Sub1 extends ha {
 
 	final void KA(int i, int i_113_, int i_114_, int i_115_) {
 		try {
-			if ((((ha_Sub1) this).anInt4305 ^ 0xffffffff) > (i_114_ ^ 0xffffffff))
-				i_114_ = ((ha_Sub1) this).anInt4305;
+			if (i_114_ > this.anInt4305)
+				i_114_ = this.anInt4305;
 			if (i < 0)
 				i = 0;
 			if (i_113_ < 0)
 				i_113_ = 0;
-			if (i_115_ > ((ha_Sub1) this).anInt4304)
-				i_115_ = ((ha_Sub1) this).anInt4304;
+			if (i_115_ > this.anInt4304)
+				i_115_ = this.anInt4304;
 			anInt4414 = i_115_;
 			anInt4402 = i_113_;
 			anInt4370 = i;
@@ -1388,10 +1388,10 @@ final class ha_Sub1 extends ha {
 			int i_116_ = class98_sub22.readSmart(i + 1689622710);
 			if (i == 2) {
 				Class98_Sub10_Sub36.aClass114Array5744 = new Class114[i_116_];
-				for (int i_117_ = 0; (i_116_ ^ 0xffffffff) < (i_117_ ^ 0xffffffff); i_117_++) {
+				for (int i_117_ = 0; i_117_ < i_116_; i_117_++) {
 					Class98_Sub10_Sub36.aClass114Array5744[i_117_] = new Class114();
-					((Class114) Class98_Sub10_Sub36.aClass114Array5744[i_117_]).anInt956 = class98_sub22.readSmart(1689622712);
-					((Class114) Class98_Sub10_Sub36.aClass114Array5744[i_117_]).aString957 = class98_sub22.method1223(i ^ ~0x2);
+					Class98_Sub10_Sub36.aClass114Array5744[i_117_].anInt956 = class98_sub22.readSmart(1689622712);
+					Class98_Sub10_Sub36.aClass114Array5744[i_117_].aString957 = class98_sub22.method1223(i ^ ~0x2);
 				}
 				Class164.anInt1274 = class98_sub22.readSmart(1689622712);
 				Class101.anInt854 = class98_sub22.readSmart(1689622712);
@@ -1400,11 +1400,11 @@ final class ha_Sub1 extends ha {
 				for (int i_118_ = 0; Class42_Sub3.anInt5366 > i_118_; i_118_++) {
 					int i_119_ = class98_sub22.readSmart(1689622712);
 					Class53_Sub1 class53_sub1 = (Class98_Sub20.aClass53_Sub1Array3967[i_119_] = new Class53_Sub1());
-					((Class53) class53_sub1).anInt426 = class98_sub22.readUnsignedByte();
-					((Class53) class53_sub1).anInt427 = class98_sub22.readInt(-2);
-					((Class53_Sub1) class53_sub1).anInt3632 = i_119_ - -Class164.anInt1274;
-					((Class53_Sub1) class53_sub1).aString3630 = class98_sub22.method1223(-1);
-					((Class53_Sub1) class53_sub1).aString3634 = class98_sub22.method1223(-1);
+					class53_sub1.anInt426 = class98_sub22.readUnsignedByte();
+					class53_sub1.anInt427 = class98_sub22.readInt(-2);
+					class53_sub1.anInt3632 = i_119_ - -Class164.anInt1274;
+					class53_sub1.aString3630 = class98_sub22.method1223(-1);
+					class53_sub1.aString3634 = class98_sub22.method1223(-1);
 				}
 				Class6.anInt88 = class98_sub22.readInt(i ^ ~0x3);
 				Class98_Sub17.aBoolean3944 = true;
@@ -1419,7 +1419,7 @@ final class ha_Sub1 extends ha {
 			try {
 				int i_120_ = 0;
 				while (!anOpenGL4298.b()) {
-					if ((i_120_++ ^ 0xffffffff) < -6)
+					if (i_120_++ > 5)
 						throw new RuntimeException("");
 					Class246_Sub7.method3131(0, 1000L);
 				}
@@ -1435,15 +1435,15 @@ final class ha_Sub1 extends ha {
 
 	final void ZA(int i, float f, float f_121_, float f_122_, float f_123_, float f_124_) {
 		try {
-			boolean bool = (i ^ 0xffffffff) != (anInt4412 ^ 0xffffffff);
-			if (bool || ((ha_Sub1) this).aFloat4435 != f || f_121_ != ((ha_Sub1) this).aFloat4407) {
+			boolean bool = anInt4412 != i;
+			if (bool || this.aFloat4435 != f || f_121_ != this.aFloat4407) {
 				anInt4412 = i;
-				((ha_Sub1) this).aFloat4407 = f_121_;
-				((ha_Sub1) this).aFloat4435 = f;
+				this.aFloat4407 = f_121_;
+				this.aFloat4435 = f;
 				if (bool) {
-					((ha_Sub1) this).aFloat4458 = (float) (anInt4412 & 0xff) / 255.0F;
-					((ha_Sub1) this).aFloat4420 = (float) (anInt4412 & 0xff00) / 65280.0F;
-					((ha_Sub1) this).aFloat4433 = (float) (0xff0000 & anInt4412) / 1.671168E7F;
+					this.aFloat4458 = (float) (anInt4412 & 0xff) / 255.0F;
+					this.aFloat4420 = (float) (anInt4412 & 0xff00) / 65280.0F;
+					this.aFloat4433 = (float) (0xff0000 & anInt4412) / 1.671168E7F;
 					method1860((byte) -41);
 				}
 				method1900((byte) 90);
@@ -1455,16 +1455,16 @@ final class ha_Sub1 extends ha {
 				aFloatArray4418[0] = -f_122_;
 				aFloatArray4418[2] = -f_124_;
 				aFloatArray4418[1] = -f_123_;
-				float f_125_ = (float) (1.0 / Math.sqrt((double) (f_122_ * f_122_ + f_123_ * f_123_ + f_124_ * f_124_)));
-				((ha_Sub1) this).aFloatArray4438[2] = f_124_ * f_125_;
-				((ha_Sub1) this).aFloatArray4438[0] = f_122_ * f_125_;
-				((ha_Sub1) this).aFloatArray4438[1] = f_125_ * f_123_;
-				aFloatArray4463[1] = -((ha_Sub1) this).aFloatArray4438[1];
-				aFloatArray4463[2] = -((ha_Sub1) this).aFloatArray4438[2];
-				aFloatArray4463[0] = -((ha_Sub1) this).aFloatArray4438[0];
+				float f_125_ = (float) (1.0 / Math.sqrt(f_122_ * f_122_ + f_123_ * f_123_ + f_124_ * f_124_));
+				this.aFloatArray4438[2] = f_124_ * f_125_;
+				this.aFloatArray4438[0] = f_122_ * f_125_;
+				this.aFloatArray4438[1] = f_125_ * f_123_;
+				aFloatArray4463[1] = -this.aFloatArray4438[1];
+				aFloatArray4463[2] = -this.aFloatArray4438[2];
+				aFloatArray4463[0] = -this.aFloatArray4438[0];
 				method1831(127);
-				((ha_Sub1) this).anInt4377 = (int) (256.0F * f_124_ / f_123_);
-				((ha_Sub1) this).anInt4398 = (int) (256.0F * f_122_ / f_123_);
+				this.anInt4377 = (int) (256.0F * f_124_ / f_123_);
+				this.anInt4398 = (int) (256.0F * f_122_ / f_123_);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ac.ZA(" + i + ',' + f + ',' + f_121_ + ',' + f_122_ + ',' + f_123_ + ',' + f_124_ + ')'));
@@ -1492,7 +1492,7 @@ final class ha_Sub1 extends ha {
 			if (bool != false)
 				method1740(null);
 			Node class98 = new Node();
-			((Node) class98).uid = l;
+			class98.uid = l;
 			aClass148_4343.add_last(class98, -20911);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.PD(" + bool + ',' + l + ')');
@@ -1550,7 +1550,7 @@ final class ha_Sub1 extends ha {
 
 	final int i() {
 		try {
-			return ((ha_Sub1) this).anInt4404;
+			return this.anInt4404;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.i(" + ')');
 		}
@@ -1558,22 +1558,22 @@ final class ha_Sub1 extends ha {
 
 	final void a(int i, int i_132_, int i_133_, int i_134_, int i_135_, int i_136_, aa var_aa, int i_137_, int i_138_, int i_139_, int i_140_, int i_141_) {
 		try {
-			if (i_133_ != i || (i_132_ ^ 0xffffffff) != (i_134_ ^ 0xffffffff)) {
+			if (i_133_ != i || i_134_ != i_132_) {
 				aa_Sub3 var_aa_Sub3 = (aa_Sub3) var_aa;
-				Class42_Sub1_Sub1 class42_sub1_sub1 = ((aa_Sub3) var_aa_Sub3).aClass42_Sub1_Sub1_3568;
+				Class42_Sub1_Sub1 class42_sub1_sub1 = var_aa_Sub3.aClass42_Sub1_Sub1_3568;
 				method1829((byte) -119);
-				method1863(1, ((aa_Sub3) var_aa_Sub3).aClass42_Sub1_Sub1_3568);
+				method1863(1, var_aa_Sub3.aClass42_Sub1_Sub1_3568);
 				method1870((byte) -69, i_136_);
 				method1899(8448, 8960, 7681);
 				method1840(0, 768, -121, 34167);
-				float f = (((Class42_Sub1_Sub1) class42_sub1_sub1).aFloat6205 / (float) (((Class42_Sub1_Sub1) class42_sub1_sub1).anInt6207));
-				float f_142_ = (((Class42_Sub1_Sub1) class42_sub1_sub1).aFloat6209 / (float) (((Class42_Sub1_Sub1) class42_sub1_sub1).anInt6204));
+				float f = (class42_sub1_sub1.aFloat6205 / (float) (class42_sub1_sub1.anInt6207));
+				float f_142_ = (class42_sub1_sub1.aFloat6209 / (float) (class42_sub1_sub1.anInt6204));
 				float f_143_ = (float) -i + (float) i_133_;
 				float f_144_ = (float) i_134_ - (float) i_132_;
-				float f_145_ = (float) (1.0 / Math.sqrt((double) (f_144_ * f_144_ + f_143_ * f_143_)));
+				float f_145_ = (float) (1.0 / Math.sqrt(f_144_ * f_144_ + f_143_ * f_143_));
 				f_143_ *= f_145_;
 				f_144_ *= f_145_;
-				OpenGL.glColor4ub((byte) (i_135_ >> 1969603824), (byte) (i_135_ >> -519019928), (byte) i_135_, (byte) (i_135_ >> 1163947384));
+				OpenGL.glColor4ub((byte) (i_135_ >> 16), (byte) (i_135_ >> 8), (byte) i_135_, (byte) (i_135_ >> 24));
 				i_141_ %= i_140_ - -i_139_;
 				float f_146_ = f_143_ * (float) i_139_;
 				float f_147_ = (float) i_139_ * f_144_;
@@ -1581,7 +1581,7 @@ final class ha_Sub1 extends ha {
 				float f_149_ = 0.0F;
 				float f_150_ = f_146_;
 				float f_151_ = f_147_;
-				if ((i_139_ ^ 0xffffffff) <= (i_141_ ^ 0xffffffff)) {
+				if (i_141_ <= i_139_) {
 					f_150_ = (float) (-i_141_ + i_139_) * f_143_;
 					f_151_ = f_144_ * (float) (i_139_ - i_141_);
 				} else {
@@ -1604,7 +1604,7 @@ final class ha_Sub1 extends ha {
 						if (f_152_ + f_150_ > (float) i_133_)
 							f_150_ = (float) i_133_ - f_152_;
 					}
-					if ((i_134_ ^ 0xffffffff) >= (i_132_ ^ 0xffffffff)) {
+					if (i_132_ >= i_134_) {
 						if (0.35F + (float) i_134_ > f_153_)
 							break;
 						if (f_151_ + f_153_ < (float) i_134_)
@@ -1666,12 +1666,12 @@ final class ha_Sub1 extends ha {
 
 	private final void method1860(byte i) {
 		try {
-			Class115.aFloatArray961[1] = ((ha_Sub1) this).aFloat4420 * ((ha_Sub1) this).aFloat4413;
-			Class115.aFloatArray961[0] = ((ha_Sub1) this).aFloat4413 * ((ha_Sub1) this).aFloat4433;
+			Class115.aFloatArray961[1] = this.aFloat4420 * this.aFloat4413;
+			Class115.aFloatArray961[0] = this.aFloat4413 * this.aFloat4433;
 			Class115.aFloatArray961[3] = 1.0F;
 			if (i != -41)
 				M();
-			Class115.aFloatArray961[2] = ((ha_Sub1) this).aFloat4413 * ((ha_Sub1) this).aFloat4458;
+			Class115.aFloatArray961[2] = this.aFloat4413 * this.aFloat4458;
 			OpenGL.glLightModelfv(2899, Class115.aFloatArray961, 0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.DB(" + i + ')');
@@ -1682,8 +1682,8 @@ final class ha_Sub1 extends ha {
 		do {
 			try {
 				if (i != 19330)
-					((ha_Sub1) this).aClass146_Sub2_4361 = null;
-				if ((anInt4350 ^ 0xffffffff) == -9)
+					this.aClass146_Sub2_4361 = null;
+				if (anInt4350 == 8)
 					break;
 				method1904(-22);
 				method1856(true, 6914);
@@ -1700,17 +1700,17 @@ final class ha_Sub1 extends ha {
 
 	final Class48 method1769(Class48 class48, Class48 class48_156_, float f, Class48 class48_157_) {
 		try {
-			if (class48 != null && class48_156_ != null && ((ha_Sub1) this).aBoolean4391 && ((ha_Sub1) this).aBoolean4460) {
+			if (class48 != null && class48_156_ != null && this.aBoolean4391 && this.aBoolean4460) {
 				IncomingMessages class48_sub1_sub2 = null;
 				Class48_Sub1 class48_sub1 = (Class48_Sub1) class48;
 				Class48_Sub1 class48_sub1_158_ = (Class48_Sub1) class48_156_;
 				Class42_Sub2 class42_sub2 = class48_sub1.method456((byte) 122);
 				Class42_Sub2 class42_sub2_159_ = class48_sub1_158_.method456((byte) 123);
 				if (class42_sub2 != null && class42_sub2_159_ != null) {
-					int i = ((((Class42_Sub2) class42_sub2).anInt5357 <= ((Class42_Sub2) class42_sub2_159_).anInt5357) ? ((Class42_Sub2) class42_sub2_159_).anInt5357 : ((Class42_Sub2) class42_sub2).anInt5357);
+					int i = ((class42_sub2.anInt5357 <= class42_sub2_159_.anInt5357) ? class42_sub2_159_.anInt5357 : class42_sub2.anInt5357);
 					if (class48_157_ != class48 && class48_156_ != class48_157_ && class48_157_ instanceof IncomingMessages) {
 						IncomingMessages class48_sub1_sub2_160_ = (IncomingMessages) class48_157_;
-						if ((i ^ 0xffffffff) == (class48_sub1_sub2_160_.method465(-65534) ^ 0xffffffff))
+						if (class48_sub1_sub2_160_.method465(-65534) == i)
 							class48_sub1_sub2 = class48_sub1_sub2_160_;
 					}
 					if (class48_sub1_sub2 == null)
@@ -1765,14 +1765,14 @@ final class ha_Sub1 extends ha {
 				if (class42 != class42_161_) {
 					if (class42 != null) {
 						if (class42_161_ == null)
-							OpenGL.glEnable(((Class42) class42).anInt3226);
-						else if ((((Class42) class42).anInt3226 ^ 0xffffffff) != (((Class42) class42_161_).anInt3226 ^ 0xffffffff)) {
-							OpenGL.glDisable(((Class42) class42_161_).anInt3226);
-							OpenGL.glEnable(((Class42) class42).anInt3226);
+							OpenGL.glEnable(class42.anInt3226);
+						else if (class42_161_.anInt3226 != class42.anInt3226) {
+							OpenGL.glDisable(class42_161_.anInt3226);
+							OpenGL.glEnable(class42.anInt3226);
 						}
-						OpenGL.glBindTexture(((Class42) class42).anInt3226, class42.method369(true));
+						OpenGL.glBindTexture(class42.anInt3226, class42.method369(true));
 					} else
-						OpenGL.glDisable(((Class42) class42_161_).anInt3226);
+						OpenGL.glDisable(class42_161_.anInt3226);
 					aClass42Array4396[anInt4417] = class42;
 				}
 				anInt4350 &= ~0x1;
@@ -1793,7 +1793,7 @@ final class ha_Sub1 extends ha {
 	private final void method1864(int i) {
 		try {
 			method1834(102, -2);
-			for (int i_164_ = -1 + ((ha_Sub1) this).anInt4410; i_164_ >= 0; i_164_--) {
+			for (int i_164_ = -1 + this.anInt4410; i_164_ >= 0; i_164_--) {
 				method1845(i_164_, i + 847872904);
 				method1863(1, null);
 				OpenGL.glTexEnvi(8960, 8704, 34160);
@@ -1839,7 +1839,7 @@ final class ha_Sub1 extends ha {
 				OpenGL.glFogf(2914, 0.95F);
 				OpenGL.glFogi(2917, 9729);
 				OpenGL.glHint(3156, 4353);
-				anInt4412 = ((ha_Sub1) this).anInt4455 = -1;
+				anInt4412 = this.anInt4455 = -1;
 				la();
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -1890,7 +1890,7 @@ final class ha_Sub1 extends ha {
 			float f_173_ = (float) i_170_ - (float) i_168_;
 			do {
 				if (f != 0.0F || f_173_ != 0.0F) {
-					float f_174_ = (float) (1.0 / Math.sqrt((double) (f * f + f_173_ * f_173_)));
+					float f_174_ = (float) (1.0 / Math.sqrt(f * f + f_173_ * f_173_));
 					f_173_ *= f_174_;
 					f *= f_174_;
 					if (!client.aBoolean3553)
@@ -1898,7 +1898,7 @@ final class ha_Sub1 extends ha {
 				}
 				f = 1.0F;
 			} while (false);
-			OpenGL.glColor4ub((byte) (i_171_ >> 968665392), (byte) (i_171_ >> 493545704), (byte) i_171_, (byte) (i_171_ >> 804890104));
+			OpenGL.glColor4ub((byte) (i_171_ >> 16), (byte) (i_171_ >> 8), (byte) i_171_, (byte) (i_171_ >> 24));
 			OpenGL.glBegin(1);
 			OpenGL.glVertex2f((float) i + 0.35F, 0.35F + (float) i_168_);
 			OpenGL.glVertex2f(f + (float) i_169_ + 0.35F, 0.35F + (f_173_ + (float) i_170_));
@@ -1944,7 +1944,7 @@ final class ha_Sub1 extends ha {
 
 	final int E() {
 		try {
-			return (((ha_Sub1) this).anInt4337 + ((ha_Sub1) this).anInt4336 + anInt4335);
+			return (this.anInt4337 + this.anInt4336 + anInt4335);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.E(" + ')');
 		}
@@ -1954,15 +1954,15 @@ final class ha_Sub1 extends ha {
 		try {
 			if (i >= -73)
 				method1822();
-			if (i_178_ != 6406 && (i_178_ ^ 0xffffffff) != -6410) {
-				if ((i_178_ ^ 0xffffffff) != -6411 && (i_178_ ^ 0xffffffff) != -34847 && (i_178_ ^ 0xffffffff) != -34845) {
+			if (i_178_ != 6406 && i_178_ != 6409) {
+				if (i_178_ != 6410 && i_178_ != 34846 && i_178_ != 34844) {
 					if (i_178_ == 6407)
 						return 3;
-					if ((i_178_ ^ 0xffffffff) != -6409 && i_178_ != 34847) {
-						if ((i_178_ ^ 0xffffffff) == -34844)
+					if (i_178_ != 6408 && i_178_ != 34847) {
+						if (i_178_ == 34843)
 							return 6;
-						if ((i_178_ ^ 0xffffffff) != -34843) {
-							if ((i_178_ ^ 0xffffffff) == -6403)
+						if (i_178_ != 34842) {
+							if (i_178_ == 6402)
 								return 3;
 							if (i_178_ == 6401)
 								return 1;
@@ -1996,8 +1996,8 @@ final class ha_Sub1 extends ha {
 	final void method1868(Class104 class104, Class104 class104_179_, Class104 class104_180_, Class104 class104_181_, int i) {
 		try {
 			if (class104_181_ != null) {
-				method1887(((Class104) class104_181_).anInterface16_902, 34962);
-				OpenGL.glVertexPointer(((Class104) class104_181_).aByte900, ((Class104) class104_181_).aShort899, anInterface16_4374.method55(-115), (anInterface16_4374.method52(24582) - -(long) (((Class104) class104_181_).aByte898)));
+				method1887(class104_181_.anInterface16_902, 34962);
+				OpenGL.glVertexPointer(class104_181_.aByte900, class104_181_.aShort899, anInterface16_4374.method55(-115), (anInterface16_4374.method52(24582) - -(long) (class104_181_.aByte898)));
 				OpenGL.glEnableClientState(32884);
 			} else
 				OpenGL.glDisableClientState(32884);
@@ -2006,22 +2006,22 @@ final class ha_Sub1 extends ha {
 			if (class104_179_ == null)
 				OpenGL.glDisableClientState(32885);
 			else {
-				method1887(((Class104) class104_179_).anInterface16_902, 34962);
-				OpenGL.glNormalPointer(((Class104) class104_179_).aShort899, anInterface16_4374.method55(-122), (anInterface16_4374.method52(24582) - -(long) (((Class104) class104_179_).aByte898)));
+				method1887(class104_179_.anInterface16_902, 34962);
+				OpenGL.glNormalPointer(class104_179_.aShort899, anInterface16_4374.method55(-122), (anInterface16_4374.method52(24582) - -(long) (class104_179_.aByte898)));
 				OpenGL.glEnableClientState(32885);
 			}
 			if (class104 == null)
 				OpenGL.glDisableClientState(32886);
 			else {
-				method1887(((Class104) class104).anInterface16_902, 34962);
-				OpenGL.glColorPointer(((Class104) class104).aByte900, ((Class104) class104).aShort899, anInterface16_4374.method55(49), (anInterface16_4374.method52(24582) - -(long) (((Class104) class104).aByte898)));
+				method1887(class104.anInterface16_902, 34962);
+				OpenGL.glColorPointer(class104.aByte900, class104.aShort899, anInterface16_4374.method55(49), (anInterface16_4374.method52(24582) - -(long) (class104.aByte898)));
 				OpenGL.glEnableClientState(32886);
 			}
 			if (class104_180_ == null)
 				OpenGL.glDisableClientState(32888);
 			else {
-				method1887(((Class104) class104_180_).anInterface16_902, 34962);
-				OpenGL.glTexCoordPointer(((Class104) class104_180_).aByte900, ((Class104) class104_180_).aShort899, anInterface16_4374.method55(79), (anInterface16_4374.method52(24582) - -(long) (((Class104) class104_180_).aByte898)));
+				method1887(class104_180_.anInterface16_902, 34962);
+				OpenGL.glTexCoordPointer(class104_180_.aByte900, class104_180_.aShort899, anInterface16_4374.method55(79), (anInterface16_4374.method52(24582) - -(long) (class104_180_.aByte898)));
 				OpenGL.glEnableClientState(32888);
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -2035,7 +2035,7 @@ final class ha_Sub1 extends ha {
 				throw new RuntimeException();
 			anInterface12Array4326[anInt4327--] = null;
 			interface12.method40((byte) -30);
-			if ((anInt4327 ^ 0xffffffff) <= -1) {
+			if (anInt4327 >= 0) {
 				anInterface12_4328 = anInterface12Array4326[anInt4327];
 				anInterface12_4328.method36((byte) -115);
 			} else
@@ -2048,16 +2048,16 @@ final class ha_Sub1 extends ha {
 	final void EA(int i, int i_182_, int i_183_, int i_184_) {
 		do {
 			try {
-				if (!((ha_Sub1) this).aBoolean4366)
+				if (!this.aBoolean4366)
 					throw new RuntimeException("");
-				((ha_Sub1) this).anInt4453 = i_184_;
-				((ha_Sub1) this).anInt4362 = i;
-				((ha_Sub1) this).anInt4423 = i_182_;
-				((ha_Sub1) this).anInt4454 = i_183_;
+				this.anInt4453 = i_184_;
+				this.anInt4362 = i;
+				this.anInt4423 = i_182_;
+				this.anInt4454 = i_183_;
 				if (!aBoolean4448)
 					break;
-				((Class55) aClass55_4314).aClass151_Sub9_432.method2471((byte) 34);
-				((Class55) aClass55_4314).aClass151_Sub9_432.method2470(-16661);
+				aClass55_4314.aClass151_Sub9_432.method2471((byte) 34);
+				aClass55_4314.aClass151_Sub9_432.method2470(-16661);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("ac.EA(" + i + ',' + i_182_ + ',' + i_183_ + ',' + i_184_ + ')'));
 			}
@@ -2077,13 +2077,13 @@ final class ha_Sub1 extends ha {
 		do {
 			try {
 				if (i > -18)
-					((ha_Sub1) this).anInt4337 = 47;
+					this.anInt4337 = 47;
 				if (i_188_ == anInt4347)
 					break;
 				boolean bool;
 				boolean bool_189_;
 				int i_190_;
-				if ((i_188_ ^ 0xffffffff) == -2) {
+				if (i_188_ == 1) {
 					bool_189_ = true;
 					bool = true;
 					i_190_ = 1;
@@ -2111,8 +2111,8 @@ final class ha_Sub1 extends ha {
 						OpenGL.glEnable(3008);
 					aBoolean4345 = bool_189_;
 				}
-				if ((i_190_ ^ 0xffffffff) != (anInt4344 ^ 0xffffffff)) {
-					if ((i_190_ ^ 0xffffffff) != -2) {
+				if (anInt4344 != i_190_) {
+					if (i_190_ != 1) {
 						if (i_190_ == 2) {
 							OpenGL.glEnable(3042);
 							OpenGL.glBlendFunc(1, 1);
@@ -2151,7 +2151,7 @@ final class ha_Sub1 extends ha {
 	ha_Sub1(Canvas canvas, d var_d, int i) {
 		super(var_d);
 		aBoolean4317 = false;
-		((ha_Sub1) this).anInt4319 = 3;
+		this.anInt4319 = 3;
 		aClass148_4320 = new LinkedList();
 		anInterface12Array4326 = new Interface12[4];
 		anInterface12Array4329 = new Interface12[4];
@@ -2168,9 +2168,9 @@ final class ha_Sub1 extends ha {
 		aClass148_4341 = new LinkedList();
 		aClass148_4342 = new LinkedList();
 		aClass148_4343 = new LinkedList();
-		((ha_Sub1) this).aClass111_Sub1_4348 = new Class111_Sub1();
-		((ha_Sub1) this).aClass111_Sub1_4353 = new Class111_Sub1();
-		((ha_Sub1) this).aClass111_Sub1_4354 = new Class111_Sub1();
+		this.aClass111_Sub1_4348 = new Class111_Sub1();
+		this.aClass111_Sub1_4353 = new Class111_Sub1();
+		this.aClass111_Sub1_4354 = new Class111_Sub1();
 		aFloat4376 = 0.0F;
 		anInt4370 = 0;
 		aFloat4392 = 1.0F;
@@ -2182,68 +2182,68 @@ final class ha_Sub1 extends ha {
 		anInt4389 = 3584;
 		anInt4414 = 0;
 		aFloatArray4418 = new float[4];
-		((ha_Sub1) this).anInt4404 = 50;
+		this.anInt4404 = 50;
 		anInt4412 = -1;
 		anInt4402 = 0;
-		((ha_Sub1) this).aFloat4407 = -1.0F;
-		((ha_Sub1) this).anInt4423 = -1;
-		((ha_Sub1) this).anInt4427 = 0;
-		((ha_Sub1) this).aFloat4435 = -1.0F;
+		this.aFloat4407 = -1.0F;
+		this.anInt4423 = -1;
+		this.anInt4427 = 0;
+		this.aFloat4435 = -1.0F;
 		aFloat4429 = -1.0F;
-		((ha_Sub1) this).anInt4381 = 512;
-		((ha_Sub1) this).aFloat4420 = 1.0F;
+		this.anInt4381 = 512;
+		this.aFloat4420 = 1.0F;
 		aFloatArray4440 = new float[16];
 		aBoolean4448 = false;
 		anInt4432 = 0;
-		((ha_Sub1) this).aFloat4379 = 3584.0F;
-		((ha_Sub1) this).aFloatArray4438 = new float[4];
-		((ha_Sub1) this).anInt4455 = -1;
-		((ha_Sub1) this).anInt4454 = -1;
-		((ha_Sub1) this).anInt4441 = -1;
-		((ha_Sub1) this).anInt4394 = 0;
+		this.aFloat4379 = 3584.0F;
+		this.aFloatArray4438 = new float[4];
+		this.anInt4455 = -1;
+		this.anInt4454 = -1;
+		this.anInt4441 = -1;
+		this.anInt4394 = 0;
 		anInt4415 = 0;
 		aFloat4452 = 1.0F;
-		((ha_Sub1) this).aFloat4458 = 1.0F;
-		((ha_Sub1) this).anInt4419 = 512;
-		((ha_Sub1) this).aFloat4401 = 3584.0F;
-		((ha_Sub1) this).aFloat4433 = 1.0F;
-		((ha_Sub1) this).anInt4451 = 0;
+		this.aFloat4458 = 1.0F;
+		this.anInt4419 = 512;
+		this.aFloat4401 = 3584.0F;
+		this.aFloat4433 = 1.0F;
+		this.anInt4451 = 0;
 		aFloatArray4463 = new float[4];
-		((ha_Sub1) this).anInt4453 = 0;
+		this.anInt4453 = 0;
 		anInt4409 = 0;
 		aBoolean4465 = true;
-		((ha_Sub1) this).aClass98_Sub22_Sub2_4446 = new Class98_Sub22_Sub2(8192);
-		((ha_Sub1) this).anIntArray4468 = new int[1];
-		((ha_Sub1) this).aByteArray4469 = new byte[16384];
-		((ha_Sub1) this).anIntArray4470 = new int[1];
-		((ha_Sub1) this).anIntArray4471 = new int[1];
+		this.aClass98_Sub22_Sub2_4446 = new Class98_Sub22_Sub2(8192);
+		this.anIntArray4468 = new int[1];
+		this.aByteArray4469 = new byte[16384];
+		this.anIntArray4470 = new int[1];
+		this.anIntArray4471 = new int[1];
 		try {
 			aCanvas4300 = aCanvas4303 = canvas;
-			((ha_Sub1) this).anInt4310 = i;
+			this.anInt4310 = i;
 			if (!Class134_Sub1.method2246("jaclib", (byte) -36))
 				throw new RuntimeException("");
 			if (!Class134_Sub1.method2246("jaggl", (byte) -36))
 				throw new RuntimeException("");
 			try {
 				anOpenGL4298 = new OpenGL();
-				aLong4302 = aLong4307 = anOpenGL4298.init(canvas, 8, 8, 8, 24, 0, ((ha_Sub1) this).anInt4310);
-				if ((aLong4307 ^ 0xffffffffffffffffL) == -1L)
+				aLong4302 = aLong4307 = anOpenGL4298.init(canvas, 8, 8, 8, 24, 0, this.anInt4310);
+				if (aLong4307 == 0)
 					throw new RuntimeException("");
 				method1854(-33);
 				int i_192_ = method1849((byte) -123);
-				if ((i_192_ ^ 0xffffffff) != -1)
+				if (i_192_ != 0)
 					throw new RuntimeException("");
-				((ha_Sub1) this).anInt4425 = !((ha_Sub1) this).aBoolean4397 ? 5121 : 33639;
-				if ((aString4403.indexOf("radeon") ^ 0xffffffff) != 0) {
+				this.anInt4425 = !this.aBoolean4397 ? 5121 : 33639;
+				if (aString4403.indexOf("radeon") != -1) {
 					int i_193_ = 0;
 					boolean bool = false;
 					boolean bool_194_ = false;
 					String[] strings = Class112.method2142(aString4403.replace('/', ' '), ' ', false);
-					for (int i_195_ = 0; (i_195_ ^ 0xffffffff) > (strings.length ^ 0xffffffff); i_195_++) {
+					for (int i_195_ = 0; strings.length > i_195_; i_195_++) {
 						String string = strings[i_195_];
 						try {
-							if ((string.length() ^ 0xffffffff) < -1) {
-								if ((string.charAt(0) ^ 0xffffffff) == -121 && string.length() >= 3 && (Class77_Sub1.method781((byte) 53, string.substring(1, 3)))) {
+							if (string.length() > 0) {
+								if (string.charAt(0) == 120 && string.length() >= 3 && (Class77_Sub1.method781((byte) 53, string.substring(1, 3)))) {
 									bool_194_ = true;
 									string = string.substring(1);
 								}
@@ -2254,7 +2254,7 @@ final class ha_Sub1 extends ha {
 										bool = true;
 										string = string.substring(2);
 									}
-									if ((string.length() ^ 0xffffffff) <= -5 && (Class77_Sub1.method781((byte) 53, string.substring(0, 4)))) {
+									if (string.length() >= 4 && (Class77_Sub1.method781((byte) 53, string.substring(0, 4)))) {
 										i_193_ = (PacketSender.method3607(-94, string.substring(0, 4)));
 										break;
 									}
@@ -2265,19 +2265,19 @@ final class ha_Sub1 extends ha {
 						}
 					}
 					if (!bool_194_ && !bool) {
-						if ((i_193_ ^ 0xffffffff) <= -7001 && i_193_ <= 9250)
-							((ha_Sub1) this).aBoolean4434 = false;
-						if (i_193_ >= 7000 && (i_193_ ^ 0xffffffff) >= -8000)
+						if (i_193_ >= 7000 && i_193_ <= 9250)
+							this.aBoolean4434 = false;
+						if (i_193_ >= 7000 && i_193_ <= 7999)
 							aBoolean4449 = false;
 					}
 					if (!bool || i_193_ < 4000)
-						((ha_Sub1) this).aBoolean4383 = false;
-					((ha_Sub1) this).aBoolean4378 &= anOpenGL4298.a("GL_ARB_half_float_pixel");
+						this.aBoolean4383 = false;
+					this.aBoolean4378 &= anOpenGL4298.a("GL_ARB_half_float_pixel");
 					aBoolean4459 = aBoolean4449;
-					((ha_Sub1) this).aBoolean4406 = true;
+					this.aBoolean4406 = true;
 				}
 				if (aString4430.indexOf("intel") != -1)
-					((ha_Sub1) this).aBoolean4460 = false;
+					this.aBoolean4460 = false;
 				aBoolean4439 = !aString4430.equals("s3 graphics");
 				if (aBoolean4449) {
 					try {
@@ -2289,9 +2289,9 @@ final class ha_Sub1 extends ha {
 				}
 				Class101.method1702(8, false, true);
 				aBoolean4317 = true;
-				aClass364_4308 = new Class364(this, ((ha) this).aD938);
+				aClass364_4308 = new Class364(this, this.aD938);
 				method1903(98);
-				((ha_Sub1) this).aClass118_4322 = new Class118(this);
+				this.aClass118_4322 = new Class118(this);
 				aClass283_4312 = new Class283(this);
 				if (aClass283_4312.method3349(true)) {
 					aClass98_Sub28_Sub1_4311 = new Class98_Sub28_Sub1(this);
@@ -2323,7 +2323,7 @@ final class ha_Sub1 extends ha {
 			if (i_200_ >= -91)
 				method1871(73, 45, false, -110, -71, -102, 48);
 			Class363.anInt3098 = i_196_;
-			if (bool && (Class263.anInt1967 ^ 0xffffffff) <= -101) {
+			if (bool && Class263.anInt1967 >= 100) {
 				Class134.renderZ = 256 + Class98_Sub10_Sub21.anInt5643 * 512;
 				Class98_Sub46_Sub10.renderX = 256 + Class363.anInt3098 * 512;
 				Class79.renderY = (Perspective.getTileHeight(Class43.anInt377, Class134.renderZ, (Class98_Sub46_Sub10.renderX)) + -Class308.anInt2580);
@@ -2345,7 +2345,7 @@ final class ha_Sub1 extends ha {
 
 	final void pa() {
 		try {
-			((ha_Sub1) this).aBoolean4366 = false;
+			this.aBoolean4366 = false;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.pa(" + ')');
 		}
@@ -2360,7 +2360,7 @@ final class ha_Sub1 extends ha {
 				float f_208_ = (float) i_203_ + f_206_ - 1.0F;
 				method1859(-68);
 				method1870((byte) -66, i_205_);
-				OpenGL.glColor4ub((byte) (i_204_ >> 1422671184), (byte) (i_204_ >> 1460018312), (byte) i_204_, (byte) (i_204_ >> -1612786792));
+				OpenGL.glColor4ub((byte) (i_204_ >> 16), (byte) (i_204_ >> 8), (byte) i_204_, (byte) (i_204_ >> 24));
 				if (aBoolean4360)
 					OpenGL.glDisable(32925);
 				OpenGL.glBegin(2);
@@ -2384,7 +2384,7 @@ final class ha_Sub1 extends ha {
 			int i = -1;
 			if (aString4430.indexOf("nvidia") != -1)
 				i = 4318;
-			else if ((aString4430.indexOf("intel") ^ 0xffffffff) != 0)
+			else if (aString4430.indexOf("intel") != -1)
 				i = 32902;
 			else if (aString4430.indexOf("ati") != -1)
 				i = 4098;
@@ -2399,7 +2399,7 @@ final class ha_Sub1 extends ha {
 			Node class98 = new Node();
 			if (i_209_ != 2834)
 				method1839(59, 97);
-			((Node) class98).uid = (long) i;
+			class98.uid = i;
 			aClass148_4342.add_last(class98, i_209_ ^ ~0x5abc);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.NA(" + i + ',' + i_209_ + ')');
@@ -2409,7 +2409,7 @@ final class ha_Sub1 extends ha {
 	final synchronized void method1873(int i, int i_210_, int i_211_) {
 		try {
 			Class98_Sub34 class98_sub34 = new Class98_Sub34(i);
-			((Node) class98_sub34).uid = (long) i_211_;
+			class98_sub34.uid = i_211_;
 			if (i_210_ != 4)
 				anInt4409 = -76;
 			aClass148_4339.add_last(class98_sub34, -20911);
@@ -2431,7 +2431,7 @@ final class ha_Sub1 extends ha {
 	final void GA(int i) {
 		try {
 			method1870((byte) -80, 0);
-			OpenGL.glClearColor((float) (i & 0xff0000) / 1.671168E7F, (float) (i & 0xff00) / 65280.0F, (float) (i & 0xff) / 255.0F, (float) (i >>> 727917496) / 255.0F);
+			OpenGL.glClearColor((float) (i & 0xff0000) / 1.671168E7F, (float) (i & 0xff00) / 65280.0F, (float) (i & 0xff) / 255.0F, (float) (i >>> 24) / 255.0F);
 			OpenGL.glClear(16384);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.GA(" + i + ')');
@@ -2458,26 +2458,26 @@ final class ha_Sub1 extends ha {
 
 	final Class332 method1758(Class324 class324, boolean bool) {
 		try {
-			int[] is = new int[(((Class324) class324).anInt2720 * ((Class324) class324).anInt2722)];
+			int[] is = new int[(class324.anInt2720 * class324.anInt2722)];
 			int i = 0;
 			int i_212_ = 0;
-			if (((Class324) class324).aByteArray2723 != null) {
-				for (int i_213_ = 0; ((Class324) class324).anInt2720 > i_213_; i_213_++) {
-					for (int i_214_ = 0; ((((Class324) class324).anInt2722 ^ 0xffffffff) < (i_214_ ^ 0xffffffff)); i_214_++) {
-						is[i_212_++] = (Class41.method366((((Class324) class324).anIntArray2718[Class202.method2702(255, (((Class324) class324).aByteArray2717[i]))]), (((Class324) class324).aByteArray2723[i] << -986422664)));
+			if (class324.aByteArray2723 != null) {
+				for (int i_213_ = 0; class324.anInt2720 > i_213_; i_213_++) {
+					for (int i_214_ = 0; (i_214_ < class324.anInt2722); i_214_++) {
+						is[i_212_++] = (Class41.method366((class324.anIntArray2718[Class202.method2702(255, (class324.aByteArray2717[i]))]), (class324.aByteArray2723[i] << 24)));
 						i++;
 					}
 				}
 			} else {
-				for (int i_215_ = 0; i_215_ < ((Class324) class324).anInt2720; i_215_++) {
-					for (int i_216_ = 0; ((i_216_ ^ 0xffffffff) > (((Class324) class324).anInt2722 ^ 0xffffffff)); i_216_++) {
-						int i_217_ = (((Class324) class324).anIntArray2718[(((Class324) class324).aByteArray2717[i++] & 0xff)]);
+				for (int i_215_ = 0; i_215_ < class324.anInt2720; i_215_++) {
+					for (int i_216_ = 0; (class324.anInt2722 > i_216_); i_216_++) {
+						int i_217_ = (class324.anIntArray2718[(class324.aByteArray2717[i++] & 0xff)]);
 						is[i_212_++] = (i_217_ != 0 ? Class41.method366(i_217_, -16777216) : 0);
 					}
 				}
 			}
-			Class332 class332 = this.method1748(-7962, 0, ((Class324) class324).anInt2722, ((Class324) class324).anInt2720, is, ((Class324) class324).anInt2722);
-			class332.method3740(((Class324) class324).anInt2725, ((Class324) class324).anInt2721, ((Class324) class324).anInt2719, ((Class324) class324).anInt2724);
+			Class332 class332 = this.method1748(-7962, 0, class324.anInt2722, class324.anInt2720, is, class324.anInt2722);
+			class332.method3740(class324.anInt2725, class324.anInt2721, class324.anInt2719, class324.anInt2724);
 			return class332;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ac.IE(" + (class324 != null ? "{...}" : "null") + ',' + bool + ')'));
@@ -2540,7 +2540,7 @@ final class ha_Sub1 extends ha {
 
 	final boolean method1767() {
 		try {
-			if (aClass98_Sub28_Sub1_4311 == null || ((ha_Sub1) this).anInt4310 > 1 && !aBoolean4450)
+			if (aClass98_Sub28_Sub1_4311 == null || this.anInt4310 > 1 && !aBoolean4450)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -2577,11 +2577,11 @@ final class ha_Sub1 extends ha {
 	private final void method1877(byte i) {
 		try {
 			if (i < -33) {
-				if ((anInt4385 ^ 0xffffffff) != -2) {
+				if (anInt4385 != 1) {
 					OpenGL.glMatrixMode(5889);
 					OpenGL.glLoadIdentity();
-					if ((((ha_Sub1) this).anInt4305 ^ 0xffffffff) < -1 && (((ha_Sub1) this).anInt4304 ^ 0xffffffff) < -1)
-						OpenGL.glOrtho(0.0, (double) ((ha_Sub1) this).anInt4305, (double) ((ha_Sub1) this).anInt4304, 0.0, -1.0, 1.0);
+					if (this.anInt4305 > 0 && this.anInt4304 > 0)
+						OpenGL.glOrtho(0.0, this.anInt4305, this.anInt4304, 0.0, -1.0, 1.0);
 					OpenGL.glMatrixMode(5888);
 					OpenGL.glLoadIdentity();
 					anInt4385 = 1;
@@ -2609,7 +2609,7 @@ final class ha_Sub1 extends ha {
 		try {
 			int i_232_ = 30 % ((i_230_ - 24) / 59);
 			Class98_Sub34 class98_sub34 = new Class98_Sub34(i);
-			((Node) class98_sub34).uid = (long) i_231_;
+			class98_sub34.uid = i_231_;
 			aClass148_4338.add_last(class98_sub34, -20911);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ac.BC(" + i + ',' + i_230_ + ',' + i_231_ + ')'));
@@ -2655,7 +2655,7 @@ final class ha_Sub1 extends ha {
 
 	final void method1880(int i, Interface12 interface12) {
 		try {
-			if ((anInt4324 ^ 0xffffffff) <= -4)
+			if (anInt4324 >= 3)
 				throw new RuntimeException();
 			if (anInt4324 >= 0)
 				anInterface12Array4329[anInt4324].method38(-27095);
@@ -2674,7 +2674,7 @@ final class ha_Sub1 extends ha {
 			method1870((byte) -120, i_236_);
 			float f = 0.35F + (float) i;
 			float f_237_ = (float) i_233_ + 0.35F;
-			OpenGL.glColor4ub((byte) (i_235_ >> -532968944), (byte) (i_235_ >> 1812124904), (byte) i_235_, (byte) (i_235_ >> 1778410936));
+			OpenGL.glColor4ub((byte) (i_235_ >> 16), (byte) (i_235_ >> 8), (byte) i_235_, (byte) (i_235_ >> 24));
 			OpenGL.glBegin(1);
 			OpenGL.glVertex2f(f, f_237_);
 			OpenGL.glVertex2f(f, (float) i_234_ + f_237_);
@@ -2731,7 +2731,7 @@ final class ha_Sub1 extends ha {
 
 	final void method1882(int i, int i_242_) {
 		try {
-			Class115.aFloatArray961[3] = (float) (i >>> 911577944) / 255.0F;
+			Class115.aFloatArray961[3] = (float) (i >>> 24) / 255.0F;
 			if (i_242_ > -67)
 				method1741(null, 84, 45);
 			Class115.aFloatArray961[0] = (float) Class202.method2702(16711680, i) / 1.671168E7F;
@@ -2774,14 +2774,14 @@ final class ha_Sub1 extends ha {
 		try {
 			if (i < 15)
 				anOpenGL4298 = null;
-			float f = (aFloat4452 * (float) -((ha_Sub1) this).anInt4451 / (float) ((ha_Sub1) this).anInt4419);
-			float f_244_ = (aFloat4452 * (float) -((ha_Sub1) this).anInt4394 / (float) ((ha_Sub1) this).anInt4381);
-			float f_245_ = (aFloat4452 * (float) (((ha_Sub1) this).anInt4305 + -((ha_Sub1) this).anInt4451) / (float) ((ha_Sub1) this).anInt4419);
-			float f_246_ = ((float) (((ha_Sub1) this).anInt4304 + -((ha_Sub1) this).anInt4394) * aFloat4452 / (float) ((ha_Sub1) this).anInt4381);
+			float f = (aFloat4452 * (float) -this.anInt4451 / (float) this.anInt4419);
+			float f_244_ = (aFloat4452 * (float) -this.anInt4394 / (float) this.anInt4381);
+			float f_245_ = (aFloat4452 * (float) (this.anInt4305 + -this.anInt4451) / (float) this.anInt4419);
+			float f_246_ = ((float) (this.anInt4304 + -this.anInt4394) * aFloat4452 / (float) this.anInt4381);
 			OpenGL.glMatrixMode(5889);
 			OpenGL.glLoadIdentity();
 			if (f_245_ != f && f_244_ != f_246_)
-				OpenGL.glOrtho((double) f, (double) f_245_, (double) -f_246_, (double) -f_244_, (double) ((ha_Sub1) this).anInt4404, (double) anInt4389);
+				OpenGL.glOrtho(f, f_245_, -f_246_, -f_244_, this.anInt4404, anInt4389);
 			OpenGL.glMatrixMode(5888);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.CC(" + i + ')');
@@ -2806,7 +2806,7 @@ final class ha_Sub1 extends ha {
 
 	final int[] Y() {
 		try {
-			return (new int[] { ((ha_Sub1) this).anInt4451, ((ha_Sub1) this).anInt4394, ((ha_Sub1) this).anInt4419, ((ha_Sub1) this).anInt4381 });
+			return (new int[] { this.anInt4451, this.anInt4394, this.anInt4419, this.anInt4381 });
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.Y(" + ')');
 		}
@@ -2863,13 +2863,13 @@ final class ha_Sub1 extends ha {
 		try {
 			if (i_254_ < 0)
 				i_254_ = -i_254_;
-			if ((i_254_ + i ^ 0xffffffff) <= (anInt4370 ^ 0xffffffff) && anInt4432 >= -i_254_ + i && anInt4402 <= i_253_ + i_254_ && i_253_ - i_254_ <= anInt4414) {
+			if (anInt4370 <= i_254_ + i && anInt4432 >= -i_254_ + i && anInt4402 <= i_253_ + i_254_ && i_253_ - i_254_ <= anInt4414) {
 				method1859(-51);
 				method1870((byte) -23, i_256_);
-				OpenGL.glColor4ub((byte) (i_255_ >> 2073758448), (byte) (i_255_ >> -1643739512), (byte) i_255_, (byte) (i_255_ >> -1884862856));
+				OpenGL.glColor4ub((byte) (i_255_ >> 16), (byte) (i_255_ >> 8), (byte) i_255_, (byte) (i_255_ >> 24));
 				float f = (float) i + 0.35F;
 				float f_257_ = (float) i_253_ + 0.35F;
-				int i_258_ = i_254_ << -2109983999;
+				int i_258_ = i_254_ << 1;
 				if ((float) i_258_ < aFloat4429) {
 					OpenGL.glBegin(7);
 					OpenGL.glVertex2f(1.0F + f, 1.0F + f_257_);
@@ -2912,7 +2912,7 @@ final class ha_Sub1 extends ha {
 	final void method1889(boolean bool) {
 		do {
 			try {
-				if ((anInt4350 ^ 0xffffffff) != -5) {
+				if (anInt4350 != 4) {
 					method1877((byte) -82);
 					method1856(false, 6914);
 					method1851(false, false);
@@ -2974,22 +2974,22 @@ final class ha_Sub1 extends ha {
 			float f;
 			float f_268_;
 			do {
-				if (aClass42_Sub1_Sub1_4444 != null && (((Class42_Sub1) aClass42_Sub1_Sub1_4444).anInt5355 >= i_262_) && i_263_ <= (((Class42_Sub1) aClass42_Sub1_Sub1_4444).anInt5352)) {
+				if (aClass42_Sub1_Sub1_4444 != null && (aClass42_Sub1_Sub1_4444.anInt5355 >= i_262_) && i_263_ <= (aClass42_Sub1_Sub1_4444.anInt5352)) {
 					aClass42_Sub1_Sub1_4444.method378(i_262_, 6406, false, 0, is, 0, (byte) -80, 0, 0, i_263_);
-					f = ((((Class42_Sub1_Sub1) aClass42_Sub1_Sub1_4444).aFloat6205) * (float) i_262_ / (float) (((Class42_Sub1) aClass42_Sub1_Sub1_4444).anInt5355));
-					f_268_ = ((float) i_263_ * (((Class42_Sub1_Sub1) aClass42_Sub1_Sub1_4444).aFloat6209) / (float) (((Class42_Sub1) aClass42_Sub1_Sub1_4444).anInt5352));
+					f = ((aClass42_Sub1_Sub1_4444.aFloat6205) * (float) i_262_ / (float) (aClass42_Sub1_Sub1_4444.anInt5355));
+					f_268_ = ((float) i_263_ * (aClass42_Sub1_Sub1_4444.aFloat6209) / (float) (aClass42_Sub1_Sub1_4444.anInt5352));
 					if (!client.aBoolean3553)
 						break;
 				}
 				aClass42_Sub1_Sub1_4444 = Class284_Sub2.method3374(6406, i_263_, 14764, 6406, this, false, is, i_262_);
 				aClass42_Sub1_Sub1_4444.method383(false, 10242, false);
-				f_268_ = ((Class42_Sub1_Sub1) aClass42_Sub1_Sub1_4444).aFloat6209;
-				f = ((Class42_Sub1_Sub1) aClass42_Sub1_Sub1_4444).aFloat6205;
+				f_268_ = aClass42_Sub1_Sub1_4444.aFloat6209;
+				f = aClass42_Sub1_Sub1_4444.aFloat6205;
 			} while (false);
 			method1829((byte) -95);
 			method1863(1, aClass42_Sub1_Sub1_4444);
 			method1870((byte) -106, i_267_);
-			OpenGL.glColor4ub((byte) (i_264_ >> -1114409264), (byte) (i_264_ >> 1074215208), (byte) i_264_, (byte) (i_264_ >> 1619670840));
+			OpenGL.glColor4ub((byte) (i_264_ >> 16), (byte) (i_264_ >> 8), (byte) i_264_, (byte) (i_264_ >> 24));
 			method1882(i_265_, -126);
 			method1899(34165, 8960, 34165);
 			method1840(0, 768, 109, 34166);
@@ -3037,12 +3037,12 @@ final class ha_Sub1 extends ha {
 		try {
 			if (i_273_ != 596294056)
 				return -116;
-			if ((i ^ 0xffffffff) == -2)
+			if (i == 1)
 				return 7681;
 			if (i == 0)
 				return 8448;
 			if (i != 2) {
-				if ((i ^ 0xffffffff) != -4) {
+				if (i != 3) {
 					if (i == 4)
 						return 34023;
 				} else
@@ -3059,7 +3059,7 @@ final class ha_Sub1 extends ha {
 		do {
 			try {
 				do {
-					if (!aBoolean4373 || (((ha_Sub1) this).anInt4441 ^ 0xffffffff) > -1) {
+					if (!aBoolean4373 || this.anInt4441 < 0) {
 						OpenGL.glDisable(2912);
 						if (!client.aBoolean3553)
 							break;
@@ -3109,8 +3109,8 @@ final class ha_Sub1 extends ha {
 			aFloatArray4440[10] = aFloat4371;
 			aFloatArray4440[14] = aFloat4416;
 			int i_275_ = -59 % ((i - -47) / 53);
-			((ha_Sub1) this).aFloat4401 = (((float) -anInt4389 + aFloatArray4440[14]) / aFloatArray4440[10]);
-			((ha_Sub1) this).aFloat4379 = (float) anInt4389;
+			this.aFloat4401 = (((float) -anInt4389 + aFloatArray4440[14]) / aFloatArray4440[10]);
+			this.aFloat4379 = (float) anInt4389;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.BE(" + i + ')');
 		}
@@ -3121,7 +3121,7 @@ final class ha_Sub1 extends ha {
 			Class98_Sub46_Sub17 class98_sub46_sub17 = Class185.setCS2StringOrVarc(i, -76, 3);
 			if (i_276_ < -38) {
 				class98_sub46_sub17.method1626((byte) -103);
-				((Class98_Sub46_Sub17) class98_sub46_sub17).aString6052 = string;
+				class98_sub46_sub17.aString6052 = string;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ac.OD(" + i + ',' + i_276_ + ',' + (string != null ? "{...}" : "null") + ')'));
@@ -3138,11 +3138,11 @@ final class ha_Sub1 extends ha {
 
 	final void ra(int i, int i_277_, int i_278_, int i_279_) {
 		try {
-			((ha_Sub1) this).anInt4362 = i;
-			((ha_Sub1) this).anInt4454 = i_278_;
-			((ha_Sub1) this).aBoolean4366 = true;
-			((ha_Sub1) this).anInt4423 = i_277_;
-			((ha_Sub1) this).anInt4453 = i_279_;
+			this.anInt4362 = i;
+			this.anInt4454 = i_278_;
+			this.aBoolean4366 = true;
+			this.anInt4423 = i_277_;
+			this.anInt4453 = i_279_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ac.ra(" + i + ',' + i_277_ + ',' + i_278_ + ',' + i_279_ + ')'));
 		}
@@ -3151,12 +3151,12 @@ final class ha_Sub1 extends ha {
 	final void method1896(int i, int i_280_) {
 		do {
 			try {
-				if ((i_280_ ^ 0xffffffff) == -2)
+				if (i_280_ == 1)
 					method1899(7681, 8960, 7681);
 				else if (i_280_ == 0)
 					method1899(8448, 8960, 8448);
 				else if (i_280_ != 2) {
-					if ((i_280_ ^ 0xffffffff) != -4) {
+					if (i_280_ != 3) {
 						if (i_280_ == 4)
 							method1899(34023, 8960, 34023);
 					} else
@@ -3193,28 +3193,28 @@ final class ha_Sub1 extends ha {
 
 	final void method1897(int i, boolean bool, boolean bool_283_, byte i_284_) {
 		try {
-			if ((i ^ 0xffffffff) != (anInt4357 ^ 0xffffffff) || !aBoolean4448 == ((ha_Sub1) this).aBoolean4366) {
+			if (anInt4357 != i || !aBoolean4448 == this.aBoolean4366) {
 				Class42_Sub1 class42_sub1 = null;
 				int i_285_ = 0;
 				byte i_286_ = 0;
 				int i_287_ = 0;
-				byte i_288_ = !((ha_Sub1) this).aBoolean4366 ? (byte) 0 : (byte) 3;
+				byte i_288_ = !this.aBoolean4366 ? (byte) 0 : (byte) 3;
 				if (i < 0)
 					method1891(370914608);
 				else {
 					class42_sub1 = aClass364_4308.method3931(i_284_ + 196, i);
-					Class238 class238 = ((ha) this).aD938.method11(i, -28755);
-					if ((((Class238) class238).aByte1823 ^ 0xffffffff) != -1 || ((Class238) class238).aByte1837 != 0) {
-						int i_289_ = !((Class238) class238).aBoolean1822 ? 128 : 64;
+					Class238 class238 = this.aD938.method11(i, -28755);
+					if (class238.aByte1823 != 0 || class238.aByte1837 != 0) {
+						int i_289_ = !class238.aBoolean1822 ? 128 : 64;
 						int i_290_ = 50 * i_289_;
-						method1857(((float) (((ha_Sub1) this).anInt4321 % i_290_ * ((Class238) class238).aByte1823) / (float) i_290_), 0.0F, (byte) 44, (float) (((Class238) class238).aByte1837 * (((ha_Sub1) this).anInt4321 % i_290_)) / (float) i_290_);
+						method1857(((float) (this.anInt4321 % i_290_ * class238.aByte1823) / (float) i_290_), 0.0F, (byte) 44, (float) (class238.aByte1837 * (this.anInt4321 % i_290_)) / (float) i_290_);
 					} else
 						method1891(370914608);
-					i_285_ = ((Class238) class238).anInt1821;
-					if (!((ha_Sub1) this).aBoolean4366) {
-						i_288_ = ((Class238) class238).aByte1820;
-						i_287_ = ((Class238) class238).anInt1835;
-						i_286_ = ((Class238) class238).aByte1816;
+					i_285_ = class238.anInt1821;
+					if (!this.aBoolean4366) {
+						i_288_ = class238.aByte1820;
+						i_287_ = class238.anInt1835;
+						i_286_ = class238.aByte1816;
 					}
 				}
 				aClass55_4314.method508(bool_283_, bool, i_287_, i_286_, true, i_288_);
@@ -3223,7 +3223,7 @@ final class ha_Sub1 extends ha {
 					method1896(260, i_285_);
 				}
 				anInt4357 = i;
-				aBoolean4448 = ((ha_Sub1) this).aBoolean4366;
+				aBoolean4448 = this.aBoolean4366;
 			}
 			if (i_284_ != -70)
 				U(4, 29, -13, 16, 49);
@@ -3237,8 +3237,8 @@ final class ha_Sub1 extends ha {
 		try {
 			if (bool != true)
 				method1893(-128);
-			if (!((ha_Sub1) this).aBoolean4375) {
-				if ((anInt4331 ^ 0xffffffff) <= -4)
+			if (!this.aBoolean4375) {
+				if (anInt4331 >= 3)
 					throw new RuntimeException();
 				if (anInt4331 >= 0)
 					anInterface12Array4332[anInt4331].method35((byte) 69);
@@ -3259,12 +3259,12 @@ final class ha_Sub1 extends ha {
 				do {
 					if (anInt4417 == 0) {
 						boolean bool = false;
-						if ((anInt4395 ^ 0xffffffff) != (i_292_ ^ 0xffffffff)) {
+						if (i_292_ != anInt4395) {
 							OpenGL.glTexEnvi(8960, 34161, i_292_);
 							bool = true;
 							anInt4395 = i_292_;
 						}
-						if ((i ^ 0xffffffff) != (anInt4387 ^ 0xffffffff)) {
+						if (anInt4387 != i) {
 							OpenGL.glTexEnvi(8960, 34162, i);
 							anInt4387 = i;
 							bool = true;
@@ -3291,14 +3291,14 @@ final class ha_Sub1 extends ha {
 	private final void method1900(byte i) {
 		try {
 			Class115.aFloatArray961[3] = 1.0F;
-			Class115.aFloatArray961[0] = ((ha_Sub1) this).aFloat4433 * ((ha_Sub1) this).aFloat4435;
-			Class115.aFloatArray961[1] = ((ha_Sub1) this).aFloat4420 * ((ha_Sub1) this).aFloat4435;
-			Class115.aFloatArray961[2] = ((ha_Sub1) this).aFloat4458 * ((ha_Sub1) this).aFloat4435;
+			Class115.aFloatArray961[0] = this.aFloat4433 * this.aFloat4435;
+			Class115.aFloatArray961[1] = this.aFloat4420 * this.aFloat4435;
+			Class115.aFloatArray961[2] = this.aFloat4458 * this.aFloat4435;
 			OpenGL.glLightfv(16384, 4609, Class115.aFloatArray961, 0);
-			Class115.aFloatArray961[2] = ((ha_Sub1) this).aFloat4458 * -((ha_Sub1) this).aFloat4407;
+			Class115.aFloatArray961[2] = this.aFloat4458 * -this.aFloat4407;
 			Class115.aFloatArray961[3] = 1.0F;
-			Class115.aFloatArray961[0] = ((ha_Sub1) this).aFloat4433 * -((ha_Sub1) this).aFloat4407;
-			Class115.aFloatArray961[1] = -((ha_Sub1) this).aFloat4407 * ((ha_Sub1) this).aFloat4420;
+			Class115.aFloatArray961[0] = this.aFloat4433 * -this.aFloat4407;
+			Class115.aFloatArray961[1] = -this.aFloat4407 * this.aFloat4420;
 			if (i <= 64)
 				f(-28, 34);
 			OpenGL.glLightfv(16385, 4609, Class115.aFloatArray961, 0);
@@ -3310,7 +3310,7 @@ final class ha_Sub1 extends ha {
 	final void method1901(byte i) {
 		do {
 			try {
-				if ((anInt4350 ^ 0xffffffff) != -17) {
+				if (anInt4350 != 16) {
 					method1874(i + 5);
 					method1856(true, 6914);
 					method1881(true, false);
@@ -3338,15 +3338,15 @@ final class ha_Sub1 extends ha {
 
 	final void method1811(int i, int i_293_, int i_294_, int i_295_, int i_296_, int i_297_, int i_298_, int i_299_, int i_300_) {
 		try {
-			if ((i ^ 0xffffffff) != (i_294_ ^ 0xffffffff) || (i_295_ ^ 0xffffffff) != (i_293_ ^ 0xffffffff)) {
+			if (i_294_ != i || i_293_ != i_295_) {
 				method1859(-113);
 				method1870((byte) -126, i_297_);
 				float f = (float) -i + (float) i_294_;
 				float f_301_ = (float) -i_293_ + (float) i_295_;
-				float f_302_ = (float) (1.0 / Math.sqrt((double) (f_301_ * f_301_ + f * f)));
+				float f_302_ = (float) (1.0 / Math.sqrt(f_301_ * f_301_ + f * f));
 				f_301_ *= f_302_;
 				f *= f_302_;
-				OpenGL.glColor4ub((byte) (i_296_ >> -84381840), (byte) (i_296_ >> -980470872), (byte) i_296_, (byte) (i_296_ >> 859356024));
+				OpenGL.glColor4ub((byte) (i_296_ >> 16), (byte) (i_296_ >> 8), (byte) i_296_, (byte) (i_296_ >> 24));
 				i_300_ %= i_299_ + i_298_;
 				float f_303_ = f * (float) i_298_;
 				float f_304_ = f_301_ * (float) i_298_;
@@ -3377,7 +3377,7 @@ final class ha_Sub1 extends ha {
 						if ((float) i_294_ > f_309_ + f_307_)
 							f_307_ = -f_309_ + (float) i_294_;
 					}
-					if ((i_295_ ^ 0xffffffff) < (i_293_ ^ 0xffffffff)) {
+					if (i_293_ < i_295_) {
 						if (0.35F + (float) i_295_ < f_310_)
 							break;
 						if ((float) i_295_ < f_308_ + f_310_)
@@ -3420,25 +3420,25 @@ final class ha_Sub1 extends ha {
 	private final void method1903(int i) {
 		do {
 			try {
-				aClass42Array4396 = new Class42[((ha_Sub1) this).anInt4410];
-				((ha_Sub1) this).aClass42_Sub1_4358 = new Class42_Sub1(this, 3553, 6408, 1, 1);
+				aClass42Array4396 = new Class42[this.anInt4410];
+				this.aClass42_Sub1_4358 = new Class42_Sub1(this, 3553, 6408, 1, 1);
 				new Class42_Sub1(this, 3553, 6408, 1, 1);
 				new Class42_Sub1(this, 3553, 6408, 1, 1);
-				((ha_Sub1) this).aClass146_Sub2_4428 = new Class146_Sub2(this);
-				((ha_Sub1) this).aClass146_Sub2_4393 = new Class146_Sub2(this);
-				((ha_Sub1) this).aClass146_Sub2_4462 = new Class146_Sub2(this);
-				((ha_Sub1) this).aClass146_Sub2_4456 = new Class146_Sub2(this);
-				((ha_Sub1) this).aClass146_Sub2_4386 = new Class146_Sub2(this);
-				((ha_Sub1) this).aClass146_Sub2_4369 = new Class146_Sub2(this);
-				((ha_Sub1) this).aClass146_Sub2_4461 = new Class146_Sub2(this);
+				this.aClass146_Sub2_4428 = new Class146_Sub2(this);
+				this.aClass146_Sub2_4393 = new Class146_Sub2(this);
+				this.aClass146_Sub2_4462 = new Class146_Sub2(this);
+				this.aClass146_Sub2_4456 = new Class146_Sub2(this);
+				this.aClass146_Sub2_4386 = new Class146_Sub2(this);
+				this.aClass146_Sub2_4369 = new Class146_Sub2(this);
+				this.aClass146_Sub2_4461 = new Class146_Sub2(this);
 				if (i <= 26)
 					b(113, -33, -15, 84, -0.18123041621142552);
-				((ha_Sub1) this).aClass146_Sub2_4361 = new Class146_Sub2(this);
-				((ha_Sub1) this).aClass146_Sub2_4355 = new Class146_Sub2(this);
-				((ha_Sub1) this).aClass146_Sub2_4382 = new Class146_Sub2(this);
-				if (!((ha_Sub1) this).aBoolean4460)
+				this.aClass146_Sub2_4361 = new Class146_Sub2(this);
+				this.aClass146_Sub2_4355 = new Class146_Sub2(this);
+				this.aClass146_Sub2_4382 = new Class146_Sub2(this);
+				if (!this.aBoolean4460)
 					break;
-				((ha_Sub1) this).aClass288_4363 = new Class288(this);
+				this.aClass288_4363 = new Class288(this);
 				new Class288(this);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "ac.TE(" + i + ')');
@@ -3477,11 +3477,11 @@ final class ha_Sub1 extends ha {
 	final void a(Class111 class111) {
 		do {
 			try {
-				((ha_Sub1) this).aClass111_Sub1_4348.method2092(class111);
-				((ha_Sub1) this).aClass111_Sub1_4353.method2092(((ha_Sub1) this).aClass111_Sub1_4348);
-				((ha_Sub1) this).aClass111_Sub1_4353.method2111(2);
-				((ha_Sub1) this).aClass111_Sub1_4354.method2112(((ha_Sub1) this).aClass111_Sub1_4353, (byte) -118);
-				if ((anInt4385 ^ 0xffffffff) == -2)
+				this.aClass111_Sub1_4348.method2092(class111);
+				this.aClass111_Sub1_4353.method2092(this.aClass111_Sub1_4348);
+				this.aClass111_Sub1_4353.method2111(2);
+				this.aClass111_Sub1_4354.method2112(this.aClass111_Sub1_4353, (byte) -118);
+				if (anInt4385 == 1)
 					break;
 				method1833(4);
 			} catch (RuntimeException runtimeexception) {
@@ -3493,10 +3493,10 @@ final class ha_Sub1 extends ha {
 
 	final void X(int i) {
 		try {
-			((ha_Sub1) this).anInt4319 = 0;
-			for (/**/; (i ^ 0xffffffff) < -2; i >>= 1)
-				((ha_Sub1) this).anInt4319++;
-			((ha_Sub1) this).anInt4318 = 1 << ((ha_Sub1) this).anInt4319;
+			this.anInt4319 = 0;
+			for (/**/; i > 1; i >>= 1)
+				this.anInt4319++;
+			this.anInt4318 = 1 << this.anInt4319;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ac.X(" + i + ')');
 		}
@@ -3521,8 +3521,8 @@ final class ha_Sub1 extends ha {
 
 	final void xa(float f) {
 		try {
-			if (((ha_Sub1) this).aFloat4413 != f) {
-				((ha_Sub1) this).aFloat4413 = f;
+			if (this.aFloat4413 != f) {
+				this.aFloat4413 = f;
 				method1860((byte) -41);
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -3547,7 +3547,7 @@ final class ha_Sub1 extends ha {
 				aLong4302 = aLong4307;
 				aCanvas4300 = aCanvas4303;
 			} while (false);
-			if (aCanvas4300 == null || (aLong4302 ^ 0xffffffffffffffffL) == -1L)
+			if (aCanvas4300 == null || aLong4302 == 0)
 				throw new RuntimeException();
 			anOpenGL4298.setSurface(aLong4302);
 			method1850((byte) -31);
@@ -3558,16 +3558,16 @@ final class ha_Sub1 extends ha {
 
 	final void HA(int i, int i_321_, int i_322_, int i_323_, int[] is) {
 		try {
-			float f = ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4677) + ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4673) * (float) i_322_ + ((float) i * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4684) + (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4676 * (float) i_321_))));
-			if (f < (float) ((ha_Sub1) this).anInt4404 || f > (float) anInt4389)
+			float f = ((this.aClass111_Sub1_4348.aFloat4677) + ((this.aClass111_Sub1_4348.aFloat4673) * (float) i_322_ + ((float) i * (this.aClass111_Sub1_4348.aFloat4684) + (this.aClass111_Sub1_4348.aFloat4676 * (float) i_321_))));
+			if (f < (float) this.anInt4404 || f > (float) anInt4389)
 				is[0] = is[1] = is[2] = -1;
 			else {
-				int i_324_ = (int) ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4674 + (((float) i_322_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4680)) + ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4686) * (float) i + ((float) i_321_ * (((Class111_Sub1) (((ha_Sub1) this).aClass111_Sub1_4348)).aFloat4679))))) * (float) ((ha_Sub1) this).anInt4419 / (float) i_323_);
-				int i_325_ = (int) ((((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4683 + (((float) i_321_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4675)) + ((float) i * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4678)) + ((float) i_322_ * (((Class111_Sub1) ((ha_Sub1) this).aClass111_Sub1_4348).aFloat4687)))) * (float) ((ha_Sub1) this).anInt4381 / (float) i_323_);
-				if ((float) i_324_ >= ((ha_Sub1) this).aFloat4421 && ((ha_Sub1) this).aFloat4364 >= (float) i_324_ && (float) i_325_ >= ((ha_Sub1) this).aFloat4359 && (float) i_325_ <= ((ha_Sub1) this).aFloat4437) {
+				int i_324_ = (int) ((this.aClass111_Sub1_4348.aFloat4674 + (((float) i_322_ * (this.aClass111_Sub1_4348.aFloat4680)) + ((this.aClass111_Sub1_4348.aFloat4686) * (float) i + ((float) i_321_ * (this.aClass111_Sub1_4348.aFloat4679))))) * (float) this.anInt4419 / (float) i_323_);
+				int i_325_ = (int) ((this.aClass111_Sub1_4348.aFloat4683 + (((float) i_321_ * (this.aClass111_Sub1_4348.aFloat4675)) + ((float) i * (this.aClass111_Sub1_4348.aFloat4678)) + ((float) i_322_ * (this.aClass111_Sub1_4348.aFloat4687)))) * (float) this.anInt4381 / (float) i_323_);
+				if ((float) i_324_ >= this.aFloat4421 && this.aFloat4364 >= (float) i_324_ && (float) i_325_ >= this.aFloat4359 && (float) i_325_ <= this.aFloat4437) {
 					is[2] = (int) f;
-					is[1] = (int) (-((ha_Sub1) this).aFloat4359 + (float) i_325_);
-					is[0] = (int) ((float) i_324_ - ((ha_Sub1) this).aFloat4421);
+					is[1] = (int) (-this.aFloat4359 + (float) i_325_);
+					is[0] = (int) ((float) i_324_ - this.aFloat4421);
 				} else
 					is[0] = is[1] = is[2] = -1;
 			}
@@ -3600,10 +3600,10 @@ final class ha_Sub1 extends ha {
 	private final void method1906(int i) {
 		do {
 			try {
-				((ha_Sub1) this).aFloat4359 = (float) (anInt4402 - ((ha_Sub1) this).anInt4394);
-				((ha_Sub1) this).aFloat4421 = (float) (anInt4370 - ((ha_Sub1) this).anInt4451);
-				((ha_Sub1) this).aFloat4437 = (float) (anInt4414 + -((ha_Sub1) this).anInt4394);
-				((ha_Sub1) this).aFloat4364 = (float) (anInt4432 + -((ha_Sub1) this).anInt4451);
+				this.aFloat4359 = (float) (anInt4402 - this.anInt4394);
+				this.aFloat4421 = (float) (anInt4370 - this.anInt4451);
+				this.aFloat4437 = (float) (anInt4414 + -this.anInt4394);
+				this.aFloat4364 = (float) (anInt4432 + -this.anInt4451);
 				if (i == 4353)
 					break;
 				anInterface16_4374 = null;
@@ -3617,12 +3617,12 @@ final class ha_Sub1 extends ha {
 	final void method1907(Interface12 interface12, int i) {
 		try {
 			if (i == -1) {
-				if (!((ha_Sub1) this).aBoolean4375) {
-					if ((anInt4331 ^ 0xffffffff) > -1 || interface12 != anInterface12Array4332[anInt4331])
+				if (!this.aBoolean4375) {
+					if (anInt4331 < 0 || interface12 != anInterface12Array4332[anInt4331])
 						throw new RuntimeException();
 					anInterface12Array4332[anInt4331--] = null;
 					interface12.method35((byte) 69);
-					if ((anInt4331 ^ 0xffffffff) > -1)
+					if (anInt4331 < 0)
 						anInterface12_4325 = anInterface12_4328 = null;
 					else {
 						anInterface12_4325 = anInterface12_4328 = anInterface12Array4332[anInt4331];
@@ -3641,18 +3641,18 @@ final class ha_Sub1 extends ha {
 	final void a(int i, int i_326_, int i_327_, int i_328_, int i_329_, int i_330_, aa var_aa, int i_331_, int i_332_) {
 		try {
 			aa_Sub3 var_aa_Sub3 = (aa_Sub3) var_aa;
-			Class42_Sub1_Sub1 class42_sub1_sub1 = ((aa_Sub3) var_aa_Sub3).aClass42_Sub1_Sub1_3568;
+			Class42_Sub1_Sub1 class42_sub1_sub1 = var_aa_Sub3.aClass42_Sub1_Sub1_3568;
 			method1829((byte) -99);
-			method1863(1, ((aa_Sub3) var_aa_Sub3).aClass42_Sub1_Sub1_3568);
+			method1863(1, var_aa_Sub3.aClass42_Sub1_Sub1_3568);
 			method1870((byte) -109, i_330_);
 			method1899(8448, 8960, 7681);
 			method1840(0, 768, 90, 34167);
-			float f = (((Class42_Sub1_Sub1) class42_sub1_sub1).aFloat6205 / (float) (((Class42_Sub1_Sub1) class42_sub1_sub1).anInt6207));
-			float f_333_ = (((Class42_Sub1_Sub1) class42_sub1_sub1).aFloat6209 / (float) (((Class42_Sub1_Sub1) class42_sub1_sub1).anInt6204));
+			float f = (class42_sub1_sub1.aFloat6205 / (float) (class42_sub1_sub1.anInt6207));
+			float f_333_ = (class42_sub1_sub1.aFloat6209 / (float) (class42_sub1_sub1.anInt6204));
 			float f_334_ = (float) i_327_ - (float) i;
 			float f_335_ = (float) i_328_ - (float) i_326_;
-			float f_336_ = (float) (1.0 / Math.sqrt((double) (f_334_ * f_334_ + f_335_ * f_335_)));
-			OpenGL.glColor4ub((byte) (i_329_ >> 99388688), (byte) (i_329_ >> 1644719592), (byte) i_329_, (byte) (i_329_ >> -1606324584));
+			float f_336_ = (float) (1.0 / Math.sqrt(f_334_ * f_334_ + f_335_ * f_335_));
+			OpenGL.glColor4ub((byte) (i_329_ >> 16), (byte) (i_329_ >> 8), (byte) i_329_, (byte) (i_329_ >> 24));
 			f_335_ *= f_336_;
 			f_334_ *= f_336_;
 			OpenGL.glBegin(1);
@@ -3714,11 +3714,11 @@ final class ha_Sub1 extends ha {
 			method1859(-100);
 			method1870((byte) -127, i_349_);
 			OpenGL.glBegin(4);
-			OpenGL.glColor4ub((byte) (i_346_ >> 1405670544), (byte) (i_346_ >> 847872872), (byte) i_346_, (byte) (i_346_ >> -567715176));
+			OpenGL.glColor4ub((byte) (i_346_ >> 16), (byte) (i_346_ >> 8), (byte) i_346_, (byte) (i_346_ >> 24));
 			OpenGL.glVertex3f((float) i + 0.35F, 0.35F + (float) i_338_, (float) i_339_);
-			OpenGL.glColor4ub((byte) (i_347_ >> 1700327632), (byte) (i_347_ >> 601299240), (byte) i_347_, (byte) (i_347_ >> 840925496));
+			OpenGL.glColor4ub((byte) (i_347_ >> 16), (byte) (i_347_ >> 8), (byte) i_347_, (byte) (i_347_ >> 24));
 			OpenGL.glVertex3f((float) i_340_ + 0.35F, (float) i_341_ + 0.35F, (float) i_342_);
-			OpenGL.glColor4ub((byte) (i_348_ >> -2126717264), (byte) (i_348_ >> 984802728), (byte) i_348_, (byte) (i_348_ >> -382114632));
+			OpenGL.glColor4ub((byte) (i_348_ >> 16), (byte) (i_348_ >> 8), (byte) i_348_, (byte) (i_348_ >> 24));
 			OpenGL.glVertex3f((float) i_343_ + 0.35F, 0.35F + (float) i_344_, (float) i_345_);
 			OpenGL.glEnd();
 		} catch (RuntimeException runtimeexception) {

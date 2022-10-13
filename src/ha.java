@@ -23,13 +23,13 @@ abstract class ha {
 
 	static final synchronized ha method1742(byte i, int i_2_, Canvas canvas, d var_d, int i_3_, RuneScapeCache class207, int i_4_, int i_5_) {
 		try {
-			if ((i_4_ ^ 0xffffffff) == -1)
+			if (i_4_ == 0)
 				return OutputStream_Sub1.method128(var_d, i_5_, i_3_, canvas, 500);
 			if (i_4_ == 2)
 				return Class109.method1732(i_3_, (byte) 81, i_5_, canvas, var_d);
-			if ((i_4_ ^ 0xffffffff) == -2)
+			if (i_4_ == 1)
 				return Class110.method2087(canvas, 2, i_2_, var_d);
-			if ((i_4_ ^ 0xffffffff) == -6)
+			if (i_4_ == 5)
 				return Class60.method536(i_2_, class207, var_d, 0, canvas);
 			if (i <= 35)
 				aBoolean940 = true;
@@ -44,7 +44,7 @@ abstract class ha {
 	final void method1743(int i) {
 		do {
 			try {
-				Class98_Sub10_Sub8.aBooleanArray5579[((ha) this).anInt937] = false;
+				Class98_Sub10_Sub8.aBooleanArray5579[this.anInt937] = false;
 				method1773();
 				if (i == -1)
 					break;
@@ -244,18 +244,18 @@ abstract class ha {
 
 	ha(d var_d) {
 		try {
-			((ha) this).aD938 = var_d;
+			this.aD938 = var_d;
 			int i = -1;
-			for (int i_104_ = 0; (i_104_ ^ 0xffffffff) > -9; i_104_++) {
+			for (int i_104_ = 0; i_104_ < 8; i_104_++) {
 				if (!Class98_Sub10_Sub8.aBooleanArray5579[i_104_]) {
 					Class98_Sub10_Sub8.aBooleanArray5579[i_104_] = true;
 					i = i_104_;
 					break;
 				}
 			}
-			if ((i ^ 0xffffffff) == 0)
+			if (i == -1)
 				throw new IllegalStateException("NFTI");
-			((ha) this).anInt937 = i;
+			this.anInt937 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ha.<init>(" + (var_d != null ? "{...}" : "null") + ')'));
 		}

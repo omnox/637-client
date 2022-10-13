@@ -84,7 +84,7 @@ abstract class Class237 {
 			if (!aBoolean1815 && i == 8) {
 				for (Class98_Sub43 class98_sub43 = (Class98_Sub43) aClass377_1811.start_iteration(108); class98_sub43 != null; class98_sub43 = (Class98_Sub43) aClass377_1811.iterate_next(-1)) {
 					class98_sub43.method1487(-1128);
-					((Class98_Sub43) class98_sub43).anOggStreamState4241.a();
+					class98_sub43.anOggStreamState4241.a();
 				}
 				anOggPacket1802.a();
 				anOggPage1808.a();
@@ -112,11 +112,11 @@ abstract class Class237 {
 							throw new IllegalStateException();
 						aBoolean1804 = true;
 					} else
-						class98_sub43 = ((Class98_Sub43) (aClass377_1811.method3990((long) anOggPage1808.getSerialNumber(), -1)));
+						class98_sub43 = ((Class98_Sub43) (aClass377_1811.method3990(anOggPage1808.getSerialNumber(), -1)));
 					if (aClass98_Sub43_Sub1_1807 == class98_sub43) {
-						if ((aClass98_Sub43_Sub1_1807.method1492((byte) -18) ^ 0xffffffff) <= -51)
+						if (aClass98_Sub43_Sub1_1807.method1492((byte) -18) >= 50)
 							break;
-						while ((((Class98_Sub43) aClass98_Sub43_Sub1_1807).anOggStreamState4241.packetOut(anOggPacket1802) ^ 0xffffffff) == -2) {
+						while (aClass98_Sub43_Sub1_1807.anOggStreamState4241.packetOut(anOggPacket1802) == 1) {
 							aClass98_Sub43_Sub1_1807.method1486(anOggPacket1802, 21000);
 							method2910((byte) 119);
 							if (aClass98_Sub43_Sub3_1813 != null) {
@@ -129,18 +129,18 @@ abstract class Class237 {
 								if (aClass98_Sub43_Sub3_1813.method1502(0) > d)
 									return;
 							}
-							if ((aClass98_Sub43_Sub1_1807.method1492((byte) -63) ^ 0xffffffff) <= -51)
+							if (aClass98_Sub43_Sub1_1807.method1492((byte) -63) >= 50)
 								return;
 						}
 					} else if (!(class98_sub43 instanceof Class98_Sub43_Sub4)) {
 						if (aClass98_Sub43_Sub3_1813 != class98_sub43) {
-							while ((((Class98_Sub43) class98_sub43).anOggStreamState4241.packetOut(anOggPacket1802) ^ 0xffffffff) == -2) {
-								if ((((Class98_Sub43) class98_sub43).anInt4240 ^ 0xffffffff) == -2 && (class98_sub43 instanceof Class98_Sub43_Sub4))
+							while (class98_sub43.anOggStreamState4241.packetOut(anOggPacket1802) == 1) {
+								if (class98_sub43.anInt4240 == 1 && (class98_sub43 instanceof Class98_Sub43_Sub4))
 									method2909(!bool, aString1806);
 								class98_sub43.method1486(anOggPacket1802, 21000);
 							}
 						} else if (aClass98_Sub43_Sub1_1807 == null && !aBoolean1812) {
-							for (int i = 0; ((i ^ 0xffffffff) > -11 && method2912((byte) -59)); i++) {
+							for (int i = 0; (i < 10 && method2912((byte) -59)); i++) {
 								method2905(-95);
 								if (aBoolean1815)
 									break;
@@ -160,7 +160,7 @@ abstract class Class237 {
 	private final void method2905(int i) throws IOException {
 		do {
 			try {
-				while (((Class98_Sub43) aClass98_Sub43_Sub3_1813).anOggStreamState4241.packetOut(anOggPacket1802) != 1) {
+				while (aClass98_Sub43_Sub3_1813.anOggStreamState4241.packetOut(anOggPacket1802) != 1) {
 					Class98_Sub43 class98_sub43 = method2914(1);
 					if (class98_sub43 == null) {
 						if (aBoolean1805)
@@ -200,7 +200,7 @@ abstract class Class237 {
 			try {
 				for (Class98_Sub43 class98_sub43 = (Class98_Sub43) aClass377_1811.start_iteration(97); class98_sub43 != null; class98_sub43 = (Class98_Sub43) aClass377_1811.iterate_next(-1)) {
 					if (class98_sub43 != aClass98_Sub43_Sub3_1813) {
-						while (((Class98_Sub43) class98_sub43).anOggStreamState4241.packetOut() == 1)
+						while (class98_sub43.anOggStreamState4241.packetOut() == 1)
 							class98_sub43.method1486(anOggPacket1802, i + 21002);
 					}
 				}
@@ -213,7 +213,7 @@ abstract class Class237 {
 							break while_151_;
 						if (!method2912((byte) -59))
 							break;
-						if ((((Class98_Sub43) aClass98_Sub43_Sub3_1813).anOggStreamState4241.packetOut() ^ 0xffffffff) != -2) {
+						if (aClass98_Sub43_Sub3_1813.anOggStreamState4241.packetOut() != 1) {
 							method2903(8);
 							break;
 						}
@@ -273,8 +273,8 @@ abstract class Class237 {
 			for (Class98_Sub43 class98_sub43 = (Class98_Sub43) aClass377_1811.start_iteration(101); class98_sub43 != null; class98_sub43 = (Class98_Sub43) aClass377_1811.iterate_next(-1)) {
 				if (class98_sub43 instanceof Class98_Sub43_Sub4) {
 					Class98_Sub43_Sub4 class98_sub43_sub4 = (Class98_Sub43_Sub4) class98_sub43;
-					while (((Class98_Sub43) class98_sub43_sub4).anInt4240 <= 8 || (method2901((byte) -112) > (double) class98_sub43_sub4.method1509(-6085))) {
-						if ((((Class98_Sub43) class98_sub43_sub4).anOggStreamState4241.packetOut(anOggPacket1802) ^ 0xffffffff) != -2)
+					while (class98_sub43_sub4.anInt4240 <= 8 || (method2901((byte) -112) > (double) class98_sub43_sub4.method1509(-6085))) {
+						if (class98_sub43_sub4.anOggStreamState4241.packetOut(anOggPacket1802) != 1)
 							break;
 						class98_sub43_sub4.method1486(anOggPacket1802, 21000);
 					}
@@ -308,7 +308,7 @@ abstract class Class237 {
 			if (i != -59)
 				method2909(true, null);
 			if (aClass98_Sub43_Sub1_1807 == null) {
-				double d = (double) aClass98_Sub43_Sub3_1813.method1496(-1);
+				double d = aClass98_Sub43_Sub3_1813.method1496(-1);
 				if (d != 0.0 && !((double) Class343.method3819(-47) >= (double) aClass98_Sub43_Sub3_1813.method1500(false) + 1000.0 / d))
 					return false;
 				return true;
@@ -339,35 +339,35 @@ abstract class Class237 {
 				throw new IllegalStateException();
 			if (aBoolean1805)
 				return null;
-			while ((anOggSyncState1810.pageOut(anOggPage1808) ^ 0xffffffff) >= -1) {
+			while (anOggSyncState1810.pageOut(anOggPage1808) <= 0) {
 				int i_5_ = method2899(i + 48, aByteArray1814);
 				if (i_5_ == -1) {
 					aBoolean1805 = true;
 					return null;
 				}
-				if ((i_5_ ^ 0xffffffff) == -1)
+				if (i_5_ == 0)
 					return null;
 				if (!anOggSyncState1810.write(aByteArray1814, i_5_))
 					throw new RuntimeException("");
 			}
 			int i_6_ = anOggPage1808.getSerialNumber();
 			if (!anOggPage1808.isBOS()) {
-				Class98_Sub43 class98_sub43 = ((Class98_Sub43) aClass377_1811.method3990((long) i_6_, -1));
-				if (!((Class98_Sub43) class98_sub43).anOggStreamState4241.pageIn(anOggPage1808))
+				Class98_Sub43 class98_sub43 = ((Class98_Sub43) aClass377_1811.method3990(i_6_, -1));
+				if (!class98_sub43.anOggStreamState4241.pageIn(anOggPage1808))
 					throw new IllegalStateException();
 				return class98_sub43;
 			}
 			OggStreamState oggstreamstate = new OggStreamState(i_6_);
 			if (!oggstreamstate.pageIn(anOggPage1808))
 				throw new IllegalStateException();
-			if ((oggstreamstate.packetPeek(anOggPacket1802) ^ 0xffffffff) != -2)
+			if (oggstreamstate.packetPeek(anOggPacket1802) != 1)
 				throw new IllegalStateException();
 			Class98_Sub43 class98_sub43;
 			if (aClass98_Sub43_Sub3_1813 != null || !anOggPacket1802.isTheora()) {
 				if (aClass98_Sub43_Sub1_1807 != null || !anOggPacket1802.isVorbis()) {
 					byte[] is = anOggPacket1802.getData();
 					StringBuffer stringbuffer = new StringBuffer();
-					for (int i_7_ = 1; (i_7_ ^ 0xffffffff) > (is.length ^ 0xffffffff); i_7_++) {
+					for (int i_7_ = 1; is.length > i_7_; i_7_++) {
 						if (!Character.isLetterOrDigit((char) is[i_7_]))
 							break;
 						stringbuffer.append((char) is[i_7_]);
@@ -385,7 +385,7 @@ abstract class Class237 {
 				aClass98_Sub43_Sub3_1813 = new Class98_Sub43_Sub3(oggstreamstate);
 				class98_sub43 = aClass98_Sub43_Sub3_1813;
 			}
-			aClass377_1811.method3996(class98_sub43, (long) i_6_, -1);
+			aClass377_1811.method3996(class98_sub43, i_6_, -1);
 			return class98_sub43;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "pb.H(" + i + ')');

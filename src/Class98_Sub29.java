@@ -7,7 +7,7 @@ final class Class98_Sub29 extends Node {
 	byte[] aByteArray4083;
 
 	Class98_Sub29(short[] is, byte[] is_0_) {
-		((Class98_Sub29) this).aShortArray4082 = is;
-		((Class98_Sub29) this).aByteArray4083 = is_0_;
+		this.aShortArray4082 = is;
+		this.aByteArray4083 = is_0_;
 	}
 }

@@ -16,7 +16,7 @@ final class Class240_Sub1 extends Class240 {
 		do {
 			try {
 				aLong5051 = 0L;
-				if ((aLong5049 ^ 0xffffffffffffffffL) < (aLong5050 ^ 0xffffffffffffffffL))
+				if (aLong5050 < aLong5049)
 					aLong5050 += aLong5049 - aLong5050;
 				if (bool == false)
 					break;
@@ -45,14 +45,14 @@ final class Class240_Sub1 extends Class240 {
 			aLong5051 = l;
 			if (i != 27103)
 				return -94L;
-			if ((l_0_ ^ 0xffffffffffffffffL) < 4999999999L && l_0_ < 5000000000L) {
+			if (l_0_ > -5000000000L && l_0_ < 5000000000L) {
 				aLongArray5054[anInt5052] = l_0_;
 				if (anInt5053 < 1)
 					anInt5053++;
 				anInt5052 = (1 + anInt5052) % 10;
 			}
 			long l_1_ = 0L;
-			for (int i_2_ = 1; (i_2_ ^ 0xffffffff) >= (anInt5053 ^ 0xffffffff); i_2_++)
+			for (int i_2_ = 1; anInt5053 >= i_2_; i_2_++)
 				l_1_ += aLongArray5054[(10 + anInt5052 + -i_2_) % 10];
 			return l_1_ / (long) anInt5053;
 		} catch (RuntimeException runtimeexception) {
@@ -77,12 +77,12 @@ final class Class240_Sub1 extends Class240 {
 		try {
 			if (i <= 117)
 				anInt5053 = 14;
-			if ((aLong5049 ^ 0xffffffffffffffffL) >= (aLong5050 ^ 0xffffffffffffffffL)) {
+			if (aLong5050 >= aLong5049) {
 				int i_3_ = 0;
 				do
 					aLong5049 += l;
 				while (++i_3_ < 10 && aLong5049 < aLong5050);
-				if ((aLong5049 ^ 0xffffffffffffffffL) > (aLong5050 ^ 0xffffffffffffffffL))
+				if (aLong5050 > aLong5049)
 					aLong5049 = aLong5050;
 				return i_3_;
 			}

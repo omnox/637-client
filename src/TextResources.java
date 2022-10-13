@@ -81,13 +81,13 @@ final class TextResources {
 		do {
 			try {
 				for (Class98_Sub42 class98_sub42 = ((Class98_Sub42) Class98_Sub10_Sub37.aClass148_5748.method2418(32)); class98_sub42 != null; class98_sub42 = (Class98_Sub42) Class98_Sub10_Sub37.aClass148_5748.method2417(119)) {
-					if ((((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232) != null) {
-						Class81.aClass98_Sub31_Sub3_619.method1374(((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232);
-						((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232 = null;
+					if ((class98_sub42.aClass98_Sub31_Sub5_4232) != null) {
+						Class81.aClass98_Sub31_Sub3_619.method1374(class98_sub42.aClass98_Sub31_Sub5_4232);
+						class98_sub42.aClass98_Sub31_Sub5_4232 = null;
 					}
-					if ((((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4230) != null) {
-						Class81.aClass98_Sub31_Sub3_619.method1374(((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4230);
-						((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4230 = null;
+					if ((class98_sub42.aClass98_Sub31_Sub5_4230) != null) {
+						Class81.aClass98_Sub31_Sub3_619.method1374(class98_sub42.aClass98_Sub31_Sub5_4230);
+						class98_sub42.aClass98_Sub31_Sub5_4230 = null;
 					}
 					class98_sub42.remove();
 				}
@@ -95,16 +95,16 @@ final class TextResources {
 				if (!bool)
 					break;
 				for (Class98_Sub42 class98_sub42 = ((Class98_Sub42) Class358.aClass148_3032.method2418(32)); class98_sub42 != null; class98_sub42 = (Class98_Sub42) Class358.aClass148_3032.method2417(110)) {
-					if ((((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232) != null) {
-						Class81.aClass98_Sub31_Sub3_619.method1374(((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232);
-						((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232 = null;
+					if ((class98_sub42.aClass98_Sub31_Sub5_4232) != null) {
+						Class81.aClass98_Sub31_Sub3_619.method1374(class98_sub42.aClass98_Sub31_Sub5_4232);
+						class98_sub42.aClass98_Sub31_Sub5_4232 = null;
 					}
 					class98_sub42.remove();
 				}
 				for (Class98_Sub42 class98_sub42 = (Class98_Sub42) Class98_Sub10_Sub14.aClass377_5612.start_iteration(118); class98_sub42 != null; class98_sub42 = (Class98_Sub42) Class98_Sub10_Sub14.aClass377_5612.iterate_next(-1)) {
-					if ((((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232) != null) {
-						Class81.aClass98_Sub31_Sub3_619.method1374(((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232);
-						((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232 = null;
+					if ((class98_sub42.aClass98_Sub31_Sub5_4232) != null) {
+						Class81.aClass98_Sub31_Sub3_619.method1374(class98_sub42.aClass98_Sub31_Sub5_4232);
+						class98_sub42.aClass98_Sub31_Sub5_4232 = null;
 					}
 					class98_sub42.remove();
 				}

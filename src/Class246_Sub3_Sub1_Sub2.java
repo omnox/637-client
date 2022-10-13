@@ -15,7 +15,7 @@ final class Class246_Sub3_Sub1_Sub2 extends Class246_Sub3_Sub1 implements Interf
 	public final void method67(int i, ha var_ha) {
 		do {
 			try {
-				((Class246_Sub3_Sub1_Sub2) this).aClass359_6249.method3894((byte) -85, var_ha);
+				this.aClass359_6249.method3894((byte) -85, var_ha);
 				if (i == -25163)
 					break;
 				method2981(null, (byte) -78, false, 22, null, 107, 28);
@@ -30,7 +30,7 @@ final class Class246_Sub3_Sub1_Sub2 extends Class246_Sub3_Sub1 implements Interf
 		try {
 			if (i != 24447)
 				anIntArray6245 = null;
-			((Class246_Sub3_Sub1_Sub2) this).aClass359_6249.method3892(var_ha, 105);
+			this.aClass359_6249.method3892(var_ha, 105);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ps.G(" + (var_ha != null ? "{...}" : "null") + ',' + i + ')'));
 		}
@@ -40,7 +40,7 @@ final class Class246_Sub3_Sub1_Sub2 extends Class246_Sub3_Sub1 implements Interf
 		try {
 			if (i != 0)
 				anInt6251 = -108;
-			return ((Class246_Sub3_Sub1_Sub2) this).aClass359_6249.method3899((byte) 125);
+			return this.aClass359_6249.method3899((byte) 125);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ps.J(" + i + ')');
 		}
@@ -50,7 +50,7 @@ final class Class246_Sub3_Sub1_Sub2 extends Class246_Sub3_Sub1 implements Interf
 		try {
 			if (i != 30472)
 				method3001(55);
-			return (((Class359) ((Class246_Sub3_Sub1_Sub2) this).aClass359_6249).anInt3052);
+			return (this.aClass359_6249.anInt3052);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ps.C(" + i + ')');
 		}
@@ -69,7 +69,7 @@ final class Class246_Sub3_Sub1_Sub2 extends Class246_Sub3_Sub1 implements Interf
 		try {
 			if (bool != true)
 				return true;
-			return ((Class246_Sub3_Sub1_Sub2) this).aClass359_6249.method3898(21);
+			return this.aClass359_6249.method3898(21);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ps.A(" + bool + ')');
 		}
@@ -118,13 +118,13 @@ final class Class246_Sub3_Sub1_Sub2 extends Class246_Sub3_Sub1 implements Interf
 
 	final boolean method2976(int i, ha var_ha, byte i_0_, int i_1_) {
 		try {
-			AbstractModel class146 = ((Class246_Sub3_Sub1_Sub2) this).aClass359_6249.method3897(-1, false, 131072, var_ha, false);
+			AbstractModel class146 = this.aClass359_6249.method3897(-1, false, 131072, var_ha, false);
 			if (class146 == null)
 				return false;
 			if (i_0_ < 59)
 				method2990(-80);
 			Class111 class111 = var_ha.method1793();
-			class111.method2100(((AnimableEntity) this).localXPos, ((AnimableEntity) this).anInt5089, ((AnimableEntity) this).localYPos);
+			class111.method2100(this.localXPos, this.anInt5089, this.localYPos);
 			if (Class239.aBoolean1839)
 				return class146.method2333(i, i_1_, class111, false, 0, Class16.anInt197);
 			return class146.method2339(i, i_1_, class111, false, 0);
@@ -136,7 +136,7 @@ final class Class246_Sub3_Sub1_Sub2 extends Class246_Sub3_Sub1 implements Interf
 	final void method3002(Class185 class185, byte i) {
 		try {
 			int i_2_ = 127 % ((i - -41) / 46);
-			((Class246_Sub3_Sub1_Sub2) this).aClass359_6249.method3901(class185, -118);
+			this.aClass359_6249.method3901(class185, -118);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ps.M(" + (class185 != null ? "{...}" : "null") + ',' + i + ')'));
 		}
@@ -156,14 +156,14 @@ final class Class246_Sub3_Sub1_Sub2 extends Class246_Sub3_Sub1 implements Interf
 		do {
 			try {
 				int i_3_ = 46 % ((53 - i) / 46);
-				AbstractModel class146 = ((Class246_Sub3_Sub1_Sub2) this).aClass359_6249.method3897(-1, true, 262144, var_ha, true);
+				AbstractModel class146 = this.aClass359_6249.method3897(-1, true, 262144, var_ha, true);
 				if (class146 == null)
 					break;
-				int i_4_ = ((AnimableEntity) this).localXPos >> 118087081;
-				int i_5_ = ((AnimableEntity) this).localYPos >> -1339126199;
+				int i_4_ = this.localXPos >> 9;
+				int i_5_ = this.localYPos >> 9;
 				Class111 class111 = var_ha.method1793();
-				class111.method2100(((AnimableEntity) this).localXPos, ((AnimableEntity) this).anInt5089, ((AnimableEntity) this).localYPos);
-				((Class246_Sub3_Sub1_Sub2) this).aClass359_6249.method3895(class146, i_4_, i_5_, class111, false, i_4_, var_ha, false, i_5_);
+				class111.method2100(this.localXPos, this.anInt5089, this.localYPos);
+				this.aClass359_6249.method3895(class146, i_4_, i_5_, class111, false, i_4_, var_ha, false, i_5_);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("ps.MA(" + (var_ha != null ? "{...}" : "null") + ',' + i + ')'));
 			}
@@ -175,7 +175,7 @@ final class Class246_Sub3_Sub1_Sub2 extends Class246_Sub3_Sub1 implements Interf
 		try {
 			if (bool != false)
 				method66(82);
-			return ((Class246_Sub3_Sub1_Sub2) this).aClass359_6249.method3903((byte) -123);
+			return this.aClass359_6249.method3903((byte) -123);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ps.O(" + bool + ')');
 		}
@@ -194,17 +194,17 @@ final class Class246_Sub3_Sub1_Sub2 extends Class246_Sub3_Sub1 implements Interf
 		try {
 			if (i != 4657)
 				method2976(108, null, (byte) 101, -1);
-			return (((Class359) ((Class246_Sub3_Sub1_Sub2) this).aClass359_6249).anInt3059);
+			return (this.aClass359_6249.anInt3059);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ps.N(" + i + ')');
 		}
 	}
 
 	Class246_Sub3_Sub1_Sub2(ha var_ha, Class352 class352, int i, int i_7_, int i_8_, int i_9_, int i_10_, boolean bool, int i_11_, int i_12_) {
-		super(i_8_, i_9_, i_10_, i, i_7_, ((Class352) class352).anInt2945);
+		super(i_8_, i_9_, i_10_, i, i_7_, class352.anInt2945);
 		try {
-			((Class246_Sub3_Sub1_Sub2) this).aClass359_6249 = new Class359(var_ha, class352, 22, i_11_, i, i_7_, this, bool, i_12_);
-			aBoolean6246 = ((Class352) class352).anInt2998 != 0 && !bool;
+			this.aClass359_6249 = new Class359(var_ha, class352, 22, i_11_, i, i_7_, this, bool, i_12_);
+			aBoolean6246 = class352.anInt2998 != 0 && !bool;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ps.<init>(" + (var_ha != null ? "{...}" : "null") + ',' + (class352 != null ? "{...}" : "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ')'));
 		}
@@ -221,33 +221,33 @@ final class Class246_Sub3_Sub1_Sub2 extends Class246_Sub3_Sub1 implements Interf
 
 	final Class246_Sub1 method2975(ha var_ha, int i) {
 		try {
-			AbstractModel class146 = ((Class246_Sub3_Sub1_Sub2) this).aClass359_6249.method3897(-1, false, 2048, var_ha, true);
+			AbstractModel class146 = this.aClass359_6249.method3897(-1, false, 2048, var_ha, true);
 			if (class146 == null)
 				return null;
 			Class111 class111 = var_ha.method1793();
-			class111.method2100(((AnimableEntity) this).localXPos, ((AnimableEntity) this).anInt5089, ((AnimableEntity) this).localYPos);
+			class111.method2100(this.localXPos, this.anInt5089, this.localYPos);
 			Class246_Sub1 class246_sub1 = Class94.method915(1, (byte) -47, aBoolean6246);
-			int i_17_ = ((AnimableEntity) this).localXPos >> 1484733673;
+			int i_17_ = this.localXPos >> 9;
 			if (i >= -12)
 				method2975(null, -86);
-			int i_18_ = ((AnimableEntity) this).localYPos >> 560688297;
-			((Class246_Sub3_Sub1_Sub2) this).aClass359_6249.method3895(class146, i_17_, i_18_, class111, true, i_17_, var_ha, false, i_18_);
+			int i_18_ = this.localYPos >> 9;
+			this.aClass359_6249.method3895(class146, i_17_, i_18_, class111, true, i_17_, var_ha, false, i_18_);
 			if (!Class239.aBoolean1839)
-				class146.method2325(class111, (((Class246_Sub1) class246_sub1).aClass246_Sub6Array5067[0]), 0);
+				class146.method2325(class111, (class246_sub1.aClass246_Sub6Array5067[0]), 0);
 			else
-				class146.method2329(class111, (((Class246_Sub1) class246_sub1).aClass246_Sub6Array5067[0]), Class16.anInt197, 0);
-			if ((((Class359) ((Class246_Sub3_Sub1_Sub2) this).aClass359_6249).aClass246_Sub5_3062) != null) {
-				Class242 class242 = ((Class359) ((Class246_Sub3_Sub1_Sub2) this).aClass359_6249).aClass246_Sub5_3062.method3116();
+				class146.method2329(class111, (class246_sub1.aClass246_Sub6Array5067[0]), Class16.anInt197, 0);
+			if ((this.aClass359_6249.aClass246_Sub5_3062) != null) {
+				Class242 class242 = this.aClass359_6249.aClass246_Sub5_3062.method3116();
 				if (Class239.aBoolean1839)
 					var_ha.method1785(class242, Class16.anInt197);
 				else
 					var_ha.method1820(class242);
 			}
-			aBoolean6248 = class146.F() || (((Class359) ((Class246_Sub3_Sub1_Sub2) this).aClass359_6249).aClass246_Sub5_3062) != null;
+			aBoolean6248 = class146.F() || (this.aClass359_6249.aClass246_Sub5_3062) != null;
 			if (aClass228_6250 != null)
-				Class283.method3350(((AnimableEntity) this).anInt5089, ((AnimableEntity) this).localXPos, 18, ((AnimableEntity) this).localYPos, class146, aClass228_6250);
+				Class283.method3350(this.anInt5089, this.localXPos, 18, this.localYPos, class146, aClass228_6250);
 			else
-				aClass228_6250 = (Class48_Sub2_Sub1.method472(((AnimableEntity) this).anInt5089, ((AnimableEntity) this).localXPos, class146, ((AnimableEntity) this).localYPos, 4));
+				aClass228_6250 = (Class48_Sub2_Sub1.method472(this.anInt5089, this.localXPos, class146, this.localYPos, 4));
 			return class246_sub1;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ps.QA(" + (var_ha != null ? "{...}" : "null") + ',' + i + ')'));
@@ -258,7 +258,7 @@ final class Class246_Sub3_Sub1_Sub2 extends Class246_Sub3_Sub1 implements Interf
 		try {
 			if (i != 20)
 				anInt6251 = -77;
-			return (((Class359) ((Class246_Sub3_Sub1_Sub2) this).aClass359_6249).anInt3038);
+			return (this.aClass359_6249.anInt3038);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ps.B(" + i + ')');
 		}

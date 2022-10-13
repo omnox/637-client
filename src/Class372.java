@@ -16,10 +16,10 @@ final class Class372 {
 		do {
 			try {
 				if (bool == true) {
-					boolean bool_0_ = ((Class98_Sub46_Sub19.getItemDefs.method2710(((GameInterfaceData) class293).anInt2304, ((GameInterfaceData) class293).anInt2302, var_ha, (((GameInterfaceData) class293).aBoolean2262 ? (((Player) Player.selfPlayer).appearance) : null), ((GameInterfaceData) class293).anInt2349, ((GameInterfaceData) class293).anInt2305, ~0xffffff | ((GameInterfaceData) class293).anInt2355, 24056)) == null);
+					boolean bool_0_ = ((Class98_Sub46_Sub19.getItemDefs.method2710(class293.anInt2304, class293.anInt2302, var_ha, (class293.aBoolean2262 ? (Player.selfPlayer.appearance) : null), class293.anInt2349, class293.anInt2305, ~0xffffff | class293.anInt2355, 24056)) == null);
 					if (!bool_0_)
 						break;
-					IOException_Sub1.aClass148_30.add_last(new Class98_Sub12(((GameInterfaceData) class293).anInt2302, ((GameInterfaceData) class293).anInt2349, ((GameInterfaceData) class293).anInt2304, (((GameInterfaceData) class293).anInt2355 | ~0xffffff), ((GameInterfaceData) class293).anInt2305, ((GameInterfaceData) class293).aBoolean2262), -20911);
+					IOException_Sub1.aClass148_30.add_last(new Class98_Sub12(class293.anInt2302, class293.anInt2349, class293.anInt2304, (class293.anInt2355 | ~0xffffff), class293.anInt2305, class293.aBoolean2262), -20911);
 					Class341.method3812(1, class293);
 				}
 			} catch (RuntimeException runtimeexception) {

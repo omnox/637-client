@@ -49,7 +49,7 @@ final class ClientScript2Event extends Node {
 			if (i != 13299)
 				aShortArrayArray3987 = null;
 			try {
-				if ((Class257.anInt1948 ^ 0xffffffff) == -3) {
+				if (Class257.anInt1948 == 2) {
 					if (Class81.aClass98_Sub7_620 == null) {
 						Class81.aClass98_Sub7_620 = Class98_Sub7.method985(Class269.aClass207_2025, GameInterface.anInt3951, Class76_Sub8.anInt3770);
 						if (Class81.aClass98_Sub7_620 == null)
@@ -66,7 +66,7 @@ final class ClientScript2Event extends Node {
 						if (Class22.anInt219 <= 0) {
 							Class257.anInt1948 = 0;
 							Class366.aClass98_Sub31_Sub2_3122.method1366(Class224_Sub3.anInt5037, (byte) 124);
-							for (int i_0_ = 0; ((Class77_Sub1.anIntArray3804.length ^ 0xffffffff) < (i_0_ ^ 0xffffffff)); i_0_++) {
+							for (int i_0_ = 0; (i_0_ < Class77_Sub1.anIntArray3804.length); i_0_++) {
 								Class366.aClass98_Sub31_Sub2_3122.method1363(-17, i_0_, Class77_Sub1.anIntArray3804[i_0_]);
 								Class77_Sub1.anIntArray3804[i_0_] = 255;
 							}
@@ -79,7 +79,7 @@ final class ClientScript2Event extends Node {
 							}
 						}
 						if (Class116.aClass98_Sub31_Sub2_965 == null) {
-							if ((Class133.aLong3455 ^ 0xffffffffffffffffL) < -1L)
+							if (Class133.aLong3455 > 0)
 								Class366.aClass98_Sub31_Sub2_3122.method1341(true, Class1.aBoolean66, Class81.aClass98_Sub7_620, Class133.aLong3455, -3);
 							else
 								Class366.aClass98_Sub31_Sub2_3122.method1332(Class1.aBoolean66, Class81.aClass98_Sub7_620, (byte) -4);
@@ -124,8 +124,8 @@ final class ClientScript2Event extends Node {
 	static final int method1180(int i, byte i_3_, int i_4_, int i_5_, int i_6_) {
 		try {
 			int i_7_ = 29 % ((i_3_ - 20) / 38);
-			int i_8_ = (65536 - Class284_Sub2_Sub2.anIntArray6202[8192 * i_5_ / i] >> -219666591);
-			return ((i_8_ * i_6_ >> -23038832) + (i_4_ * (65536 - i_8_) >> 1646652976));
+			int i_8_ = (65536 - Class284_Sub2_Sub2.anIntArray6202[8192 * i_5_ / i] >> 1);
+			return ((i_8_ * i_6_ >> 16) + (i_4_ * (65536 - i_8_) >> 16));
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("je.D(" + i + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ')'));
 		}

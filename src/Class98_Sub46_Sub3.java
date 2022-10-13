@@ -22,7 +22,7 @@ final class Class98_Sub46_Sub3 extends Class98_Sub46 {
 
 	Class98_Sub46_Sub3(Class246_Sub3_Sub4_Sub3 class246_sub3_sub4_sub3) {
 		try {
-			((Class98_Sub46_Sub3) this).aClass246_Sub3_Sub4_Sub3_5954 = class246_sub3_sub4_sub3;
+			this.aClass246_Sub3_Sub4_Sub3_5954 = class246_sub3_sub4_sub3;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("bv.<init>(" + (class246_sub3_sub4_sub3 != null ? "{...}" : "null") + ')'));
 		}
@@ -35,7 +35,7 @@ final class Class98_Sub46_Sub3 extends Class98_Sub46 {
 				int i_1_ = Class98_Sub10_Sub21.anInt5643 * 512 + 256;
 				int i_2_ = (Perspective.getTileHeight(Class43.anInt377, i_1_, i_0_) - Class308.anInt2580);
 				do {
-					if ((Class263.anInt1967 ^ 0xffffffff) <= -101) {
+					if (Class263.anInt1967 >= 100) {
 						Class134.renderZ = 256 + 512 * Class98_Sub10_Sub21.anInt5643;
 						Class98_Sub46_Sub10.renderX = Class363.anInt3098 * 512 + 256;
 						Class79.renderY = ((Perspective.getTileHeight(Class43.anInt377, Class134.renderZ, Class98_Sub46_Sub10.renderX)) - Class308.anInt2580);
@@ -44,7 +44,7 @@ final class Class98_Sub46_Sub3 extends Class98_Sub46 {
 					}
 					if (Class98_Sub46_Sub10.renderX < i_0_) {
 						Class98_Sub46_Sub10.renderX += (Class98_Sub46_Sub2_Sub2.anInt6300 - -((-Class98_Sub46_Sub10.renderX + i_0_) * Class263.anInt1967 / 1000));
-						if ((Class98_Sub46_Sub10.renderX ^ 0xffffffff) < (i_0_ ^ 0xffffffff))
+						if (i_0_ < Class98_Sub46_Sub10.renderX)
 							Class98_Sub46_Sub10.renderX = i_0_;
 					}
 					if (i_0_ < Class98_Sub46_Sub10.renderX) {
@@ -52,24 +52,24 @@ final class Class98_Sub46_Sub3 extends Class98_Sub46 {
 						if (Class98_Sub46_Sub10.renderX < i_0_)
 							Class98_Sub46_Sub10.renderX = i_0_;
 					}
-					if ((Class79.renderY ^ 0xffffffff) > (i_2_ ^ 0xffffffff)) {
+					if (i_2_ > Class79.renderY) {
 						Class79.renderY += ((-Class79.renderY + i_2_) * Class263.anInt1967 / 1000) + Class98_Sub46_Sub2_Sub2.anInt6300;
 						if (Class79.renderY > i_2_)
 							Class79.renderY = i_2_;
 					}
 					if (i_1_ > Class134.renderZ) {
 						Class134.renderZ += ((Class263.anInt1967 * (i_1_ + -Class134.renderZ) / 1000) + Class98_Sub46_Sub2_Sub2.anInt6300);
-						if ((Class134.renderZ ^ 0xffffffff) < (i_1_ ^ 0xffffffff))
+						if (i_1_ < Class134.renderZ)
 							Class134.renderZ = i_1_;
 					}
-					if ((Class79.renderY ^ 0xffffffff) < (i_2_ ^ 0xffffffff)) {
+					if (i_2_ < Class79.renderY) {
 						Class79.renderY -= (Class98_Sub46_Sub2_Sub2.anInt6300 - -((Class79.renderY - i_2_) * Class263.anInt1967 / 1000));
 						if (i_2_ > Class79.renderY)
 							Class79.renderY = i_2_;
 					}
-					if ((i_1_ ^ 0xffffffff) > (Class134.renderZ ^ 0xffffffff)) {
+					if (Class134.renderZ > i_1_) {
 						Class134.renderZ -= (Class98_Sub46_Sub2_Sub2.anInt6300 + (Class263.anInt1967 * (-i_1_ + Class134.renderZ) / 1000));
-						if ((i_1_ ^ 0xffffffff) < (Class134.renderZ ^ 0xffffffff))
+						if (Class134.renderZ < i_1_)
 							Class134.renderZ = i_1_;
 					}
 				} while (false);
@@ -79,45 +79,45 @@ final class Class98_Sub46_Sub3 extends Class98_Sub46 {
 				int i_3_ = -Class98_Sub46_Sub10.renderX + i_0_;
 				int i_4_ = -Class79.renderY + i_2_;
 				int i_5_ = -Class134.renderZ + i_1_;
-				int i_6_ = (int) Math.sqrt((double) (i_3_ * i_3_ - -(i_5_ * i_5_)));
-				int i_7_ = 0x3fff & (int) (Math.atan2((double) i_4_, (double) i_6_) * 2607.5945876176133);
-				int i_8_ = ((int) (-2607.5945876176133 * Math.atan2((double) i_3_, (double) i_5_)) & 0x3fff);
+				int i_6_ = (int) Math.sqrt(i_3_ * i_3_ - -(i_5_ * i_5_));
+				int i_7_ = 0x3fff & (int) (Math.atan2(i_4_, i_6_) * 2607.5945876176133);
+				int i_8_ = ((int) (-2607.5945876176133 * Math.atan2(i_3_, i_5_)) & 0x3fff);
 				if (i_7_ < 1024)
 					i_7_ = 1024;
-				if ((i_7_ ^ 0xffffffff) < -3073)
+				if (i_7_ > 3072)
 					i_7_ = 3072;
 				if (GameWorld.cameraPitch < i_7_) {
-					GameWorld.cameraPitch += ((i_7_ - GameWorld.cameraPitch >> -1117924989) * Class98_Sub4.anInt3828 / 1000 + Class98_Sub41.anInt4202) << -1739945821;
+					GameWorld.cameraPitch += ((i_7_ - GameWorld.cameraPitch >> 3) * Class98_Sub4.anInt3828 / 1000 + Class98_Sub41.anInt4202) << 3;
 					if (GameWorld.cameraPitch > i_7_)
 						GameWorld.cameraPitch = i_7_;
 				}
-				if ((i_7_ ^ 0xffffffff) > (GameWorld.cameraPitch ^ 0xffffffff)) {
-					GameWorld.cameraPitch -= (Class98_Sub41.anInt4202 + (Class98_Sub4.anInt3828 * (-i_7_ + GameWorld.cameraPitch >> 1278679235) / 1000)) << -1425824541;
+				if (GameWorld.cameraPitch > i_7_) {
+					GameWorld.cameraPitch -= (Class98_Sub41.anInt4202 + (Class98_Sub4.anInt3828 * (-i_7_ + GameWorld.cameraPitch >> 3) / 1000)) << 3;
 					if (i_7_ > GameWorld.cameraPitch)
 						GameWorld.cameraPitch = i_7_;
 				}
 				int i_9_ = i_8_ + -GameWorld.cameraYaw;
-				if ((i_9_ ^ 0xffffffff) < -8193)
+				if (i_9_ > 8192)
 					i_9_ -= 16384;
-				if ((i_9_ ^ 0xffffffff) > 8191)
+				if (i_9_ < -8192)
 					i_9_ += 16384;
 				i_9_ >>= 3;
-				if ((i_9_ ^ 0xffffffff) < -1) {
-					GameWorld.cameraYaw += (Class98_Sub4.anInt3828 * i_9_ / 1000 + Class98_Sub41.anInt4202) << 1507566883;
+				if (i_9_ > 0) {
+					GameWorld.cameraYaw += (Class98_Sub4.anInt3828 * i_9_ / 1000 + Class98_Sub41.anInt4202) << 3;
 					GameWorld.cameraYaw &= 0x3fff;
 				}
 				if (i_9_ < 0) {
-					GameWorld.cameraYaw -= (Class98_Sub4.anInt3828 * -i_9_ / 1000 + Class98_Sub41.anInt4202) << 1406205123;
+					GameWorld.cameraYaw -= (Class98_Sub4.anInt3828 * -i_9_ / 1000 + Class98_Sub41.anInt4202) << 3;
 					GameWorld.cameraYaw &= 0x3fff;
 				}
 				int i_10_ = -GameWorld.cameraYaw + i_8_;
 				if (i > 69) {
-					if ((i_10_ ^ 0xffffffff) < -8193)
+					if (i_10_ > 8192)
 						i_10_ -= 16384;
 					if (i_10_ < -8192)
 						i_10_ += 16384;
 					Class308.anInt2584 = 0;
-					if (((i_10_ ^ 0xffffffff) <= -1 || i_9_ <= 0) && (i_10_ <= 0 || i_9_ >= 0))
+					if ((i_10_ >= 0 || i_9_ <= 0) && (i_10_ <= 0 || i_9_ >= 0))
 						break;
 					GameWorld.cameraYaw = i_8_;
 				}

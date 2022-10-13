@@ -19,10 +19,10 @@ final class Class98_Sub10_Sub39 extends Class98_Sub10 {
 
 	final int[][] method997(int i, int i_0_) {
 		try {
-			int[][] is = ((Class98_Sub10) this).aClass223_3859.method2828(i_0_, 0);
+			int[][] is = this.aClass223_3859.method2828(i_0_, 0);
 			if (i >= -76)
 				aClass207_5773 = null;
-			if (((Class223) ((Class98_Sub10) this).aClass223_3859).aBoolean1683) {
+			if (this.aClass223_3859.aBoolean1683) {
 				int[][] is_1_ = this.method994(i_0_, 24431, 0);
 				int[] is_2_ = is_1_[0];
 				int[] is_3_ = is_1_[1];
@@ -30,7 +30,7 @@ final class Class98_Sub10_Sub39 extends Class98_Sub10 {
 				int[] is_5_ = is[0];
 				int[] is_6_ = is[1];
 				int[] is_7_ = is[2];
-				for (int i_8_ = 0; (Class25.anInt268 ^ 0xffffffff) < (i_8_ ^ 0xffffffff); i_8_++) {
+				for (int i_8_ = 0; i_8_ < Class25.anInt268; i_8_++) {
 					is_5_[i_8_] = -is_2_[i_8_] + 4096;
 					is_6_[i_8_] = 4096 + -is_3_[i_8_];
 					is_7_[i_8_] = -is_4_[i_8_] + 4096;
@@ -53,12 +53,12 @@ final class Class98_Sub10_Sub39 extends Class98_Sub10 {
 			long l = 4194304L;
 			long l_11_ = -9223372036854775808L;
 			Class352 class352 = Class130.aClass302_1028.method3546(interface19.method64(30472), (byte) 119);
-			long l_12_ = (long) (interface19.method63((byte) 20) << 1932511150 | (i_10_ << -804407641 | i_9_) | interface19.method66(i ^ 0x1240) << -221685036 | 0x40000000);
-			if (((Class352) class352).anInt2998 == 0)
+			long l_12_ = interface19.method63((byte) 20) << 14 | (i_10_ << 7 | i_9_) | interface19.method66(i ^ 0x1240) << 20 | 0x40000000;
+			if (class352.anInt2998 == 0)
 				l_12_ |= l_11_;
-			if (((Class352) class352).anInt2975 == 1)
+			if (class352.anInt2975 == 1)
 				l_12_ |= l;
-			l_12_ |= (long) interface19.method64(i ^ 0x7779) << -1810428832;
+			l_12_ |= (long) interface19.method64(i ^ 0x7779) << 32;
 			return l_12_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("wm.F(" + (interface19 != null ? "{...}" : "null") + ',' + i + ',' + i_9_ + ',' + i_10_ + ')'));
@@ -67,12 +67,12 @@ final class Class98_Sub10_Sub39 extends Class98_Sub10 {
 
 	final int[] method990(int i, int i_13_) {
 		try {
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_13_);
+			int[] is = this.aClass16_3863.method237((byte) 98, i_13_);
 			if (i != 255)
 				method1120(null, (byte) 69, -45, -45);
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
+			if (this.aClass16_3863.aBoolean198) {
 				int[] is_14_ = this.method1000(i_13_, 0, 0);
-				for (int i_15_ = 0; (i_15_ ^ 0xffffffff) > (Class25.anInt268 ^ 0xffffffff); i_15_++)
+				for (int i_15_ = 0; Class25.anInt268 > i_15_; i_15_++)
 					is[i_15_] = -is_14_[i_15_] + 4096;
 			}
 			return is;
@@ -106,9 +106,9 @@ final class Class98_Sub10_Sub39 extends Class98_Sub10 {
 		do {
 			try {
 				if (i_21_ < -92) {
-					if ((i ^ 0xffffffff) != -1)
+					if (i != 0)
 						break;
-					((Class98_Sub10) this).aBoolean3861 = class98_sub22.readUnsignedByte() == 1;
+					this.aBoolean3861 = class98_sub22.readUnsignedByte() == 1;
 				}
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("wm.A(" + i + ',' + (class98_sub22 != null ? "{...}" : "null") + ',' + i_21_ + ')'));
@@ -121,7 +121,7 @@ final class Class98_Sub10_Sub39 extends Class98_Sub10 {
 		try {
 			if (i_22_ >= -11)
 				return null;
-			return (String.valueOf(i >> 1735606296 & 0xff) + "." + (0xff & i >> -889935376) + "." + (i >> 1298758568 & 0xff) + "." + (0xff & i));
+			return (String.valueOf(i >> 24 & 0xff) + "." + (0xff & i >> 16) + "." + (i >> 8 & 0xff) + "." + (0xff & i));
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "wm.E(" + i + ',' + i_22_ + ')');
 		}

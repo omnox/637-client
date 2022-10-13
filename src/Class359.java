@@ -35,9 +35,9 @@ final class Class359 {
 	protected final void finalize() {
 		do {
 			try {
-				if (((Class359) this).aClass246_Sub5_3062 == null)
+				if (this.aClass246_Sub5_3062 == null)
 					break;
-				((Class359) this).aClass246_Sub5_3062.method3114();
+				this.aClass246_Sub5_3062.method3114();
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "vo.finalize(" + ')');
 			}
@@ -73,40 +73,40 @@ final class Class359 {
 						return;
 				}
 				i_0_ = Class215.anInt1614 - anInt3048;
-				if (i_0_ > 100 && ((Class97) aClass97_3045).anInt828 > 0) {
+				if (i_0_ > 100 && aClass97_3045.anInt828 > 0) {
 					int i_1_;
-					for (i_1_ = (-((Class97) aClass97_3045).anInt828 + (((Class97) aClass97_3045).anIntArray818).length); ((i_1_ ^ 0xffffffff) < (anInt3050 ^ 0xffffffff) && ((((Class97) aClass97_3045).anIntArray811[anInt3050]) ^ 0xffffffff) > (i_0_ ^ 0xffffffff)); anInt3050++)
-						i_0_ -= (((Class97) aClass97_3045).anIntArray811[anInt3050]);
-					if ((anInt3050 ^ 0xffffffff) <= (i_1_ ^ 0xffffffff)) {
+					for (i_1_ = (-aClass97_3045.anInt828 + (aClass97_3045.anIntArray818).length); (anInt3050 < i_1_ && i_0_ > (aClass97_3045.anIntArray811[anInt3050])); anInt3050++)
+						i_0_ -= (aClass97_3045.anIntArray811[anInt3050]);
+					if (i_1_ <= anInt3050) {
 						int i_2_ = 0;
-						for (int i_3_ = i_1_; i_3_ < (((Class97) aClass97_3045).anIntArray818).length; i_3_++)
-							i_2_ += (((Class97) aClass97_3045).anIntArray811[i_3_]);
+						for (int i_3_ = i_1_; i_3_ < (aClass97_3045.anIntArray818).length; i_3_++)
+							i_2_ += (aClass97_3045.anIntArray811[i_3_]);
 						i_0_ %= i_2_;
 					}
 					anInt3035 = anInt3050 + 1;
-					if (anInt3035 >= ((Class97) aClass97_3045).anIntArray818.length) {
-						anInt3035 -= ((Class97) aClass97_3045).anInt828;
-						if (anInt3035 < 0 || (((Class97) aClass97_3045).anIntArray818.length ^ 0xffffffff) >= (anInt3035 ^ 0xffffffff))
+					if (anInt3035 >= aClass97_3045.anIntArray818.length) {
+						anInt3035 -= aClass97_3045.anInt828;
+						if (anInt3035 < 0 || anInt3035 >= aClass97_3045.anIntArray818.length)
 							anInt3035 = -1;
 					}
 				}
 				for (;;) {
-					if ((((Class97) aClass97_3045).anIntArray811[anInt3050] ^ 0xffffffff) <= (i_0_ ^ 0xffffffff))
+					if (i_0_ <= aClass97_3045.anIntArray811[anInt3050])
 						break while_243_;
 					Class349.method3840((byte) -127, class246_sub3, anInt3050, aClass97_3045);
-					i_0_ -= ((Class97) aClass97_3045).anIntArray811[anInt3050];
+					i_0_ -= aClass97_3045.anIntArray811[anInt3050];
 					anInt3050++;
-					if (((Class97) aClass97_3045).anIntArray818.length <= anInt3050) {
-						anInt3050 -= ((Class97) aClass97_3045).anInt828;
-						if ((anInt3050 ^ 0xffffffff) > -1 || (((Class97) aClass97_3045).anIntArray818.length ^ 0xffffffff) >= (anInt3050 ^ 0xffffffff)) {
+					if (aClass97_3045.anIntArray818.length <= anInt3050) {
+						anInt3050 -= aClass97_3045.anInt828;
+						if (anInt3050 < 0 || anInt3050 >= aClass97_3045.anIntArray818.length) {
 							aClass97_3045 = null;
 							break;
 						}
 					}
 					anInt3035 = anInt3050 - -1;
-					if (anInt3035 >= ((Class97) aClass97_3045).anIntArray818.length) {
-						anInt3035 -= ((Class97) aClass97_3045).anInt828;
-						if ((anInt3035 ^ 0xffffffff) > -1 || (((Class97) aClass97_3045).anIntArray818.length <= anInt3035))
+					if (anInt3035 >= aClass97_3045.anIntArray818.length) {
+						anInt3035 -= aClass97_3045.anInt828;
+						if (anInt3035 < 0 || (aClass97_3045.anIntArray818.length <= anInt3035))
 							anInt3035 = -1;
 					}
 				}
@@ -121,7 +121,7 @@ final class Class359 {
 	final void method3894(byte i, ha var_ha) {
 		try {
 			if (aR3051 != null) {
-				Class268.method3254(aR3051, aByte3040, (((AnimableEntity) aClass246_Sub3_3049).localXPos), (((AnimableEntity) aClass246_Sub3_3049).localYPos), aBooleanArray3036);
+				Class268.method3254(aR3051, aByte3040, (aClass246_Sub3_3049.localXPos), (aClass246_Sub3_3049.localYPos), aBooleanArray3036);
 				aR3051 = null;
 				aBooleanArray3036 = null;
 			}
@@ -136,27 +136,27 @@ final class Class359 {
 			try {
 				Class87[] class87s = class146.method2320();
 				Class35[] class35s = class146.method2322();
-				if ((((Class359) this).aClass246_Sub5_3062 == null || ((Class246_Sub5) ((Class359) this).aClass246_Sub5_3062).aBoolean5099) && (class87s != null || class35s != null)) {
-					Class352 class352 = Class130.aClass302_1028.method3546((((Class359) this).anInt3052), (byte) 119);
-					if (((Class352) class352).anIntArray2928 != null)
+				if ((this.aClass246_Sub5_3062 == null || this.aClass246_Sub5_3062.aBoolean5099) && (class87s != null || class35s != null)) {
+					Class352 class352 = Class130.aClass302_1028.method3546((this.anInt3052), (byte) 119);
+					if (class352.anIntArray2928 != null)
 						class352 = class352.method3852(Class75.aClass140_584, (byte) -116);
 					if (class352 != null)
-						((Class359) this).aClass246_Sub5_3062 = Class246_Sub5.method3117(Class215.anInt1614, true);
+						this.aClass246_Sub5_3062 = Class246_Sub5.method3117(Class215.anInt1614, true);
 				}
 				if (bool_7_ != false)
 					aByte3040 = (byte) -118;
-				if (((Class359) this).aClass246_Sub5_3062 == null)
+				if (this.aClass246_Sub5_3062 == null)
 					break;
 				class146.method2343(class111);
 				do {
 					if (!bool) {
-						((Class359) this).aClass246_Sub5_3062.method3126((long) Class215.anInt1614);
+						this.aClass246_Sub5_3062.method3126(Class215.anInt1614);
 						if (!client.aBoolean3553)
 							break;
 					}
-					((Class359) this).aClass246_Sub5_3062.method3120(var_ha, (long) Class215.anInt1614, class87s, class35s, false);
+					this.aClass246_Sub5_3062.method3120(var_ha, Class215.anInt1614, class87s, class35s, false);
 				} while (false);
-				((Class359) this).aClass246_Sub5_3062.method3123(aByte3039, i_6_, i, i_5_, i_8_);
+				this.aClass246_Sub5_3062.method3123(aByte3039, i_6_, i, i_5_, i_8_);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("vo.D(" + (class146 != null ? "{...}" : "null") + ',' + i + ',' + i_5_ + ',' + (class111 != null ? "{...}" : "null") + ',' + bool + ',' + i_6_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + bool_7_ + ',' + i_8_ + ')'));
 			}
@@ -180,8 +180,8 @@ final class Class359 {
 		try {
 			if (i != -1)
 				return null;
-			Class352 class352 = Class130.aClass302_1028.method3546(((Class359) this).anInt3052, (byte) 119);
-			if (((Class352) class352).anIntArray2928 != null)
+			Class352 class352 = Class130.aClass302_1028.method3546(this.anInt3052, (byte) 119);
+			if (class352.anIntArray2928 != null)
 				class352 = class352.method3852(Class75.aClass140_584, (byte) -118);
 			if (class352 == null) {
 				method3894((byte) -80, var_ha);
@@ -190,21 +190,21 @@ final class Class359 {
 				anInt3043 = -1;
 				return null;
 			}
-			if (!aBoolean3047 && ((Class352) class352).id != anInt3061) {
+			if (!aBoolean3047 && class352.id != anInt3061) {
 				aClass146_3057 = null;
 				method3902(-1, (byte) 101);
 			}
 			method3893(aClass246_Sub3_3049, -23137);
 			if (bool_10_) {
-				bool_10_ = bool_10_ & (aBoolean3037 & ((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub7_4073.method579((byte) 120) != 0);
-				bool_10_ = (bool_10_ & (((Class352) class352).id != anInt3043 || (aClass97_3045 != null && (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub7_4073.method579((byte) 121) >= 2) && ((anInt3050 ^ 0xffffffff) != (anInt3055 ^ 0xffffffff) || ((((Class97) aClass97_3045).aBoolean823 || Class357.aBoolean3027) && anInt3035 != anInt3050)))));
+				bool_10_ = bool_10_ & (aBoolean3037 & Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub7_4073.method579((byte) 120) != 0);
+				bool_10_ = (bool_10_ & (class352.id != anInt3043 || (aClass97_3045 != null && (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub7_4073.method579((byte) 121) >= 2) && (anInt3055 != anInt3050 || ((aClass97_3045.aBoolean823 || Class357.aBoolean3027) && anInt3035 != anInt3050)))));
 			}
 			if (bool && !bool_10_) {
-				anInt3061 = ((Class352) class352).id;
+				anInt3061 = class352.id;
 				return null;
 			}
 			if (bool_10_) {
-				Class268.method3254(aR3051, aByte3040, (((AnimableEntity) aClass246_Sub3_3049).localXPos), (((AnimableEntity) aClass246_Sub3_3049).localYPos), aBooleanArray3036);
+				Class268.method3254(aR3051, aByte3040, (aClass246_Sub3_3049.localXPos), (aClass246_Sub3_3049.localYPos), aBooleanArray3036);
 				anInt3043 = -1;
 				anInt3055 = -1;
 			}
@@ -216,12 +216,12 @@ final class Class359 {
 				var_s_11_ = aByte3040 < 3 ? Class78.activeTileHeightMap[aByte3040 + 1] : null;
 			AbstractModel class146 = null;
 			if (aClass97_3045 == null) {
-				if (aClass146_3057 != null && (i_9_ & aClass146_3057.ua()) == i_9_ && anInt3061 == ((Class352) class352).id)
+				if (aClass146_3057 != null && (i_9_ & aClass146_3057.ua()) == i_9_ && anInt3061 == class352.id)
 					class146 = aClass146_3057;
 				else {
 					if (aClass146_3057 != null)
 						i_9_ |= aClass146_3057.ua();
-					Class298 class298 = (class352.method3851(((AnimableEntity) aClass246_Sub3_3049).localYPos, false, var_s_11_, (((Class359) this).anInt3038 != 11 ? ((Class359) this).anInt3059 : 4 - -((Class359) this).anInt3059), var_s.method3417(((AnimableEntity) aClass246_Sub3_3049).localXPos, ((AnimableEntity) aClass246_Sub3_3049).localYPos, true), bool_10_, ((AnimableEntity) aClass246_Sub3_3049).localXPos, i_9_, aClass185_3044, var_s, var_ha, ((((Class359) this).anInt3038 ^ 0xffffffff) == -12 ? 10 : ((Class359) this).anInt3038)));
+					Class298 class298 = (class352.method3851(aClass246_Sub3_3049.localYPos, false, var_s_11_, (this.anInt3038 != 11 ? this.anInt3059 : 4 - -this.anInt3059), var_s.method3417(aClass246_Sub3_3049.localXPos, aClass246_Sub3_3049.localYPos, true), bool_10_, aClass246_Sub3_3049.localXPos, i_9_, aClass185_3044, var_s, var_ha, (this.anInt3038 == 11 ? 10 : this.anInt3038)));
 					if (class298 == null) {
 						anInt3053 = 0;
 						aR3051 = null;
@@ -229,13 +229,13 @@ final class Class359 {
 						aClass146_3057 = null;
 						aBooleanArray3036 = null;
 					} else {
-						aClass146_3057 = class146 = ((Class298) class298).aClass146_2477;
+						aClass146_3057 = class146 = class298.aClass146_2477;
 						if (bool_10_) {
-							aR3051 = ((Class298) class298).aR2479;
+							aR3051 = class298.aR2479;
 							aBooleanArray3036 = null;
-							Class184.method2626(aR3051, aByte3040, (((AnimableEntity) aClass246_Sub3_3049).localXPos), (((AnimableEntity) aClass246_Sub3_3049).localYPos), null);
+							Class184.method2626(aR3051, aByte3040, (aClass246_Sub3_3049.localXPos), (aClass246_Sub3_3049.localYPos), null);
 							anInt3055 = -1;
-							anInt3043 = ((Class352) class352).id;
+							anInt3043 = class352.id;
 						}
 						anInt3041 = class146.fa();
 						anInt3053 = class146.ma();
@@ -244,7 +244,7 @@ final class Class359 {
 			} else {
 				if (bool_10_)
 					i_9_ |= 0x40000;
-				class146 = (class352.method3859(var_s, ((AnimableEntity) aClass246_Sub3_3049).localXPos, var_s.method3417((((AnimableEntity) aClass246_Sub3_3049).localXPos), (((AnimableEntity) aClass246_Sub3_3049).localYPos), true), (byte) -125, var_ha, var_s_11_, i_9_, ((((Class359) this).anInt3038 ^ 0xffffffff) == -12 ? ((Class359) this).anInt3059 + 4 : ((Class359) this).anInt3059), ((AnimableEntity) aClass246_Sub3_3049).localYPos, (((Class359) this).anInt3038 == 11 ? 10 : ((Class359) this).anInt3038), aClass185_3044, anInt3050, aClass97_3045, anInt3035, anInt3042));
+				class146 = (class352.method3859(var_s, aClass246_Sub3_3049.localXPos, var_s.method3417((aClass246_Sub3_3049.localXPos), (aClass246_Sub3_3049.localYPos), true), (byte) -125, var_ha, var_s_11_, i_9_, (this.anInt3038 == 11 ? this.anInt3059 + 4 : this.anInt3059), aClass246_Sub3_3049.localYPos, (this.anInt3038 == 11 ? 10 : this.anInt3038), aClass185_3044, anInt3050, aClass97_3045, anInt3035, anInt3042));
 				if (class146 == null) {
 					anInt3053 = 0;
 					anInt3041 = 0;
@@ -255,8 +255,8 @@ final class Class359 {
 						if (aBooleanArray3036 == null)
 							aBooleanArray3036 = new boolean[4];
 						aR3051 = class146.ba(aR3051);
-						Class184.method2626(aR3051, aByte3040, ((AnimableEntity) aClass246_Sub3_3049).localXPos, ((AnimableEntity) aClass246_Sub3_3049).localYPos, aBooleanArray3036);
-						anInt3043 = ((Class352) class352).id;
+						Class184.method2626(aR3051, aByte3040, aClass246_Sub3_3049.localXPos, aClass246_Sub3_3049.localYPos, aBooleanArray3036);
+						anInt3043 = class352.id;
 						anInt3055 = anInt3050;
 					}
 					anInt3041 = class146.fa();
@@ -264,7 +264,7 @@ final class Class359 {
 				}
 				aClass146_3057 = null;
 			}
-			anInt3061 = ((Class352) class352).id;
+			anInt3061 = class352.id;
 			return class146;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("vo.B(" + i + ',' + bool + ',' + i_9_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + bool_10_ + ')'));
@@ -274,7 +274,7 @@ final class Class359 {
 	final boolean method3898(int i) {
 		try {
 			if (i < 17)
-				((Class359) this).anInt3038 = -60;
+				this.anInt3038 = -60;
 			return aBoolean3037;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "vo.A(" + i + ')');
@@ -295,7 +295,7 @@ final class Class359 {
 		try {
 			aBoolean3047 = true;
 			if (i_12_ >= -41)
-				((Class359) this).aClass246_Sub5_3062 = null;
+				this.aClass246_Sub5_3062 = null;
 			method3902(i, (byte) 101);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "vo.F(" + i + ',' + i_12_ + ')');
@@ -317,60 +317,60 @@ final class Class359 {
 			int i_14_ = i;
 			boolean bool = false;
 			if (i_14_ == -1) {
-				Class352 class352 = Class130.aClass302_1028.method3546(((Class359) this).anInt3052, (byte) 119);
+				Class352 class352 = Class130.aClass302_1028.method3546(this.anInt3052, (byte) 119);
 				Class352 class352_15_ = class352;
-				if (((Class352) class352).anIntArray2928 != null)
+				if (class352.anIntArray2928 != null)
 					class352 = class352.method3852(Class75.aClass140_584, (byte) -44);
 				if (class352 == null)
 					return;
 				if (class352_15_ == class352)
 					class352_15_ = null;
-				if (((Class352) class352).anIntArray2979 == null) {
-					if (((Class352) class352).anInt2941 == -1) {
-						if (class352_15_ != null && (((Class352) class352_15_).anIntArray2979 != null)) {
-							if (aClass97_3045 != null && class352_15_.method3860((((Class97) aClass97_3045).anInt826), true))
+				if (class352.anIntArray2979 == null) {
+					if (class352.anInt2941 == -1) {
+						if (class352_15_ != null && (class352_15_.anIntArray2979 != null)) {
+							if (aClass97_3045 != null && class352_15_.method3860((aClass97_3045.anInt826), true))
 								return;
 							i_14_ = class352_15_.method3861(0);
-							if (anInt3061 != ((Class352) class352_15_).id)
-								bool = ((Class352) class352_15_).aBoolean2925;
-						} else if (class352_15_ != null && (((Class352) class352_15_).anInt2941 ^ 0xffffffff) != 0 && anInt3061 != (((Class352) class352_15_).id)) {
-							bool = ((Class352) class352_15_).aBoolean2925;
-							i_14_ = ((Class352) class352_15_).anInt2941;
+							if (anInt3061 != class352_15_.id)
+								bool = class352_15_.aBoolean2925;
+						} else if (class352_15_ != null && class352_15_.anInt2941 != -1 && anInt3061 != (class352_15_.id)) {
+							bool = class352_15_.aBoolean2925;
+							i_14_ = class352_15_.anInt2941;
 						}
-					} else if ((((Class352) class352).id ^ 0xffffffff) != (anInt3061 ^ 0xffffffff)) {
-						bool = ((Class352) class352).aBoolean2925;
-						i_14_ = ((Class352) class352).anInt2941;
+					} else if (anInt3061 != class352.id) {
+						bool = class352.aBoolean2925;
+						i_14_ = class352.anInt2941;
 					}
 				} else {
-					if (aClass97_3045 != null && class352.method3860((((Class97) aClass97_3045).anInt826), true))
+					if (aClass97_3045 != null && class352.method3860((aClass97_3045.anInt826), true))
 						return;
 					i_14_ = class352.method3861(0);
-					if (((Class352) class352).id != anInt3061)
-						bool = ((Class352) class352).aBoolean2925;
+					if (class352.id != anInt3061)
+						bool = class352.aBoolean2925;
 				}
 			}
 			if (i_14_ == -1)
 				aClass97_3045 = null;
 			else {
 				aClass146_3057 = null;
-				if (aClass97_3045 != null && ((Class97) aClass97_3045).anInt826 == i_14_) {
-					if ((((Class97) aClass97_3045).anInt819 ^ 0xffffffff) == -1)
+				if (aClass97_3045 != null && aClass97_3045.anInt826 == i_14_) {
+					if (aClass97_3045.anInt819 == 0)
 						return;
 				} else
 					aClass97_3045 = Class151_Sub7.aClass183_5001.method2623(i_14_, 16383);
-				if (((Class97) aClass97_3045).anIntArray818 == null)
+				if (aClass97_3045.anIntArray818 == null)
 					aClass97_3045 = null;
 				else {
 					if (!bool) {
 						anInt3042 = 1;
 						anInt3050 = 0;
 					} else {
-						anInt3050 = (int) (Math.random() * (double) (((Class97) aClass97_3045).anIntArray818).length);
-						anInt3042 = (int) ((double) (((Class97) aClass97_3045).anIntArray811[anInt3050]) * Math.random()) + 1;
+						anInt3050 = (int) (Math.random() * (double) (aClass97_3045.anIntArray818).length);
+						anInt3042 = (int) ((double) (aClass97_3045.anIntArray811[anInt3050]) * Math.random()) + 1;
 					}
 					if (i_13_ == 101) {
 						anInt3035 = 1 + anInt3050;
-						if (anInt3035 < 0 || (((Class97) aClass97_3045).anIntArray818.length ^ 0xffffffff) >= (anInt3035 ^ 0xffffffff))
+						if (anInt3035 < 0 || anInt3035 >= aClass97_3045.anIntArray818.length)
 							anInt3035 = -1;
 						anInt3048 = Class215.anInt1614 + -anInt3042;
 					}
@@ -398,13 +398,13 @@ final class Class359 {
 		aBoolean3054 = false;
 		try {
 			aByte3039 = (byte) i_18_;
-			((Class359) this).anInt3038 = i;
-			((Class359) this).anInt3059 = i_17_;
+			this.anInt3038 = i;
+			this.anInt3059 = i_17_;
 			aByte3040 = (byte) i_19_;
-			((Class359) this).anInt3052 = ((Class352) class352).id;
+			this.anInt3052 = class352.id;
 			aBoolean3054 = bool;
 			aClass246_Sub3_3049 = class246_sub3;
-			aBoolean3037 = (var_ha.method1771() && ((Class352) class352).aBoolean2935 && !aBoolean3054);
+			aBoolean3037 = (var_ha.method1771() && class352.aBoolean2935 && !aBoolean3054);
 			if (i_20_ != -1)
 				aBoolean3047 = true;
 			method3902(i_20_, (byte) 101);

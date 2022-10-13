@@ -13,28 +13,28 @@ final class Class98_Sub46_Sub16 extends Class98_Sub46 {
 
 	static final void method1613(int i, int i_0_, byte[] is, int i_1_, int i_2_, int i_3_, int i_4_) {
 		try {
-			if ((i ^ 0xffffffff) < i_1_ && !Class81.method815(i, 0))
+			if ((~i) < i_1_ && !Class81.method815(i, 0))
 				throw new IllegalArgumentException("");
-			if ((i_2_ ^ 0xffffffff) < -1 && !Class81.method815(i_2_, 0))
+			if (i_2_ > 0 && !Class81.method815(i_2_, 0))
 				throw new IllegalArgumentException("");
 			int i_5_ = Class246_Sub3_Sub3.method3014(1, i_4_);
 			int i_6_ = 0;
-			int i_7_ = (i ^ 0xffffffff) <= (i_2_ ^ 0xffffffff) ? i_2_ : i;
-			int i_8_ = i >> 1044223969;
-			int i_9_ = i_2_ >> -694038175;
+			int i_7_ = i_2_ <= i ? i_2_ : i;
+			int i_8_ = i >> 1;
+			int i_9_ = i_2_ >> 1;
 			byte[] is_10_ = is;
 			byte[] is_11_ = new byte[i_5_ * (i_9_ * i_8_)];
 			for (;;) {
 				OpenGL.glTexImage2Dub(i_0_, i_6_, i_3_, i, i_2_, 0, i_4_, 5121, is_10_, 0);
-				if ((i_7_ ^ 0xffffffff) >= -2)
+				if (i_7_ <= 1)
 					break;
 				int i_12_ = i_5_ * i;
 				for (int i_13_ = 0; i_13_ < i_5_; i_13_++) {
 					int i_14_ = i_13_;
 					int i_15_ = i_13_;
 					int i_16_ = i_15_ - -i_12_;
-					for (int i_17_ = 0; (i_17_ ^ 0xffffffff) > (i_9_ ^ 0xffffffff); i_17_++) {
-						for (int i_18_ = 0; (i_8_ ^ 0xffffffff) < (i_18_ ^ 0xffffffff); i_18_++) {
+					for (int i_17_ = 0; i_9_ > i_17_; i_17_++) {
+						for (int i_18_ = 0; i_18_ < i_8_; i_18_++) {
 							int i_19_ = is_10_[i_15_];
 							i_15_ += i_5_;
 							i_19_ += is_10_[i_15_];
@@ -43,7 +43,7 @@ final class Class98_Sub46_Sub16 extends Class98_Sub46 {
 							i_16_ += i_5_;
 							i_19_ += is_10_[i_16_];
 							i_16_ += i_5_;
-							is_11_[i_14_] = (byte) (i_19_ >> 1943518018);
+							is_11_[i_14_] = (byte) (i_19_ >> 2);
 							i_14_ += i_5_;
 						}
 						i_15_ += i_12_;
@@ -67,7 +67,7 @@ final class Class98_Sub46_Sub16 extends Class98_Sub46 {
 
 	final boolean method1614(byte i) {
 		try {
-			if (((Class98_Sub46_Sub16) this).aClass7Array6045 != null)
+			if (this.aClass7Array6045 != null)
 				return true;
 			if (aByteArrayArray6048 == null) {
 				synchronized (Class64_Sub15.aClass207_3679) {
@@ -80,10 +80,10 @@ final class Class98_Sub46_Sub16 extends Class98_Sub46 {
 				}
 			}
 			boolean bool = true;
-			for (int i_22_ = 0; ((aByteArrayArray6048.length ^ 0xffffffff) < (i_22_ ^ 0xffffffff)); i_22_++) {
+			for (int i_22_ = 0; (i_22_ < aByteArrayArray6048.length); i_22_++) {
 				byte[] is = aByteArrayArray6048[i_22_];
 				RSByteBuffer class98_sub22 = new RSByteBuffer(is);
-				((RSByteBuffer) class98_sub22).position = 1;
+				class98_sub22.position = 1;
 				int i_23_ = class98_sub22.readShort();
 				synchronized (Class64_Sub2.aClass207_3644) {
 					bool &= Class64_Sub2.aClass207_3644.method2742(-89, i_23_);
@@ -95,17 +95,17 @@ final class Class98_Sub46_Sub16 extends Class98_Sub46 {
 			int[] is;
 			synchronized (Class64_Sub15.aClass207_3679) {
 				int i_24_ = Class64_Sub15.aClass207_3679.method2761(0, anInt6047);
-				((Class98_Sub46_Sub16) this).aClass7Array6045 = new FrameDefinitions[i_24_];
+				this.aClass7Array6045 = new FrameDefinitions[i_24_];
 				is = Class64_Sub15.aClass207_3679.method2743(anInt6047, 6341);
 			}
 			for (int i_25_ = 0; i_25_ < is.length; i_25_++) {
 				byte[] is_26_ = aByteArrayArray6048[i_25_];
 				RSByteBuffer class98_sub22 = new RSByteBuffer(is_26_);
-				((RSByteBuffer) class98_sub22).position = 1;
+				class98_sub22.position = 1;
 				int i_27_ = class98_sub22.readShort();
 				Class98_Sub1 class98_sub1 = null;
 				for (Class98_Sub1 class98_sub1_28_ = (Class98_Sub1) class148.method2418(32); class98_sub1_28_ != null; class98_sub1_28_ = (Class98_Sub1) class148.method2417(92)) {
-					if (i_27_ == ((Class98_Sub1) class98_sub1_28_).anInt3813) {
+					if (i_27_ == class98_sub1_28_.anInt3813) {
 						class98_sub1 = class98_sub1_28_;
 						break;
 					}
@@ -116,7 +116,7 @@ final class Class98_Sub46_Sub16 extends Class98_Sub46 {
 					}
 					class148.add_last(class98_sub1, -20911);
 				}
-				((Class98_Sub46_Sub16) this).aClass7Array6045[is[i_25_]] = new FrameDefinitions(is_26_, class98_sub1);
+				this.aClass7Array6045[is[i_25_]] = new FrameDefinitions(is_26_, class98_sub1);
 			}
 			aByteArrayArray6048 = null;
 			int i_29_ = -47 % ((5 - i) / 61);
@@ -130,7 +130,7 @@ final class Class98_Sub46_Sub16 extends Class98_Sub46 {
 		try {
 			if (bool != false)
 				return true;
-			return (((FrameDefinitions) ((Class98_Sub46_Sub16) this).aClass7Array6045[i]).aBoolean95);
+			return (this.aClass7Array6045[i].aBoolean95);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "jea.C(" + i + ',' + bool + ')');
 		}
@@ -150,7 +150,7 @@ final class Class98_Sub46_Sub16 extends Class98_Sub46 {
 		try {
 			if (bool != false)
 				return true;
-			return (((FrameDefinitions) ((Class98_Sub46_Sub16) this).aClass7Array6045[i]).aBoolean102);
+			return (this.aClass7Array6045[i].aBoolean102);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "jea.A(" + bool + ',' + i + ')');
 		}
@@ -178,7 +178,7 @@ final class Class98_Sub46_Sub16 extends Class98_Sub46 {
 		try {
 			if (i_31_ != 31239)
 				method1613(53, 0, null, 91, 99, -3, -67);
-			return (((FrameDefinitions) ((Class98_Sub46_Sub16) this).aClass7Array6045[i]).aBoolean104);
+			return (this.aClass7Array6045[i].aBoolean104);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "jea.G(" + i + ',' + i_31_ + ')');
 		}

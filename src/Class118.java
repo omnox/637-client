@@ -28,7 +28,7 @@ final class Class118 {
 						string_2_ = Class353.method3867(-1, string_2_);
 						if (string_2_ != null && string_2_.equals(string_0_)) {
 							Class314.anInt2692--;
-							for (int i_3_ = i_1_; ((Class314.anInt2692 ^ 0xffffffff) < (i_3_ ^ 0xffffffff)); i_3_++) {
+							for (int i_3_ = i_1_; (i_3_ < Class314.anInt2692); i_3_++) {
 								Class98_Sub25.aStringArray4026[i_3_] = Class98_Sub25.aStringArray4026[1 + i_3_];
 								Class315.aStringArray3527[i_3_] = Class315.aStringArray3527[1 + i_3_];
 								Class98_Sub26.anIntArray4030[i_3_] = Class98_Sub26.anIntArray4030[1 + i_3_];
@@ -38,8 +38,8 @@ final class Class118 {
 							}
 							Class363.anInt3099 = Class24.anInt242;
 							OutgoingPacket class98_sub11 = (Class246_Sub3_Sub4.method3023(260, r_Sub2.aClass171_6330, Class331.aClass117_2811));
-							((OutgoingPacket) class98_sub11).packet.writeByte(r_Sub2.method1650(string, (byte) 75));
-							((OutgoingPacket) class98_sub11).packet.method1188(string, (byte) 113);
+							class98_sub11.packet.writeByte(r_Sub2.method1650(string, (byte) 75));
+							class98_sub11.packet.method1188(string, (byte) 113);
 							Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 							break;
 						}
@@ -63,7 +63,7 @@ final class Class118 {
 		try {
 			if (bool != true)
 				anInt980 = -111;
-			if (((ha_Sub1) aHa_Sub1_977).aBoolean4460 && ((ha_Sub1) aHa_Sub1_977).aBoolean4447 && aClass336_976 == null) {
+			if (aHa_Sub1_977.aBoolean4460 && aHa_Sub1_977.aBoolean4447 && aClass336_976 == null) {
 				Class345 class345 = (Class246_Sub3_Sub1_Sub1.method2996(35632, aHa_Sub1_977, false, "uniform float rcpRelief;\nuniform vec2 sampleSize;\nuniform sampler3D heightMap;\nvoid main() {\nfloat dx = texture3D(heightMap, vec3(-sampleSize.x, 0.0, 0.0)+gl_TexCoord[0].xyz).r - texture3D(heightMap, vec3(sampleSize.x, 0.0, 0.0)+gl_TexCoord[0].xyz).r;\nfloat dy = texture3D(heightMap, vec3(0.0, -sampleSize.y, 0.0)+gl_TexCoord[0].xyz).r - texture3D(heightMap, vec3(0.0, sampleSize.y, 0.0)+gl_TexCoord[0].xyz).r;\ngl_FragColor = vec4(0.5+normalize(vec3(dx, dy, rcpRelief))*0.5, texture3D(heightMap, gl_TexCoord[0].xyz).r);\n}\n"));
 				if (class345 != null)
 					aClass336_976 = Class177.method2584(aHa_Sub1_977, new Class345[] { class345 }, bool);
@@ -80,8 +80,8 @@ final class Class118 {
 		try {
 			if (!method2171(true))
 				return false;
-			Class288 class288 = ((ha_Sub1) aHa_Sub1_977).aClass288_4363;
-			Class98_Sub46_Sub14 class98_sub46_sub14 = new Class98_Sub46_Sub14(aHa_Sub1_977, 6408, (((Class42_Sub4) class42_sub4_4_).anInt5369), (((Class42_Sub4) class42_sub4_4_).anInt5372));
+			Class288 class288 = aHa_Sub1_977.aClass288_4363;
+			Class98_Sub46_Sub14 class98_sub46_sub14 = new Class98_Sub46_Sub14(aHa_Sub1_977, 6408, (class42_sub4_4_.anInt5369), (class42_sub4_4_.anInt5372));
 			boolean bool = false;
 			aHa_Sub1_977.method1898(true, class288);
 			class288.method3406((byte) 120, 0, class98_sub46_sub14);
@@ -93,13 +93,13 @@ final class Class118 {
 				OpenGL.glLoadIdentity();
 				OpenGL.glOrtho(0.0, 1.0, 0.0, 1.0, -1.0, 1.0);
 				OpenGL.glPushAttrib(2048);
-				OpenGL.glViewport(0, 0, ((Class42_Sub4) class42_sub4_4_).anInt5369, ((Class42_Sub4) class42_sub4_4_).anInt5372);
-				OpenGL.glUseProgramObjectARB(((Class336) aClass336_976).aLong2821);
-				OpenGL.glUniform1iARB((OpenGL.glGetUniformLocationARB(((Class336) aClass336_976).aLong2821, "heightMap")), 0);
-				OpenGL.glUniform1fARB((OpenGL.glGetUniformLocationARB(((Class336) aClass336_976).aLong2821, "rcpRelief")), 1.0F / f);
-				OpenGL.glUniform2fARB(OpenGL.glGetUniformLocationARB((((Class336) aClass336_976).aLong2821), "sampleSize"), 1.0F / (float) ((Class42_Sub4) class42_sub4).anInt5369, 1.0F / (float) ((Class42_Sub4) class42_sub4).anInt5372);
-				for (int i_5_ = 0; i_5_ < ((Class42_Sub4) class42_sub4_4_).anInt5368; i_5_++) {
-					float f_6_ = ((float) i_5_ / (float) (((Class42_Sub4) class42_sub4_4_).anInt5368));
+				OpenGL.glViewport(0, 0, class42_sub4_4_.anInt5369, class42_sub4_4_.anInt5372);
+				OpenGL.glUseProgramObjectARB(aClass336_976.aLong2821);
+				OpenGL.glUniform1iARB((OpenGL.glGetUniformLocationARB(aClass336_976.aLong2821, "heightMap")), 0);
+				OpenGL.glUniform1fARB((OpenGL.glGetUniformLocationARB(aClass336_976.aLong2821, "rcpRelief")), 1.0F / f);
+				OpenGL.glUniform2fARB(OpenGL.glGetUniformLocationARB((aClass336_976.aLong2821), "sampleSize"), 1.0F / (float) class42_sub4.anInt5369, 1.0F / (float) class42_sub4.anInt5372);
+				for (int i_5_ = 0; i_5_ < class42_sub4_4_.anInt5368; i_5_++) {
+					float f_6_ = ((float) i_5_ / (float) (class42_sub4_4_.anInt5368));
 					aHa_Sub1_977.method1863(1, class42_sub4);
 					OpenGL.glBegin(7);
 					OpenGL.glTexCoord3f(0.0F, 0.0F, f_6_);
@@ -111,7 +111,7 @@ final class Class118 {
 					OpenGL.glTexCoord3f(0.0F, 1.0F, f_6_);
 					OpenGL.glVertex2f(0.0F, 1.0F);
 					OpenGL.glEnd();
-					class42_sub4_4_.method395(0, 0, i_5_, i, 0, (((Class42_Sub4) class42_sub4_4_).anInt5369), (((Class42_Sub4) class42_sub4_4_).anInt5372), 0);
+					class42_sub4_4_.method395(0, 0, i_5_, i, 0, (class42_sub4_4_.anInt5369), (class42_sub4_4_.anInt5372), 0);
 				}
 				OpenGL.glUseProgramObjectARB(0L);
 				OpenGL.glPopAttrib();
@@ -132,7 +132,7 @@ final class Class118 {
 		try {
 			do {
 				if (bool && Class278.aClass98_Sub46_Sub10_2056 != null) {
-					Class98_Sub22_Sub1.anInt5789 = ((Class98_Sub46_Sub10) Class278.aClass98_Sub46_Sub10_2056).anInt6014;
+					Class98_Sub22_Sub1.anInt5789 = Class278.aClass98_Sub46_Sub10_2056.anInt6014;
 					if (!client.aBoolean3553)
 						break;
 				}

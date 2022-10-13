@@ -13,9 +13,9 @@ final class Class274 {
 	}
 
 	Class274(Class274 class274_0_) {
-		((Class274) this).anInt2044 = ((Class274) class274_0_).anInt2044;
-		((Class274) this).anInt2043 = ((Class274) class274_0_).anInt2043;
-		((Class274) this).anInt2042 = ((Class274) class274_0_).anInt2042;
-		((Class274) this).anInt2045 = ((Class274) class274_0_).anInt2045;
+		this.anInt2044 = class274_0_.anInt2044;
+		this.anInt2043 = class274_0_.anInt2043;
+		this.anInt2042 = class274_0_.anInt2042;
+		this.anInt2045 = class274_0_.anInt2045;
 	}
 }

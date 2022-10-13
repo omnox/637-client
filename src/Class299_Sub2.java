@@ -28,7 +28,7 @@ final class Class299_Sub2 extends RtMouseListener implements MouseListener, Mous
 		try {
 			if (i != -19)
 				method3512(-127);
-			if ((anInt5290 & 0x2 ^ 0xffffffff) == -1)
+			if ((anInt5290 & 0x2) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -39,7 +39,7 @@ final class Class299_Sub2 extends RtMouseListener implements MouseListener, Mous
 	final boolean method3506(byte i) {
 		try {
 			int i_0_ = -85 % ((72 - i) / 35);
-			if ((0x1 & anInt5290 ^ 0xffffffff) == -1)
+			if ((0x1 & anInt5290) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -51,10 +51,10 @@ final class Class299_Sub2 extends RtMouseListener implements MouseListener, Mous
 		do {
 			try {
 				int i = method3528(23542, mouseevent);
-				if ((i ^ 0xffffffff) == -2)
+				if (i == 1)
 					method3529(22661, mouseevent.getX(), mouseevent.getClickCount(), mouseevent.getY(), 0);
-				else if ((i ^ 0xffffffff) != -5) {
-					if ((i ^ 0xffffffff) == -3)
+				else if (i != 4) {
+					if (i == 2)
 						method3529(22661, mouseevent.getX(), mouseevent.getClickCount(), mouseevent.getY(), 1);
 				} else
 					method3529(22661, mouseevent.getX(), mouseevent.getClickCount(), mouseevent.getY(), 2);
@@ -73,7 +73,7 @@ final class Class299_Sub2 extends RtMouseListener implements MouseListener, Mous
 		try {
 			if (i != 1)
 				return false;
-			if ((0x4 & anInt5290 ^ 0xffffffff) == -1)
+			if ((0x4 & anInt5290) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -135,9 +135,9 @@ final class Class299_Sub2 extends RtMouseListener implements MouseListener, Mous
 	static final void method3523(int i, int i_1_, int i_2_) {
 		do {
 			try {
-				if ((Class257.anInt1948 ^ 0xffffffff) != -1) {
+				if (Class257.anInt1948 != 0) {
 					if (i_1_ < 0) {
-						for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > -17; i_3_++)
+						for (int i_3_ = 0; i_3_ < 16; i_3_++)
 							Class77_Sub1.anIntArray3804[i_3_] = i;
 					} else
 						Class77_Sub1.anIntArray3804[i_1_] = i;
@@ -212,9 +212,9 @@ final class Class299_Sub2 extends RtMouseListener implements MouseListener, Mous
 		try {
 			if (i < 113)
 				return false;
-			if (i_5_ == 13 || i_5_ == 23 || (i_5_ ^ 0xffffffff) == -3 || i_5_ == 30 || i_5_ == 18)
+			if (i_5_ == 13 || i_5_ == 23 || i_5_ == 2 || i_5_ == 30 || i_5_ == 18)
 				return true;
-			if (i_5_ == 58 || (i_5_ ^ 0xffffffff) == -1009)
+			if (i_5_ == 58 || i_5_ == 1008)
 				return true;
 			return false;
 		} catch (RuntimeException runtimeexception) {
@@ -234,7 +234,7 @@ final class Class299_Sub2 extends RtMouseListener implements MouseListener, Mous
 		try {
 			if (i_6_ != 770356935)
 				aClass354_5297 = null;
-			return i >>> 770356935;
+			return i >>> 7;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "un.V(" + i + ',' + i_6_ + ')');
 		}
@@ -318,15 +318,15 @@ final class Class299_Sub2 extends RtMouseListener implements MouseListener, Mous
 		do {
 			try {
 				int i = method3528(23542, mouseevent);
-				if ((i & anInt5294 ^ 0xffffffff) == -1)
+				if ((i & anInt5294) == 0)
 					i = anInt5294;
 				if ((0x1 & i) != 0)
 					method3529(22661, mouseevent.getX(), mouseevent.getClickCount(), mouseevent.getY(), 3);
 				if ((0x4 & i) != 0)
 					method3529(22661, mouseevent.getX(), mouseevent.getClickCount(), mouseevent.getY(), 5);
-				if ((0x2 & i ^ 0xffffffff) != -1)
+				if ((0x2 & i) != 0)
 					method3529(22661, mouseevent.getX(), mouseevent.getClickCount(), mouseevent.getY(), 4);
-				anInt5294 &= i ^ 0xffffffff;
+				anInt5294 &= ~i;
 				if (!mouseevent.isPopupTrigger())
 					break;
 				mouseevent.consume();

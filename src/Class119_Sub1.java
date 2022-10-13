@@ -76,11 +76,11 @@ final class Class119_Sub1 extends Class119 {
 	final void method2179(byte i, int i_8_, int i_9_) {
 		try {
 			int i_10_ = -102 % ((50 - i) / 38);
-			int i_11_ = i_9_ * anInt4721 >> 611692;
-			int i_12_ = i_9_ * anInt4719 >> -1503457972;
-			int i_13_ = anInt4717 * i_8_ >> -1908682836;
-			int i_14_ = anInt4720 * i_8_ >> 243200236;
-			InputStream_Sub2.method125(i_12_, ((Class119) this).anInt985, i_14_, i_13_, i_11_, 21597);
+			int i_11_ = i_9_ * anInt4721 >> 12;
+			int i_12_ = i_9_ * anInt4719 >> 12;
+			int i_13_ = anInt4717 * i_8_ >> 12;
+			int i_14_ = anInt4720 * i_8_ >> 12;
+			InputStream_Sub2.method125(i_12_, this.anInt985, i_14_, i_13_, i_11_, 21597);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("bp.E(" + i + ',' + i_8_ + ',' + i_9_ + ')'));
 		}

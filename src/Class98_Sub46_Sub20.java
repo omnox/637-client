@@ -26,12 +26,12 @@ abstract class Class98_Sub46_Sub20 extends Class98_Sub46 {
 		try {
 			if (i_0_ >= -39)
 				return 26;
-			if ((i_1_ ^ 0xffffffff) == (i_2_ ^ 0xffffffff))
+			if (i_2_ == i_1_)
 				return i_1_;
 			int i_3_ = -i + 128;
-			int i_4_ = i * (0x7f & i_2_) + i_3_ * (0x7f & i_1_) >> 747196583;
-			int i_5_ = i_3_ * (0x380 & i_1_) + (0x380 & i_2_) * i >> 1680000903;
-			int i_6_ = (0xfc00 & i_2_) * i + (i_1_ & 0xfc00) * i_3_ >> -239610233;
+			int i_4_ = i * (0x7f & i_2_) + i_3_ * (0x7f & i_1_) >> 7;
+			int i_5_ = i_3_ * (0x380 & i_1_) + (0x380 & i_2_) * i >> 7;
+			int i_6_ = (0xfc00 & i_2_) * i + (i_1_ & 0xfc00) * i_3_ >> 7;
 			return i_5_ & 0x380 | 0xfc00 & i_6_ | i_4_ & 0x7f;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("naa.D(" + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'));
@@ -48,8 +48,8 @@ abstract class Class98_Sub46_Sub20 extends Class98_Sub46 {
 
 	Class98_Sub46_Sub20(Interface20 interface20, int i) {
 		try {
-			((Class98_Sub46_Sub20) this).anInt6072 = i;
-			((Class98_Sub46_Sub20) this).anInterface20_6071 = interface20;
+			this.anInt6072 = i;
+			this.anInterface20_6071 = interface20;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("naa.<init>(" + (interface20 != null ? "{...}" : "null") + ',' + i + ')'));
 		}
@@ -57,7 +57,7 @@ abstract class Class98_Sub46_Sub20 extends Class98_Sub46 {
 
 	static {
 		int i = 2;
-		for (int i_8_ = 0; (i_8_ ^ 0xffffffff) > -33; i_8_++) {
+		for (int i_8_ = 0; i_8_ < 32; i_8_++) {
 			anIntArray6070[i_8_] = -1 + i;
 			i += i;
 		}

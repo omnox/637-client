@@ -52,9 +52,9 @@ final class Class98_Sub10_Sub21 extends Class98_Sub10 {
 
 	static final boolean method1064(int i, boolean bool) {
 		try {
-			if ((i ^ 0xffffffff) == -16 || (i ^ 0xffffffff) == -5 || (i ^ 0xffffffff) == -9 || i == 16 || i == 1007)
+			if (i == 15 || i == 4 || i == 8 || i == 16 || i == 1007)
 				return true;
-			if ((i ^ 0xffffffff) == -51 || (i ^ 0xffffffff) == -1010)
+			if (i == 50 || i == 1009)
 				return true;
 			if (bool != false)
 				method1066(-107, null);
@@ -68,11 +68,11 @@ final class Class98_Sub10_Sub21 extends Class98_Sub10 {
 		try {
 			if (i != -15)
 				return false;
-			int i_2_ = anInt5648 * (i_0_ + i_1_) >> 387809964;
-			int i_3_ = (Class278_Sub1.anIntArray5168[(255 * i_2_ & 0xff4a7) >> 2005561068]);
-			i_3_ = (i_3_ << -2091824980) / anInt5648;
-			i_3_ = (i_3_ << 431388332) / anInt5647;
-			i_3_ = anInt5644 * i_3_ >> 1509067820;
+			int i_2_ = anInt5648 * (i_0_ + i_1_) >> 12;
+			int i_3_ = (Class278_Sub1.anIntArray5168[(255 * i_2_ & 0xff4a7) >> 12]);
+			i_3_ = (i_3_ << 12) / anInt5648;
+			i_3_ = (i_3_ << 12) / anInt5647;
+			i_3_ = anInt5644 * i_3_ >> 12;
 			if (i_3_ <= -i_0_ + i_1_ || i_1_ - i_0_ <= -i_3_)
 				return false;
 			return true;
@@ -83,7 +83,7 @@ final class Class98_Sub10_Sub21 extends Class98_Sub10 {
 
 	static final void method1066(int i, GameInterfaceData class293) {
 		try {
-			if (((GameInterfaceData) class293).type == 5 && (((GameInterfaceData) class293).anInt2302 ^ 0xffffffff) != 0)
+			if (class293.type == 5 && class293.anInt2302 != -1)
 				Class372.method3957(Class265.aHa1974, true, class293);
 			int i_4_ = 31 / ((27 - i) / 56);
 		} catch (RuntimeException runtimeexception) {
@@ -95,12 +95,12 @@ final class Class98_Sub10_Sub21 extends Class98_Sub10 {
 		try {
 			if (i != -13306)
 				method1068((byte) -36);
-			int i_7_ = (i_6_ - i_5_) * anInt5648 >> 1378239116;
-			int i_8_ = (Class278_Sub1.anIntArray5168[(0xffce8 & 255 * i_7_) >> 970817420]);
-			i_8_ = (i_8_ << -1235031796) / anInt5648;
-			i_8_ = (i_8_ << 1531907340) / anInt5647;
-			i_8_ = i_8_ * anInt5644 >> 9457036;
-			if (i_8_ <= i_6_ + i_5_ || (-i_8_ ^ 0xffffffff) <= (i_5_ + i_6_ ^ 0xffffffff))
+			int i_7_ = (i_6_ - i_5_) * anInt5648 >> 12;
+			int i_8_ = (Class278_Sub1.anIntArray5168[(0xffce8 & 255 * i_7_) >> 12]);
+			i_8_ = (i_8_ << 12) / anInt5648;
+			i_8_ = (i_8_ << 12) / anInt5647;
+			i_8_ = i_8_ * anInt5644 >> 12;
+			if (i_8_ <= i_6_ + i_5_ || i_5_ + i_6_ <= -i_8_)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -110,24 +110,24 @@ final class Class98_Sub10_Sub21 extends Class98_Sub10 {
 
 	final int[] method990(int i, int i_9_) {
 		try {
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_9_);
+			int[] is = this.aClass16_3863.method237((byte) 98, i_9_);
 			if (i != 255)
 				method1067(91, 52, -49);
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
+			if (this.aClass16_3863.aBoolean198) {
 				int i_10_ = Class352.anIntArray3001[i_9_] - 2048;
 				for (int i_11_ = 0; Class25.anInt268 > i_11_; i_11_++) {
 					int i_12_ = -2048 + Class64_Sub1.anIntArray3640[i_11_];
 					int i_13_ = i_12_ - -anInt5645;
 					i_13_ = i_13_ >= -2048 ? i_13_ : i_13_ + 4096;
-					i_13_ = ((i_13_ ^ 0xffffffff) >= -2049 ? i_13_ : -4096 + i_13_);
+					i_13_ = (i_13_ <= 2048 ? i_13_ : -4096 + i_13_);
 					int i_14_ = i_10_ - -anInt5651;
 					i_14_ = i_14_ < -2048 ? i_14_ + 4096 : i_14_;
 					i_14_ = i_14_ <= 2048 ? i_14_ : -4096 + i_14_;
 					int i_15_ = anInt5650 + i_12_;
 					i_15_ = i_15_ >= -2048 ? i_15_ : i_15_ + 4096;
-					i_15_ = (i_15_ ^ 0xffffffff) < -2049 ? i_15_ + -4096 : i_15_;
+					i_15_ = i_15_ > 2048 ? i_15_ + -4096 : i_15_;
 					int i_16_ = anInt5649 + i_10_;
-					i_16_ = (i_16_ ^ 0xffffffff) <= 2047 ? i_16_ : 4096 + i_16_;
+					i_16_ = i_16_ >= -2048 ? i_16_ : 4096 + i_16_;
 					i_16_ = i_16_ <= 2048 ? i_16_ : i_16_ + -4096;
 					is[i_11_] = (method1067(-13306, i_13_, i_14_) || method1065((byte) -15, i_15_, i_16_)) ? 4096 : 0;
 				}
@@ -159,9 +159,9 @@ final class Class98_Sub10_Sub21 extends Class98_Sub10 {
 												break while_123_;
 											if (i_18_ == 4)
 												break while_124_;
-											if ((i_18_ ^ 0xffffffff) == -6)
+											if (i_18_ == 5)
 												break while_125_;
-											if ((i_18_ ^ 0xffffffff) != -7)
+											if (i_18_ != 6)
 												break while_127_;
 											if (!client.aBoolean3553)
 												break while_126_;

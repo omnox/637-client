@@ -12,10 +12,10 @@ final class Class64_Sub5 extends Class64 {
 	final void method551(byte i) {
 		do {
 			try {
-				if (((Class98_Sub27) ((Class64) this).aClass98_Sub27_495).aClass64_Sub8_4042.method586(true) && !Class144.method2311(false, ((Class98_Sub27) (((Class64) this).aClass98_Sub27_495)).aClass64_Sub8_4042.method583((byte) 124)))
-					((Class64) this).anInt494 = 0;
-				if ((((Class64) this).anInt494 ^ 0xffffffff) > -1 || ((Class64) this).anInt494 > 1)
-					((Class64) this).anInt494 = method552(0);
+				if (this.aClass98_Sub27_495.aClass64_Sub8_4042.method586(true) && !Class144.method2311(false, this.aClass98_Sub27_495.aClass64_Sub8_4042.method583((byte) 124)))
+					this.anInt494 = 0;
+				if (this.anInt494 < 0 || this.anInt494 > 1)
+					this.anInt494 = method552(0);
 				if (i > 118)
 					break;
 				aClass79_3650 = null;
@@ -28,7 +28,7 @@ final class Class64_Sub5 extends Class64 {
 
 	final void method550(int i, int i_0_) {
 		try {
-			((Class64) this).anInt494 = i_0_;
+			this.anInt494 = i_0_;
 			int i_1_ = 60 / ((i - -26) / 41);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "dda.B(" + i + ',' + i_0_ + ')');
@@ -51,7 +51,7 @@ final class Class64_Sub5 extends Class64 {
 
 	final int method556(int i, int i_2_) {
 		try {
-			if (!Class144.method2311(false, ((Class98_Sub27) ((Class64) this).aClass98_Sub27_495).aClass64_Sub8_4042.method583((byte) 125)))
+			if (!Class144.method2311(false, this.aClass98_Sub27_495.aClass64_Sub8_4042.method583((byte) 125)))
 				return 3;
 			if (i_2_ != 29053)
 				anIntArray3652 = null;
@@ -82,7 +82,7 @@ final class Class64_Sub5 extends Class64 {
 		try {
 			if (i <= 119)
 				return -44;
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "dda.E(" + i + ')');
 		}
@@ -92,7 +92,7 @@ final class Class64_Sub5 extends Class64 {
 		try {
 			if (i != -1)
 				return false;
-			if (!Class144.method2311(false, ((Class98_Sub27) ((Class64) this).aClass98_Sub27_495).aClass64_Sub8_4042.method583((byte) 124)))
+			if (!Class144.method2311(false, this.aClass98_Sub27_495.aClass64_Sub8_4042.method583((byte) 124)))
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

@@ -43,11 +43,11 @@ final class Class98_Sub42 extends Node {
 			try {
 				if (i != 256)
 					anInt4239 = -78;
-				Class98_Sub36 class98_sub36 = ((Class98_Sub36) Class156_Sub1.aClass377_3277.method3990((long) i_0_, -1));
+				Class98_Sub36 class98_sub36 = ((Class98_Sub36) Class156_Sub1.aClass377_3277.method3990(i_0_, -1));
 				if (class98_sub36 == null)
 					break;
-				((Class98_Sub36) class98_sub36).aBoolean4153 = !((Class98_Sub36) class98_sub36).aBoolean4153;
-				((Class98_Sub36) class98_sub36).aClass237_Sub1_4157.method2911(((Class98_Sub36) class98_sub36).aBoolean4153, (byte) 22);
+				class98_sub36.aBoolean4153 = !class98_sub36.aBoolean4153;
+				class98_sub36.aClass237_Sub1_4157.method2911(class98_sub36.aBoolean4153, (byte) 22);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "qfa.B(" + i + ',' + i_0_ + ')');
 			}
@@ -81,74 +81,74 @@ final class Class98_Sub42 extends Node {
 		do {
 			try {
 				if (bool != true)
-					((Class98_Sub42) this).anInt4228 = 82;
-				int i = ((Class98_Sub42) this).anInt4210;
-				boolean bool_1_ = ((Class98_Sub42) this).aBoolean4215;
-				if (((Class98_Sub42) this).aClass352_4233 != null) {
-					Class352 class352 = ((Class98_Sub42) this).aClass352_4233.method3852(Class75.aClass140_584, (byte) -96);
+					this.anInt4228 = 82;
+				int i = this.anInt4210;
+				boolean bool_1_ = this.aBoolean4215;
+				if (this.aClass352_4233 != null) {
+					Class352 class352 = this.aClass352_4233.method3852(Class75.aClass140_584, (byte) -96);
 					if (class352 != null) {
-						((Class98_Sub42) this).anInt4223 = ((Class352) class352).anInt3006;
-						((Class98_Sub42) this).anInt4219 = ((Class352) class352).anInt2949;
-						((Class98_Sub42) this).aBoolean4226 = ((Class352) class352).aBoolean2957;
-						((Class98_Sub42) this).anInt4205 = ((Class352) class352).anInt2972;
-						((Class98_Sub42) this).anInt4236 = ((Class352) class352).anInt2987;
-						((Class98_Sub42) this).anInt4210 = ((Class352) class352).anInt2996;
-						((Class98_Sub42) this).aBoolean4215 = ((Class352) class352).aBoolean2992;
-						((Class98_Sub42) this).anIntArray4208 = ((Class352) class352).anIntArray2926;
-						((Class98_Sub42) this).anInt4237 = ((Class352) class352).anInt2950;
-						((Class98_Sub42) this).anInt4228 = ((Class352) class352).anInt2981 << -1567841911;
+						this.anInt4223 = class352.anInt3006;
+						this.anInt4219 = class352.anInt2949;
+						this.aBoolean4226 = class352.aBoolean2957;
+						this.anInt4205 = class352.anInt2972;
+						this.anInt4236 = class352.anInt2987;
+						this.anInt4210 = class352.anInt2996;
+						this.aBoolean4215 = class352.aBoolean2992;
+						this.anIntArray4208 = class352.anIntArray2926;
+						this.anInt4237 = class352.anInt2950;
+						this.anInt4228 = class352.anInt2981 << 9;
 					} else {
-						((Class98_Sub42) this).aBoolean4215 = false;
-						((Class98_Sub42) this).anInt4237 = 256;
-						((Class98_Sub42) this).anInt4228 = 0;
-						((Class98_Sub42) this).anIntArray4208 = null;
-						((Class98_Sub42) this).anInt4223 = 256;
-						((Class98_Sub42) this).anInt4217 = 0;
-						((Class98_Sub42) this).anInt4205 = 0;
-						((Class98_Sub42) this).anInt4219 = 0;
-						((Class98_Sub42) this).aBoolean4226 = false;
-						((Class98_Sub42) this).anInt4236 = 0;
-						((Class98_Sub42) this).anInt4210 = -1;
+						this.aBoolean4215 = false;
+						this.anInt4237 = 256;
+						this.anInt4228 = 0;
+						this.anIntArray4208 = null;
+						this.anInt4223 = 256;
+						this.anInt4217 = 0;
+						this.anInt4205 = 0;
+						this.anInt4219 = 0;
+						this.aBoolean4226 = false;
+						this.anInt4236 = 0;
+						this.anInt4210 = -1;
 					}
-				} else if ((((Class98_Sub42) this).aClass246_Sub3_Sub4_Sub2_Sub1_4209) == null) {
-					if ((((Class98_Sub42) this).aClass246_Sub3_Sub4_Sub2_Sub2_4206) != null) {
-						((Class98_Sub42) this).anInt4210 = (Class286.method3383((((Class98_Sub42) this).aClass246_Sub3_Sub4_Sub2_Sub2_4206), bool));
-						((Class98_Sub42) this).anInt4223 = 256;
-						((Class98_Sub42) this).anInt4217 = 0;
-						((Class98_Sub42) this).anInt4228 = (((Player) (((Class98_Sub42) this).aClass246_Sub3_Sub4_Sub2_Sub2_4206)).ambientSoundHearDistance) << 1762065833;
-						((Class98_Sub42) this).aBoolean4215 = (((Player) (((Class98_Sub42) this).aClass246_Sub3_Sub4_Sub2_Sub2_4206)).hasDisplayName);
-						((Class98_Sub42) this).anInt4236 = (((Player) (((Class98_Sub42) this).aClass246_Sub3_Sub4_Sub2_Sub2_4206)).anInt6514);
-						((Class98_Sub42) this).anInt4237 = 256;
+				} else if ((this.aClass246_Sub3_Sub4_Sub2_Sub1_4209) == null) {
+					if ((this.aClass246_Sub3_Sub4_Sub2_Sub2_4206) != null) {
+						this.anInt4210 = (Class286.method3383((this.aClass246_Sub3_Sub4_Sub2_Sub2_4206), bool));
+						this.anInt4223 = 256;
+						this.anInt4217 = 0;
+						this.anInt4228 = (this.aClass246_Sub3_Sub4_Sub2_Sub2_4206.ambientSoundHearDistance) << 9;
+						this.aBoolean4215 = (this.aClass246_Sub3_Sub4_Sub2_Sub2_4206.hasDisplayName);
+						this.anInt4236 = (this.aClass246_Sub3_Sub4_Sub2_Sub2_4206.anInt6514);
+						this.anInt4237 = 256;
 					}
 				} else {
-					int i_2_ = (Class277.method3293(125, (((Class98_Sub42) this).aClass246_Sub3_Sub4_Sub2_Sub1_4209)));
+					int i_2_ = (Class277.method3293(125, (this.aClass246_Sub3_Sub4_Sub2_Sub1_4209)));
 					if (i != i_2_) {
-						((Class98_Sub42) this).anInt4210 = i_2_;
-						Class141 class141 = (((Class246_Sub3_Sub4_Sub2_Sub1) (((Class98_Sub42) this).aClass246_Sub3_Sub4_Sub2_Sub1_4209)).aClass141_6504);
-						if (((Class141) class141).anIntArray1109 != null)
+						this.anInt4210 = i_2_;
+						Class141 class141 = (this.aClass246_Sub3_Sub4_Sub2_Sub1_4209.aClass141_6504);
+						if (class141.anIntArray1109 != null)
 							class141 = class141.method2300(Class75.aClass140_584, (byte) 79);
 						if (class141 != null) {
-							((Class98_Sub42) this).anInt4236 = ((Class141) class141).anInt1156;
-							((Class98_Sub42) this).anInt4223 = ((Class141) class141).anInt1101;
-							((Class98_Sub42) this).anInt4237 = ((Class141) class141).anInt1090;
-							((Class98_Sub42) this).aBoolean4215 = ((Class141) class141).aBoolean1093;
-							((Class98_Sub42) this).anInt4217 = (((Class141) class141).anInt1125 << 1720816489);
-							((Class98_Sub42) this).anInt4228 = ((Class141) class141).anInt1128 << 958920233;
+							this.anInt4236 = class141.anInt1156;
+							this.anInt4223 = class141.anInt1101;
+							this.anInt4237 = class141.anInt1090;
+							this.aBoolean4215 = class141.aBoolean1093;
+							this.anInt4217 = (class141.anInt1125 << 9);
+							this.anInt4228 = class141.anInt1128 << 9;
 						} else {
-							((Class98_Sub42) this).anInt4236 = ((Class98_Sub42) this).anInt4228 = ((Class98_Sub42) this).anInt4217 = 0;
-							((Class98_Sub42) this).aBoolean4215 = ((Class141) (((Class246_Sub3_Sub4_Sub2_Sub1) (((Class98_Sub42) this).aClass246_Sub3_Sub4_Sub2_Sub1_4209)).aClass141_6504)).aBoolean1093;
-							((Class98_Sub42) this).anInt4237 = 256;
-							((Class98_Sub42) this).anInt4223 = 256;
+							this.anInt4236 = this.anInt4228 = this.anInt4217 = 0;
+							this.aBoolean4215 = this.aClass246_Sub3_Sub4_Sub2_Sub1_4209.aClass141_6504.aBoolean1093;
+							this.anInt4237 = 256;
+							this.anInt4223 = 256;
 						}
 					}
 				}
-				if ((i ^ 0xffffffff) != (((Class98_Sub42) this).anInt4210 ^ 0xffffffff) || ((Class98_Sub42) this).aBoolean4215 == !bool_1_) {
-					if (((Class98_Sub42) this).aClass98_Sub31_Sub5_4232 == null)
+				if (this.anInt4210 != i || this.aBoolean4215 == !bool_1_) {
+					if (this.aClass98_Sub31_Sub5_4232 == null)
 						break;
-					Class81.aClass98_Sub31_Sub3_619.method1374(((Class98_Sub42) this).aClass98_Sub31_Sub5_4232);
-					((Class98_Sub42) this).aClass98_Sub13_4213 = null;
-					((Class98_Sub42) this).aClass98_Sub31_Sub5_4232 = null;
-					((Class98_Sub42) this).aClass98_Sub24_Sub1_4214 = null;
+					Class81.aClass98_Sub31_Sub3_619.method1374(this.aClass98_Sub31_Sub5_4232);
+					this.aClass98_Sub13_4213 = null;
+					this.aClass98_Sub31_Sub5_4232 = null;
+					this.aClass98_Sub24_Sub1_4214 = null;
 				}
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "qfa.A(" + bool + ')');

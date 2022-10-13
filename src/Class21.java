@@ -17,20 +17,20 @@ abstract class Class21 implements Interface4 {
 
 	final void method256(int i, float[] fs, boolean bool, int i_0_, int i_1_) {
 		try {
-			if ((i ^ 0xffffffff) < -1 && !Class81.method815(i, 0))
+			if (i > 0 && !Class81.method815(i, 0))
 				throw new IllegalArgumentException("");
 			if (i_0_ > 0 && !Class81.method815(i_0_, 0))
 				throw new IllegalArgumentException("");
-			int i_2_ = ((Class164) ((Class21) this).aClass164_3237).anInt1275;
+			int i_2_ = this.aClass164_3237.anInt1275;
 			if (bool == false) {
 				int i_3_ = 0;
 				int i_4_ = i < i_0_ ? i : i_0_;
-				int i_5_ = i >> 334180961;
-				int i_6_ = i_0_ >> 1896195841;
+				int i_5_ = i >> 1;
+				int i_6_ = i_0_ >> 1;
 				float[] fs_7_ = fs;
 				float[] fs_8_ = new float[i_5_ * i_6_ * i_2_];
 				for (;;) {
-					OpenGL.glTexImage2Df(i_1_, i_3_, method260(0), i, i_0_, 0, Class196.method2665(false, ((Class21) this).aClass164_3237), 5126, fs_7_, 0);
+					OpenGL.glTexImage2Df(i_1_, i_3_, method260(0), i, i_0_, 0, Class196.method2665(false, this.aClass164_3237), 5126, fs_7_, 0);
 					if (i_4_ <= 1)
 						break;
 					int i_9_ = i * i_2_;
@@ -38,8 +38,8 @@ abstract class Class21 implements Interface4 {
 						int i_11_ = i_10_;
 						int i_12_ = i_10_;
 						int i_13_ = i_12_ - -i_9_;
-						for (int i_14_ = 0; (i_14_ ^ 0xffffffff) > (i_6_ ^ 0xffffffff); i_14_++) {
-							for (int i_15_ = 0; (i_5_ ^ 0xffffffff) < (i_15_ ^ 0xffffffff); i_15_++) {
+						for (int i_14_ = 0; i_6_ > i_14_; i_14_++) {
+							for (int i_15_ = 0; i_15_ < i_5_; i_15_++) {
 								float f = fs_7_[i_12_];
 								i_12_ += i_2_;
 								f += fs_7_[i_12_];
@@ -88,17 +88,17 @@ abstract class Class21 implements Interface4 {
 	public final void method5(int i) {
 		try {
 			if (i > 14) {
-				int i_17_ = ((Class21) this).aHa_Sub3_Sub2_3233.method1967(109);
-				int i_18_ = (((ha_Sub3_Sub2) ((Class21) this).aHa_Sub3_Sub2_3233).anIntArray6139[i_17_]);
-				if (((Class21) this).anInt3235 != i_18_) {
-					if ((i_18_ ^ 0xffffffff) != -1) {
+				int i_17_ = this.aHa_Sub3_Sub2_3233.method1967(109);
+				int i_18_ = (this.aHa_Sub3_Sub2_3233.anIntArray6139[i_17_]);
+				if (this.anInt3235 != i_18_) {
+					if (i_18_ != 0) {
 						OpenGL.glBindTexture(i_18_, 0);
 						OpenGL.glDisable(i_18_);
 					}
-					OpenGL.glEnable(((Class21) this).anInt3235);
-					((ha_Sub3_Sub2) ((Class21) this).aHa_Sub3_Sub2_3233).anIntArray6139[i_17_] = ((Class21) this).anInt3235;
+					OpenGL.glEnable(this.anInt3235);
+					this.aHa_Sub3_Sub2_3233.anIntArray6139[i_17_] = this.anInt3235;
 				}
-				OpenGL.glBindTexture(((Class21) this).anInt3235, anInt3238);
+				OpenGL.glBindTexture(this.anInt3235, anInt3238);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "bj.I(" + i + ')');
@@ -112,7 +112,7 @@ abstract class Class21 implements Interface4 {
 					aBoolean3240 = false;
 				if (anInt3238 <= 0)
 					break;
-				((Class21) this).aHa_Sub3_Sub2_3233.method2083(-80, anInt3238, method261((byte) -95));
+				this.aHa_Sub3_Sub2_3233.method2083(-80, anInt3238, method261((byte) -95));
 				anInt3238 = 0;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "bj.Q(" + i + ')');
@@ -148,26 +148,26 @@ abstract class Class21 implements Interface4 {
 
 	final void method259(byte[] is, int i, int i_19_, int i_20_, int i_21_) {
 		try {
-			if ((i_20_ ^ 0xffffffff) < -1 && !Class81.method815(i_20_, 0))
+			if (i_20_ > 0 && !Class81.method815(i_20_, 0))
 				throw new IllegalArgumentException("");
-			if ((i_19_ ^ 0xffffffff) < -1 && !Class81.method815(i_19_, 0))
+			if (i_19_ > 0 && !Class81.method815(i_19_, 0))
 				throw new IllegalArgumentException("");
-			int i_22_ = ((Class164) ((Class21) this).aClass164_3237).anInt1275;
+			int i_22_ = this.aClass164_3237.anInt1275;
 			int i_23_ = 0;
 			if (i <= 0)
-				((Class21) this).aClass164_3237 = null;
-			int i_24_ = (i_20_ ^ 0xffffffff) <= (i_19_ ^ 0xffffffff) ? i_19_ : i_20_;
-			int i_25_ = i_20_ >> 1681309249;
-			int i_26_ = i_19_ >> -1939080479;
+				this.aClass164_3237 = null;
+			int i_24_ = i_19_ <= i_20_ ? i_19_ : i_20_;
+			int i_25_ = i_20_ >> 1;
+			int i_26_ = i_19_ >> 1;
 			byte[] is_27_ = is;
 			byte[] is_28_ = new byte[i_25_ * (i_26_ * i_22_)];
 			for (;;) {
-				OpenGL.glTexImage2Dub(i_21_, i_23_, method260(0), i_20_, i_19_, 0, Class196.method2665(false, (((Class21) this).aClass164_3237)), 5121, is_27_, 0);
+				OpenGL.glTexImage2Dub(i_21_, i_23_, method260(0), i_20_, i_19_, 0, Class196.method2665(false, (this.aClass164_3237)), 5121, is_27_, 0);
 				if (i_24_ <= 1)
 					break;
 				int i_29_ = i_20_ * i_22_;
 				byte[] is_30_ = is_28_;
-				for (int i_31_ = 0; (i_31_ ^ 0xffffffff) > (i_22_ ^ 0xffffffff); i_31_++) {
+				for (int i_31_ = 0; i_22_ > i_31_; i_31_++) {
 					int i_32_ = i_31_;
 					int i_33_ = i_31_;
 					int i_34_ = i_29_ + i_33_;
@@ -181,7 +181,7 @@ abstract class Class21 implements Interface4 {
 							i_34_ += i_22_;
 							i_37_ += is_27_[i_34_];
 							i_34_ += i_22_;
-							is_28_[i_32_] = (byte) (i_37_ >> 1220013666);
+							is_28_[i_32_] = (byte) (i_37_ >> 2);
 							i_32_ += i_22_;
 						}
 						i_33_ += i_29_;
@@ -206,15 +206,15 @@ abstract class Class21 implements Interface4 {
 		try {
 			if (i != 0)
 				method266(94, (byte) -47);
-			if (Class162.aClass162_1266 == ((Class21) this).aClass162_3234) {
-				if (Class98_Sub40.aClass164_4190 == ((Class21) this).aClass164_3237)
+			if (Class162.aClass162_1266 == this.aClass162_3234) {
+				if (Class98_Sub40.aClass164_4190 == this.aClass164_3237)
 					return 6407;
-				if (((Class21) this).aClass164_3237 != Class62.aClass164_486) {
-					if (Class53_Sub1.aClass164_3633 == ((Class21) this).aClass164_3237)
+				if (this.aClass164_3237 != Class62.aClass164_486) {
+					if (Class53_Sub1.aClass164_3633 == this.aClass164_3237)
 						return 6406;
-					if (((Class21) this).aClass164_3237 != Class98_Sub30.aClass164_4088) {
-						if (((Class21) this).aClass164_3237 != Class74.aClass164_547) {
-							if (((Class21) this).aClass164_3237 == Class280.aClass164_2101)
+					if (this.aClass164_3237 != Class98_Sub30.aClass164_4088) {
+						if (this.aClass164_3237 != Class74.aClass164_547) {
+							if (this.aClass164_3237 == Class280.aClass164_2101)
 								return 6145;
 						} else
 							return 6410;
@@ -222,31 +222,31 @@ abstract class Class21 implements Interface4 {
 						return 6409;
 				} else
 					return 6408;
-			} else if (Class162.aClass162_1269 == ((Class21) this).aClass162_3234) {
-				if (((Class21) this).aClass164_3237 != Class98_Sub40.aClass164_4190) {
-					if (Class62.aClass164_486 == ((Class21) this).aClass164_3237)
+			} else if (Class162.aClass162_1269 == this.aClass162_3234) {
+				if (this.aClass164_3237 != Class98_Sub40.aClass164_4190) {
+					if (Class62.aClass164_486 == this.aClass164_3237)
 						return 34842;
-					if (((Class21) this).aClass164_3237 == Class53_Sub1.aClass164_3633)
+					if (this.aClass164_3237 == Class53_Sub1.aClass164_3633)
 						return 34844;
-					if (((Class21) this).aClass164_3237 == Class98_Sub30.aClass164_4088)
+					if (this.aClass164_3237 == Class98_Sub30.aClass164_4088)
 						return 34846;
-					if (((Class21) this).aClass164_3237 == Class74.aClass164_547)
+					if (this.aClass164_3237 == Class74.aClass164_547)
 						return 34847;
-					if (Class280.aClass164_2101 == ((Class21) this).aClass164_3237)
+					if (Class280.aClass164_2101 == this.aClass164_3237)
 						return 6145;
 				} else
 					return 34843;
-			} else if (Class162.aClass162_1270 == ((Class21) this).aClass162_3234) {
-				if (Class98_Sub40.aClass164_4190 != ((Class21) this).aClass164_3237) {
-					if (Class62.aClass164_486 == ((Class21) this).aClass164_3237)
+			} else if (Class162.aClass162_1270 == this.aClass162_3234) {
+				if (Class98_Sub40.aClass164_4190 != this.aClass164_3237) {
+					if (Class62.aClass164_486 == this.aClass164_3237)
 						return 34836;
-					if (Class53_Sub1.aClass164_3633 == ((Class21) this).aClass164_3237)
+					if (Class53_Sub1.aClass164_3633 == this.aClass164_3237)
 						return 34838;
-					if (Class98_Sub30.aClass164_4088 == ((Class21) this).aClass164_3237)
+					if (Class98_Sub30.aClass164_4088 == this.aClass164_3237)
 						return 34840;
-					if (Class74.aClass164_547 == ((Class21) this).aClass164_3237)
+					if (Class74.aClass164_547 == this.aClass164_3237)
 						return 34841;
-					if (((Class21) this).aClass164_3237 == Class280.aClass164_2101)
+					if (this.aClass164_3237 == Class280.aClass164_2101)
 						return 6145;
 				} else
 					return 34837;
@@ -260,7 +260,7 @@ abstract class Class21 implements Interface4 {
 	private final int method261(byte i) {
 		try {
 			int i_38_ = 119 % ((-56 - i) / 35);
-			int i_39_ = (((Class162) ((Class21) this).aClass162_3234).anInt1263 * (((Class164) ((Class21) this).aClass164_3237).anInt1275 * anInt3236));
+			int i_39_ = (this.aClass162_3234.anInt1263 * (this.aClass164_3237.anInt1275 * anInt3236));
 			if (aBoolean3240)
 				return i_39_ * 4 / 3;
 			return i_39_;
@@ -273,7 +273,7 @@ abstract class Class21 implements Interface4 {
 		try {
 			if (i <= 11)
 				anIntArray3232 = null;
-			return (((Class98_Sub46_Sub9) class98_sub46_sub9).aString5998 + " <col=ffffff>>");
+			return (class98_sub46_sub9.aString5998 + " <col=ffffff>>");
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("bj.T(" + (class98_sub46_sub9 != null ? "{...}" : "null") + ',' + i + ')'));
 		}
@@ -283,20 +283,20 @@ abstract class Class21 implements Interface4 {
 		try {
 			if (i_40_ != 31866)
 				method263(20, 98);
-			Class66 class66 = (Class66) RuntimeException_Sub1.aClass79_3204.get((long) i);
+			Class66 class66 = (Class66) RuntimeException_Sub1.aClass79_3204.get(i);
 			if (class66 != null)
 				return class66;
 			byte[] is = Class64_Sub3.aClass207_3648.readArchive(i, 1);
 			class66 = new Class66();
-			((Class66) class66).anInt509 = i;
+			class66.anInt509 = i;
 			if (is != null)
 				class66.method682(new RSByteBuffer(is), i_40_ + -14739);
 			class66.method685(i_40_ + -31865);
-			if (((Class66) class66).anInt508 == 2 && RenderAnimDefinitions.aClass377_2397.method3990((long) i, -1) == null) {
-				RenderAnimDefinitions.aClass377_2397.method3996(new Class98_Sub34(Class64_Sub19.anInt3693), (long) i, -1);
+			if (class66.anInt508 == 2 && RenderAnimDefinitions.aClass377_2397.method3990(i, -1) == null) {
+				RenderAnimDefinitions.aClass377_2397.method3996(new Class98_Sub34(Class64_Sub19.anInt3693), i, -1);
 				Class336.aClass66Array2828[Class64_Sub19.anInt3693++] = class66;
 			}
-			RuntimeException_Sub1.aClass79_3204.put((long) i, class66);
+			RuntimeException_Sub1.aClass79_3204.put(i, class66);
 			return class66;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "bj.BA(" + i + ',' + i_40_ + ')');
@@ -305,50 +305,50 @@ abstract class Class21 implements Interface4 {
 
 	final void method264(int i, int[] is, int i_41_, int i_42_, int i_43_) {
 		try {
-			if ((i ^ 0xffffffff) < -1 && !Class81.method815(i, 0))
+			if (i > 0 && !Class81.method815(i, 0))
 				throw new IllegalArgumentException("");
 			if (i_41_ > 0 && !Class81.method815(i_41_, 0))
 				throw new IllegalArgumentException("");
-			if (((Class21) this).aClass164_3237 != Class62.aClass164_486)
+			if (this.aClass164_3237 != Class62.aClass164_486)
 				throw new IllegalArgumentException("");
 			int i_44_ = 0;
 			int i_45_ = i < i_41_ ? i : i_41_;
-			int i_46_ = i >> 962792001;
-			int i_47_ = i_41_ >> -1036265535;
+			int i_46_ = i >> 1;
+			int i_47_ = i_41_ >> 1;
 			if (i_42_ != 526364520)
 				method264(-17, null, 58, 71, 102);
 			int[] is_48_ = is;
 			int[] is_49_ = new int[i_47_ * i_46_];
 			for (;;) {
-				OpenGL.glTexImage2Di(i_43_, i_44_, method260(0), i, i_41_, 0, 32993, (((ha_Sub3_Sub2) ((Class21) this).aHa_Sub3_Sub2_3233).anInt6135), is_48_, 0);
-				if ((i_45_ ^ 0xffffffff) >= -2)
+				OpenGL.glTexImage2Di(i_43_, i_44_, method260(0), i, i_41_, 0, 32993, (this.aHa_Sub3_Sub2_3233.anInt6135), is_48_, 0);
+				if (i_45_ <= 1)
 					break;
 				int i_50_ = 0;
 				int i_51_ = 0;
 				int i_52_ = i_51_ + i;
-				for (int i_53_ = 0; (i_47_ ^ 0xffffffff) < (i_53_ ^ 0xffffffff); i_53_++) {
-					for (int i_54_ = 0; (i_46_ ^ 0xffffffff) < (i_54_ ^ 0xffffffff); i_54_++) {
+				for (int i_53_ = 0; i_53_ < i_47_; i_53_++) {
+					for (int i_54_ = 0; i_54_ < i_46_; i_54_++) {
 						int i_55_ = is_48_[i_51_++];
 						int i_56_ = is_48_[i_51_++];
 						int i_57_ = is_48_[i_52_++];
-						int i_58_ = 0xff & i_55_ >> 526364520;
+						int i_58_ = 0xff & i_55_ >> 8;
 						int i_59_ = i_55_ & 0xff;
-						int i_60_ = 0xff & i_55_ >> -525338288;
-						int i_61_ = 0xff & i_55_ >> 820031896;
+						int i_60_ = 0xff & i_55_ >> 16;
+						int i_61_ = 0xff & i_55_ >> 24;
 						int i_62_ = is_48_[i_52_++];
-						i_60_ += (0xff9127 & i_56_) >> -805414512;
-						i_58_ += i_56_ >> 1137032648 & 0xff;
-						i_61_ += i_56_ >> 2040047352 & 0xff;
+						i_60_ += (0xff9127 & i_56_) >> 16;
+						i_58_ += i_56_ >> 8 & 0xff;
+						i_61_ += i_56_ >> 24 & 0xff;
 						i_59_ += 0xff & i_56_;
 						i_59_ += i_57_ & 0xff;
-						i_58_ += 0xff & i_57_ >> 992818344;
-						i_61_ += 0xff & i_57_ >> -1794750664;
-						i_60_ += (i_57_ & 0xff9e4b) >> -881369232;
+						i_58_ += 0xff & i_57_ >> 8;
+						i_61_ += 0xff & i_57_ >> 24;
+						i_60_ += (i_57_ & 0xff9e4b) >> 16;
 						i_59_ += 0xff & i_62_;
-						i_58_ += (0xff51 & i_62_) >> -450789720;
-						i_61_ += 0xff & i_62_ >> 1563658584;
-						i_60_ += 0xff & i_62_ >> 1468342096;
-						is_49_[i_50_++] = (Class41.method366((Class202.method2702(1020, i_59_) >> -1355627262), (Class41.method366(Class41.method366((Class202.method2702(1020, i_61_) << 196350582), (Class202.method2702(1020, i_60_) << 2112598990)), (Class202.method2702(1020, i_58_) << -1871880090)))));
+						i_58_ += (0xff51 & i_62_) >> 8;
+						i_61_ += 0xff & i_62_ >> 24;
+						i_60_ += 0xff & i_62_ >> 16;
+						is_49_[i_50_++] = (Class41.method366((Class202.method2702(1020, i_59_) >> 2), (Class41.method366(Class41.method366((Class202.method2702(1020, i_61_) << 22), (Class202.method2702(1020, i_60_) << 14)), (Class202.method2702(1020, i_58_) << 6)))));
 					}
 					i_51_ += i;
 					i_52_ += i;
@@ -370,14 +370,14 @@ abstract class Class21 implements Interface4 {
 
 	private final void method265(int i) {
 		try {
-			((Class21) this).aHa_Sub3_Sub2_3233.method2005(this, -122);
+			this.aHa_Sub3_Sub2_3233.method2005(this, -122);
 			if (i == 14093) {
 				if (Class284_Sub1_Sub1.aClass200_6187 != aClass200_3239) {
-					OpenGL.glTexParameteri(((Class21) this).anInt3235, 10241, !aBoolean3240 ? 9728 : 9984);
-					OpenGL.glTexParameteri(((Class21) this).anInt3235, 10240, 9728);
+					OpenGL.glTexParameteri(this.anInt3235, 10241, !aBoolean3240 ? 9728 : 9984);
+					OpenGL.glTexParameteri(this.anInt3235, 10240, 9728);
 				} else {
-					OpenGL.glTexParameteri(((Class21) this).anInt3235, 10241, aBoolean3240 ? 9987 : 9729);
-					OpenGL.glTexParameteri(((Class21) this).anInt3235, 10240, 9729);
+					OpenGL.glTexParameteri(this.anInt3235, 10241, aBoolean3240 ? 9987 : 9729);
+					OpenGL.glTexParameteri(this.anInt3235, 10240, 9729);
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -387,11 +387,11 @@ abstract class Class21 implements Interface4 {
 
 	Class21(ha_Sub3_Sub2 var_ha_Sub3_Sub2, int i, Class164 class164, Class162 class162, int i_64_, boolean bool) {
 		try {
-			((Class21) this).anInt3235 = i;
-			((Class21) this).aClass164_3237 = class164;
-			((Class21) this).aClass162_3234 = class162;
+			this.anInt3235 = i;
+			this.aClass164_3237 = class164;
+			this.aClass162_3234 = class162;
 			aBoolean3240 = bool;
-			((Class21) this).aHa_Sub3_Sub2_3233 = var_ha_Sub3_Sub2;
+			this.aHa_Sub3_Sub2_3233 = var_ha_Sub3_Sub2;
 			anInt3236 = i_64_;
 			OpenGL.glGenTextures(1, Class342.anIntArray2860, 0);
 			anInt3238 = Class342.anIntArray2860[0];
@@ -405,9 +405,9 @@ abstract class Class21 implements Interface4 {
 	private final void method266(int i, byte i_65_) {
 		try {
 			if (i_65_ <= 107)
-				((Class21) this).aClass162_3234 = null;
-			((ha_Sub3) ((Class21) this).aHa_Sub3_Sub2_3233).anInt4541 -= i;
-			((ha_Sub3) ((Class21) this).aHa_Sub3_Sub2_3233).anInt4541 += method261((byte) -91);
+				this.aClass162_3234 = null;
+			this.aHa_Sub3_Sub2_3233.anInt4541 -= i;
+			this.aHa_Sub3_Sub2_3233.anInt4541 += method261((byte) -91);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "bj.V(" + i + ',' + i_65_ + ')');
 		}

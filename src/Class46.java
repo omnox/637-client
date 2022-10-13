@@ -31,23 +31,23 @@ final class Class46 {
 
 	private final void method434(int i) {
 		try {
-			if (((Class46) this).aBoolean392) {
-				((Class46) this).aBoolean392 = false;
-				byte[] is = ((Class33) aClass33_389).aByteArray321;
-				byte[] is_1_ = ((ha_Sub1) aHa_Sub1_394).aByteArray4469;
+			if (this.aBoolean392) {
+				this.aBoolean392 = false;
+				byte[] is = aClass33_389.aByteArray321;
+				byte[] is_1_ = aHa_Sub1_394.aByteArray4469;
 				int i_2_ = 0;
-				int i_3_ = ((Class33) aClass33_389).anInt314;
-				int i_4_ = (anInt390 - -(((Class33) aClass33_389).anInt314 * anInt395));
-				for (int i_5_ = -128; (i_5_ ^ 0xffffffff) > -1; i_5_++) {
-					i_2_ = -i_2_ + (i_2_ << -525962840);
+				int i_3_ = aClass33_389.anInt314;
+				int i_4_ = (anInt390 - -(aClass33_389.anInt314 * anInt395));
+				for (int i_5_ = -128; i_5_ < 0; i_5_++) {
+					i_2_ = -i_2_ + (i_2_ << 8);
 					for (int i_6_ = -128; i_6_ < 0; i_6_++) {
-						if ((is[i_4_++] ^ 0xffffffff) != -1)
+						if (is[i_4_++] != 0)
 							i_2_++;
 					}
 					i_4_ += -128 + i_3_;
 				}
 				if (aClass42_Sub1_391 != null && i_2_ == anInt396)
-					((Class46) this).aBoolean392 = false;
+					this.aBoolean392 = false;
 				else {
 					anInt396 = i_2_;
 					i_4_ = anInt395 * i_3_ + anInt390;
@@ -58,25 +58,25 @@ final class Class46 {
 								int i_10_ = 0;
 								if (is[-1 + i_4_] != 0)
 									i_10_++;
-								if ((is[i_4_ + 1] ^ 0xffffffff) != -1)
+								if (is[i_4_ + 1] != 0)
 									i_10_++;
-								if ((is[i_4_ + -i_3_] ^ 0xffffffff) != -1)
+								if (is[i_4_ + -i_3_] != 0)
 									i_10_++;
-								if ((is[i_4_ + i_3_] ^ 0xffffffff) != -1)
+								if (is[i_4_ + i_3_] != 0)
 									i_10_++;
 								is_1_[i_7_++] = (byte) (17 * i_10_);
 							} else
 								is_1_[i_7_++] = (byte) 68;
 							i_4_++;
 						}
-						i_4_ += ((Class33) aClass33_389).anInt314 + -128;
+						i_4_ += aClass33_389.anInt314 + -128;
 					}
 					if (aClass42_Sub1_391 == null) {
-						aClass42_Sub1_391 = new Class42_Sub1(aHa_Sub1_394, 3553, 6406, 128, 128, false, (((ha_Sub1) aHa_Sub1_394).aByteArray4469), 6406, false);
+						aClass42_Sub1_391 = new Class42_Sub1(aHa_Sub1_394, 3553, 6406, 128, 128, false, (aHa_Sub1_394.aByteArray4469), 6406, false);
 						aClass42_Sub1_391.method383(false, i + 10242, false);
 						aClass42_Sub1_391.method372(i ^ ~0x6d62, true);
 					} else
-						aClass42_Sub1_391.method378(128, 6406, false, 0, (((ha_Sub1) aHa_Sub1_394).aByteArray4469), 0, (byte) -80, 0, 0, 128);
+						aClass42_Sub1_391.method378(128, 6406, false, 0, (aHa_Sub1_394.aByteArray4469), 0, (byte) -80, 0, 0, 128);
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -87,10 +87,10 @@ final class Class46 {
 	static final void method435(byte i) {
 		try {
 			for (Class98_Sub46_Sub9 class98_sub46_sub9 = ((Class98_Sub46_Sub9) GameInterface.aClass215_3949.method2792(-1)); class98_sub46_sub9 != null; class98_sub46_sub9 = ((Class98_Sub46_Sub9) GameInterface.aClass215_3949.method2787(0))) {
-				if ((((Class98_Sub46_Sub9) class98_sub46_sub9).anInt6001 ^ 0xffffffff) < -2) {
-					((Class98_Sub46_Sub9) class98_sub46_sub9).anInt6001 = 0;
-					Class98_Sub46_Sub16.aClass79_6046.put(((Class98_Sub46_Sub8) (Class98_Sub46_Sub8) (((Class98_Sub46) (((Class215) (((Class98_Sub46_Sub9) class98_sub46_sub9).aClass215_5999)).aClass98_Sub46_1615)).aClass98_Sub46_4262)).aLong5991, class98_sub46_sub9);
-					((Class98_Sub46_Sub9) class98_sub46_sub9).aClass215_5999.method2786(16711680);
+				if (class98_sub46_sub9.anInt6001 > 1) {
+					class98_sub46_sub9.anInt6001 = 0;
+					Class98_Sub46_Sub16.aClass79_6046.put(((Class98_Sub46_Sub8) class98_sub46_sub9.aClass215_5999.aClass98_Sub46_1615.aClass98_Sub46_4262).aLong5991, class98_sub46_sub9);
+					class98_sub46_sub9.aClass215_5999.method2786(16711680);
 				}
 			}
 			Class64_Sub12.anInt3672 = 0;
@@ -157,33 +157,33 @@ final class Class46 {
 			int i_20_ = 0;
 			int i_21_ = i << i_16_;
 			int i_22_ = i_15_ << i_16_;
-			for (int i_23_ = 0; (i_19_ ^ 0xffffffff) < (i_23_ ^ 0xffffffff); i_23_++) {
-				int i_24_ = ((s) var_s_Sub1).anInt2203 * (i_23_ + i_22_) + i_21_;
+			for (int i_23_ = 0; i_23_ < i_19_; i_23_++) {
+				int i_24_ = var_s_Sub1.anInt2203 * (i_23_ + i_22_) + i_21_;
 				for (int i_25_ = 0; i_19_ > i_25_; i_25_++) {
-					short[] is = ((s_Sub1) var_s_Sub1).aShortArrayArray5196[i_24_++];
+					short[] is = var_s_Sub1.aShortArrayArray5196[i_24_++];
 					if (is != null)
 						i_20_ += is.length;
 				}
 			}
 			anInt393 = i_20_;
-			if ((i_20_ ^ 0xffffffff) < -1) {
+			if (i_20_ > 0) {
 				RSByteBuffer class98_sub22 = new RSByteBuffer(2 * i_20_);
-				if (!((ha_Sub1) aHa_Sub1_394).aBoolean4397) {
+				if (!aHa_Sub1_394.aBoolean4397) {
 					for (int i_26_ = 0; i_19_ > i_26_; i_26_++) {
-						int i_27_ = (i_21_ + ((s) var_s_Sub1).anInt2203 * (i_26_ + i_22_));
+						int i_27_ = (i_21_ + var_s_Sub1.anInt2203 * (i_26_ + i_22_));
 						for (int i_28_ = 0; i_28_ < i_19_; i_28_++) {
-							short[] is = (((s_Sub1) var_s_Sub1).aShortArrayArray5196[i_27_++]);
+							short[] is = (var_s_Sub1.aShortArrayArray5196[i_27_++]);
 							if (is != null) {
-								for (int i_29_ = 0; ((is.length ^ 0xffffffff) < (i_29_ ^ 0xffffffff)); i_29_++)
+								for (int i_29_ = 0; (i_29_ < is.length); i_29_++)
 									class98_sub22.method1247(is[i_29_] & 0xffff, 4);
 							}
 						}
 					}
 				} else {
 					for (int i_30_ = 0; i_19_ > i_30_; i_30_++) {
-						int i_31_ = (i_21_ + ((s) var_s_Sub1).anInt2203 * (i_30_ + i_22_));
-						for (int i_32_ = 0; (i_32_ ^ 0xffffffff) > (i_19_ ^ 0xffffffff); i_32_++) {
-							short[] is = (((s_Sub1) var_s_Sub1).aShortArrayArray5196[i_31_++]);
+						int i_31_ = (i_21_ + var_s_Sub1.anInt2203 * (i_30_ + i_22_));
+						for (int i_32_ = 0; i_19_ > i_32_; i_32_++) {
+							short[] is = (var_s_Sub1.aShortArrayArray5196[i_31_++]);
 							if (is != null) {
 								for (int i_33_ = 0; i_33_ < is.length; i_33_++)
 									class98_sub22.writeShort((is[i_33_] & 0xffff));
@@ -191,7 +191,7 @@ final class Class46 {
 						}
 					}
 				}
-				anInterface8_387 = aHa_Sub1_394.method1838(5123, (((RSByteBuffer) class98_sub22).data), 7, false, (((RSByteBuffer) class98_sub22).position));
+				anInterface8_387 = aHa_Sub1_394.method1838(5123, (class98_sub22.data), 7, false, (class98_sub22.position));
 				aClass156_Sub1_386 = new Class156_Sub1(aHa_Sub1_394, 5123, null, 1);
 			} else
 				aClass42_Sub1_391 = null;

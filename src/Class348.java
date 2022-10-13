@@ -19,8 +19,8 @@ final class Class348 {
 					Class53_Sub1 class53_sub1 = Class98_Sub28_Sub1.aClass53_Sub1Array5805[i_5_];
 					Class98_Sub28_Sub1.aClass53_Sub1Array5805[i_5_] = Class98_Sub28_Sub1.aClass53_Sub1Array5805[i_1_];
 					Class98_Sub28_Sub1.aClass53_Sub1Array5805[i_1_] = class53_sub1;
-					for (int i_7_ = i_0_; (i_1_ ^ 0xffffffff) < (i_7_ ^ 0xffffffff); i_7_++) {
-						if ((Class283.method3348((Class98_Sub28_Sub1.aClass53_Sub1Array5805[i_7_]), 17, bool, class53_sub1, bool_3_, i_2_, i) ^ 0xffffffff) >= -1) {
+					for (int i_7_ = i_0_; i_7_ < i_1_; i_7_++) {
+						if (Class283.method3348((Class98_Sub28_Sub1.aClass53_Sub1Array5805[i_7_]), 17, bool, class53_sub1, bool_3_, i_2_, i) <= 0) {
 							Class53_Sub1 class53_sub1_8_ = (Class98_Sub28_Sub1.aClass53_Sub1Array5805[i_7_]);
 							Class98_Sub28_Sub1.aClass53_Sub1Array5805[i_7_] = (Class98_Sub28_Sub1.aClass53_Sub1Array5805[i_6_]);
 							Class98_Sub28_Sub1.aClass53_Sub1Array5805[i_6_++] = class53_sub1_8_;
@@ -65,10 +65,10 @@ final class Class348 {
 
 	Class348(int i, int i_9_, int i_10_, int i_11_) {
 		try {
-			((Class348) this).anInt2909 = i;
-			((Class348) this).anInt2910 = i_10_;
-			((Class348) this).anInt2915 = i_11_;
-			((Class348) this).anInt2913 = i_9_;
+			this.anInt2909 = i;
+			this.anInt2910 = i_10_;
+			this.anInt2915 = i_11_;
+			this.anInt2913 = i_9_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("vea.<init>(" + i + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'));
 		}

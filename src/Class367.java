@@ -35,7 +35,7 @@ final class Class367 implements Interface21 {
 
 	Class367(int i) {
 		try {
-			((Class367) this).anInt3544 = i;
+			this.anInt3544 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "wd.<init>(" + i + ')');
 		}

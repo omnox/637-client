@@ -9,7 +9,7 @@ final class ya extends za implements Interface9 {
 	final native void ga();
 
 	protected final void finalize() {
-		if (((ya) this).nativeid != 0L)
+		if (this.nativeid != 0L)
 			Class192.method2654(false, this);
 	}
 

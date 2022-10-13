@@ -53,7 +53,7 @@ final class Class315 implements Interface21 {
 		try {
 			if (bool_1_ == true) {
 				if (bool) {
-					if (Class88.aString699.startsWith("win") && ((Class88) class88).aBoolean682) {
+					if (Class88.aString699.startsWith("win") && class88.aBoolean682) {
 						String string_2_ = null;
 						if (Class76_Sub11.anApplet3799 != null)
 							string_2_ = Class76_Sub11.anApplet3799.getParameter("haveie6");
@@ -85,19 +85,19 @@ final class Class315 implements Interface21 {
 
 	Class315(String string, Class63 class63, Class110 class110, int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_) {
 		try {
-			((Class315) this).anInt3530 = i_7_;
-			((Class315) this).anInt3524 = i_5_;
-			((Class315) this).anInt3525 = i_10_;
-			((Class315) this).aClass63_3528 = class63;
-			((Class315) this).anInt3523 = i_11_;
-			((Class315) this).anInt3532 = i_8_;
-			((Class315) this).anInt3534 = i_6_;
-			((Class315) this).anInt3521 = i;
-			((Class315) this).anInt3526 = i_9_;
-			((Class315) this).anInt3531 = i_12_;
-			((Class315) this).anInt3520 = i_4_;
-			((Class315) this).aClass110_3522 = class110;
-			((Class315) this).aString3519 = string;
+			this.anInt3530 = i_7_;
+			this.anInt3524 = i_5_;
+			this.anInt3525 = i_10_;
+			this.aClass63_3528 = class63;
+			this.anInt3523 = i_11_;
+			this.anInt3532 = i_8_;
+			this.anInt3534 = i_6_;
+			this.anInt3521 = i;
+			this.anInt3526 = i_9_;
+			this.anInt3531 = i_12_;
+			this.anInt3520 = i_4_;
+			this.aClass110_3522 = class110;
+			this.aString3519 = string;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("tga.<init>(" + (string != null ? "{...}" : "null") + ',' + (class63 != null ? "{...}" : "null") + ',' + (class110 != null ? "{...}" : "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ')'));
 		}

@@ -28,12 +28,12 @@ final class Class219 {
 		try {
 			if (i != 6)
 				method2815(127);
-			((Class219) this).anInt1638 = ((Class219) class219_0_).anInt1638;
-			((Class219) this).anInt1639 = ((Class219) class219_0_).anInt1639;
-			((Class219) this).anInt1643 = ((Class219) class219_0_).anInt1643;
-			((Class219) this).anInt1645 = ((Class219) class219_0_).anInt1645;
-			((Class219) this).anInt1644 = ((Class219) class219_0_).anInt1644;
-			((Class219) this).anInt1637 = ((Class219) class219_0_).anInt1637;
+			this.anInt1638 = class219_0_.anInt1638;
+			this.anInt1639 = class219_0_.anInt1639;
+			this.anInt1643 = class219_0_.anInt1643;
+			this.anInt1645 = class219_0_.anInt1645;
+			this.anInt1644 = class219_0_.anInt1644;
+			this.anInt1637 = class219_0_.anInt1637;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("oaa.A(" + (class219_0_ != null ? "{...}" : "null") + ',' + i + ')'));
 		}
@@ -43,7 +43,7 @@ final class Class219 {
 		try {
 			if (i != 128)
 				method2814(null, 107);
-			return new Class219(((Class219) this).anInt1643, ((Class219) this).anInt1637, ((Class219) this).anInt1645, ((Class219) this).anInt1638, ((Class219) this).anInt1644, ((Class219) this).anInt1639);
+			return new Class219(this.anInt1643, this.anInt1637, this.anInt1645, this.anInt1638, this.anInt1644, this.anInt1639);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "oaa.C(" + i + ')');
 		}
@@ -51,7 +51,7 @@ final class Class219 {
 
 	Class219(int i) {
 		try {
-			((Class219) this).anInt1643 = i;
+			this.anInt1643 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "oaa.<init>(" + i + ')');
 		}
@@ -59,12 +59,12 @@ final class Class219 {
 
 	private Class219(int i, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_) {
 		try {
-			((Class219) this).anInt1638 = i_3_;
-			((Class219) this).anInt1644 = i_4_;
-			((Class219) this).anInt1639 = i_5_;
-			((Class219) this).anInt1643 = i;
-			((Class219) this).anInt1645 = i_2_;
-			((Class219) this).anInt1637 = i_1_;
+			this.anInt1638 = i_3_;
+			this.anInt1644 = i_4_;
+			this.anInt1639 = i_5_;
+			this.anInt1643 = i;
+			this.anInt1645 = i_2_;
+			this.anInt1637 = i_1_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("oaa.<init>(" + i + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'));
 		}

@@ -21,9 +21,9 @@ final class Class19 implements Interface18 {
 			if (i > -81)
 				method59(-24);
 			if (bool) {
-				int i_0_ = ((((Class315) aClass315_3446).aClass63_3528.method545(Class98_Sub17_Sub1.anInt5782, ((Class315) aClass315_3446).anInt3532, (byte) 41)) - -((Class315) aClass315_3446).anInt3521);
-				int i_1_ = ((((Class315) aClass315_3446).aClass110_3522.method2088(((Class315) aClass315_3446).anInt3526, Class246_Sub2.anInt5072, (byte) -56)) - -((Class315) aClass315_3446).anInt3520);
-				aClass43_3444.method408(i_0_, null, ((Class315) aClass315_3446).anInt3532, ((Class315) aClass315_3446).aString3519, 0, ((Class315) aClass315_3446).anInt3531, null, ((Class315) aClass315_3446).anInt3524, (byte) -67, ((Class315) aClass315_3446).anInt3523, null, ((Class315) aClass315_3446).anInt3530, 0, ((Class315) aClass315_3446).anInt3534, i_1_, ((Class315) aClass315_3446).anInt3526);
+				int i_0_ = ((aClass315_3446.aClass63_3528.method545(Class98_Sub17_Sub1.anInt5782, aClass315_3446.anInt3532, (byte) 41)) - -aClass315_3446.anInt3521);
+				int i_1_ = ((aClass315_3446.aClass110_3522.method2088(aClass315_3446.anInt3526, Class246_Sub2.anInt5072, (byte) -56)) - -aClass315_3446.anInt3520);
+				aClass43_3444.method408(i_0_, null, aClass315_3446.anInt3532, aClass315_3446.aString3519, 0, aClass315_3446.anInt3531, null, aClass315_3446.anInt3524, (byte) -67, aClass315_3446.anInt3523, null, aClass315_3446.anInt3530, 0, aClass315_3446.anInt3534, i_1_, aClass315_3446.anInt3526);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "bh.B(" + bool + ',' + i + ')');
@@ -33,11 +33,11 @@ final class Class19 implements Interface18 {
 	public final boolean method59(int i) {
 		try {
 			boolean bool = true;
-			if (!aClass207_3445.method2742(-79, ((Class315) aClass315_3446).anInt3525))
+			if (!aClass207_3445.method2742(-79, aClass315_3446.anInt3525))
 				bool = false;
 			if (i != 14017)
 				aClass43_3444 = null;
-			if (!aClass207_3449.method2742(i + -14055, (((Class315) aClass315_3446).anInt3525)))
+			if (!aClass207_3449.method2742(i + -14055, (aClass315_3446.anInt3525)))
 				bool = false;
 			return bool;
 		} catch (RuntimeException runtimeexception) {
@@ -49,8 +49,8 @@ final class Class19 implements Interface18 {
 		try {
 			if (i != -43)
 				method251(-62);
-			Class197 class197 = Class119_Sub1.method2182(aClass207_3449, true, (((Class315) aClass315_3446).anInt3525));
-			aClass43_3444 = (Class265.aHa1974.method1804(class197, Class324.method3684(aClass207_3445, ((Class315) aClass315_3446).anInt3525), true));
+			Class197 class197 = Class119_Sub1.method2182(aClass207_3449, true, (aClass315_3446.anInt3525));
+			aClass43_3444 = (Class265.aHa1974.method1804(class197, Class324.method3684(aClass207_3445, aClass315_3446.anInt3525), true));
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "bh.C(" + i + ')');
 		}

@@ -32,7 +32,7 @@ final class Class153 {
 		try {
 			Class72 class72;
 			synchronized (aClass79_1226) {
-				class72 = (Class72) aClass79_1226.get((long) i);
+				class72 = (Class72) aClass79_1226.get(i);
 			}
 			if (class72 != null)
 				return class72;
@@ -46,7 +46,7 @@ final class Class153 {
 			if (is != null)
 				class72.method717(new RSByteBuffer(is), -52);
 			synchronized (aClass79_1226) {
-				aClass79_1226.put((long) i, class72);
+				aClass79_1226.put(i, class72);
 			}
 			return class72;
 		} catch (RuntimeException runtimeexception) {
@@ -58,49 +58,49 @@ final class Class153 {
 		try {
 			if (Class64_Sub15.anInt3678 == 0)
 				throw new IllegalStateException();
-			if ((i_1_ ^ 0xffffffff) > -1 || i_1_ >= 2)
+			if (i_1_ < 0 || i_1_ >= 2)
 				throw new IllegalArgumentException();
 			if (i < 256)
 				i = 256;
 			try {
 				Class268 class268 = (Class268) Class.forName("Class268_Sub2").newInstance();
-				((Class268) class268).anInt2016 = i;
-				((Class268) class268).anIntArray2005 = new int[(!Class151_Sub7.aBoolean5007 ? 1 : 2) * 256];
+				class268.anInt2016 = i;
+				class268.anIntArray2005 = new int[(!Class151_Sub7.aBoolean5007 ? 1 : 2) * 256];
 				class268.method3253(component);
-				((Class268) class268).anInt2010 = 1024 + (i & ~0x3ff);
-				if (((Class268) class268).anInt2010 > 16384)
-					((Class268) class268).anInt2010 = 16384;
-				class268.method3250(((Class268) class268).anInt2010);
-				if ((PlayerUpdateMask.anInt529 ^ 0xffffffff) < -1 && Class177.aClass103_1375 == null) {
+				class268.anInt2010 = 1024 + (i & ~0x3ff);
+				if (class268.anInt2010 > 16384)
+					class268.anInt2010 = 16384;
+				class268.method3250(class268.anInt2010);
+				if (PlayerUpdateMask.anInt529 > 0 && Class177.aClass103_1375 == null) {
 					Class177.aClass103_1375 = new Class103();
-					((Class103) Class177.aClass103_1375).aClass88_891 = class88;
+					Class177.aClass103_1375.aClass88_891 = class88;
 					class88.method858(PlayerUpdateMask.anInt529, Class177.aClass103_1375, 1);
 				}
 				if (Class177.aClass103_1375 != null) {
-					if ((((Class103) Class177.aClass103_1375).aClass268Array894[i_1_]) != null)
+					if ((Class177.aClass103_1375.aClass268Array894[i_1_]) != null)
 						throw new IllegalArgumentException();
-					((Class103) Class177.aClass103_1375).aClass268Array894[i_1_] = class268;
+					Class177.aClass103_1375.aClass268Array894[i_1_] = class268;
 				}
 				return class268;
 			} catch (Throwable throwable) {
 				try {
 					Class268_Sub1 class268_sub1 = new Class268_Sub1(class88, i_1_);
-					((Class268) class268_sub1).anInt2016 = i;
-					((Class268) class268_sub1).anIntArray2005 = new int[256 * (Class151_Sub7.aBoolean5007 ? 2 : 1)];
+					class268_sub1.anInt2016 = i;
+					class268_sub1.anIntArray2005 = new int[256 * (Class151_Sub7.aBoolean5007 ? 2 : 1)];
 					class268_sub1.method3253(component);
-					((Class268) class268_sub1).anInt2010 = 16384;
+					class268_sub1.anInt2010 = 16384;
 					if (i_2_ != -126)
 						aBoolean1228 = true;
-					class268_sub1.method3250(((Class268) class268_sub1).anInt2010);
+					class268_sub1.method3250(class268_sub1.anInt2010);
 					if (PlayerUpdateMask.anInt529 > 0 && Class177.aClass103_1375 == null) {
 						Class177.aClass103_1375 = new Class103();
-						((Class103) Class177.aClass103_1375).aClass88_891 = class88;
+						Class177.aClass103_1375.aClass88_891 = class88;
 						class88.method858(PlayerUpdateMask.anInt529, Class177.aClass103_1375, 1);
 					}
 					if (Class177.aClass103_1375 != null) {
-						if ((((Class103) Class177.aClass103_1375).aClass268Array894[i_1_]) != null)
+						if ((Class177.aClass103_1375.aClass268Array894[i_1_]) != null)
 							throw new IllegalArgumentException();
-						((Class103) Class177.aClass103_1375).aClass268Array894[i_1_] = class268_sub1;
+						Class177.aClass103_1375.aClass268Array894[i_1_] = class268_sub1;
 					}
 					return class268_sub1;
 				} catch (Throwable throwable_3_) {
@@ -171,23 +171,23 @@ final class Class153 {
 
 	static final void method2489(long l, byte i) {
 		try {
-			int i_5_ = (Class304.anInt2533 + ((AnimableEntity) Player.selfPlayer).localXPos);
+			int i_5_ = (Class304.anInt2533 + Player.selfPlayer.localXPos);
 			int i_6_ = -83 / ((i - -27) / 43);
-			int i_7_ = ((((AnimableEntity) Player.selfPlayer).localYPos) - -Class98_Sub17.anInt3943);
-			if ((-i_5_ + Class201.anInt1545 ^ 0xffffffff) > 1999 || (Class201.anInt1545 + -i_5_ ^ 0xffffffff) < -2001 || Class224_Sub3_Sub1.anInt6147 + -i_7_ < -2000 || ((-i_7_ + Class224_Sub3_Sub1.anInt6147 ^ 0xffffffff) < -2001)) {
+			int i_7_ = ((Player.selfPlayer.localYPos) - -Class98_Sub17.anInt3943);
+			if (-i_5_ + Class201.anInt1545 < -2000 || Class201.anInt1545 + -i_5_ > 2000 || Class224_Sub3_Sub1.anInt6147 + -i_7_ < -2000 || (-i_7_ + Class224_Sub3_Sub1.anInt6147 > 2000)) {
 				Class201.anInt1545 = i_5_;
 				Class224_Sub3_Sub1.anInt6147 = i_7_;
 			}
 			if (Class201.anInt1545 != i_5_) {
 				int i_8_ = i_5_ + -Class201.anInt1545;
 				int i_9_ = (int) ((long) i_8_ * l / 320L);
-				if ((i_8_ ^ 0xffffffff) >= -1) {
+				if (i_8_ <= 0) {
 					if (i_9_ == 0)
 						i_9_ = -1;
-					else if ((i_9_ ^ 0xffffffff) > (i_8_ ^ 0xffffffff))
+					else if (i_8_ > i_9_)
 						i_9_ = i_8_;
 				} else if (i_9_ != 0) {
-					if ((i_9_ ^ 0xffffffff) < (i_8_ ^ 0xffffffff))
+					if (i_8_ < i_9_)
 						i_9_ = i_8_;
 				} else
 					i_9_ = 1;
@@ -196,9 +196,9 @@ final class Class153 {
 			if (i_7_ != Class224_Sub3_Sub1.anInt6147) {
 				int i_10_ = -Class224_Sub3_Sub1.anInt6147 + i_7_;
 				int i_11_ = (int) (l * (long) i_10_ / 320L);
-				if ((i_10_ ^ 0xffffffff) >= -1) {
-					if ((i_11_ ^ 0xffffffff) != -1) {
-						if ((i_10_ ^ 0xffffffff) < (i_11_ ^ 0xffffffff))
+				if (i_10_ <= 0) {
+					if (i_11_ != 0) {
+						if (i_11_ < i_10_)
 							i_11_ = i_10_;
 					} else
 						i_11_ = -1;
@@ -229,7 +229,7 @@ final class Class153 {
 		try {
 			if (bool != false)
 				aHa1225 = null;
-			return i >>> -1052998200;
+			return i >>> 8;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "kf.E(" + i + ',' + bool + ')');
 		}

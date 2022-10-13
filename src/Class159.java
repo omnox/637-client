@@ -29,7 +29,7 @@ final class Class159 {
 
 	static final GameInterfaceData method2509(int interfaceMask, int i_2_) {
 		try {
-			int interfaceParentID = interfaceMask >> 1456192752;
+			int interfaceParentID = interfaceMask >> 16;
 			if (i_2_ != -9820)
 				gameInterfaces = null;
 			int interfacePosition = interfaceMask & 0xffff;

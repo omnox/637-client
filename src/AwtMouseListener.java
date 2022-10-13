@@ -174,11 +174,11 @@ final class AwtMouseListener extends RtMouseListener implements MouseListener, M
 		do {
 			try {
 				Class98_Sub17_Sub2 class98_sub17_sub2 = new Class98_Sub17_Sub2();
-				((Class98_Sub17_Sub2) class98_sub17_sub2).anInt5785 = i_6_;
-				((Class98_Sub17_Sub2) class98_sub17_sub2).anInt5786 = i_5_;
-				((Class98_Sub17_Sub2) class98_sub17_sub2).anInt5787 = i_4_;
-				((Class98_Sub17_Sub2) class98_sub17_sub2).aLong5788 = Class343.method3819(-47);
-				((Class98_Sub17_Sub2) class98_sub17_sub2).anInt5784 = i;
+				class98_sub17_sub2.anInt5785 = i_6_;
+				class98_sub17_sub2.anInt5786 = i_5_;
+				class98_sub17_sub2.anInt5787 = i_4_;
+				class98_sub17_sub2.aLong5788 = Class343.method3819(-47);
+				class98_sub17_sub2.anInt5784 = i;
 				aClass148_5284.add_last(class98_sub17_sub2, -20911);
 				if (i_3_ <= -106)
 					break;

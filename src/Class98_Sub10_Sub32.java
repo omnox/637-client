@@ -13,42 +13,42 @@ final class Class98_Sub10_Sub32 extends Class98_Sub10 {
 
 	final int[] method990(int i, int i_0_) {
 		try {
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_0_);
+			int[] is = this.aClass16_3863.method237((byte) 98, i_0_);
 			if (i != 255)
 				anInt5719 = 57;
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
+			if (this.aClass16_3863.aBoolean198) {
 				int i_1_ = 0;
-				for (/**/; (i_1_ ^ 0xffffffff) > (Class25.anInt268 ^ 0xffffffff); i_1_++) {
+				for (/**/; Class25.anInt268 > i_1_; i_1_++) {
 					int i_2_ = Class64_Sub1.anIntArray3640[i_1_];
 					int i_3_ = Class352.anIntArray3001[i_0_];
-					int i_4_ = anInt5721 * i_2_ >> 160759052;
-					int i_5_ = i_3_ * anInt5719 >> 274375116;
+					int i_4_ = anInt5721 * i_2_ >> 12;
+					int i_5_ = i_3_ * anInt5719 >> 12;
 					int i_6_ = i_2_ % (4096 / anInt5721) * anInt5721;
 					int i_7_ = i_3_ % (4096 / anInt5719) * anInt5719;
 					if (i_7_ < anInt5722) {
-						for (i_4_ -= i_5_; (i_4_ ^ 0xffffffff) > -1; i_4_ += 4) {
-							/* empty */
-						}
-						for (/**/; (i_4_ ^ 0xffffffff) < -4; i_4_ -= 4) {
-							/* empty */
-						}
-						if ((i_4_ ^ 0xffffffff) != -2) {
-							is[i_1_] = 0;
-							continue;
-						}
-						if ((anInt5722 ^ 0xffffffff) < (i_6_ ^ 0xffffffff)) {
-							is[i_1_] = 0;
-							continue;
-						}
-					}
-					if ((i_6_ ^ 0xffffffff) > (anInt5722 ^ 0xffffffff)) {
-						for (i_4_ -= i_5_; (i_4_ ^ 0xffffffff) > -1; i_4_ += 4) {
+						for (i_4_ -= i_5_; i_4_ < 0; i_4_ += 4) {
 							/* empty */
 						}
 						for (/**/; i_4_ > 3; i_4_ -= 4) {
 							/* empty */
 						}
-						if ((i_4_ ^ 0xffffffff) < -1) {
+						if (i_4_ != 1) {
+							is[i_1_] = 0;
+							continue;
+						}
+						if (i_6_ < anInt5722) {
+							is[i_1_] = 0;
+							continue;
+						}
+					}
+					if (anInt5722 > i_6_) {
+						for (i_4_ -= i_5_; i_4_ < 0; i_4_ += 4) {
+							/* empty */
+						}
+						for (/**/; i_4_ > 3; i_4_ -= 4) {
+							/* empty */
+						}
+						if (i_4_ > 0) {
 							is[i_1_] = 0;
 							continue;
 						}
@@ -74,7 +74,7 @@ final class Class98_Sub10_Sub32 extends Class98_Sub10 {
 
 	static final Class143 method1097(int i, String string, Class88 class88, int i_9_) {
 		try {
-			if ((i_9_ ^ 0xffffffff) == -1)
+			if (i_9_ == 0)
 				return class88.method859(-14, string);
 			if (i_9_ == 1) {
 				try {
@@ -88,7 +88,7 @@ final class Class98_Sub10_Sub32 extends Class98_Sub10 {
 					return class143;
 				}
 			}
-			if ((i_9_ ^ 0xffffffff) == -3) {
+			if (i_9_ == 2) {
 				try {
 					Class76_Sub11.anApplet3799.getAppletContext().showDocument(new URL(Class76_Sub11.anApplet3799.getCodeBase(), string), "_blank");
 					Class143 class143 = new Class143();
@@ -134,7 +134,7 @@ final class Class98_Sub10_Sub32 extends Class98_Sub10 {
 				do {
 					if (i_11_ != 0) {
 						if (i_11_ != 1) {
-							if ((i_11_ ^ 0xffffffff) == -3)
+							if (i_11_ == 2)
 								break;
 							break while_167_;
 						}
@@ -158,10 +158,10 @@ final class Class98_Sub10_Sub32 extends Class98_Sub10 {
 				int i_12_ = 63 % ((37 - i) / 59);
 				if (Class98_Sub10_Sub9.aBoolean5585) {
 					GameInterfaceData class293 = Class246_Sub9.method3139((byte) 72, Class187.anInt1450, Class310.anInt2652);
-					if (class293 != null && ((GameInterfaceData) class293).anObjectArray2324 != null) {
+					if (class293 != null && class293.anObjectArray2324 != null) {
 						ClientScript2Event class98_sub21 = new ClientScript2Event();
-						((ClientScript2Event) class98_sub21).component = class293;
-						((ClientScript2Event) class98_sub21).cs2_params = ((GameInterfaceData) class293).anObjectArray2324;
+						class98_sub21.component = class293;
+						class98_sub21.cs2_params = class293.anObjectArray2324;
 						ClientScript2Runtime.method3144(class98_sub21);
 					}
 					Class98_Sub10_Sub9.aBoolean5585 = false;

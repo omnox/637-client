@@ -14,7 +14,7 @@ final class Class98_Sub8 extends Node implements Interface7 {
 		try {
 			if (i >= -20)
 				method987(53);
-			return ((Class98_Sub8) this).aLong3267;
+			return this.aLong3267;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cja.B(" + i + ')');
 		}
@@ -23,8 +23,8 @@ final class Class98_Sub8 extends Node implements Interface7 {
 	public final int method17(boolean bool) {
 		try {
 			if (bool != true)
-				((Class98_Sub8) this).aLong3267 = 43L;
-			return ((Class98_Sub8) this).anInt3269;
+				this.aLong3267 = 43L;
+			return this.anInt3269;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cja.E(" + bool + ')');
 		}
@@ -33,48 +33,48 @@ final class Class98_Sub8 extends Node implements Interface7 {
 	static final void method986(int i, int i_0_, GameInterfaceData class293, int i_1_) {
 		do {
 			try {
-				if ((((GameInterfaceData) class293).aByte2245 ^ 0xffffffff) == -1)
-					((GameInterfaceData) class293).anInt2299 = ((GameInterfaceData) class293).anInt2229;
-				else if ((((GameInterfaceData) class293).aByte2245 ^ 0xffffffff) == -2)
-					((GameInterfaceData) class293).anInt2299 = (((GameInterfaceData) class293).anInt2229 + (-((GameInterfaceData) class293).anInt2258 + i_0_) / 2);
-				else if (((GameInterfaceData) class293).aByte2245 != 2) {
-					if ((((GameInterfaceData) class293).aByte2245 ^ 0xffffffff) != -4) {
-						if ((((GameInterfaceData) class293).aByte2245 ^ 0xffffffff) != -5)
-							((GameInterfaceData) class293).anInt2299 = (-(((GameInterfaceData) class293).anInt2229 * i_0_ >> -1245136754) + (-((GameInterfaceData) class293).anInt2258 + i_0_));
+				if (class293.aByte2245 == 0)
+					class293.anInt2299 = class293.anInt2229;
+				else if (class293.aByte2245 == 1)
+					class293.anInt2299 = (class293.anInt2229 + (-class293.anInt2258 + i_0_) / 2);
+				else if (class293.aByte2245 != 2) {
+					if (class293.aByte2245 != 3) {
+						if (class293.aByte2245 != 4)
+							class293.anInt2299 = (-(class293.anInt2229 * i_0_ >> 14) + (-class293.anInt2258 + i_0_));
 						else
-							((GameInterfaceData) class293).anInt2299 = ((i_0_ * ((GameInterfaceData) class293).anInt2229 >> 925133390) + ((i_0_ - ((GameInterfaceData) class293).anInt2258) / 2));
+							class293.anInt2299 = ((i_0_ * class293.anInt2229 >> 14) + ((i_0_ - class293.anInt2258) / 2));
 					} else
-						((GameInterfaceData) class293).anInt2299 = (i_0_ * ((GameInterfaceData) class293).anInt2229 >> -1820578994);
+						class293.anInt2299 = (i_0_ * class293.anInt2229 >> 14);
 				} else
-					((GameInterfaceData) class293).anInt2299 = (i_0_ - ((GameInterfaceData) class293).anInt2258 + -((GameInterfaceData) class293).anInt2229);
-				if ((((GameInterfaceData) class293).aByte2240 ^ 0xffffffff) == -1)
-					((GameInterfaceData) class293).anInt2347 = ((GameInterfaceData) class293).anInt2283;
-				else if (((GameInterfaceData) class293).aByte2240 == 1)
-					((GameInterfaceData) class293).anInt2347 = (((GameInterfaceData) class293).anInt2283 + (i - ((GameInterfaceData) class293).anInt2311) / 2);
-				else if (((GameInterfaceData) class293).aByte2240 != 2) {
-					if (((GameInterfaceData) class293).aByte2240 != 3) {
-						if ((((GameInterfaceData) class293).aByte2240 ^ 0xffffffff) == -5)
-							((GameInterfaceData) class293).anInt2347 = ((-((GameInterfaceData) class293).anInt2311 + i) / 2 + (i * ((GameInterfaceData) class293).anInt2283 >> 853340622));
+					class293.anInt2299 = (i_0_ - class293.anInt2258 + -class293.anInt2229);
+				if (class293.aByte2240 == 0)
+					class293.anInt2347 = class293.anInt2283;
+				else if (class293.aByte2240 == 1)
+					class293.anInt2347 = (class293.anInt2283 + (i - class293.anInt2311) / 2);
+				else if (class293.aByte2240 != 2) {
+					if (class293.aByte2240 != 3) {
+						if (class293.aByte2240 == 4)
+							class293.anInt2347 = ((-class293.anInt2311 + i) / 2 + (i * class293.anInt2283 >> 14));
 						else
-							((GameInterfaceData) class293).anInt2347 = i + (-((GameInterfaceData) class293).anInt2311 + -(i * ((GameInterfaceData) class293).anInt2283 >> -1549429234));
+							class293.anInt2347 = i + (-class293.anInt2311 + -(i * class293.anInt2283 >> 14));
 					} else
-						((GameInterfaceData) class293).anInt2347 = (((GameInterfaceData) class293).anInt2283 * i >> 1647618894);
+						class293.anInt2347 = (class293.anInt2283 * i >> 14);
 				} else
-					((GameInterfaceData) class293).anInt2347 = (i - ((GameInterfaceData) class293).anInt2311 - ((GameInterfaceData) class293).anInt2283);
+					class293.anInt2347 = (i - class293.anInt2311 - class293.anInt2283);
 				if (i_1_ > 105) {
 					if (!Class15.aBoolean169)
 						break;
-					if ((((IComponentSettings) client.getClickMask(class293)).optionMask ^ 0xffffffff) != -1 || ((GameInterfaceData) class293).type == 0) {
-						if ((((GameInterfaceData) class293).anInt2299 ^ 0xffffffff) > -1)
-							((GameInterfaceData) class293).anInt2299 = 0;
-						else if (i_0_ < (((GameInterfaceData) class293).anInt2299 + ((GameInterfaceData) class293).anInt2258))
-							((GameInterfaceData) class293).anInt2299 = -((GameInterfaceData) class293).anInt2258 + i_0_;
-						if (((GameInterfaceData) class293).anInt2347 < 0)
-							((GameInterfaceData) class293).anInt2347 = 0;
+					if (client.getClickMask(class293).optionMask != 0 || class293.type == 0) {
+						if (class293.anInt2299 < 0)
+							class293.anInt2299 = 0;
+						else if (i_0_ < (class293.anInt2299 + class293.anInt2258))
+							class293.anInt2299 = -class293.anInt2258 + i_0_;
+						if (class293.anInt2347 < 0)
+							class293.anInt2347 = 0;
 						else {
-							if (i >= (((GameInterfaceData) class293).anInt2347 + ((GameInterfaceData) class293).anInt2311))
+							if (i >= (class293.anInt2347 + class293.anInt2311))
 								break;
-							((GameInterfaceData) class293).anInt2347 = -((GameInterfaceData) class293).anInt2311 + i;
+							class293.anInt2347 = -class293.anInt2311 + i;
 						}
 					}
 				}
@@ -88,7 +88,7 @@ final class Class98_Sub8 extends Node implements Interface7 {
 	public final int method14(int i) {
 		try {
 			int i_2_ = -77 % ((i - 40) / 50);
-			return ((Class98_Sub8) this).anInt3268;
+			return this.anInt3268;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cja.A(" + i + ')');
 		}
@@ -112,7 +112,7 @@ final class Class98_Sub8 extends Node implements Interface7 {
 		try {
 			if (i != 82)
 				return -4;
-			return ((Class98_Sub8) this).anInt3266;
+			return this.anInt3266;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cja.C(" + i + ')');
 		}
@@ -122,7 +122,7 @@ final class Class98_Sub8 extends Node implements Interface7 {
 		try {
 			if (i != 13313)
 				return '4';
-			return ((Class98_Sub8) this).aChar3265;
+			return this.aChar3265;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cja.D(" + i + ')');
 		}

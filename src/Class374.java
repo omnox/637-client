@@ -44,12 +44,12 @@ final class Class374 {
 			}
 			while (l > 8L) {
 				int i_6_ = (0xff & is[i_0_] << i_1_ | (is[1 + i_0_] & 0xff) >>> 8 - i_1_);
-				if ((i_6_ ^ 0xffffffff) > -1 || i_6_ >= 256)
+				if (i_6_ < 0 || i_6_ >= 256)
 					throw new RuntimeException("LOGIC ERROR");
 				aByteArray3154[anInt3160] = (byte) Class41.method366(aByteArray3154[anInt3160], i_6_ >>> i_2_);
 				anInt3160++;
 				anInt3165 += 8 - i_2_;
-				if ((anInt3165 ^ 0xffffffff) == -513) {
+				if (anInt3165 == 512) {
 					method3984((byte) 105);
 					anInt3165 = anInt3160 = 0;
 				}
@@ -66,7 +66,7 @@ final class Class374 {
 				i_7_ = 0;
 			if (l + (long) i_2_ >= 8L) {
 				anInt3160++;
-				l -= (long) (8 - i_2_);
+				l -= 8 - i_2_;
 				anInt3165 += -i_2_ + 8;
 				if (anInt3165 == 512) {
 					method3984((byte) 125);
@@ -86,8 +86,8 @@ final class Class374 {
 			int i_9_ = -79 / ((i - 17) / 60);
 			aByteArray3154[anInt3160] = (byte) (Class41.method366(aByteArray3154[anInt3160], 128 >>> Class202.method2702(7, anInt3165)));
 			anInt3160++;
-			if ((anInt3160 ^ 0xffffffff) < -33) {
-				while ((anInt3160 ^ 0xffffffff) > -65)
+			if (anInt3160 > 32) {
+				while (anInt3160 < 64)
 					aByteArray3154[anInt3160++] = (byte) 0;
 				method3984((byte) 99);
 				anInt3160 = 0;
@@ -98,15 +98,15 @@ final class Class374 {
 			method3984((byte) 103);
 			int i_10_ = 0;
 			int i_11_ = i_8_;
-			for (/**/; (i_10_ ^ 0xffffffff) > -9; i_10_++) {
+			for (/**/; i_10_ < 8; i_10_++) {
 				long l = aLongArray3158[i_10_];
-				is[i_11_] = (byte) (int) (l >>> -933636680);
-				is[i_11_ + 1] = (byte) (int) (l >>> 67716592);
-				is[i_11_ + 2] = (byte) (int) (l >>> -1541782744);
-				is[3 + i_11_] = (byte) (int) (l >>> 1121681056);
-				is[4 + i_11_] = (byte) (int) (l >>> 1704348888);
-				is[5 + i_11_] = (byte) (int) (l >>> 266681360);
-				is[i_11_ + 6] = (byte) (int) (l >>> 2131746888);
+				is[i_11_] = (byte) (int) (l >>> 56);
+				is[i_11_ + 1] = (byte) (int) (l >>> 48);
+				is[i_11_ + 2] = (byte) (int) (l >>> 40);
+				is[3 + i_11_] = (byte) (int) (l >>> 32);
+				is[4 + i_11_] = (byte) (int) (l >>> 24);
+				is[5 + i_11_] = (byte) (int) (l >>> 16);
+				is[i_11_ + 6] = (byte) (int) (l >>> 8);
 				is[7 + i_11_] = (byte) (int) l;
 				i_11_ += 8;
 			}
@@ -117,7 +117,7 @@ final class Class374 {
 
 	final void method3983(byte i) {
 		try {
-			for (int i_12_ = 0; (i_12_ ^ 0xffffffff) > -33; i_12_++)
+			for (int i_12_ = 0; i_12_ < 32; i_12_++)
 				aByteArray3166[i_12_] = (byte) 0;
 			aByteArray3154[0] = (byte) 0;
 			anInt3165 = anInt3160 = 0;
@@ -137,14 +137,14 @@ final class Class374 {
 				int i_14_ = 0;
 				int i_15_ = 0;
 				while (i_14_ < 8) {
-					aLongArray3161[i_14_] = (Class284_Sub1_Sub1.method3367(Class35.method335((long) aByteArray3154[7 + i_15_], 255L), (Class284_Sub1_Sub1.method3367(Class35.method335(255L << -430972856, ((long) (aByteArray3154[i_15_ + 6]) << -1568727992)), (Class284_Sub1_Sub1.method3367((Class35.method335(255L, (long) (aByteArray3154[i_15_ + 5])) << 149608080), (Class284_Sub1_Sub1.method3367(Class35.method335((long) (aByteArray3154[4 + i_15_]), 255L) << 770901656, (Class284_Sub1_Sub1.method3367((Class284_Sub1_Sub1.method3367(Class35.method335(255L << -830401048, ((long) (aByteArray3154[2 + i_15_]) << 1260466408)), (Class284_Sub1_Sub1.method3367(((Class35.method335(255L, (long) aByteArray3154[1 + i_15_])) << 88187824), ((long) aByteArray3154[i_15_] << -1365521608))))), (Class35.method335(255L << 581206880, ((long) aByteArray3154[3 + i_15_] << 1040697696)))))))))))));
+					aLongArray3161[i_14_] = (Class284_Sub1_Sub1.method3367(Class35.method335(aByteArray3154[7 + i_15_], 255L), (Class284_Sub1_Sub1.method3367(Class35.method335(255L << 8, ((long) (aByteArray3154[i_15_ + 6]) << 8)), (Class284_Sub1_Sub1.method3367((Class35.method335(255L, aByteArray3154[i_15_ + 5]) << 16), (Class284_Sub1_Sub1.method3367(Class35.method335(aByteArray3154[4 + i_15_], 255L) << 24, (Class284_Sub1_Sub1.method3367((Class284_Sub1_Sub1.method3367(Class35.method335(255L << 40, ((long) (aByteArray3154[2 + i_15_]) << 40)), (Class284_Sub1_Sub1.method3367(((Class35.method335(255L, aByteArray3154[1 + i_15_])) << 48), ((long) aByteArray3154[i_15_] << 56))))), (Class35.method335(255L << 32, ((long) aByteArray3154[3 + i_15_] << 32)))))))))))));
 					i_14_++;
 					i_15_ += 8;
 				}
-				for (int i_16_ = 0; (i_16_ ^ 0xffffffff) > -9; i_16_++)
+				for (int i_16_ = 0; i_16_ < 8; i_16_++)
 					aLongArray3163[i_16_] = Class284_Sub1_Sub1.method3367(aLongArray3161[i_16_], (aLongArray3155[i_16_] = (aLongArray3158[i_16_])));
-				for (int i_17_ = 1; (i_17_ ^ 0xffffffff) >= -11; i_17_++) {
-					for (int i_18_ = 0; (i_18_ ^ 0xffffffff) > -9; i_18_++) {
+				for (int i_17_ = 1; i_17_ <= 10; i_17_++) {
+					for (int i_18_ = 0; i_18_ < 8; i_18_++) {
 						aLongArray3162[i_18_] = 0L;
 						int i_19_ = 0;
 						int i_20_ = 56;
@@ -157,16 +157,16 @@ final class Class374 {
 					for (int i_21_ = 0; i_21_ < 8; i_21_++)
 						aLongArray3155[i_21_] = aLongArray3162[i_21_];
 					aLongArray3155[0] = Class284_Sub1_Sub1.method3367(aLongArray3155[0], (Class27.aLongArray280[i_17_]));
-					for (int i_22_ = 0; (i_22_ ^ 0xffffffff) > -9; i_22_++) {
+					for (int i_22_ = 0; i_22_ < 8; i_22_++) {
 						aLongArray3162[i_22_] = aLongArray3155[i_22_];
 						int i_23_ = 0;
 						int i_24_ = 56;
-						for (/**/; (i_23_ ^ 0xffffffff) > -9; i_23_++) {
+						for (/**/; i_23_ < 8; i_23_++) {
 							aLongArray3162[i_22_] = (Class284_Sub1_Sub1.method3367(aLongArray3162[i_22_], (Class27.aLongArrayArray279[i_23_][(Class202.method2702(255, (int) ((aLongArray3163[Class202.method2702((i_22_ - i_23_), 7)]) >>> i_24_)))])));
 							i_24_ -= 8;
 						}
 					}
-					for (int i_25_ = 0; (i_25_ ^ 0xffffffff) > -9; i_25_++)
+					for (int i_25_ = 0; i_25_ < 8; i_25_++)
 						aLongArray3163[i_25_] = aLongArray3162[i_25_];
 				}
 				for (int i_26_ = 0; i_26_ < 8; i_26_++)
@@ -210,10 +210,10 @@ final class Class374 {
 	static {
 		anInt3159 = 0;
 		for (int i = 0; i < 256; i++) {
-			long l = (long) i;
+			long l = i;
 			for (int i_27_ = 0; i_27_ < 8; i_27_++) {
 				if ((l & 0x1L) == 1L)
-					l = l >>> 1524723841 ^ ~0x3693a86a2878f0bdL;
+					l = l >>> 1 ^ ~0x3693a86a2878f0bdL;
 				else
 					l >>>= 1;
 			}

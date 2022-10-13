@@ -13,7 +13,7 @@ final class Class98_Sub10_Sub31 extends Class98_Sub10 {
 			try {
 				int i_1_ = i;
 				do {
-					if ((i_1_ ^ 0xffffffff) != -1) {
+					if (i_1_ != 0) {
 						if (i_1_ != 1)
 							break;
 					} else {
@@ -34,12 +34,12 @@ final class Class98_Sub10_Sub31 extends Class98_Sub10 {
 
 	final int[] method990(int i, int i_2_) {
 		try {
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_2_);
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
+			int[] is = this.aClass16_3863.method237((byte) 98, i_2_);
+			if (this.aClass16_3863.aBoolean198) {
 				int[] is_3_ = this.method1000(i_2_, 0, 0);
 				for (int i_4_ = 0; i_4_ < Class25.anInt268; i_4_++) {
 					int i_5_ = is_3_[i_4_];
-					is[i_4_] = ((i_5_ ^ 0xffffffff) <= (anInt5714 ^ 0xffffffff) && i_5_ <= anInt5715) ? 4096 : 0;
+					is[i_4_] = (anInt5714 <= i_5_ && i_5_ <= anInt5715) ? 4096 : 0;
 				}
 			}
 			if (i != 255)

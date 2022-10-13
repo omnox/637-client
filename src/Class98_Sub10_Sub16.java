@@ -23,14 +23,14 @@ final class Class98_Sub10_Sub16 extends Class98_Sub10 {
 
 	static final AbstractModel method1052(int i, int i_0_, int i_1_, ha var_ha, int i_2_, int i_3_, int i_4_) {
 		try {
-			long l = (long) i_2_;
+			long l = i_2_;
 			AbstractModel class146 = ((AbstractModel) Class246_Sub4_Sub1.aClass79_6170.get(l));
 			int i_5_ = 2055;
 			if (class146 == null) {
 				ModelDefinitions class178 = Class98_Sub6.method981(0, -9252, Class76_Sub9.aClass207_3787, i_2_);
 				if (class178 == null)
 					return null;
-				if ((((ModelDefinitions) class178).anInt1387 ^ 0xffffffff) > -14)
+				if (class178.anInt1387 < 13)
 					class178.method2592(13746, 2);
 				class146 = var_ha.method1790(class178, i_5_, Class98_Sub10_Sub13.anInt5600, 64, 768);
 				Class246_Sub4_Sub1.aClass79_6170.put(l, class146);
@@ -40,7 +40,7 @@ final class Class98_Sub10_Sub16 extends Class98_Sub10 {
 				class146.a(i_0_);
 			if (i_1_ != 0)
 				class146.FA(i_1_);
-			if ((i ^ 0xffffffff) != -1)
+			if (i != 0)
 				class146.VA(i);
 			if (i_3_ < 68)
 				method1052(80, 14, 63, null, -118, 89, 104);
@@ -54,15 +54,15 @@ final class Class98_Sub10_Sub16 extends Class98_Sub10 {
 
 	final int[] method990(int i, int i_6_) {
 		try {
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_6_);
+			int[] is = this.aClass16_3863.method237((byte) 98, i_6_);
 			if (i != 255)
 				aClass85_5621 = null;
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
+			if (this.aClass16_3863.aBoolean198) {
 				int[][] is_7_ = this.method994(i_6_, 24431, 0);
 				int[] is_8_ = is_7_[0];
 				int[] is_9_ = is_7_[1];
 				int[] is_10_ = is_7_[2];
-				for (int i_11_ = 0; (i_11_ ^ 0xffffffff) > (Class25.anInt268 ^ 0xffffffff); i_11_++)
+				for (int i_11_ = 0; Class25.anInt268 > i_11_; i_11_++)
 					is[i_11_] = (is_8_[i_11_] + (is_9_[i_11_] - -is_10_[i_11_])) / 3;
 			}
 			return is;

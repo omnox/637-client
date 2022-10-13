@@ -16,10 +16,10 @@ abstract class r extends Class98_Sub46 {
 			int i_10_ = Class263.method3219(false, Class3.anInt77, Class76_Sub8.anInt3778, i_3_);
 			int i_11_ = Class263.method3219(false, Class218.anInt1635, Class98_Sub10_Sub38.anInt5753, i_5_ + i_2_);
 			int i_12_ = Class263.method3219(false, Class218.anInt1635, Class98_Sub10_Sub38.anInt5753, -i_2_ + i_0_);
-			for (int i_13_ = i_7_; (i_11_ ^ 0xffffffff) < (i_13_ ^ 0xffffffff); i_13_++)
+			for (int i_13_ = i_7_; i_13_ < i_11_; i_13_++)
 				Class333.method3761(i, Class97.anIntArrayArray814[i_13_], i_9_, i_10_, (byte) 103);
 			if (i_4_ == -18907) {
-				for (int i_14_ = i_8_; (i_14_ ^ 0xffffffff) < (i_12_ ^ 0xffffffff); i_14_--)
+				for (int i_14_ = i_8_; i_12_ < i_14_; i_14_--)
 					Class333.method3761(i, Class97.anIntArrayArray814[i_14_], i_9_, i_10_, (byte) 126);
 				int i_15_ = Class263.method3219(false, Class3.anInt77, Class76_Sub8.anInt3778, i_1_ - -i_2_);
 				int i_16_ = Class263.method3219(false, Class3.anInt77, Class76_Sub8.anInt3778, i_3_ - i_2_);

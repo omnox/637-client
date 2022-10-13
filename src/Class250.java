@@ -39,10 +39,10 @@ final class Class250 {
 
 	Class250(int[] is, int[] is_4_, int[] is_5_, float[][] fs) {
 		try {
-			((Class250) this).anIntArray1915 = is_4_;
-			((Class250) this).anIntArray1911 = is;
-			((Class250) this).anIntArray1912 = is_5_;
-			((Class250) this).aFloatArrayArray1910 = fs;
+			this.anIntArray1915 = is_4_;
+			this.anIntArray1911 = is;
+			this.anIntArray1912 = is_5_;
+			this.aFloatArrayArray1910 = fs;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("pl.<init>(" + (is != null ? "{...}" : "null") + ',' + (is_4_ != null ? "{...}" : "null") + ',' + (is_5_ != null ? "{...}" : "null") + ',' + (fs != null ? "{...}" : "null") + ')'));
 		}
@@ -50,10 +50,10 @@ final class Class250 {
 
 	static final void method3167(byte i, Class98_Sub31 class98_sub31) {
 		try {
-			if (((Class98_Sub31) class98_sub31).aClass98_Sub24_4104 != null)
-				((Class98_Sub24) ((Class98_Sub31) class98_sub31).aClass98_Sub24_4104).anInt4008 = 0;
+			if (class98_sub31.aClass98_Sub24_4104 != null)
+				class98_sub31.aClass98_Sub24_4104.anInt4008 = 0;
 			if (i == -32) {
-				((Class98_Sub31) class98_sub31).aBoolean4102 = false;
+				class98_sub31.aBoolean4102 = false;
 				for (Class98_Sub31 class98_sub31_6_ = class98_sub31.method1322(); class98_sub31_6_ != null; class98_sub31_6_ = class98_sub31.method1327())
 					method3167((byte) -32, class98_sub31_6_);
 			}

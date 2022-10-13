@@ -21,7 +21,7 @@ final class Class35 {
 		try {
 			if (i < 89)
 				return null;
-			return Class21.method263(((Class35) this).anInt329, 31866);
+			return Class21.method263(this.anInt329, 31866);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cia.D(" + i + ')');
 		}
@@ -42,12 +42,12 @@ final class Class35 {
 	static final void method333(Class246_Sub1 class246_sub1, int i) {
 		try {
 			int i_0_ = 120 / ((-58 - i) / 59);
-			((Class246_Sub1) class246_sub1).aClass246_Sub3_5069 = null;
-			int i_1_ = (((Class246_Sub1) class246_sub1).aClass246_Sub6Array5067).length;
-			for (int i_2_ = 0; (i_1_ ^ 0xffffffff) < (i_2_ ^ 0xffffffff); i_2_++)
-				((Class246_Sub6) (((Class246_Sub1) class246_sub1).aClass246_Sub6Array5067[i_2_])).aBoolean5114 = false;
+			class246_sub1.aClass246_Sub3_5069 = null;
+			int i_1_ = (class246_sub1.aClass246_Sub6Array5067).length;
+			for (int i_2_ = 0; i_2_ < i_1_; i_2_++)
+				class246_sub1.aClass246_Sub6Array5067[i_2_].aBoolean5114 = false;
 			synchronized (Class98_Sub46_Sub20_Sub2.aClass218Array6316) {
-				if (Class98_Sub46_Sub20_Sub2.aClass218Array6316.length > i_1_ && (Class1.anIntArray65[i_1_] ^ 0xffffffff) > -201) {
+				if (Class98_Sub46_Sub20_Sub2.aClass218Array6316.length > i_1_ && Class1.anIntArray65[i_1_] < 200) {
 					Class98_Sub46_Sub20_Sub2.aClass218Array6316[i_1_].method2808(true, class246_sub1);
 					Class1.anIntArray65[i_1_]++;
 				}
@@ -81,7 +81,7 @@ final class Class35 {
 		try {
 			if (i != -1854)
 				method331((byte) -2);
-			return new Class35(((Class35) this).anInt329, i_4_);
+			return new Class35(this.anInt329, i_4_);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cia.B(" + i + ',' + i_4_ + ')');
 		}
@@ -89,7 +89,7 @@ final class Class35 {
 
 	static final int method337(int i, String string) {
 		try {
-			if (!((Class88) Class242.aClass88_1848).aBoolean682)
+			if (!Class242.aClass88_1848.aBoolean682)
 				return -1;
 			if (Class124.aHashtable1015.containsKey(string))
 				return 100;
@@ -115,7 +115,7 @@ final class Class35 {
 				boolean bool = true;
 				byte[] is_7_ = Class273.method3281(-67, file);
 				if (is_7_ != null && is_7_.length == is.length) {
-					for (int i_8_ = 0; (i_8_ ^ 0xffffffff) > (is_7_.length ^ 0xffffffff); i_8_++) {
+					for (int i_8_ = 0; is_7_.length > i_8_; i_8_++) {
 						if (is[i_8_] != is_7_[i_8_]) {
 							bool = false;
 							break;
@@ -150,9 +150,9 @@ final class Class35 {
 			}
 			if (i_9_ == 0)
 				return i_12_;
-			if ((i_9_ ^ 0xffffffff) == -2)
+			if (i_9_ == 1)
 				return 1 - i_13_ + (-i_11_ + 7);
-			if ((i_9_ ^ 0xffffffff) == -3)
+			if (i_9_ == 2)
 				return -i_12_ + 7 - i + 1;
 			return i_11_;
 		} catch (RuntimeException runtimeexception) {
@@ -162,8 +162,8 @@ final class Class35 {
 
 	Class35(int i, int i_16_) {
 		try {
-			((Class35) this).anInt329 = i;
-			((Class35) this).anInt327 = i_16_;
+			this.anInt329 = i;
+			this.anInt327 = i_16_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("cia.<init>(" + i + ',' + i_16_ + ')'));
 		}

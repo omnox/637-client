@@ -10,11 +10,11 @@ final class Class290 {
 			if (i_0_ != 7)
 				anIntArray2198 = null;
 			for (Class246_Sub7 class246_sub7 = ((Class246_Sub7) Class64_Sub20.aClass218_3694.method2803((byte) 15)); class246_sub7 != null; class246_sub7 = (Class246_Sub7) Class64_Sub20.aClass218_3694.method2809(false)) {
-				if (((Class246_Sub7) class246_sub7).anInt5118 <= Class215.anInt1614)
+				if (class246_sub7.anInt5118 <= Class215.anInt1614)
 					class246_sub7.method2965((byte) 5);
 				else {
-					Class42_Sub1.method385(i_3_, ((Class246_Sub7) class246_sub7).anInt5120, 256 + (((Class246_Sub7) class246_sub7).anInt5116 << 1991702313), i_0_ ^ ~0x7, i_4_, ((Class246_Sub7) class246_sub7).anInt5122 * 2, 256 + (((Class246_Sub7) class246_sub7).anInt5123 << 999372329), i_2_ >> -1188035487, i_5_ >> 717151425);
-					Class98_Sub10_Sub34.aClass43_5730.method415(~0xffffff | ((Class246_Sub7) class246_sub7).anInt5117, ((Class246_Sub7) class246_sub7).aString5121, i - -Class259.anIntArray1957[0], 0, (byte) -67, i_1_ - -Class259.anIntArray1957[1]);
+					Class42_Sub1.method385(i_3_, class246_sub7.anInt5120, 256 + (class246_sub7.anInt5116 << 9), i_0_ ^ ~0x7, i_4_, class246_sub7.anInt5122 * 2, 256 + (class246_sub7.anInt5123 << 9), i_2_ >> 1, i_5_ >> 1);
+					Class98_Sub10_Sub34.aClass43_5730.method415(~0xffffff | class246_sub7.anInt5117, class246_sub7.aString5121, i - -Class259.anIntArray1957[0], 0, (byte) -67, i_1_ - -Class259.anIntArray1957[1]);
 				}
 			}
 		} catch (RuntimeException runtimeexception) {

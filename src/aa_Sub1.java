@@ -13,9 +13,9 @@ final class aa_Sub1 extends aa {
 
 	static final Class42_Sub1_Sub1 method153(byte i, int i_0_, ha_Sub1 var_ha_Sub1, int i_1_, int i_2_, int i_3_) {
 		try {
-			if (((ha_Sub1) var_ha_Sub1).aBoolean4426 || Class81.method815(i_1_, 0) && Class81.method815(i_0_, 0))
+			if (var_ha_Sub1.aBoolean4426 || Class81.method815(i_1_, 0) && Class81.method815(i_0_, 0))
 				return new Class42_Sub1_Sub1(var_ha_Sub1, 3553, i_2_, i_3_, i_1_, i_0_, true);
-			if (!((ha_Sub1) var_ha_Sub1).aBoolean4378)
+			if (!var_ha_Sub1.aBoolean4378)
 				return new Class42_Sub1_Sub1(var_ha_Sub1, i_2_, i_3_, i_1_, i_0_, Class48.method453(423660257, i_1_), Class48.method453(423660257, i_0_), true);
 			return new Class42_Sub1_Sub1(var_ha_Sub1, 34037, i_2_, i_3_, i_1_, i_0_, true);
 		} catch (RuntimeException runtimeexception) {
@@ -47,12 +47,12 @@ final class aa_Sub1 extends aa {
 					Class101.anInt849 = -1;
 					Class42_Sub4.anInt5371 = Class278.anInt2089;
 				}
-				if ((Class98_Sub40.anInt4197 ^ 0xffffffff) > i) {
+				if ((~Class98_Sub40.anInt4197) > i) {
 					Class169.anInt1307 = -1;
 					Class101.anInt849 = -1;
 					Class98_Sub40.anInt4197 = 0;
 				}
-				if ((Class98_Sub40.anInt4197 ^ 0xffffffff) >= (Class278.anInt2084 ^ 0xffffffff))
+				if (Class278.anInt2084 >= Class98_Sub40.anInt4197)
 					break;
 				Class101.anInt849 = -1;
 				Class98_Sub40.anInt4197 = Class278.anInt2084;
@@ -66,8 +66,8 @@ final class aa_Sub1 extends aa {
 
 	aa_Sub1(int i, int i_5_, int[] is, int[] is_6_) {
 		try {
-			((aa_Sub1) this).anIntArray3557 = is_6_;
-			((aa_Sub1) this).anIntArray3555 = is;
+			this.anIntArray3557 = is_6_;
+			this.anIntArray3555 = is;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ht.<init>(" + i + ',' + i_5_ + ',' + (is != null ? "{...}" : "null") + ',' + (is_6_ != null ? "{...}" : "null") + ')'));
 		}

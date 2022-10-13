@@ -22,13 +22,13 @@ final class Class249 {
 			int i_1_ = 0;
 			for (int i_2_ = 0; i_0_ > i_2_; i_2_++) {
 				int i_3_ = string.charAt(i_2_);
-				if (i_3_ == 60 || (i_3_ ^ 0xffffffff) == -63)
+				if (i_3_ == 60 || i_3_ == 62)
 					i_1_ += 3;
 			}
 			StringBuffer stringbuffer = new StringBuffer(i_1_ + i_0_);
 			for (int i_4_ = 0; i_0_ > i_4_; i_4_++) {
 				char c = string.charAt(i_4_);
-				if ((c ^ 0xffffffff) != -61) {
+				if (c != 60) {
 					if (c != 62)
 						stringbuffer.append(c);
 					else
@@ -49,13 +49,13 @@ final class Class249 {
 			Class98_Sub3 class98_sub3 = Class64_Sub28.method669(i, bool, 6);
 			if (class98_sub3 == null)
 				return 0;
-			if ((i_6_ ^ 0xffffffff) == 0)
+			if (i_6_ == -1)
 				return 0;
 			int i_7_ = 0;
 			int i_8_ = -61 % ((-78 - i_5_) / 35);
-			for (int i_9_ = 0; ((i_9_ ^ 0xffffffff) > (((Class98_Sub3) class98_sub3).anIntArray3823.length ^ 0xffffffff)); i_9_++) {
-				if ((i_6_ ^ 0xffffffff) == (((Class98_Sub3) class98_sub3).anIntArray3824[i_9_] ^ 0xffffffff))
-					i_7_ += ((Class98_Sub3) class98_sub3).anIntArray3823[i_9_];
+			for (int i_9_ = 0; (class98_sub3.anIntArray3823.length > i_9_); i_9_++) {
+				if (class98_sub3.anIntArray3824[i_9_] == i_6_)
+					i_7_ += class98_sub3.anIntArray3823[i_9_];
 			}
 			return i_7_;
 		} catch (RuntimeException runtimeexception) {
@@ -116,16 +116,16 @@ final class Class249 {
 
 	Class249(int i, int i_20_, int i_21_, int i_22_, int i_23_, int i_24_, int i_25_, int i_26_, int i_27_, boolean bool, boolean bool_28_, int i_29_) {
 		try {
-			((Class249) this).anInt1899 = i_29_;
-			((Class249) this).anInt1909 = i_20_;
-			((Class249) this).aBoolean1904 = bool_28_;
-			((Class249) this).anInt1905 = i;
-			((Class249) this).anInt1907 = i_22_;
-			((Class249) this).anInt1900 = i_21_;
-			((Class249) this).aShort1908 = (short) i_23_;
-			((Class249) this).aShort1901 = (short) i_24_;
-			((Class249) this).aShort1902 = (short) i_25_;
-			((Class249) this).aByte1906 = (byte) i_27_;
+			this.anInt1899 = i_29_;
+			this.anInt1909 = i_20_;
+			this.aBoolean1904 = bool_28_;
+			this.anInt1905 = i;
+			this.anInt1907 = i_22_;
+			this.anInt1900 = i_21_;
+			this.aShort1908 = (short) i_23_;
+			this.aShort1901 = (short) i_24_;
+			this.aShort1902 = (short) i_25_;
+			this.aByte1906 = (byte) i_27_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("pk.<init>(" + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ',' + i_27_ + ',' + bool + ',' + bool_28_ + ',' + i_29_ + ')'));
 		}

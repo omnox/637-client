@@ -32,18 +32,18 @@ final class Class98_Sub46_Sub8 extends Class98_Sub46 {
 
 	Class98_Sub46_Sub8(String string, String string_0_, int i, int i_1_, int i_2_, long l, int i_3_, int i_4_, boolean bool, boolean bool_5_, long l_6_, boolean bool_7_) {
 		try {
-			((Class98_Sub46_Sub8) this).aLong5991 = l_6_;
-			((Class98_Sub46_Sub8) this).anInt5988 = i_2_;
-			((Class98_Sub46_Sub8) this).anInt5986 = i;
-			((Class98_Sub46_Sub8) this).anInt5993 = i_4_;
-			((Class98_Sub46_Sub8) this).aString5992 = string_0_;
-			((Class98_Sub46_Sub8) this).anInt5990 = i_1_;
-			((Class98_Sub46_Sub8) this).aBoolean5983 = bool_5_;
-			((Class98_Sub46_Sub8) this).aBoolean5984 = bool;
-			((Class98_Sub46_Sub8) this).aBoolean5989 = bool_7_;
-			((Class98_Sub46_Sub8) this).aLong5987 = l;
-			((Class98_Sub46_Sub8) this).anInt5995 = i_3_;
-			((Class98_Sub46_Sub8) this).aString5994 = string;
+			this.aLong5991 = l_6_;
+			this.anInt5988 = i_2_;
+			this.anInt5986 = i;
+			this.anInt5993 = i_4_;
+			this.aString5992 = string_0_;
+			this.anInt5990 = i_1_;
+			this.aBoolean5983 = bool_5_;
+			this.aBoolean5984 = bool;
+			this.aBoolean5989 = bool_7_;
+			this.aLong5987 = l;
+			this.anInt5995 = i_3_;
+			this.aString5994 = string;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("em.<init>(" + (string != null ? "{...}" : "null") + ',' + (string_0_ != null ? "{...}" : "null") + ',' + i + ',' + i_1_ + ',' + i_2_ + ',' + l + ',' + i_3_ + ',' + i_4_ + ',' + bool + ',' + bool_5_ + ',' + l_6_ + ',' + bool_7_ + ')'));
 		}

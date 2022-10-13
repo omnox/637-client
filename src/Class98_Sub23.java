@@ -29,11 +29,11 @@ final class Class98_Sub23 extends Node {
 
 	final boolean method1267(int i, int i_0_, int i_1_) {
 		try {
-			if (((Class98_Sub23) this).anInt3996 <= i_1_ && ((Class98_Sub23) this).anInt4006 >= i_1_ && ((Class98_Sub23) this).anInt3999 <= i_0_ && i_0_ <= ((Class98_Sub23) this).anInt4000)
+			if (this.anInt3996 <= i_1_ && this.anInt4006 >= i_1_ && this.anInt3999 <= i_0_ && i_0_ <= this.anInt4000)
 				return true;
 			if (i != -2147483648)
 				method1267(85, -86, -89);
-			if (((((Class98_Sub23) this).anInt4003 ^ 0xffffffff) >= (i_1_ ^ 0xffffffff)) && ((((Class98_Sub23) this).anInt4002 ^ 0xffffffff) <= (i_1_ ^ 0xffffffff)) && ((Class98_Sub23) this).anInt4005 <= i_0_ && ((Class98_Sub23) this).anInt4004 >= i_0_)
+			if ((i_1_ >= this.anInt4003) && (i_1_ <= this.anInt4002) && this.anInt4005 <= i_0_ && this.anInt4004 >= i_0_)
 				return true;
 			return false;
 		} catch (RuntimeException runtimeexception) {
@@ -42,12 +42,12 @@ final class Class98_Sub23 extends Node {
 	}
 
 	Class98_Sub23(Class98_Sub47 class98_sub47) {
-		((Class98_Sub23) this).anInt4003 = 2147483647;
-		((Class98_Sub23) this).anInt4006 = -2147483648;
-		((Class98_Sub23) this).anInt4002 = -2147483648;
-		((Class98_Sub23) this).anInt4004 = -2147483648;
+		this.anInt4003 = 2147483647;
+		this.anInt4006 = -2147483648;
+		this.anInt4002 = -2147483648;
+		this.anInt4004 = -2147483648;
 		try {
-			((Class98_Sub23) this).aClass98_Sub47_3997 = class98_sub47;
+			this.aClass98_Sub47_3997 = class98_sub47;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("jia.<init>(" + (class98_sub47 != null ? "{...}" : "null") + ')'));
 		}

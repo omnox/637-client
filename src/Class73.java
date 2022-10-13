@@ -16,7 +16,7 @@ final class Class73 implements Interface20 {
 		try {
 			RuntimeException_Sub1.aClass111_3203.method2103(i_0_, i_1_, i, Class114.anIntArray958);
 			int i_3_ = Class114.anIntArray958[2];
-			if ((i_3_ ^ 0xffffffff) > -51)
+			if (i_3_ < 50)
 				return false;
 			Class114.anIntArray958[1] = (Class331.anInt2800 * Class114.anIntArray958[1] / i_3_ + Class98_Sub10_Sub23.anInt5659);
 			Class114.anIntArray958[2] = i_3_;
@@ -31,20 +31,20 @@ final class Class73 implements Interface20 {
 		try {
 			long[] ls = Class374.aLongArray3164;
 			long l = -1L;
-			l = (l >>> 104055176 ^ ls[(int) (0xffL & ((long) ((Class73) this).anInt3483 ^ l))]);
-			l = (l >>> -1169160440 ^ ls[(int) ((l ^ (long) (((Class73) this).anInt3480 >> 333698888)) & 0xffL)]);
-			l = (ls[(int) (((long) ((Class73) this).anInt3480 ^ l) & 0xffL)] ^ l >>> 2082866632);
-			l = (l >>> 785508872 ^ ls[(int) (0xffL & (l ^ (long) (((Class73) this).anInt3484 >> 1900552600)))]);
-			l = ls[(int) ((l ^ (long) (((Class73) this).anInt3484 >> -944629936)) & 0xffL)] ^ l >>> -784712120;
-			l = (l >>> -982760568 ^ ls[(int) (0xffL & ((long) (((Class73) this).anInt3484 >> -780870712) ^ l))]);
-			l = (ls[(int) ((l ^ (long) ((Class73) this).anInt3484) & 0xffL)] ^ l >>> -723616056);
-			l = (l >>> 546854024 ^ ls[(int) (0xffL & ((long) ((Class73) this).anInt3486 ^ l))]);
-			l = ls[(int) (((long) (((Class73) this).anInt3487 >> 19611320) ^ l) & 0xffL)] ^ l >>> -1652365816;
-			l = ls[(int) (0xffL & ((long) (((Class73) this).anInt3487 >> -1593786384) ^ l))] ^ l >>> 172527176;
-			l = (l >>> -2082785080 ^ ls[(int) (0xffL & (l ^ (long) (((Class73) this).anInt3487 >> -970562392)))]);
-			l = l >>> 298776520 ^ ls[(int) (((long) ((Class73) this).anInt3487 ^ l) & 0xffL)];
-			l = (ls[(int) ((l ^ (long) ((Class73) this).anInt3481) & 0xffL)] ^ l >>> -1877289208);
-			l = (l >>> 1282797832 ^ ls[(int) (0xffL & ((long) (!((Class73) this).aBoolean3488 ? 0 : 1) ^ l))]);
+			l = (l >>> 8 ^ ls[(int) (0xffL & ((long) this.anInt3483 ^ l))]);
+			l = (l >>> 8 ^ ls[(int) ((l ^ (long) (this.anInt3480 >> 8)) & 0xffL)]);
+			l = (ls[(int) (((long) this.anInt3480 ^ l) & 0xffL)] ^ l >>> 8);
+			l = (l >>> 8 ^ ls[(int) (0xffL & (l ^ (long) (this.anInt3484 >> 24)))]);
+			l = ls[(int) ((l ^ (long) (this.anInt3484 >> 16)) & 0xffL)] ^ l >>> 8;
+			l = (l >>> 8 ^ ls[(int) (0xffL & ((long) (this.anInt3484 >> 8) ^ l))]);
+			l = (ls[(int) ((l ^ (long) this.anInt3484) & 0xffL)] ^ l >>> 8);
+			l = (l >>> 8 ^ ls[(int) (0xffL & ((long) this.anInt3486 ^ l))]);
+			l = ls[(int) (((long) (this.anInt3487 >> 24) ^ l) & 0xffL)] ^ l >>> 8;
+			l = ls[(int) (0xffL & ((long) (this.anInt3487 >> 16) ^ l))] ^ l >>> 8;
+			l = (l >>> 8 ^ ls[(int) (0xffL & (l ^ (long) (this.anInt3487 >> 8)))]);
+			l = l >>> 8 ^ ls[(int) (((long) this.anInt3487 ^ l) & 0xffL)];
+			l = (ls[(int) ((l ^ (long) this.anInt3481) & 0xffL)] ^ l >>> 8);
+			l = (l >>> 8 ^ ls[(int) (0xffL & ((long) (!this.aBoolean3488 ? 0 : 1) ^ l))]);
 			if (bool != true)
 				method721(null, -115, '$');
 			return l;
@@ -58,21 +58,21 @@ final class Class73 implements Interface20 {
 			if (!(interface20 instanceof Class73))
 				return false;
 			Class73 class73_4_ = (Class73) interface20;
-			if ((((Class73) class73_4_).anInt3483 ^ 0xffffffff) != (((Class73) this).anInt3483 ^ 0xffffffff))
+			if (this.anInt3483 != class73_4_.anInt3483)
 				return false;
-			if ((((Class73) this).anInt3480 ^ 0xffffffff) != (((Class73) class73_4_).anInt3480 ^ 0xffffffff))
+			if (class73_4_.anInt3480 != this.anInt3480)
 				return false;
-			if ((((Class73) this).anInt3484 ^ 0xffffffff) != (((Class73) class73_4_).anInt3484 ^ 0xffffffff))
+			if (class73_4_.anInt3484 != this.anInt3484)
 				return false;
-			if (((Class73) this).anInt3486 != ((Class73) class73_4_).anInt3486)
+			if (this.anInt3486 != class73_4_.anInt3486)
 				return false;
-			if (((Class73) class73_4_).anInt3487 != ((Class73) this).anInt3487)
+			if (class73_4_.anInt3487 != this.anInt3487)
 				return false;
-			if (((Class73) this).anInt3481 != ((Class73) class73_4_).anInt3481)
+			if (this.anInt3481 != class73_4_.anInt3481)
 				return false;
 			if (i != 22000)
-				((Class73) this).anInt3483 = -99;
-			if (!((Class73) this).aBoolean3488 == ((Class73) class73_4_).aBoolean3488)
+				this.anInt3483 = -99;
+			if (!this.aBoolean3488 == class73_4_.aBoolean3488)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -95,7 +95,7 @@ final class Class73 implements Interface20 {
 			int i_6_ = 0;
 			int i_7_ = string.length();
 			for (int i_8_ = 0; i_8_ < i_7_; i_8_++) {
-				if ((c ^ 0xffffffff) == (string.charAt(i_8_) ^ 0xffffffff))
+				if (string.charAt(i_8_) == c)
 					i_6_++;
 			}
 			if (i < 10)

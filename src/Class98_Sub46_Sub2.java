@@ -18,7 +18,7 @@ abstract class Class98_Sub46_Sub2 extends Class98_Sub46 {
 					if (i == 75)
 						Class278.aFloat2068 = 6.0F;
 					else if (i != 100) {
-						if ((i ^ 0xffffffff) == -201)
+						if (i == 200)
 							Class278.aFloat2068 = 16.0F;
 					} else
 						Class278.aFloat2068 = 8.0F;
@@ -35,7 +35,7 @@ abstract class Class98_Sub46_Sub2 extends Class98_Sub46 {
 
 	Class98_Sub46_Sub2(int i) {
 		try {
-			((Class98_Sub46_Sub2) this).anInt5950 = i;
+			this.anInt5950 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "bda.<init>(" + i + ')');
 		}

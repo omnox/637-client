@@ -27,7 +27,7 @@ final class Class151_Sub1 extends Class151 {
 					i_4_++;
 					if (i_6_ >= 0) {
 						i_5_--;
-						i_6_ -= i_5_ << -1422120383;
+						i_6_ -= i_5_ << 1;
 						int[] is = Class97.anIntArrayArray814[i_3_ - -i_5_];
 						int[] is_8_ = Class97.anIntArrayArray814[i_3_ - i_5_];
 						int i_9_ = i_4_ + i_0_;
@@ -54,20 +54,20 @@ final class Class151_Sub1 extends Class151 {
 
 	final void method2440(boolean bool, boolean bool_14_) {
 		try {
-			if ((((ha_Sub1) ((Class151) this).aHa_Sub1_1215).anInt4441 ^ 0xffffffff) < -1) {
-				float f = (-0.5F / (float) (((ha_Sub1) ((Class151) this).aHa_Sub1_1215).anInt4441));
-				((Class151) this).aHa_Sub1_1215.method1845(1, 847872872);
+			if (this.aHa_Sub1_1215.anInt4441 > 0) {
+				float f = (-0.5F / (float) (this.aHa_Sub1_1215.anInt4441));
+				this.aHa_Sub1_1215.method1845(1, 847872872);
 				Class34.aFloatArray326[1] = 0.0F;
 				Class34.aFloatArray326[2] = f;
-				Class34.aFloatArray326[3] = 0.25F + (((ha_Sub1) ((Class151) this).aHa_Sub1_1215).aFloat4356) * f;
+				Class34.aFloatArray326[3] = 0.25F + (this.aHa_Sub1_1215.aFloat4356) * f;
 				Class34.aFloatArray326[0] = 0.0F;
 				OpenGL.glPushMatrix();
 				OpenGL.glLoadIdentity();
 				OpenGL.glTexGenfv(8192, 9474, Class34.aFloatArray326, 0);
 				OpenGL.glPopMatrix();
-				((Class151) this).aHa_Sub1_1215.method1848(0.5F, true, (float) (((ha_Sub1) ((Class151) this).aHa_Sub1_1215).anInt4441));
-				((Class151) this).aHa_Sub1_1215.method1863(1, aClass42_Sub3_4966);
-				((Class151) this).aHa_Sub1_1215.method1845(0, 847872872);
+				this.aHa_Sub1_1215.method1848(0.5F, true, (float) (this.aHa_Sub1_1215.anInt4441));
+				this.aHa_Sub1_1215.method1863(1, aClass42_Sub3_4966);
+				this.aHa_Sub1_1215.method1845(0, 847872872);
 			}
 			aClass91_4965.method888('\0', bool);
 			OpenGL.glMatrixMode(5890);
@@ -97,7 +97,7 @@ final class Class151_Sub1 extends Class151 {
 		try {
 			aClass51_4964 = class51;
 			method2449((byte) -23);
-			aClass42_Sub3_4966 = new Class42_Sub3(((Class151) this).aHa_Sub1_1215, 6406, 2, new byte[] { 0, -1 }, 6406);
+			aClass42_Sub3_4966 = new Class42_Sub3(this.aHa_Sub1_1215, 6406, 2, new byte[] { 0, -1 }, 6406);
 			aClass42_Sub3_4966.method393(3552, false);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("al.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ',' + (class51 != null ? "{...}" : "null") + ')'));
@@ -114,16 +114,16 @@ final class Class151_Sub1 extends Class151 {
 
 	private final void method2449(byte i) {
 		try {
-			aClass91_4965 = new Class91(((Class151) this).aHa_Sub1_1215, 2);
+			aClass91_4965 = new Class91(this.aHa_Sub1_1215, 2);
 			aClass91_4965.method887(0, i + -30366);
-			((Class151) this).aHa_Sub1_1215.method1845(1, 847872872);
-			((Class151) this).aHa_Sub1_1215.method1899(260, i + 8983, 7681);
-			((Class151) this).aHa_Sub1_1215.method1840(0, 768, -116, 34168);
+			this.aHa_Sub1_1215.method1845(1, 847872872);
+			this.aHa_Sub1_1215.method1899(260, i + 8983, 7681);
+			this.aHa_Sub1_1215.method1840(0, 768, -116, 34168);
 			OpenGL.glTexGeni(8192, 9472, 9216);
 			OpenGL.glEnable(3168);
-			((Class151) this).aHa_Sub1_1215.method1845(0, i ^ ~0x3289837e);
+			this.aHa_Sub1_1215.method1845(0, i ^ ~0x3289837e);
 			OpenGL.glTexEnvf(8960, 34163, 2.0F);
-			if (((Class51) aClass51_4964).aBoolean424) {
+			if (aClass51_4964.aBoolean424) {
 				OpenGL.glTexGeni(8194, 9472, 9217);
 				OpenGL.glTexGeni(8195, 9472, 9217);
 				OpenGL.glTexGenfv(8195, 9473, new float[] { 0.0F, 0.0F, 0.0F, 1.0F }, 0);
@@ -132,15 +132,15 @@ final class Class151_Sub1 extends Class151 {
 			}
 			aClass91_4965.method886((byte) -108);
 			aClass91_4965.method887(1, -30389);
-			((Class151) this).aHa_Sub1_1215.method1845(1, i + 847872895);
-			((Class151) this).aHa_Sub1_1215.method1899(8448, 8960, 8448);
-			((Class151) this).aHa_Sub1_1215.method1840(0, 768, 87, 5890);
+			this.aHa_Sub1_1215.method1845(1, i + 847872895);
+			this.aHa_Sub1_1215.method1899(8448, 8960, 8448);
+			this.aHa_Sub1_1215.method1840(0, 768, 87, 5890);
 			OpenGL.glDisable(3168);
-			((Class151) this).aHa_Sub1_1215.method1845(0, 847872872);
+			this.aHa_Sub1_1215.method1845(0, 847872872);
 			if (i != -23)
 				aClass51_4964 = null;
 			OpenGL.glTexEnvf(8960, 34163, 1.0F);
-			if (((Class51) aClass51_4964).aBoolean424) {
+			if (aClass51_4964.aBoolean424) {
 				OpenGL.glDisable(3170);
 				OpenGL.glDisable(3171);
 			}
@@ -154,27 +154,27 @@ final class Class151_Sub1 extends Class151 {
 		try {
 			if (i_17_ > -2)
 				anIntArray4969 = null;
-			if ((0x1 & i ^ 0xffffffff) == -2) {
-				if (((Class51) aClass51_4964).aBoolean424) {
-					((Class151) this).aHa_Sub1_1215.method1863(1, ((Class51) aClass51_4964).aClass42_Sub4_422);
-					Class34.aFloatArray326[3] = (float) ((((ha_Sub1) ((Class151) this).aHa_Sub1_1215).anInt4321) % 4000) / 4000.0F;
+			if ((0x1 & i) == 1) {
+				if (aClass51_4964.aBoolean424) {
+					this.aHa_Sub1_1215.method1863(1, aClass51_4964.aClass42_Sub4_422);
+					Class34.aFloatArray326[3] = (float) ((this.aHa_Sub1_1215.anInt4321) % 4000) / 4000.0F;
 					Class34.aFloatArray326[0] = 0.0F;
 					Class34.aFloatArray326[1] = 0.0F;
 					Class34.aFloatArray326[2] = 0.0F;
 					OpenGL.glTexGenfv(8194, 9473, Class34.aFloatArray326, 0);
 				} else {
-					int i_18_ = 16 * ((((ha_Sub1) ((Class151) this).aHa_Sub1_1215).anInt4321) % 4000) / 4000;
-					((Class151) this).aHa_Sub1_1215.method1863(1, (((Class51) aClass51_4964).aClass42_Sub1Array423[i_18_]));
+					int i_18_ = 16 * ((this.aHa_Sub1_1215.anInt4321) % 4000) / 4000;
+					this.aHa_Sub1_1215.method1863(1, (aClass51_4964.aClass42_Sub1Array423[i_18_]));
 				}
-			} else if (((Class51) aClass51_4964).aBoolean424) {
-				((Class151) this).aHa_Sub1_1215.method1863(1, ((Class51) aClass51_4964).aClass42_Sub4_422);
+			} else if (aClass51_4964.aBoolean424) {
+				this.aHa_Sub1_1215.method1863(1, aClass51_4964.aClass42_Sub4_422);
 				Class34.aFloatArray326[2] = 0.0F;
 				Class34.aFloatArray326[3] = 0.0F;
 				Class34.aFloatArray326[0] = 0.0F;
 				Class34.aFloatArray326[1] = 0.0F;
 				OpenGL.glTexGenfv(8194, 9473, Class34.aFloatArray326, 0);
 			} else
-				((Class151) this).aHa_Sub1_1215.method1863(1, ((Class51) aClass51_4964).aClass42_Sub1Array423[0]);
+				this.aHa_Sub1_1215.method1863(1, aClass51_4964.aClass42_Sub1Array423[0]);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("al.G(" + i + ',' + i_16_ + ',' + i_17_ + ')'));
 		}
@@ -194,7 +194,7 @@ final class Class151_Sub1 extends Class151 {
 		try {
 			if (i != 255)
 				method2439(-35);
-			((Class151) this).aHa_Sub1_1215.method1899(8448, i ^ 0x23ff, 260);
+			this.aHa_Sub1_1215.method1899(8448, i ^ 0x23ff, 260);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "al.C(" + bool + ',' + i + ')');
 		}
@@ -204,12 +204,12 @@ final class Class151_Sub1 extends Class151 {
 		do {
 			try {
 				do {
-					if ((Class98_Sub46_Sub19.anInt6065 ^ 0xffffffff) >= -2) {
-						Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 2, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub21_4037));
+					if (Class98_Sub46_Sub19.anInt6065 <= 1) {
+						Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 2, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub21_4037));
 						if (!client.aBoolean3553)
 							break;
 					}
-					Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 4, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub21_4037));
+					Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 4, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub21_4037));
 				} while (false);
 				if (i > 45)
 					break;
@@ -225,13 +225,13 @@ final class Class151_Sub1 extends Class151 {
 		do {
 			try {
 				aClass91_4965.method888('\001', false);
-				if (((ha_Sub1) ((Class151) this).aHa_Sub1_1215).anInt4441 > 0) {
-					((Class151) this).aHa_Sub1_1215.method1845(1, 847872872);
-					((Class151) this).aHa_Sub1_1215.method1863(1, null);
-					((Class151) this).aHa_Sub1_1215.method1848(1.0F, true, 0.0F);
-					((Class151) this).aHa_Sub1_1215.method1845(0, 847872872);
+				if (this.aHa_Sub1_1215.anInt4441 > 0) {
+					this.aHa_Sub1_1215.method1845(1, 847872872);
+					this.aHa_Sub1_1215.method1863(1, null);
+					this.aHa_Sub1_1215.method1848(1.0F, true, 0.0F);
+					this.aHa_Sub1_1215.method1845(0, 847872872);
 				}
-				((Class151) this).aHa_Sub1_1215.method1899(8448, 8960, 8448);
+				this.aHa_Sub1_1215.method1899(8448, 8960, 8448);
 				OpenGL.glMatrixMode(5890);
 				OpenGL.glPopMatrix();
 				OpenGL.glMatrixMode(5888);

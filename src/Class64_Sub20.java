@@ -15,18 +15,18 @@ final class Class64_Sub20 extends Class64 {
 			try {
 				if (i >= 118) {
 					do {
-						if (((Class64) this).aClass98_Sub27_495.method1286((byte) 104) == s_Sub1.aClass279_5197) {
-							if (!((Class64) this).aClass98_Sub27_495.method1291((byte) 117))
+						if (this.aClass98_Sub27_495.method1286((byte) 104) == s_Sub1.aClass279_5197) {
+							if (!this.aClass98_Sub27_495.method1291((byte) 117))
 								break;
-							((Class64) this).anInt494 = 0;
+							this.anInt494 = 0;
 							if (!client.aBoolean3553)
 								break;
 						}
-						((Class64) this).anInt494 = 1;
+						this.anInt494 = 1;
 					} while (false);
-					if (((Class64) this).anInt494 == 0 || ((Class64) this).anInt494 == 1)
+					if (this.anInt494 == 0 || this.anInt494 == 1)
 						break;
-					((Class64) this).anInt494 = method552(0);
+					this.anInt494 = method552(0);
 				}
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "raa.C(" + i + ')');
@@ -39,10 +39,10 @@ final class Class64_Sub20 extends Class64 {
 		try {
 			if (i_0_ != 29053)
 				method556(68, 122);
-			if (((Class64) this).aClass98_Sub27_495.method1286((byte) 104) == s_Sub1.aClass279_5197) {
-				if (((Class64) this).aClass98_Sub27_495.method1291((byte) 114))
+			if (this.aClass98_Sub27_495.method1286((byte) 104) == s_Sub1.aClass279_5197) {
+				if (this.aClass98_Sub27_495.method1291((byte) 114))
 					return 3;
-				if (i == 0 || ((Class98_Sub27) ((Class64) this).aClass98_Sub27_495).aClass64_Sub25_4039.method655((byte) 126) == 1)
+				if (i == 0 || this.aClass98_Sub27_495.aClass64_Sub25_4039.method655((byte) 126) == 1)
 					return 1;
 				return 2;
 			}
@@ -55,14 +55,14 @@ final class Class64_Sub20 extends Class64 {
 	static final void method633(int i) {
 		try {
 			if (Class258.aClass155Array1951 != null) {
-				for (int i_1_ = 0; ((Class21_Sub3.anInt5389 ^ 0xffffffff) < (i_1_ ^ 0xffffffff)); i_1_++)
+				for (int i_1_ = 0; (i_1_ < Class21_Sub3.anInt5389); i_1_++)
 					Class258.aClass155Array1951[i_1_] = null;
 				Class258.aClass155Array1951 = null;
 			}
 			if (i != 0)
 				aClass178Array3699 = null;
 			if (Class98_Sub30.aClass155Array4099 != null) {
-				for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > (Class336.anInt2820 ^ 0xffffffff); i_2_++)
+				for (int i_2_ = 0; Class336.anInt2820 > i_2_; i_2_++)
 					Class98_Sub30.aClass155Array4099[i_2_] = null;
 				Class98_Sub30.aClass155Array4099 = null;
 			}
@@ -84,7 +84,7 @@ final class Class64_Sub20 extends Class64 {
 		try {
 			if (i <= 119)
 				method637(-83);
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "raa.E(" + i + ')');
 		}
@@ -93,7 +93,7 @@ final class Class64_Sub20 extends Class64 {
 	final void method550(int i, int i_4_) {
 		try {
 			int i_5_ = 68 % ((i - -26) / 41);
-			((Class64) this).anInt494 = i_4_;
+			this.anInt494 = i_4_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "raa.B(" + i + ',' + i_4_ + ')');
 		}
@@ -103,8 +103,8 @@ final class Class64_Sub20 extends Class64 {
 		try {
 			if (i != -1)
 				method633(-77);
-			if (((Class64) this).aClass98_Sub27_495.method1286((byte) 104) == s_Sub1.aClass279_5197) {
-				if (((Class64) this).aClass98_Sub27_495.method1291((byte) 120))
+			if (this.aClass98_Sub27_495.method1286((byte) 104) == s_Sub1.aClass279_5197) {
+				if (this.aClass98_Sub27_495.method1291((byte) 120))
 					return false;
 				return true;
 			}

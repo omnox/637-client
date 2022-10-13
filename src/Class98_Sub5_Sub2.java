@@ -9,7 +9,7 @@ final class Class98_Sub5_Sub2 extends Class98_Sub5 {
 
 	static final String method968(int i, String[] strings, int i_0_, int i_1_) {
 		try {
-			if ((i ^ 0xffffffff) == -1)
+			if (i == 0)
 				return "";
 			if (i == 1) {
 				String string = strings[i_0_];
@@ -19,7 +19,7 @@ final class Class98_Sub5_Sub2 extends Class98_Sub5 {
 			}
 			int i_2_ = i_0_ + i;
 			int i_3_ = 0;
-			for (int i_4_ = i_0_; (i_4_ ^ 0xffffffff) > (i_2_ ^ 0xffffffff); i_4_++) {
+			for (int i_4_ = i_0_; i_2_ > i_4_; i_4_++) {
 				String string = strings[i_4_];
 				if (string == null)
 					i_3_ += 4;
@@ -59,20 +59,20 @@ final class Class98_Sub5_Sub2 extends Class98_Sub5 {
 			if (class293 != null) {
 				if (i_9_ != -6838)
 					method968(67, null, -92, 84);
-				if (((GameInterfaceData) class293).anObjectArray2257 != null) {
+				if (class293.anObjectArray2257 != null) {
 					ClientScript2Event class98_sub21 = new ClientScript2Event();
-					((ClientScript2Event) class98_sub21).component = class293;
-					((ClientScript2Event) class98_sub21).cs2_params = ((GameInterfaceData) class293).anObjectArray2257;
+					class98_sub21.component = class293;
+					class98_sub21.cs2_params = class293.anObjectArray2257;
 					ClientScript2Runtime.method3144(class98_sub21);
 				}
 				Class98_Sub10_Sub9.aBoolean5585 = true;
 				Class98_Sub46_Sub1.anInt5945 = i;
 				Class98_Sub4.anInt3826 = i_8_;
-				Class187.anInt1450 = ((GameInterfaceData) class293).anInt2248;
-				Class21_Sub2.anInt5387 = ((GameInterfaceData) class293).anInt2318;
-				Class310.anInt2652 = ((GameInterfaceData) class293).anInt2300;
-				Class376.anInt3173 = ((GameInterfaceData) class293).anInt2302;
-				Class336.anInt2823 = ((GameInterfaceData) class293).anInt2309;
+				Class187.anInt1450 = class293.anInt2248;
+				Class21_Sub2.anInt5387 = class293.anInt2318;
+				Class310.anInt2652 = class293.anInt2300;
+				Class376.anInt3173 = class293.anInt2302;
+				Class336.anInt2823 = class293.anInt2309;
 				Class341.method3812(i_9_ ^ ~0x1ab4, class293);
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -84,7 +84,7 @@ final class Class98_Sub5_Sub2 extends Class98_Sub5 {
 		try {
 			if (i < 12)
 				method970(-34, null, 53, 96);
-			((Class98_Sub5) this).aFloat3832 = f;
+			this.aFloat3832 = f;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "im.D(" + f + ',' + i + ')');
 		}
@@ -98,9 +98,9 @@ final class Class98_Sub5_Sub2 extends Class98_Sub5 {
 		try {
 			if (i_14_ >= -120)
 				method970(-97, null, 25, 43);
-			((Class98_Sub5) this).anInt3833 = i_15_;
-			((Class98_Sub5) this).anInt3830 = i_16_;
-			((Class98_Sub5) this).anInt3834 = i;
+			this.anInt3833 = i_15_;
+			this.anInt3830 = i_16_;
+			this.anInt3834 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("im.A(" + i + ',' + i_14_ + ',' + i_15_ + ',' + i_16_ + ')'));
 		}

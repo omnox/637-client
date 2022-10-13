@@ -8,7 +8,7 @@ final class Class98_Sub46_Sub7 extends Class98_Sub46 {
 
 	Class98_Sub46_Sub7(byte[] is) {
 		try {
-			((Class98_Sub46_Sub7) this).aByteArray5981 = is;
+			this.aByteArray5981 = is;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "dn.<init>(" + (is != null ? "{...}" : "null") + ')');
 		}
@@ -29,11 +29,11 @@ final class Class98_Sub46_Sub7 extends Class98_Sub46 {
 	}
 
 	static {
-		for (int i = 0; (i ^ 0xffffffff) > -27; i++)
+		for (int i = 0; i < 26; i++)
 			aCharArray5982[i] = (char) (i + 65);
-		for (int i = 26; (i ^ 0xffffffff) > -53; i++)
+		for (int i = 26; i < 52; i++)
 			aCharArray5982[i] = (char) (-26 + i + 97);
-		for (int i = 52; (i ^ 0xffffffff) > -63; i++)
+		for (int i = 52; i < 62; i++)
 			aCharArray5982[i] = (char) (48 + (i + -52));
 		aCharArray5982[62] = '*';
 		aCharArray5982[63] = '-';

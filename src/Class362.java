@@ -14,7 +14,7 @@ final class Class362 {
 			int i_0_ = class98_sub22.readUShort(false);
 			if (i != 1)
 				anInt3090 = -67;
-			return (new Class93_Sub1_Sub1(((Class93) class93_sub1).aClass63_3509, ((Class93) class93_sub1).aClass110_3511, ((Class93) class93_sub1).anInt3505, ((Class93) class93_sub1).anInt3507, ((Class93) class93_sub1).anInt3514, ((Class93) class93_sub1).anInt3504, ((Class93) class93_sub1).anInt3508, ((Class93) class93_sub1).anInt3506, ((Class93) class93_sub1).anInt3513, ((Class93_Sub1) class93_sub1).anInt5483, ((Class93_Sub1) class93_sub1).anInt5480, ((Class93_Sub1) class93_sub1).anInt5485, ((Class93_Sub1) class93_sub1).anInt5481, ((Class93_Sub1) class93_sub1).anInt5478, ((Class93_Sub1) class93_sub1).anInt5484, i_0_));
+			return (new Class93_Sub1_Sub1(class93_sub1.aClass63_3509, class93_sub1.aClass110_3511, class93_sub1.anInt3505, class93_sub1.anInt3507, class93_sub1.anInt3514, class93_sub1.anInt3504, class93_sub1.anInt3508, class93_sub1.anInt3506, class93_sub1.anInt3513, class93_sub1.anInt5483, class93_sub1.anInt5480, class93_sub1.anInt5485, class93_sub1.anInt5481, class93_sub1.anInt5478, class93_sub1.anInt5484, i_0_));
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("vu.B(" + i + ',' + (class98_sub22 != null ? "{...}" : "null") + ')'));
 		}

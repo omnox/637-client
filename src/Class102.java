@@ -47,16 +47,16 @@ final class Class102 {
 				i_10_ |= class97.method932(false, i_7_, true, -1);
 				i_10_ &= ~0x200;
 			}
-			long l = ((long) (i_0_ + (i_5_ << -903417392) - -(i_1_ << -423490568)) - -((long) i_8_ << 142401248) + ((long) i_6_ << 21507696));
+			long l = ((long) (i_0_ + (i_5_ << 16) - -(i_1_ << 24)) - -((long) i_8_ << 32) + ((long) i_6_ << 48));
 			AbstractModel class146_11_;
 			synchronized (RtMouseListener.aClass79_2493) {
 				class146_11_ = (AbstractModel) RtMouseListener.aClass79_2493.get(l);
 			}
-			if (class146_11_ == null || ((var_ha.c(class146_11_.ua(), i_10_) ^ 0xffffffff) != -1)) {
+			if (class146_11_ == null || (var_ha.c(class146_11_.ua(), i_10_) != 0)) {
 				if (class146_11_ != null)
 					i_10_ = var_ha.method1777(i_10_, class146_11_.ua());
 				int i_12_;
-				if ((i_0_ ^ 0xffffffff) != -2) {
+				if (i_0_ != 1) {
 					if (i_0_ != 2) {
 						if (i_0_ != 3) {
 							if (i_0_ == 4)
@@ -78,19 +78,19 @@ final class Class102 {
 					int i_17_ = is[i_16_];
 					int i_18_ = is[i_16_];
 					for (int i_19_ = 0; i_12_ > i_19_; i_19_++) {
-						int i_20_ = (i_19_ << 1158136782) / i_12_;
-						int i_21_ = (Class284_Sub2_Sub2.anIntArray6200[i_20_] * i_17_ >> 1774149838);
-						int i_22_ = (Class284_Sub2_Sub2.anIntArray6202[i_20_] * i_18_ >> 1320391086);
+						int i_20_ = (i_19_ << 14) / i_12_;
+						int i_21_ = (Class284_Sub2_Sub2.anIntArray6200[i_20_] * i_17_ >> 14);
+						int i_22_ = (Class284_Sub2_Sub2.anIntArray6202[i_20_] * i_18_ >> 14);
 						is_15_[i_16_][i_19_] = class178.method2599(14418, i_21_, 0, i_22_);
 					}
 				}
 				for (int i_23_ = 0; i_23_ < i_13_; i_23_++) {
 					int i_24_ = (i_23_ * 256 + 128) / i_13_;
 					int i_25_ = -i_24_ + 256;
-					byte i_26_ = (byte) (i_5_ * i_25_ + i_24_ * i_1_ >> -266203096);
-					short i_27_ = (short) (((0x7f00 & (i_25_ * (0x7f & i_8_) + (0x7f & i_6_) * i_24_)) + ((0xfc0000 & (i_24_ * (0xfc00 & i_6_) + i_25_ * (0xfc00 & i_8_))) + (((i_8_ & 0x380) * i_25_ + (0x380 & i_6_) * i_24_) & 0x38000))) >> -887272664);
-					for (int i_28_ = 0; (i_28_ ^ 0xffffffff) > (i_12_ ^ 0xffffffff); i_28_++) {
-						if ((i_23_ ^ 0xffffffff) != -1) {
+					byte i_26_ = (byte) (i_5_ * i_25_ + i_24_ * i_1_ >> 8);
+					short i_27_ = (short) (((0x7f00 & (i_25_ * (0x7f & i_8_) + (0x7f & i_6_) * i_24_)) + ((0xfc0000 & (i_24_ * (0xfc00 & i_6_) + i_25_ * (0xfc00 & i_8_))) + (((i_8_ & 0x380) * i_25_ + (0x380 & i_6_) * i_24_) & 0x38000))) >> 8);
+					for (int i_28_ = 0; i_12_ > i_28_; i_28_++) {
+						if (i_23_ != 0) {
 							class178.method2594((byte) 1, i_27_, (short) -1, i_26_, false, is_15_[i_23_][(1 + i_28_) % i_12_], is_15_[-1 + i_23_][i_28_], (byte) -1, is_15_[i_23_ - 1][(i_28_ + 1) % i_12_]);
 							class178.method2594((byte) 1, i_27_, (short) -1, i_26_, false, is_15_[i_23_][i_28_], is_15_[-1 + i_23_][i_28_], (byte) -1, (is_15_[i_23_][(1 + i_28_) % i_12_]));
 						} else
@@ -108,23 +108,23 @@ final class Class102 {
 			int i_32_ = class146.G();
 			Class98_Sub46_Sub16 class98_sub46_sub16 = null;
 			if (class97 != null) {
-				i_7_ = ((Class97) class97).anIntArray818[i_7_];
-				class98_sub46_sub16 = Class151_Sub7.aClass183_5001.method2624(2, i_7_ >> 448240368);
+				i_7_ = class97.anIntArray818[i_7_];
+				class98_sub46_sub16 = Class151_Sub7.aClass183_5001.method2624(2, i_7_ >> 16);
 				i_7_ &= 0xffff;
 			}
 			if (class98_sub46_sub16 != null) {
 				class146_11_ = class146_11_.method2341((byte) 3, i_10_, true);
-				class146_11_.O(-i_29_ + i_30_ >> 1914721025, 128, -i_31_ + i_32_ >> 1598124673);
-				class146_11_.H(i_30_ + i_29_ >> 217245921, 0, i_31_ - -i_32_ >> 1082256225);
+				class146_11_.O(-i_29_ + i_30_ >> 1, 128, -i_31_ + i_32_ >> 1);
+				class146_11_.H(i_30_ + i_29_ >> 1, 0, i_31_ - -i_32_ >> 1);
 				class146_11_.method2340(class98_sub46_sub16, 0, i_7_);
 			} else {
 				class146_11_ = class146_11_.method2341((byte) 3, i_10_, true);
-				class146_11_.O(-i_29_ + i_30_ >> -953095807, 128, -i_31_ + i_32_ >> 226658273);
-				class146_11_.H(i_29_ + i_30_ >> -379781503, 0, i_31_ - -i_32_ >> -1170469311);
+				class146_11_.O(-i_29_ + i_30_ >> 1, 128, -i_31_ + i_32_ >> 1);
+				class146_11_.H(i_29_ + i_30_ >> 1, 0, i_31_ - -i_32_ >> 1);
 			}
 			if (i_2_ != 0)
 				class146_11_.FA(i_2_);
-			if ((i ^ 0xffffffff) != -1)
+			if (i != 0)
 				class146_11_.VA(i);
 			if (i_9_ != 0)
 				class146_11_.H(0, i_9_, 0);
@@ -230,7 +230,7 @@ final class Class102 {
 				return 6;
 			if (Class266.aClass98_Sub46_Sub8_1994 == null)
 				return 0;
-			int i_35_ = (((Class98_Sub46_Sub8) Class266.aClass98_Sub46_Sub8_1994).anInt5990);
+			int i_35_ = (Class266.aClass98_Sub46_Sub8_1994.anInt5990);
 			if (ClientScript2Event.method1179(i_35_, 255))
 				return 1;
 			if (Class299_Sub2.method3526(123, i_35_))

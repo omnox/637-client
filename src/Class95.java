@@ -14,21 +14,21 @@ final class Class95 {
 			try {
 				if (i < 77)
 					method921(true);
-				if (aa_Sub1.aClass123_3561 == null || (Class62.anInt490 ^ 0xffffffff) >= -1)
+				if (aa_Sub1.aClass123_3561 == null || Class62.anInt490 <= 0)
 					break;
-				((RSByteBuffer) Class160.aClass98_Sub22_1257).position = 0;
+				Class160.aClass98_Sub22_1257.position = 0;
 				for (;;) {
 					OutgoingPacket class98_sub11 = ((OutgoingPacket) Class336.aClass148_2827.method2418(32));
-					if (class98_sub11 == null || (((((RSByteBuffer) Class160.aClass98_Sub22_1257).data).length + -(((RSByteBuffer) Class160.aClass98_Sub22_1257).position)) < ((OutgoingPacket) class98_sub11).anInt3869))
+					if (class98_sub11 == null || (((Class160.aClass98_Sub22_1257.data).length + -(Class160.aClass98_Sub22_1257.position)) < class98_sub11.anInt3869))
 						break;
-					Class160.aClass98_Sub22_1257.method1217((((RSByteBuffer) (((OutgoingPacket) class98_sub11).packet)).data), ((OutgoingPacket) class98_sub11).anInt3869, -1, 0);
-					Class62.anInt490 -= ((OutgoingPacket) class98_sub11).anInt3869;
+					Class160.aClass98_Sub22_1257.method1217((class98_sub11.packet.data), class98_sub11.anInt3869, -1, 0);
+					Class62.anInt490 -= class98_sub11.anInt3869;
 					class98_sub11.remove();
-					((OutgoingPacket) class98_sub11).packet.method1201(0);
+					class98_sub11.packet.method1201(0);
 					class98_sub11.method1125((byte) 6);
 				}
-				aa_Sub1.aClass123_3561.method2202(-24305, ((RSByteBuffer) Class160.aClass98_Sub22_1257).position, (((RSByteBuffer) Class160.aClass98_Sub22_1257).data), 0);
-				Class98_Sub50.anInt4289 += (((RSByteBuffer) Class160.aClass98_Sub22_1257).position);
+				aa_Sub1.aClass123_3561.method2202(-24305, Class160.aClass98_Sub22_1257.position, (Class160.aClass98_Sub22_1257.data), 0);
+				Class98_Sub50.anInt4289 += (Class160.aClass98_Sub22_1257.position);
 				Class196.anInt1511 = 0;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "ft.B(" + i + ')');

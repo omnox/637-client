@@ -38,7 +38,7 @@ final class Class87 {
 		try {
 			if (i_0_ != 28733)
 				return true;
-			if ((i_1_ & 0x800 ^ 0xffffffff) == -1)
+			if ((i_1_ & 0x800) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -50,15 +50,15 @@ final class Class87 {
 		try {
 			if (class24 == null)
 				return false;
-			if (!((Class24) class24).aBoolean258)
+			if (!class24.aBoolean258)
 				return false;
 			if (i <= 73)
 				method853(126);
 			if (!class24.method284(64, Class278.anInterface6_2060))
 				return false;
-			if (Class248.aClass377_1894.method3990((long) ((Class24) class24).anInt228, -1) != null)
+			if (Class248.aClass377_1894.method3990(class24.anInt228, -1) != null)
 				return false;
-			if (Class366.aClass377_3114.method3990((long) ((Class24) class24).anInt246, -1) != null)
+			if (Class366.aClass377_3114.method3990(class24.anInt246, -1) != null)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -69,7 +69,7 @@ final class Class87 {
 	final Class92 method856(int i) {
 		try {
 			if (i != 0)
-				((Class87) this).aByte658 = (byte) -8;
+				this.aByte658 = (byte) -8;
 			return Class98_Sub45.method1520(anInt672, i ^ 0x3a23);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "fk.A(" + i + ')');
@@ -78,11 +78,11 @@ final class Class87 {
 
 	Class87(int i, int i_2_, int i_3_, int i_4_, byte i_5_) {
 		try {
-			((Class87) this).anInt661 = i_3_;
+			this.anInt661 = i_3_;
 			anInt672 = i;
-			((Class87) this).aByte658 = i_5_;
-			((Class87) this).anInt674 = i_4_;
-			((Class87) this).anInt666 = i_2_;
+			this.aByte658 = i_5_;
+			this.anInt674 = i_4_;
+			this.anInt666 = i_2_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("fk.<init>(" + i + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ')'));
 		}
@@ -92,7 +92,7 @@ final class Class87 {
 		try {
 			if (bool != true)
 				return null;
-			return new Class87(anInt672, i, i_7_, i_6_, ((Class87) this).aByte658);
+			return new Class87(anInt672, i, i_7_, i_6_, this.aByte658);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("fk.D(" + i + ',' + bool + ',' + i_6_ + ',' + i_7_ + ')'));
 		}

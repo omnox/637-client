@@ -24,7 +24,7 @@ final class Class48_Sub1_Sub1 extends Class48_Sub1 {
 				Class63.anIntArray491[0] = anInt5509;
 				Class63.anIntArray491[3] = anInt5502;
 				Class63.anIntArray491[1] = anInt5511;
-				d var_d = ((ha) aHa_Sub1_5510).aD938;
+				d var_d = aHa_Sub1_5510.aD938;
 				Class63.anIntArray491[5] = anInt5507;
 				Class63.anIntArray491[4] = anInt5508;
 				int i_0_ = 0;
@@ -33,15 +33,15 @@ final class Class48_Sub1_Sub1 extends Class48_Sub1 {
 					if (!var_d.method8(-119, Class63.anIntArray491[i_2_]))
 						return null;
 					Class238 class238 = var_d.method11(Class63.anIntArray491[i_2_], -28755);
-					int i_3_ = !((Class238) class238).aBoolean1822 ? 128 : 64;
-					if (((Class238) class238).aByte1832 > 0)
+					int i_3_ = !class238.aBoolean1822 ? 128 : 64;
+					if (class238.aByte1832 > 0)
 						i_0_ = 1;
-					if ((i_3_ ^ 0xffffffff) < (i_1_ ^ 0xffffffff))
+					if (i_1_ < i_3_)
 						i_1_ = i_3_;
 				}
-				for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > -7; i_4_++)
+				for (int i_4_ = 0; i_4_ < 6; i_4_++)
 					Class248.anIntArrayArray1895[i_4_] = var_d.method9(Class63.anIntArray491[i_4_], (byte) -126, i_1_, 1.0F, false, i_1_);
-				aClass42_Sub2_5504 = new Class42_Sub2(aHa_Sub1_5510, 6407, i_1_, (i_0_ ^ 0xffffffff) != -1, Class248.anIntArrayArray1895);
+				aClass42_Sub2_5504 = new Class42_Sub2(aHa_Sub1_5510, 6407, i_1_, i_0_ != 0, Class248.anIntArrayArray1895);
 			}
 			if (i < 119)
 				aShortArray5512 = null;
@@ -77,12 +77,12 @@ final class Class48_Sub1_Sub1 extends Class48_Sub1 {
 			float f_19_;
 			float f_20_;
 			if (i_10_ != 0) {
-				if ((i_10_ ^ 0xffffffff) != -2) {
+				if (i_10_ != 1) {
 					if (i_10_ != 2) {
-						if ((i_10_ ^ 0xffffffff) == -4) {
+						if (i_10_ == 3) {
 							f_20_ = 0.5F + (f_16_ + f_7_);
 							f_19_ = -f_17_ + f_9_ + 0.5F;
-						} else if ((i_10_ ^ 0xffffffff) != -5) {
+						} else if (i_10_ != 4) {
 							f_20_ = f + -f_18_ + 0.5F;
 							f_19_ = f_9_ + -f_17_ + 0.5F;
 						} else {
@@ -102,10 +102,10 @@ final class Class48_Sub1_Sub1 extends Class48_Sub1 {
 				f_20_ = f_16_ + f_7_ + 0.5F;
 			}
 			if (i_5_ != 1) {
-				if ((i_5_ ^ 0xffffffff) == -3) {
+				if (i_5_ == 2) {
 					f_20_ = -f_20_;
 					f_19_ = -f_19_;
-				} else if ((i_5_ ^ 0xffffffff) == -4) {
+				} else if (i_5_ == 3) {
 					float f_21_ = f_20_;
 					f_20_ = f_19_;
 					f_19_ = -f_21_;
@@ -126,7 +126,7 @@ final class Class48_Sub1_Sub1 extends Class48_Sub1 {
 		try {
 			if (i_23_ < 125)
 				aShortArrayArray5503 = null;
-			if ((i ^ 0xffffffff) != -1 && (i ^ 0xffffffff) != -2 && (i ^ 0xffffffff) != -3)
+			if (i != 0 && i != 1 && i != 2)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

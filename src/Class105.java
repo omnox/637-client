@@ -34,7 +34,7 @@ final class Class105 implements Interface15 {
 		try {
 			if (bool != true)
 				return true;
-			if ((i & 0x22 ^ 0xffffffff) == -1)
+			if ((i & 0x22) == 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -64,9 +64,9 @@ final class Class105 implements Interface15 {
 	static final int method1717(int i, int i_8_, int i_9_, int i_10_, int i_11_) {
 		try {
 			int i_12_ = 0xf & i_10_;
-			int i_13_ = (i_12_ ^ 0xffffffff) > -9 ? i_9_ : i_8_;
-			int i_14_ = (i_11_ >= (i_12_ ^ 0xffffffff) ? i_12_ != 12 && i_12_ != 14 ? i : i_9_ : i_8_);
-			return (((i_12_ & 0x2) == 0 ? i_14_ : -i_14_) + ((i_12_ & 0x1 ^ 0xffffffff) == -1 ? i_13_ : -i_13_));
+			int i_13_ = i_12_ < 8 ? i_9_ : i_8_;
+			int i_14_ = (i_11_ >= (~i_12_) ? i_12_ != 12 && i_12_ != 14 ? i : i_9_ : i_8_);
+			return (((i_12_ & 0x2) == 0 ? i_14_ : -i_14_) + ((i_12_ & 0x1) == 0 ? i_13_ : -i_13_));
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("gm.C(" + i + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ')'));
 		}
@@ -74,9 +74,9 @@ final class Class105 implements Interface15 {
 
 	static final Class326 method1718(int i, int i_15_) {
 		try {
-			if ((i ^ 0xffffffff) != -1) {
+			if (i != 0) {
 				if (i != 1) {
-					if ((i ^ 0xffffffff) == -3) {
+					if (i == 2) {
 						if ((double) Class278.aFloat2064 == 3.0)
 							return Class151_Sub7.aClass326_5009;
 						if ((double) Class278.aFloat2064 == 4.0)
@@ -116,7 +116,7 @@ final class Class105 implements Interface15 {
 
 	Class105(String string, int i) {
 		try {
-			((Class105) this).anInt3416 = i;
+			this.anInt3416 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("gm.<init>(" + (string != null ? "{...}" : "null") + ',' + i + ')'));
 		}

@@ -12,12 +12,12 @@ final class Class246_Sub8 extends Class246 {
 	byte[] aByteArray5130;
 
 	Class246_Sub8(int i, int i_0_, int i_1_, int i_2_, int i_3_, short[] is, byte[] is_4_) {
-		((Class246_Sub8) this).aByte5128 = (byte) i;
-		((Class246_Sub8) this).aByte5125 = (byte) i_0_;
-		((Class246_Sub8) this).anInt5124 = i_1_;
-		((Class246_Sub8) this).aByte5127 = (byte) i_2_;
-		((Class246_Sub8) this).aByte5126 = (byte) i_3_;
-		((Class246_Sub8) this).aShortArray5129 = is;
-		((Class246_Sub8) this).aByteArray5130 = is_4_;
+		this.aByte5128 = (byte) i;
+		this.aByte5125 = (byte) i_0_;
+		this.anInt5124 = i_1_;
+		this.aByte5127 = (byte) i_2_;
+		this.aByte5126 = (byte) i_3_;
+		this.aShortArray5129 = is;
+		this.aByteArray5130 = is_4_;
 	}
 }

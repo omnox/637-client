@@ -16,14 +16,14 @@ final class Class170 {
 
 	static final String method2538(int i, GameInterfaceData class293) {
 		try {
-			if ((client.getClickMask(class293).method1668(i) ^ 0xffffffff) == -1)
+			if (client.getClickMask(class293).method1668(i) == 0)
 				return null;
-			if (((GameInterfaceData) class293).aString2214 == null || (((GameInterfaceData) class293).aString2214.trim().length() ^ 0xffffffff) == -1) {
+			if (class293.aString2214 == null || class293.aString2214.trim().length() == 0) {
 				if (Class15.aBoolean169)
 					return "Hidden-use";
 				return null;
 			}
-			return ((GameInterfaceData) class293).aString2214;
+			return class293.aString2214;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("lfa.A(" + i + ',' + (class293 != null ? "{...}" : "null") + ')'));
 		}
@@ -41,14 +41,14 @@ final class Class170 {
 
 	Class170(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_, boolean bool, int i_8_) {
 		try {
-			((Class170) this).aByte1312 = (byte) i_7_;
-			((Class170) this).aShort1317 = (short) i_3_;
-			((Class170) this).aShort1310 = (short) i_5_;
-			((Class170) this).aByte1308 = (byte) i_6_;
-			((Class170) this).anInt1316 = i_8_;
-			((Class170) this).aShort1309 = (short) i_4_;
-			((Class170) this).anInt1315 = i;
-			((Class170) this).aBoolean1314 = bool;
+			this.aByte1312 = (byte) i_7_;
+			this.aShort1317 = (short) i_3_;
+			this.aShort1310 = (short) i_5_;
+			this.aByte1308 = (byte) i_6_;
+			this.anInt1316 = i_8_;
+			this.aShort1309 = (short) i_4_;
+			this.anInt1315 = i;
+			this.aBoolean1314 = bool;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("lfa.<init>(" + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + bool + ',' + i_8_ + ')'));
 		}

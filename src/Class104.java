@@ -25,8 +25,8 @@ final class Class104 {
 				i_6_ = 0;
 			} while (false);
 			int i_7_ = (((Class135.cameraZoom + -Class64_Sub19.aShort3692) * i_6_ / 100) + Class64_Sub19.aShort3692);
-			Class16.anInt197 = i_7_ * Class16.anInt199 >> 626243656;
-			i_0_ = i_0_ * i_7_ >> -1212701304;
+			Class16.anInt197 = i_7_ * Class16.anInt199 >> 8;
+			i_0_ = i_0_ * i_7_ >> 8;
 			int i_8_ = 16384 - i_4_ & 0x3fff;
 			int i_9_ = 16384 + -i & 0x3fff;
 			int i_10_ = 0;
@@ -34,13 +34,13 @@ final class Class104 {
 				anInt897 = -79;
 			int i_11_ = 0;
 			int i_12_ = i_0_;
-			if ((i_8_ ^ 0xffffffff) != -1) {
-				i_11_ = (Class284_Sub2_Sub2.anIntArray6200[i_8_] * -i_12_ >> -1123635698);
-				i_12_ = (i_12_ * Class284_Sub2_Sub2.anIntArray6202[i_8_] >> 1849889102);
+			if (i_8_ != 0) {
+				i_11_ = (Class284_Sub2_Sub2.anIntArray6200[i_8_] * -i_12_ >> 14);
+				i_12_ = (i_12_ * Class284_Sub2_Sub2.anIntArray6202[i_8_] >> 14);
 			}
-			if ((i_9_ ^ 0xffffffff) != -1) {
-				i_10_ = (Class284_Sub2_Sub2.anIntArray6200[i_9_] * i_12_ >> 1440327534);
-				i_12_ = (i_12_ * Class284_Sub2_Sub2.anIntArray6202[i_9_] >> -1335926898);
+			if (i_9_ != 0) {
+				i_10_ = (Class284_Sub2_Sub2.anIntArray6200[i_9_] * i_12_ >> 14);
+				i_12_ = (i_12_ * Class284_Sub2_Sub2.anIntArray6202[i_9_] >> 14);
 			}
 			Class134.renderZ = -i_12_ + i_1_;
 			Class308.anInt2584 = 0;
@@ -66,10 +66,10 @@ final class Class104 {
 
 	Class104(Interface16 interface16, int i, int i_13_, int i_14_) {
 		try {
-			((Class104) this).aByte898 = (byte) i_14_;
-			((Class104) this).anInterface16_902 = interface16;
-			((Class104) this).aShort899 = (short) i;
-			((Class104) this).aByte900 = (byte) i_13_;
+			this.aByte898 = (byte) i_14_;
+			this.anInterface16_902 = interface16;
+			this.aShort899 = (short) i;
+			this.aByte900 = (byte) i_13_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("gk.<init>(" + (interface16 != null ? "{...}" : "null") + ',' + i + ',' + i_13_ + ',' + i_14_ + ')'));
 		}

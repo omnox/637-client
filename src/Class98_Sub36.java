@@ -47,15 +47,15 @@ final class Class98_Sub36 extends Node {
 				for (int i_0_ = 0; i_0_ < 2048; i_0_++) {
 					Player class246_sub3_sub4_sub2_sub2 = (Class151_Sub9.playerArray[i_0_]);
 					if (class246_sub3_sub4_sub2_sub2 != null) {
-						for (int i_1_ = 0; ((((Mobile) class246_sub3_sub4_sub2_sub2).aClass146Array6441).length > i_1_); i_1_++)
-							((Mobile) class246_sub3_sub4_sub2_sub2).aClass146Array6441[i_1_] = null;
+						for (int i_1_ = 0; ((class246_sub3_sub4_sub2_sub2.aClass146Array6441).length > i_1_); i_1_++)
+							class246_sub3_sub4_sub2_sub2.aClass146Array6441[i_1_] = null;
 					}
 				}
-				for (int i_2_ = 0; ((Class98_Sub10_Sub20.anInt5640 ^ 0xffffffff) < (i_2_ ^ 0xffffffff)); i_2_++) {
-					Class246_Sub3_Sub4_Sub2_Sub1 class246_sub3_sub4_sub2_sub1 = (((Class98_Sub39) Class163.aClass98_Sub39Array3516[i_2_]).aClass246_Sub3_Sub4_Sub2_Sub1_4187);
+				for (int i_2_ = 0; (i_2_ < Class98_Sub10_Sub20.anInt5640); i_2_++) {
+					Class246_Sub3_Sub4_Sub2_Sub1 class246_sub3_sub4_sub2_sub1 = (Class163.aClass98_Sub39Array3516[i_2_].aClass246_Sub3_Sub4_Sub2_Sub1_4187);
 					if (class246_sub3_sub4_sub2_sub1 != null) {
-						for (int i_3_ = 0; i_3_ < (((Mobile) class246_sub3_sub4_sub2_sub1).aClass146Array6441).length; i_3_++)
-							((Mobile) class246_sub3_sub4_sub2_sub1).aClass146Array6441[i_3_] = null;
+						for (int i_3_ = 0; i_3_ < (class246_sub3_sub4_sub2_sub1.aClass146Array6441).length; i_3_++)
+							class246_sub3_sub4_sub2_sub1.aClass146Array6441[i_3_] = null;
 					}
 				}
 				Class76_Sub5.aClass111_3745 = null;
@@ -80,9 +80,9 @@ final class Class98_Sub36 extends Node {
 			Class98_Sub10_Sub13.method1043((byte) -103);
 			Class98_Sub27.method1282((byte) 8, i_4_);
 			IncomingMessages.packetStream.method1256(0);
-			for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > -5; i_7_++) {
-				for (int i_8_ = 0; i_8_ < GameWorld.size_x >> -1040274845; i_8_++) {
-					for (int i_9_ = 0; i_9_ < GameWorld.size_y >> -1712093149; i_9_++) {
+			for (int i_7_ = 0; i_7_ < 4; i_7_++) {
+				for (int i_8_ = 0; i_8_ < GameWorld.size_x >> 3; i_8_++) {
+					for (int i_9_ = 0; i_9_ < GameWorld.size_y >> 3; i_9_++) {
 						int i_10_ = IncomingMessages.packetStream.readBits((byte) -45, 1);
 						if (i_10_ != 1)
 							Class170.anIntArrayArrayArray1311[i_7_][i_8_][i_9_] = -1;
@@ -92,7 +92,7 @@ final class Class98_Sub36 extends Node {
 				}
 			}
 			IncomingMessages.packetStream.method1254((byte) 120);
-			int i_11_ = ((-((RSByteBuffer) IncomingMessages.packetStream).position + Class65.anInt496) / 16);
+			int i_11_ = ((-IncomingMessages.packetStream.position + Class65.anInt496) / 16);
 			Class98_Sub46_Sub17.regionKeys = new int[i_11_][4];
 			for (int i_12_ = 0; i_11_ > i_12_; i_12_++) {
 				for (int i_13_ = 0; i_13_ < 4; i_13_++)
@@ -113,22 +113,22 @@ final class Class98_Sub36 extends Node {
 			Class255.aByteArrayArray3211 = new byte[i_11_][];
 			i_11_ = 0;
 			for (int i_14_ = 0; i_14_ < 4; i_14_++) {
-				for (int i_15_ = 0; GameWorld.size_x >> 1588990627 > i_15_; i_15_++) {
-					for (int i_16_ = 0; GameWorld.size_y >> 1681357539 > i_16_; i_16_++) {
+				for (int i_15_ = 0; GameWorld.size_x >> 3 > i_15_; i_15_++) {
+					for (int i_16_ = 0; GameWorld.size_y >> 3 > i_16_; i_16_++) {
 						int i_17_ = (Class170.anIntArrayArrayArray1311[i_14_][i_15_][i_16_]);
-						if ((i_17_ ^ 0xffffffff) != 0) {
-							int i_18_ = (i_17_ & 0xffe88a) >> 1970993198;
-							int i_19_ = 0x7ff & i_17_ >> -1128997053;
-							int i_20_ = i_19_ / 8 + (i_18_ / 8 << -1281050872);
-							for (int i_21_ = 0; (i_21_ ^ 0xffffffff) > (i_11_ ^ 0xffffffff); i_21_++) {
+						if (i_17_ != -1) {
+							int i_18_ = (i_17_ & 0xffe88a) >> 14;
+							int i_19_ = 0x7ff & i_17_ >> 3;
+							int i_20_ = i_19_ / 8 + (i_18_ / 8 << 8);
+							for (int i_21_ = 0; i_11_ > i_21_; i_21_++) {
 								if (i_20_ == Class121.anIntArray1006[i_21_]) {
 									i_20_ = -1;
 									break;
 								}
 							}
-							if ((i_20_ ^ 0xffffffff) != 0) {
+							if (i_20_ != -1) {
 								Class121.anIntArray1006[i_11_] = i_20_;
-								int i_22_ = i_20_ >> -1048016408 & 0xff;
+								int i_22_ = i_20_ >> 8 & 0xff;
 								int i_23_ = i_20_ & 0xff;
 								Class287.objectDataArchive[i_11_] = (Class234.runescapeCache.readArchiveByName((byte) -71, "m" + i_22_ + "_" + i_23_));
 								landscapeArchive[i_11_] = (Class234.runescapeCache.readArchiveByName((byte) -118, "l" + i_22_ + "_" + i_23_));
@@ -148,10 +148,10 @@ final class Class98_Sub36 extends Node {
 
 	Class98_Sub36(int i, Class237_Sub1 class237_sub1, int i_24_, boolean bool) {
 		try {
-			((Class98_Sub36) this).anInt4152 = i_24_;
-			((Class98_Sub36) this).aClass237_Sub1_4157 = class237_sub1;
-			((Class98_Sub36) this).anInt4160 = i;
-			((Class98_Sub36) this).aBoolean4154 = bool;
+			this.anInt4152 = i_24_;
+			this.aClass237_Sub1_4157 = class237_sub1;
+			this.anInt4160 = i;
+			this.aBoolean4154 = bool;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("pm.<init>(" + i + ',' + (class237_sub1 != null ? "{...}" : "null") + ',' + i_24_ + ',' + bool + ')'));
 		}

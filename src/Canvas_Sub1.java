@@ -26,7 +26,7 @@ final class Canvas_Sub1 extends Canvas {
 
 	static final void method118(byte i) {
 		try {
-			if ((Class177.anInt1376 ^ 0xffffffff) == -8)
+			if (Class177.anInt1376 == 7)
 				Class98_Sub10_Sub1.exitToLobby(false, false);
 			else {
 				Class318.aClass123_2698 = aa_Sub1.aClass123_3561;
@@ -42,19 +42,19 @@ final class Canvas_Sub1 extends Canvas {
 	static final void method119(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_) {
 		do {
 			try {
-				if (i_4_ < (i_5_ ^ 0xffffffff) || i_0_ < 1 || (i_5_ ^ 0xffffffff) < (GameWorld.size_x + -2 ^ 0xffffffff) || -2 + GameWorld.size_y < i_0_)
+				if (i_4_ < (~i_5_) || i_0_ < 1 || GameWorld.size_x + -2 < i_5_ || -2 + GameWorld.size_y < i_0_)
 					break;
 				int i_8_ = i_3_;
-				if ((i_8_ ^ 0xffffffff) > -4 && Class1.method162(i_0_, (byte) -88, i_5_))
+				if (i_8_ < 3 && Class1.method162(i_0_, (byte) -88, i_5_))
 					i_8_++;
-				if ((((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub3_4076.method564((byte) 122) != 0 || RenderAnimDefinitions.method3477(i_0_, i_8_, i_5_, Class115.anInt963, 55)) && (Class98_Sub46_Sub1.aClass172ArrayArrayArray5948 != null)) {
+				if ((Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub3_4076.method564((byte) 122) != 0 || RenderAnimDefinitions.method3477(i_0_, i_8_, i_5_, Class115.anInt963, 55)) && (Class98_Sub46_Sub1.aClass172ArrayArrayArray5948 != null)) {
 					Class146_Sub3.aClass305_Sub1_4952.method3590(i_0_, i_3_, Class265.aHa1974, Class167.aClass243Array1281[i_3_], 1, i_1_, i_5_);
 					if (i < 0)
 						break;
-					int i_9_ = ((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub11_4038.method596((byte) 122);
-					Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub11_4038));
+					int i_9_ = Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub11_4038.method596((byte) 122);
+					Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, 1, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub11_4038));
 					Class146_Sub3.aClass305_Sub1_4952.method3588(i, i_0_, i_6_, i_8_, false, i_5_, Class265.aHa1974, i_2_, i_7_, i_3_, Class167.aClass243Array1281[i_3_]);
-					Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, i_9_, (((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub11_4038));
+					Class98_Sub9.aClass98_Sub27_3856.method1285((byte) -13, i_9_, (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub11_4038));
 				}
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("bn.C(" + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'));
@@ -79,7 +79,7 @@ final class Canvas_Sub1 extends Canvas {
 				int[] is_13_ = new int[i_10_ * i];
 				for (int i_14_ = 0; i > i_14_; i_14_++) {
 					int i_15_ = is[i_14_] + i_14_ * i_10_;
-					for (int i_16_ = 0; (is_12_[i_14_] ^ 0xffffffff) < (i_16_ ^ 0xffffffff); i_16_++)
+					for (int i_16_ = 0; i_16_ < is_12_[i_14_]; i_16_++)
 						is_13_[i_15_++] = -16777216;
 				}
 				return new aa_Sub2(var_ha_Sub3, i_10_, i, is_13_);

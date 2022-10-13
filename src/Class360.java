@@ -41,22 +41,22 @@ final class Class360 {
 					float f_12_ = f_3_ - f;
 					float f_13_ = f_4_ - f_1_;
 					float f_14_ = -f_2_ + f_5_;
-					((RSByteBuffer) aClass98_Sub22_Sub2_3063).position = 0;
-					if (((ha_Sub1) var_ha_Sub1).aBoolean4397) {
-						for (int i_15_ = -1 + i; (i_15_ ^ 0xffffffff) <= -1; i_15_--) {
+					aClass98_Sub22_Sub2_3063.position = 0;
+					if (var_ha_Sub1.aBoolean4397) {
+						for (int i_15_ = -1 + i; i_15_ >= 0; i_15_--) {
 							int i_16_ = (anIntArray3075[i_15_] <= 64 ? anIntArray3075[i_15_] : 64);
 							if (i_16_ > 0) {
-								for (int i_17_ = -1 + i_16_; (i_17_ ^ 0xffffffff) <= -1; i_17_--) {
+								for (int i_17_ = -1 + i_16_; i_17_ >= 0; i_17_--) {
 									Class246_Sub4_Sub2 class246_sub4_sub2 = (aClass246_Sub4_Sub2ArrayArray3072[i_15_][i_17_]);
-									int i_18_ = (((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6178);
-									byte i_19_ = (byte) (i_18_ >> 1656669520);
-									byte i_20_ = (byte) (i_18_ >> -1272463480);
+									int i_18_ = (class246_sub4_sub2.anInt6178);
+									byte i_19_ = (byte) (i_18_ >> 16);
+									byte i_20_ = (byte) (i_18_ >> 8);
 									byte i_21_ = (byte) i_18_;
-									byte i_22_ = (byte) (i_18_ >>> 1975843128);
-									float f_23_ = (float) ((((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6176) >> -454584212);
-									float f_24_ = (float) ((((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6177) >> -649195284);
-									float f_25_ = (float) ((((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6175) >> 78882380);
-									int i_26_ = (((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6179 >> -2029434900);
+									byte i_22_ = (byte) (i_18_ >>> 24);
+									float f_23_ = (float) ((class246_sub4_sub2.anInt6176) >> 12);
+									float f_24_ = (float) ((class246_sub4_sub2.anInt6177) >> 12);
+									float f_25_ = (float) ((class246_sub4_sub2.anInt6175) >> 12);
+									int i_26_ = (class246_sub4_sub2.anInt6179 >> 12);
 									aClass98_Sub22_Sub2_3063.method1264((byte) -118, 0.0F);
 									aClass98_Sub22_Sub2_3063.method1264((byte) -123, 0.0F);
 									aClass98_Sub22_Sub2_3063.method1264((byte) -96, (float) -i_26_ * f_6_ + f_23_);
@@ -94,19 +94,19 @@ final class Class360 {
 									aClass98_Sub22_Sub2_3063.writeByte(i_21_);
 									aClass98_Sub22_Sub2_3063.writeByte(i_22_);
 								}
-								if ((anIntArray3075[i_15_] ^ 0xffffffff) < -65) {
+								if (anIntArray3075[i_15_] > 64) {
 									int i_27_ = -65 + anIntArray3075[i_15_];
-									for (int i_28_ = anIntArray3077[i_27_] - 1; (i_28_ ^ 0xffffffff) <= -1; i_28_--) {
+									for (int i_28_ = anIntArray3077[i_27_] - 1; i_28_ >= 0; i_28_--) {
 										Class246_Sub4_Sub2 class246_sub4_sub2 = (aClass246_Sub4_Sub2ArrayArray3073[i_27_][i_28_]);
-										int i_29_ = (((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6178);
-										byte i_30_ = (byte) (i_29_ >> -1694259824);
-										byte i_31_ = (byte) (i_29_ >> 451522632);
+										int i_29_ = (class246_sub4_sub2.anInt6178);
+										byte i_30_ = (byte) (i_29_ >> 16);
+										byte i_31_ = (byte) (i_29_ >> 8);
 										byte i_32_ = (byte) i_29_;
-										byte i_33_ = (byte) (i_29_ >>> -310568296);
-										float f_34_ = (float) ((((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6176) >> -901688052);
-										float f_35_ = (float) ((((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6177) >> 2000215468);
-										float f_36_ = (float) ((((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6175) >> 1165920652);
-										int i_37_ = (((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6179 >> -627874868);
+										byte i_33_ = (byte) (i_29_ >>> 24);
+										float f_34_ = (float) ((class246_sub4_sub2.anInt6176) >> 12);
+										float f_35_ = (float) ((class246_sub4_sub2.anInt6177) >> 12);
+										float f_36_ = (float) ((class246_sub4_sub2.anInt6175) >> 12);
+										int i_37_ = (class246_sub4_sub2.anInt6179 >> 12);
 										aClass98_Sub22_Sub2_3063.method1264((byte) 95, 0.0F);
 										aClass98_Sub22_Sub2_3063.method1264((byte) 30, 0.0F);
 										aClass98_Sub22_Sub2_3063.method1264((byte) -113, f_34_ + f_6_ * (float) -i_37_);
@@ -148,20 +148,20 @@ final class Class360 {
 							}
 						}
 					} else {
-						for (int i_38_ = i - 1; (i_38_ ^ 0xffffffff) <= -1; i_38_--) {
+						for (int i_38_ = i - 1; i_38_ >= 0; i_38_--) {
 							int i_39_ = (anIntArray3075[i_38_] > 64 ? 64 : anIntArray3075[i_38_]);
-							if ((i_39_ ^ 0xffffffff) < -1) {
-								for (int i_40_ = i_39_ - 1; (i_40_ ^ 0xffffffff) <= -1; i_40_--) {
+							if (i_39_ > 0) {
+								for (int i_40_ = i_39_ - 1; i_40_ >= 0; i_40_--) {
 									Class246_Sub4_Sub2 class246_sub4_sub2 = (aClass246_Sub4_Sub2ArrayArray3072[i_38_][i_40_]);
-									int i_41_ = (((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6178);
-									byte i_42_ = (byte) (i_41_ >> 394032304);
-									byte i_43_ = (byte) (i_41_ >> -1148711800);
+									int i_41_ = (class246_sub4_sub2.anInt6178);
+									byte i_42_ = (byte) (i_41_ >> 16);
+									byte i_43_ = (byte) (i_41_ >> 8);
 									byte i_44_ = (byte) i_41_;
-									byte i_45_ = (byte) (i_41_ >>> -634651496);
-									float f_46_ = (float) ((((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6176) >> 1288887212);
-									float f_47_ = (float) ((((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6177) >> -1848026004);
-									float f_48_ = (float) ((((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6175) >> -638538612);
-									int i_49_ = (((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6179 >> -1389801652);
+									byte i_45_ = (byte) (i_41_ >>> 24);
+									float f_46_ = (float) ((class246_sub4_sub2.anInt6176) >> 12);
+									float f_47_ = (float) ((class246_sub4_sub2.anInt6177) >> 12);
+									float f_48_ = (float) ((class246_sub4_sub2.anInt6175) >> 12);
+									int i_49_ = (class246_sub4_sub2.anInt6179 >> 12);
 									aClass98_Sub22_Sub2_3063.method1265((byte) -52, 0.0F);
 									aClass98_Sub22_Sub2_3063.method1265((byte) -52, 0.0F);
 									aClass98_Sub22_Sub2_3063.method1265((byte) -52, f_46_ + f_6_ * (float) -i_49_);
@@ -199,19 +199,19 @@ final class Class360 {
 									aClass98_Sub22_Sub2_3063.writeByte(i_44_);
 									aClass98_Sub22_Sub2_3063.writeByte(i_45_);
 								}
-								if ((anIntArray3075[i_38_] ^ 0xffffffff) < -65) {
+								if (anIntArray3075[i_38_] > 64) {
 									int i_50_ = -64 + (anIntArray3075[i_38_] + -1);
 									for (int i_51_ = anIntArray3077[i_50_] + -1; i_51_ >= 0; i_51_--) {
 										Class246_Sub4_Sub2 class246_sub4_sub2 = (aClass246_Sub4_Sub2ArrayArray3073[i_50_][i_51_]);
-										int i_52_ = (((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6178);
-										byte i_53_ = (byte) (i_52_ >> 117536784);
-										byte i_54_ = (byte) (i_52_ >> 1635536040);
+										int i_52_ = (class246_sub4_sub2.anInt6178);
+										byte i_53_ = (byte) (i_52_ >> 16);
+										byte i_54_ = (byte) (i_52_ >> 8);
 										byte i_55_ = (byte) i_52_;
-										byte i_56_ = (byte) (i_52_ >>> -100916008);
-										float f_57_ = (float) ((((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6176) >> -1764237876);
-										float f_58_ = (float) ((((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6177) >> 1759716140);
-										float f_59_ = (float) ((((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6175) >> 88626700);
-										int i_60_ = (((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6179 >> -1925490324);
+										byte i_56_ = (byte) (i_52_ >>> 24);
+										float f_57_ = (float) ((class246_sub4_sub2.anInt6176) >> 12);
+										float f_58_ = (float) ((class246_sub4_sub2.anInt6177) >> 12);
+										float f_59_ = (float) ((class246_sub4_sub2.anInt6175) >> 12);
+										int i_60_ = (class246_sub4_sub2.anInt6179 >> 12);
 										aClass98_Sub22_Sub2_3063.method1265((byte) -52, 0.0F);
 										aClass98_Sub22_Sub2_3063.method1265((byte) -52, 0.0F);
 										aClass98_Sub22_Sub2_3063.method1265((byte) -52, f_6_ * (float) -i_60_ + f_57_);
@@ -253,11 +253,11 @@ final class Class360 {
 							}
 						}
 					}
-					if ((((RSByteBuffer) aClass98_Sub22_Sub2_3063).position ^ 0xffffffff) == -1)
+					if (aClass98_Sub22_Sub2_3063.position == 0)
 						break;
-					anInterface16_3066.method54(((RSByteBuffer) aClass98_Sub22_Sub2_3063).position, 7896, (((RSByteBuffer) aClass98_Sub22_Sub2_3063).data), 24);
+					anInterface16_3066.method54(aClass98_Sub22_Sub2_3063.position, 7896, (aClass98_Sub22_Sub2_3063.data), 24);
 					var_ha_Sub1.method1868(aClass104_3068, null, aClass104_3067, aClass104_3069, 0);
-					var_ha_Sub1.method1910(7, (((RSByteBuffer) aClass98_Sub22_Sub2_3063).position) / 24, false, 0);
+					var_ha_Sub1.method1910(7, (aClass98_Sub22_Sub2_3063.position) / 24, false, 0);
 				}
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("vq.B(" + i + ',' + (var_ha_Sub1 != null ? "{...}" : "null") + ',' + i_0_ + ')'));
@@ -279,27 +279,27 @@ final class Class360 {
 
 	final void method3906(Class242 class242, int i, int i_64_, ha_Sub1 var_ha_Sub1) {
 		try {
-			if (((ha_Sub1) var_ha_Sub1).aClass111_Sub1_4348 != null) {
-				if ((i_64_ ^ 0xffffffff) > -1)
+			if (var_ha_Sub1.aClass111_Sub1_4348 != null) {
+				if (i_64_ < 0)
 					method3908(var_ha_Sub1, 5228);
 				else
 					method3911(var_ha_Sub1, true, i_64_);
-				float f = (((Class111_Sub1) ((ha_Sub1) var_ha_Sub1).aClass111_Sub1_4348).aFloat4684);
-				float f_65_ = (((Class111_Sub1) ((ha_Sub1) var_ha_Sub1).aClass111_Sub1_4348).aFloat4676);
-				float f_66_ = (((Class111_Sub1) ((ha_Sub1) var_ha_Sub1).aClass111_Sub1_4348).aFloat4673);
-				float f_67_ = (((Class111_Sub1) ((ha_Sub1) var_ha_Sub1).aClass111_Sub1_4348).aFloat4677);
+				float f = (var_ha_Sub1.aClass111_Sub1_4348.aFloat4684);
+				float f_65_ = (var_ha_Sub1.aClass111_Sub1_4348.aFloat4676);
+				float f_66_ = (var_ha_Sub1.aClass111_Sub1_4348.aFloat4673);
+				float f_67_ = (var_ha_Sub1.aClass111_Sub1_4348.aFloat4677);
 				try {
 					int i_68_ = 0;
 					int i_69_ = 2147483647;
 					int i_70_ = 0;
-					Class246_Sub4 class246_sub4 = (((Class358) ((Class242) class242).aClass358_1850).aClass246_Sub4_3028);
+					Class246_Sub4 class246_sub4 = (class242.aClass358_1850.aClass246_Sub4_3028);
 					if (i > -40)
 						return;
-					for (Class246_Sub4 class246_sub4_71_ = (((Class246_Sub4) class246_sub4).aClass246_Sub4_5091); class246_sub4_71_ != class246_sub4; class246_sub4_71_ = (((Class246_Sub4) class246_sub4_71_).aClass246_Sub4_5091)) {
+					for (Class246_Sub4 class246_sub4_71_ = (class246_sub4.aClass246_Sub4_5091); class246_sub4_71_ != class246_sub4; class246_sub4_71_ = (class246_sub4_71_.aClass246_Sub4_5091)) {
 						Class246_Sub4_Sub2 class246_sub4_sub2 = (Class246_Sub4_Sub2) class246_sub4_71_;
-						int i_72_ = (int) ((float) (((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6175 >> 1098990956) * f_66_ + ((float) (((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6176 >> -1531981396) * f + (float) ((((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6177) >> -572896980) * f_65_) + f_67_);
+						int i_72_ = (int) ((float) (class246_sub4_sub2.anInt6175 >> 12) * f_66_ + ((float) (class246_sub4_sub2.anInt6176 >> 12) * f + (float) ((class246_sub4_sub2.anInt6177) >> 12) * f_65_) + f_67_);
 						anIntArray3074[i_68_++] = i_72_;
-						if ((i_69_ ^ 0xffffffff) < (i_72_ ^ 0xffffffff))
+						if (i_72_ < i_69_)
 							i_69_ = i_72_;
 						if (i_72_ > i_70_)
 							i_70_ = i_72_;
@@ -314,7 +314,7 @@ final class Class360 {
 						i_74_ = 0;
 					}
 					i_68_ = 0;
-					Class246_Sub4 class246_sub4_75_ = ((Class246_Sub4) class246_sub4).aClass246_Sub4_5091;
+					Class246_Sub4 class246_sub4_75_ = class246_sub4.aClass246_Sub4_5091;
 					int i_76_ = -2;
 					boolean bool = true;
 					boolean bool_77_ = true;
@@ -324,14 +324,14 @@ final class Class360 {
 							anIntArray3075[i_78_] = 0;
 						for (int i_79_ = 0; i_79_ < 64; i_79_++)
 							anIntArray3077[i_79_] = 0;
-						for (/**/; class246_sub4 != class246_sub4_75_; class246_sub4_75_ = (((Class246_Sub4) class246_sub4_75_).aClass246_Sub4_5091)) {
+						for (/**/; class246_sub4 != class246_sub4_75_; class246_sub4_75_ = (class246_sub4_75_.aClass246_Sub4_5091)) {
 							Class246_Sub4_Sub2 class246_sub4_sub2 = (Class246_Sub4_Sub2) class246_sub4_75_;
 							if (bool_77_) {
-								i_76_ = ((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6180;
-								bool = ((Class246_Sub4_Sub2) class246_sub4_sub2).aBoolean6174;
+								i_76_ = class246_sub4_sub2.anInt6180;
+								bool = class246_sub4_sub2.aBoolean6174;
 								bool_77_ = false;
 							}
-							if ((i_68_ ^ 0xffffffff) < -1 && (((((Class246_Sub4_Sub2) class246_sub4_sub2).anInt6180) ^ 0xffffffff) != (i_76_ ^ 0xffffffff) || !bool == (((Class246_Sub4_Sub2) class246_sub4_sub2).aBoolean6174))) {
+							if (i_68_ > 0 && (i_76_ != (class246_sub4_sub2.anInt6180) || !bool == (class246_sub4_sub2.aBoolean6174))) {
 								bool_77_ = true;
 								break;
 							}
@@ -348,13 +348,13 @@ final class Class360 {
 									aClass246_Sub4_Sub2ArrayArray3072[i_80_][anIntArray3075[i_80_]++] = class246_sub4_sub2;
 							}
 						}
-						if ((i_76_ ^ 0xffffffff) > -1)
+						if (i_76_ < 0)
 							var_ha_Sub1.method1834(-43, -1);
 						else
 							var_ha_Sub1.method1834(-84, i_76_);
-						if (bool && (Class49.aFloat416 != ((ha_Sub1) var_ha_Sub1).aFloat4413))
+						if (bool && (Class49.aFloat416 != var_ha_Sub1.aFloat4413))
 							var_ha_Sub1.xa(Class49.aFloat416);
-						else if (((ha_Sub1) var_ha_Sub1).aFloat4413 != 1.0F)
+						else if (var_ha_Sub1.aFloat4413 != 1.0F)
 							var_ha_Sub1.xa(1.0F);
 						method3904(i_73_, var_ha_Sub1, (byte) 52);
 					}
@@ -376,7 +376,7 @@ final class Class360 {
 				if (i >= -5)
 					aLong3070 = -102L;
 				OpenGL.glEnable(16385);
-				if (((ha_Sub1) var_ha_Sub1).aFloat4413 == Class49.aFloat416)
+				if (var_ha_Sub1.aFloat4413 == Class49.aFloat416)
 					break;
 				var_ha_Sub1.xa(Class49.aFloat416);
 			} catch (RuntimeException runtimeexception) {
@@ -388,7 +388,7 @@ final class Class360 {
 
 	private final void method3908(ha_Sub1 var_ha_Sub1, int i) {
 		try {
-			Class49.aFloat416 = ((ha_Sub1) var_ha_Sub1).aFloat4413;
+			Class49.aFloat416 = var_ha_Sub1.aFloat4413;
 			var_ha_Sub1.method1861(19330);
 			if (i != 5228)
 				aClass246_Sub4_Sub2ArrayArray3072 = null;
@@ -405,7 +405,7 @@ final class Class360 {
 		try {
 			if (i != -4)
 				aString3064 = null;
-			if ((i_81_ < 0 || (i_81_ ^ 0xffffffff) < -4) && i_81_ != 9)
+			if ((i_81_ < 0 || i_81_ > 3) && i_81_ != 9)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -415,15 +415,15 @@ final class Class360 {
 
 	static final GameInterfaceData method3910(boolean bool, GameInterfaceData class293) {
 		try {
-			if ((((GameInterfaceData) class293).anInt2234 ^ 0xffffffff) != 0)
-				return Class159.method2509(((GameInterfaceData) class293).anInt2234, -9820);
+			if (class293.anInt2234 != -1)
+				return Class159.method2509(class293.anInt2234, -9820);
 			if (bool != true)
 				return null;
-			int i = ((GameInterfaceData) class293).anInt2248 >>> -1305595088;
+			int i = class293.anInt2248 >>> 16;
 			Class61 class61 = new Class61(Class116.aClass377_964);
 			for (GameInterface class98_sub18 = (GameInterface) class61.method541(0); class98_sub18 != null; class98_sub18 = (GameInterface) class61.method539(2)) {
-				if ((((GameInterface) class98_sub18).interfaceID ^ 0xffffffff) == (i ^ 0xffffffff))
-					return Class159.method2509((int) (((Node) class98_sub18).uid), -9820);
+				if (i == class98_sub18.interfaceID)
+					return Class159.method2509((int) (class98_sub18.uid), -9820);
 			}
 			return null;
 		} catch (RuntimeException runtimeexception) {
@@ -433,7 +433,7 @@ final class Class360 {
 
 	private final void method3911(ha_Sub1 var_ha_Sub1, boolean bool, int i) {
 		try {
-			Class49.aFloat416 = ((ha_Sub1) var_ha_Sub1).aFloat4413;
+			Class49.aFloat416 = var_ha_Sub1.aFloat4413;
 			var_ha_Sub1.method1890((float) i, bool);
 			var_ha_Sub1.method1901((byte) -35);
 			OpenGL.glDisable(16384);

@@ -12,11 +12,11 @@ final class Class189 {
 
 	final void method2639(boolean bool) {
 		try {
-			if (((Class189) this).anInterface2_Impl1_1454 != null)
-				((Class189) this).anInterface2_Impl1_1454.method72(!bool);
+			if (this.anInterface2_Impl1_1454 != null)
+				this.anInterface2_Impl1_1454.method72(!bool);
 			if (bool != true)
 				method2642((byte) 27);
-			((Class189) this).aBoolean1458 = false;
+			this.aBoolean1458 = false;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "mia.D(" + bool + ')');
 		}
@@ -26,7 +26,7 @@ final class Class189 {
 		try {
 			if (i != 13156520)
 				aClass293_1457 = null;
-			if (!((Class189) this).aBoolean1458 || ((Class189) this).aBoolean1459)
+			if (!this.aBoolean1458 || this.aBoolean1459)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -57,7 +57,7 @@ final class Class189 {
 
 	Class189(boolean bool) {
 		try {
-			((Class189) this).aBoolean1459 = bool;
+			this.aBoolean1459 = bool;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "mia.<init>(" + bool + ')');
 		}

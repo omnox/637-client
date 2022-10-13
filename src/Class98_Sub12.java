@@ -64,16 +64,16 @@ final class Class98_Sub12 extends Node {
 
 	static final boolean method1131(int i, int i_1_, String string) {
 		try {
-			if (((Class88) Class98_Sub43_Sub2.aClass88_5907).aBoolean682) {
+			if (Class98_Sub43_Sub2.aClass88_5907.aBoolean682) {
 				Class98_Sub46_Sub10.aClass354_6011 = new Class354();
-				((Class354) Class98_Sub46_Sub10.aClass354_6011).aString3016 = string;
-				((Class354) Class98_Sub46_Sub10.aClass354_6011).anInt3011 = i_1_;
+				Class98_Sub46_Sub10.aClass354_6011.aString3016 = string;
+				Class98_Sub46_Sub10.aClass354_6011.anInt3011 = i_1_;
 				if (Class43.aClass196_375 != Class64_Sub29.aClass196_3720) {
-					((Class354) Class98_Sub46_Sub10.aClass354_6011).anInt3012 = (((Class354) Class98_Sub46_Sub10.aClass354_6011).anInt3011) + 50000;
-					((Class354) Class98_Sub46_Sub10.aClass354_6011).anInt3015 = (((Class354) Class98_Sub46_Sub10.aClass354_6011).anInt3011) + 40000;
+					Class98_Sub46_Sub10.aClass354_6011.anInt3012 = (Class98_Sub46_Sub10.aClass354_6011.anInt3011) + 50000;
+					Class98_Sub46_Sub10.aClass354_6011.anInt3015 = (Class98_Sub46_Sub10.aClass354_6011.anInt3011) + 40000;
 				}
 				if (Class98_Sub28_Sub1.aClass53_Sub1Array5805.length > i_1_ && Class98_Sub28_Sub1.aClass53_Sub1Array5805[i_1_] != null)
-					Class98_Sub46.anInt4260 = ((Class53) (Class98_Sub28_Sub1.aClass53_Sub1Array5805[i_1_])).anInt427;
+					Class98_Sub46.anInt4260 = Class98_Sub28_Sub1.aClass53_Sub1Array5805[i_1_].anInt427;
 				return true;
 			}
 			String string_2_ = "";
@@ -98,12 +98,12 @@ final class Class98_Sub12 extends Node {
 
 	Class98_Sub12(int i, int i_5_, int i_6_, int i_7_, int i_8_, boolean bool) {
 		try {
-			((Class98_Sub12) this).aBoolean3878 = bool;
-			((Class98_Sub12) this).anInt3876 = i;
-			((Class98_Sub12) this).anInt3875 = i_7_;
-			((Class98_Sub12) this).anInt3873 = i_6_;
-			((Class98_Sub12) this).anInt3871 = i_8_;
-			((Class98_Sub12) this).anInt3874 = i_5_;
+			this.aBoolean3878 = bool;
+			this.anInt3876 = i;
+			this.anInt3875 = i_7_;
+			this.anInt3873 = i_6_;
+			this.anInt3871 = i_8_;
+			this.anInt3874 = i_5_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("er.<init>(" + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ')'));
 		}

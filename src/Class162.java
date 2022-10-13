@@ -45,8 +45,8 @@ final class Class162 {
 	static final void method2518(int i, int i_1_, int i_2_, int i_3_) {
 		do {
 			try {
-				if ((i_1_ ^ 0xffffffff) != -1012) {
-					if ((i_1_ ^ 0xffffffff) == -1004)
+				if (i_1_ != 1011) {
+					if (i_1_ == 1003)
 						ClientScript2Runtime.method3152(Class336.aClass105_2829, i_3_, i_2_);
 					else if (i_1_ == 1001)
 						ClientScript2Runtime.method3152(Class98_Sub46_Sub2.aClass105_5951, i_3_, i_2_);
@@ -76,7 +76,7 @@ final class Class162 {
 
 	private Class162(int i) {
 		try {
-			((Class162) this).anInt1263 = i;
+			this.anInt1263 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "kq.<init>(" + i + ')');
 		}

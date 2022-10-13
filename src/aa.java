@@ -23,49 +23,49 @@ abstract class aa {
 		try {
 			int i_0_ = string.length();
 			byte[] is = new byte[i_0_];
-			for (int i_1_ = i; (i_0_ ^ 0xffffffff) < (i_1_ ^ 0xffffffff); i_1_++) {
+			for (int i_1_ = i; i_1_ < i_0_; i_1_++) {
 				int i_2_ = string.charAt(i_1_);
-				if (i_2_ > 0 && (i_2_ ^ 0xffffffff) > -129 || ((i_2_ ^ 0xffffffff) <= -161 && (i_2_ ^ 0xffffffff) >= -256))
+				if (i_2_ > 0 && i_2_ < 128 || (i_2_ >= 160 && i_2_ <= 255))
 					is[i_1_] = (byte) i_2_;
 				else if (i_2_ != 8364) {
-					if ((i_2_ ^ 0xffffffff) != -8219) {
+					if (i_2_ != 8218) {
 						if (i_2_ == 402)
 							is[i_1_] = (byte) -125;
-						else if ((i_2_ ^ 0xffffffff) == -8223)
+						else if (i_2_ == 8222)
 							is[i_1_] = (byte) -124;
 						else if (i_2_ == 8230)
 							is[i_1_] = (byte) -123;
-						else if ((i_2_ ^ 0xffffffff) != -8225) {
-							if ((i_2_ ^ 0xffffffff) != -8226) {
+						else if (i_2_ != 8224) {
+							if (i_2_ != 8225) {
 								if (i_2_ == 710)
 									is[i_1_] = (byte) -120;
-								else if ((i_2_ ^ 0xffffffff) != -8241) {
-									if ((i_2_ ^ 0xffffffff) != -353) {
+								else if (i_2_ != 8240) {
+									if (i_2_ != 352) {
 										if (i_2_ != 8249) {
-											if ((i_2_ ^ 0xffffffff) == -339)
+											if (i_2_ == 338)
 												is[i_1_] = (byte) -116;
 											else if (i_2_ == 381)
 												is[i_1_] = (byte) -114;
-											else if ((i_2_ ^ 0xffffffff) == -8217)
+											else if (i_2_ == 8216)
 												is[i_1_] = (byte) -111;
 											else if (i_2_ != 8217) {
-												if ((i_2_ ^ 0xffffffff) == -8221)
+												if (i_2_ == 8220)
 													is[i_1_] = (byte) -109;
 												else if (i_2_ == 8221)
 													is[i_1_] = (byte) -108;
-												else if ((i_2_ ^ 0xffffffff) != -8227) {
+												else if (i_2_ != 8226) {
 													if (i_2_ != 8211) {
 														if (i_2_ != 8212) {
 															if (i_2_ == 732)
 																is[i_1_] = (byte) -104;
-															else if ((i_2_ ^ 0xffffffff) == -8483)
+															else if (i_2_ == 8482)
 																is[i_1_] = (byte) -103;
 															else if (i_2_ != 353) {
 																if (i_2_ == 8250)
 																	is[i_1_] = (byte) -101;
-																else if ((i_2_ ^ 0xffffffff) == -340)
+																else if (i_2_ == 339)
 																	is[i_1_] = (byte) -100;
-																else if ((i_2_ ^ 0xffffffff) == -383)
+																else if (i_2_ == 382)
 																	is[i_1_] = (byte) -98;
 																else if (i_2_ == 376)
 																	is[i_1_] = (byte) -97;

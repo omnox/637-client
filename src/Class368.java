@@ -36,19 +36,19 @@ final class Class368 {
 		try {
 			int i_0_ = 53 / ((-62 - i) / 35);
 			if (Class224_Sub3_Sub1.aBoolean6144) {
-				while ((Class98_Sub9.anInt3854 ^ 0xffffffff) > (Class98_Sub28_Sub1.aClass53_Sub1Array5805.length ^ 0xffffffff)) {
+				while (Class98_Sub28_Sub1.aClass53_Sub1Array5805.length > Class98_Sub9.anInt3854) {
 					Class53_Sub1 class53_sub1 = (Class98_Sub28_Sub1.aClass53_Sub1Array5805[Class98_Sub9.anInt3854]);
-					if (class53_sub1 == null || (((Class53_Sub1) class53_sub1).anInt3631 ^ 0xffffffff) != 0)
+					if (class53_sub1 == null || class53_sub1.anInt3631 != -1)
 						Class98_Sub9.anInt3854++;
 					else {
 						if (Class220.aClass98_Sub4_1657 == null)
-							Class220.aClass98_Sub4_1657 = (Class48_Sub2_Sub1.aClass265_5531.method3229(90, (((Class53_Sub1) class53_sub1).aString3634)));
-						int i_1_ = (((Class98_Sub4) Class220.aClass98_Sub4_1657).anInt3827);
+							Class220.aClass98_Sub4_1657 = (Class48_Sub2_Sub1.aClass265_5531.method3229(90, (class53_sub1.aString3634)));
+						int i_1_ = (Class220.aClass98_Sub4_1657.anInt3827);
 						if (i_1_ == -1)
 							break;
 						Class220.aClass98_Sub4_1657 = null;
 						Class98_Sub9.anInt3854++;
-						((Class53_Sub1) class53_sub1).anInt3631 = i_1_;
+						class53_sub1.anInt3631 = i_1_;
 					}
 				}
 			}
@@ -59,9 +59,9 @@ final class Class368 {
 
 	Class368(String string, String string_2_, String string_3_) {
 		try {
-			((Class368) this).aString3125 = string_3_;
-			((Class368) this).aString3127 = string;
-			((Class368) this).aString3123 = string_2_;
+			this.aString3125 = string_3_;
+			this.aString3127 = string;
+			this.aString3123 = string_2_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("we.<init>(" + (string != null ? "{...}" : "null") + ',' + (string_2_ != null ? "{...}" : "null") + ',' + (string_3_ != null ? "{...}" : "null") + ')'));
 		}

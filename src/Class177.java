@@ -22,28 +22,28 @@ final class Class177 {
 			try {
 				if (i_0_ == 6) {
 					if (i != 1) {
-						if ((i ^ 0xffffffff) == -3) {
-							((Class177) this).anInt1374 = 1 + class98_sub22.readShort();
-							((Class177) this).anInt1380 = class98_sub22.readShort() + 1;
-						} else if ((i ^ 0xffffffff) != -4) {
-							if ((i ^ 0xffffffff) != -5) {
-								if ((i ^ 0xffffffff) != -6) {
+						if (i == 2) {
+							this.anInt1374 = 1 + class98_sub22.readShort();
+							this.anInt1380 = class98_sub22.readShort() + 1;
+						} else if (i != 3) {
+							if (i != 4) {
+								if (i != 5) {
 									if (i != 6) {
 										if (i == 7)
-											((Class177) this).aBoolean1377 = true;
+											this.aBoolean1377 = true;
 									} else
-										((Class177) this).aBoolean1383 = true;
+										this.aBoolean1383 = true;
 								} else
-									((Class177) this).anInt1384 = class98_sub22.readUnsignedByte();
+									this.anInt1384 = class98_sub22.readUnsignedByte();
 							} else
-								((Class177) this).anInt1379 = class98_sub22.readUnsignedByte();
+								this.anInt1379 = class98_sub22.readUnsignedByte();
 						} else
 							class98_sub22.readSignedByte();
 					} else {
-						((Class177) this).anInt1373 = class98_sub22.readShort();
-						if (((Class177) this).anInt1373 != 65535)
+						this.anInt1373 = class98_sub22.readShort();
+						if (this.anInt1373 != 65535)
 							break;
-						((Class177) this).anInt1373 = -1;
+						this.anInt1373 = -1;
 					}
 				}
 			} catch (RuntimeException runtimeexception) {
@@ -55,29 +55,29 @@ final class Class177 {
 
 	static final Class336 method2584(ha_Sub1 var_ha_Sub1, Class345[] class345s, boolean bool) {
 		try {
-			for (int i = 0; (class345s.length ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
-				if (class345s[i] == null || (((Class345) class345s[i]).aLong2891 ^ 0xffffffffffffffffL) >= -1L)
+			for (int i = 0; i < class345s.length; i++) {
+				if (class345s[i] == null || class345s[i].aLong2891 <= 0)
 					return null;
 			}
 			long l = OpenGL.glCreateProgramObjectARB();
-			for (int i = 0; (i ^ 0xffffffff) > (class345s.length ^ 0xffffffff); i++)
-				OpenGL.glAttachObjectARB(l, ((Class345) class345s[i]).aLong2891);
+			for (int i = 0; class345s.length > i; i++)
+				OpenGL.glAttachObjectARB(l, class345s[i].aLong2891);
 			OpenGL.glLinkProgramARB(l);
 			if (bool != true)
 				method2584(null, null, false);
 			OpenGL.glGetObjectParameterivARB(l, 35714, Class145.anIntArray1177, 0);
-			if ((Class145.anIntArray1177[0] ^ 0xffffffff) == -1) {
-				if ((Class145.anIntArray1177[0] ^ 0xffffffff) == -1)
+			if (Class145.anIntArray1177[0] == 0) {
+				if (Class145.anIntArray1177[0] == 0)
 					System.out.println("Shader linking failed:");
 				OpenGL.glGetObjectParameterivARB(l, 35716, Class145.anIntArray1177, 1);
-				if ((Class145.anIntArray1177[1] ^ 0xffffffff) < -2) {
+				if (Class145.anIntArray1177[1] > 1) {
 					byte[] is = new byte[Class145.anIntArray1177[1]];
 					OpenGL.glGetInfoLogARB(l, Class145.anIntArray1177[1], Class145.anIntArray1177, 0, is, 0);
 					System.out.println(new String(is));
 				}
 				if (Class145.anIntArray1177[0] == 0) {
-					for (int i = 0; (class345s.length ^ 0xffffffff) < (i ^ 0xffffffff); i++)
-						OpenGL.glDetachObjectARB(l, (((Class345) class345s[i]).aLong2891));
+					for (int i = 0; i < class345s.length; i++)
+						OpenGL.glDetachObjectARB(l, (class345s[i].aLong2891));
 					OpenGL.glDeleteObjectARB(l);
 					return null;
 				}
@@ -105,7 +105,7 @@ final class Class177 {
 			try {
 				for (;;) {
 					int i_3_ = class98_sub22.readUnsignedByte();
-					if ((i_3_ ^ 0xffffffff) == -1)
+					if (i_3_ == 0)
 						break;
 					method2583(class98_sub22, i_3_, 6, i_2_);
 				}
@@ -120,9 +120,9 @@ final class Class177 {
 	}
 
 	public Class177() {
-		((Class177) this).aBoolean1377 = false;
-		((Class177) this).aBoolean1383 = false;
-		((Class177) this).anInt1384 = 1;
-		((Class177) this).anInt1379 = 2;
+		this.aBoolean1377 = false;
+		this.aBoolean1383 = false;
+		this.anInt1384 = 1;
+		this.anInt1379 = 2;
 	}
 }

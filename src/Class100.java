@@ -24,7 +24,7 @@ final class Class100 {
 			int i_5_ = i_1_ << Class151_Sub8.anInt5015;
 			int i_6_ = Class78.activeTileHeightMap[i].method3420(i_1_, -12639, i_0_) - 1;
 			int i_7_ = i_6_ + class246_sub3_sub3.method2990(0);
-			if ((((Class246_Sub3_Sub3) class246_sub3_sub3).aShort6153 ^ 0xffffffff) == -2) {
+			if (class246_sub3_sub3.aShort6153 == 1) {
 				if (!Class254.method3187(i_7_, i_4_, i_5_, (byte) 82, i_6_, r_Sub2.anInt6333 + i_5_, i_7_, i_5_, i_4_, i_4_))
 					return false;
 				if (!Class254.method3187(i_7_, i_4_, i_5_, (byte) 82, i_6_, r_Sub2.anInt6333 + i_5_, i_6_, i_5_ + r_Sub2.anInt6333, i_4_, i_4_))
@@ -32,7 +32,7 @@ final class Class100 {
 				Class98_Sub16.anInt3927++;
 				return true;
 			}
-			if (((Class246_Sub3_Sub3) class246_sub3_sub3).aShort6153 == 2) {
+			if (class246_sub3_sub3.aShort6153 == 2) {
 				if (!Class254.method3187(i_7_, i_4_, r_Sub2.anInt6333 + i_5_, (byte) 82, i_6_, r_Sub2.anInt6333 + i_5_, i_7_, r_Sub2.anInt6333 + i_5_, i_4_ - -r_Sub2.anInt6333, i_4_))
 					return false;
 				if (!Class254.method3187(i_6_, r_Sub2.anInt6333 + i_4_, i_5_ + r_Sub2.anInt6333, (byte) 82, i_6_, i_5_ + r_Sub2.anInt6333, i_7_, i_5_ - -r_Sub2.anInt6333, i_4_ - -r_Sub2.anInt6333, i_4_))
@@ -40,7 +40,7 @@ final class Class100 {
 				Class98_Sub16.anInt3927++;
 				return true;
 			}
-			if (((Class246_Sub3_Sub3) class246_sub3_sub3).aShort6153 == 4) {
+			if (class246_sub3_sub3.aShort6153 == 4) {
 				if (!Class254.method3187(i_7_, i_4_ - -r_Sub2.anInt6333, i_5_, (byte) 82, i_6_, r_Sub2.anInt6333 + i_5_, i_7_, i_5_, r_Sub2.anInt6333 + i_4_, r_Sub2.anInt6333 + i_4_))
 					return false;
 				if (!Class254.method3187(i_7_, r_Sub2.anInt6333 + i_4_, i_5_, (byte) 82, i_6_, i_5_ + r_Sub2.anInt6333, i_6_, r_Sub2.anInt6333 + i_5_, i_4_ - -r_Sub2.anInt6333, r_Sub2.anInt6333 + i_4_))
@@ -48,7 +48,7 @@ final class Class100 {
 				Class98_Sub16.anInt3927++;
 				return true;
 			}
-			if ((((Class246_Sub3_Sub3) class246_sub3_sub3).aShort6153 ^ 0xffffffff) == -9) {
+			if (class246_sub3_sub3.aShort6153 == 8) {
 				if (!Class254.method3187(i_7_, i_4_, i_5_, (byte) 82, i_6_, i_5_, i_7_, i_5_, r_Sub2.anInt6333 + i_4_, i_4_))
 					return false;
 				if (!Class254.method3187(i_6_, i_4_ + r_Sub2.anInt6333, i_5_, (byte) 82, i_6_, i_5_, i_7_, i_5_, r_Sub2.anInt6333 + i_4_, i_4_))
@@ -56,25 +56,25 @@ final class Class100 {
 				Class98_Sub16.anInt3927++;
 				return true;
 			}
-			if ((((Class246_Sub3_Sub3) class246_sub3_sub3).aShort6153 ^ 0xffffffff) == -17) {
+			if (class246_sub3_sub3.aShort6153 == 16) {
 				if (!s_Sub1.method3427(i_6_, RuneScapeCache.anInt1577, i_7_, RuneScapeCache.anInt1577, (byte) 16, RuneScapeCache.anInt1577 + i_5_, i_4_))
 					return false;
 				Class98_Sub16.anInt3927++;
 				return true;
 			}
-			if (((Class246_Sub3_Sub3) class246_sub3_sub3).aShort6153 == 32) {
+			if (class246_sub3_sub3.aShort6153 == 32) {
 				if (!s_Sub1.method3427(i_6_, RuneScapeCache.anInt1577, i_7_, RuneScapeCache.anInt1577, (byte) 16, i_5_ - -RuneScapeCache.anInt1577, RuneScapeCache.anInt1577 + i_4_))
 					return false;
 				Class98_Sub16.anInt3927++;
 				return true;
 			}
-			if (((Class246_Sub3_Sub3) class246_sub3_sub3).aShort6153 == 64) {
+			if (class246_sub3_sub3.aShort6153 == 64) {
 				if (!s_Sub1.method3427(i_6_, RuneScapeCache.anInt1577, i_7_, RuneScapeCache.anInt1577, (byte) 16, i_5_, i_4_ - -RuneScapeCache.anInt1577))
 					return false;
 				Class98_Sub16.anInt3927++;
 				return true;
 			}
-			if (((Class246_Sub3_Sub3) class246_sub3_sub3).aShort6153 == 128) {
+			if (class246_sub3_sub3.aShort6153 == 128) {
 				if (!s_Sub1.method3427(i_6_, RuneScapeCache.anInt1577, i_7_, RuneScapeCache.anInt1577, (byte) 16, i_5_, i_4_))
 					return false;
 				Class98_Sub16.anInt3927++;
@@ -131,10 +131,10 @@ final class Class100 {
 		try {
 			if (i_12_ != 64)
 				method1688(-20, 71, 72, null, (byte) 127);
-			if ((i ^ 0xffffffff) == -9 || (i ^ 0xffffffff) == -17) {
-				for (int i_13_ = 0; (i_13_ ^ 0xffffffff) > (ha.anInt936 ^ 0xffffffff); i_13_++) {
+			if (i == 8 || i == 16) {
+				for (int i_13_ = 0; ha.anInt936 > i_13_; i_13_++) {
 					Class155 class155 = Class98_Sub32_Sub1.aClass155Array5889[i_13_];
-					if ((i == ((Class155) class155).aByte1242 && ((i_10_ ^ 0xffffffff) == (((Class155) class155).aShort1236 ^ 0xffffffff)) && ((Class155) class155).aShort1239 == i_11_) || (i_10_ == ((Class155) class155).aShort1243 && ((((Class155) class155).aShort1239 ^ 0xffffffff) == (i_11_ ^ 0xffffffff)))) {
+					if ((i == class155.aByte1242 && (class155.aShort1236 == i_10_) && class155.aShort1239 == i_11_) || (i_10_ == class155.aShort1243 && (i_11_ == class155.aShort1239))) {
 						if (ha.anInt936 != i_13_)
 							Class236.method2892(Class98_Sub32_Sub1.aClass155Array5889, 1 + i_13_, Class98_Sub32_Sub1.aClass155Array5889, i_13_, (Class98_Sub32_Sub1.aClass155Array5889.length - (1 + i_13_)));
 						ha.anInt936--;
@@ -144,10 +144,10 @@ final class Class100 {
 			} else {
 				Class172 class172 = (Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[i_9_][i_10_][i_11_]);
 				if (class172 != null) {
-					if ((i ^ 0xffffffff) == -2)
-						((Class172) class172).aShort1335 = (short) 0;
+					if (i == 1)
+						class172.aShort1335 = (short) 0;
 					else if (i == 2)
-						((Class172) class172).aShort1328 = (short) 0;
+						class172.aShort1328 = (short) 0;
 				}
 				Class64_Sub22.method644(i_12_ + -107);
 			}
@@ -158,7 +158,7 @@ final class Class100 {
 
 	static final Class172 method1693(int i, int i_14_, int i_15_) {
 		if (Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[i][i_14_][i_15_] == null) {
-			boolean bool = ((Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[0][i_14_][i_15_]) != null && ((Class172) (Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[0][i_14_][i_15_])).aClass172_1330 != null);
+			boolean bool = ((Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[0][i_14_][i_15_]) != null && Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[0][i_14_][i_15_].aClass172_1330 != null);
 			if (bool && i >= Class364.anInt3103 - 1)
 				return null;
 			Class224_Sub2_Sub1.method2839(i, i_14_, i_15_);
@@ -182,7 +182,7 @@ final class Class100 {
 		do {
 			try {
 				do {
-					if ((anInt843 ^ 0xffffffff) == -1) {
+					if (anInt843 == 0) {
 						Class98_Sub46 class98_sub46_17_ = aClass215_842.method2789(-16711936);
 						class98_sub46_17_.remove();
 						class98_sub46_17_.method1524((byte) -90);

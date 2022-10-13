@@ -22,16 +22,16 @@ public class Class316 {
 				return file;
 			String[] strings = { "c:/rscache/", "/rscache/", "c:/windows/", "c:/winnt/", "c:/", aString2693, "/tmp/", "" };
 			String[] strings_2_ = { ".YOUR CLIENT NAME HERE_cache_" + i, ".file_store_" + i };
-			for (int i_3_ = i_0_; (i_3_ ^ 0xffffffff) > -3; i_3_++) {
-				for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > (strings_2_.length ^ 0xffffffff); i_4_++) {
+			for (int i_3_ = i_0_; i_3_ < 2; i_3_++) {
+				for (int i_4_ = 0; strings_2_.length > i_4_; i_4_++) {
 					for (int i_5_ = 0; strings.length > i_5_; i_5_++) {
 						String string_6_ = (strings[i_5_] + strings_2_[i_4_] + "/" + (string_1_ != null ? string_1_ + "/" : "") + string);
 						RandomAccessFile randomaccessfile = null;
 						try {
 							File file_7_ = new File(string_6_);
-							if ((i_3_ ^ 0xffffffff) != -1 || file_7_.exists()) {
+							if (i_3_ != 0 || file_7_.exists()) {
 								String string_8_ = strings[i_5_];
-								if ((i_3_ ^ 0xffffffff) != -2 || string_8_.length() <= 0 || new File(string_8_).exists()) {
+								if (i_3_ != 1 || string_8_.length() <= 0 || new File(string_8_).exists()) {
 									new File(strings[i_5_] + strings_2_[i_4_]).mkdir();
 									if (string_1_ != null)
 										new File(strings[i_5_] + strings_2_[i_4_] + "/" + string_1_).mkdir();

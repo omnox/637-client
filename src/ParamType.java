@@ -26,7 +26,7 @@ final class ParamType {
 						Class195.aClass225_1502.method2842(is, i);
 						int i_0_;
 						for (i_0_ = 0; i_0_ < 24; i_0_++) {
-							if ((is[i_0_] ^ 0xffffffff) != -1)
+							if (is[i_0_] != 0)
 								break;
 						}
 						if (i_0_ >= 24)
@@ -75,7 +75,7 @@ final class ParamType {
 		try {
 			if (bool != false)
 				return false;
-			if ((aChar1201 ^ 0xffffffff) != -116)
+			if (aChar1201 != 115)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -89,13 +89,13 @@ final class ParamType {
 				if (i_3_ == i)
 					aChar1201 = Class64_Sub7.method576(class98_sub22.readSignedByte(), (byte) 127);
 				else if (i == 2)
-					((ParamType) this).anInt1202 = class98_sub22.readInt(-2);
+					this.anInt1202 = class98_sub22.readInt(-2);
 				else if (i == 4)
-					((ParamType) this).autodisable = false;
+					this.autodisable = false;
 				else {
-					if ((i ^ 0xffffffff) != -6)
+					if (i != 5)
 						break;
-					((ParamType) this).aString1203 = class98_sub22.readString();
+					this.aString1203 = class98_sub22.readString();
 				}
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("kc.E(" + i + ',' + (class98_sub22 != null ? "{...}" : "null") + ',' + i_3_ + ')'));
@@ -109,8 +109,8 @@ final class ParamType {
 			if (i_4_ < 78)
 				aClass83_1205 = null;
 			OutgoingPacket class98_sub11 = Class246_Sub3_Sub4.method3023(260, Class151_Sub1.aClass171_4968, Class331.aClass117_2811);
-			((OutgoingPacket) class98_sub11).packet.writeShortA(i, (byte) 126);
-			((OutgoingPacket) class98_sub11).packet.writeLEInt(i_5_, 1046032984);
+			class98_sub11.packet.writeShortA(i, (byte) 126);
+			class98_sub11.packet.writeLEInt(i_5_, 1046032984);
 			Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("kc.B(" + i + ',' + i_4_ + ',' + i_5_ + ')'));

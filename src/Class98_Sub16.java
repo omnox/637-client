@@ -56,10 +56,10 @@ final class Class98_Sub16 extends Node {
 	final void method1148(int i) {
 		do {
 			try {
-				((Class98_Sub16) this).aClass98_Sub31_Sub5_3939 = null;
-				((Class98_Sub16) this).aClass98_Sub44_3918 = null;
-				((Class98_Sub16) this).aClass98_Sub24_Sub1_3934 = null;
-				((Class98_Sub16) this).aClass89_3935 = null;
+				this.aClass98_Sub31_Sub5_3939 = null;
+				this.aClass98_Sub44_3918 = null;
+				this.aClass98_Sub24_Sub1_3934 = null;
+				this.aClass89_3935 = null;
 				if (i == -1)
 					break;
 				method1146(false);
@@ -74,14 +74,14 @@ final class Class98_Sub16 extends Node {
 		try {
 			if (bool != false)
 				anIntArray3933 = null;
-			if (((Class199) class199).anInt1540 != -1)
-				return ((Class199) class199).anInt1540;
-			if (((Class199) class199).anInt1542 != -1) {
-				Class238 class238 = ((ha) var_ha).aD938.method11(((Class199) class199).anInt1542, -28755);
-				if (!((Class238) class238).aBoolean1825)
-					return ((Class238) class238).aShort1831;
+			if (class199.anInt1540 != -1)
+				return class199.anInt1540;
+			if (class199.anInt1542 != -1) {
+				Class238 class238 = var_ha.aD938.method11(class199.anInt1542, -28755);
+				if (!class238.aBoolean1825)
+					return class238.aShort1831;
 			}
-			return ((Class199) class199).anInt1537;
+			return class199.anInt1537;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("hea.B(" + bool + ',' + (class199 != null ? "{...}" : "null") + ',' + (var_ha != null ? "{...}" : "null") + ')'));
 		}
@@ -92,7 +92,7 @@ final class Class98_Sub16 extends Node {
 			Class230.method2871(i_3_ + -117);
 			Class98_Sub10_Sub25.aLong5677 = 0L;
 			int i_5_ = Class146_Sub2.method2391((byte) -68);
-			if (i == i_3_ || (i_5_ ^ 0xffffffff) == -4)
+			if (i == i_3_ || i_5_ == 3)
 				bool = true;
 			if (!Class265.aHa1974.method1800())
 				bool = true;

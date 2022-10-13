@@ -15,7 +15,7 @@ final class Class369 {
 						if (!client.aBoolean3553)
 							break;
 					}
-					if ((Class98_Sub46_Sub20_Sub2.anInt6317 ^ 0xffffffff) == -3)
+					if (Class98_Sub46_Sub20_Sub2.anInt6317 == 2)
 						Class31.anInt300 = i;
 				} while (false);
 				if (i_0_ == -55)
@@ -40,7 +40,7 @@ final class Class369 {
 		do {
 			try {
 				if (Class76.aClass28ArrayArray586 != null) {
-					for (int i_2_ = 0; ((i_2_ ^ 0xffffffff) > (Class76.aClass28ArrayArray586.length ^ 0xffffffff)); i_2_++) {
+					for (int i_2_ = 0; (Class76.aClass28ArrayArray586.length > i_2_); i_2_++) {
 						for (int i_3_ = 0; i_3_ < Class76.aClass28ArrayArray586[i_2_].length; i_3_++)
 							Class76.aClass28ArrayArray586[i_2_][i_3_] = Class91.aClass28_722;
 					}

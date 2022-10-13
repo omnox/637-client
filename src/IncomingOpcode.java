@@ -168,7 +168,7 @@ final class IncomingOpcode {
 
 	IncomingOpcode(int i, int i_0_) {
 		try {
-			((IncomingOpcode) this).anInt460 = i_0_;
+			this.anInt460 = i_0_;
 			anInt462 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ea.<init>(" + i + ',' + i_0_ + ')');

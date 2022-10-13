@@ -58,7 +58,7 @@ final class Class13 {
 				aClass207_162 = null;
 			Class220 class220;
 			synchronized (aClass79_163) {
-				class220 = (Class220) aClass79_163.get((long) i);
+				class220 = (Class220) aClass79_163.get(i);
 			}
 			if (class220 != null)
 				return class220;
@@ -71,7 +71,7 @@ final class Class13 {
 				class220.method2816((byte) -113, new RSByteBuffer(is));
 			class220.method2819(-9639);
 			synchronized (aClass79_163) {
-				aClass79_163.put((long) i, class220);
+				aClass79_163.put(i, class220);
 			}
 			return class220;
 		} catch (RuntimeException runtimeexception) {
@@ -98,8 +98,8 @@ final class Class13 {
 				string = "";
 			else {
 				RuntimeException_Sub1 runtimeexception_sub1 = (RuntimeException_Sub1) throwable;
-				throwable = (((RuntimeException_Sub1) runtimeexception_sub1).aThrowable3199);
-				string = (((RuntimeException_Sub1) runtimeexception_sub1).aString3202) + " | ";
+				throwable = (runtimeexception_sub1.aThrowable3199);
+				string = (runtimeexception_sub1.aString3202) + " | ";
 			}
 			StringWriter stringwriter = new StringWriter();
 			PrintWriter printwriter = new PrintWriter(stringwriter);
@@ -127,12 +127,12 @@ final class Class13 {
 				string += string_12_;
 				if (i_10_ != -1 && i_11_ != -1) {
 					int i_13_ = string_9_.indexOf(".java:", i_10_);
-					if ((i_13_ ^ 0xffffffff) <= -1)
+					if (i_13_ >= 0)
 						string += string_9_.substring(5 + i_13_, i_11_);
 				}
 				string += ' ';
 			}
-			string += "| " + (String) string_8_;
+			string += "| " + string_8_;
 			return string;
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;

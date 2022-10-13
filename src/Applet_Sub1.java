@@ -69,8 +69,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			if (i_0_ != -9)
 				findPath(null, -42, null, -65, 42, 54, -75, 7, null, false, -21, 124, 62, -66, 123);
 			int i_2_ = 0;
-			for (/**/; (i ^ 0xffffffff) < -1; i--) {
-				i_2_ = i_2_ << -2140156575 | 0x1 & i_1_;
+			for (/**/; i > 0; i--) {
+				i_2_ = i_2_ << 1 | 0x1 & i_1_;
 				i_1_ >>>= 1;
 			}
 			return i_2_;
@@ -125,7 +125,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			try {
 				if (Class246_Sub3_Sub5_Sub2.anApplet_Sub1_6271 != null) {
 					Class98_Sub41.anInt4200++;
-					if ((Class98_Sub41.anInt4200 ^ 0xffffffff) <= -4)
+					if (Class98_Sub41.anInt4200 >= 3)
 						method97((byte) 74, "alreadyloaded");
 					else
 						getAppletContext().showDocument(getDocumentBase(), "_self");
@@ -140,7 +140,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 						Class246_Sub3_Sub5_Sub2.anApplet_Sub1_6271 = this;
 						Class98_Sub40.aClass88_4192 = Class98_Sub43_Sub2.aClass88_5907 = new Class88(i_6_, string, i_5_, Class76_Sub11.anApplet3799 != null);
 						Class143 class143 = Class98_Sub43_Sub2.aClass88_5907.method858(1, this, i_4_ + -3);
-						while ((class143.anInt1163 ^ 0xffffffff) == -1)
+						while (class143.anInt1163 == 0)
 							Class246_Sub7.method3131(0, 10L);
 					}
 				}
@@ -176,7 +176,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			long l = Class343.method3819(-47);
 			long l_8_ = Class271.aLongArray2034[Class295.anInt2410];
 			Class271.aLongArray2034[Class295.anInt2410] = l;
-			if ((l_8_ ^ 0xffffffffffffffffL) != -1L && (l ^ 0xffffffffffffffffL) < (l_8_ ^ 0xffffffffffffffffL)) {
+			if (l_8_ != 0 && l_8_ < l) {
 				/* empty */
 			}
 			Class295.anInt2410 = 0x1f & 1 + Class295.anInt2410;
@@ -265,7 +265,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				Class284.aFrame2168.setSize(insets.left + (Class188.anInt1453 + insets.right), (insets.bottom + (Class123_Sub1.anInt4744 - -insets.top)));
 				Class98_Sub40.aClass88_4192 = Class98_Sub43_Sub2.aClass88_5907 = new Class88(i_10_, string, i, bool_11_);
 				Class143 class143 = Class98_Sub43_Sub2.aClass88_5907.method858(1, this, 1);
-				while ((class143.anInt1163 ^ 0xffffffff) == -1)
+				while (class143.anInt1163 == 0)
 					Class246_Sub7.method3131(0, 10L);
 			} catch (Exception exception) {
 				Map.method3585(exception, -128, null);
@@ -289,8 +289,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				try {
 					if (Class88.aString696 != null) {
 						String string = Class88.aString696.toLowerCase();
-						if (string.indexOf("sun") == -1 && (string.indexOf("apple") ^ 0xffffffff) == 0) {
-							if ((string.indexOf("ibm") ^ 0xffffffff) != 0 && (Class88.aString692 == null || Class88.aString692.equals("1.4.2"))) {
+						if (string.indexOf("sun") == -1 && string.indexOf("apple") == -1) {
+							if (string.indexOf("ibm") != -1 && (Class88.aString692 == null || Class88.aString692.equals("1.4.2"))) {
 								method97((byte) 87, "wrongjava");
 								break;
 							}
@@ -305,9 +305,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 					if (Class88.aString692 != null && Class88.aString692.startsWith("1.")) {
 						int i = 2;
 						int i_15_ = 0;
-						for (/**/; ((i ^ 0xffffffff) > (Class88.aString692.length() ^ 0xffffffff)); i++) {
+						for (/**/; (Class88.aString692.length() > i); i++) {
 							int i_16_ = Class88.aString692.charAt(i);
-							if (i_16_ < 48 || (i_16_ ^ 0xffffffff) < -58)
+							if (i_16_ < 48 || i_16_ > 57)
 								break;
 							i_15_ = 10 * i_15_ - (48 + -i_16_);
 						}
@@ -330,7 +330,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 					method87(0);
 					method95(-13395);
 					OutputStream_Sub1.aClass240_36 = Class109.method1737(72);
-					while ((Class180.aLong3404 ^ 0xffffffffffffffffL) == -1L || ((Class343.method3819(-47) ^ 0xffffffffffffffffL) > (Class180.aLong3404 ^ 0xffffffffffffffffL))) {
+					while (Class180.aLong3404 == 0 || (Class180.aLong3404 > Class343.method3819(-47))) {
 						Class42_Sub1.anInt5356 = OutputStream_Sub1.aClass240_36.method2925(0, Class212.aLong1599);
 						for (int i = 0; Class42_Sub1.anInt5356 > i; i++)
 							method85(6341);
@@ -358,7 +358,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				return true;
 			if (string.equalsIgnoreCase("127.0.0.1"))
 				return true;
-			for (/**/; (string.length() > 0 && string.charAt(-1 + string.length()) >= '0' && ((string.charAt(-1 + string.length()) ^ 0xffffffff) >= -58)); string = string.substring(0, -1 + string.length())) {
+			for (/**/; (string.length() > 0 && string.charAt(-1 + string.length()) >= '0' && (string.charAt(-1 + string.length()) <= 57)); string = string.substring(0, -1 + string.length())) {
 				/* empty */
 			}
 			if (string.endsWith("192.168.1."))
@@ -388,12 +388,12 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			if (i != 784382337)
 				windowOpened(null);
 			Class98_Sub46_Sub11.anInt6024 = 0x1f & Class98_Sub46_Sub11.anInt6024 - -1;
-			if ((l_17_ ^ 0xffffffffffffffffL) != -1L && l > l_17_) {
+			if (l_17_ != 0 && l > l_17_) {
 				int i_18_ = (int) (l + -l_17_);
-				Class338.anInt2842 = ((i_18_ >> 784382337) + 32000) / i_18_;
+				Class338.anInt2842 = ((i_18_ >> 1) + 32000) / i_18_;
 			}
 			do {
-				if ((OutputStream_Sub1.anInt32++ ^ 0xffffffff) < -51) {
+				if (OutputStream_Sub1.anInt32++ > 50) {
 					Class246_Sub10.aBoolean5152 = true;
 					OutputStream_Sub1.anInt32 -= 50;
 					Class42_Sub3.aCanvas5361.setSize(Class39_Sub1.anInt3593, Class98_Sub25.anInt4024);
@@ -494,7 +494,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 					if (!Class237.aBoolean1803 || (-client.aLong3547 + Class343.method3819(-47) <= 1000L))
 						break;
 					Rectangle rectangle = graphics.getClipBounds();
-					if (rectangle == null || (((rectangle.width ^ 0xffffffff) <= (Class188.anInt1453 ^ 0xffffffff)) && ((rectangle.height ^ 0xffffffff) <= (Class123_Sub1.anInt4744 ^ 0xffffffff))))
+					if (rectangle == null || ((Class188.anInt1453 <= rectangle.width) && (Class123_Sub1.anInt4744 <= rectangle.height)))
 						Class224_Sub2_Sub1.aBoolean6142 = true;
 				}
 			} catch (RuntimeException runtimeexception) {
@@ -516,7 +516,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			}
 			boolean pathFound;
 			if (entitySize != 1) {
-				if ((entitySize ^ 0xffffffff) == -3) {
+				if (entitySize == 2) {
 					pathFound = Class146_Sub2.findPathForDoubleSize(collision, radiusY, radiusX, objectFlag, entityCost, i_20_, startX, dumb ^ 0x29ddf632, targetingY, targetingX, startY);
 				} else {
 					pathFound = Class98_Sub46_Sub10.findPathForVariableSize(entitySize, radiusY, startX, i_20_, startY, (byte) 20, entityCost, objectFlag, radiusX, targetingX, targetingY, collision);
@@ -535,24 +535,24 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 					int shortestDistance = 2147483647;
 					int lowestCost = 2147483647;
 					int checkRadius = 10;
-					for (int x = -checkRadius + targetingX; (x ^ 0xffffffff) >= (targetingX + checkRadius ^ 0xffffffff); x++) {
+					for (int x = -checkRadius + targetingX; targetingX + checkRadius >= x; x++) {
 						for (int y = -checkRadius + targetingY; checkRadius + targetingY >= y; y++) {
 							int i_42_ = x - startingX;
 							int i_43_ = y - startingY;
-							if (i_42_ >= 0 && (i_43_ ^ 0xffffffff) <= -1 && i_42_ < 128 && i_43_ < 128 && (Class339.pathCosts[i_42_][i_43_] < 100)) {
+							if (i_42_ >= 0 && i_43_ >= 0 && i_42_ < 128 && i_43_ < 128 && (Class339.pathCosts[i_42_][i_43_] < 100)) {
 								int deltaX = 0;
 								if (targetingX > x)
 									deltaX = -x + targetingX;
 								else if (targetingX + (radiusX + -1) < x)
 									deltaX = -radiusX + (-targetingX - -1) + x;
 								int deltaY = 0;
-								if ((targetingY ^ 0xffffffff) >= (y ^ 0xffffffff)) {
+								if (y >= targetingY) {
 									if (y > radiusY + (targetingY - 1))
 										deltaY = y + 1 + (-radiusY + -targetingY);
 								} else
 									deltaY = -y + targetingY;
 								int distance = deltaX * deltaX + deltaY * deltaY;
-								if (shortestDistance > distance || ((shortestDistance ^ 0xffffffff) == (distance ^ 0xffffffff) && (Class339.pathCosts[i_42_][i_43_]) < lowestCost)) {
+								if (shortestDistance > distance || (distance == shortestDistance && (Class339.pathCosts[i_42_][i_43_]) < lowestCost)) {
 									endingY = y;
 									endingX = x;
 									shortestDistance = distance;
@@ -566,15 +566,15 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				} else
 					return -1;
 			}
-			if ((startX ^ 0xffffffff) == (endingX ^ 0xffffffff) && (endingY ^ 0xffffffff) == (startY ^ 0xffffffff))
+			if (endingX == startX && startY == endingY)
 				return 0;
 			int pathIndex = 0;
 			Class359.pathBufferX[pathIndex] = endingX;
 			Class75.pathBufferY[pathIndex++] = endingY;
 			int lastDirection;
 			int currentDirection = lastDirection = (PlayerUpdateMask.pathDirections[-startingX + endingX][-startingY + endingY]);
-			while ((startX ^ 0xffffffff) != (endingX ^ 0xffffffff) || (endingY ^ 0xffffffff) != (startY ^ 0xffffffff)) {
-				if ((lastDirection ^ 0xffffffff) != (currentDirection ^ 0xffffffff)) {
+			while (endingX != startX || startY != endingY) {
+				if (currentDirection != lastDirection) {
 					lastDirection = currentDirection;
 					Class359.pathBufferX[pathIndex] = endingX;
 					Class75.pathBufferY[pathIndex++] = endingY;
@@ -584,18 +584,18 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 						endingX--;
 				} else
 					endingX++;
-				if ((currentDirection & 0x1 ^ 0xffffffff) == -1) {
-					if ((0x4 & currentDirection ^ 0xffffffff) != -1)
+				if ((currentDirection & 0x1) == 0) {
+					if ((0x4 & currentDirection) != 0)
 						endingY--;
 				} else
 					endingY++;
 				currentDirection = (PlayerUpdateMask.pathDirections[-startingX + endingX][-startingY + endingY]);
 			}
 			int stepCount = 0;
-			while ((pathIndex-- ^ 0xffffffff) < -1) {
+			while (pathIndex-- > 0) {
 				xBuffer[stepCount] = Class359.pathBufferX[pathIndex];
 				yBuffer[stepCount++] = Class75.pathBufferY[pathIndex];
-				if ((xBuffer.length ^ 0xffffffff) >= (stepCount ^ 0xffffffff))
+				if (stepCount >= xBuffer.length)
 					break;
 			}
 			return stepCount;

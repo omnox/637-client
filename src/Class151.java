@@ -24,7 +24,7 @@ abstract class Class151 {
 
 	Class151(ha_Sub1 var_ha_Sub1) {
 		try {
-			((Class151) this).aHa_Sub1_1215 = var_ha_Sub1;
+			this.aHa_Sub1_1215 = var_ha_Sub1;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "kd.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ')');
 		}

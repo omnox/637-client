@@ -36,14 +36,14 @@ final class Class306 {
 
 	final String method3594(int i, byte i_1_) {
 		try {
-			if (((Class306) this).aClass377_2558 == null)
+			if (this.aClass377_2558 == null)
 				return aString2559;
-			Class98_Sub15 class98_sub15 = ((Class98_Sub15) ((Class306) this).aClass377_2558.method3990((long) i, -1));
+			Class98_Sub15 class98_sub15 = ((Class98_Sub15) this.aClass377_2558.method3990(i, -1));
 			if (class98_sub15 == null)
 				return aString2559;
 			if (i_1_ < 20)
 				method3597(126);
-			return ((Class98_Sub15) class98_sub15).aString3917;
+			return class98_sub15.aString3917;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "sp.J(" + i + ',' + i_1_ + ')');
 		}
@@ -61,12 +61,12 @@ final class Class306 {
 
 	final boolean method3596(int i, byte i_2_) {
 		try {
-			if (((Class306) this).aClass377_2558 == null)
+			if (this.aClass377_2558 == null)
 				return false;
 			if (aClass377_2564 == null)
 				method3599((byte) -59);
 			int i_3_ = 93 % ((i_2_ - -21) / 49);
-			Class98_Sub34 class98_sub34 = (Class98_Sub34) aClass377_2564.method3990((long) i, -1);
+			Class98_Sub34 class98_sub34 = (Class98_Sub34) aClass377_2564.method3990(i, -1);
 			if (class98_sub34 == null)
 				return false;
 			return true;
@@ -89,14 +89,14 @@ final class Class306 {
 
 	final int method3598(int i, int i_4_) {
 		try {
-			if (((Class306) this).aClass377_2558 == null)
+			if (this.aClass377_2558 == null)
 				return anInt2563;
-			Class98_Sub34 class98_sub34 = ((Class98_Sub34) ((Class306) this).aClass377_2558.method3990((long) i, -1));
+			Class98_Sub34 class98_sub34 = ((Class98_Sub34) this.aClass377_2558.method3990(i, -1));
 			if (i_4_ != -28629)
 				return -113;
 			if (class98_sub34 == null)
 				return anInt2563;
-			return ((Class98_Sub34) class98_sub34).anInt4126;
+			return class98_sub34.anInt4126;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "sp.G(" + i + ',' + i_4_ + ')');
 		}
@@ -104,12 +104,12 @@ final class Class306 {
 
 	private final void method3599(byte i) {
 		try {
-			aClass377_2564 = new Class377(((Class306) this).aClass377_2558.method3997((byte) 106));
-			Class98_Sub34 class98_sub34 = ((Class98_Sub34) ((Class306) this).aClass377_2558.start_iteration(102));
+			aClass377_2564 = new Class377(this.aClass377_2558.method3997((byte) 106));
+			Class98_Sub34 class98_sub34 = ((Class98_Sub34) this.aClass377_2558.start_iteration(102));
 			if (i < -19) {
-				for (/**/; class98_sub34 != null; class98_sub34 = ((Class98_Sub34) ((Class306) this).aClass377_2558.iterate_next(-1))) {
-					Class98_Sub34 class98_sub34_5_ = new Class98_Sub34((int) ((Node) class98_sub34).uid);
-					aClass377_2564.method3996(class98_sub34_5_, (long) ((Class98_Sub34) class98_sub34).anInt4126, -1);
+				for (/**/; class98_sub34 != null; class98_sub34 = ((Class98_Sub34) this.aClass377_2558.iterate_next(-1))) {
+					Class98_Sub34 class98_sub34_5_ = new Class98_Sub34((int) class98_sub34.uid);
+					aClass377_2564.method3996(class98_sub34_5_, class98_sub34.anInt4126, -1);
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -121,27 +121,27 @@ final class Class306 {
 		do {
 			try {
 				if (i_6_ == 1)
-					((Class306) this).aChar2560 = Class64_Sub7.method576(class98_sub22.readSignedByte(), (byte) 121);
+					this.aChar2560 = Class64_Sub7.method576(class98_sub22.readSignedByte(), (byte) 121);
 				else if (i_6_ != 2) {
-					if ((i_6_ ^ 0xffffffff) == -4)
+					if (i_6_ == 3)
 						aString2559 = class98_sub22.readString();
 					else if (i_6_ == 4)
 						anInt2563 = class98_sub22.readInt(-2);
-					else if ((i_6_ ^ 0xffffffff) == -6 || (i_6_ ^ 0xffffffff) == -7) {
+					else if (i_6_ == 5 || i_6_ == 6) {
 						int i_7_ = class98_sub22.readShort();
-						((Class306) this).aClass377_2558 = new Class377(Class48.method453(423660257, i_7_));
+						this.aClass377_2558 = new Class377(Class48.method453(423660257, i_7_));
 						for (int i_8_ = 0; i_7_ > i_8_; i_8_++) {
 							int i_9_ = class98_sub22.readInt(-2);
 							Node class98;
-							if ((i_6_ ^ 0xffffffff) == -6)
+							if (i_6_ == 5)
 								class98 = (new Class98_Sub15(class98_sub22.readString()));
 							else
 								class98 = new Class98_Sub34(class98_sub22.readInt(-2));
-							((Class306) this).aClass377_2558.method3996(class98, (long) i_9_, i ^ 0xffffffff);
+							this.aClass377_2558.method3996(class98, i_9_, ~i);
 						}
 					}
 				} else
-					((Class306) this).aChar2567 = Class64_Sub7.method576(class98_sub22.readSignedByte(), (byte) 125);
+					this.aChar2567 = Class64_Sub7.method576(class98_sub22.readSignedByte(), (byte) 125);
 				if (i == 0)
 					break;
 				aClass376Array2562 = null;
@@ -155,10 +155,10 @@ final class Class306 {
 	private final void method3601(int i) {
 		do {
 			try {
-				aClass377_2564 = new Class377(((Class306) this).aClass377_2558.method3997((byte) 53));
-				for (Class98_Sub15 class98_sub15 = (Class98_Sub15) ((Class306) this).aClass377_2558.start_iteration(i + 111); class98_sub15 != null; class98_sub15 = (Class98_Sub15) ((Class306) this).aClass377_2558.iterate_next(i + 3)) {
-					Class98_Sub41 class98_sub41 = new Class98_Sub41((((Class98_Sub15) class98_sub15).aString3917), (int) (((Node) class98_sub15).uid));
-					aClass377_2564.method3996(class98_sub41, Class145.method2313((byte) -121, (((Class98_Sub15) class98_sub15).aString3917)), -1);
+				aClass377_2564 = new Class377(this.aClass377_2558.method3997((byte) 53));
+				for (Class98_Sub15 class98_sub15 = (Class98_Sub15) this.aClass377_2558.start_iteration(i + 111); class98_sub15 != null; class98_sub15 = (Class98_Sub15) this.aClass377_2558.iterate_next(i + 3)) {
+					Class98_Sub41 class98_sub41 = new Class98_Sub41((class98_sub15.aString3917), (int) (class98_sub15.uid));
+					aClass377_2564.method3996(class98_sub41, Class145.method2313((byte) -121, (class98_sub15.aString3917)), -1);
 				}
 				if (i == -4)
 					break;
@@ -172,7 +172,7 @@ final class Class306 {
 
 	final boolean method3602(String string, int i) {
 		try {
-			if (((Class306) this).aClass377_2558 == null)
+			if (this.aClass377_2558 == null)
 				return false;
 			if (aClass377_2564 == null)
 				method3601(-4);
@@ -180,7 +180,7 @@ final class Class306 {
 			if (i != -16972)
 				return false;
 			for (/**/; class98_sub41 != null; class98_sub41 = (Class98_Sub41) aClass377_2564.method3993(126)) {
-				if (((Class98_Sub41) class98_sub41).aString4201.equals(string))
+				if (class98_sub41.aString4201.equals(string))
 					return true;
 			}
 			return false;

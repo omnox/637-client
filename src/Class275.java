@@ -20,7 +20,7 @@ final class Class275 {
 
 	static final Class53_Sub1 method3283(byte i, int i_0_) {
 		try {
-			if (!Class98_Sub17.aBoolean3944 || (i_0_ ^ 0xffffffff) > (Class164.anInt1274 ^ 0xffffffff) || i_0_ > Class101.anInt854)
+			if (!Class98_Sub17.aBoolean3944 || Class164.anInt1274 > i_0_ || i_0_ > Class101.anInt854)
 				return null;
 			if (i <= 112)
 				anInt2047 = 95;

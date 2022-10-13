@@ -28,7 +28,7 @@ final class Class256_Sub1 extends Class256 {
 				if (string.equalsIgnoreCase(Class98_Sub25.aStringArray4026[i_0_]))
 					return true;
 			}
-			if (string.equalsIgnoreCase(((Player) (Player.selfPlayer)).displayName))
+			if (string.equalsIgnoreCase(Player.selfPlayer.displayName))
 				return true;
 			return false;
 		} catch (RuntimeException runtimeexception) {
@@ -44,10 +44,10 @@ final class Class256_Sub1 extends Class256 {
 			Class98_Sub47 class98_sub47 = ((Class98_Sub47) Class98_Sub5.aClass157_3835.method2504((byte) -116));
 			if (class98_sub47 == null)
 				return null;
-			Class24 class24 = Class278.aClass341_2057.method3807(-88, (((Class98_Sub47) class98_sub47).anInt4268));
+			Class24 class24 = Class278.aClass341_2057.method3807(-88, (class98_sub47.anInt4268));
 			if (i >= -68)
 				method3196((byte) -25);
-			if (class24 != null && ((Class24) class24).aBoolean241 && class24.method284(124, Class278.anInterface6_2060))
+			if (class24 != null && class24.aBoolean241 && class24.method284(124, Class278.anInterface6_2060))
 				return class98_sub47;
 			return AnimableEntity.method2979(-76);
 		} catch (RuntimeException runtimeexception) {
@@ -57,7 +57,7 @@ final class Class256_Sub1 extends Class256 {
 
 	Class256_Sub1(Class49[] class49s) {
 		try {
-			((Class256_Sub1) this).aClass49Array5159 = class49s;
+			this.aClass49Array5159 = class49s;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "su.<init>(" + (class49s != null ? "{...}" : "null") + ')');
 		}

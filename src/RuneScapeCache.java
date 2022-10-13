@@ -18,7 +18,7 @@ final class RuneScapeCache {
 			if (!method2738((byte) -123))
 				return false;
 			string = string.toLowerCase();
-			int i_0_ = (((Class312) aClass312_1571).aClass122_2666.method2200((byte) -26, MapRegion.method3580(string, false)));
+			int i_0_ = (aClass312_1571.aClass122_2666.method2200((byte) -26, MapRegion.method3580(string, false)));
 			if (i > i_0_)
 				return false;
 			return true;
@@ -33,15 +33,15 @@ final class RuneScapeCache {
 				return false;
 			if (anObjectArray1572[i_2_] == null)
 				return false;
-			int i_3_ = ((Class312) aClass312_1571).anIntArray2670[i_2_];
-			int[] is_4_ = ((Class312) aClass312_1571).anIntArrayArray2669[i_2_];
+			int i_3_ = aClass312_1571.anIntArray2670[i_2_];
+			int[] is_4_ = aClass312_1571.anIntArrayArray2669[i_2_];
 			if (anObjectArrayArray1573[i_2_] == null)
-				anObjectArrayArray1573[i_2_] = (new Object[((Class312) aClass312_1571).anIntArray2671[i_2_]]);
+				anObjectArrayArray1573[i_2_] = (new Object[aClass312_1571.anIntArray2671[i_2_]]);
 			Object[] objects = anObjectArrayArray1573[i_2_];
 			boolean bool = true;
 			if (i_1_ >= -62)
 				method2728(null, 43);
-			for (int i_5_ = 0; (i_5_ ^ 0xffffffff) > (i_3_ ^ 0xffffffff); i_5_++) {
+			for (int i_5_ = 0; i_3_ > i_5_; i_5_++) {
 				int i_6_;
 				if (is_4_ == null)
 					i_6_ = i_5_;
@@ -55,40 +55,40 @@ final class RuneScapeCache {
 			if (bool)
 				return true;
 			byte[] is_7_;
-			if (is != null && ((is[0] ^ 0xffffffff) != -1 || (is[1] ^ 0xffffffff) != -1 || (is[2] ^ 0xffffffff) != -1 || is[3] != 0)) {
+			if (is != null && (is[0] != 0 || is[1] != 0 || is[2] != 0 || is[3] != 0)) {
 				is_7_ = Class98_Sub28_Sub1.method1310(false, anObjectArray1572[i_2_], true);
 				RSByteBuffer class98_sub22 = new RSByteBuffer(is_7_);
-				class98_sub22.method1215(is, 5, (((RSByteBuffer) class98_sub22).data).length, (byte) 30);
+				class98_sub22.method1215(is, 5, (class98_sub22.data).length, (byte) 30);
 			} else
 				is_7_ = Class98_Sub28_Sub1.method1310(false, anObjectArray1572[i_2_], false);
 			byte[] is_8_;
 			try {
 				is_8_ = Class98_Sub46_Sub10.method1571(is_7_, (byte) -84);
 			} catch (RuntimeException runtimeexception) {
-				throw Class64_Sub27.method667(runtimeexception, ("T3 - " + (is != null) + "," + i_2_ + "," + is_7_.length + "," + Class31.method309(is_7_.length, is_7_, -30091) + "," + Class31.method309(-2 + is_7_.length, is_7_, -30091) + "," + ((Class312) aClass312_1571).anIntArray2673[i_2_] + "," + ((Class312) aClass312_1571).anInt2677));
+				throw Class64_Sub27.method667(runtimeexception, ("T3 - " + (is != null) + "," + i_2_ + "," + is_7_.length + "," + Class31.method309(is_7_.length, is_7_, -30091) + "," + Class31.method309(-2 + is_7_.length, is_7_, -30091) + "," + aClass312_1571.anIntArray2673[i_2_] + "," + aClass312_1571.anInt2677));
 			}
 			if (aBoolean1570)
 				anObjectArray1572[i_2_] = null;
-			if ((i_3_ ^ 0xffffffff) >= -2) {
+			if (i_3_ <= 1) {
 				int i_9_;
 				if (is_4_ == null)
 					i_9_ = 0;
 				else
 					i_9_ = is_4_[0];
-				if ((((RuneScapeCache) this).anInt1575 ^ 0xffffffff) != -1)
+				if (this.anInt1575 != 0)
 					objects[i_9_] = is_8_;
 				else
 					objects[i_9_] = Class64_Sub25.method654(2, is_8_, false);
-			} else if (((RuneScapeCache) this).anInt1575 != 2) {
+			} else if (this.anInt1575 != 2) {
 				int i_10_ = is_8_.length;
 				int i_11_ = is_8_[--i_10_] & 0xff;
 				i_10_ -= 4 * i_11_ * i_3_;
 				RSByteBuffer class98_sub22 = new RSByteBuffer(is_8_);
-				((RSByteBuffer) class98_sub22).position = i_10_;
+				class98_sub22.position = i_10_;
 				int[] is_12_ = new int[i_3_];
-				for (int i_13_ = 0; (i_13_ ^ 0xffffffff) > (i_11_ ^ 0xffffffff); i_13_++) {
+				for (int i_13_ = 0; i_11_ > i_13_; i_13_++) {
 					int i_14_ = 0;
-					for (int i_15_ = 0; (i_3_ ^ 0xffffffff) < (i_15_ ^ 0xffffffff); i_15_++) {
+					for (int i_15_ = 0; i_15_ < i_3_; i_15_++) {
 						i_14_ += class98_sub22.readInt(-2);
 						is_12_[i_15_] += i_14_;
 					}
@@ -98,7 +98,7 @@ final class RuneScapeCache {
 					is_16_[i_17_] = new byte[is_12_[i_17_]];
 					is_12_[i_17_] = 0;
 				}
-				((RSByteBuffer) class98_sub22).position = i_10_;
+				class98_sub22.position = i_10_;
 				int i_18_ = 0;
 				for (int i_19_ = 0; i_19_ < i_11_; i_19_++) {
 					int i_20_ = 0;
@@ -109,13 +109,13 @@ final class RuneScapeCache {
 						is_12_[i_21_] += i_20_;
 					}
 				}
-				for (int i_22_ = 0; (i_22_ ^ 0xffffffff) > (i_3_ ^ 0xffffffff); i_22_++) {
+				for (int i_22_ = 0; i_3_ > i_22_; i_22_++) {
 					int i_23_;
 					if (is_4_ == null)
 						i_23_ = i_22_;
 					else
 						i_23_ = is_4_[i_22_];
-					if ((((RuneScapeCache) this).anInt1575 ^ 0xffffffff) != -1)
+					if (this.anInt1575 != 0)
 						objects[i_23_] = is_16_[i_22_];
 					else
 						objects[i_23_] = Class64_Sub25.method654(2, is_16_[i_22_], false);
@@ -126,7 +126,7 @@ final class RuneScapeCache {
 				i_24_ -= 4 * i_25_ * i_3_;
 				RSByteBuffer class98_sub22 = new RSByteBuffer(is_8_);
 				int i_26_ = 0;
-				((RSByteBuffer) class98_sub22).position = i_24_;
+				class98_sub22.position = i_24_;
 				int i_27_ = 0;
 				for (int i_28_ = 0; i_25_ > i_28_; i_28_++) {
 					int i_29_ = 0;
@@ -143,10 +143,10 @@ final class RuneScapeCache {
 						}
 					}
 				}
-				if ((i_26_ ^ 0xffffffff) == -1)
+				if (i_26_ == 0)
 					return true;
 				byte[] is_32_ = new byte[i_26_];
-				((RSByteBuffer) class98_sub22).position = i_24_;
+				class98_sub22.position = i_24_;
 				i_26_ = 0;
 				int i_33_ = 0;
 				for (int i_34_ = 0; i_34_ < i_25_; i_34_++) {
@@ -180,8 +180,8 @@ final class RuneScapeCache {
 			if (!method2738((byte) -127))
 				return false;
 			boolean bool = true;
-			for (int i_38_ = 0; ((Class312) aClass312_1571).anIntArray2664.length > i_38_; i_38_++) {
-				int i_39_ = ((Class312) aClass312_1571).anIntArray2664[i_38_];
+			for (int i_38_ = 0; aClass312_1571.anIntArray2664.length > i_38_; i_38_++) {
+				int i_39_ = aClass312_1571.anIntArray2664[i_38_];
 				if (anObjectArray1572[i_39_] == null) {
 					method2749(i_39_, 126);
 					if (anObjectArray1572[i_39_] == null)
@@ -198,7 +198,7 @@ final class RuneScapeCache {
 		try {
 			if (!method2738((byte) -124))
 				return false;
-			if (i_40_ < i || i_41_ < 0 || i_40_ >= ((Class312) aClass312_1571).anIntArray2671.length || (i_41_ >= ((Class312) aClass312_1571).anIntArray2671[i_40_])) {
+			if (i_40_ < i || i_41_ < 0 || i_40_ >= aClass312_1571.anIntArray2671.length || (i_41_ >= aClass312_1571.anIntArray2671[i_40_])) {
 				if (Class94.aBoolean797)
 					throw new IllegalArgumentException(String.valueOf(i_40_) + "," + i_41_);
 				return false;
@@ -228,11 +228,11 @@ final class RuneScapeCache {
 			if (!method2738((byte) -123))
 				return null;
 			int i_44_ = -91 % ((-59 - i_43_) / 37);
-			if ((((Class312) aClass312_1571).anIntArray2671.length ^ 0xffffffff) == -2)
+			if (aClass312_1571.anIntArray2671.length == 1)
 				return readArchive(i, 0);
 			if (!method2758(i, false))
 				return null;
-			if (((Class312) aClass312_1571).anIntArray2671[i] == 1)
+			if (aClass312_1571.anIntArray2671[i] == 1)
 				return readArchive(0, i);
 			throw new RuntimeException();
 		} catch (RuntimeException runtimeexception) {
@@ -245,7 +245,7 @@ final class RuneScapeCache {
 			if (bool != false)
 				anObjectArrayArray1573 = null;
 			int i = readArchiveByName((byte) -60, "");
-			if ((i ^ 0xffffffff) != 0)
+			if (i != -1)
 				return method2744("", string, 1);
 			return method2744(string, "", 1);
 		} catch (RuntimeException runtimeexception) {
@@ -259,7 +259,7 @@ final class RuneScapeCache {
 				method2731(-36, -101, 7);
 			if (!method2738((byte) -124))
 				throw new IllegalStateException("");
-			return ((Class312) aClass312_1571).anInt2677;
+			return aClass312_1571.anInt2677;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ni.DA(" + i + ')');
 		}
@@ -280,15 +280,15 @@ final class RuneScapeCache {
 			}
 			byte[] is_47_ = Class98_Sub28_Sub1.method1310(false, (anObjectArrayArray1573[i_46_][i_45_]), false);
 			do {
-				if (((RuneScapeCache) this).anInt1575 == 1) {
+				if (this.anInt1575 == 1) {
 					anObjectArrayArray1573[i_46_][i_45_] = null;
-					if (((Class312) aClass312_1571).anIntArray2671[i_46_] != 1)
+					if (aClass312_1571.anIntArray2671[i_46_] != 1)
 						break;
 					anObjectArrayArray1573[i_46_] = null;
 					if (!client.aBoolean3553)
 						break;
 				}
-				if (((RuneScapeCache) this).anInt1575 == 2)
+				if (this.anInt1575 == 2)
 					anObjectArrayArray1573[i_46_] = null;
 			} while (false);
 			if (i != 5)
@@ -307,11 +307,11 @@ final class RuneScapeCache {
 				return false;
 			string_48_ = string_48_.toLowerCase();
 			string = string.toLowerCase();
-			int i = (((Class312) aClass312_1571).aClass122_2666.method2200((byte) -26, MapRegion.method3580(string_48_, !bool)));
-			if ((i ^ 0xffffffff) > -1)
+			int i = (aClass312_1571.aClass122_2666.method2200((byte) -26, MapRegion.method3580(string_48_, !bool)));
+			if (i < 0)
 				return false;
-			int i_49_ = (((Class312) aClass312_1571).aClass122Array2672[i].method2200((byte) -26, MapRegion.method3580(string, false)));
-			if ((i_49_ ^ 0xffffffff) > -1)
+			int i_49_ = (aClass312_1571.aClass122Array2672[i].method2200((byte) -26, MapRegion.method3580(string, false)));
+			if (i_49_ < 0)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -327,8 +327,8 @@ final class RuneScapeCache {
 				aClass312_1571 = aClass339_1574.method3784((byte) -124);
 				if (aClass312_1571 == null)
 					return false;
-				anObjectArrayArray1573 = new Object[((Class312) aClass312_1571).anInt2668][];
-				anObjectArray1572 = new Object[((Class312) aClass312_1571).anInt2668];
+				anObjectArrayArray1573 = new Object[aClass312_1571.anInt2668][];
+				anObjectArray1572 = new Object[aClass312_1571.anInt2668];
 			}
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -342,12 +342,12 @@ final class RuneScapeCache {
 				return null;
 			string = string.toLowerCase();
 			string_50_ = string_50_.toLowerCase();
-			int i_51_ = (((Class312) aClass312_1571).aClass122_2666.method2200((byte) -26, MapRegion.method3580(string, false)));
+			int i_51_ = (aClass312_1571.aClass122_2666.method2200((byte) -26, MapRegion.method3580(string, false)));
 			if (!method2758(i_51_, false))
 				return null;
 			if (i != -32734)
 				return null;
-			int i_52_ = (((Class312) aClass312_1571).aClass122Array2672[i_51_].method2200((byte) -26, MapRegion.method3580(string_50_, false)));
+			int i_52_ = (aClass312_1571.aClass122Array2672[i_51_].method2200((byte) -26, MapRegion.method3580(string_50_, false)));
 			return readArchive(i_52_, i_51_);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ni.B(" + (string != null ? "{...}" : "null") + ',' + (string_50_ != null ? "{...}" : "null") + ',' + i + ')'));
@@ -373,7 +373,7 @@ final class RuneScapeCache {
 			if (!method2738((byte) -127))
 				return false;
 			string = string.toLowerCase();
-			int i_55_ = (((Class312) aClass312_1571).aClass122_2666.method2200((byte) -26, MapRegion.method3580(string, false)));
+			int i_55_ = (aClass312_1571.aClass122_2666.method2200((byte) -26, MapRegion.method3580(string, false)));
 			return method2756(false, i_55_);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ni.Q(" + (string != null ? "{...}" : "null") + ',' + i + ')'));
@@ -384,13 +384,13 @@ final class RuneScapeCache {
 		try {
 			if (!method2738((byte) -126))
 				return false;
-			if ((((Class312) aClass312_1571).anIntArray2671.length ^ 0xffffffff) == -2)
+			if (aClass312_1571.anIntArray2671.length == 1)
 				return method2751(i_56_, 0, -6329);
 			if (i > -18)
 				return false;
 			if (!method2758(i_56_, false))
 				return false;
-			if ((((Class312) aClass312_1571).anIntArray2671[i_56_] ^ 0xffffffff) == -2)
+			if (aClass312_1571.anIntArray2671[i_56_] == 1)
 				return method2751(0, i_56_, -6329);
 			throw new RuntimeException();
 		} catch (RuntimeException runtimeexception) {
@@ -404,9 +404,9 @@ final class RuneScapeCache {
 				return null;
 			if (!method2758(i, false))
 				return null;
-			int[] is = ((Class312) aClass312_1571).anIntArrayArray2669[i];
+			int[] is = aClass312_1571.anIntArrayArray2669[i];
 			if (is == null) {
-				is = new int[((Class312) aClass312_1571).anIntArray2670[i]];
+				is = new int[aClass312_1571.anIntArray2670[i]];
 				for (int i_58_ = 0; is.length > i_58_; i_58_++)
 					is[i_58_] = i_58_;
 			}
@@ -422,10 +422,10 @@ final class RuneScapeCache {
 				return false;
 			string = string.toLowerCase();
 			string_59_ = string_59_.toLowerCase();
-			int i_60_ = (((Class312) aClass312_1571).aClass122_2666.method2200((byte) -26, MapRegion.method3580(string, false)));
+			int i_60_ = (aClass312_1571.aClass122_2666.method2200((byte) -26, MapRegion.method3580(string, false)));
 			if (!method2758(i_60_, false))
 				return false;
-			int i_61_ = (((Class312) aClass312_1571).aClass122Array2672[i_60_].method2200((byte) -26, MapRegion.method3580(string_59_, false)));
+			int i_61_ = (aClass312_1571.aClass122Array2672[i_60_].method2200((byte) -26, MapRegion.method3580(string_59_, false)));
 			if (i != 1)
 				method2730((byte) 3);
 			return method2751(i_61_, i_60_, i + -6330);
@@ -452,13 +452,13 @@ final class RuneScapeCache {
 				int i_64_ = 110 % ((i - 1) / 50);
 				if (method2738((byte) -123)) {
 					if (bool) {
-						((Class312) aClass312_1571).aClass122_2666 = null;
-						((Class312) aClass312_1571).anIntArray2662 = null;
+						aClass312_1571.aClass122_2666 = null;
+						aClass312_1571.anIntArray2662 = null;
 					}
 					if (!bool_63_)
 						break;
-					((Class312) aClass312_1571).aClass122Array2672 = null;
-					((Class312) aClass312_1571).anIntArrayArray2674 = null;
+					aClass312_1571.aClass122Array2672 = null;
+					aClass312_1571.anIntArrayArray2674 = null;
 				}
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("ni.N(" + bool + ',' + bool_63_ + ',' + i + ')'));
@@ -474,7 +474,7 @@ final class RuneScapeCache {
 			if (i != 29952)
 				method2765((byte) -43);
 			string = string.toLowerCase();
-			int i_65_ = (((Class312) aClass312_1571).aClass122_2666.method2200((byte) -26, MapRegion.method3580(string, false)));
+			int i_65_ = (aClass312_1571.aClass122_2666.method2200((byte) -26, MapRegion.method3580(string, false)));
 			return method2740(117, i_65_);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ni.O(" + i + ',' + (string != null ? "{...}" : "null") + ')'));
@@ -503,7 +503,7 @@ final class RuneScapeCache {
 			string = string.toLowerCase();
 			if (i > -49)
 				return -53;
-			int i_68_ = (((Class312) aClass312_1571).aClass122_2666.method2200((byte) -26, MapRegion.method3580(string, false)));
+			int i_68_ = (aClass312_1571.aClass122_2666.method2200((byte) -26, MapRegion.method3580(string, false)));
 			if (!method2758(i_68_, false))
 				return -1;
 			return i_68_;
@@ -514,7 +514,7 @@ final class RuneScapeCache {
 
 	final boolean method2751(int i, int i_69_, int i_70_) {
 		try {
-			if (!method2731(i_70_ ^ i_70_, i_69_, i))
+			if (!method2731(0, i_69_, i))
 				return false;
 			if (anObjectArrayArray1573[i_69_] != null && anObjectArrayArray1573[i_69_][i] != null)
 				return true;
@@ -535,7 +535,7 @@ final class RuneScapeCache {
 				return -1;
 			if (i != -11)
 				method2751(2, -51, -100);
-			return ((Class312) aClass312_1571).anIntArray2671.length;
+			return aClass312_1571.anIntArray2671.length;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ni.P(" + i + ')');
 		}
@@ -556,11 +556,11 @@ final class RuneScapeCache {
 				float f_84_ = f_76_ + f_78_ * f_77_;
 				float f_85_ = f_74_ + f_79_ * f_77_;
 				float f_86_ = f + f_77_ * f_80_;
-				int i_87_ = (int) f_84_ >> -1052735575;
-				int i_88_ = (int) f_86_ >> 1278945001;
+				int i_87_ = (int) f_84_ >> 9;
+				int i_88_ = (int) f_86_ >> 9;
 				if (i_87_ > 0 && i_88_ > 0 && i_87_ < GameWorld.size_x && i_88_ < GameWorld.size_y) {
-					int i_89_ = (((AnimableEntity) Player.selfPlayer).height_level);
-					if ((i_89_ ^ 0xffffffff) > -4 && (0x2 & (Class281.tileSettings[1][i_87_][i_88_]) ^ 0xffffffff) != -1)
+					int i_89_ = (Player.selfPlayer.height_level);
+					if (i_89_ < 3 && (0x2 & (Class281.tileSettings[1][i_87_][i_88_])) != 0)
 						i_89_++;
 					int i_90_ = Class98_Sub46_Sub2_Sub2.aSArray6298[i_89_].method3417((int) f_84_, (int) f_86_, true);
 					if (f_85_ > (float) i_90_) {
@@ -599,7 +599,7 @@ final class RuneScapeCache {
 		try {
 			if (i <= -90 && method2738((byte) -127)) {
 				string = string.toLowerCase();
-				int i_92_ = (((Class312) aClass312_1571).aClass122_2666.method2200((byte) -26, MapRegion.method3580(string, false)));
+				int i_92_ = (aClass312_1571.aClass122_2666.method2200((byte) -26, MapRegion.method3580(string, false)));
 				method2732(i_92_, 32768);
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -638,7 +638,7 @@ final class RuneScapeCache {
 		try {
 			if (!method2738((byte) -126))
 				return false;
-			if ((i ^ 0xffffffff) > -1 || ((i ^ 0xffffffff) <= (((Class312) aClass312_1571).anIntArray2671.length ^ 0xffffffff)) || ((Class312) aClass312_1571).anIntArray2671[i] == 0) {
+			if (i < 0 || (aClass312_1571.anIntArray2671.length <= i) || aClass312_1571.anIntArray2671[i] == 0) {
 				if (!Class94.aBoolean797)
 					return false;
 				throw new IllegalArgumentException(Integer.toString(i));
@@ -657,17 +657,17 @@ final class RuneScapeCache {
 			short[] is = new short[16];
 			int i_93_ = 0;
 			int i_94_ = !bool ? 0 : 32768;
-			int i_95_ = (i_94_ - -(bool ? ((Class280) Class52.aClass280_3500).anInt2103 : ((Class280) Class52.aClass280_3500).anInt2102));
+			int i_95_ = (i_94_ - -(bool ? Class52.aClass280_3500.anInt2103 : Class52.aClass280_3500.anInt2102));
 			if (i > 51) {
-				for (int i_96_ = i_94_; (i_95_ ^ 0xffffffff) < (i_96_ ^ 0xffffffff); i_96_++) {
+				for (int i_96_ = i_94_; i_96_ < i_95_; i_96_++) {
 					Class98_Sub46_Sub11 class98_sub46_sub11 = Class52.aClass280_3500.method3325(i_96_, 83);
-					if ((((Class98_Sub46_Sub11) class98_sub46_sub11).aBoolean6027) && (class98_sub46_sub11.method1582(false).toLowerCase().indexOf(string) ^ 0xffffffff) != 0) {
-						if ((i_93_ ^ 0xffffffff) <= -51) {
+					if ((class98_sub46_sub11.aBoolean6027) && class98_sub46_sub11.method1582(false).toLowerCase().indexOf(string) != -1) {
+						if (i_93_ >= 50) {
 							Class18.anInt214 = -1;
 							Class64_Sub16.aShortArray3682 = null;
 							return;
 						}
-						if ((is.length ^ 0xffffffff) >= (i_93_ ^ 0xffffffff)) {
+						if (i_93_ >= is.length) {
 							short[] is_97_ = new short[2 * is.length];
 							for (int i_98_ = 0; i_98_ < i_93_; i_98_++)
 								is_97_[i_98_] = is[i_98_];
@@ -707,11 +707,11 @@ final class RuneScapeCache {
 
 	RuneScapeCache(Class339 class339, boolean bool, int i) {
 		try {
-			if ((i ^ 0xffffffff) > -1 || i > 2)
+			if (i < 0 || i > 2)
 				throw new IllegalArgumentException("js5: Invalid value " + i + " supplied for discardunpacked");
 			aClass339_1574 = class339;
 			aBoolean1570 = bool;
-			((RuneScapeCache) this).anInt1575 = i;
+			this.anInt1575 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ni.<init>(" + (class339 != null ? "{...}" : "null") + ',' + bool + ',' + i + ')'));
 		}
@@ -723,7 +723,7 @@ final class RuneScapeCache {
 				return 0;
 			if (i != 0)
 				method2757(-44);
-			return ((Class312) aClass312_1571).anIntArray2671[i_101_];
+			return aClass312_1571.anIntArray2671[i_101_];
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "ni.JA(" + i + ',' + i_101_ + ')');
 		}
@@ -735,8 +735,8 @@ final class RuneScapeCache {
 				return 0;
 			int i_102_ = 0;
 			int i_103_ = 0;
-			for (int i_104_ = 0; ((anObjectArray1572.length ^ 0xffffffff) < (i_104_ ^ 0xffffffff)); i_104_++) {
-				if (((Class312) aClass312_1571).anIntArray2670[i_104_] > 0) {
+			for (int i_104_ = 0; (i_104_ < anObjectArray1572.length); i_104_++) {
+				if (aClass312_1571.anIntArray2670[i_104_] > 0) {
 					i_103_ += method2740(-48, i_104_);
 					i_102_ += 100;
 				}
@@ -754,7 +754,7 @@ final class RuneScapeCache {
 		try {
 			if (!method2738((byte) -126))
 				return -1;
-			int i_108_ = ((Class312) aClass312_1571).aClass122_2666.method2200((byte) -26, i_107_);
+			int i_108_ = aClass312_1571.aClass122_2666.method2200((byte) -26, i_107_);
 			if (!method2758(i_108_, false))
 				return -1;
 			if (i <= 35)
@@ -788,7 +788,7 @@ final class RuneScapeCache {
 	final void method2766(int i) {
 		try {
 			if (anObjectArray1572 != null) {
-				for (int i_111_ = 0; ((i_111_ ^ 0xffffffff) > (anObjectArray1572.length ^ 0xffffffff)); i_111_++)
+				for (int i_111_ = 0; (anObjectArray1572.length > i_111_); i_111_++)
 					anObjectArray1572[i_111_] = null;
 			}
 			if (i != 16)

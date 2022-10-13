@@ -60,7 +60,7 @@ final class Class98_Sub13 extends Node {
 				for (int i_1_ = 0; i_1_ < i_0_; i_1_++) {
 					int i_2_ = (int) (128.0F + fs[i_1_] * 128.0F);
 					if ((i_2_ & ~0xff) != 0)
-						i_2_ = (i_2_ ^ 0xffffffff) >> 31;
+						i_2_ = (~i_2_) >> 31;
 					aByteArray3911[i++] = (byte) (i_2_ - 128);
 				}
 				if (is != null)
@@ -130,18 +130,18 @@ final class Class98_Sub13 extends Node {
 			i_14_ = i_5_ >> 1;
 		}
 		Class371 class371 = aClass371Array3902[anIntArray3906[i_4_]];
-		int i_15_ = ((Class371) class371).anInt3144;
-		int i_16_ = ((Class371) class371).anIntArray3142[i_15_];
+		int i_15_ = class371.anInt3144;
+		int i_16_ = class371.anIntArray3142[i_15_];
 		boolean bool_17_ = !aClass56Array3901[i_16_].method510();
 		boolean bool_18_ = bool_17_;
-		for (int i_19_ = 0; i_19_ < ((Class371) class371).anInt3141; i_19_++) {
-			Class311 class311 = (aClass311Array3894[((Class371) class371).anIntArray3143[i_19_]]);
+		for (int i_19_ = 0; i_19_ < class371.anInt3141; i_19_++) {
+			Class311 class311 = (aClass311Array3894[class371.anIntArray3143[i_19_]]);
 			float[] fs = aFloatArray3882;
 			class311.method3619(fs, i_5_ >> 1, bool_18_);
 		}
 		if (!bool_17_) {
-			int i_20_ = ((Class371) class371).anInt3144;
-			int i_21_ = ((Class371) class371).anIntArray3142[i_20_];
+			int i_20_ = class371.anInt3144;
+			int i_21_ = class371.anIntArray3142[i_20_];
 			aClass56Array3901[i_21_].method513(aFloatArray3882, i_5_ >> 1);
 		}
 		if (bool_17_) {
@@ -346,7 +346,7 @@ final class Class98_Sub13 extends Node {
 		int i_87_ = (i & 0x7fe00000) >> 21;
 		if (i_86_ != 0)
 			i_85_ = -i_85_;
-		return (float) ((double) i_85_ * Math.pow(2.0, (double) (i_87_ - 788)));
+		return (float) ((double) i_85_ * Math.pow(2.0, i_87_ - 788));
 	}
 
 	static final Class98_Sub13 method1140(RuneScapeCache class207, int i, int i_88_) {
@@ -373,7 +373,7 @@ final class Class98_Sub13 extends Node {
 		anInt3896 = class98_sub22.readInt(-2);
 		anInt3900 = class98_sub22.readInt(-2);
 		if (anInt3900 < 0) {
-			anInt3900 = anInt3900 ^ 0xffffffff;
+			anInt3900 = ~anInt3900;
 			aBoolean3890 = true;
 		}
 		int i = class98_sub22.readInt(-2);

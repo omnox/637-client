@@ -10,7 +10,7 @@ final class Class276 {
 				method3285(null, null, (byte) -37);
 			for (;;) {
 				int i_0_ = class98_sub22.readUnsignedByte();
-				if ((i_0_ ^ 0xffffffff) == -1)
+				if (i_0_ == 0)
 					break;
 				if (i_0_ == 1) {
 					int[] is_1_ = Class50.anIntArray417 = new int[6];
@@ -20,12 +20,12 @@ final class Class276 {
 					is_1_[3] = class98_sub22.readShort();
 					is_1_[4] = class98_sub22.readShort();
 					is_1_[5] = class98_sub22.readShort();
-				} else if ((i_0_ ^ 0xffffffff) == -5) {
+				} else if (i_0_ == 4) {
 					int i_2_ = class98_sub22.readUnsignedByte();
 					Class272.anIntArray2036 = new int[i_2_];
 					for (int i_3_ = 0; i_3_ < i_2_; i_3_++) {
 						Class272.anIntArray2036[i_3_] = class98_sub22.readShort();
-						if ((Class272.anIntArray2036[i_3_] ^ 0xffffffff) == -65536)
+						if (Class272.anIntArray2036[i_3_] == 65535)
 							Class272.anIntArray2036[i_3_] = -1;
 					}
 				} else if (i_0_ == 5) {
@@ -67,7 +67,7 @@ final class Class276 {
 
 	static final void method3287(int i, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_, int i_14_, ha var_ha, int i_15_, int i_16_, byte[][][] is, int i_17_, int i_18_) {
 		try {
-			if (i_13_ != 0 && (i_10_ ^ 0xffffffff) != -1) {
+			if (i_13_ != 0 && i_10_ != 0) {
 				if (i_13_ == 9) {
 					i = i - -1 & 0x3;
 					i_13_ = 1;

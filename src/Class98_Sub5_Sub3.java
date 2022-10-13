@@ -12,7 +12,7 @@ final class Class98_Sub5_Sub3 extends Class98_Sub5 {
 	final void method959(float f, int i) {
 		do {
 			try {
-				((Class98_Sub5) this).aFloat3832 = f;
+				this.aFloat3832 = f;
 				if (i > 12)
 					break;
 				aClass111_5540 = null;
@@ -50,13 +50,13 @@ final class Class98_Sub5_Sub3 extends Class98_Sub5 {
 			Class98_Sub27 class98_sub27 = new Class98_Sub27(Class4.aClass279_86, 0);
 			try {
 				Class143 class143 = Class98_Sub43_Sub2.aClass88_5907.method875("", true, 21516);
-				while ((class143.anInt1163 ^ 0xffffffff) == -1)
+				while (class143.anInt1163 == 0)
 					Class246_Sub7.method3131(0, 1L);
 				if (class143.anInt1163 == 1) {
 					class356 = (Class356) class143.anObject1162;
 					byte[] is = new byte[(int) class356.method3878((byte) -112)];
 					int i_14_;
-					for (int i_15_ = 0; (is.length ^ 0xffffffff) < (i_15_ ^ 0xffffffff); i_15_ += i_14_) {
+					for (int i_15_ = 0; i_15_ < is.length; i_15_ += i_14_) {
 						i_14_ = class356.method3879(is.length - i_15_, (byte) -26, i_15_, is);
 						if (i_14_ == -1)
 							throw new IOException("EOF");
@@ -100,7 +100,7 @@ final class Class98_Sub5_Sub3 extends Class98_Sub5 {
 		try {
 			if (i_20_ > -36)
 				method972(-63);
-			if (i != 7 && (i ^ 0xffffffff) != -10)
+			if (i != 7 && i != 9)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -110,11 +110,11 @@ final class Class98_Sub5_Sub3 extends Class98_Sub5 {
 
 	final void method955(int i, byte i_21_, int i_22_, int i_23_) {
 		try {
-			((Class98_Sub5) this).anInt3834 = i;
-			((Class98_Sub5) this).anInt3833 = i_22_;
+			this.anInt3834 = i;
+			this.anInt3833 = i_22_;
 			if (i_21_ > -120)
 				method972(-17);
-			((Class98_Sub5) this).anInt3830 = i_23_;
+			this.anInt3830 = i_23_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("lh.A(" + i + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ')'));
 		}

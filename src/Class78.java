@@ -13,34 +13,34 @@ final class Class78 {
 	static final void method790(int i, int i_0_, int i_1_, Class246_Sub3_Sub3 class246_sub3_sub3, Class246_Sub3_Sub3 class246_sub3_sub3_2_) {
 		Class172 class172 = Class100.method1693(i, i_0_, i_1_);
 		if (class172 != null) {
-			((Class172) class172).aClass246_Sub3_Sub3_1324 = class246_sub3_sub3;
-			((Class172) class172).aClass246_Sub3_Sub3_1333 = class246_sub3_sub3_2_;
+			class172.aClass246_Sub3_Sub3_1324 = class246_sub3_sub3;
+			class172.aClass246_Sub3_Sub3_1333 = class246_sub3_sub3_2_;
 			int i_3_ = activeTileHeightMap == Class81.aSArray618 ? 1 : 0;
 			if (class246_sub3_sub3.method2978(-124)) {
 				if (class246_sub3_sub3.method2987(6540)) {
-					((AnimableEntity) class246_sub3_sub3).aClass246_Sub3_5090 = Class359.aClass246_Sub3Array3056[i_3_];
+					class246_sub3_sub3.aClass246_Sub3_5090 = Class359.aClass246_Sub3Array3056[i_3_];
 					Class359.aClass246_Sub3Array3056[i_3_] = class246_sub3_sub3;
 				} else {
-					((AnimableEntity) class246_sub3_sub3).aClass246_Sub3_5090 = Class379.aClass246_Sub3Array3198[i_3_];
+					class246_sub3_sub3.aClass246_Sub3_5090 = Class379.aClass246_Sub3Array3198[i_3_];
 					Class379.aClass246_Sub3Array3198[i_3_] = class246_sub3_sub3;
 					Class358.aBoolean3033 = true;
 				}
 			} else {
-				((AnimableEntity) class246_sub3_sub3).aClass246_Sub3_5090 = Class130.aClass246_Sub3Array1029[i_3_];
+				class246_sub3_sub3.aClass246_Sub3_5090 = Class130.aClass246_Sub3Array1029[i_3_];
 				Class130.aClass246_Sub3Array1029[i_3_] = class246_sub3_sub3;
 			}
 			if (class246_sub3_sub3_2_ != null) {
 				if (class246_sub3_sub3_2_.method2978(-126)) {
 					if (class246_sub3_sub3_2_.method2987(6540)) {
-						((AnimableEntity) class246_sub3_sub3_2_).aClass246_Sub3_5090 = Class359.aClass246_Sub3Array3056[i_3_];
+						class246_sub3_sub3_2_.aClass246_Sub3_5090 = Class359.aClass246_Sub3Array3056[i_3_];
 						Class359.aClass246_Sub3Array3056[i_3_] = class246_sub3_sub3_2_;
 					} else {
-						((AnimableEntity) class246_sub3_sub3_2_).aClass246_Sub3_5090 = Class379.aClass246_Sub3Array3198[i_3_];
+						class246_sub3_sub3_2_.aClass246_Sub3_5090 = Class379.aClass246_Sub3Array3198[i_3_];
 						Class379.aClass246_Sub3Array3198[i_3_] = class246_sub3_sub3_2_;
 						Class358.aBoolean3033 = true;
 					}
 				} else {
-					((AnimableEntity) class246_sub3_sub3_2_).aClass246_Sub3_5090 = Class130.aClass246_Sub3Array1029[i_3_];
+					class246_sub3_sub3_2_.aClass246_Sub3_5090 = Class130.aClass246_Sub3Array1029[i_3_];
 					Class130.aClass246_Sub3Array1029[i_3_] = class246_sub3_sub3_2_;
 				}
 			}
@@ -54,7 +54,7 @@ final class Class78 {
 					Class356 class356 = null;
 					try {
 						Class143 class143 = Class98_Sub43_Sub2.aClass88_5907.method875("2", true, 21516);
-						while ((class143.anInt1163 ^ 0xffffffff) == -1)
+						while (class143.anInt1163 == 0)
 							Class246_Sub7.method3131(0, 1L);
 						if (class143.anInt1163 == 1) {
 							class356 = (Class356) class143.anObject1162;

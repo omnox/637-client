@@ -59,20 +59,20 @@ final class Class52 implements Interface21 {
 			Class143 class143 = class88.method864(55);
 			while (class143.anInt1163 == 0)
 				Class246_Sub7.method3131(0, 10L);
-			if ((class143.anInt1163 ^ 0xffffffff) == -3)
+			if (class143.anInt1163 == 2)
 				return new Class259[0];
 			int[] is = (int[]) class143.anObject1162;
-			Class259[] class259s = new Class259[is.length >> -574919422];
+			Class259[] class259s = new Class259[is.length >> 2];
 			int i_0_ = 0;
 			if (i >= -64)
 				anIntArray3493 = null;
-			for (/**/; (i_0_ ^ 0xffffffff) > (class259s.length ^ 0xffffffff); i_0_++) {
+			for (/**/; class259s.length > i_0_; i_0_++) {
 				Class259 class259 = new Class259();
 				class259s[i_0_] = class259;
-				((Class259) class259).anInt1953 = is[i_0_ << -22199518];
-				((Class259) class259).anInt1956 = is[(i_0_ << -27193534) + 1];
-				((Class259) class259).anInt1955 = is[2 + (i_0_ << -1744757374)];
-				((Class259) class259).anInt1958 = is[(i_0_ << -1958187070) - -3];
+				class259.anInt1953 = is[i_0_ << 2];
+				class259.anInt1956 = is[(i_0_ << 2) + 1];
+				class259.anInt1955 = is[2 + (i_0_ << 2)];
+				class259.anInt1958 = is[(i_0_ << 2) - -3];
 			}
 			return class259s;
 		} catch (RuntimeException runtimeexception) {
@@ -83,7 +83,7 @@ final class Class52 implements Interface21 {
 	static final Class370 method491(int i, boolean bool, RuneScapeCache class207, String string) {
 		try {
 			int i_1_ = class207.readArchiveByName((byte) -102, string);
-			if ((i_1_ ^ 0xffffffff) == 0)
+			if (i_1_ == -1)
 				return new Class370(0);
 			int[] is = class207.method2743(i_1_, 6341);
 			Class370 class370 = new Class370(is.length);
@@ -91,16 +91,16 @@ final class Class52 implements Interface21 {
 			int i_3_ = 0;
 			if (i < 67)
 				method489(false);
-			while (((Class370) class370).anInt3137 > i_2_) {
+			while (class370.anInt3137 > i_2_) {
 				RSByteBuffer class98_sub22 = new RSByteBuffer(class207.readArchive(is[i_3_++], i_1_));
 				int i_4_ = class98_sub22.readInt(-2);
 				int i_5_ = class98_sub22.readShort();
 				int i_6_ = class98_sub22.readUnsignedByte();
-				if (!bool && (i_6_ ^ 0xffffffff) == -2)
-					((Class370) class370).anInt3137--;
+				if (!bool && i_6_ == 1)
+					class370.anInt3137--;
 				else {
-					((Class370) class370).anIntArray3133[i_2_] = i_4_;
-					((Class370) class370).anIntArray3138[i_2_] = i_5_;
+					class370.anIntArray3133[i_2_] = i_4_;
+					class370.anIntArray3138[i_2_] = i_5_;
 					i_2_++;
 				}
 			}
@@ -124,17 +124,17 @@ final class Class52 implements Interface21 {
 
 	Class52(int i, Class63 class63, Class110 class110, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_, boolean bool) {
 		try {
-			((Class52) this).anInt3492 = i_11_;
-			((Class52) this).anInt3490 = i_8_;
-			((Class52) this).anInt3497 = i_10_;
-			((Class52) this).anInt3489 = i_13_;
-			((Class52) this).anInt3496 = i_9_;
-			((Class52) this).anInt3501 = i;
-			((Class52) this).aClass110_3499 = class110;
-			((Class52) this).anInt3498 = i_7_;
-			((Class52) this).anInt3491 = i_12_;
-			((Class52) this).aClass63_3502 = class63;
-			((Class52) this).aBoolean3495 = bool;
+			this.anInt3492 = i_11_;
+			this.anInt3490 = i_8_;
+			this.anInt3497 = i_10_;
+			this.anInt3489 = i_13_;
+			this.anInt3496 = i_9_;
+			this.anInt3501 = i;
+			this.aClass110_3499 = class110;
+			this.anInt3498 = i_7_;
+			this.anInt3491 = i_12_;
+			this.aClass63_3502 = class63;
+			this.aBoolean3495 = bool;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("dk.<init>(" + i + ',' + (class63 != null ? "{...}" : "null") + ',' + (class110 != null ? "{...}" : "null") + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + bool + ')'));
 		}

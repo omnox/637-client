@@ -26,14 +26,14 @@ final class Class312 {
 			if (i != -22015)
 				IncomingOpcode.aClass58_2661 = null;
 			for (/**/; class98_sub42 != null; class98_sub42 = ((Class98_Sub42) Class98_Sub10_Sub37.aClass148_5748.method2417(97))) {
-				if (i_1_ == ((Class98_Sub42) class98_sub42).anInt4220 && (i_2_ << -172547319 == ((Class98_Sub42) class98_sub42).anInt4229) && (((Class98_Sub42) class98_sub42).anInt4225 == i_0_ << -244251415) && ((((Class352) class352).id ^ 0xffffffff) == (((Class352) (((Class98_Sub42) class98_sub42).aClass352_4233)).id ^ 0xffffffff))) {
-					if ((((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232) != null) {
-						Class81.aClass98_Sub31_Sub3_619.method1374(((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232);
-						((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4232 = null;
+				if (i_1_ == class98_sub42.anInt4220 && (i_2_ << 9 == class98_sub42.anInt4229) && (class98_sub42.anInt4225 == i_0_ << 9) && (class98_sub42.aClass352_4233.id == class352.id)) {
+					if ((class98_sub42.aClass98_Sub31_Sub5_4232) != null) {
+						Class81.aClass98_Sub31_Sub3_619.method1374(class98_sub42.aClass98_Sub31_Sub5_4232);
+						class98_sub42.aClass98_Sub31_Sub5_4232 = null;
 					}
-					if ((((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4230) != null) {
-						Class81.aClass98_Sub31_Sub3_619.method1374(((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4230);
-						((Class98_Sub42) class98_sub42).aClass98_Sub31_Sub5_4230 = null;
+					if ((class98_sub42.aClass98_Sub31_Sub5_4230) != null) {
+						Class81.aClass98_Sub31_Sub3_619.method1374(class98_sub42.aClass98_Sub31_Sub5_4230);
+						class98_sub42.aClass98_Sub31_Sub5_4230 = null;
 					}
 					class98_sub42.remove();
 					break;
@@ -61,86 +61,86 @@ final class Class312 {
 				int i_3_ = class98_sub22.readUnsignedByte();
 				if (i_3_ < 5 || i_3_ > 6)
 					throw new RuntimeException();
-				if ((i_3_ ^ 0xffffffff) > -7)
-					((Class312) this).anInt2676 = 0;
+				if (i_3_ < 6)
+					this.anInt2676 = 0;
 				else
-					((Class312) this).anInt2676 = class98_sub22.readInt(-2);
+					this.anInt2676 = class98_sub22.readInt(-2);
 				int i_4_ = class98_sub22.readUnsignedByte();
 				boolean bool = (0x1 & i_4_) != 0;
-				((Class312) this).anInt2665 = class98_sub22.readShort();
-				boolean bool_5_ = (0x2 & i_4_ ^ 0xffffffff) != -1;
+				this.anInt2665 = class98_sub22.readShort();
+				boolean bool_5_ = (0x2 & i_4_) != 0;
 				int i_6_ = 0;
-				((Class312) this).anIntArray2664 = new int[((Class312) this).anInt2665];
+				this.anIntArray2664 = new int[this.anInt2665];
 				int i_7_ = -1;
-				for (int i_8_ = 0; ((Class312) this).anInt2665 > i_8_; i_8_++) {
-					((Class312) this).anIntArray2664[i_8_] = i_6_ += class98_sub22.readShort();
-					if (((Class312) this).anIntArray2664[i_8_] > i_7_)
-						i_7_ = ((Class312) this).anIntArray2664[i_8_];
+				for (int i_8_ = 0; this.anInt2665 > i_8_; i_8_++) {
+					this.anIntArray2664[i_8_] = i_6_ += class98_sub22.readShort();
+					if (this.anIntArray2664[i_8_] > i_7_)
+						i_7_ = this.anIntArray2664[i_8_];
 				}
-				((Class312) this).anInt2668 = 1 + i_7_;
+				this.anInt2668 = 1 + i_7_;
 				if (bool_5_)
-					((Class312) this).aByteArrayArray2675 = new byte[((Class312) this).anInt2668][];
-				((Class312) this).anIntArray2670 = new int[((Class312) this).anInt2668];
-				((Class312) this).anIntArrayArray2669 = new int[((Class312) this).anInt2668][];
-				((Class312) this).anIntArray2671 = new int[((Class312) this).anInt2668];
-				((Class312) this).anIntArray2667 = new int[((Class312) this).anInt2668];
-				((Class312) this).anIntArray2673 = new int[((Class312) this).anInt2668];
+					this.aByteArrayArray2675 = new byte[this.anInt2668][];
+				this.anIntArray2670 = new int[this.anInt2668];
+				this.anIntArrayArray2669 = new int[this.anInt2668][];
+				this.anIntArray2671 = new int[this.anInt2668];
+				this.anIntArray2667 = new int[this.anInt2668];
+				this.anIntArray2673 = new int[this.anInt2668];
 				if (bool) {
-					((Class312) this).anIntArray2662 = new int[((Class312) this).anInt2668];
-					for (int i_9_ = 0; ((i_9_ ^ 0xffffffff) > (((Class312) this).anInt2668 ^ 0xffffffff)); i_9_++)
-						((Class312) this).anIntArray2662[i_9_] = -1;
-					for (int i_10_ = 0; i_10_ < ((Class312) this).anInt2665; i_10_++)
-						((Class312) this).anIntArray2662[((Class312) this).anIntArray2664[i_10_]] = class98_sub22.readInt(-2);
-					((Class312) this).aClass122_2666 = new Class122(((Class312) this).anIntArray2662);
+					this.anIntArray2662 = new int[this.anInt2668];
+					for (int i_9_ = 0; (this.anInt2668 > i_9_); i_9_++)
+						this.anIntArray2662[i_9_] = -1;
+					for (int i_10_ = 0; i_10_ < this.anInt2665; i_10_++)
+						this.anIntArray2662[this.anIntArray2664[i_10_]] = class98_sub22.readInt(-2);
+					this.aClass122_2666 = new Class122(this.anIntArray2662);
 				}
-				for (int i_11_ = 0; ((Class312) this).anInt2665 > i_11_; i_11_++)
-					((Class312) this).anIntArray2673[(((Class312) this).anIntArray2664[i_11_])] = class98_sub22.readInt(-2);
+				for (int i_11_ = 0; this.anInt2665 > i_11_; i_11_++)
+					this.anIntArray2673[(this.anIntArray2664[i_11_])] = class98_sub22.readInt(-2);
 				if (bool_5_) {
-					for (int i_12_ = 0; ((i_12_ ^ 0xffffffff) > (((Class312) this).anInt2665 ^ 0xffffffff)); i_12_++) {
+					for (int i_12_ = 0; (this.anInt2665 > i_12_); i_12_++) {
 						byte[] is_13_ = new byte[64];
 						class98_sub22.method1190(is_13_, true, 64, 0);
-						((Class312) this).aByteArrayArray2675[((Class312) this).anIntArray2664[i_12_]] = is_13_;
+						this.aByteArrayArray2675[this.anIntArray2664[i_12_]] = is_13_;
 					}
 				}
 				if (i == -7572) {
-					for (int i_14_ = 0; ((Class312) this).anInt2665 > i_14_; i_14_++)
-						((Class312) this).anIntArray2667[((Class312) this).anIntArray2664[i_14_]] = class98_sub22.readInt(-2);
-					for (int i_15_ = 0; ((Class312) this).anInt2665 > i_15_; i_15_++)
-						((Class312) this).anIntArray2670[((Class312) this).anIntArray2664[i_15_]] = class98_sub22.readShort();
-					for (int i_16_ = 0; ((((Class312) this).anInt2665 ^ 0xffffffff) < (i_16_ ^ 0xffffffff)); i_16_++) {
-						int i_17_ = ((Class312) this).anIntArray2664[i_16_];
-						int i_18_ = ((Class312) this).anIntArray2670[i_17_];
+					for (int i_14_ = 0; this.anInt2665 > i_14_; i_14_++)
+						this.anIntArray2667[this.anIntArray2664[i_14_]] = class98_sub22.readInt(-2);
+					for (int i_15_ = 0; this.anInt2665 > i_15_; i_15_++)
+						this.anIntArray2670[this.anIntArray2664[i_15_]] = class98_sub22.readShort();
+					for (int i_16_ = 0; (i_16_ < this.anInt2665); i_16_++) {
+						int i_17_ = this.anIntArray2664[i_16_];
+						int i_18_ = this.anIntArray2670[i_17_];
 						i_6_ = 0;
-						((Class312) this).anIntArrayArray2669[i_17_] = new int[i_18_];
+						this.anIntArrayArray2669[i_17_] = new int[i_18_];
 						int i_19_ = -1;
-						for (int i_20_ = 0; (i_20_ ^ 0xffffffff) > (i_18_ ^ 0xffffffff); i_20_++) {
-							int i_21_ = (((Class312) this).anIntArrayArray2669[i_17_][i_20_] = i_6_ += class98_sub22.readShort());
-							if ((i_21_ ^ 0xffffffff) < (i_19_ ^ 0xffffffff))
+						for (int i_20_ = 0; i_18_ > i_20_; i_20_++) {
+							int i_21_ = (this.anIntArrayArray2669[i_17_][i_20_] = i_6_ += class98_sub22.readShort());
+							if (i_19_ < i_21_)
 								i_19_ = i_21_;
 						}
-						((Class312) this).anIntArray2671[i_17_] = 1 + i_19_;
-						if ((i_18_ ^ 0xffffffff) == (1 + i_19_ ^ 0xffffffff))
-							((Class312) this).anIntArrayArray2669[i_17_] = null;
+						this.anIntArray2671[i_17_] = 1 + i_19_;
+						if (1 + i_19_ == i_18_)
+							this.anIntArrayArray2669[i_17_] = null;
 					}
 					if (!bool)
 						break;
-					((Class312) this).aClass122Array2672 = new Class122[1 + i_7_];
-					((Class312) this).anIntArrayArray2674 = new int[1 + i_7_][];
-					for (int i_22_ = 0; ((Class312) this).anInt2665 > i_22_; i_22_++) {
-						int i_23_ = ((Class312) this).anIntArray2664[i_22_];
-						int i_24_ = ((Class312) this).anIntArray2670[i_23_];
-						((Class312) this).anIntArrayArray2674[i_23_] = new int[((Class312) this).anIntArray2671[i_23_]];
-						for (int i_25_ = 0; ((i_25_ ^ 0xffffffff) > (((Class312) this).anIntArray2671[i_23_] ^ 0xffffffff)); i_25_++)
-							((Class312) this).anIntArrayArray2674[i_23_][i_25_] = -1;
-						for (int i_26_ = 0; (i_26_ ^ 0xffffffff) > (i_24_ ^ 0xffffffff); i_26_++) {
+					this.aClass122Array2672 = new Class122[1 + i_7_];
+					this.anIntArrayArray2674 = new int[1 + i_7_][];
+					for (int i_22_ = 0; this.anInt2665 > i_22_; i_22_++) {
+						int i_23_ = this.anIntArray2664[i_22_];
+						int i_24_ = this.anIntArray2670[i_23_];
+						this.anIntArrayArray2674[i_23_] = new int[this.anIntArray2671[i_23_]];
+						for (int i_25_ = 0; (this.anIntArray2671[i_23_] > i_25_); i_25_++)
+							this.anIntArrayArray2674[i_23_][i_25_] = -1;
+						for (int i_26_ = 0; i_24_ > i_26_; i_26_++) {
 							int i_27_;
-							if (((Class312) this).anIntArrayArray2669[i_23_] != null)
-								i_27_ = (((Class312) this).anIntArrayArray2669[i_23_][i_26_]);
+							if (this.anIntArrayArray2669[i_23_] != null)
+								i_27_ = (this.anIntArrayArray2669[i_23_][i_26_]);
 							else
 								i_27_ = i_26_;
-							((Class312) this).anIntArrayArray2674[i_23_][i_27_] = class98_sub22.readInt(i + 7570);
+							this.anIntArrayArray2674[i_23_][i_27_] = class98_sub22.readInt(i + 7570);
 						}
-						((Class312) this).aClass122Array2672[i_23_] = new Class122(((Class312) this).anIntArrayArray2674[i_23_]);
+						this.aClass122Array2672[i_23_] = new Class122(this.anIntArrayArray2674[i_23_]);
 					}
 				}
 			} catch (RuntimeException runtimeexception) {
@@ -154,7 +154,7 @@ final class Class312 {
 		try {
 			if (i > -68)
 				IncomingOpcode.aClass58_2661 = null;
-			if ((i_28_ ^ 0xffffffff) != -4 && i_28_ != 4)
+			if (i_28_ != 3 && i_28_ != 4)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -164,15 +164,15 @@ final class Class312 {
 
 	Class312(byte[] is, int i, byte[] is_29_) {
 		try {
-			((Class312) this).anInt2677 = Class31.method309(is.length, is, -30091);
-			if (i != ((Class312) this).anInt2677)
+			this.anInt2677 = Class31.method309(is.length, is, -30091);
+			if (i != this.anInt2677)
 				throw new RuntimeException();
 			if (is_29_ != null) {
 				if (is_29_.length != 64)
 					throw new RuntimeException();
 				aByteArray2663 = Class64_Sub11.method595(0, (byte) -121, is, is.length);
 				for (int i_30_ = 0; i_30_ < 64; i_30_++) {
-					if ((aByteArray2663[i_30_] ^ 0xffffffff) != (is_29_[i_30_] ^ 0xffffffff))
+					if (is_29_[i_30_] != aByteArray2663[i_30_])
 						throw new RuntimeException();
 				}
 			}

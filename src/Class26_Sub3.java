@@ -17,18 +17,18 @@ final class Class26_Sub3 extends Class26 implements Interface4_Impl2 {
 	public final void method41(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, byte[] is, Class164 class164, int i_5_) {
 		do {
 			try {
-				if (class164 != ((Class26_Sub3) this).aClass164_273 || (Class162.aClass162_1266 != ((Class26_Sub3) this).aClass162_271))
+				if (class164 != this.aClass164_273 || (Class162.aClass162_1266 != this.aClass162_271))
 					throw new RuntimeException();
 				if (i_4_ != -26946)
-					((Class26_Sub3) this).aBoolean3585 = true;
-				PixelBuffer pixelbuffer = (((ha_Sub3_Sub1) ((Class26_Sub3) this).aHa_Sub3_Sub1_270).aPixelBuffer6095);
+					this.aBoolean3585 = true;
+				PixelBuffer pixelbuffer = (this.aHa_Sub3_Sub1_270.aPixelBuffer6095);
 				int i_6_ = anIDirect3DTexture3582.LockRect(0, i_5_, i_2_, i_1_, i_3_, 0, pixelbuffer);
 				if (!kg.a(-21593, i_6_))
 					break;
-				i *= (((Class164) ((Class26_Sub3) this).aClass164_273).anInt1275);
-				i_1_ *= (((Class164) ((Class26_Sub3) this).aClass164_273).anInt1275);
+				i *= (this.aClass164_273.anInt1275);
+				i_1_ *= (this.aClass164_273.anInt1275);
 				int i_7_ = pixelbuffer.getRowPitch();
-				if (i_7_ == i_1_ && (i ^ 0xffffffff) == (i_1_ ^ 0xffffffff))
+				if (i_7_ == i_1_ && i_1_ == i)
 					pixelbuffer.a(is, i_0_, 0, i_1_ * i_3_);
 				else {
 					for (int i_8_ = 0; i_3_ > i_8_; i_8_++)
@@ -43,10 +43,10 @@ final class Class26_Sub3 extends Class26 implements Interface4_Impl2 {
 	}
 
 	Class26_Sub3(ha_Sub3_Sub1 var_ha_Sub3_Sub1, int i, int i_9_, boolean bool, int[] is, int i_10_, int i_11_) {
-		super(var_ha_Sub3_Sub1, Class62.aClass164_486, Class162.aClass162_1266, bool && ((ha_Sub3_Sub1) var_ha_Sub3_Sub1).aBoolean6107, i * i_9_);
+		super(var_ha_Sub3_Sub1, Class62.aClass164_486, Class162.aClass162_1266, bool && var_ha_Sub3_Sub1.aBoolean6107, i * i_9_);
 		do {
 			try {
-				if (!((ha_Sub3_Sub1) ((Class26_Sub3) this).aHa_Sub3_Sub1_270).aBoolean6109) {
+				if (!this.aHa_Sub3_Sub1_270.aBoolean6109) {
 					anInt3583 = Class48.method453(423660257, i);
 					anInt3586 = Class48.method453(423660257, i_9_);
 				} else {
@@ -54,17 +54,17 @@ final class Class26_Sub3 extends Class26 implements Interface4_Impl2 {
 					anInt3586 = i_9_;
 				}
 				if (bool)
-					anIDirect3DTexture3582 = ((ha_Sub3_Sub1) ((Class26_Sub3) this).aHa_Sub3_Sub1_270).anIDirect3DDevice6098.a(anInt3583, anInt3586, 0, 1024, 21, 1);
+					anIDirect3DTexture3582 = this.aHa_Sub3_Sub1_270.anIDirect3DDevice6098.a(anInt3583, anInt3586, 0, 1024, 21, 1);
 				else
-					anIDirect3DTexture3582 = ((ha_Sub3_Sub1) ((Class26_Sub3) this).aHa_Sub3_Sub1_270).anIDirect3DDevice6098.a(anInt3583, anInt3586, 1, 0, 21, 1);
-				PixelBuffer pixelbuffer = (((ha_Sub3_Sub1) ((Class26_Sub3) this).aHa_Sub3_Sub1_270).aPixelBuffer6095);
+					anIDirect3DTexture3582 = this.aHa_Sub3_Sub1_270.anIDirect3DDevice6098.a(anInt3583, anInt3586, 1, 0, 21, 1);
+				PixelBuffer pixelbuffer = (this.aHa_Sub3_Sub1_270.aPixelBuffer6095);
 				int i_12_ = anIDirect3DTexture3582.LockRect(0, 0, 0, i, i_9_, 0, pixelbuffer);
 				if (!kg.a(-21593, i_12_))
 					break;
 				if (0 == i_11_)
 					i_11_ = i;
 				int i_13_ = pixelbuffer.getRowPitch();
-				if ((i_13_ ^ 0xffffffff) != (4 * i ^ 0xffffffff) || (i ^ 0xffffffff) != (i_11_ ^ 0xffffffff)) {
+				if (4 * i != i_13_ || i_11_ != i) {
 					for (int i_14_ = 0; i_14_ < i_9_; i_14_++)
 						pixelbuffer.a(is, i_10_ + i_11_ * i_14_, i_13_ * i_14_, i);
 				} else
@@ -80,7 +80,7 @@ final class Class26_Sub3 extends Class26 implements Interface4_Impl2 {
 	public final void method5(int i) {
 		do {
 			try {
-				((Class26_Sub3) this).aHa_Sub3_Sub1_270.method2079(false, this);
+				this.aHa_Sub3_Sub1_270.method2079(false, this);
 				if (i >= 14)
 					break;
 				anIDirect3DTexture3582 = null;
@@ -106,14 +106,14 @@ final class Class26_Sub3 extends Class26 implements Interface4_Impl2 {
 	Class26_Sub3(ha_Sub3_Sub1 var_ha_Sub3_Sub1, Class164 class164, Class162 class162, int i, int i_16_) {
 		super(var_ha_Sub3_Sub1, class164, class162, false, i_16_ * i);
 		try {
-			if (!((ha_Sub3_Sub1) ((Class26_Sub3) this).aHa_Sub3_Sub1_270).aBoolean6109) {
+			if (!this.aHa_Sub3_Sub1_270.aBoolean6109) {
 				anInt3583 = Class48.method453(423660257, i);
 				anInt3586 = Class48.method453(423660257, i_16_);
 			} else {
 				anInt3586 = i_16_;
 				anInt3583 = i;
 			}
-			anIDirect3DTexture3582 = (((ha_Sub3_Sub1) ((Class26_Sub3) this).aHa_Sub3_Sub1_270).anIDirect3DDevice6098.a(i, i_16_, 1, 0, ha_Sub3_Sub1.method2074(-1935, (((Class26_Sub3) this).aClass164_273), (((Class26_Sub3) this).aClass162_271)), 1));
+			anIDirect3DTexture3582 = (this.aHa_Sub3_Sub1_270.anIDirect3DDevice6098.a(i, i_16_, 1, 0, ha_Sub3_Sub1.method2074(-1935, (this.aClass164_273), (this.aClass162_271)), 1));
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -143,9 +143,9 @@ final class Class26_Sub3 extends Class26 implements Interface4_Impl2 {
 	}
 
 	Class26_Sub3(ha_Sub3_Sub1 var_ha_Sub3_Sub1, Class164 class164, int i, int i_20_, boolean bool, byte[] is, int i_21_, int i_22_) {
-		super(var_ha_Sub3_Sub1, class164, Class162.aClass162_1266, bool && ((ha_Sub3_Sub1) var_ha_Sub3_Sub1).aBoolean6107, i * i_20_);
+		super(var_ha_Sub3_Sub1, class164, Class162.aClass162_1266, bool && var_ha_Sub3_Sub1.aBoolean6107, i * i_20_);
 		try {
-			if (!((ha_Sub3_Sub1) ((Class26_Sub3) this).aHa_Sub3_Sub1_270).aBoolean6109) {
+			if (!this.aHa_Sub3_Sub1_270.aBoolean6109) {
 				anInt3583 = Class48.method453(423660257, i);
 				anInt3586 = Class48.method453(423660257, i_20_);
 			} else {
@@ -153,19 +153,19 @@ final class Class26_Sub3 extends Class26 implements Interface4_Impl2 {
 				anInt3583 = i;
 			}
 			if (bool)
-				anIDirect3DTexture3582 = (((ha_Sub3_Sub1) ((Class26_Sub3) this).aHa_Sub3_Sub1_270).anIDirect3DDevice6098.a(anInt3583, anInt3586, 0, 1024, ha_Sub3_Sub1.method2074(-1935, (((Class26_Sub3) this).aClass164_273), Class162.aClass162_1266), 1));
+				anIDirect3DTexture3582 = (this.aHa_Sub3_Sub1_270.anIDirect3DDevice6098.a(anInt3583, anInt3586, 0, 1024, ha_Sub3_Sub1.method2074(-1935, (this.aClass164_273), Class162.aClass162_1266), 1));
 			else
-				anIDirect3DTexture3582 = (((ha_Sub3_Sub1) ((Class26_Sub3) this).aHa_Sub3_Sub1_270).anIDirect3DDevice6098.a(anInt3583, anInt3586, 1, 0, ha_Sub3_Sub1.method2074(-1935, (((Class26_Sub3) this).aClass164_273), Class162.aClass162_1266), 1));
-			PixelBuffer pixelbuffer = (((ha_Sub3_Sub1) ((Class26_Sub3) this).aHa_Sub3_Sub1_270).aPixelBuffer6095);
+				anIDirect3DTexture3582 = (this.aHa_Sub3_Sub1_270.anIDirect3DDevice6098.a(anInt3583, anInt3586, 1, 0, ha_Sub3_Sub1.method2074(-1935, (this.aClass164_273), Class162.aClass162_1266), 1));
+			PixelBuffer pixelbuffer = (this.aHa_Sub3_Sub1_270.aPixelBuffer6095);
 			int i_23_ = anIDirect3DTexture3582.LockRect(0, 0, 0, i, i_20_, 0, pixelbuffer);
 			if (kg.a(-21593, i_23_)) {
-				if (-1 == (i_22_ ^ 0xffffffff))
+				if (i_22_ == 0)
 					i_22_ = i;
-				i *= (((Class164) ((Class26_Sub3) this).aClass164_273).anInt1275);
-				i_22_ *= (((Class164) ((Class26_Sub3) this).aClass164_273).anInt1275);
+				i *= (this.aClass164_273.anInt1275);
+				i_22_ *= (this.aClass164_273.anInt1275);
 				int i_24_ = pixelbuffer.getRowPitch();
-				if ((i_24_ ^ 0xffffffff) != (i ^ 0xffffffff) || i_22_ != i) {
-					for (int i_25_ = 0; (i_25_ ^ 0xffffffff) > (i_20_ ^ 0xffffffff); i_25_++)
+				if (i != i_24_ || i_22_ != i) {
+					for (int i_25_ = 0; i_20_ > i_25_; i_25_++)
 						pixelbuffer.a(is, i_21_ - -(i_25_ * i_22_), i_25_ * i_24_, i);
 				} else
 					pixelbuffer.a(is, i_21_, 0, i_20_ * i);
@@ -180,7 +180,7 @@ final class Class26_Sub3 extends Class26 implements Interface4_Impl2 {
 		boolean bool;
 		try {
 			if (i > -22)
-				((Class26_Sub3) this).aBoolean3584 = false;
+				this.aBoolean3584 = false;
 			bool = true;
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
@@ -192,7 +192,7 @@ final class Class26_Sub3 extends Class26 implements Interface4_Impl2 {
 		int i_26_;
 		try {
 			if (i != 12941)
-				((Class26_Sub3) this).aBoolean3585 = false;
+				this.aBoolean3585 = false;
 			i_26_ = anInt3583;
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
@@ -222,14 +222,14 @@ final class Class26_Sub3 extends Class26 implements Interface4_Impl2 {
 
 	public final void method44(int i, int i_27_, byte i_28_, int i_29_, int i_30_, int[] is, int i_31_) {
 		try {
-			if (Class62.aClass164_486 != ((Class26_Sub3) this).aClass164_273 || (((Class26_Sub3) this).aClass162_271 != Class162.aClass162_1266))
+			if (Class62.aClass164_486 != this.aClass164_273 || (this.aClass162_271 != Class162.aClass162_1266))
 				throw new RuntimeException();
 			int i_32_ = 75 % ((-48 - i_28_) / 59);
-			PixelBuffer pixelbuffer = (((ha_Sub3_Sub1) ((Class26_Sub3) this).aHa_Sub3_Sub1_270).aPixelBuffer6095);
+			PixelBuffer pixelbuffer = (this.aHa_Sub3_Sub1_270.aPixelBuffer6095);
 			int i_33_ = anIDirect3DTexture3582.LockRect(0, i_30_, i_31_, i, i_29_, 16, pixelbuffer);
 			if (kg.a(-21593, i_33_)) {
 				int i_34_ = pixelbuffer.getRowPitch();
-				if ((i_34_ ^ 0xffffffff) == (i * 4 ^ 0xffffffff))
+				if (i * 4 == i_34_)
 					pixelbuffer.b(is, i_27_, 0, is.length);
 				else {
 					for (int i_35_ = 0; i_35_ < i_29_; i_35_++)
@@ -245,8 +245,8 @@ final class Class26_Sub3 extends Class26 implements Interface4_Impl2 {
 	public final void method46(boolean bool, boolean bool_36_, int i) {
 		try {
 			int i_37_ = 93 / ((17 - i) / 36);
-			((Class26_Sub3) this).aBoolean3584 = bool;
-			((Class26_Sub3) this).aBoolean3585 = bool_36_;
+			this.aBoolean3584 = bool;
+			this.aBoolean3585 = bool_36_;
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}
@@ -255,16 +255,16 @@ final class Class26_Sub3 extends Class26 implements Interface4_Impl2 {
 	public final void method49(int i, int i_38_, int i_39_, int[] is, int i_40_, int i_41_, int i_42_, int i_43_) {
 		do {
 			try {
-				if ((Class62.aClass164_486 != ((Class26_Sub3) this).aClass164_273) || (Class162.aClass162_1266 != ((Class26_Sub3) this).aClass162_271))
+				if ((Class62.aClass164_486 != this.aClass164_273) || (Class162.aClass162_1266 != this.aClass162_271))
 					throw new RuntimeException();
 				if (i == 17779) {
-					PixelBuffer pixelbuffer = (((ha_Sub3_Sub1) ((Class26_Sub3) this).aHa_Sub3_Sub1_270).aPixelBuffer6095);
+					PixelBuffer pixelbuffer = (this.aHa_Sub3_Sub1_270.aPixelBuffer6095);
 					int i_44_ = anIDirect3DTexture3582.LockRect(0, i_40_, i_38_, i_43_, i_39_, 0, pixelbuffer);
 					if (!kg.a(-21593, i_44_))
 						break;
 					int i_45_ = pixelbuffer.getRowPitch();
-					if ((i_45_ ^ 0xffffffff) != (i_43_ * 4 ^ 0xffffffff) || (i_43_ ^ 0xffffffff) != (i_42_ ^ 0xffffffff)) {
-						for (int i_46_ = 0; (i_39_ ^ 0xffffffff) < (i_46_ ^ 0xffffffff); i_46_++)
+					if (i_43_ * 4 != i_45_ || i_42_ != i_43_) {
+						for (int i_46_ = 0; i_46_ < i_39_; i_46_++)
 							pixelbuffer.a(is, i_46_ * i_42_ + i_41_, i_46_ * i_45_, i_43_);
 					} else
 						pixelbuffer.a(is, i_41_, 0, i_39_ * i_43_);

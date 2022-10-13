@@ -24,14 +24,14 @@ final class Class98_Sub32_Sub2 extends Class98_Sub32 {
 		try {
 			aCanvas5892 = canvas;
 			aRectangle5893 = new Rectangle();
-			((Class98_Sub32_Sub2) this).anInt4110 = i;
-			((Class98_Sub32_Sub2) this).anInt4105 = i_0_;
-			((Class98_Sub32_Sub2) this).anIntArray4108 = new int[(((Class98_Sub32_Sub2) this).anInt4110 * ((Class98_Sub32_Sub2) this).anInt4105)];
+			this.anInt4110 = i;
+			this.anInt4105 = i_0_;
+			this.anIntArray4108 = new int[(this.anInt4110 * this.anInt4105)];
 			if (i_1_ != 4095)
 				method1441(-47, -17, -7, null);
-			DataBufferInt databufferint = new DataBufferInt(((Class98_Sub32_Sub2) this).anIntArray4108, (((Class98_Sub32_Sub2) this).anIntArray4108).length);
+			DataBufferInt databufferint = new DataBufferInt(this.anIntArray4108, (this.anIntArray4108).length);
 			DirectColorModel directcolormodel = new DirectColorModel(32, 16711680, 65280, 255);
-			WritableRaster writableraster = Raster.createWritableRaster((directcolormodel.createCompatibleSampleModel((((Class98_Sub32_Sub2) this).anInt4105), (((Class98_Sub32_Sub2) this).anInt4110))), databufferint, null);
+			WritableRaster writableraster = Raster.createWritableRaster((directcolormodel.createCompatibleSampleModel((this.anInt4105), (this.anInt4110))), databufferint, null);
 			anImage5894 = new BufferedImage(directcolormodel, writableraster, false, new Hashtable());
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;

@@ -38,8 +38,8 @@ final class Class76_Sub5 extends Class76 {
 		try {
 			if (i != 6)
 				method746(62, 22, -72);
-			((Class76) this).aHa_Sub3_585.method2005(interface4, 0);
-			((Class76) this).aHa_Sub3_585.method2015(i_2_, (byte) 79);
+			this.aHa_Sub3_585.method2005(interface4, 0);
+			this.aHa_Sub3_585.method2015(i_2_, (byte) 79);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("jh.I(" + i + ',' + i_2_ + ',' + (interface4 != null ? "{...}" : "null") + ')'));
 		}
@@ -49,7 +49,7 @@ final class Class76_Sub5 extends Class76 {
 		try {
 			if (i < 93)
 				method746(-61, 44, -112);
-			((Class76) this).aHa_Sub3_585.method2019(Class288.aClass128_3381, Class249.aClass128_1903, 22831);
+			this.aHa_Sub3_585.method2019(Class288.aClass128_3381, Class249.aClass128_1903, 22831);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "jh.D(" + i + ',' + bool + ')');
 		}
@@ -74,7 +74,7 @@ final class Class76_Sub5 extends Class76 {
 			if (Class4.anInt81 < 100)
 				return false;
 			int i_6_ = (Class98_Sub46_Sub13_Sub2.anIntArrayArrayArray6311[i_3_][i_5_][i_4_]);
-			if ((i_6_ ^ 0xffffffff) == (-Class356.anInt3020 ^ 0xffffffff))
+			if (-Class356.anInt3020 == i_6_)
 				return false;
 			if (Class356.anInt3020 == i_6_)
 				return true;
@@ -100,21 +100,21 @@ final class Class76_Sub5 extends Class76 {
 			try {
 				do {
 					if (!aBoolean3742) {
-						((Class76) this).aHa_Sub3_585.method1953(i ^ 0x6b, Class300.aClass65_2499, 0);
+						this.aHa_Sub3_585.method1953(i ^ 0x6b, Class300.aClass65_2499, 0);
 						if (!client.aBoolean3553)
 							break;
 					}
-					((Class76) this).aHa_Sub3_585.method1951((byte) 120, 1);
-					((Class76) this).aHa_Sub3_585.method1964(r_Sub2.aClass38_6334, (byte) 26);
-					((Class76) this).aHa_Sub3_585.method2019((Class249.aClass128_1903), (Class249.aClass128_1903), 22831);
-					((Class76) this).aHa_Sub3_585.method2051(2, -92, Class64_Sub16.aClass65_3681);
-					((Class76) this).aHa_Sub3_585.method1953(-84, Class300.aClass65_2499, 0);
-					((Class76) this).aHa_Sub3_585.method1985(2);
-					((Class76) this).aHa_Sub3_585.method2005(null, i + -116);
-					((Class76) this).aHa_Sub3_585.method1951((byte) 120, 0);
+					this.aHa_Sub3_585.method1951((byte) 120, 1);
+					this.aHa_Sub3_585.method1964(r_Sub2.aClass38_6334, (byte) 26);
+					this.aHa_Sub3_585.method2019((Class249.aClass128_1903), (Class249.aClass128_1903), 22831);
+					this.aHa_Sub3_585.method2051(2, -92, Class64_Sub16.aClass65_3681);
+					this.aHa_Sub3_585.method1953(-84, Class300.aClass65_2499, 0);
+					this.aHa_Sub3_585.method1985(2);
+					this.aHa_Sub3_585.method2005(null, i + -116);
+					this.aHa_Sub3_585.method1951((byte) 120, 0);
 					aBoolean3742 = false;
 				} while (false);
-				((Class76) this).aHa_Sub3_585.method2019(Class249.aClass128_1903, Class249.aClass128_1903, 22831);
+				this.aHa_Sub3_585.method2019(Class249.aClass128_1903, Class249.aClass128_1903, 22831);
 				if (i == -2)
 					break;
 				method757((byte) -25);
@@ -146,25 +146,25 @@ final class Class76_Sub5 extends Class76 {
 	final void method748(int i, boolean bool) {
 		do {
 			try {
-				Interface4_Impl3 interface4_impl3 = ((Class76) this).aHa_Sub3_585.method1939(-109);
+				Interface4_Impl3 interface4_impl3 = this.aHa_Sub3_585.method1939(-109);
 				do {
 					if (interface4_impl3 != null && bool) {
-						((Class76) this).aHa_Sub3_585.method1951((byte) 120, 1);
-						((Class76) this).aHa_Sub3_585.method2005(interface4_impl3, i + -6);
-						((Class76) this).aHa_Sub3_585.method1964(Class204.aClass38_1552, (byte) 26);
-						((Class76) this).aHa_Sub3_585.method1951((byte) 120, 1);
-						((Class76) this).aHa_Sub3_585.method2019(Class288.aClass128_3381, Class323.aClass128_2715, 22831);
-						((Class76) this).aHa_Sub3_585.method2026(2, true, (byte) 27, IncomingOpcode.aClass65_459, false);
-						((Class76) this).aHa_Sub3_585.method1953(-101, Class98_Sub43_Sub3.aClass65_5926, 0);
-						Class111_Sub3 class111_sub3 = ((Class76) this).aHa_Sub3_585.method1957((byte) -101);
-						class111_sub3.method2140(((Class76) this).aHa_Sub3_585.method2023(1), 0);
-						((Class76) this).aHa_Sub3_585.method2008(Class144.aClass258_1168, (byte) 120);
-						((Class76) this).aHa_Sub3_585.method1951((byte) 120, 0);
+						this.aHa_Sub3_585.method1951((byte) 120, 1);
+						this.aHa_Sub3_585.method2005(interface4_impl3, i + -6);
+						this.aHa_Sub3_585.method1964(Class204.aClass38_1552, (byte) 26);
+						this.aHa_Sub3_585.method1951((byte) 120, 1);
+						this.aHa_Sub3_585.method2019(Class288.aClass128_3381, Class323.aClass128_2715, 22831);
+						this.aHa_Sub3_585.method2026(2, true, (byte) 27, IncomingOpcode.aClass65_459, false);
+						this.aHa_Sub3_585.method1953(-101, Class98_Sub43_Sub3.aClass65_5926, 0);
+						Class111_Sub3 class111_sub3 = this.aHa_Sub3_585.method1957((byte) -101);
+						class111_sub3.method2140(this.aHa_Sub3_585.method2023(1), 0);
+						this.aHa_Sub3_585.method2008(Class144.aClass258_1168, (byte) 120);
+						this.aHa_Sub3_585.method1951((byte) 120, 0);
 						aBoolean3742 = true;
 						if (!client.aBoolean3553)
 							break;
 					}
-					((Class76) this).aHa_Sub3_585.method1953(-127, Class98_Sub43_Sub3.aClass65_5926, 0);
+					this.aHa_Sub3_585.method1953(-127, Class98_Sub43_Sub3.aClass65_5926, 0);
 				} while (false);
 				if (i == 69)
 					break;

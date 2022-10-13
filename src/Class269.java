@@ -61,7 +61,7 @@ final class Class269 {
 		try {
 			Class379 class379;
 			synchronized (aClass79_2028) {
-				class379 = (Class379) aClass79_2028.get((long) i_2_);
+				class379 = (Class379) aClass79_2028.get(i_2_);
 			}
 			if (i != -37)
 				method3269(false, 104);
@@ -75,7 +75,7 @@ final class Class269 {
 			if (is != null)
 				class379.method4008((byte) 126, new RSByteBuffer(is));
 			synchronized (aClass79_2028) {
-				aClass79_2028.put((long) i_2_, class379);
+				aClass79_2028.put(i_2_, class379);
 			}
 			return class379;
 		} catch (RuntimeException runtimeexception) {
@@ -110,16 +110,16 @@ final class Class269 {
 			Class21_Sub2.anInt5387 = -1;
 			Class43.method401(OutputStream_Sub2.anInt39, true);
 			Player.selfPlayer = new Player();
-			((AnimableEntity) Player.selfPlayer).localXPos = GameWorld.size_x * 512 / 2;
-			((Mobile) Player.selfPlayer).walkQueueX[i] = GameWorld.size_x / 2;
-			((AnimableEntity) Player.selfPlayer).localYPos = GameWorld.size_y * 512 / 2;
-			((Mobile) Player.selfPlayer).walkQueueZ[0] = GameWorld.size_y / 2;
+			Player.selfPlayer.localXPos = GameWorld.size_x * 512 / 2;
+			Player.selfPlayer.walkQueueX[i] = GameWorld.size_x / 2;
+			Player.selfPlayer.localYPos = GameWorld.size_y * 512 / 2;
+			Player.selfPlayer.walkQueueZ[0] = GameWorld.size_y / 2;
 			Class98_Sub46_Sub10.renderX = Class134.renderZ = 0;
-			if ((Class98_Sub46_Sub20_Sub2.anInt6319 ^ 0xffffffff) != -3)
+			if (Class98_Sub46_Sub20_Sub2.anInt6319 != 2)
 				Class183.method2620(0);
 			else {
-				Class134.renderZ = Class98_Sub10_Sub21.anInt5643 << 1006717769;
-				Class98_Sub46_Sub10.renderX = Class363.anInt3098 << 1638996777;
+				Class134.renderZ = Class98_Sub10_Sub21.anInt5643 << 9;
+				Class98_Sub46_Sub10.renderX = Class363.anInt3098 << 9;
 			}
 			Class374.method3980((byte) 121);
 		} catch (RuntimeException runtimeexception) {
@@ -132,7 +132,7 @@ final class Class269 {
 			int i_3_ = 0;
 			Field[] fields = (aClass2029 != null ? aClass2029 : (aClass2029 = method3274("Class98_Sub27"))).getDeclaredFields();
 			Field[] fields_4_ = fields;
-			for (int i_5_ = 0; (fields_4_.length ^ 0xffffffff) < (i_5_ ^ 0xffffffff); i_5_++) {
+			for (int i_5_ = 0; i_5_ < fields_4_.length; i_5_++) {
 				Field field = fields_4_[i_5_];
 				if ((aClass2030 != null ? aClass2030 : (aClass2030 = method3274("Class64"))).isAssignableFrom(field.getType()))
 					i_3_++;

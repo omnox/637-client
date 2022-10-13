@@ -67,7 +67,7 @@ final class Class71 {
 					}
 					i_15_ >>>= 1;
 				}
-				anIntArray535[i_13_] = i_10_ ^ 0xffffffff;
+				anIntArray535[i_13_] = ~i_10_;
 				if (i_13_ >= i)
 					i = i_13_ + 1;
 			}
@@ -76,7 +76,7 @@ final class Class71 {
 
 	private static final int method713(int i, int i_18_) {
 		int i_19_;
-		for (i_19_ = (int) Math.pow((double) i, 1.0 / (double) i_18_) + 1; IComponentSettings.method1662(i_19_, -1, i_18_) > i; i_19_--) {
+		for (i_19_ = (int) Math.pow(i, 1.0 / (double) i_18_) + 1; IComponentSettings.method1662(i_19_, -1, i_18_) > i; i_19_--) {
 			/* empty */
 		}
 		return i_19_;
@@ -87,7 +87,7 @@ final class Class71 {
 		for (i = 0; anIntArray535[i] >= 0; i = Class98_Sub13.method1134() != 0 ? anIntArray535[i] : i + 1) {
 			/* empty */
 		}
-		return anIntArray535[i] ^ 0xffffffff;
+		return ~anIntArray535[i];
 	}
 
 	final float[] method715() {
@@ -96,7 +96,7 @@ final class Class71 {
 
 	Class71() {
 		Class98_Sub13.method1138(24);
-		((Class71) this).anInt530 = Class98_Sub13.method1138(16);
+		this.anInt530 = Class98_Sub13.method1138(16);
 		anInt531 = Class98_Sub13.method1138(24);
 		anIntArray534 = new int[anInt531];
 		boolean bool = Class98_Sub13.method1134() != 0;
@@ -127,18 +127,18 @@ final class Class71 {
 			boolean bool_26_ = Class98_Sub13.method1134() != 0;
 			int i_27_;
 			if (i == 1)
-				i_27_ = method713(anInt531, ((Class71) this).anInt530);
+				i_27_ = method713(anInt531, this.anInt530);
 			else
-				i_27_ = anInt531 * ((Class71) this).anInt530;
+				i_27_ = anInt531 * this.anInt530;
 			anIntArray532 = new int[i_27_];
 			for (int i_28_ = 0; i_28_ < i_27_; i_28_++)
 				anIntArray532[i_28_] = Class98_Sub13.method1138(i_25_);
-			aFloatArrayArray533 = new float[anInt531][((Class71) this).anInt530];
+			aFloatArrayArray533 = new float[anInt531][this.anInt530];
 			if (i == 1) {
 				for (int i_29_ = 0; i_29_ < anInt531; i_29_++) {
 					float f_30_ = 0.0F;
 					int i_31_ = 1;
-					for (int i_32_ = 0; i_32_ < ((Class71) this).anInt530; i_32_++) {
+					for (int i_32_ = 0; i_32_ < this.anInt530; i_32_++) {
 						int i_33_ = i_29_ / i_31_ % i_27_;
 						float f_34_ = (float) anIntArray532[i_33_] * f_24_ + f + f_30_;
 						aFloatArrayArray533[i_29_][i_32_] = f_34_;
@@ -150,8 +150,8 @@ final class Class71 {
 			} else {
 				for (int i_35_ = 0; i_35_ < anInt531; i_35_++) {
 					float f_36_ = 0.0F;
-					int i_37_ = i_35_ * ((Class71) this).anInt530;
-					for (int i_38_ = 0; i_38_ < ((Class71) this).anInt530; i_38_++) {
+					int i_37_ = i_35_ * this.anInt530;
+					for (int i_38_ = 0; i_38_ < this.anInt530; i_38_++) {
 						float f_39_ = (float) anIntArray532[i_37_] * f_24_ + f + f_36_;
 						aFloatArrayArray533[i_35_][i_38_] = f_39_;
 						if (bool_26_)

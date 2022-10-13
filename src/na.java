@@ -9,7 +9,7 @@ final class na extends aa implements Interface9 {
 	private final native void ma(oa var_oa, ya var_ya, int i, int i_0_, int[] is, int[] is_1_);
 
 	protected final void finalize() {
-		if (((na) this).nativeid != 0L)
+		if (this.nativeid != 0L)
 			Class192.method2654(false, this);
 	}
 

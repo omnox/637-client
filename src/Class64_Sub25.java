@@ -7,17 +7,17 @@ final class Class64_Sub25 extends Class64 {
 
 	final int method556(int i, int i_0_) {
 		try {
-			if (((Class64) this).aClass98_Sub27_495.method1291((byte) 119))
+			if (this.aClass98_Sub27_495.method1291((byte) 119))
 				return 3;
 			if (i_0_ != 29053)
 				anInt3711 = 101;
-			if (((Class64) this).aClass98_Sub27_495.method1286((byte) 104) == s_Sub1.aClass279_5197) {
+			if (this.aClass98_Sub27_495.method1286((byte) 104) == s_Sub1.aClass279_5197) {
 				if (i == 0) {
-					if ((((Class98_Sub27) ((Class64) this).aClass98_Sub27_495).aClass64_Sub14_4049.method609((byte) 124) ^ 0xffffffff) == -2)
+					if (this.aClass98_Sub27_495.aClass64_Sub14_4049.method609((byte) 124) == 1)
 						return 2;
-					if ((((Class98_Sub27) ((Class64) this).aClass98_Sub27_495).aClass64_Sub20_4056.method634((byte) 124) ^ 0xffffffff) == -2)
+					if (this.aClass98_Sub27_495.aClass64_Sub20_4056.method634((byte) 124) == 1)
 						return 2;
-					if ((((Class98_Sub27) ((Class64) this).aClass98_Sub27_495).aClass64_Sub28_4064.method668((byte) 125) ^ 0xffffffff) < -1)
+					if (this.aClass98_Sub27_495.aClass64_Sub28_4064.method668((byte) 125) > 0)
 						return 2;
 				}
 				return 1;
@@ -32,15 +32,15 @@ final class Class64_Sub25 extends Class64 {
 		try {
 			StringBuffer stringbuffer = new StringBuffer();
 			int i_1_ = RuntimeException_Sub1.anInt3201;
-			for (int i_2_ = i; (is.length ^ 0xffffffff) < (i_2_ ^ 0xffffffff); i_2_++) {
+			for (int i_2_ = i; i_2_ < is.length; i_2_++) {
 				Class220 class220 = Class303.aClass13_2529.method220(is[i_2_], -11180);
-				if ((((Class220) class220).anInt1649 ^ 0xffffffff) != 0) {
-					Class332 class332 = ((Class332) (Class98_Sub6.aClass79_3847.get((long) ((Class220) class220).anInt1649)));
+				if (class220.anInt1649 != -1) {
+					Class332 class332 = ((Class332) (Class98_Sub6.aClass79_3847.get(class220.anInt1649)));
 					if (class332 == null) {
-						Class324 class324 = Class324.method3685(Class332_Sub2.aClass207_5423, (((Class220) class220).anInt1649), 0);
+						Class324 class324 = Class324.method3685(Class332_Sub2.aClass207_5423, (class220.anInt1649), 0);
 						if (class324 != null) {
 							class332 = Class265.aHa1974.method1758(class324, true);
-							Class98_Sub6.aClass79_3847.put((long) ((Class220) class220).anInt1649, class332);
+							Class98_Sub6.aClass79_3847.put(class220.anInt1649, class332);
 						}
 					}
 					if (class332 != null) {
@@ -89,17 +89,17 @@ final class Class64_Sub25 extends Class64 {
 				if (i <= 118)
 					method556(69, 53);
 				do {
-					if (((Class64) this).aClass98_Sub27_495.method1286((byte) 104) != s_Sub1.aClass279_5197) {
-						((Class64) this).anInt494 = 1;
+					if (this.aClass98_Sub27_495.method1286((byte) 104) != s_Sub1.aClass279_5197) {
+						this.anInt494 = 1;
 						if (!client.aBoolean3553)
 							break;
 					}
-					if (((Class64) this).aClass98_Sub27_495.method1291((byte) 106))
-						((Class64) this).anInt494 = 0;
+					if (this.aClass98_Sub27_495.method1291((byte) 106))
+						this.anInt494 = 0;
 				} while (false);
-				if (((Class64) this).anInt494 == 0 || ((Class64) this).anInt494 == 1)
+				if (this.anInt494 == 0 || this.anInt494 == 1)
 					break;
-				((Class64) this).anInt494 = method552(0);
+				this.anInt494 = method552(0);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "vba.C(" + i + ')');
 			}
@@ -111,7 +111,7 @@ final class Class64_Sub25 extends Class64 {
 		try {
 			if (i <= 119)
 				return 124;
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "vba.E(" + i + ')');
 		}
@@ -131,7 +131,7 @@ final class Class64_Sub25 extends Class64 {
 
 	final void method550(int i, int i_5_) {
 		try {
-			((Class64) this).anInt494 = i_5_;
+			this.anInt494 = i_5_;
 			int i_6_ = 31 / ((-26 - i) / 41);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "vba.B(" + i + ',' + i_5_ + ')');
@@ -150,11 +150,11 @@ final class Class64_Sub25 extends Class64 {
 
 	final boolean method657(int i) {
 		try {
-			if (((Class64) this).aClass98_Sub27_495.method1291((byte) 112))
+			if (this.aClass98_Sub27_495.method1291((byte) 112))
 				return false;
 			if (i != -1)
 				anInt3711 = -25;
-			if (((Class64) this).aClass98_Sub27_495.method1286((byte) 104) == s_Sub1.aClass279_5197)
+			if (this.aClass98_Sub27_495.method1286((byte) 104) == s_Sub1.aClass279_5197)
 				return true;
 			return false;
 		} catch (RuntimeException runtimeexception) {

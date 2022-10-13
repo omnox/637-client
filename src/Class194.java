@@ -31,9 +31,9 @@ final class Class194 {
 
 	static {
 		int i = 0;
-		for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > -257; i_2_++) {
+		for (int i_2_ = 0; i_2_ < 256; i_2_++) {
 			for (int i_3_ = 0; i_3_ <= i_2_; i_3_++)
-				aByteArray1495[i++] = (byte) (int) (255.0 / (Math.sqrt((double) ((float) (65535 + (i_2_ * i_2_ + i_3_ * i_3_)) / 65535.0F))));
+				aByteArray1495[i++] = (byte) (int) (255.0 / (Math.sqrt((float) (65535 + (i_2_ * i_2_ + i_3_ * i_3_)) / 65535.0F)));
 		}
 	}
 }

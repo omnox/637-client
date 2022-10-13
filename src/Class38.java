@@ -34,14 +34,14 @@ final class Class38 {
 		try {
 			if (i <= 51)
 				return null;
-			if (!client.getClickMask(class293).method1666((byte) -72, i_0_) && ((GameInterfaceData) class293).anObjectArray2329 == null)
+			if (!client.getClickMask(class293).method1666((byte) -72, i_0_) && class293.anObjectArray2329 == null)
 				return null;
-			if (((GameInterfaceData) class293).aStringArray2351 == null || ((i_0_ ^ 0xffffffff) <= (((GameInterfaceData) class293).aStringArray2351.length ^ 0xffffffff)) || ((GameInterfaceData) class293).aStringArray2351[i_0_] == null || ((GameInterfaceData) class293).aStringArray2351[i_0_].trim().length() == 0) {
+			if (class293.aStringArray2351 == null || (class293.aStringArray2351.length <= i_0_) || class293.aStringArray2351[i_0_] == null || class293.aStringArray2351[i_0_].trim().length() == 0) {
 				if (Class15.aBoolean169)
 					return "Hidden-" + i_0_;
 				return null;
 			}
-			return ((GameInterfaceData) class293).aStringArray2351[i_0_];
+			return class293.aStringArray2351[i_0_];
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("cm.A(" + (class293 != null ? "{...}" : "null") + ',' + i + ',' + i_0_ + ')'));
 		}
@@ -53,8 +53,8 @@ final class Class38 {
 
 	static final int method348(int i, int i_1_) {
 		try {
-			double d = (double) (0xff & i >> 598073424) / 256.0;
-			double d_2_ = (double) ((0xff1e & i) >> -2121118168) / 256.0;
+			double d = (double) (0xff & i >> 16) / 256.0;
+			double d_2_ = (double) ((0xff1e & i) >> 8) / 256.0;
 			double d_3_ = (double) (0xff & i) / 256.0;
 			double d_4_ = d;
 			if (d_2_ < d_4_)
@@ -93,14 +93,14 @@ final class Class38 {
 				i_11_ = 0;
 			int i_12_ = (int) (256.0 * d_8_);
 			if (i_12_ >= 0) {
-				if ((i_12_ ^ 0xffffffff) < -256)
+				if (i_12_ > 255)
 					i_12_ = 255;
 			} else
 				i_12_ = 0;
-			if ((i_12_ ^ 0xffffffff) >= -244) {
+			if (i_12_ <= 243) {
 				if (i_12_ <= 217) {
-					if ((i_12_ ^ 0xffffffff) >= -193) {
-						if ((i_12_ ^ 0xffffffff) < -180)
+					if (i_12_ <= 192) {
+						if (i_12_ > 179)
 							i_11_ >>= 1;
 					} else
 						i_11_ >>= 2;
@@ -108,7 +108,7 @@ final class Class38 {
 					i_11_ >>= 3;
 			} else
 				i_11_ >>= 4;
-			return ((i_11_ >> -187392699 << -941273977) + ((0xff & i_10_) >> 1108545090 << 440834122) - -(i_12_ >> -1810836799));
+			return ((i_11_ >> 5 << 7) + ((0xff & i_10_) >> 2 << 10) - -(i_12_ >> 1));
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cm.C(" + i + ',' + i_1_ + ')');
 		}

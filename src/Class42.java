@@ -16,16 +16,16 @@ abstract class Class42 implements Interface3 {
 
 	private final void method368(int i) {
 		try {
-			((Class42) this).aHa_Sub1_3227.method1863(1, this);
+			this.aHa_Sub1_3227.method1863(1, this);
 			do {
 				if (aBoolean3228) {
-					OpenGL.glTexParameteri(((Class42) this).anInt3226, 10241, !aBoolean3225 ? 9729 : 9987);
-					OpenGL.glTexParameteri(((Class42) this).anInt3226, 10240, 9729);
+					OpenGL.glTexParameteri(this.anInt3226, 10241, !aBoolean3225 ? 9729 : 9987);
+					OpenGL.glTexParameteri(this.anInt3226, 10240, 9729);
 					if (!client.aBoolean3553)
 						break;
 				}
-				OpenGL.glTexParameteri(((Class42) this).anInt3226, 10241, !aBoolean3225 ? 9728 : 9984);
-				OpenGL.glTexParameteri(((Class42) this).anInt3226, 10240, 9728);
+				OpenGL.glTexParameteri(this.anInt3226, 10241, !aBoolean3225 ? 9728 : 9984);
+				OpenGL.glTexParameteri(this.anInt3226, 10240, 9728);
 			} while (false);
 			int i_0_ = -52 % ((43 - i) / 43);
 		} catch (RuntimeException runtimeexception) {
@@ -37,7 +37,7 @@ abstract class Class42 implements Interface3 {
 		try {
 			if (bool != true)
 				method377(57, 44);
-			return ((Class42) this).anInt3229;
+			return this.anInt3229;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cu.T(" + bool + ')');
 		}
@@ -45,7 +45,7 @@ abstract class Class42 implements Interface3 {
 
 	private final int method370(int i) {
 		try {
-			int i_1_ = (((Class42) this).aHa_Sub1_3227.method1866(i + 6368, ((Class42) this).anInt3230) * anInt3224);
+			int i_1_ = (this.aHa_Sub1_3227.method1866(i + 6368, this.anInt3230) * anInt3224);
 			if (i != -6462)
 				method376((byte) 56, null);
 			if (!aBoolean3225)
@@ -60,10 +60,10 @@ abstract class Class42 implements Interface3 {
 		try {
 			if (i <= 31)
 				method370(108);
-			if (((ha_Sub1) ((Class42) this).aHa_Sub1_3227).aBoolean4460) {
+			if (this.aHa_Sub1_3227.aBoolean4460) {
 				int i_2_ = method370(-6462);
-				((Class42) this).aHa_Sub1_3227.method1863(1, this);
-				OpenGL.glGenerateMipmapEXT(((Class42) this).anInt3226);
+				this.aHa_Sub1_3227.method1863(1, this);
+				OpenGL.glGenerateMipmapEXT(this.anInt3226);
 				aBoolean3225 = true;
 				method368(-114);
 				method377(113, i_2_);
@@ -110,7 +110,7 @@ abstract class Class42 implements Interface3 {
 				method377(100, i);
 			}
 			if (bool != true)
-				((Class42) this).anInt3226 = 51;
+				this.anInt3226 = 51;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("cu.N(" + bool + ',' + bool_3_ + ')'));
 		}
@@ -124,21 +124,21 @@ abstract class Class42 implements Interface3 {
 				byte[] is_7_ = is[i_6_];
 				if (is_7_ != null) {
 					RSByteBuffer class98_sub22 = new RSByteBuffer(is_7_);
-					int i_8_ = Class121.anIntArray1006[i_6_] >> -908871672;
+					int i_8_ = Class121.anIntArray1006[i_6_] >> 8;
 					int i_9_ = 0xff & Class121.anIntArray1006[i_6_];
 					int i_10_ = 64 * i_8_ - Class272.anInt2038;
 					int i_11_ = 64 * i_9_ + -aa_Sub2.anInt3562;
 					Class128.method2224(i ^ 0x58a8);
 					class305_sub1.method3574((byte) 117, i_11_, aa_Sub2.anInt3562, Class272.anInt2038, class98_sub22, i_10_, Class167.aClass243Array1281);
 					class305_sub1.method3582(i + 17685, i_11_, i_10_, Class265.aHa1974, class98_sub22, is_4_);
-					if (!((MapRegion) class305_sub1).aBoolean2544 && (i_8_ ^ 0xffffffff) == (Class160.anInt1258 / 8 ^ 0xffffffff) && i_9_ == Class275.anInt2047 / 8 && is_4_[0] != -1) {
+					if (!class305_sub1.aBoolean2544 && Class160.anInt1258 / 8 == i_8_ && i_9_ == Class275.anInt2047 / 8 && is_4_[0] != -1) {
 						s_Sub1.aClass346_5202 = (Class373_Sub2.aClass59_5470.method528(0, is_4_[0], is_4_[2], is_4_[1], Class101.aClass115_857, is_4_[3]));
 						Class156_Sub1.anInt3278 = is_4_[4];
 					}
 				}
 			}
-			for (int i_12_ = 0; (i_12_ ^ 0xffffffff) > (i_5_ ^ 0xffffffff); i_12_++) {
-				int i_13_ = ((Class121.anIntArray1006[i_12_] >> -1224911608) * 64 - Class272.anInt2038);
+			for (int i_12_ = 0; i_5_ > i_12_; i_12_++) {
+				int i_13_ = ((Class121.anIntArray1006[i_12_] >> 8) * 64 - Class272.anInt2038);
 				int i_14_ = (-aa_Sub2.anInt3562 + (Class121.anIntArray1006[i_12_] & 0xff) * 64);
 				byte[] is_15_ = is[i_12_];
 				if (is_15_ == null && Class275.anInt2047 < 800) {
@@ -154,9 +154,9 @@ abstract class Class42 implements Interface3 {
 	final void method375(boolean bool) {
 		try {
 			if (bool == true) {
-				if (((Class42) this).anInt3229 > 0) {
-					((Class42) this).aHa_Sub1_3227.method1873(method370(-6462), 4, (((Class42) this).anInt3229));
-					((Class42) this).anInt3229 = 0;
+				if (this.anInt3229 > 0) {
+					this.aHa_Sub1_3227.method1873(method370(-6462), 4, (this.anInt3229));
+					this.anInt3229 = 0;
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -166,13 +166,13 @@ abstract class Class42 implements Interface3 {
 
 	Class42(ha_Sub1 var_ha_Sub1, int i, int i_16_, int i_17_, boolean bool) {
 		try {
-			((Class42) this).aHa_Sub1_3227 = var_ha_Sub1;
-			((Class42) this).anInt3226 = i;
+			this.aHa_Sub1_3227 = var_ha_Sub1;
+			this.anInt3226 = i;
 			aBoolean3225 = bool;
-			((Class42) this).anInt3230 = i_16_;
+			this.anInt3230 = i_16_;
 			anInt3224 = i_17_;
 			OpenGL.glGenTextures(1, Class165.anIntArray1277, 0);
-			((Class42) this).anInt3229 = Class165.anIntArray1277[0];
+			this.anInt3229 = Class165.anIntArray1277[0];
 			method377(122, 0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("cu.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ',' + i + ',' + i_16_ + ',' + i_17_ + ',' + bool + ')'));
@@ -184,8 +184,8 @@ abstract class Class42 implements Interface3 {
 			if (i != -12)
 				aShort3231 = (short) -15;
 			Class300 class300 = new Class300();
-			((Class300) class300).quickChatFileID = class98_sub22.readShort();
-			((Class300) class300).aClass98_Sub46_Sub11_2498 = Class52.aClass280_3500.method3325(((Class300) class300).quickChatFileID, 96);
+			class300.quickChatFileID = class98_sub22.readShort();
+			class300.aClass98_Sub46_Sub11_2498 = Class52.aClass280_3500.method3325(class300.quickChatFileID, 96);
 			return class300;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("cu.L(" + i + ',' + (class98_sub22 != null ? "{...}" : "null") + ')'));
@@ -194,10 +194,10 @@ abstract class Class42 implements Interface3 {
 
 	private final void method377(int i, int i_18_) {
 		try {
-			((ha_Sub1) ((Class42) this).aHa_Sub1_3227).anInt4337 -= i_18_;
+			this.aHa_Sub1_3227.anInt4337 -= i_18_;
 			if (i <= 88)
-				((Class42) this).anInt3226 = 38;
-			((ha_Sub1) ((Class42) this).aHa_Sub1_3227).anInt4337 += method370(-6462);
+				this.anInt3226 = 38;
+			this.aHa_Sub1_3227.anInt4337 += method370(-6462);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "cu.R(" + i + ',' + i_18_ + ')');
 		}

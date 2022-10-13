@@ -55,17 +55,17 @@ final class Class90 {
 		do {
 			try {
 				do {
-					if ((i ^ 0xffffffff) == -2) {
-						((Class90) this).aChar720 = (Class64_Sub7.method576(class98_sub22.readSignedByte(), (byte) 122));
+					if (i == 1) {
+						this.aChar720 = (Class64_Sub7.method576(class98_sub22.readSignedByte(), (byte) 122));
 						if (!client.aBoolean3553)
 							break;
 					}
-					if ((i ^ 0xffffffff) == -3)
-						((Class90) this).anInt718 = 0;
+					if (i == 2)
+						this.anInt718 = 0;
 				} while (false);
 				if (i_0_ == -37)
 					break;
-				((Class90) this).anInt718 = -63;
+				this.anInt718 = -63;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("fn.B(" + i + ',' + (class98_sub22 != null ? "{...}" : "null") + ',' + i_0_ + ')'));
 			}

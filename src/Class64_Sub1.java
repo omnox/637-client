@@ -12,9 +12,9 @@ final class Class64_Sub1 extends Class64 {
 		do {
 			try {
 				if (i > 118) {
-					if (((Class64) this).anInt494 == 1 || (((Class64) this).anInt494 ^ 0xffffffff) == -1)
+					if (this.anInt494 == 1 || this.anInt494 == 0)
 						break;
-					((Class64) this).anInt494 = method552(0);
+					this.anInt494 = method552(0);
 				}
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "aga.C(" + i + ')');
@@ -41,7 +41,7 @@ final class Class64_Sub1 extends Class64 {
 		try {
 			if (i < 119)
 				return -80;
-			return ((Class64) this).anInt494;
+			return this.anInt494;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "aga.E(" + i + ')');
 		}
@@ -78,7 +78,7 @@ final class Class64_Sub1 extends Class64 {
 	final void method550(int i, int i_1_) {
 		try {
 			int i_2_ = 20 / ((i - -26) / 41);
-			((Class64) this).anInt494 = i_1_;
+			this.anInt494 = i_1_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "aga.B(" + i + ',' + i_1_ + ')');
 		}

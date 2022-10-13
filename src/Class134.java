@@ -36,9 +36,9 @@ class Class134 implements Interface18 {
 				if (i < -81) {
 					if (!bool)
 						break;
-					int i_0_ = ((((Class337) ((Class134) this).aClass337_3460).aClass63_3538.method545(Class98_Sub17_Sub1.anInt5782, ((Class134) this).aClass332_3459.method3737(), (byte) 83)) + (((Class337) ((Class134) this).aClass337_3460).anInt3541));
-					int i_1_ = ((((Class337) ((Class134) this).aClass337_3460).aClass110_3540.method2088(((Class134) this).aClass332_3459.method3749(), Class246_Sub2.anInt5072, (byte) -56)) + (((Class337) ((Class134) this).aClass337_3460).anInt3542));
-					((Class134) this).aClass332_3459.method3735(i_0_, i_1_);
+					int i_0_ = ((this.aClass337_3460.aClass63_3538.method545(Class98_Sub17_Sub1.anInt5782, this.aClass332_3459.method3737(), (byte) 83)) + (this.aClass337_3460.anInt3541));
+					int i_1_ = ((this.aClass337_3460.aClass110_3540.method2088(this.aClass332_3459.method3749(), Class246_Sub2.anInt5072, (byte) -56)) + (this.aClass337_3460.anInt3542));
+					this.aClass332_3459.method3735(i_0_, i_1_);
 				}
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "jca.B(" + bool + ',' + i + ')');
@@ -51,7 +51,7 @@ class Class134 implements Interface18 {
 		try {
 			if (i != -43)
 				aClass207_3462 = null;
-			((Class134) this).aClass332_3459 = Class237_Sub1.method2915((((Class337) ((Class134) this).aClass337_3460).anInt3535), aClass207_3462, (byte) -89);
+			this.aClass332_3459 = Class237_Sub1.method2915((this.aClass337_3460.anInt3535), aClass207_3462, (byte) -89);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "jca.C(" + i + ')');
 		}
@@ -61,7 +61,7 @@ class Class134 implements Interface18 {
 		try {
 			if (i != 14017)
 				method58((byte) 85);
-			return aClass207_3462.method2742(i ^ ~0x36fd, (((Class337) (((Class134) this).aClass337_3460)).anInt3535));
+			return aClass207_3462.method2742(i ^ ~0x36fd, (this.aClass337_3460.anInt3535));
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "jca.A(" + i + ')');
 		}
@@ -69,15 +69,15 @@ class Class134 implements Interface18 {
 
 	static final boolean method2242(int i, int i_2_, Class155 class155) {
 		try {
-			RuntimeException_Sub1.aClass111_3203.method2103(((Class155) class155).anIntArray1240[i], ((Class155) class155).anIntArray1237[i], ((Class155) class155).anIntArray1241[i], Class114.anIntArray958);
+			RuntimeException_Sub1.aClass111_3203.method2103(class155.anIntArray1240[i], class155.anIntArray1237[i], class155.anIntArray1241[i], Class114.anIntArray958);
 			if (i_2_ != 5541)
 				aClass196_3458 = null;
 			int i_3_ = Class114.anIntArray958[2];
 			if (i_3_ < 50)
 				return false;
-			((Class155) class155).aShortArray1244[i] = (short) (Class2.anInt69 + (Class38.anInt358 * Class114.anIntArray958[0] / i_3_));
-			((Class155) class155).aShortArray1235[i] = (short) (Class98_Sub10_Sub23.anInt5659 + (Class114.anIntArray958[1] * Class331.anInt2800 / i_3_));
-			((Class155) class155).aShortArray1234[i] = (short) i_3_;
+			class155.aShortArray1244[i] = (short) (Class2.anInt69 + (Class38.anInt358 * Class114.anIntArray958[0] / i_3_));
+			class155.aShortArray1235[i] = (short) (Class98_Sub10_Sub23.anInt5659 + (Class114.anIntArray958[1] * Class331.anInt2800 / i_3_));
+			class155.aShortArray1234[i] = (short) i_3_;
 			return true;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("jca.I(" + i + ',' + i_2_ + ',' + (class155 != null ? "{...}" : "null") + ')'));
@@ -96,7 +96,7 @@ class Class134 implements Interface18 {
 
 	Class134(RuneScapeCache class207, Class337 class337) {
 		try {
-			((Class134) this).aClass337_3460 = class337;
+			this.aClass337_3460 = class337;
 			aClass207_3462 = class207;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("jca.<init>(" + (class207 != null ? "{...}" : "null") + ',' + (class337 != null ? "{...}" : "null") + ')'));

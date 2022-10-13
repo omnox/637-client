@@ -83,7 +83,7 @@ final class Class79 {
 				if (class98_sub46_sub2 != null) {
 					class98_sub46_sub2.remove();
 					class98_sub46_sub2.method1524((byte) -90);
-					anInt605 += ((Class98_Sub46_Sub2) class98_sub46_sub2).anInt5950;
+					anInt605 += class98_sub46_sub2.anInt5950;
 				}
 				if (i == 7)
 					break;
@@ -145,9 +145,9 @@ final class Class79 {
 			if (Class246_Sub3_Sub3.aClass206_6154 != null) {
 				for (Class98_Sub46_Sub2 class98_sub46_sub2 = (Class98_Sub46_Sub2) aClass215_606.method2792(-1); class98_sub46_sub2 != null; class98_sub46_sub2 = (Class98_Sub46_Sub2) aClass215_606.method2787(0)) {
 					if (!class98_sub46_sub2.method1536(124)) {
-						if ((long) i_6_ < ++((Class98_Sub46) class98_sub46_sub2).aLong4259) {
+						if ((long) i_6_ < ++class98_sub46_sub2.aLong4259) {
 							Class98_Sub46_Sub2 class98_sub46_sub2_7_ = Class246_Sub3_Sub3.aClass206_6154.method2726(0, class98_sub46_sub2);
-							aClass377_599.method3996(class98_sub46_sub2_7_, (((Node) class98_sub46_sub2).uid), -1);
+							aClass377_599.method3996(class98_sub46_sub2_7_, (class98_sub46_sub2.uid), -1);
 							Class101.method1697(class98_sub46_sub2, (byte) 37, class98_sub46_sub2_7_);
 							class98_sub46_sub2.remove();
 							class98_sub46_sub2.method1524((byte) -90);
@@ -155,7 +155,7 @@ final class Class79 {
 					} else if (class98_sub46_sub2.method1533(true) == null) {
 						class98_sub46_sub2.remove();
 						class98_sub46_sub2.method1524((byte) -90);
-						anInt605 += (((Class98_Sub46_Sub2) class98_sub46_sub2).anInt5950);
+						anInt605 += (class98_sub46_sub2.anInt5950);
 					}
 				}
 			}
@@ -170,16 +170,16 @@ final class Class79 {
 		try {
 			if (i != -11)
 				return 96;
-			if ((i_10_ ^ 0xffffffff) < -244)
+			if (i_10_ > 243)
 				i_8_ >>= 4;
 			else if (i_10_ <= 217) {
 				if (i_10_ > 192)
 					i_8_ >>= 2;
-				else if ((i_10_ ^ 0xffffffff) < -180)
+				else if (i_10_ > 179)
 					i_8_ >>= 1;
 			} else
 				i_8_ >>= 3;
-			return ((i_10_ >> -1942171039) + (i_8_ >> 1551398789 << 908165991) + ((i_9_ >> 466286402 & 0x3f) << 1714760906));
+			return ((i_10_ >> 1) + (i_8_ >> 5 << 7) + ((i_9_ >> 2 & 0x3f) << 10));
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("fc.A(" + i + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'));
 		}
@@ -194,22 +194,22 @@ final class Class79 {
 			if (object == null) {
 				class98_sub46_sub2.remove();
 				class98_sub46_sub2.method1524((byte) -90);
-				anInt605 += ((Class98_Sub46_Sub2) class98_sub46_sub2).anInt5950;
+				anInt605 += class98_sub46_sub2.anInt5950;
 				return null;
 			}
 			do {
 				if (class98_sub46_sub2.method1536(119)) {
-					Class98_Sub46_Sub2_Sub2 class98_sub46_sub2_sub2 = new Class98_Sub46_Sub2_Sub2(object, (((Class98_Sub46_Sub2) class98_sub46_sub2).anInt5950));
-					aClass377_599.method3996(class98_sub46_sub2_sub2, (((Node) class98_sub46_sub2).uid), -1);
+					Class98_Sub46_Sub2_Sub2 class98_sub46_sub2_sub2 = new Class98_Sub46_Sub2_Sub2(object, (class98_sub46_sub2.anInt5950));
+					aClass377_599.method3996(class98_sub46_sub2_sub2, (class98_sub46_sub2.uid), -1);
 					aClass215_606.method2785(class98_sub46_sub2_sub2, -55);
-					((Class98_Sub46) class98_sub46_sub2_sub2).aLong4259 = 0L;
+					class98_sub46_sub2_sub2.aLong4259 = 0L;
 					class98_sub46_sub2.remove();
 					class98_sub46_sub2.method1524((byte) -90);
 					if (!client.aBoolean3553)
 						break;
 				}
 				aClass215_606.method2785(class98_sub46_sub2, -50);
-				((Class98_Sub46) class98_sub46_sub2).aLong4259 = 0L;
+				class98_sub46_sub2.aLong4259 = 0L;
 			} while (false);
 			return object;
 		} catch (RuntimeException runtimeexception) {
@@ -229,7 +229,7 @@ final class Class79 {
 					class98_sub46_sub2 = (Class98_Sub46_Sub2) aClass377_599.iterate_next(-1);
 					class98_sub46_sub2_11_.remove();
 					class98_sub46_sub2_11_.method1524((byte) -90);
-					anInt605 += (((Class98_Sub46_Sub2) class98_sub46_sub2_11_).anInt5950);
+					anInt605 += (class98_sub46_sub2_11_.anInt5950);
 				} else
 					return object;
 			}
@@ -252,7 +252,7 @@ final class Class79 {
 				class98_sub46_sub2 = (Class98_Sub46_Sub2) aClass377_599.iterate_next(-1);
 				class98_sub46_sub2_12_.remove();
 				class98_sub46_sub2_12_.method1524((byte) -90);
-				anInt605 += ((Class98_Sub46_Sub2) class98_sub46_sub2_12_).anInt5950;
+				anInt605 += class98_sub46_sub2_12_.anInt5950;
 			}
 			return null;
 		} catch (RuntimeException runtimeexception) {
@@ -275,7 +275,7 @@ final class Class79 {
 				if (class98_sub46_sub2.method1536(122)) {
 					class98_sub46_sub2.remove();
 					class98_sub46_sub2.method1524((byte) -90);
-					anInt605 += ((Class98_Sub46_Sub2) class98_sub46_sub2).anInt5950;
+					anInt605 += class98_sub46_sub2.anInt5950;
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -285,7 +285,7 @@ final class Class79 {
 
 	final void method807(int i, long l, int i_14_, Object object) {
 		try {
-			if ((i_14_ ^ 0xffffffff) < (anInt598 ^ 0xffffffff))
+			if (anInt598 < i_14_)
 				throw new IllegalStateException("s>cs");
 			method808(l, i + 67095427);
 			anInt605 -= i_14_;
@@ -298,7 +298,7 @@ final class Class79 {
 			if (i != 13436)
 				method807(-1, 58L, 23, null);
 			aClass215_606.method2785(class98_sub46_sub2_sub2, -28);
-			((Class98_Sub46) class98_sub46_sub2_sub2).aLong4259 = 0L;
+			class98_sub46_sub2_sub2.aLong4259 = 0L;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("fc.J(" + i + ',' + l + ',' + i_14_ + ',' + (object != null ? "{...}" : "null") + ')'));
 		}
@@ -320,7 +320,7 @@ final class Class79 {
 			anInt598 = i;
 			anInt605 = i;
 			int i_16_;
-			for (i_16_ = 1; ((i ^ 0xffffffff) < (i_16_ + i_16_ ^ 0xffffffff) && (i_16_ ^ 0xffffffff) > (i_15_ ^ 0xffffffff)); i_16_ += i_16_) {
+			for (i_16_ = 1; (i_16_ + i_16_ < i && i_15_ > i_16_); i_16_ += i_16_) {
 				/* empty */
 			}
 			aClass377_599 = new Class377(i_16_);

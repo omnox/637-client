@@ -172,17 +172,17 @@ abstract class ha_Sub3 extends ha {
 		do {
 			try {
 				if (i != -94)
-					((ha_Sub3) this).anInt4601 = 32;
+					this.anInt4601 = 32;
 				if (aBoolean4631)
 					break;
 				float[] fs = aFloatArray4646;
-				float f = ((float) (((ha_Sub3) this).anInt4640 * -((ha_Sub3) this).anInt4645) / (float) ((ha_Sub3) this).anInt4593);
-				float f_0_ = ((float) ((-((ha_Sub3) this).anInt4645 + ((ha_Sub3) this).anInt4527) * ((ha_Sub3) this).anInt4640) / (float) ((ha_Sub3) this).anInt4593);
-				float f_1_ = ((float) (((ha_Sub3) this).anInt4587 * ((ha_Sub3) this).anInt4640) / (float) ((ha_Sub3) this).anInt4589);
-				float f_2_ = ((float) ((((ha_Sub3) this).anInt4587 + -((ha_Sub3) this).anInt4531) * ((ha_Sub3) this).anInt4640) / (float) ((ha_Sub3) this).anInt4589);
+				float f = ((float) (this.anInt4640 * -this.anInt4645) / (float) this.anInt4593);
+				float f_0_ = ((float) ((-this.anInt4645 + this.anInt4527) * this.anInt4640) / (float) this.anInt4593);
+				float f_1_ = ((float) (this.anInt4587 * this.anInt4640) / (float) this.anInt4589);
+				float f_2_ = ((float) ((this.anInt4587 + -this.anInt4531) * this.anInt4640) / (float) this.anInt4589);
 				do {
 					if (f != f_0_ && f_2_ != f_1_) {
-						float f_3_ = (float) ((ha_Sub3) this).anInt4640 * 2.0F;
+						float f_3_ = (float) this.anInt4640 * 2.0F;
 						fs[1] = 0.0F;
 						fs[13] = 0.0F;
 						fs[11] = -1.0F;
@@ -194,10 +194,10 @@ abstract class ha_Sub3 extends ha {
 						fs[4] = 0.0F;
 						fs[9] = (f_2_ + f_1_) / (-f_2_ + f_1_);
 						fs[7] = 0.0F;
-						fs[14] = aFloat4554 = ((float) (((ha_Sub3) this).anInt4640 * ((ha_Sub3) this).anInt4605) / (float) (((ha_Sub3) this).anInt4640 + -((ha_Sub3) this).anInt4605));
+						fs[14] = aFloat4554 = ((float) (this.anInt4640 * this.anInt4605) / (float) (this.anInt4640 + -this.anInt4605));
 						fs[3] = 0.0F;
 						fs[12] = 0.0F;
-						fs[10] = aFloat4626 = ((float) ((ha_Sub3) this).anInt4605 / (float) (-((ha_Sub3) this).anInt4605 + ((ha_Sub3) this).anInt4640));
+						fs[10] = aFloat4626 = ((float) this.anInt4605 / (float) (-this.anInt4605 + this.anInt4640));
 						fs[15] = 0.0F;
 						if (!client.aBoolean3553)
 							break;
@@ -230,7 +230,7 @@ abstract class ha_Sub3 extends ha {
 
 	final void C(boolean bool) {
 		try {
-			((ha_Sub3) this).aBoolean4606 = bool;
+			this.aBoolean4606 = bool;
 			method1972(0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.C(" + bool + ')');
@@ -242,7 +242,7 @@ abstract class ha_Sub3 extends ha {
 	final void method1935(int i) {
 		do {
 			try {
-				((ha_Sub3) this).aBoolean4540 = false;
+				this.aBoolean4540 = false;
 				method2055(0);
 				if (i == 1)
 					break;
@@ -260,26 +260,26 @@ abstract class ha_Sub3 extends ha {
 		do {
 			try {
 				boolean bool = false;
-				if (i > ((ha_Sub3) this).anInt4602) {
+				if (i > this.anInt4602) {
 					bool = true;
-					((ha_Sub3) this).anInt4602 = i;
+					this.anInt4602 = i;
 				}
-				if ((((ha_Sub3) this).anInt4575 ^ 0xffffffff) < (i_6_ ^ 0xffffffff)) {
-					((ha_Sub3) this).anInt4575 = i_6_;
-					bool = true;
-				}
-				if (((ha_Sub3) this).anInt4558 < i_5_) {
-					((ha_Sub3) this).anInt4558 = i_5_;
+				if (i_6_ < this.anInt4575) {
+					this.anInt4575 = i_6_;
 					bool = true;
 				}
-				if (i_7_ < ((ha_Sub3) this).anInt4638) {
+				if (this.anInt4558 < i_5_) {
+					this.anInt4558 = i_5_;
 					bool = true;
-					((ha_Sub3) this).anInt4638 = i_7_;
+				}
+				if (i_7_ < this.anInt4638) {
+					bool = true;
+					this.anInt4638 = i_7_;
 				}
 				if (!bool)
 					break;
-				if (!((ha_Sub3) this).aBoolean4672) {
-					((ha_Sub3) this).aBoolean4672 = true;
+				if (!this.aBoolean4672) {
+					this.aBoolean4672 = true;
 					method2030((byte) -122);
 				}
 				method2009(28976);
@@ -311,19 +311,19 @@ abstract class ha_Sub3 extends ha {
 	private final void method1938(byte i) {
 		do {
 			try {
-				if (Class176.aClass204_1372 != ((ha_Sub3) this).aClass204_4551) {
-					Class204 class204 = ((ha_Sub3) this).aClass204_4551;
-					((ha_Sub3) this).aClass204_4551 = Class176.aClass204_1372;
+				if (Class176.aClass204_1372 != this.aClass204_4551) {
+					Class204 class204 = this.aClass204_4551;
+					this.aClass204_4551 = Class176.aClass204_1372;
 					if (!class204.method2708(94))
 						method1961(107);
 					method1933((byte) -94);
-					((ha_Sub3) this).aFloatArray4566 = aFloatArray4646;
+					this.aFloatArray4566 = aFloatArray4646;
 					method1962(-108);
 					anInt4633 &= ~0x7;
 				}
 				if (i == -20)
 					break;
-				((ha_Sub3) this).anInt4640 = -76;
+				this.anInt4640 = -76;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "uv.BE(" + i + ')');
 			}
@@ -380,7 +380,7 @@ abstract class ha_Sub3 extends ha {
 				method1933((byte) -94);
 				if (i != 10886)
 					pa();
-				if (Class176.aClass204_1372 != ((ha_Sub3) this).aClass204_4551)
+				if (Class176.aClass204_1372 != this.aClass204_4551)
 					break;
 				method1962(i ^ ~0x2af7);
 			} catch (RuntimeException runtimeexception) {
@@ -407,8 +407,8 @@ abstract class ha_Sub3 extends ha {
 	final void method1945(byte i, boolean bool) {
 		do {
 			try {
-				if (bool == !((ha_Sub3) this).aBoolean4571) {
-					((ha_Sub3) this).aBoolean4571 = bool;
+				if (bool == !this.aBoolean4571) {
+					this.aBoolean4571 = bool;
 					method1999((byte) 112);
 				}
 				if (i > 107)
@@ -431,7 +431,7 @@ abstract class ha_Sub3 extends ha {
 				method1997(i + -1, false);
 				method2039(false, i ^ 0x1, -2, false);
 				method2015(1, (byte) 40);
-				method2005(((ha_Sub3) this).anInterface4_4586, -128);
+				method2005(this.anInterface4_4586, -128);
 				anInt4633 = 1;
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -443,7 +443,7 @@ abstract class ha_Sub3 extends ha {
 		try {
 			if (i_13_ != 0)
 				return null;
-			return ((ha_Sub3) this).aNativeHeap4522.a(i, bool);
+			return this.aNativeHeap4522.a(i, bool);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("uv.JJ(" + i + ',' + bool + ',' + i_13_ + ')'));
 		}
@@ -456,8 +456,8 @@ abstract class ha_Sub3 extends ha {
 			method2051(0, -91, Class64_Sub16.aClass65_3681);
 			method1953(-119, Class64_Sub16.aClass65_3681, 0);
 			method2001(i_17_, 76);
-			((ha_Sub3) this).aClass111_Sub3_4542.method2137((float) i_15_, (byte) -116, (float) i_15_, 1.0F);
-			((ha_Sub3) this).aClass111_Sub3_4542.method2106(i, i_14_, 0);
+			this.aClass111_Sub3_4542.method2137((float) i_15_, (byte) -116, (float) i_15_, 1.0F);
+			this.aClass111_Sub3_4542.method2106(i, i_14_, 0);
 			method1935(1);
 			method2059(false, false);
 			method1971(0, true, anInterface2_Impl1_4652);
@@ -496,7 +496,7 @@ abstract class ha_Sub3 extends ha {
 				}
 				if (i == 0)
 					break;
-				((ha_Sub3) this).aBoolean4643 = false;
+				this.aBoolean4643 = false;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "uv.AE(" + i + ')');
 			}
@@ -510,10 +510,10 @@ abstract class ha_Sub3 extends ha {
 		do {
 			try {
 				if (i != 120)
-					((ha_Sub3) this).aClass146_Sub3_4661 = null;
-				if (((ha_Sub3) this).anInt4579 == i_19_)
+					this.aClass146_Sub3_4661 = null;
+				if (this.anInt4579 == i_19_)
 					break;
-				((ha_Sub3) this).anInt4579 = i_19_;
+				this.anInt4579 = i_19_;
 				method1950((byte) 72);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("uv.TI(" + i + ',' + i_19_ + ')'));
@@ -524,18 +524,18 @@ abstract class ha_Sub3 extends ha {
 
 	private final void method1952(int i) {
 		try {
-			if (((ha_Sub3) this).aClass204_4551 != ParamType.aClass204_1206) {
-				Class204 class204 = ((ha_Sub3) this).aClass204_4551;
-				((ha_Sub3) this).aClass204_4551 = ParamType.aClass204_1206;
+			if (this.aClass204_4551 != ParamType.aClass204_1206) {
+				Class204 class204 = this.aClass204_4551;
+				this.aClass204_4551 = ParamType.aClass204_1206;
 				if (!class204.method2708(103))
 					method1961(-43);
 				method2000((byte) -117);
-				((ha_Sub3) this).aFloatArray4566 = aFloatArray4604;
+				this.aFloatArray4566 = aFloatArray4604;
 				method1962(-84);
 				anInt4633 &= ~0x7;
 			}
 			if (i != 2)
-				((ha_Sub3) this).anInt4587 = 43;
+				this.anInt4587 = 43;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.SG(" + i + ')');
 		}
@@ -553,7 +553,7 @@ abstract class ha_Sub3 extends ha {
 	final void method1954(int i, byte i_21_) {
 		do {
 			try {
-				method1984(2, i_21_ | (i_21_ << 26610024 | (i_21_ << 407779224 | i_21_ << -231365232)));
+				method1984(2, i_21_ | (i_21_ << 8 | (i_21_ << 24 | i_21_ << 16)));
 				if (i == 4)
 					break;
 				method1823();
@@ -575,7 +575,7 @@ abstract class ha_Sub3 extends ha {
 	final void ra(int i, int i_22_, int i_23_, int i_24_) {
 		try {
 			anInt4618 = i_24_;
-			((ha_Sub3) this).aBoolean4563 = true;
+			this.aBoolean4563 = true;
 			anInt4548 = i_23_;
 			anInt4557 = i_22_;
 			anInt4600 = i;
@@ -589,7 +589,7 @@ abstract class ha_Sub3 extends ha {
 	final Class111_Sub3 method1956(byte i) {
 		try {
 			int i_25_ = 83 % ((-45 - i) / 45);
-			return ((ha_Sub3) this).aClass111_Sub3_4545;
+			return this.aClass111_Sub3_4545;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.QH(" + i + ')');
 		}
@@ -598,7 +598,7 @@ abstract class ha_Sub3 extends ha {
 	final Class111_Sub3 method1957(byte i) {
 		try {
 			int i_26_ = 0 / ((-10 - i) / 59);
-			return (((ha_Sub3) this).aClass111_Sub3Array4609[((ha_Sub3) this).anInt4579]);
+			return (this.aClass111_Sub3Array4609[this.anInt4579]);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.NF(" + i + ')');
 		}
@@ -618,9 +618,9 @@ abstract class ha_Sub3 extends ha {
 
 	final void f(int i, int i_34_) {
 		try {
-			if (i != ((ha_Sub3) this).anInt4640 || ((((ha_Sub3) this).anInt4605 ^ 0xffffffff) != (i_34_ ^ 0xffffffff))) {
-				((ha_Sub3) this).anInt4640 = i;
-				((ha_Sub3) this).anInt4605 = i_34_;
+			if (i != this.anInt4640 || (i_34_ != this.anInt4605)) {
+				this.anInt4640 = i;
+				this.anInt4605 = i_34_;
 				method1943(10886);
 				method2038((byte) 119);
 				method2020(-111);
@@ -638,7 +638,7 @@ abstract class ha_Sub3 extends ha {
 		do {
 			try {
 				Object object = null;
-				if (canvas == null || canvas == ((ha_Sub3) this).aCanvas4533)
+				if (canvas == null || canvas == this.aCanvas4533)
 					object = anObject4537;
 				else if (aHashtable4523.containsKey(canvas))
 					object = aHashtable4523.get(canvas);
@@ -657,10 +657,10 @@ abstract class ha_Sub3 extends ha {
 
 	final void method1960(int i) {
 		try {
-			((ha_Sub3) this).aClass111_Sub3_4542.method2091();
+			this.aClass111_Sub3_4542.method2091();
 			if (i != 13951)
 				method1993((byte) 54);
-			((ha_Sub3) this).aBoolean4540 = true;
+			this.aBoolean4540 = true;
 			method2055(0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.UI(" + i + ')');
@@ -699,7 +699,7 @@ abstract class ha_Sub3 extends ha {
 		try {
 			if (i <= 43)
 				return null;
-			if ((2 * i_37_ ^ 0xffffffff) < (anInterface2_Impl2_4666.method2(200) ^ 0xffffffff))
+			if (anInterface2_Impl2_4666.method2(200) < 2 * i_37_)
 				anInterface2_Impl2_4666.method76(i_37_, 20779);
 			return anInterface2_Impl2_4666;
 		} catch (RuntimeException runtimeexception) {
@@ -709,8 +709,8 @@ abstract class ha_Sub3 extends ha {
 
 	final void a(za var_za) {
 		try {
-			((ha_Sub3) this).aNativeHeap4522 = ((za_Sub1) (za_Sub1) var_za).aNativeHeap6078;
-			((ha_Sub3) this).aNativeHeapBuffer4521 = ((ha_Sub3) this).aNativeHeap4522.a(32768, false);
+			this.aNativeHeap4522 = ((za_Sub1) var_za).aNativeHeap6078;
+			this.aNativeHeapBuffer4521 = this.aNativeHeap4522.a(32768, false);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.EH(" + (var_za != null ? "{...}" : "null") + ')');
 		}
@@ -720,38 +720,38 @@ abstract class ha_Sub3 extends ha {
 
 	final void method1965(boolean bool) {
 		try {
-			((ha_Sub3) this).aClass128Array4585 = new Class128[((ha_Sub3) this).anInt4608];
-			((ha_Sub3) this).aClass111_Sub3Array4609 = new Class111_Sub3[((ha_Sub3) this).anInt4608];
-			anInterface4Array4617 = new Interface4[((ha_Sub3) this).anInt4608];
-			((ha_Sub3) this).aClass128Array4639 = new Class128[((ha_Sub3) this).anInt4608];
-			((ha_Sub3) this).aClass258Array4644 = new Class258[((ha_Sub3) this).anInt4608];
-			for (int i = 0; ((ha_Sub3) this).anInt4608 > i; i++) {
-				((ha_Sub3) this).aClass128Array4639[i] = Class249.aClass128_1903;
-				((ha_Sub3) this).aClass128Array4585[i] = Class249.aClass128_1903;
-				((ha_Sub3) this).aClass258Array4644[i] = Class98_Sub46_Sub19.aClass258_6062;
-				((ha_Sub3) this).aClass111_Sub3Array4609[i] = new Class111_Sub3();
+			this.aClass128Array4585 = new Class128[this.anInt4608];
+			this.aClass111_Sub3Array4609 = new Class111_Sub3[this.anInt4608];
+			anInterface4Array4617 = new Interface4[this.anInt4608];
+			this.aClass128Array4639 = new Class128[this.anInt4608];
+			this.aClass258Array4644 = new Class258[this.anInt4608];
+			for (int i = 0; this.anInt4608 > i; i++) {
+				this.aClass128Array4639[i] = Class249.aClass128_1903;
+				this.aClass128Array4585[i] = Class249.aClass128_1903;
+				this.aClass258Array4644[i] = Class98_Sub46_Sub19.aClass258_6062;
+				this.aClass111_Sub3Array4609[i] = new Class111_Sub3();
 			}
-			((ha_Sub3) this).aClass98_Sub5Array4597 = new Class98_Sub5[((ha_Sub3) this).anInt4565 - 2];
-			((ha_Sub3) this).anInterface4_4586 = method2006(1, 1, Class62.aClass164_486, (byte) 45, Class162.aClass162_1266);
+			this.aClass98_Sub5Array4597 = new Class98_Sub5[this.anInt4565 - 2];
+			this.anInterface4_4586 = method2006(1, 1, Class62.aClass164_486, (byte) 45, Class162.aClass162_1266);
 			a(new za_Sub1(262144));
-			((ha_Sub3) this).aClass256_4664 = method1982((new Class49[] { new Class49(new Class169[] { Class169.aClass169_1294, Class169.aClass169_1301 }) }), 6);
-			((ha_Sub3) this).aClass256_4659 = method1982((new Class49[] { new Class49(new Class169[] { Class169.aClass169_1294, Class169.aClass169_1298 }) }), 6);
-			((ha_Sub3) this).aClass256_4654 = method1982((new Class49[] { new Class49(Class169.aClass169_1294), new Class49(Class169.aClass169_1298), new Class49(Class169.aClass169_1301), new Class49(Class169.aClass169_1297) }), 6);
-			((ha_Sub3) this).aClass256_4668 = method1982((new Class49[] { new Class49(Class169.aClass169_1294), new Class49(Class169.aClass169_1298), new Class49(Class169.aClass169_1301) }), 6);
-			((ha_Sub3) this).aClass146_Sub3_4656 = new Class146_Sub3(this, 0, 0, false, false);
-			((ha_Sub3) this).aClass146_Sub3_4665 = new Class146_Sub3(this, 0, 0, true, true);
-			((ha_Sub3) this).aClass146_Sub3_4658 = new Class146_Sub3(this, 0, 0, false, false);
-			((ha_Sub3) this).aClass146_Sub3_4651 = new Class146_Sub3(this, 0, 0, true, true);
-			((ha_Sub3) this).aClass146_Sub3_4661 = new Class146_Sub3(this, 0, 0, false, false);
-			((ha_Sub3) this).aClass146_Sub3_4657 = new Class146_Sub3(this, 0, 0, true, true);
-			((ha_Sub3) this).aClass146_Sub3_4649 = new Class146_Sub3(this, 0, 0, false, false);
-			((ha_Sub3) this).aClass146_Sub3_4650 = new Class146_Sub3(this, 0, 0, true, true);
-			((ha_Sub3) this).aClass146_Sub3_4670 = new Class146_Sub3(this, 0, 0, false, false);
-			((ha_Sub3) this).aClass146_Sub3_4662 = new Class146_Sub3(this, 0, 0, true, bool);
+			this.aClass256_4664 = method1982((new Class49[] { new Class49(new Class169[] { Class169.aClass169_1294, Class169.aClass169_1301 }) }), 6);
+			this.aClass256_4659 = method1982((new Class49[] { new Class49(new Class169[] { Class169.aClass169_1294, Class169.aClass169_1298 }) }), 6);
+			this.aClass256_4654 = method1982((new Class49[] { new Class49(Class169.aClass169_1294), new Class49(Class169.aClass169_1298), new Class49(Class169.aClass169_1301), new Class49(Class169.aClass169_1297) }), 6);
+			this.aClass256_4668 = method1982((new Class49[] { new Class49(Class169.aClass169_1294), new Class49(Class169.aClass169_1298), new Class49(Class169.aClass169_1301) }), 6);
+			this.aClass146_Sub3_4656 = new Class146_Sub3(this, 0, 0, false, false);
+			this.aClass146_Sub3_4665 = new Class146_Sub3(this, 0, 0, true, true);
+			this.aClass146_Sub3_4658 = new Class146_Sub3(this, 0, 0, false, false);
+			this.aClass146_Sub3_4651 = new Class146_Sub3(this, 0, 0, true, true);
+			this.aClass146_Sub3_4661 = new Class146_Sub3(this, 0, 0, false, false);
+			this.aClass146_Sub3_4657 = new Class146_Sub3(this, 0, 0, true, true);
+			this.aClass146_Sub3_4649 = new Class146_Sub3(this, 0, 0, false, false);
+			this.aClass146_Sub3_4650 = new Class146_Sub3(this, 0, 0, true, true);
+			this.aClass146_Sub3_4670 = new Class146_Sub3(this, 0, 0, false, false);
+			this.aClass146_Sub3_4662 = new Class146_Sub3(this, 0, 0, true, bool);
 			aClass81_4634 = new Class81(this);
 			anInterface2_Impl2_4666 = method1990((byte) 84, true);
 			method2064((byte) -61);
-			((ha_Sub3) this).aClass195_4529 = new Class195(this);
+			this.aClass195_4529 = new Class195(this);
 			aClass76Array4613[1] = method2067(1, (byte) 125);
 			aClass76Array4613[2] = method2067(2, (byte) -66);
 			aClass76Array4613[4] = method2067(4, (byte) 126);
@@ -783,7 +783,7 @@ abstract class ha_Sub3 extends ha {
 		try {
 			if (i <= 91)
 				aBoolean4550 = false;
-			return ((ha_Sub3) this).anInt4579;
+			return this.anInt4579;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.GE(" + i + ')');
 		}
@@ -802,30 +802,30 @@ abstract class ha_Sub3 extends ha {
 	final Class332 method1758(Class324 class324, boolean bool) {
 		try {
 			Class332 class332;
-			if (((Class324) class324).anInt2722 == 0 || ((Class324) class324).anInt2720 == 0)
+			if (class324.anInt2722 == 0 || class324.anInt2720 == 0)
 				class332 = this.method1748(-7962, 0, 1, 1, new int[1], 1);
 			else {
-				int[] is = new int[(((Class324) class324).anInt2720 * ((Class324) class324).anInt2722)];
+				int[] is = new int[(class324.anInt2720 * class324.anInt2722)];
 				int i = 0;
 				int i_42_ = 0;
-				if (((Class324) class324).aByteArray2723 != null) {
-					for (int i_43_ = 0; ((i_43_ ^ 0xffffffff) > (((Class324) class324).anInt2720 ^ 0xffffffff)); i_43_++) {
-						for (int i_44_ = 0; ((Class324) class324).anInt2722 > i_44_; i_44_++) {
-							is[i_42_++] = (Class41.method366((((Class324) class324).aByteArray2723[i] << 709795896), (((Class324) class324).anIntArray2718[Class202.method2702((((Class324) class324).aByteArray2717[i]), 255)])));
+				if (class324.aByteArray2723 != null) {
+					for (int i_43_ = 0; (class324.anInt2720 > i_43_); i_43_++) {
+						for (int i_44_ = 0; class324.anInt2722 > i_44_; i_44_++) {
+							is[i_42_++] = (Class41.method366((class324.aByteArray2723[i] << 24), (class324.anIntArray2718[Class202.method2702((class324.aByteArray2717[i]), 255)])));
 							i++;
 						}
 					}
 				} else {
-					for (int i_45_ = 0; i_45_ < ((Class324) class324).anInt2720; i_45_++) {
-						for (int i_46_ = 0; ((Class324) class324).anInt2722 > i_46_; i_46_++) {
-							int i_47_ = (((Class324) class324).anIntArray2718[(((Class324) class324).aByteArray2717[i++] & 0xff)]);
+					for (int i_45_ = 0; i_45_ < class324.anInt2720; i_45_++) {
+						for (int i_46_ = 0; class324.anInt2722 > i_46_; i_46_++) {
+							int i_47_ = (class324.anIntArray2718[(class324.aByteArray2717[i++] & 0xff)]);
 							is[i_42_++] = i_47_ == 0 ? 0 : Class41.method366(-16777216, i_47_);
 						}
 					}
 				}
-				class332 = this.method1748(-7962, 0, ((Class324) class324).anInt2722, ((Class324) class324).anInt2720, is, ((Class324) class324).anInt2722);
+				class332 = this.method1748(-7962, 0, class324.anInt2722, class324.anInt2720, is, class324.anInt2722);
 			}
-			class332.method3740(((Class324) class324).anInt2725, ((Class324) class324).anInt2721, ((Class324) class324).anInt2719, ((Class324) class324).anInt2724);
+			class332.method3740(class324.anInt2725, class324.anInt2721, class324.anInt2719, class324.anInt2724);
 			return class332;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("uv.IE(" + (class324 != null ? "{...}" : "null") + ',' + bool + ')'));
@@ -839,8 +839,8 @@ abstract class ha_Sub3 extends ha {
 			method2051(0, -68, Class64_Sub16.aClass65_3681);
 			method1953(-75, Class64_Sub16.aClass65_3681, 0);
 			method2001(i_52_, 126);
-			((ha_Sub3) this).aClass111_Sub3_4542.method2137((float) i_50_, (byte) -119, (float) i_49_, 1.0F);
-			((ha_Sub3) this).aClass111_Sub3_4542.method2106(i, i_48_, 0);
+			this.aClass111_Sub3_4542.method2137((float) i_50_, (byte) -119, (float) i_49_, 1.0F);
+			this.aClass111_Sub3_4542.method2106(i, i_48_, 0);
 			method1935(1);
 			method2059(false, false);
 			method2002((byte) -125);
@@ -887,10 +887,10 @@ abstract class ha_Sub3 extends ha {
 
 	final void X(int i) {
 		try {
-			((ha_Sub3) this).anInt4573 = 0;
-			for (/**/; (i ^ 0xffffffff) < -2; i >>= 1)
-				((ha_Sub3) this).anInt4573++;
-			((ha_Sub3) this).anInt4553 = 1 << ((ha_Sub3) this).anInt4573;
+			this.anInt4573 = 0;
+			for (/**/; i > 1; i >>= 1)
+				this.anInt4573++;
+			this.anInt4553 = 1 << this.anInt4573;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.X(" + i + ')');
 		}
@@ -901,10 +901,10 @@ abstract class ha_Sub3 extends ha {
 			try {
 				aFloatArray4646[14] = aFloat4554;
 				aFloatArray4646[10] = aFloat4626;
-				((ha_Sub3) this).aFloat4568 = ((float) -((ha_Sub3) this).anInt4605 + aFloatArray4646[14]) / aFloatArray4646[10];
+				this.aFloat4568 = ((float) -this.anInt4605 + aFloatArray4646[14]) / aFloatArray4646[10];
 				if (i == -24793)
 					break;
-				((ha_Sub3) this).aClass126_4625 = null;
+				this.aClass126_4625 = null;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "uv.QF(" + i + ')');
 			}
@@ -920,7 +920,7 @@ abstract class ha_Sub3 extends ha {
 
 	final int i() {
 		try {
-			return ((ha_Sub3) this).anInt4640;
+			return this.anInt4640;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.i(" + ')');
 		}
@@ -931,9 +931,9 @@ abstract class ha_Sub3 extends ha {
 			anObject4537 = null;
 			aCanvas4524 = null;
 			do {
-				if (canvas == null || canvas == ((ha_Sub3) this).aCanvas4533) {
-					anObject4537 = ((ha_Sub3) this).anObject4530;
-					aCanvas4524 = ((ha_Sub3) this).aCanvas4533;
+				if (canvas == null || canvas == this.aCanvas4533) {
+					anObject4537 = this.anObject4530;
+					aCanvas4524 = this.aCanvas4533;
 					if (!client.aBoolean3553)
 						break;
 				}
@@ -965,7 +965,7 @@ abstract class ha_Sub3 extends ha {
 
 	final void pa() {
 		try {
-			((ha_Sub3) this).aBoolean4563 = false;
+			this.aBoolean4563 = false;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.pa(" + ')');
 		}
@@ -987,7 +987,7 @@ abstract class ha_Sub3 extends ha {
 			method2033(-112);
 			method2016((byte) -118);
 			method2046(i);
-			for (int i_62_ = -1 + ((ha_Sub3) this).anInt4608; i_62_ >= 0; i_62_--) {
+			for (int i_62_ = -1 + this.anInt4608; i_62_ >= 0; i_62_--) {
 				method1951((byte) 120, i_62_);
 				method2011(2);
 				method1958((byte) -48);
@@ -1026,7 +1026,7 @@ abstract class ha_Sub3 extends ha {
 	final void EA(int i, int i_63_, int i_64_, int i_65_) {
 		do {
 			try {
-				if (!((ha_Sub3) this).aBoolean4563)
+				if (!this.aBoolean4563)
 					throw new RuntimeException("");
 				anInt4618 = i_65_;
 				anInt4548 = i_64_;
@@ -1072,7 +1072,7 @@ abstract class ha_Sub3 extends ha {
 	final Class111_Sub3 method1978(byte i) {
 		try {
 			int i_66_ = 92 % ((i - 59) / 32);
-			return ((ha_Sub3) this).aClass111_Sub3_4542;
+			return this.aClass111_Sub3_4542;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.TF(" + i + ')');
 		}
@@ -1082,7 +1082,7 @@ abstract class ha_Sub3 extends ha {
 		try {
 			if (aClass319_4624 != null)
 				aClass319_4624.method3662(-124);
-			((ha_Sub3) this).anInt4556 = i & 0x7fffffff;
+			this.anInt4556 = i & 0x7fffffff;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.UB(" + i + ')');
 		}
@@ -1092,8 +1092,8 @@ abstract class ha_Sub3 extends ha {
 		try {
 			if (i >= -57)
 				method1959(56);
-			if (!bool != !((ha_Sub3) this).aBoolean4643) {
-				((ha_Sub3) this).aBoolean4643 = bool;
+			if (!bool != !this.aBoolean4643) {
+				this.aBoolean4643 = bool;
 				method1955(-5668);
 				anInt4633 &= ~0x7;
 			}
@@ -1113,10 +1113,10 @@ abstract class ha_Sub3 extends ha {
 	private final void method1980(int i) {
 		do {
 			try {
-				((ha_Sub3) this).aFloat4642 = (float) ((ha_Sub3) this).anInt4605;
+				this.aFloat4642 = (float) this.anInt4605;
 				if (i == -20711)
 					break;
-				((ha_Sub3) this).anInt4593 = 47;
+				this.anInt4593 = 47;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "uv.WI(" + i + ')');
 			}
@@ -1136,11 +1136,11 @@ abstract class ha_Sub3 extends ha {
 				DA(-25, -24, -97, -114);
 			anInterface2_Impl1_4667.method72(false);
 			anInterface2_Impl1_4652.method72(false);
-			((ha_Sub3) this).aClass146_Sub3_4665.method2402(-12884);
-			((ha_Sub3) this).aClass146_Sub3_4651.method2402(-12884);
-			((ha_Sub3) this).aClass146_Sub3_4657.method2402(-12884);
-			((ha_Sub3) this).aClass146_Sub3_4650.method2402(-12884);
-			((ha_Sub3) this).aClass146_Sub3_4662.method2402(-12884);
+			this.aClass146_Sub3_4665.method2402(-12884);
+			this.aClass146_Sub3_4651.method2402(-12884);
+			this.aClass146_Sub3_4657.method2402(-12884);
+			this.aClass146_Sub3_4650.method2402(-12884);
+			this.aClass146_Sub3_4662.method2402(-12884);
 			aClass81_4634.method814((byte) 4);
 			anInterface2_Impl2_4666.method72(false);
 		} catch (RuntimeException runtimeexception) {
@@ -1159,13 +1159,13 @@ abstract class ha_Sub3 extends ha {
 	final void method1984(int i, int i_67_) {
 		do {
 			try {
-				if ((i_67_ ^ 0xffffffff) != (((ha_Sub3) this).anInt4648 ^ 0xffffffff)) {
-					((ha_Sub3) this).anInt4648 = i_67_;
+				if (this.anInt4648 != i_67_) {
+					this.anInt4648 = i_67_;
 					method2057(12362);
 				}
 				if (i == 2)
 					break;
-				((ha_Sub3) this).aBoolean4599 = true;
+				this.aBoolean4599 = true;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("uv.VI(" + i + ',' + i_67_ + ')'));
 			}
@@ -1183,9 +1183,9 @@ abstract class ha_Sub3 extends ha {
 
 	final void method1985(int i) {
 		try {
-			if (((ha_Sub3) this).aClass258Array4644[((ha_Sub3) this).anInt4579] != Class98_Sub46_Sub19.aClass258_6062) {
-				((ha_Sub3) this).aClass258Array4644[((ha_Sub3) this).anInt4579] = Class98_Sub46_Sub19.aClass258_6062;
-				((ha_Sub3) this).aClass111_Sub3Array4609[((ha_Sub3) this).anInt4579].method2091();
+			if (this.aClass258Array4644[this.anInt4579] != Class98_Sub46_Sub19.aClass258_6062) {
+				this.aClass258Array4644[this.anInt4579] = Class98_Sub46_Sub19.aClass258_6062;
+				this.aClass111_Sub3Array4609[this.anInt4579].method2091();
 				method2014(i ^ 0x3d);
 			}
 			if (i != 2)
@@ -1197,8 +1197,8 @@ abstract class ha_Sub3 extends ha {
 
 	final void method1986(boolean bool, byte i) {
 		try {
-			if (!((ha_Sub3) this).aBoolean4555 == bool) {
-				((ha_Sub3) this).aBoolean4555 = bool;
+			if (!this.aBoolean4555 == bool) {
+				this.aBoolean4555 = bool;
 				method2025((byte) 13);
 			}
 			int i_72_ = -54 % ((-75 - i) / 42);
@@ -1211,7 +1211,7 @@ abstract class ha_Sub3 extends ha {
 		try {
 			method1971(0, bool, anInterface2_Impl1_4667);
 			if (bool != true)
-				((ha_Sub3) this).anInt4638 = -70;
+				this.anInt4638 = -70;
 			method2042(aClass256_4653, (byte) 118);
 			method2037(Class334.aClass232_3468, 0, (byte) 56, 1);
 		} catch (RuntimeException runtimeexception) {
@@ -1230,12 +1230,12 @@ abstract class ha_Sub3 extends ha {
 	final void a(Class111 class111) {
 		do {
 			try {
-				((ha_Sub3) this).aClass111_Sub3_4543 = (Class111_Sub3) class111;
-				((ha_Sub3) this).aClass111_Sub3_4545.method2092(((ha_Sub3) this).aClass111_Sub3_4543);
-				((ha_Sub3) this).aClass111_Sub3_4545.method2136(false);
-				aClass111_Sub3_4546.method2132((byte) -52, (((ha_Sub3) this).aClass111_Sub3_4545));
-				((ha_Sub3) this).aClass111_Sub3_4544.method2132((byte) 101, ((ha_Sub3) this).aClass111_Sub3_4543);
-				if (!((ha_Sub3) this).aClass204_4551.method2708(102))
+				this.aClass111_Sub3_4543 = (Class111_Sub3) class111;
+				this.aClass111_Sub3_4545.method2092(this.aClass111_Sub3_4543);
+				this.aClass111_Sub3_4545.method2136(false);
+				aClass111_Sub3_4546.method2132((byte) -52, (this.aClass111_Sub3_4545));
+				this.aClass111_Sub3_4544.method2132((byte) 101, this.aClass111_Sub3_4543);
+				if (!this.aClass204_4551.method2708(102))
 					break;
 				method1961(124);
 			} catch (RuntimeException runtimeexception) {
@@ -1251,7 +1251,7 @@ abstract class ha_Sub3 extends ha {
 			float f_78_ = (float) i_75_ - (float) i_73_;
 			do {
 				if (f != 0.0F || f_78_ != 0.0F) {
-					float f_79_ = (float) (1.0 / Math.sqrt((double) (f_78_ * f_78_ + f * f)));
+					float f_79_ = (float) (1.0 / Math.sqrt(f_78_ * f_78_ + f * f));
 					f *= f_79_;
 					f_78_ *= f_79_;
 					if (!client.aBoolean3553)
@@ -1280,88 +1280,88 @@ abstract class ha_Sub3 extends ha {
 	ha_Sub3(Canvas canvas, Object object, d var_d, RuneScapeCache class207, int i, int i_80_) {
 		super(var_d);
 		aBoolean4550 = false;
-		((ha_Sub3) this).anInt4578 = 0;
+		this.anInt4578 = 0;
 		anInt4583 = -1;
-		((ha_Sub3) this).aFloat4576 = 1.0F;
+		this.aFloat4576 = 1.0F;
 		anInt4548 = -1;
 		aBoolean4567 = false;
-		((ha_Sub3) this).aClass204_4551 = Class246_Sub3_Sub1_Sub2.aClass204_6247;
-		((ha_Sub3) this).anInt4581 = -1;
-		((ha_Sub3) this).aFloatArray4596 = new float[] { 0.0F, 0.0F, 1.0F, 0.0F };
-		((ha_Sub3) this).anInt4558 = 0;
+		this.aClass204_4551 = Class246_Sub3_Sub1_Sub2.aClass204_6247;
+		this.anInt4581 = -1;
+		this.aFloatArray4596 = new float[] { 0.0F, 0.0F, 1.0F, 0.0F };
+		this.anInt4558 = 0;
 		anInt4612 = 0;
-		((ha_Sub3) this).aBoolean4560 = true;
+		this.aBoolean4560 = true;
 		aBoolean4574 = false;
-		((ha_Sub3) this).aFloat4611 = 1.0F;
-		((ha_Sub3) this).anInt4573 = 3;
-		((ha_Sub3) this).aFloatArray4572 = new float[] { 0.0F, 0.0F, -1.0F, 0.0F };
-		((ha_Sub3) this).anInt4589 = 512;
-		((ha_Sub3) this).anInt4622 = 0;
-		((ha_Sub3) this).aBoolean4620 = false;
-		((ha_Sub3) this).anInt4601 = 0;
+		this.aFloat4611 = 1.0F;
+		this.anInt4573 = 3;
+		this.aFloatArray4572 = new float[] { 0.0F, 0.0F, -1.0F, 0.0F };
+		this.anInt4589 = 512;
+		this.anInt4622 = 0;
+		this.aBoolean4620 = false;
+		this.anInt4601 = 0;
 		aFloatArray4604 = new float[16];
-		((ha_Sub3) this).anInt4575 = 0;
-		((ha_Sub3) this).anInt4602 = 0;
+		this.anInt4575 = 0;
+		this.anInt4602 = 0;
 		aClass76Array4613 = new Class76[10];
-		((ha_Sub3) this).aFloat4591 = 1.0F;
-		((ha_Sub3) this).aBoolean4606 = true;
-		((ha_Sub3) this).aBoolean4571 = true;
+		this.aFloat4591 = 1.0F;
+		this.aBoolean4606 = true;
+		this.aBoolean4571 = true;
 		aBoolean4621 = false;
 		aFloatArray4590 = new float[16];
 		aBoolean4631 = false;
-		((ha_Sub3) this).anInt4607 = 128;
+		this.anInt4607 = 128;
 		anInt4632 = 1;
-		((ha_Sub3) this).anInt4553 = 8;
-		((ha_Sub3) this).anInt4593 = 512;
-		((ha_Sub3) this).anInt4605 = 3584;
+		this.anInt4553 = 8;
+		this.anInt4593 = 512;
+		this.anInt4605 = 3584;
 		aFloatArray4629 = new float[] { 0.0F, 0.0F, 1.0F, 0.0F };
-		((ha_Sub3) this).aFloat4630 = -1.0F;
-		((ha_Sub3) this).aClass126_4625 = Class101.aClass126_848;
-		((ha_Sub3) this).aFloat4594 = -1.0F;
-		((ha_Sub3) this).anInt4640 = 50;
+		this.aFloat4630 = -1.0F;
+		this.aClass126_4625 = Class101.aClass126_848;
+		this.aFloat4594 = -1.0F;
+		this.anInt4640 = 50;
 		anInt4595 = 0;
-		((ha_Sub3) this).anInt4579 = 0;
-		((ha_Sub3) this).anInt4587 = 0;
+		this.anInt4579 = 0;
+		this.anInt4587 = 0;
 		aFloatArray4627 = new float[] { 0.0F, 0.0F, 1.0F, 0.0F };
-		((ha_Sub3) this).aBoolean4637 = false;
+		this.aBoolean4637 = false;
 		anInt4623 = 16777215;
-		((ha_Sub3) this).anInt4636 = -1;
+		this.anInt4636 = -1;
 		anInt4618 = 0;
-		((ha_Sub3) this).aBoolean4599 = true;
-		((ha_Sub3) this).anInt4638 = 0;
-		((ha_Sub3) this).aFloat4642 = 3584.0F;
-		((ha_Sub3) this).aFloat4568 = 3584.0F;
+		this.aBoolean4599 = true;
+		this.anInt4638 = 0;
+		this.aFloat4642 = 3584.0F;
+		this.aFloat4568 = 3584.0F;
 		anInt4635 = 0;
 		aFloatArray4646 = new float[16];
-		((ha_Sub3) this).aBoolean4577 = false;
+		this.aBoolean4577 = false;
 		anInt4557 = -1;
 		aFloatArray4582 = new float[] { 1.0F, 0.0F, 0.0F, 0.0F, 0.0F, 1.0F, 0.0F, 0.0F, 0.0F, 0.0F, 1.0F, 0.0F, 0.0F, 0.0F, 0.0F, 1.0F };
-		((ha_Sub3) this).aFloatArray4566 = aFloatArray4582;
-		((ha_Sub3) this).aBoolean4643 = false;
-		((ha_Sub3) this).anInt4645 = 0;
+		this.aFloatArray4566 = aFloatArray4582;
+		this.aBoolean4643 = false;
+		this.anInt4645 = 0;
 		aStream4603 = new Stream();
 		aClass111_Sub3_4663 = new Class111_Sub3();
 		try {
 			try {
-				anObject4537 = ((ha_Sub3) this).anObject4530 = object;
-				((ha_Sub3) this).aClass207_4535 = class207;
-				aCanvas4524 = ((ha_Sub3) this).aCanvas4533 = canvas;
-				((ha_Sub3) this).anInt4616 = i;
+				anObject4537 = this.anObject4530 = object;
+				this.aClass207_4535 = class207;
+				aCanvas4524 = this.aCanvas4533 = canvas;
+				this.anInt4616 = i;
 				Dimension dimension = canvas.getSize();
-				((ha_Sub3) this).anInt4531 = anInt4534 = dimension.height;
-				((ha_Sub3) this).anInt4580 = i_80_;
-				((ha_Sub3) this).anInt4527 = anInt4536 = dimension.width;
+				this.anInt4531 = anInt4534 = dimension.height;
+				this.anInt4580 = i_80_;
+				this.anInt4527 = anInt4536 = dimension.width;
 				Class101.method1702(8, false, true);
-				if (((ha) this).aD938 != null) {
-					aClass319_4624 = new Class319(this, ((ha) this).aD938);
-					((ha_Sub3) this).aNativeInterface4526 = new NativeInterface(((ha) this).aD938.method12(true), ((ha_Sub3) this).anInt4580);
-					for (int i_81_ = 0; i_81_ < ((ha) this).aD938.method12(true); i_81_++) {
-						Class238 class238 = ((ha) this).aD938.method11(i_81_, -28755);
+				if (this.aD938 != null) {
+					aClass319_4624 = new Class319(this, this.aD938);
+					this.aNativeInterface4526 = new NativeInterface(this.aD938.method12(true), this.anInt4580);
+					for (int i_81_ = 0; i_81_ < this.aD938.method12(true); i_81_++) {
+						Class238 class238 = this.aD938.method11(i_81_, -28755);
 						if (class238 != null)
-							((ha_Sub3) this).aNativeInterface4526.initTextureMetrics(i_81_, ((Class238) class238).aByte1830, ((Class238) class238).aByte1829);
+							this.aNativeInterface4526.initTextureMetrics(i_81_, class238.aByte1830, class238.aByte1829);
 					}
 				} else {
-					((ha_Sub3) this).aNativeInterface4526 = new NativeInterface(0, ((ha_Sub3) this).anInt4580);
+					this.aNativeInterface4526 = new NativeInterface(0, this.anInt4580);
 					aClass319_4624 = null;
 				}
 			} catch (Throwable throwable) {
@@ -1377,12 +1377,12 @@ abstract class ha_Sub3 extends ha {
 	final void method1992(byte i) {
 		do {
 			try {
-				if (Class246_Sub3_Sub1_Sub2.aClass204_6247 != ((ha_Sub3) this).aClass204_4551) {
-					Class204 class204 = ((ha_Sub3) this).aClass204_4551;
-					((ha_Sub3) this).aClass204_4551 = Class246_Sub3_Sub1_Sub2.aClass204_6247;
+				if (Class246_Sub3_Sub1_Sub2.aClass204_6247 != this.aClass204_4551) {
+					Class204 class204 = this.aClass204_4551;
+					this.aClass204_4551 = Class246_Sub3_Sub1_Sub2.aClass204_6247;
 					if (class204.method2708(98))
 						method1961(97);
-					((ha_Sub3) this).aFloatArray4566 = aFloatArray4582;
+					this.aFloatArray4566 = aFloatArray4582;
 					anInt4633 &= ~0x1f;
 				}
 				if (i == 125)
@@ -1404,14 +1404,14 @@ abstract class ha_Sub3 extends ha {
 			try {
 				if (i != 103)
 					aCanvas4524 = null;
-				if (((ha_Sub3) this).aClass204_4551 == Class64_Sub4.aClass204_3649)
+				if (this.aClass204_4551 == Class64_Sub4.aClass204_3649)
 					break;
-				Class204 class204 = ((ha_Sub3) this).aClass204_4551;
-				((ha_Sub3) this).aClass204_4551 = Class64_Sub4.aClass204_3649;
+				Class204 class204 = this.aClass204_4551;
+				this.aClass204_4551 = Class64_Sub4.aClass204_3649;
 				if (class204.method2708(118))
 					method1961(-51);
 				method1996(6281);
-				((ha_Sub3) this).aFloatArray4566 = aFloatArray4590;
+				this.aFloatArray4566 = aFloatArray4590;
 				method1962(-76);
 				anInt4633 &= ~0x18;
 			} catch (RuntimeException runtimeexception) {
@@ -1434,10 +1434,10 @@ abstract class ha_Sub3 extends ha {
 	final void xa(float f) {
 		do {
 			try {
-				if (((ha_Sub3) this).aFloat4576 == f)
+				if (this.aFloat4576 == f)
 					break;
-				((ha_Sub3) this).aFloat4576 = f;
-				((ha_Sub3) this).aNativeInterface4526.setAmbient(f);
+				this.aFloat4576 = f;
+				this.aNativeInterface4526.setAmbient(f);
 				method1991(-24391);
 				method1989(87);
 			} catch (RuntimeException runtimeexception) {
@@ -1452,7 +1452,7 @@ abstract class ha_Sub3 extends ha {
 			float f = (float) i_97_ - (float) i;
 			float f_104_ = (float) i_98_ - (float) i_96_;
 			if (f != 0.0F || f_104_ != 0.0F) {
-				float f_105_ = (float) (1.0 / Math.sqrt((double) (f_104_ * f_104_ + f * f)));
+				float f_105_ = (float) (1.0 / Math.sqrt(f_104_ * f_104_ + f * f));
 				f_104_ *= f_105_;
 				f *= f_105_;
 			} else
@@ -1494,7 +1494,7 @@ abstract class ha_Sub3 extends ha {
 					if (f_112_ + f_110_ > (float) i_97_)
 						f_110_ = -f_112_ + (float) i_97_;
 				}
-				if ((i_96_ ^ 0xffffffff) <= (i_98_ ^ 0xffffffff)) {
+				if (i_98_ <= i_96_) {
 					if ((float) i_98_ > f_113_)
 						break;
 					if (f_113_ + f_111_ < (float) i_98_)
@@ -1625,10 +1625,10 @@ abstract class ha_Sub3 extends ha {
 					break;
 				float[] fs = aFloatArray4590;
 				aBoolean4574 = true;
-				if ((((ha_Sub3) this).anInt4527 ^ 0xffffffff) != -1 && (((ha_Sub3) this).anInt4531 ^ 0xffffffff) != -1) {
+				if (this.anInt4527 != 0 && this.anInt4531 != 0) {
 					fs[1] = 0.0F;
 					fs[3] = 0.0F;
-					fs[0] = 2.0F / (float) ((ha_Sub3) this).anInt4527;
+					fs[0] = 2.0F / (float) this.anInt4527;
 					fs[4] = 0.0F;
 					fs[15] = 1.0F;
 					fs[13] = 1.0F;
@@ -1641,7 +1641,7 @@ abstract class ha_Sub3 extends ha {
 					fs[2] = 0.0F;
 					fs[14] = 0.5F;
 					fs[12] = -1.0F;
-					fs[5] = -2.0F / (float) ((ha_Sub3) this).anInt4531;
+					fs[5] = -2.0F / (float) this.anInt4531;
 				} else {
 					fs[0] = 1.0F;
 					fs[7] = 0.0F;
@@ -1679,8 +1679,8 @@ abstract class ha_Sub3 extends ha {
 		try {
 			if (i != 0)
 				method1996(-123);
-			if (!bool != !((ha_Sub3) this).aBoolean4620) {
-				((ha_Sub3) this).aBoolean4620 = bool;
+			if (!bool != !this.aBoolean4620) {
+				this.aBoolean4620 = bool;
 				method1972(0);
 				anInt4633 &= ~0x1f;
 			}
@@ -1699,15 +1699,15 @@ abstract class ha_Sub3 extends ha {
 
 	final void KA(int i, int i_117_, int i_118_, int i_119_) {
 		try {
-			if ((i ^ 0xffffffff) >= -1 && -1 + ((ha_Sub3) this).anInt4527 <= i_118_ && i_117_ <= 0 && ((ha_Sub3) this).anInt4531 - 1 <= i_119_)
+			if (i <= 0 && -1 + this.anInt4527 <= i_118_ && i_117_ <= 0 && this.anInt4531 - 1 <= i_119_)
 				la();
 			else {
-				((ha_Sub3) this).anInt4602 = i >= 0 ? i : 0;
-				((ha_Sub3) this).anInt4575 = (i_118_ ^ 0xffffffff) < (((ha_Sub3) this).anInt4527 ^ 0xffffffff) ? 0 : i_118_;
-				((ha_Sub3) this).anInt4558 = i_117_ < 0 ? 0 : i_117_;
-				((ha_Sub3) this).anInt4638 = ((ha_Sub3) this).anInt4527 < i_119_ ? 0 : i_119_;
-				if (!((ha_Sub3) this).aBoolean4672) {
-					((ha_Sub3) this).aBoolean4672 = true;
+				this.anInt4602 = i >= 0 ? i : 0;
+				this.anInt4575 = this.anInt4527 < i_118_ ? 0 : i_118_;
+				this.anInt4558 = i_117_ < 0 ? 0 : i_117_;
+				this.anInt4638 = this.anInt4527 < i_119_ ? 0 : i_119_;
+				if (!this.aBoolean4672) {
+					this.aBoolean4672 = true;
 					method2030((byte) -122);
 				}
 				method2009(28976);
@@ -1736,12 +1736,12 @@ abstract class ha_Sub3 extends ha {
 				aBoolean4550 = false;
 			if (!aBoolean4570) {
 				float[] fs = aFloatArray4604;
-				float f = (float) ((ha_Sub3) this).anInt4640;
-				float f_120_ = (float) ((ha_Sub3) this).anInt4605;
-				float f_121_ = ((float) -((ha_Sub3) this).anInt4587 * aFloat4561 / (float) ((ha_Sub3) this).anInt4589);
-				float f_122_ = (aFloat4561 * (float) -((ha_Sub3) this).anInt4645 / (float) ((ha_Sub3) this).anInt4593);
-				float f_123_ = (aFloat4561 * (float) (-((ha_Sub3) this).anInt4645 + ((ha_Sub3) this).anInt4527) / (float) ((ha_Sub3) this).anInt4593);
-				float f_124_ = (aFloat4561 * (float) (((ha_Sub3) this).anInt4531 - ((ha_Sub3) this).anInt4587) / (float) ((ha_Sub3) this).anInt4589);
+				float f = (float) this.anInt4640;
+				float f_120_ = (float) this.anInt4605;
+				float f_121_ = ((float) -this.anInt4587 * aFloat4561 / (float) this.anInt4589);
+				float f_122_ = (aFloat4561 * (float) -this.anInt4645 / (float) this.anInt4593);
+				float f_123_ = (aFloat4561 * (float) (-this.anInt4645 + this.anInt4527) / (float) this.anInt4593);
+				float f_124_ = (aFloat4561 * (float) (this.anInt4531 - this.anInt4587) / (float) this.anInt4589);
 				do {
 					if (f_123_ != f_122_ && f_121_ != f_124_) {
 						fs[5] = 2.0F / (-f_121_ + f_124_);
@@ -1791,17 +1791,17 @@ abstract class ha_Sub3 extends ha {
 	final void ZA(int i, float f, float f_125_, float f_126_, float f_127_, float f_128_) {
 		try {
 			boolean bool = anInt4623 != i;
-			if (bool || ((ha_Sub3) this).aFloat4630 != f || f_125_ != ((ha_Sub3) this).aFloat4594) {
-				((ha_Sub3) this).aFloat4594 = f_125_;
+			if (bool || this.aFloat4630 != f || f_125_ != this.aFloat4594) {
+				this.aFloat4594 = f_125_;
 				anInt4623 = i;
-				((ha_Sub3) this).aFloat4630 = f;
+				this.aFloat4630 = f;
 				if (bool) {
-					((ha_Sub3) this).aFloat4611 = (float) (anInt4623 & 0xff0000) / 1.671168E7F;
-					((ha_Sub3) this).aFloat4549 = (float) (anInt4623 & 0xff00) / 65280.0F;
-					((ha_Sub3) this).aFloat4591 = (float) (anInt4623 & 0xff) / 255.0F;
+					this.aFloat4611 = (float) (anInt4623 & 0xff0000) / 1.671168E7F;
+					this.aFloat4549 = (float) (anInt4623 & 0xff00) / 65280.0F;
+					this.aFloat4591 = (float) (anInt4623 & 0xff) / 255.0F;
 					method1991(-24391);
 				}
-				((ha_Sub3) this).aNativeInterface4526.setSunColour(((ha_Sub3) this).aFloat4611, ((ha_Sub3) this).aFloat4549, ((ha_Sub3) this).aFloat4591, f, f_125_);
+				this.aNativeInterface4526.setSunColour(this.aFloat4611, this.aFloat4549, this.aFloat4591, f, f_125_);
 				method2004((byte) -103);
 			}
 			if (aFloatArray4627[0] != f_126_ || aFloatArray4627[1] != f_127_ || aFloatArray4627[2] != f_128_) {
@@ -1811,17 +1811,17 @@ abstract class ha_Sub3 extends ha {
 				aFloatArray4629[1] = -f_127_;
 				aFloatArray4629[0] = -f_126_;
 				aFloatArray4629[2] = -f_128_;
-				float f_129_ = (float) (1.0 / Math.sqrt((double) (f_127_ * f_127_ + f_126_ * f_126_ + f_128_ * f_128_)));
-				((ha_Sub3) this).aFloatArray4596[1] = f_127_ * f_129_;
-				((ha_Sub3) this).aFloatArray4596[2] = f_129_ * f_128_;
-				((ha_Sub3) this).aFloatArray4596[0] = f_126_ * f_129_;
-				((ha_Sub3) this).aFloatArray4572[2] = -((ha_Sub3) this).aFloatArray4596[2];
-				((ha_Sub3) this).aFloatArray4572[1] = -((ha_Sub3) this).aFloatArray4596[1];
-				((ha_Sub3) this).aFloatArray4572[0] = -((ha_Sub3) this).aFloatArray4596[0];
-				((ha_Sub3) this).aNativeInterface4526.setSunDirection(((ha_Sub3) this).aFloatArray4596[0], ((ha_Sub3) this).aFloatArray4596[1], ((ha_Sub3) this).aFloatArray4596[2]);
+				float f_129_ = (float) (1.0 / Math.sqrt(f_127_ * f_127_ + f_126_ * f_126_ + f_128_ * f_128_));
+				this.aFloatArray4596[1] = f_127_ * f_129_;
+				this.aFloatArray4596[2] = f_129_ * f_128_;
+				this.aFloatArray4596[0] = f_126_ * f_129_;
+				this.aFloatArray4572[2] = -this.aFloatArray4596[2];
+				this.aFloatArray4572[1] = -this.aFloatArray4596[1];
+				this.aFloatArray4572[0] = -this.aFloatArray4596[0];
+				this.aNativeInterface4526.setSunDirection(this.aFloatArray4596[0], this.aFloatArray4596[1], this.aFloatArray4596[2]);
 				method2065((byte) 80);
-				((ha_Sub3) this).anInt4564 = (int) (256.0F * f_126_ / f_127_);
-				((ha_Sub3) this).anInt4552 = (int) (f_128_ * 256.0F / f_127_);
+				this.anInt4564 = (int) (256.0F * f_126_ / f_127_);
+				this.anInt4552 = (int) (f_128_ * 256.0F / f_127_);
 			}
 			method1989(72);
 		} catch (RuntimeException runtimeexception) {
@@ -1840,8 +1840,8 @@ abstract class ha_Sub3 extends ha {
 						bool_131_ = true;
 						class126 = Class101.aClass126_848;
 						bool = true;
-					} else if ((i ^ 0xffffffff) != -3) {
-						if ((i ^ 0xffffffff) == -129) {
+					} else if (i != 2) {
+						if (i == 128) {
 							class126 = Class83.aClass126_632;
 							bool = true;
 							bool_131_ = true;
@@ -1855,16 +1855,16 @@ abstract class ha_Sub3 extends ha {
 						class126 = Class373_Sub1_Sub1.aClass126_6216;
 						bool = true;
 					}
-					if (!bool_131_ == ((ha_Sub3) this).aBoolean4599) {
-						((ha_Sub3) this).aBoolean4599 = bool_131_;
+					if (!bool_131_ == this.aBoolean4599) {
+						this.aBoolean4599 = bool_131_;
 						method2046(0);
 					}
-					if (((ha_Sub3) this).aBoolean4560 != bool) {
-						((ha_Sub3) this).aBoolean4560 = bool;
+					if (this.aBoolean4560 != bool) {
+						this.aBoolean4560 = bool;
 						method2033(52);
 					}
-					if (((ha_Sub3) this).aClass126_4625 != class126) {
-						((ha_Sub3) this).aClass126_4625 = class126;
+					if (this.aClass126_4625 != class126) {
+						this.aClass126_4625 = class126;
 						method2016((byte) -118);
 					}
 					anInt4633 &= ~0x1c;
@@ -1894,10 +1894,10 @@ abstract class ha_Sub3 extends ha {
 
 	final void DA(int i, int i_132_, int i_133_, int i_134_) {
 		try {
-			((ha_Sub3) this).anInt4593 = i_133_;
-			((ha_Sub3) this).anInt4587 = i_132_;
-			((ha_Sub3) this).anInt4645 = i;
-			((ha_Sub3) this).anInt4589 = i_134_;
+			this.anInt4593 = i_133_;
+			this.anInt4587 = i_132_;
+			this.anInt4645 = i;
+			this.anInt4589 = i_134_;
 			method2038((byte) 121);
 			method1943(10886);
 			method1992((byte) 125);
@@ -1917,12 +1917,12 @@ abstract class ha_Sub3 extends ha {
 
 	final void la() {
 		try {
-			((ha_Sub3) this).anInt4558 = 0;
-			((ha_Sub3) this).anInt4602 = 0;
-			((ha_Sub3) this).anInt4575 = ((ha_Sub3) this).anInt4527;
-			((ha_Sub3) this).anInt4638 = ((ha_Sub3) this).anInt4531;
-			if (((ha_Sub3) this).aBoolean4672) {
-				((ha_Sub3) this).aBoolean4672 = false;
+			this.anInt4558 = 0;
+			this.anInt4602 = 0;
+			this.anInt4575 = this.anInt4527;
+			this.anInt4638 = this.anInt4531;
+			if (this.aBoolean4672) {
+				this.aBoolean4672 = false;
 				method2030((byte) -122);
 			}
 			method2048((byte) 32);
@@ -1951,7 +1951,7 @@ abstract class ha_Sub3 extends ha {
 	private final void method2003(int i) {
 		try {
 			if (i != 1)
-				((ha_Sub3) this).anInt4648 = 58;
+				this.anInt4648 = 58;
 			do {
 				if (aCanvas4524 == null) {
 					anInt4536 = anInt4534 = 1;
@@ -1962,8 +1962,8 @@ abstract class ha_Sub3 extends ha {
 				anInt4536 = dimension.width;
 				anInt4534 = dimension.height;
 			} while (false);
-			((ha_Sub3) this).anInt4527 = anInt4536;
-			((ha_Sub3) this).anInt4531 = anInt4534;
+			this.anInt4527 = anInt4536;
+			this.anInt4531 = anInt4534;
 			method2031(-12545);
 			method1943(i + 10885);
 			method2038((byte) 115);
@@ -1978,7 +1978,7 @@ abstract class ha_Sub3 extends ha {
 
 	final void method1783(int i) {
 		try {
-			if ((i ^ 0xffffffff) != -2)
+			if (i != 1)
 				throw new IllegalArgumentException("");
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.OF(" + i + ')');
@@ -1990,8 +1990,8 @@ abstract class ha_Sub3 extends ha {
 	final void method2005(Interface4 interface4, int i) {
 		try {
 			int i_141_ = -43 / ((-60 - i) / 51);
-			if (interface4 != anInterface4Array4617[((ha_Sub3) this).anInt4579]) {
-				anInterface4Array4617[((ha_Sub3) this).anInt4579] = interface4;
+			if (interface4 != anInterface4Array4617[this.anInt4579]) {
+				anInterface4Array4617[this.anInt4579] = interface4;
 				do {
 					if (interface4 != null) {
 						interface4.method5(101);
@@ -2013,7 +2013,7 @@ abstract class ha_Sub3 extends ha {
 
 	final void method2008(Class258 class258, byte i) {
 		try {
-			((ha_Sub3) this).aClass258Array4644[((ha_Sub3) this).anInt4579] = class258;
+			this.aClass258Array4644[this.anInt4579] = class258;
 			if (i >= 25)
 				method2014(105);
 		} catch (RuntimeException runtimeexception) {
@@ -2047,7 +2047,7 @@ abstract class ha_Sub3 extends ha {
 
 	final boolean method1823() {
 		try {
-			return ((ha_Sub3) this).aBoolean4559;
+			return this.aBoolean4559;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.AF(" + ')');
 		}
@@ -2055,10 +2055,10 @@ abstract class ha_Sub3 extends ha {
 
 	final void L(int i, int i_151_, int i_152_) {
 		try {
-			if ((((ha_Sub3) this).anInt4636 ^ 0xffffffff) != (i ^ 0xffffffff) || ((ha_Sub3) this).anInt4581 != i_151_ || ((((ha_Sub3) this).anInt4601 ^ 0xffffffff) != (i_152_ ^ 0xffffffff))) {
-				((ha_Sub3) this).anInt4636 = i;
-				((ha_Sub3) this).anInt4601 = i_152_;
-				((ha_Sub3) this).anInt4581 = i_151_;
+			if (i != this.anInt4636 || this.anInt4581 != i_151_ || (i_152_ != this.anInt4601)) {
+				this.anInt4636 = i;
+				this.anInt4601 = i_152_;
+				this.anInt4581 = i_151_;
 				method2020(-123);
 				method1999((byte) 112);
 			}
@@ -2070,14 +2070,14 @@ abstract class ha_Sub3 extends ha {
 	final void method2013(boolean bool, int i) {
 		do {
 			try {
-				if (bool != ((ha_Sub3) this).aBoolean4577) {
-					((ha_Sub3) this).aBoolean4577 = bool;
+				if (bool != this.aBoolean4577) {
+					this.aBoolean4577 = bool;
 					method1974(i + -2103);
 					anInt4633 &= ~0x1f;
 				}
 				if (i == 2103)
 					break;
-				((ha_Sub3) this).aFloat4642 = -1.3455139F;
+				this.aFloat4642 = -1.3455139F;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "uv.GJ(" + bool + ',' + i + ')');
 			}
@@ -2093,7 +2093,7 @@ abstract class ha_Sub3 extends ha {
 					aClass76_4598.method749(8);
 				if (i > 37)
 					break;
-				((ha_Sub3) this).anInt4538 = 2;
+				this.anInt4538 = 2;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "uv.DI(" + i + ')');
 			}
@@ -2103,14 +2103,14 @@ abstract class ha_Sub3 extends ha {
 
 	final void HA(int i, int i_153_, int i_154_, int i_155_, int[] is) {
 		try {
-			float f = (((ha_Sub3) this).aClass111_Sub3_4543.method2135((float) i_153_, (float) i_154_, (float) i, false));
-			if ((float) ((ha_Sub3) this).anInt4640 > f || f > (float) ((ha_Sub3) this).anInt4605)
+			float f = (this.aClass111_Sub3_4543.method2135((float) i_153_, (float) i_154_, (float) i, false));
+			if ((float) this.anInt4640 > f || f > (float) this.anInt4605)
 				is[0] = is[1] = is[2] = -1;
 			else {
-				int i_156_ = (int) ((float) ((ha_Sub3) this).anInt4593 * (((ha_Sub3) this).aClass111_Sub3_4543.method2126((float) i_154_, (float) i, (float) i_153_, 118)) / (float) i_155_);
-				int i_157_ = (int) ((float) ((ha_Sub3) this).anInt4589 * (((ha_Sub3) this).aClass111_Sub3_4543.method2139((float) i_153_, (float) i, (float) i_154_, true)) / (float) i_155_);
-				is[0] = (int) (-((ha_Sub3) this).aFloat4641 + (float) i_156_);
-				is[1] = (int) (-((ha_Sub3) this).aFloat4610 + (float) i_157_);
+				int i_156_ = (int) ((float) this.anInt4593 * (this.aClass111_Sub3_4543.method2126((float) i_154_, (float) i, (float) i_153_, 118)) / (float) i_155_);
+				int i_157_ = (int) ((float) this.anInt4589 * (this.aClass111_Sub3_4543.method2139((float) i_153_, (float) i, (float) i_154_, true)) / (float) i_155_);
+				is[0] = (int) (-this.aFloat4641 + (float) i_156_);
+				is[1] = (int) (-this.aFloat4610 + (float) i_157_);
 				is[2] = (int) f;
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -2120,7 +2120,7 @@ abstract class ha_Sub3 extends ha {
 
 	final int[] Y() {
 		try {
-			return (new int[] { ((ha_Sub3) this).anInt4645, ((ha_Sub3) this).anInt4587, ((ha_Sub3) this).anInt4593, ((ha_Sub3) this).anInt4589 });
+			return (new int[] { this.anInt4645, this.anInt4587, this.anInt4593, this.anInt4589 });
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.Y(" + ')');
 		}
@@ -2133,8 +2133,8 @@ abstract class ha_Sub3 extends ha {
 				if (i != 0) {
 					if (i == 2)
 						method2019(Class288.aClass128_3381, Class323.aClass128_2715, 22831);
-					else if ((i ^ 0xffffffff) != -4) {
-						if ((i ^ 0xffffffff) == -5)
+					else if (i != 3) {
+						if (i == 4)
 							method2019(Class28.aClass128_286, Class28.aClass128_286, 22831);
 					} else
 						method2019(Class249.aClass128_1903, Class1.aClass128_64, 22831);
@@ -2162,29 +2162,29 @@ abstract class ha_Sub3 extends ha {
 	final int JA(int i, int i_160_, int i_161_, int i_162_, int i_163_, int i_164_) {
 		try {
 			int i_165_ = 0;
-			float f = ((((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4708) * (float) i + (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4713) * (float) i_160_ + ((float) i_161_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4704)) + (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4703));
+			float f = ((this.aClass111_Sub3_4543.aFloat4708) * (float) i + (this.aClass111_Sub3_4543.aFloat4713) * (float) i_160_ + ((float) i_161_ * (this.aClass111_Sub3_4543.aFloat4704)) + (this.aClass111_Sub3_4543.aFloat4703));
 			if (f < 1.0F)
 				f = 1.0F;
-			float f_166_ = (((float) i_162_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4708)) + (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4713) * (float) i_163_ + ((float) i_164_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4704)) + (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4703));
+			float f_166_ = (((float) i_162_ * (this.aClass111_Sub3_4543.aFloat4708)) + (this.aClass111_Sub3_4543.aFloat4713) * (float) i_163_ + ((float) i_164_ * (this.aClass111_Sub3_4543.aFloat4704)) + (this.aClass111_Sub3_4543.aFloat4703));
 			if (f_166_ < 1.0F)
 				f_166_ = 1.0F;
-			if (!(f < (float) ((ha_Sub3) this).anInt4640) || !(f_166_ < (float) ((ha_Sub3) this).anInt4640)) {
-				if (f > (float) ((ha_Sub3) this).anInt4605 && f_166_ > (float) ((ha_Sub3) this).anInt4605)
+			if (!(f < (float) this.anInt4640) || !(f_166_ < (float) this.anInt4640)) {
+				if (f > (float) this.anInt4605 && f_166_ > (float) this.anInt4605)
 					i_165_ |= 0x20;
 			} else
 				i_165_ |= 0x10;
-			int i_167_ = (int) ((((float) i_161_ * ((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4705) + ((((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4711 * (float) i_160_) + (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4712) * (float) i) + ((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4702) * (float) ((ha_Sub3) this).anInt4593 / f);
-			int i_168_ = (int) ((float) ((ha_Sub3) this).anInt4593 * (((float) i_164_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4705)) + ((((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4712) * (float) i_162_ + ((float) i_163_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4711))) + (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4702)) / f_166_);
-			if (!((float) i_167_ < ((ha_Sub3) this).aFloat4641) || !((float) i_168_ < ((ha_Sub3) this).aFloat4641)) {
-				if (((ha_Sub3) this).aFloat4647 < (float) i_167_ && (float) i_168_ > ((ha_Sub3) this).aFloat4647)
+			int i_167_ = (int) ((((float) i_161_ * this.aClass111_Sub3_4543.aFloat4705) + ((this.aClass111_Sub3_4543.aFloat4711 * (float) i_160_) + (this.aClass111_Sub3_4543.aFloat4712) * (float) i) + this.aClass111_Sub3_4543.aFloat4702) * (float) this.anInt4593 / f);
+			int i_168_ = (int) ((float) this.anInt4593 * (((float) i_164_ * (this.aClass111_Sub3_4543.aFloat4705)) + ((this.aClass111_Sub3_4543.aFloat4712) * (float) i_162_ + ((float) i_163_ * (this.aClass111_Sub3_4543.aFloat4711))) + (this.aClass111_Sub3_4543.aFloat4702)) / f_166_);
+			if (!((float) i_167_ < this.aFloat4641) || !((float) i_168_ < this.aFloat4641)) {
+				if (this.aFloat4647 < (float) i_167_ && (float) i_168_ > this.aFloat4647)
 					i_165_ |= 0x2;
 			} else
 				i_165_ |= 0x1;
-			int i_169_ = (int) ((((float) i_160_ * ((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4706) + (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4714 * (float) i) + (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4710 * (float) i_161_) + ((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4709) * (float) ((ha_Sub3) this).anInt4589 / f);
-			int i_170_ = (int) ((float) ((ha_Sub3) this).anInt4589 * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4709 + ((((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4710) * (float) i_164_ + ((((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4706) * (float) i_163_ + ((float) i_162_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4714))))) / f_166_);
-			if (((ha_Sub3) this).aFloat4610 > (float) i_169_ && ((ha_Sub3) this).aFloat4610 > (float) i_170_)
+			int i_169_ = (int) ((((float) i_160_ * this.aClass111_Sub3_4543.aFloat4706) + (this.aClass111_Sub3_4543.aFloat4714 * (float) i) + (this.aClass111_Sub3_4543.aFloat4710 * (float) i_161_) + this.aClass111_Sub3_4543.aFloat4709) * (float) this.anInt4589 / f);
+			int i_170_ = (int) ((float) this.anInt4589 * (this.aClass111_Sub3_4543.aFloat4709 + ((this.aClass111_Sub3_4543.aFloat4710) * (float) i_164_ + ((this.aClass111_Sub3_4543.aFloat4706) * (float) i_163_ + ((float) i_162_ * (this.aClass111_Sub3_4543.aFloat4714))))) / f_166_);
+			if (this.aFloat4610 > (float) i_169_ && this.aFloat4610 > (float) i_170_)
 				i_165_ |= 0x4;
-			else if ((float) i_169_ > ((ha_Sub3) this).aFloat4584 && ((ha_Sub3) this).aFloat4584 < (float) i_170_)
+			else if ((float) i_169_ > this.aFloat4584 && this.aFloat4584 < (float) i_170_)
 				i_165_ |= 0x8;
 			return i_165_;
 		} catch (RuntimeException runtimeexception) {
@@ -2207,13 +2207,13 @@ abstract class ha_Sub3 extends ha {
 			try {
 				boolean bool = false;
 				if (i == 22831) {
-					if (class128_171_ != (((ha_Sub3) this).aClass128Array4585[((ha_Sub3) this).anInt4579])) {
-						((ha_Sub3) this).aClass128Array4585[(((ha_Sub3) this).anInt4579)] = class128_171_;
+					if (class128_171_ != (this.aClass128Array4585[this.anInt4579])) {
+						this.aClass128Array4585[(this.anInt4579)] = class128_171_;
 						method2011(2);
 						bool = true;
 					}
-					if ((((ha_Sub3) this).aClass128Array4639[((ha_Sub3) this).anInt4579]) != class128) {
-						((ha_Sub3) this).aClass128Array4639[(((ha_Sub3) this).anInt4579)] = class128;
+					if ((this.aClass128Array4639[this.anInt4579]) != class128) {
+						this.aClass128Array4639[(this.anInt4579)] = class128;
 						method1958((byte) -48);
 						bool = true;
 					}
@@ -2231,18 +2231,18 @@ abstract class ha_Sub3 extends ha {
 	final void A(int i, aa var_aa, int i_172_, int i_173_) {
 		try {
 			aa_Sub2 var_aa_Sub2 = (aa_Sub2) var_aa;
-			Interface4_Impl2 interface4_impl2 = ((aa_Sub2) var_aa_Sub2).anInterface4_Impl2_3563;
+			Interface4_Impl2 interface4_impl2 = var_aa_Sub2.anInterface4_Impl2_3563;
 			method2052(false);
 			method2005(interface4_impl2, 95);
 			method2001(1, 100);
 			method2019(Class288.aClass128_3381, Class288.aClass128_3381, 22831);
 			method2051(0, -60, Class64_Sub16.aClass65_3681);
 			method1984(2, i);
-			((ha_Sub3) this).aClass111_Sub3_4542.method2137((float) ((ha_Sub3) this).anInt4531, (byte) -110, (float) ((ha_Sub3) this).anInt4527, 0.0F);
+			this.aClass111_Sub3_4542.method2137((float) this.anInt4531, (byte) -110, (float) this.anInt4527, 0.0F);
 			method1935(1);
-			((ha_Sub3) this).aClass111_Sub3Array4609[0].method2137(interface4_impl2.method45(-8473, (float) ((ha_Sub3) this).anInt4531), (byte) -128, interface4_impl2.method42((byte) 115, (float) ((ha_Sub3) this).anInt4527), 1.0F);
-			((ha_Sub3) this).aClass111_Sub3Array4609[0].method2141(-94, interface4_impl2.method45(-8473, (float) -i_173_), 0.0F, interface4_impl2.method42((byte) -124, (float) -i_172_));
-			((ha_Sub3) this).aClass258Array4644[0] = Class246_Sub3_Sub4_Sub5.aClass258_6260;
+			this.aClass111_Sub3Array4609[0].method2137(interface4_impl2.method45(-8473, (float) this.anInt4531), (byte) -128, interface4_impl2.method42((byte) 115, (float) this.anInt4527), 1.0F);
+			this.aClass111_Sub3Array4609[0].method2141(-94, interface4_impl2.method45(-8473, (float) -i_173_), 0.0F, interface4_impl2.method42((byte) -124, (float) -i_172_));
+			this.aClass258Array4644[0] = Class246_Sub3_Sub4_Sub5.aClass258_6260;
 			method2014(113);
 			method2002((byte) -104);
 			method1985(2);
@@ -2263,7 +2263,7 @@ abstract class ha_Sub3 extends ha {
 					method1936(0, aHashtable4523.get(canvas), canvas);
 				}
 				Class18.method248(true, 125, false);
-				((ha_Sub3) this).aNativeInterface4526.release();
+				this.aNativeInterface4526.release();
 				aBoolean4550 = true;
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -2289,7 +2289,7 @@ abstract class ha_Sub3 extends ha {
 
 	final int method1822() {
 		try {
-			return ((ha_Sub3) this).anInt4565 + -2;
+			return this.anInt4565 + -2;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.LG(" + ')');
 		}
@@ -2297,21 +2297,21 @@ abstract class ha_Sub3 extends ha {
 
 	final void da(int i, int i_174_, int i_175_, int[] is) {
 		try {
-			float f = (((ha_Sub3) this).aClass111_Sub3_4543.method2135((float) i_174_, (float) i_175_, (float) i, false));
+			float f = (this.aClass111_Sub3_4543.method2135((float) i_174_, (float) i_175_, (float) i, false));
 			int i_176_;
 			int i_177_;
 			do {
 				if (!(f < -0.0078125F) && !(f > 0.0078125F)) {
-					i_176_ = ((ha_Sub3) this).anInt4587;
-					i_177_ = ((ha_Sub3) this).anInt4645;
+					i_176_ = this.anInt4587;
+					i_177_ = this.anInt4645;
 					if (!client.aBoolean3553)
 						break;
 				}
-				i_177_ = (int) ((float) ((ha_Sub3) this).anInt4593 * (((ha_Sub3) this).aClass111_Sub3_4543.method2126((float) i_175_, (float) i, (float) i_174_, 119)) / f);
-				i_176_ = (int) ((float) ((ha_Sub3) this).anInt4589 * (((ha_Sub3) this).aClass111_Sub3_4543.method2139((float) i_174_, (float) i, (float) i_175_, true)) / f);
+				i_177_ = (int) ((float) this.anInt4593 * (this.aClass111_Sub3_4543.method2126((float) i_175_, (float) i, (float) i_174_, 119)) / f);
+				i_176_ = (int) ((float) this.anInt4589 * (this.aClass111_Sub3_4543.method2139((float) i_174_, (float) i, (float) i_175_, true)) / f);
 			} while (false);
-			is[1] = (int) ((float) i_176_ - ((ha_Sub3) this).aFloat4610);
-			is[0] = (int) ((float) i_177_ - ((ha_Sub3) this).aFloat4641);
+			is[1] = (int) ((float) i_176_ - this.aFloat4610);
+			is[0] = (int) ((float) i_177_ - this.aFloat4641);
 			is[2] = (int) f;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("uv.da(" + i + ',' + i_174_ + ',' + i_175_ + ',' + (is != null ? "{...}" : "null") + ')'));
@@ -2325,14 +2325,14 @@ abstract class ha_Sub3 extends ha {
 			anInterface2_Impl1_4652 = method2060(false, 71);
 			int i_178_ = -86 / ((i - 38) / 57);
 			anInterface2_Impl1_4652.method74(-20279, 12, 3096);
-			for (int i_179_ = 0; (i_179_ ^ 0xffffffff) > -5; i_179_++) {
+			for (int i_179_ = 0; i_179_ < 4; i_179_++) {
 				Buffer buffer = anInterface2_Impl1_4652.method75(true, (byte) 27);
 				if (buffer != null) {
 					Stream stream = method2043(24022, buffer);
 					stream.b(0.0F);
 					stream.b(0.0F);
 					stream.b(0.0F);
-					for (int i_180_ = 0; (i_180_ ^ 0xffffffff) >= -257; i_180_++) {
+					for (int i_180_ = 0; i_180_ <= 256; i_180_++) {
 						double d = (3.141592653589793 * (double) (i_180_ * 2) / 256.0);
 						float f = (float) Math.cos(d);
 						float f_181_ = (float) Math.sin(d);
@@ -2397,7 +2397,7 @@ abstract class ha_Sub3 extends ha {
 			if (i != 0)
 				return null;
 			if (!aBoolean4621) {
-				aClass111_Sub3_4547.method2130((((ha_Sub3) this).aClass111_Sub3_4545), (((ha_Sub3) this).aClass111_Sub3_4542));
+				aClass111_Sub3_4547.method2130((this.aClass111_Sub3_4545), (this.aClass111_Sub3_4542));
 				aBoolean4621 = true;
 			}
 			return aClass111_Sub3_4547;
@@ -2409,14 +2409,14 @@ abstract class ha_Sub3 extends ha {
 	final void method2028(boolean bool, byte i) {
 		do {
 			try {
-				if (!((ha_Sub3) this).aBoolean4562 != !bool) {
-					((ha_Sub3) this).aBoolean4562 = bool;
+				if (!this.aBoolean4562 != !bool) {
+					this.aBoolean4562 = bool;
 					method1999((byte) 112);
 					anInt4633 &= ~0x1f;
 				}
 				if (i == -101)
 					break;
-				((ha_Sub3) this).anInt4578 = 35;
+				this.anInt4578 = 35;
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "uv.OJ(" + bool + ',' + i + ')');
 			}
@@ -2429,9 +2429,9 @@ abstract class ha_Sub3 extends ha {
 			try {
 				if (i > -37)
 					method2037(null, 65, (byte) 115, 56);
-				if (((ha_Sub3) this).aBoolean4637 != !bool)
+				if (this.aBoolean4637 != !bool)
 					break;
-				((ha_Sub3) this).aBoolean4637 = bool;
+				this.aBoolean4637 = bool;
 				method1955(-5668);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "uv.FF(" + i + ',' + bool + ')');
@@ -2447,7 +2447,7 @@ abstract class ha_Sub3 extends ha {
 			try {
 				if (i == -12545) {
 					aBoolean4574 = false;
-					if (Class64_Sub4.aClass204_3649 != ((ha_Sub3) this).aClass204_4551)
+					if (Class64_Sub4.aClass204_3649 != this.aClass204_4551)
 						break;
 					method1996(i ^ ~0x2989);
 					method1962(-110);
@@ -2471,11 +2471,11 @@ abstract class ha_Sub3 extends ha {
 
 	final void method1778(int i) {
 		try {
-			if ((i ^ 0xffffffff) > -129 || (i ^ 0xffffffff) < -1025)
+			if (i < 128 || i > 1024)
 				throw new IllegalArgumentException();
 			if (aClass319_4624 != null)
 				aClass319_4624.method3659(-3);
-			((ha_Sub3) this).anInt4607 = i;
+			this.anInt4607 = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.CH(" + i + ')');
 		}
@@ -2484,10 +2484,10 @@ abstract class ha_Sub3 extends ha {
 	final void method1818(int i, Class98_Sub5[] class98_sub5s) {
 		do {
 			try {
-				for (int i_189_ = 0; (i ^ 0xffffffff) < (i_189_ ^ 0xffffffff); i_189_++)
-					((ha_Sub3) this).aClass98_Sub5Array4597[i_189_] = class98_sub5s[i_189_];
-				((ha_Sub3) this).anInt4619 = i;
-				if (!((ha_Sub3) this).aClass204_4551.method2708(100))
+				for (int i_189_ = 0; i_189_ < i; i_189_++)
+					this.aClass98_Sub5Array4597[i_189_] = class98_sub5s[i_189_];
+				this.anInt4619 = i;
+				if (!this.aClass204_4551.method2708(100))
 					break;
 				method2035(-14713);
 			} catch (RuntimeException runtimeexception) {
@@ -2529,7 +2529,7 @@ abstract class ha_Sub3 extends ha {
 
 	final Class111 method1752() {
 		try {
-			return ((ha_Sub3) this).aClass111_Sub3_4543;
+			return this.aClass111_Sub3_4543;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.NE(" + ')');
 		}
@@ -2537,10 +2537,10 @@ abstract class ha_Sub3 extends ha {
 
 	void method2035(int i) {
 		try {
-			((ha_Sub3) this).anInt4628 = ((ha_Sub3) this).anInt4619;
+			this.anInt4628 = this.anInt4619;
 			if (i != -14713)
-				((ha_Sub3) this).aBoolean4571 = true;
-			((ha_Sub3) this).anInt4619 = 0;
+				this.aBoolean4571 = true;
+			this.anInt4619 = 0;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.BC(" + i + ')');
 		}
@@ -2564,7 +2564,7 @@ abstract class ha_Sub3 extends ha {
 				aBoolean4570 = false;
 				if (i >= 103) {
 					method2000((byte) -117);
-					if (ParamType.aClass204_1206 != ((ha_Sub3) this).aClass204_4551)
+					if (ParamType.aClass204_1206 != this.aClass204_4551)
 						break;
 					method1962(-107);
 				}
@@ -2582,29 +2582,29 @@ abstract class ha_Sub3 extends ha {
 	final void method2039(boolean bool, int i, int i_205_, boolean bool_206_) {
 		try {
 			if (i != 0)
-				((ha_Sub3) this).aFloat4568 = 0.2778904F;
-			if (i_205_ != anInt4583 || !aBoolean4567 != !((ha_Sub3) this).aBoolean4563) {
+				this.aFloat4568 = 0.2778904F;
+			if (i_205_ != anInt4583 || !aBoolean4567 != !this.aBoolean4563) {
 				Interface4_Impl2 interface4_impl2 = null;
 				int i_207_ = 0;
 				byte i_208_ = 0;
 				int i_209_ = 0;
-				byte i_210_ = !((ha_Sub3) this).aBoolean4563 ? (byte) 0 : (byte) 3;
+				byte i_210_ = !this.aBoolean4563 ? (byte) 0 : (byte) 3;
 				if (i_205_ >= 0) {
 					interface4_impl2 = aClass319_4624.method3661(0, i_205_);
-					Class238 class238 = ((ha) this).aD938.method11(i_205_, i + -28755);
-					if (((Class238) class238).aByte1823 != 0 || ((((Class238) class238).aByte1837 ^ 0xffffffff) != -1)) {
-						int i_211_ = !((Class238) class238).aBoolean1822 ? 128 : 64;
+					Class238 class238 = this.aD938.method11(i_205_, i + -28755);
+					if (class238.aByte1823 != 0 || (class238.aByte1837 != 0)) {
+						int i_211_ = !class238.aBoolean1822 ? 128 : 64;
 						int i_212_ = 50 * i_211_;
 						Class111_Sub3 class111_sub3 = method1957((byte) 61);
-						class111_sub3.method2119(0.0F, 1, ((float) (((ha_Sub3) this).anInt4556 % i_212_ * ((Class238) class238).aByte1837) / (float) i_212_), ((float) (((Class238) class238).aByte1823 * (((ha_Sub3) this).anInt4556 % i_212_)) / (float) i_212_));
+						class111_sub3.method2119(0.0F, 1, ((float) (this.anInt4556 % i_212_ * class238.aByte1837) / (float) i_212_), ((float) (class238.aByte1823 * (this.anInt4556 % i_212_)) / (float) i_212_));
 						method2008(Class246_Sub3_Sub4_Sub5.aClass258_6260, (byte) 114);
 					} else
 						method1985(2);
-					i_207_ = ((Class238) class238).anInt1821;
-					if (!((ha_Sub3) this).aBoolean4563) {
-						i_208_ = ((Class238) class238).aByte1816;
-						i_210_ = ((Class238) class238).aByte1820;
-						i_209_ = ((Class238) class238).anInt1835;
+					i_207_ = class238.anInt1821;
+					if (!this.aBoolean4563) {
+						i_208_ = class238.aByte1816;
+						i_210_ = class238.aByte1820;
+						i_209_ = class238.anInt1835;
 					}
 				} else
 					method1985(2);
@@ -2615,7 +2615,7 @@ abstract class ha_Sub3 extends ha {
 				} else
 					aClass76_4598.method742(6, i_207_, interface4_impl2);
 				anInt4583 = i_205_;
-				aBoolean4567 = ((ha_Sub3) this).aBoolean4563;
+				aBoolean4567 = this.aBoolean4563;
 			}
 			anInt4633 &= ~0x7;
 		} catch (RuntimeException runtimeexception) {
@@ -2625,24 +2625,24 @@ abstract class ha_Sub3 extends ha {
 
 	final float[] method2040(float[] fs, int i) {
 		try {
-			fs[4] = ((ha_Sub3) this).aFloatArray4566[1];
-			fs[8] = ((ha_Sub3) this).aFloatArray4566[2];
-			fs[0] = ((ha_Sub3) this).aFloatArray4566[0];
-			fs[12] = ((ha_Sub3) this).aFloatArray4566[3];
-			fs[5] = ((ha_Sub3) this).aFloatArray4566[5];
-			fs[13] = ((ha_Sub3) this).aFloatArray4566[7];
+			fs[4] = this.aFloatArray4566[1];
+			fs[8] = this.aFloatArray4566[2];
+			fs[0] = this.aFloatArray4566[0];
+			fs[12] = this.aFloatArray4566[3];
+			fs[5] = this.aFloatArray4566[5];
+			fs[13] = this.aFloatArray4566[7];
 			if (i != 32227)
 				return null;
-			fs[9] = ((ha_Sub3) this).aFloatArray4566[6];
-			fs[2] = ((ha_Sub3) this).aFloatArray4566[8];
-			fs[1] = ((ha_Sub3) this).aFloatArray4566[4];
-			fs[3] = ((ha_Sub3) this).aFloatArray4566[12];
-			fs[10] = ((ha_Sub3) this).aFloatArray4566[10];
-			fs[14] = ((ha_Sub3) this).aFloatArray4566[11];
-			fs[6] = ((ha_Sub3) this).aFloatArray4566[9];
-			fs[7] = ((ha_Sub3) this).aFloatArray4566[13];
-			fs[15] = ((ha_Sub3) this).aFloatArray4566[15];
-			fs[11] = ((ha_Sub3) this).aFloatArray4566[14];
+			fs[9] = this.aFloatArray4566[6];
+			fs[2] = this.aFloatArray4566[8];
+			fs[1] = this.aFloatArray4566[4];
+			fs[3] = this.aFloatArray4566[12];
+			fs[10] = this.aFloatArray4566[10];
+			fs[14] = this.aFloatArray4566[11];
+			fs[6] = this.aFloatArray4566[9];
+			fs[7] = this.aFloatArray4566[13];
+			fs[15] = this.aFloatArray4566[15];
+			fs[11] = this.aFloatArray4566[14];
 			return fs;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("uv.SF(" + (fs != null ? "{...}" : "null") + ',' + i + ')'));
@@ -2668,7 +2668,7 @@ abstract class ha_Sub3 extends ha {
 	final void method1786(Canvas canvas) {
 		do {
 			try {
-				if (canvas == ((ha_Sub3) this).aCanvas4533)
+				if (canvas == this.aCanvas4533)
 					throw new RuntimeException();
 				if (!aHashtable4523.containsKey(canvas))
 					break;
@@ -2683,7 +2683,7 @@ abstract class ha_Sub3 extends ha {
 
 	final int XA() {
 		try {
-			return ((ha_Sub3) this).anInt4605;
+			return this.anInt4605;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.XA(" + ')');
 		}
@@ -2693,10 +2693,10 @@ abstract class ha_Sub3 extends ha {
 
 	final void K(int[] is) {
 		try {
-			is[0] = ((ha_Sub3) this).anInt4602;
-			is[2] = ((ha_Sub3) this).anInt4575;
-			is[1] = ((ha_Sub3) this).anInt4558;
-			is[3] = ((ha_Sub3) this).anInt4638;
+			is[0] = this.anInt4602;
+			is[2] = this.anInt4575;
+			is[1] = this.anInt4558;
+			is[3] = this.anInt4638;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.K(" + (is != null ? "{...}" : "null") + ')');
 		}
@@ -2722,7 +2722,7 @@ abstract class ha_Sub3 extends ha {
 		try {
 			aStream4603.a(buffer);
 			if (i != 24022)
-				((ha_Sub3) this).aFloat4642 = -2.1684475F;
+				this.aFloat4642 = -2.1684475F;
 			return aStream4603;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("uv.RH(" + i + ',' + (buffer != null ? "{...}" : "null") + ')'));
@@ -2735,9 +2735,9 @@ abstract class ha_Sub3 extends ha {
 		do {
 			try {
 				bool &= method1747();
-				if (!bool && ((i_217_ ^ 0xffffffff) == -5 || (i_217_ ^ 0xffffffff) == -9 || (i_217_ ^ 0xffffffff) == -10)) {
+				if (!bool && (i_217_ == 4 || i_217_ == 8 || i_217_ == 9)) {
 					i_217_ = 2;
-					i_216_ = (i_217_ ^ 0xffffffff) != -5 ? 1 : 0x1 & i_219_;
+					i_216_ = i_217_ != 4 ? 1 : 0x1 & i_219_;
 					i_219_ = 0;
 				}
 				if (i >= -93)
@@ -2762,10 +2762,10 @@ abstract class ha_Sub3 extends ha {
 					anInt4595 = i_216_;
 					anInt4612 = i_217_;
 				} else {
-					if ((anInt4612 ^ 0xffffffff) == -1)
+					if (anInt4612 == 0)
 						break;
 					aClass76Array4613[anInt4612 & 0x7fffffff].method743(99, bool_218_);
-					if ((i_219_ ^ 0xffffffff) != (anInt4635 ^ 0xffffffff) || (i_216_ ^ 0xffffffff) != (anInt4595 ^ 0xffffffff)) {
+					if (anInt4635 != i_219_ || anInt4595 != i_216_) {
 						aClass76Array4613[0x7fffffff & anInt4612].method746(i_219_, i_216_, -125);
 						anInt4635 = i_219_;
 						anInt4595 = i_216_;
@@ -2784,12 +2784,12 @@ abstract class ha_Sub3 extends ha {
 
 	private final void method2048(byte i) {
 		try {
-			((ha_Sub3) this).aFloat4647 = (float) (((ha_Sub3) this).anInt4575 - ((ha_Sub3) this).anInt4645);
-			((ha_Sub3) this).aFloat4610 = (float) (((ha_Sub3) this).anInt4558 + -((ha_Sub3) this).anInt4587);
+			this.aFloat4647 = (float) (this.anInt4575 - this.anInt4645);
+			this.aFloat4610 = (float) (this.anInt4558 + -this.anInt4587);
 			if (i != 32)
-				((ha_Sub3) this).aClass146_Sub3_4649 = null;
-			((ha_Sub3) this).aFloat4641 = (float) (((ha_Sub3) this).anInt4602 - ((ha_Sub3) this).anInt4645);
-			((ha_Sub3) this).aFloat4584 = (float) (-((ha_Sub3) this).anInt4587 + ((ha_Sub3) this).anInt4638);
+				this.aClass146_Sub3_4649 = null;
+			this.aFloat4641 = (float) (this.anInt4602 - this.anInt4645);
+			this.aFloat4584 = (float) (-this.anInt4587 + this.anInt4638);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.OG(" + i + ')');
 		}
@@ -2797,8 +2797,8 @@ abstract class ha_Sub3 extends ha {
 
 	final void method2049(int i, Class111_Sub3 class111_sub3) {
 		try {
-			((ha_Sub3) this).aClass111_Sub3_4542.method2092(class111_sub3);
-			((ha_Sub3) this).aBoolean4540 = false;
+			this.aClass111_Sub3_4542.method2092(class111_sub3);
+			this.aBoolean4540 = false;
 			method2055(i);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("uv.HE(" + i + ',' + (class111_sub3 != null ? "{...}" : "null") + ')'));
@@ -2810,7 +2810,7 @@ abstract class ha_Sub3 extends ha {
 	final void method1741(Canvas canvas, int i, int i_221_) {
 		do {
 			try {
-				if (canvas == ((ha_Sub3) this).aCanvas4533)
+				if (canvas == this.aCanvas4533)
 					throw new RuntimeException();
 				if (aHashtable4523.containsKey(canvas))
 					break;
@@ -2840,8 +2840,8 @@ abstract class ha_Sub3 extends ha {
 
 	final void method1801(int[] is) {
 		try {
-			is[1] = ((ha_Sub3) this).anInt4531;
-			is[0] = ((ha_Sub3) this).anInt4527;
+			is[1] = this.anInt4531;
+			is[0] = this.anInt4527;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.UD(" + (is != null ? "{...}" : "null") + ')');
 		}
@@ -2877,7 +2877,7 @@ abstract class ha_Sub3 extends ha {
 		do {
 			try {
 				if (bool == false) {
-					if ((anInt4633 ^ 0xffffffff) == -3)
+					if (anInt4633 == 2)
 						break;
 					method1993((byte) 103);
 					method2028(false, (byte) -101);
@@ -2922,7 +2922,7 @@ abstract class ha_Sub3 extends ha {
 
 	final int E() {
 		try {
-			return (((ha_Sub3) this).anInt4538 - -((ha_Sub3) this).anInt4541 - -((ha_Sub3) this).anInt4539);
+			return (this.anInt4538 - -this.anInt4541 - -this.anInt4539);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.E(" + ')');
 		}
@@ -2965,8 +2965,8 @@ abstract class ha_Sub3 extends ha {
 			method2051(0, -73, Class64_Sub16.aClass65_3681);
 			method1953(-95, Class64_Sub16.aClass65_3681, 0);
 			method2001(i_248_, 86);
-			((ha_Sub3) this).aClass111_Sub3_4542.method2137((float) (-1 + i_246_), (byte) -109, (float) (i_245_ - 1), 1.0F);
-			((ha_Sub3) this).aClass111_Sub3_4542.method2141(-108, (float) i_244_ - f, 0.0F, -f + (float) i);
+			this.aClass111_Sub3_4542.method2137((float) (-1 + i_246_), (byte) -109, (float) (i_245_ - 1), 1.0F);
+			this.aClass111_Sub3_4542.method2141(-108, (float) i_244_ - f, 0.0F, -f + (float) i);
 			method1935(1);
 			method2059(false, false);
 			method2054(false, 4, Class287_Sub1.aClass232_3420);
@@ -2981,9 +2981,9 @@ abstract class ha_Sub3 extends ha {
 	private final void method2055(int i) {
 		do {
 			try {
-				if (Class64_Sub4.aClass204_3649 == ((ha_Sub3) this).aClass204_4551) {
+				if (Class64_Sub4.aClass204_3649 == this.aClass204_4551) {
 					float f = method2050((byte) 56);
-					((ha_Sub3) this).aClass111_Sub3_4542.method2141(-108, f, 0.0F, f);
+					this.aClass111_Sub3_4542.method2141(-108, f, 0.0F, f);
 				}
 				if (i != 0)
 					aClass111_Sub3_4547 = null;
@@ -3020,22 +3020,22 @@ abstract class ha_Sub3 extends ha {
 
 	final void H(int i, int i_257_, int i_258_, int[] is) {
 		try {
-			float f = (((ha_Sub3) this).aClass111_Sub3_4543.method2135((float) i_257_, (float) i_258_, (float) i, false));
+			float f = (this.aClass111_Sub3_4543.method2135((float) i_257_, (float) i_258_, (float) i, false));
 			int i_259_;
 			int i_260_;
 			do {
 				if (f < -0.0078125F || f > 0.0078125F) {
-					i_259_ = (int) ((float) ((ha_Sub3) this).anInt4593 * (((ha_Sub3) this).aClass111_Sub3_4543.method2126((float) i_258_, (float) i, (float) i_257_, 119)) / f);
-					i_260_ = (int) ((float) ((ha_Sub3) this).anInt4589 * (((ha_Sub3) this).aClass111_Sub3_4543.method2139((float) i_257_, (float) i, (float) i_258_, true)) / f);
+					i_259_ = (int) ((float) this.anInt4593 * (this.aClass111_Sub3_4543.method2126((float) i_258_, (float) i, (float) i_257_, 119)) / f);
+					i_260_ = (int) ((float) this.anInt4589 * (this.aClass111_Sub3_4543.method2139((float) i_257_, (float) i, (float) i_258_, true)) / f);
 					if (!client.aBoolean3553)
 						break;
 				}
-				i_259_ = ((ha_Sub3) this).anInt4645;
-				i_260_ = ((ha_Sub3) this).anInt4587;
+				i_259_ = this.anInt4645;
+				i_260_ = this.anInt4587;
 			} while (false);
 			is[2] = (int) f;
-			is[0] = (int) ((float) i_259_ - ((ha_Sub3) this).aFloat4641);
-			is[1] = (int) (-((ha_Sub3) this).aFloat4610 + (float) i_260_);
+			is[0] = (int) ((float) i_259_ - this.aFloat4641);
+			is[1] = (int) (-this.aFloat4610 + (float) i_260_);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("uv.H(" + i + ',' + i_257_ + ',' + i_258_ + ',' + (is != null ? "{...}" : "null") + ')'));
 		}
@@ -3053,7 +3053,7 @@ abstract class ha_Sub3 extends ha {
 		try {
 			if (i != 1)
 				aClass256_4669 = null;
-			return (((ha_Sub3) this).aClass111_Sub3Array4609[((ha_Sub3) this).anInt4579]);
+			return (this.aClass111_Sub3Array4609[this.anInt4579]);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "uv.MI(" + i + ')');
 		}
@@ -3105,24 +3105,24 @@ abstract class ha_Sub3 extends ha {
 	final int r(int i, int i_266_, int i_267_, int i_268_, int i_269_, int i_270_, int i_271_) {
 		try {
 			int i_272_ = 0;
-			float f = (((float) i_267_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4704)) + ((float) i * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4708) + ((float) i_266_ * ((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4713)) + (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4703));
-			float f_273_ = (((float) i_268_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4708)) + ((float) i_269_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4713)) + ((float) i_270_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4704)) + (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4703));
-			if (!((float) ((ha_Sub3) this).anInt4640 > f) || !(f_273_ < (float) ((ha_Sub3) this).anInt4640)) {
-				if ((float) ((ha_Sub3) this).anInt4605 < f && f_273_ > (float) ((ha_Sub3) this).anInt4605)
+			float f = (((float) i_267_ * (this.aClass111_Sub3_4543.aFloat4704)) + ((float) i * (this.aClass111_Sub3_4543.aFloat4708) + ((float) i_266_ * this.aClass111_Sub3_4543.aFloat4713)) + (this.aClass111_Sub3_4543.aFloat4703));
+			float f_273_ = (((float) i_268_ * (this.aClass111_Sub3_4543.aFloat4708)) + ((float) i_269_ * (this.aClass111_Sub3_4543.aFloat4713)) + ((float) i_270_ * (this.aClass111_Sub3_4543.aFloat4704)) + (this.aClass111_Sub3_4543.aFloat4703));
+			if (!((float) this.anInt4640 > f) || !(f_273_ < (float) this.anInt4640)) {
+				if ((float) this.anInt4605 < f && f_273_ > (float) this.anInt4605)
 					i_272_ |= 0x20;
 			} else
 				i_272_ |= 0x10;
-			int i_274_ = (int) (((((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4705 * (float) i_267_) + (((float) i_266_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4711)) + (float) i * ((Class111_Sub3) (((ha_Sub3) this).aClass111_Sub3_4543)).aFloat4712) + ((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4702) * (float) ((ha_Sub3) this).anInt4593 / (float) i_271_);
-			int i_275_ = (int) ((float) ((ha_Sub3) this).anInt4593 * ((((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4712) * (float) i_268_ + ((float) i_269_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4711)) + ((float) i_270_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4705)) + (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4702)) / (float) i_271_);
-			if ((float) i_274_ < ((ha_Sub3) this).aFloat4641 && ((ha_Sub3) this).aFloat4641 > (float) i_275_)
+			int i_274_ = (int) (((this.aClass111_Sub3_4543.aFloat4705 * (float) i_267_) + (((float) i_266_ * (this.aClass111_Sub3_4543.aFloat4711)) + (float) i * this.aClass111_Sub3_4543.aFloat4712) + this.aClass111_Sub3_4543.aFloat4702) * (float) this.anInt4593 / (float) i_271_);
+			int i_275_ = (int) ((float) this.anInt4593 * ((this.aClass111_Sub3_4543.aFloat4712) * (float) i_268_ + ((float) i_269_ * (this.aClass111_Sub3_4543.aFloat4711)) + ((float) i_270_ * (this.aClass111_Sub3_4543.aFloat4705)) + (this.aClass111_Sub3_4543.aFloat4702)) / (float) i_271_);
+			if ((float) i_274_ < this.aFloat4641 && this.aFloat4641 > (float) i_275_)
 				i_272_ |= 0x1;
-			else if ((float) i_274_ > ((ha_Sub3) this).aFloat4647 && ((ha_Sub3) this).aFloat4647 < (float) i_275_)
+			else if ((float) i_274_ > this.aFloat4647 && this.aFloat4647 < (float) i_275_)
 				i_272_ |= 0x2;
-			int i_276_ = (int) ((float) ((ha_Sub3) this).anInt4589 * ((((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4710) * (float) i_267_ + ((((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4714) * (float) i + (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4706) * (float) i_266_) + (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4709)) / (float) i_271_);
-			int i_277_ = (int) ((float) ((ha_Sub3) this).anInt4589 * ((((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4710 * (float) i_270_) + (((float) i_268_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4714)) + ((float) i_269_ * (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4706))) + (((Class111_Sub3) ((ha_Sub3) this).aClass111_Sub3_4543).aFloat4709)) / (float) i_271_);
-			if ((float) i_276_ < ((ha_Sub3) this).aFloat4610 && ((ha_Sub3) this).aFloat4610 > (float) i_277_)
+			int i_276_ = (int) ((float) this.anInt4589 * ((this.aClass111_Sub3_4543.aFloat4710) * (float) i_267_ + ((this.aClass111_Sub3_4543.aFloat4714) * (float) i + (this.aClass111_Sub3_4543.aFloat4706) * (float) i_266_) + (this.aClass111_Sub3_4543.aFloat4709)) / (float) i_271_);
+			int i_277_ = (int) ((float) this.anInt4589 * ((this.aClass111_Sub3_4543.aFloat4710 * (float) i_270_) + (((float) i_268_ * (this.aClass111_Sub3_4543.aFloat4714)) + ((float) i_269_ * (this.aClass111_Sub3_4543.aFloat4706))) + (this.aClass111_Sub3_4543.aFloat4709)) / (float) i_271_);
+			if ((float) i_276_ < this.aFloat4610 && this.aFloat4610 > (float) i_277_)
 				i_272_ |= 0x4;
-			else if (((ha_Sub3) this).aFloat4584 < (float) i_276_ && ((ha_Sub3) this).aFloat4584 < (float) i_277_)
+			else if (this.aFloat4584 < (float) i_276_ && this.aFloat4584 < (float) i_277_)
 				i_272_ |= 0x8;
 			return i_272_;
 		} catch (RuntimeException runtimeexception) {
@@ -3157,7 +3157,7 @@ abstract class ha_Sub3 extends ha {
 	final Interface4_Impl2 method2066(Class164 class164, boolean bool, float[] fs, boolean bool_278_, int i, int i_279_) {
 		try {
 			if (bool_278_ != false)
-				((ha_Sub3) this).aFloat4591 = 1.1575497F;
+				this.aFloat4591 = 1.1575497F;
 			return method1968(0, i, bool, class164, -8, i_279_, 0, fs);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("uv.QI(" + (class164 != null ? "{...}" : "null") + ',' + bool + ',' + (fs != null ? "{...}" : "null") + ',' + bool_278_ + ',' + i + ',' + i_279_ + ')'));
@@ -3177,7 +3177,7 @@ abstract class ha_Sub3 extends ha {
 									break;
 								if (i_282_ == 2)
 									break while_229_;
-								if ((i_282_ ^ 0xffffffff) != -8)
+								if (i_282_ != 7)
 									break while_231_;
 								if (!client.aBoolean3553)
 									break while_230_;
@@ -3186,7 +3186,7 @@ abstract class ha_Sub3 extends ha {
 						} while (false);
 						return new Class76_Sub4(this);
 					} while (false);
-					return new Class76_Sub7(this, ((ha_Sub3) this).aClass195_4529);
+					return new Class76_Sub7(this, this.aClass195_4529);
 				} while (false);
 				return new Class76_Sub5(this);
 			} while (false);

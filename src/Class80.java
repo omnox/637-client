@@ -32,7 +32,7 @@ final class Class80 implements Interface2_Impl1 {
 		boolean bool;
 		try {
 			if (method74(-20279, i_2_, i_1_))
-				return (((Class80) this).anIDirect3DVertexBuffer5337.a(source, 0, 0, anInt5339, !aBoolean5340 ? 0 : 8192));
+				return (this.anIDirect3DVertexBuffer5337.a(source, 0, 0, anInt5339, !aBoolean5340 ? 0 : 8192));
 			if (i >= -79)
 				return false;
 			bool = false;
@@ -57,12 +57,12 @@ final class Class80 implements Interface2_Impl1 {
 					i_5_ |= 0x200;
 				} else
 					i_6_ = 1;
-				if (null != ((Class80) this).anIDirect3DVertexBuffer5337)
-					((Class80) this).anIDirect3DVertexBuffer5337.b(119);
-				((Class80) this).anIDirect3DVertexBuffer5337 = (((ha_Sub3_Sub1) aHa_Sub3_Sub1_5342).anIDirect3DDevice6098.a(anInt5339, i_5_, 0, i_6_, ((Class80) this).anIDirect3DVertexBuffer5337));
+				if (null != this.anIDirect3DVertexBuffer5337)
+					this.anIDirect3DVertexBuffer5337.b(119);
+				this.anIDirect3DVertexBuffer5337 = (aHa_Sub3_Sub1_5342.anIDirect3DDevice6098.a(anInt5339, i_5_, 0, i_6_, this.anIDirect3DVertexBuffer5337));
 				anInt5341 = anInt5339;
 			}
-			if (null != ((Class80) this).anIDirect3DVertexBuffer5337)
+			if (null != this.anIDirect3DVertexBuffer5337)
 				return true;
 			bool = false;
 		} catch (RuntimeException runtimeexception) {
@@ -74,14 +74,14 @@ final class Class80 implements Interface2_Impl1 {
 	public final Buffer method75(boolean bool, byte i) {
 		Buffer buffer;
 		try {
-			if (null == ((Class80) this).anIDirect3DVertexBuffer5337)
+			if (null == this.anIDirect3DVertexBuffer5337)
 				return null;
 			if (i != 27)
 				method74(118, -74, 74);
 			bool &= aBoolean5340;
-			if (!aBoolean5343 && kg.a(-21593, (((Class80) this).anIDirect3DVertexBuffer5337.Lock(0, anInt5341, bool ? 8192 : 0, (((ha_Sub3_Sub1) aHa_Sub3_Sub1_5342).aGeometryBuffer6086))))) {
+			if (!aBoolean5343 && kg.a(-21593, (this.anIDirect3DVertexBuffer5337.Lock(0, anInt5341, bool ? 8192 : 0, (aHa_Sub3_Sub1_5342.aGeometryBuffer6086))))) {
 				aBoolean5343 = true;
-				return ((ha_Sub3_Sub1) aHa_Sub3_Sub1_5342).aGeometryBuffer6086;
+				return aHa_Sub3_Sub1_5342.aGeometryBuffer6086;
 			}
 			buffer = null;
 		} catch (RuntimeException runtimeexception) {
@@ -105,7 +105,7 @@ final class Class80 implements Interface2_Impl1 {
 	public final boolean method71(int i) {
 		boolean bool;
 		try {
-			if (aBoolean5343 && kg.a(-21593, ((Class80) this).anIDirect3DVertexBuffer5337.Unlock())) {
+			if (aBoolean5343 && kg.a(-21593, this.anIDirect3DVertexBuffer5337.Unlock())) {
 				aBoolean5343 = false;
 				return true;
 			}
@@ -122,9 +122,9 @@ final class Class80 implements Interface2_Impl1 {
 		try {
 			if (bool)
 				method74(-75, -93, 67);
-			if (null != ((Class80) this).anIDirect3DVertexBuffer5337) {
-				((Class80) this).anIDirect3DVertexBuffer5337.b(112);
-				((Class80) this).anIDirect3DVertexBuffer5337 = null;
+			if (null != this.anIDirect3DVertexBuffer5337) {
+				this.anIDirect3DVertexBuffer5337.b(112);
+				this.anIDirect3DVertexBuffer5337 = null;
 			}
 			anInt5339 = 0;
 			anInt5341 = 0;

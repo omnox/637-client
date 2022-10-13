@@ -27,66 +27,66 @@ final class Class303 {
 			try {
 				GameInterfaceData class293 = Class246_Sub9.method3139((byte) 72, i_4_, i_2_);
 				if (class293 != null) {
-					if (((GameInterfaceData) class293).anObjectArray2329 != null) {
+					if (class293.anObjectArray2329 != null) {
 						ClientScript2Event class98_sub21 = new ClientScript2Event();
-						((ClientScript2Event) class98_sub21).cs2_params = ((GameInterfaceData) class293).anObjectArray2329;
-						((ClientScript2Event) class98_sub21).component = class293;
-						((ClientScript2Event) class98_sub21).anInt3984 = i;
-						((ClientScript2Event) class98_sub21).aString3978 = string;
+						class98_sub21.cs2_params = class293.anObjectArray2329;
+						class98_sub21.component = class293;
+						class98_sub21.anInt3984 = i;
+						class98_sub21.aString3978 = string;
 						ClientScript2Runtime.method3144(class98_sub21);
 					}
 					if (Class177.anInt1376 == 10 && client.getClickMask(class293).method1666((byte) -72, -1 + i)) {
-						if ((i ^ 0xffffffff) == -2) {
+						if (i == 1) {
 							OutgoingPacket class98_sub11 = (Class246_Sub3_Sub4.method3023(260, Class246_Sub3_Sub5_Sub1.aClass171_6221, Class331.aClass117_2811));
-							Class180.method2604(i_2_, -21568, i_4_, (((GameInterfaceData) class293).anInt2302), class98_sub11);
+							Class180.method2604(i_2_, -21568, i_4_, (class293.anInt2302), class98_sub11);
 							Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 						}
 						if (i == 2) {
 							OutgoingPacket class98_sub11 = (Class246_Sub3_Sub4.method3023(260, aa_Sub2.aClass171_3564, Class331.aClass117_2811));
-							Class180.method2604(i_2_, -21568, i_4_, (((GameInterfaceData) class293).anInt2302), class98_sub11);
+							Class180.method2604(i_2_, -21568, i_4_, (class293.anInt2302), class98_sub11);
 							Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 						}
 						if (i == 3) {
 							OutgoingPacket class98_sub11 = (Class246_Sub3_Sub4.method3023(260, Class98_Sub46_Sub9.aClass171_6000, Class331.aClass117_2811));
-							Class180.method2604(i_2_, -21568, i_4_, (((GameInterfaceData) class293).anInt2302), class98_sub11);
+							Class180.method2604(i_2_, -21568, i_4_, (class293.anInt2302), class98_sub11);
 							Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 						}
-						if ((i ^ 0xffffffff) == -5) {
+						if (i == 4) {
 							OutgoingPacket class98_sub11 = (Class246_Sub3_Sub4.method3023(260, Class234.aClass171_1747, Class331.aClass117_2811));
-							Class180.method2604(i_2_, -21568, i_4_, (((GameInterfaceData) class293).anInt2302), class98_sub11);
+							Class180.method2604(i_2_, -21568, i_4_, (class293.anInt2302), class98_sub11);
 							Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 						}
-						if ((i ^ 0xffffffff) == -6) {
+						if (i == 5) {
 							OutgoingPacket class98_sub11 = (Class246_Sub3_Sub4.method3023(260, aa.aClass171_49, Class331.aClass117_2811));
-							Class180.method2604(i_2_, -21568, i_4_, (((GameInterfaceData) class293).anInt2302), class98_sub11);
+							Class180.method2604(i_2_, -21568, i_4_, (class293.anInt2302), class98_sub11);
 							Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 						}
 						if (i_3_ > -114)
 							method3557(-106, 15, null, 96, 60);
-						if ((i ^ 0xffffffff) == -7) {
+						if (i == 6) {
 							OutgoingPacket class98_sub11 = (Class246_Sub3_Sub4.method3023(260, Class98_Sub1.aClass171_3811, Class331.aClass117_2811));
-							Class180.method2604(i_2_, -21568, i_4_, (((GameInterfaceData) class293).anInt2302), class98_sub11);
+							Class180.method2604(i_2_, -21568, i_4_, (class293.anInt2302), class98_sub11);
 							Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 						}
-						if ((i ^ 0xffffffff) == -8) {
+						if (i == 7) {
 							OutgoingPacket class98_sub11 = (Class246_Sub3_Sub4.method3023(260, Class17.aClass171_202, Class331.aClass117_2811));
-							Class180.method2604(i_2_, -21568, i_4_, (((GameInterfaceData) class293).anInt2302), class98_sub11);
+							Class180.method2604(i_2_, -21568, i_4_, (class293.anInt2302), class98_sub11);
 							Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 						}
-						if ((i ^ 0xffffffff) == -9) {
+						if (i == 8) {
 							OutgoingPacket class98_sub11 = (Class246_Sub3_Sub4.method3023(260, Class15.aClass171_177, Class331.aClass117_2811));
-							Class180.method2604(i_2_, -21568, i_4_, (((GameInterfaceData) class293).anInt2302), class98_sub11);
+							Class180.method2604(i_2_, -21568, i_4_, (class293.anInt2302), class98_sub11);
 							Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 						}
-						if ((i ^ 0xffffffff) == -10) {
+						if (i == 9) {
 							OutgoingPacket class98_sub11 = (Class246_Sub3_Sub4.method3023(260, Class246_Sub3_Sub2_Sub1.aClass171_6342, Class331.aClass117_2811));
-							Class180.method2604(i_2_, -21568, i_4_, (((GameInterfaceData) class293).anInt2302), class98_sub11);
+							Class180.method2604(i_2_, -21568, i_4_, (class293.anInt2302), class98_sub11);
 							Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 						}
-						if ((i ^ 0xffffffff) != -11)
+						if (i != 10)
 							break;
 						OutgoingPacket class98_sub11 = Class246_Sub3_Sub4.method3023(260, (Class13.aClass171_164), (Class331.aClass117_2811));
-						Class180.method2604(i_2_, -21568, i_4_, ((GameInterfaceData) class293).anInt2302, class98_sub11);
+						Class180.method2604(i_2_, -21568, i_4_, class293.anInt2302, class98_sub11);
 						Class98_Sub10_Sub29.sendPacket(false, class98_sub11);
 					}
 				}

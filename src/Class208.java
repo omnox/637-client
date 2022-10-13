@@ -16,13 +16,13 @@ final class Class208 {
 				Class98_Sub10_Sub30.aHa5709.method1755(8479, Class98_Sub16.anIntArray3933[1], s.anIntArray2205[i_1_] + Class15.anIntArray182[i_1_], -256, (Class98_Sub16.anIntArray3933[3] - Class98_Sub16.anIntArray3933[1]));
 			for (int i_2_ = 0; i_2_ < Class59.anInt464; i_2_++) {
 				Class155 class155 = Class213.aClass155Array1611[i_2_];
-				Class98_Sub10_Sub30.aHa5709.H(((Class155) class155).anIntArray1240[0], ((Class155) class155).anIntArray1237[0], ((Class155) class155).anIntArray1241[0], Class237.anIntArray1809);
-				Class98_Sub10_Sub30.aHa5709.H(((Class155) class155).anIntArray1240[1], ((Class155) class155).anIntArray1237[1], ((Class155) class155).anIntArray1241[1], Class314.anIntArray2691);
-				Class98_Sub10_Sub30.aHa5709.H(((Class155) class155).anIntArray1240[2], ((Class155) class155).anIntArray1237[2], ((Class155) class155).anIntArray1241[2], Class98_Sub46_Sub6.anIntArray5980);
-				Class98_Sub10_Sub30.aHa5709.H(((Class155) class155).anIntArray1240[3], ((Class155) class155).anIntArray1237[3], ((Class155) class155).anIntArray1241[3], Class262.anIntArray1962);
+				Class98_Sub10_Sub30.aHa5709.H(class155.anIntArray1240[0], class155.anIntArray1237[0], class155.anIntArray1241[0], Class237.anIntArray1809);
+				Class98_Sub10_Sub30.aHa5709.H(class155.anIntArray1240[1], class155.anIntArray1237[1], class155.anIntArray1241[1], Class314.anIntArray2691);
+				Class98_Sub10_Sub30.aHa5709.H(class155.anIntArray1240[2], class155.anIntArray1237[2], class155.anIntArray1241[2], Class98_Sub46_Sub6.anIntArray5980);
+				Class98_Sub10_Sub30.aHa5709.H(class155.anIntArray1240[3], class155.anIntArray1237[3], class155.anIntArray1241[3], Class262.anIntArray1962);
 				if (Class237.anIntArray1809[2] != -1 && Class314.anIntArray2691[2] != -1 && Class98_Sub46_Sub6.anIntArray5980[2] != -1 && Class262.anIntArray1962[2] != -1) {
 					int i_3_ = -65536;
-					if (((Class155) class155).aByte1242 == 4)
+					if (class155.aByte1242 == 4)
 						i_3_ = -16776961;
 					Class98_Sub10_Sub30.aHa5709.method1789(Class237.anIntArray1809[1], i_3_, Class314.anIntArray2691[1], Class314.anIntArray2691[0], -10550, Class237.anIntArray1809[0]);
 					Class98_Sub10_Sub30.aHa5709.method1789(Class314.anIntArray2691[1], i_3_, Class98_Sub46_Sub6.anIntArray5980[1], Class98_Sub46_Sub6.anIntArray5980[0], -10550, Class314.anIntArray2691[0]);

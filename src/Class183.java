@@ -39,10 +39,10 @@ final class Class183 {
 
 	static final void method2620(int i) {
 		try {
-			if (Class368.anInt3128 != -1 && (Class53_Sub1.anInt3636 ^ 0xffffffff) != 0) {
-				int i_0_ = (Class246.anInt1872 + (Class54.anInt3394 * (-Class246.anInt1872 + Class98_Sub10_Sub32.anInt5718) >> 1233746160));
+			if (Class368.anInt3128 != -1 && Class53_Sub1.anInt3636 != -1) {
+				int i_0_ = (Class246.anInt1872 + (Class54.anInt3394 * (-Class246.anInt1872 + Class98_Sub10_Sub32.anInt5718) >> 16));
 				Class54.anInt3394 += i_0_;
-				if ((Class54.anInt3394 ^ 0xffffffff) <= -65536) {
+				if (Class54.anInt3394 >= 65535) {
 					if (!Class319.aBoolean2700)
 						Class187.aBoolean1451 = true;
 					else
@@ -84,10 +84,10 @@ final class Class183 {
 				float f_20_ = fs_10_[0] - fs[i];
 				float f_21_ = (-fs[1] + fs_10_[1]) * -1.0F;
 				float f_22_ = fs_10_[2] - fs[2];
-				double d = Math.sqrt((double) (f_22_ * f_22_ + f_20_ * f_20_));
-				GameWorld.cameraPitch = (int) (2607.5945876176133 * Math.atan2((double) f_21_, d)) & 0x3fff;
-				GameWorld.cameraYaw = 0x3fff & (int) (2607.5945876176133 * -Math.atan2((double) f_20_, (double) f_22_));
-				Class308.anInt2584 = ((InputStream_Sub1.anIntArrayArrayArray27[Class368.anInt3128][i_1_][3]) - -(((-(InputStream_Sub1.anIntArrayArrayArray27[Class368.anInt3128][i_1_][3]) + (InputStream_Sub1.anIntArrayArrayArray27[Class368.anInt3128][2 + i_1_][3])) * Class54.anInt3394) >> -1587239088));
+				double d = Math.sqrt(f_22_ * f_22_ + f_20_ * f_20_);
+				GameWorld.cameraPitch = (int) (2607.5945876176133 * Math.atan2(f_21_, d)) & 0x3fff;
+				GameWorld.cameraYaw = 0x3fff & (int) (2607.5945876176133 * -Math.atan2(f_20_, f_22_));
+				Class308.anInt2584 = ((InputStream_Sub1.anIntArrayArrayArray27[Class368.anInt3128][i_1_][3]) - -(((-(InputStream_Sub1.anIntArrayArrayArray27[Class368.anInt3128][i_1_][3]) + (InputStream_Sub1.anIntArrayArrayArray27[Class368.anInt3128][2 + i_1_][3])) * Class54.anInt3394) >> 16));
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "me.C(" + i + ')');
@@ -125,7 +125,7 @@ final class Class183 {
 		try {
 			Class97 class97;
 			synchronized (aClass79_1442) {
-				class97 = (Class97) aClass79_1442.get((long) i);
+				class97 = (Class97) aClass79_1442.get(i);
 			}
 			if (class97 != null)
 				return class97;
@@ -136,13 +136,13 @@ final class Class183 {
 			class97 = new Class97();
 			if (i_26_ != 16383)
 				return null;
-			((Class97) class97).aClass183_824 = this;
-			((Class97) class97).anInt826 = i;
+			class97.aClass183_824 = this;
+			class97.anInt826 = i;
 			if (is != null)
 				class97.method933(new RSByteBuffer(is), -125);
 			class97.method938(i_26_ + -16508);
 			synchronized (aClass79_1442) {
-				aClass79_1442.put((long) i, class97);
+				aClass79_1442.put(i, class97);
 			}
 			return class97;
 		} catch (RuntimeException runtimeexception) {
@@ -156,10 +156,10 @@ final class Class183 {
 				method2623(20, 104);
 			Class98_Sub46_Sub16 class98_sub46_sub16;
 			synchronized (aClass79_1443) {
-				class98_sub46_sub16 = ((Class98_Sub46_Sub16) aClass79_1443.get((long) i_27_));
+				class98_sub46_sub16 = ((Class98_Sub46_Sub16) aClass79_1443.get(i_27_));
 				if (class98_sub46_sub16 == null) {
 					class98_sub46_sub16 = new Class98_Sub46_Sub16(i_27_);
-					aClass79_1443.put((long) i_27_, class98_sub46_sub16);
+					aClass79_1443.put(i_27_, class98_sub46_sub16);
 				}
 				if (!class98_sub46_sub16.method1614((byte) 66))
 					return null;

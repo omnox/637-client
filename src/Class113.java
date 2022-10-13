@@ -61,7 +61,7 @@ final class Class113 {
 
 	Class113(int i, int i_1_) {
 		try {
-			((Class113) this).anInt955 = i_1_;
+			this.anInt955 = i_1_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("hda.<init>(" + i + ',' + i_1_ + ')'));
 		}

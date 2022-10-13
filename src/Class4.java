@@ -24,20 +24,20 @@ final class Class4 {
 					}
 					i_4_ = (int) GameWorld.cameraGetHrot & 0x3fff;
 				} while (false);
-				int i_5_ = 10 + Math.max(((GameInterfaceData) class293).anInt2311 / 2, ((GameInterfaceData) class293).anInt2258 / 2);
+				int i_5_ = 10 + Math.max(class293.anInt2311 / 2, class293.anInt2258 / 2);
 				int i_6_ = i_2_ * i_2_ - -(i_0_ * i_0_);
-				if ((i_5_ * i_5_ ^ 0xffffffff) <= (i_6_ ^ 0xffffffff)) {
+				if (i_6_ <= i_5_ * i_5_) {
 					int i_7_ = Class284_Sub2_Sub2.anIntArray6200[i_4_];
 					if (i_3_ != -24)
 						aClass348_82 = null;
 					int i_8_ = Class284_Sub2_Sub2.anIntArray6202[i_4_];
-					if ((Class98_Sub46_Sub20_Sub2.anInt6319 ^ 0xffffffff) != -5) {
+					if (Class98_Sub46_Sub20_Sub2.anInt6319 != 4) {
 						i_7_ = 256 * i_7_ / (256 + Class151.anInt1213);
 						i_8_ = 256 * i_8_ / (256 + Class151.anInt1213);
 					}
-					int i_9_ = i_7_ * i_0_ - -(i_8_ * i_2_) >> -1366947250;
-					int i_10_ = i_0_ * i_8_ + -(i_2_ * i_7_) >> -1991891442;
-					class332.method3729(i_9_ + (((GameInterfaceData) class293).anInt2311 / 2 + i_1_ - class332.method3737() / 2), -i_10_ + (((GameInterfaceData) class293).anInt2258 / 2 + i + -(class332.method3749() / 2)), var_aa, i_1_, i);
+					int i_9_ = i_7_ * i_0_ - -(i_8_ * i_2_) >> 14;
+					int i_10_ = i_0_ * i_8_ + -(i_2_ * i_7_) >> 14;
+					class332.method3729(i_9_ + (class293.anInt2311 / 2 + i_1_ - class332.method3737() / 2), -i_10_ + (class293.anInt2258 / 2 + i + -(class332.method3749() / 2)), var_aa, i_1_, i);
 				}
 			}
 		} catch (RuntimeException runtimeexception) {

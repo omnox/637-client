@@ -29,7 +29,7 @@ final class Class21_Sub4 extends Class21 implements Interface4_Impl1 {
 			try {
 				if (i_4_ != 65)
 					method278(-57, -60, 38, -120, -43, (byte) 53, 87);
-				if ((((Class98_Sub27) Class98_Sub9.aClass98_Sub27_3856).aClass64_Sub22_4066.method641((byte) 127) ^ 0xffffffff) == -1 || i_2_ == 0 || (Class306.anInt2566 ^ 0xffffffff) <= -51 || (i_1_ ^ 0xffffffff) == 0)
+				if (Class98_Sub9.aClass98_Sub27_3856.aClass64_Sub22_4066.method641((byte) 127) == 0 || i_2_ == 0 || Class306.anInt2566 >= 50 || i_1_ == -1)
 					break;
 				Class245.aClass338Array1865[Class306.anInt2566++] = new Class338((byte) 1, i_1_, i_2_, i_3_, i, i_5_, i_0_, null);
 			} catch (RuntimeException runtimeexception) {
@@ -45,9 +45,9 @@ final class Class21_Sub4 extends Class21 implements Interface4_Impl1 {
 			anInt5395 = i_6_;
 			anInt5393 = i;
 			anInt5397 = i_7_;
-			((Class21) this).aHa_Sub3_Sub2_3233.method2005(this, -8);
+			this.aHa_Sub3_Sub2_3233.method2005(this, -8);
 			OpenGL.glPixelStorei(3317, 1);
-			OpenGL.glTexImage3Dub(((Class21) this).anInt3235, 0, this.method260(0), anInt5393, anInt5395, anInt5397, 0, Class196.method2665(false, (((Class21) this).aClass164_3237)), 5121, is, 0);
+			OpenGL.glTexImage3Dub(this.anInt3235, 0, this.method260(0), anInt5393, anInt5395, anInt5397, 0, Class196.method2665(false, (this.aClass164_3237)), 5121, is, 0);
 			OpenGL.glPixelStorei(3317, 4);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("wha.<init>(" + (var_ha_Sub3_Sub2 != null ? "{...}" : "null") + ',' + (class164 != null ? "{...}" : "null") + ',' + i + ',' + i_6_ + ',' + i_7_ + ',' + (is != null ? "{...}" : "null") + ')'));

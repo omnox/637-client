@@ -41,7 +41,7 @@ final class Class192 {
 						interface9.w(false);
 					else {
 						Class98_Sub51 class98_sub51 = new Class98_Sub51();
-						((Class98_Sub51) class98_sub51).anInterface9_4295 = interface9;
+						class98_sub51.anInterface9_4295 = interface9;
 						aClass148_1483.add_last(class98_sub51, -20911);
 					}
 					if (bool == false)
@@ -76,7 +76,7 @@ final class Class192 {
 					Class98_Sub51 class98_sub51 = (Class98_Sub51) aClass148_1483.method2421(6494);
 					if (class98_sub51 == null)
 						break;
-					((Class98_Sub51) class98_sub51).anInterface9_4295.w(true);
+					class98_sub51.anInterface9_4295.w(true);
 					class98_sub51.remove();
 				}
 				if (i == 0)

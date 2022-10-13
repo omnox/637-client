@@ -27,7 +27,7 @@ final class Class220 {
 			try {
 				for (;;) {
 					int i_0_ = class98_sub22.readUnsignedByte();
-					if ((i_0_ ^ 0xffffffff) == -1)
+					if (i_0_ == 0)
 						break;
 					method2818(class98_sub22, i_0_, 98);
 				}
@@ -58,7 +58,7 @@ final class Class220 {
 						if (i == 4) {
 							int i_3_ = class98_sub22.readUnsignedByte();
 							anIntArrayArray1648 = new int[i_3_][3];
-							for (int i_4_ = 0; (i_3_ ^ 0xffffffff) < (i_4_ ^ 0xffffffff); i_4_++) {
+							for (int i_4_ = 0; i_4_ < i_3_; i_4_++) {
 								anIntArrayArray1648[i_4_][0] = class98_sub22.readShort();
 								anIntArrayArray1648[i_4_][1] = class98_sub22.readInt(-2);
 								anIntArrayArray1648[i_4_][2] = class98_sub22.readInt(-2);
@@ -67,19 +67,19 @@ final class Class220 {
 							if (i != 6) {
 								if (i != 7) {
 									if (i != 8) {
-										if ((i ^ 0xffffffff) != -10) {
+										if (i != 9) {
 											if (i == 10) {
 												int i_5_ = (class98_sub22.readUnsignedByte());
 												anIntArray1652 = new int[i_5_];
-												for (int i_6_ = 0; ((i_5_ ^ 0xffffffff) < (i_6_ ^ 0xffffffff)); i_6_++)
+												for (int i_6_ = 0; (i_6_ < i_5_); i_6_++)
 													anIntArray1652[i_6_] = class98_sub22.readInt(-2);
 											} else if (i != 12) {
 												if (i == 13) {
 													int i_7_ = (class98_sub22.readUnsignedByte());
 													anIntArray1651 = new int[i_7_];
-													for (int i_8_ = 0; ((i_8_ ^ 0xffffffff) > (i_7_ ^ 0xffffffff)); i_8_++)
+													for (int i_8_ = 0; (i_7_ > i_8_); i_8_++)
 														anIntArray1651[i_8_] = (class98_sub22.readShort());
-												} else if ((i ^ 0xffffffff) == -15) {
+												} else if (i == 14) {
 													int i_9_ = (class98_sub22.readUnsignedByte());
 													anIntArrayArray1658 = new int[i_9_][2];
 													for (int i_10_ = 0; i_10_ < i_9_; i_10_++) {
@@ -88,20 +88,20 @@ final class Class220 {
 													}
 												} else if (i != 15) {
 													if (i == 17)
-														((Class220) this).anInt1649 = (class98_sub22.readShort());
-													else if ((i ^ 0xffffffff) == -19) {
+														this.anInt1649 = (class98_sub22.readShort());
+													else if (i == 18) {
 														int i_11_ = (class98_sub22.readUnsignedByte());
 														anIntArray1653 = new int[i_11_];
 														anIntArray1647 = new int[i_11_];
 														aStringArray1662 = (new String[i_11_]);
 														anIntArray1661 = new int[i_11_];
-														for (int i_12_ = 0; ((i_12_ ^ 0xffffffff) > (i_11_ ^ 0xffffffff)); i_12_++) {
+														for (int i_12_ = 0; (i_11_ > i_12_); i_12_++) {
 															anIntArray1647[i_12_] = (class98_sub22.readInt(-2));
 															anIntArray1653[i_12_] = (class98_sub22.readInt(-2));
 															anIntArray1661[i_12_] = (class98_sub22.readInt(-2));
 															aStringArray1662[i_12_] = (class98_sub22.readString());
 														}
-													} else if ((i ^ 0xffffffff) != -20) {
+													} else if (i != 19) {
 														if (i == 249) {
 															int i_13_ = (class98_sub22.readUnsignedByte());
 															if (aClass377_1650 == null) {
@@ -116,7 +116,7 @@ final class Class220 {
 																	class98 = (new Class98_Sub15(class98_sub22.readString()));
 																else
 																	class98 = (new Class98_Sub34(class98_sub22.readInt(-2)));
-																aClass377_1650.method3996(class98, (long) i_16_, -1);
+																aClass377_1650.method3996(class98, i_16_, -1);
 															}
 														}
 													} else {
@@ -125,7 +125,7 @@ final class Class220 {
 														aStringArray1656 = (new String[i_17_]);
 														anIntArray1646 = new int[i_17_];
 														anIntArray1660 = new int[i_17_];
-														for (int i_18_ = 0; ((i_18_ ^ 0xffffffff) > (i_17_ ^ 0xffffffff)); i_18_++) {
+														for (int i_18_ = 0; (i_17_ > i_18_); i_18_++) {
 															anIntArray1646[i_18_] = (class98_sub22.readInt(-2));
 															anIntArray1655[i_18_] = (class98_sub22.readInt(-2));
 															anIntArray1660[i_18_] = (class98_sub22.readInt(-2));
@@ -148,7 +148,7 @@ final class Class220 {
 					} else {
 						int i_19_ = class98_sub22.readUnsignedByte();
 						anIntArrayArray1659 = new int[i_19_][3];
-						for (int i_20_ = 0; (i_19_ ^ 0xffffffff) < (i_20_ ^ 0xffffffff); i_20_++) {
+						for (int i_20_ = 0; i_20_ < i_19_; i_20_++) {
 							anIntArrayArray1659[i_20_][0] = class98_sub22.readShort();
 							anIntArrayArray1659[i_20_][1] = class98_sub22.readInt(-2);
 							anIntArrayArray1659[i_20_][2] = class98_sub22.readInt(-2);

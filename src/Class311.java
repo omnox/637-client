@@ -15,7 +15,7 @@ final class Class311 {
 		for (int i_0_ = 0; i_0_ < i; i_0_++)
 			fs[i_0_] = 0.0F;
 		if (!bool) {
-			int i_1_ = (((Class71) Class98_Sub13.aClass71Array3885[anInt2655]).anInt530);
+			int i_1_ = (Class98_Sub13.aClass71Array3885[anInt2655].anInt530);
 			int i_2_ = anInt2660 - anInt2658;
 			int i_3_ = i_2_ / anInt2659;
 			int[] is = new int[i_3_];
@@ -37,17 +37,17 @@ final class Class311 {
 							int i_11_ = anInt2658 + i_5_ * anInt2659;
 							Class71 class71 = Class98_Sub13.aClass71Array3885[i_10_];
 							if (anInt2656 == 0) {
-								int i_12_ = anInt2659 / ((Class71) class71).anInt530;
+								int i_12_ = anInt2659 / class71.anInt530;
 								for (int i_13_ = 0; i_13_ < i_12_; i_13_++) {
 									float[] fs_14_ = class71.method715();
-									for (int i_15_ = 0; i_15_ < ((Class71) class71).anInt530; i_15_++)
+									for (int i_15_ = 0; i_15_ < class71.anInt530; i_15_++)
 										fs[i_11_ + i_13_ + i_15_ * i_12_] += fs_14_[i_15_];
 								}
 							} else {
 								int i_16_ = 0;
 								while (i_16_ < anInt2659) {
 									float[] fs_17_ = class71.method715();
-									for (int i_18_ = 0; i_18_ < ((Class71) class71).anInt530; i_18_++) {
+									for (int i_18_ = 0; i_18_ < class71.anInt530; i_18_++) {
 										fs[i_11_ + i_16_] += fs_17_[i_18_];
 										i_16_++;
 									}

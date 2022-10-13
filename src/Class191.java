@@ -46,7 +46,7 @@ final class Class191 {
 		try {
 			if (i > -118)
 				anInt1479 = -121;
-			for (int i_0_ = 0; (i_0_ ^ 0xffffffff) > -101; i_0_++)
+			for (int i_0_ = 0; i_0_ < 100; i_0_++)
 				Class98_Sub46_Sub3.aClass131Array5953[i_0_] = null;
 			Class133.anInt3452 = 0;
 		} catch (RuntimeException runtimeexception) {
@@ -58,7 +58,7 @@ final class Class191 {
 		try {
 			if (i_1_ >= -5)
 				return true;
-			if (i != 3 && (i ^ 0xffffffff) != -6 && (i ^ 0xffffffff) != -7)
+			if (i != 3 && i != 5 && i != 6)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

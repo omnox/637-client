@@ -52,11 +52,11 @@ final class Class62 {
 
 	Class62(int i, String string, int i_11_, String string_12_, long l) {
 		try {
-			((Class62) this).aString488 = string_12_;
-			((Class62) this).aString489 = string;
-			((Class62) this).anInt484 = i;
-			((Class62) this).aLong485 = l;
-			((Class62) this).anInt483 = i_11_;
+			this.aString488 = string_12_;
+			this.aString489 = string;
+			this.anInt484 = i;
+			this.aLong485 = l;
+			this.anInt483 = i_11_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("eca.<init>(" + i + ',' + (string != null ? "{...}" : "null") + ',' + i_11_ + ',' + (string_12_ != null ? "{...}" : "null") + ',' + l + ')'));
 		}

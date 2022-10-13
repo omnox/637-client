@@ -22,24 +22,24 @@ final class Class172 {
 	static final void method2542(boolean bool, GameInterfaceData class293) {
 		try {
 			if (Class98_Sub10_Sub9.aBoolean5585) {
-				if (((GameInterfaceData) class293).anObjectArray2253 != null) {
+				if (class293.anObjectArray2253 != null) {
 					GameInterfaceData class293_0_ = Class246_Sub9.method3139((byte) 72, Class187.anInt1450, Class310.anInt2652);
 					if (class293_0_ != null) {
 						ClientScript2Event class98_sub21 = new ClientScript2Event();
-						((ClientScript2Event) class98_sub21).aClass293_3982 = class293_0_;
-						((ClientScript2Event) class98_sub21).component = class293;
-						((ClientScript2Event) class98_sub21).cs2_params = ((GameInterfaceData) class293).anObjectArray2253;
+						class98_sub21.aClass293_3982 = class293_0_;
+						class98_sub21.component = class293;
+						class98_sub21.cs2_params = class293.anObjectArray2253;
 						ClientScript2Runtime.method3144(class98_sub21);
 					}
 				}
 				if (bool == false) {
 					OutgoingPacket class98_sub11 = Class246_Sub3_Sub4.method3023(260, Class44.aClass171_380, (Class331.aClass117_2811));
-					((OutgoingPacket) class98_sub11).packet.writeInt(1571862888, ((GameInterfaceData) class293).anInt2248);
-					((OutgoingPacket) class98_sub11).packet.writeShort(Class310.anInt2652);
-					((OutgoingPacket) class98_sub11).packet.writeLEShort(((GameInterfaceData) class293).anInt2302, 17624);
-					((OutgoingPacket) class98_sub11).packet.writeShort(((GameInterfaceData) class293).anInt2300);
-					((OutgoingPacket) class98_sub11).packet.writeInt(1571862888, Class187.anInt1450);
-					((OutgoingPacket) class98_sub11).packet.writeLEShortA(Class376.anInt3173, 128);
+					class98_sub11.packet.writeInt(1571862888, class293.anInt2248);
+					class98_sub11.packet.writeShort(Class310.anInt2652);
+					class98_sub11.packet.writeLEShort(class293.anInt2302, 17624);
+					class98_sub11.packet.writeShort(class293.anInt2300);
+					class98_sub11.packet.writeInt(1571862888, Class187.anInt1450);
+					class98_sub11.packet.writeLEShortA(Class376.anInt3173, 128);
 					Class98_Sub10_Sub29.sendPacket(bool, class98_sub11);
 				}
 			}
@@ -60,7 +60,7 @@ final class Class172 {
 
 	Class172(int i) {
 		try {
-			((Class172) this).aByte1322 = (byte) i;
+			this.aByte1322 = (byte) i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "lha.<init>(" + i + ')');
 		}
@@ -69,9 +69,9 @@ final class Class172 {
 	final void method2544(int i) {
 		try {
 			Class154 class154;
-			for (/**/; ((Class172) this).aClass154_1325 != null; ((Class172) this).aClass154_1325 = class154) {
-				class154 = (((Class154) ((Class172) this).aClass154_1325).aClass154_1233);
-				((Class172) this).aClass154_1325.method2491(2);
+			for (/**/; this.aClass154_1325 != null; this.aClass154_1325 = class154) {
+				class154 = (this.aClass154_1325.aClass154_1233);
+				this.aClass154_1325.method2491(2);
 			}
 			if (i != 6730)
 				method2542(false, null);

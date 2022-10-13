@@ -28,9 +28,9 @@ final class GameInterface extends Node {
 	static final void method1162(int i, int i_0_, int i_1_, Class var_class) {
 		Class172 class172 = Class98_Sub46_Sub1.aClass172ArrayArrayArray5948[i][i_0_][i_1_];
 		if (class172 != null) {
-			for (Class154 class154 = ((Class172) class172).aClass154_1325; class154 != null; class154 = ((Class154) class154).aClass154_1233) {
-				Class246_Sub3_Sub4 class246_sub3_sub4 = ((Class154) class154).aClass246_Sub3_Sub4_1232;
-				if (var_class.isAssignableFrom(class246_sub3_sub4.getClass()) && (((Class246_Sub3_Sub4) class246_sub3_sub4).aShort6158 == i_0_) && (((Class246_Sub3_Sub4) class246_sub3_sub4).aShort6157 == i_1_)) {
+			for (Class154 class154 = class172.aClass154_1325; class154 != null; class154 = class154.aClass154_1233) {
+				Class246_Sub3_Sub4 class246_sub3_sub4 = class154.aClass246_Sub3_Sub4_1232;
+				if (var_class.isAssignableFrom(class246_sub3_sub4.getClass()) && (class246_sub3_sub4.aShort6158 == i_0_) && (class246_sub3_sub4.aShort6157 == i_1_)) {
 					Class99.method1687(class246_sub3_sub4, false);
 					break;
 				}

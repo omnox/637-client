@@ -65,20 +65,20 @@ final class Class331 {
 	}
 
 	Class331() {
-		((Class331) this).anIntArray2781 = new int[16];
-		((Class331) this).aBooleanArray2780 = new boolean[16];
-		((Class331) this).aByteArray2795 = new byte[256];
-		((Class331) this).anIntArray2791 = new int[6];
-		((Class331) this).aByteArray2776 = new byte[18002];
-		((Class331) this).aByteArray2796 = new byte[4096];
-		((Class331) this).aByteArray2783 = new byte[18002];
-		((Class331) this).anIntArrayArray2790 = new int[6][258];
-		((Class331) this).aBooleanArray2782 = new boolean[256];
-		((Class331) this).anIntArray2794 = new int[256];
-		((Class331) this).anIntArray2807 = new int[257];
-		((Class331) this).anInt2808 = 0;
-		((Class331) this).anInt2801 = 0;
-		((Class331) this).anIntArrayArray2806 = new int[6][258];
-		((Class331) this).aByteArrayArray2804 = new byte[6][258];
+		this.anIntArray2781 = new int[16];
+		this.aBooleanArray2780 = new boolean[16];
+		this.aByteArray2795 = new byte[256];
+		this.anIntArray2791 = new int[6];
+		this.aByteArray2776 = new byte[18002];
+		this.aByteArray2796 = new byte[4096];
+		this.aByteArray2783 = new byte[18002];
+		this.anIntArrayArray2790 = new int[6][258];
+		this.aBooleanArray2782 = new boolean[256];
+		this.anIntArray2794 = new int[256];
+		this.anIntArray2807 = new int[257];
+		this.anInt2808 = 0;
+		this.anInt2801 = 0;
+		this.anIntArrayArray2806 = new int[6][258];
+		this.aByteArrayArray2804 = new byte[6][258];
 	}
 }

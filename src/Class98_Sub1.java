@@ -19,7 +19,7 @@ final class Class98_Sub1 extends Node {
 			Class244 class244 = Class114.method2151(i, bool, var_ha, true);
 			if (class244 == null)
 				return null;
-			return ((Class244) class244).aClass43_1859;
+			return class244.aClass43_1859;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ah.C(" + i + ',' + (var_ha != null ? "{...}" : "null") + ',' + i_0_ + ',' + bool + ')'));
 		}
@@ -53,27 +53,27 @@ final class Class98_Sub1 extends Node {
 
 	Class98_Sub1(int i, byte[] is) {
 		try {
-			((Class98_Sub1) this).anInt3813 = i;
+			this.anInt3813 = i;
 			RSByteBuffer class98_sub22 = new RSByteBuffer(is);
-			((Class98_Sub1) this).anInt3809 = class98_sub22.readUnsignedByte();
-			((Class98_Sub1) this).anIntArray3815 = new int[((Class98_Sub1) this).anInt3809];
-			((Class98_Sub1) this).anIntArray3812 = new int[((Class98_Sub1) this).anInt3809];
-			((Class98_Sub1) this).aBooleanArray3810 = new boolean[((Class98_Sub1) this).anInt3809];
-			((Class98_Sub1) this).anIntArrayArray3816 = new int[((Class98_Sub1) this).anInt3809][];
-			for (int i_3_ = 0; i_3_ < ((Class98_Sub1) this).anInt3809; i_3_++) {
-				((Class98_Sub1) this).anIntArray3812[i_3_] = class98_sub22.readUnsignedByte();
-				if (((Class98_Sub1) this).anIntArray3812[i_3_] == 6)
-					((Class98_Sub1) this).anIntArray3812[i_3_] = 2;
+			this.anInt3809 = class98_sub22.readUnsignedByte();
+			this.anIntArray3815 = new int[this.anInt3809];
+			this.anIntArray3812 = new int[this.anInt3809];
+			this.aBooleanArray3810 = new boolean[this.anInt3809];
+			this.anIntArrayArray3816 = new int[this.anInt3809][];
+			for (int i_3_ = 0; i_3_ < this.anInt3809; i_3_++) {
+				this.anIntArray3812[i_3_] = class98_sub22.readUnsignedByte();
+				if (this.anIntArray3812[i_3_] == 6)
+					this.anIntArray3812[i_3_] = 2;
 			}
-			for (int i_4_ = 0; ((((Class98_Sub1) this).anInt3809 ^ 0xffffffff) < (i_4_ ^ 0xffffffff)); i_4_++)
-				((Class98_Sub1) this).aBooleanArray3810[i_4_] = ((class98_sub22.readUnsignedByte() ^ 0xffffffff) == -2);
-			for (int i_5_ = 0; ((((Class98_Sub1) this).anInt3809 ^ 0xffffffff) < (i_5_ ^ 0xffffffff)); i_5_++)
-				((Class98_Sub1) this).anIntArray3815[i_5_] = class98_sub22.readShort();
-			for (int i_6_ = 0; ((i_6_ ^ 0xffffffff) > (((Class98_Sub1) this).anInt3809 ^ 0xffffffff)); i_6_++)
-				((Class98_Sub1) this).anIntArrayArray3816[i_6_] = new int[class98_sub22.readUnsignedByte()];
-			for (int i_7_ = 0; ((((Class98_Sub1) this).anInt3809 ^ 0xffffffff) < (i_7_ ^ 0xffffffff)); i_7_++) {
-				for (int i_8_ = 0; (((Class98_Sub1) this).anIntArrayArray3816[i_7_].length > i_8_); i_8_++)
-					((Class98_Sub1) this).anIntArrayArray3816[i_7_][i_8_] = class98_sub22.readUnsignedByte();
+			for (int i_4_ = 0; (i_4_ < this.anInt3809); i_4_++)
+				this.aBooleanArray3810[i_4_] = (class98_sub22.readUnsignedByte() == 1);
+			for (int i_5_ = 0; (i_5_ < this.anInt3809); i_5_++)
+				this.anIntArray3815[i_5_] = class98_sub22.readShort();
+			for (int i_6_ = 0; (this.anInt3809 > i_6_); i_6_++)
+				this.anIntArrayArray3816[i_6_] = new int[class98_sub22.readUnsignedByte()];
+			for (int i_7_ = 0; (i_7_ < this.anInt3809); i_7_++) {
+				for (int i_8_ = 0; (this.anIntArrayArray3816[i_7_].length > i_8_); i_8_++)
+					this.anIntArrayArray3816[i_7_][i_8_] = class98_sub22.readUnsignedByte();
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("ah.<init>(" + i + ',' + (is != null ? "{...}" : "null") + ')'));

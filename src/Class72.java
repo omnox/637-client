@@ -15,24 +15,24 @@ final class Class72 {
 
 	private final void method716(RSByteBuffer class98_sub22, boolean bool, int i) {
 		try {
-			if ((i ^ 0xffffffff) != -2) {
+			if (i != 1) {
 				if (i == 2) {
-					((Class72) this).anInt537 = class98_sub22.readShort();
-					if ((((Class72) this).anInt537 ^ 0xffffffff) == -65536)
-						((Class72) this).anInt537 = -1;
+					this.anInt537 = class98_sub22.readShort();
+					if (this.anInt537 == 65535)
+						this.anInt537 = -1;
 				} else if (i == 3)
-					((Class72) this).anInt536 = class98_sub22.readShort() << -380251870;
+					this.anInt536 = class98_sub22.readShort() << 2;
 				else if (i != 4) {
 					if (i == 5)
-						((Class72) this).aBoolean543 = false;
+						this.aBoolean543 = false;
 				} else
-					((Class72) this).aBoolean544 = false;
+					this.aBoolean544 = false;
 			} else {
 				anInt539 = class98_sub22.readMedium(-126);
 				method718(0, anInt539);
 			}
 			if (bool != true)
-				((Class72) this).anInt536 = -118;
+				this.anInt536 = -118;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("el.C(" + (class98_sub22 != null ? "{...}" : "null") + ',' + bool + ',' + i + ')'));
 		}
@@ -55,8 +55,8 @@ final class Class72 {
 
 	private final void method718(int i, int i_1_) {
 		try {
-			double d = (double) (i_1_ >> -356542736 & 0xff) / 256.0;
-			double d_2_ = (double) ((i_1_ & 0xff10) >> -1757323064) / 256.0;
+			double d = (double) (i_1_ >> 16 & 0xff) / 256.0;
+			double d_2_ = (double) ((i_1_ & 0xff10) >> 8) / 256.0;
 			double d_3_ = (double) (0xff & i_1_) / 256.0;
 			double d_4_ = d;
 			if (d_2_ < d_4_)
@@ -85,24 +85,24 @@ final class Class72 {
 					d_7_ = (-d_4_ + d_5_) / (-d_5_ + 2.0 - d_4_);
 			}
 			d_6_ /= 6.0;
-			((Class72) this).anInt542 = (int) (d_8_ * 256.0);
-			((Class72) this).anInt541 = (int) (d_7_ * 256.0);
-			if ((((Class72) this).anInt542 ^ 0xffffffff) <= -1) {
-				if (((Class72) this).anInt542 > 255)
-					((Class72) this).anInt542 = 255;
+			this.anInt542 = (int) (d_8_ * 256.0);
+			this.anInt541 = (int) (d_7_ * 256.0);
+			if (this.anInt542 >= 0) {
+				if (this.anInt542 > 255)
+					this.anInt542 = 255;
 			} else
-				((Class72) this).anInt542 = 0;
-			if (i > ((Class72) this).anInt541)
-				((Class72) this).anInt541 = 0;
-			else if ((((Class72) this).anInt541 ^ 0xffffffff) < -256)
-				((Class72) this).anInt541 = 255;
+				this.anInt542 = 0;
+			if (i > this.anInt541)
+				this.anInt541 = 0;
+			else if (this.anInt541 > 255)
+				this.anInt541 = 255;
 			if (!(d_8_ > 0.5))
-				((Class72) this).anInt540 = (int) (512.0 * (d_8_ * d_7_));
+				this.anInt540 = (int) (512.0 * (d_8_ * d_7_));
 			else
-				((Class72) this).anInt540 = (int) (d_7_ * (1.0 - d_8_) * 512.0);
-			if (((Class72) this).anInt540 < 1)
-				((Class72) this).anInt540 = 1;
-			((Class72) this).anInt538 = (int) (d_6_ * (double) ((Class72) this).anInt540);
+				this.anInt540 = (int) (d_7_ * (1.0 - d_8_) * 512.0);
+			if (this.anInt540 < 1)
+				this.anInt540 = 1;
+			this.anInt538 = (int) (d_6_ * (double) this.anInt540);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "el.B(" + i + ',' + i_1_ + ')');
 		}

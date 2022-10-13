@@ -34,7 +34,7 @@ final class OutgoingPacket extends Node {
 
 	final void method1125(byte i) {
 		try {
-			if ((Class98_Sub33.anInt4117 ^ 0xffffffff) > (Class98_Sub46_Sub2_Sub2.aClass98_Sub11Array6302.length ^ 0xffffffff)) {
+			if (Class98_Sub46_Sub2_Sub2.aClass98_Sub11Array6302.length > Class98_Sub33.anInt4117) {
 				if (i != 6)
 					method1124(-24, (byte) -11);
 				Class98_Sub46_Sub2_Sub2.aClass98_Sub11Array6302[Class98_Sub33.anInt4117++] = this;
@@ -57,10 +57,10 @@ final class OutgoingPacket extends Node {
 	static final void method1127(byte i, int i_2_) {
 		do {
 			try {
-				Class98_Sub36 class98_sub36 = ((Class98_Sub36) Class156_Sub1.aClass377_3277.method3990((long) i_2_, i + -68));
+				Class98_Sub36 class98_sub36 = ((Class98_Sub36) Class156_Sub1.aClass377_3277.method3990(i_2_, i + -68));
 				if (class98_sub36 != null) {
-					((Class98_Sub36) class98_sub36).aClass237_Sub1_4157.method2903(8);
-					Class291.method3414(-1, (((Class98_Sub36) class98_sub36).aBoolean4154), (((Class98_Sub36) class98_sub36).anInt4160));
+					class98_sub36.aClass237_Sub1_4157.method2903(8);
+					Class291.method3414(-1, (class98_sub36.aBoolean4154), (class98_sub36.anInt4160));
 					class98_sub36.remove();
 				}
 				if (i == 67)

@@ -17,7 +17,7 @@ final class aa_Sub3 extends aa {
 		try {
 			if (i_0_ != 64)
 				method158(100);
-			return (0x3ff26 & i) >> -1240258357;
+			return (0x3ff26 & i) >> 11;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "nc.C(" + i + ',' + i_0_ + ')');
 		}
@@ -25,8 +25,8 @@ final class aa_Sub3 extends aa {
 
 	aa_Sub3(ha_Sub1 var_ha_Sub1, int i, int i_1_, byte[] is) {
 		try {
-			((aa_Sub3) this).aClass42_Sub1_Sub1_3568 = Class284_Sub2.method3374(6406, i_1_, 14764, 6406, var_ha_Sub1, false, is, i);
-			((aa_Sub3) this).aClass42_Sub1_Sub1_3568.method383(false, 10242, false);
+			this.aClass42_Sub1_Sub1_3568 = Class284_Sub2.method3374(6406, i_1_, 14764, 6406, var_ha_Sub1, false, is, i);
+			this.aClass42_Sub1_Sub1_3568.method383(false, 10242, false);
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("nc.<init>(" + (var_ha_Sub1 != null ? "{...}" : "null") + ',' + i + ',' + i_1_ + ',' + (is != null ? "{...}" : "null") + ')'));
 		}

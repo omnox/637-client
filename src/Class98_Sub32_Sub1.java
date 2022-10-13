@@ -35,7 +35,7 @@ final class Class98_Sub32_Sub1 extends Class98_Sub32 implements ImageProducer {
 	private final synchronized void method1443(byte i) {
 		try {
 			if (anImageConsumer5885 != null) {
-				anImageConsumer5885.setPixels(0, 0, ((Class98_Sub32) this).anInt4105, ((Class98_Sub32) this).anInt4110, aColorModel5888, ((Class98_Sub32) this).anIntArray4108, 0, ((Class98_Sub32) this).anInt4105);
+				anImageConsumer5885.setPixels(0, 0, this.anInt4105, this.anInt4110, aColorModel5888, this.anIntArray4108, 0, this.anInt4105);
 				anImageConsumer5885.imageComplete(2);
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -59,10 +59,10 @@ final class Class98_Sub32_Sub1 extends Class98_Sub32 implements ImageProducer {
 
 	final void method1441(int i, int i_6_, int i_7_, Canvas canvas) {
 		try {
-			((Class98_Sub32) this).anInt4105 = i_6_;
-			((Class98_Sub32) this).anInt4110 = i;
+			this.anInt4105 = i_6_;
+			this.anInt4110 = i;
 			aCanvas5884 = canvas;
-			((Class98_Sub32) this).anIntArray4108 = new int[(((Class98_Sub32) this).anInt4110 * ((Class98_Sub32) this).anInt4105)];
+			this.anIntArray4108 = new int[(this.anInt4110 * this.anInt4105)];
 			aColorModel5888 = new DirectColorModel(32, 16711680, 65280, 255);
 			anImage5890 = aCanvas5884.createImage(this);
 			method1443((byte) 115);
@@ -91,7 +91,7 @@ final class Class98_Sub32_Sub1 extends Class98_Sub32 implements ImageProducer {
 			if (i != -75)
 				addConsumer(null);
 			if (anImageConsumer5885 != null) {
-				anImageConsumer5885.setPixels(i_10_, i_8_, i_9_, i_11_, aColorModel5888, ((Class98_Sub32) this).anIntArray4108, ((Class98_Sub32) this).anInt4105 * i_8_ - -i_10_, ((Class98_Sub32) this).anInt4105);
+				anImageConsumer5885.setPixels(i_10_, i_8_, i_9_, i_11_, aColorModel5888, this.anIntArray4108, this.anInt4105 * i_8_ - -i_10_, this.anInt4105);
 				anImageConsumer5885.imageComplete(2);
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -102,7 +102,7 @@ final class Class98_Sub32_Sub1 extends Class98_Sub32 implements ImageProducer {
 	public final synchronized void addConsumer(ImageConsumer imageconsumer) {
 		try {
 			anImageConsumer5885 = imageconsumer;
-			imageconsumer.setDimensions(((Class98_Sub32) this).anInt4105, ((Class98_Sub32) this).anInt4110);
+			imageconsumer.setDimensions(this.anInt4105, this.anInt4110);
 			imageconsumer.setProperties(null);
 			imageconsumer.setColorModel(aColorModel5888);
 			imageconsumer.setHints(14);

@@ -20,7 +20,7 @@ final class Class337_Sub1 extends Class337 {
 	Class337_Sub1(int i, Class63 class63, Class110 class110, int i_0_, int i_1_, int i_2_) {
 		super(i, class63, class110, i_0_, i_1_);
 		try {
-			((Class337_Sub1) this).anInt5498 = i_2_;
+			this.anInt5498 = i_2_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("dv.<init>(" + i + ',' + (class63 != null ? "{...}" : "null") + ',' + (class110 != null ? "{...}" : "null") + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ')'));
 		}

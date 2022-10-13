@@ -10,7 +10,7 @@ abstract class Class48_Sub1 extends Class48 {
 		try {
 			int i_6_ = i_0_ + i_3_;
 			int i_7_ = i_4_ - i_0_;
-			for (int i_8_ = i_3_; (i_8_ ^ 0xffffffff) > (i_6_ ^ 0xffffffff); i_8_++)
+			for (int i_8_ = i_3_; i_6_ > i_8_; i_8_++)
 				Class333.method3761(i, Class97.anIntArrayArray814[i_8_], i_2_, i_1_, (byte) 96);
 			int i_9_ = -i_0_ + i_1_;
 			for (int i_10_ = i_4_; i_7_ < i_10_; i_10_--)
@@ -34,10 +34,10 @@ abstract class Class48_Sub1 extends Class48 {
 	static final Class98_Sub46_Sub10 method457(int i, int i_13_, int i_14_, RuneScapeCache class207) {
 		try {
 			RSByteBuffer class98_sub22 = new RSByteBuffer(class207.readArchive(i, i_13_));
-			Class98_Sub46_Sub10 class98_sub46_sub10 = (new Class98_Sub46_Sub10(i, class98_sub22.readString(), class98_sub22.readString(), class98_sub22.readInt(-2), class98_sub22.readInt(-2), (class98_sub22.readUnsignedByte() ^ 0xffffffff) == -2, class98_sub22.readUnsignedByte(), class98_sub22.readUnsignedByte()));
+			Class98_Sub46_Sub10 class98_sub46_sub10 = (new Class98_Sub46_Sub10(i, class98_sub22.readString(), class98_sub22.readString(), class98_sub22.readInt(-2), class98_sub22.readInt(-2), class98_sub22.readUnsignedByte() == 1, class98_sub22.readUnsignedByte(), class98_sub22.readUnsignedByte()));
 			int i_15_ = class98_sub22.readUnsignedByte();
 			for (int i_16_ = 0; i_15_ > i_16_; i_16_++)
-				((Class98_Sub46_Sub10) class98_sub46_sub10).aClass148_6010.add_last(new Class98_Sub6(class98_sub22.readUnsignedByte(), class98_sub22.readShort(), class98_sub22.readShort(), class98_sub22.readShort(), class98_sub22.readShort(), class98_sub22.readShort(), class98_sub22.readShort(), class98_sub22.readShort(), class98_sub22.readShort()), -20911);
+				class98_sub46_sub10.aClass148_6010.add_last(new Class98_Sub6(class98_sub22.readUnsignedByte(), class98_sub22.readShort(), class98_sub22.readShort(), class98_sub22.readShort(), class98_sub22.readShort(), class98_sub22.readShort(), class98_sub22.readShort(), class98_sub22.readShort(), class98_sub22.readShort()), -20911);
 			class98_sub46_sub10.method1569(-1);
 			if (i_14_ != 10443)
 				anIntArray3629 = null;
@@ -49,22 +49,22 @@ abstract class Class48_Sub1 extends Class48 {
 
 	static final void method458(Class98_Sub26 class98_sub26, int i, int i_17_, int i_18_, boolean bool) {
 		try {
-			long l = (long) (i << 1428771228 | i_17_ << 1140143822 | i_18_);
+			long l = i << 28 | i_17_ << 14 | i_18_;
 			Class98_Sub45 class98_sub45 = (Class98_Sub45) AbstractModel.aClass377_1180.method3990(l, -1);
 			if (class98_sub45 == null) {
 				class98_sub45 = new Class98_Sub45();
 				AbstractModel.aClass377_1180.method3996(class98_sub45, l, -1);
-				((Class98_Sub45) class98_sub45).aClass148_4254.add_last(class98_sub26, -20911);
+				class98_sub45.aClass148_4254.add_last(class98_sub26, -20911);
 			} else {
-				ItemDefinition class297 = (Class98_Sub46_Sub19.getItemDefs.getItemDefs(((Class98_Sub26) class98_sub26).anInt4031));
-				int i_19_ = ((ItemDefinition) class297).anInt2475;
-				if ((((ItemDefinition) class297).anInt2469 ^ 0xffffffff) == -2)
-					i_19_ *= ((Class98_Sub26) class98_sub26).anInt4032 + 1;
-				for (Class98_Sub26 class98_sub26_20_ = (Class98_Sub26) ((Class98_Sub45) class98_sub45).aClass148_4254.method2418(32); class98_sub26_20_ != null; class98_sub26_20_ = (Class98_Sub26) ((Class98_Sub45) class98_sub45).aClass148_4254.method2417(102)) {
-					class297 = (Class98_Sub46_Sub19.getItemDefs.getItemDefs(((Class98_Sub26) class98_sub26_20_).anInt4031));
-					int i_21_ = ((ItemDefinition) class297).anInt2475;
-					if (((ItemDefinition) class297).anInt2469 == 1)
-						i_21_ *= 1 + (((Class98_Sub26) class98_sub26_20_).anInt4032);
+				ItemDefinition class297 = (Class98_Sub46_Sub19.getItemDefs.getItemDefs(class98_sub26.anInt4031));
+				int i_19_ = class297.anInt2475;
+				if (class297.anInt2469 == 1)
+					i_19_ *= class98_sub26.anInt4032 + 1;
+				for (Class98_Sub26 class98_sub26_20_ = (Class98_Sub26) class98_sub45.aClass148_4254.method2418(32); class98_sub26_20_ != null; class98_sub26_20_ = (Class98_Sub26) class98_sub45.aClass148_4254.method2417(102)) {
+					class297 = (Class98_Sub46_Sub19.getItemDefs.getItemDefs(class98_sub26_20_.anInt4031));
+					int i_21_ = class297.anInt2475;
+					if (class297.anInt2469 == 1)
+						i_21_ *= 1 + (class98_sub26_20_.anInt4032);
 					if (i_19_ > i_21_) {
 						Class279.method3322(class98_sub26_20_, class98_sub26, (byte) 24);
 						return;
@@ -72,7 +72,7 @@ abstract class Class48_Sub1 extends Class48 {
 				}
 				if (bool != true)
 					method459(true);
-				((Class98_Sub45) class98_sub45).aClass148_4254.add_last(class98_sub26, -20911);
+				class98_sub45.aClass148_4254.add_last(class98_sub26, -20911);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("go.D(" + (class98_sub26 != null ? "{...}" : "null") + ',' + i + ',' + i_17_ + ',' + i_18_ + ',' + bool + ')'));
@@ -95,7 +95,7 @@ abstract class Class48_Sub1 extends Class48 {
 
 	static {
 		int i = 0;
-		for (int i_22_ = 0; (i_22_ ^ 0xffffffff) > -121; i_22_++) {
+		for (int i_22_ = 0; i_22_ < 120; i_22_++) {
 			int i_23_ = i_22_ - -1;
 			int i_24_ = (int) (300.0 * Math.pow(2.0, (double) i_23_ / 7.0) + (double) i_23_);
 			i += i_24_;

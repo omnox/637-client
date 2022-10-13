@@ -52,8 +52,8 @@ final class Class356 {
 			if (i_1_ != -26)
 				aLong3024 = -32L;
 			int i_3_ = aRandomAccessFile3021.read(is, i_2_, i);
-			if ((i_3_ ^ 0xffffffff) < -1)
-				aLong3019 += (long) i_3_;
+			if (i_3_ > 0)
+				aLong3019 += i_3_;
 			return i_3_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("vl.C(" + i + ',' + i_1_ + ',' + i_2_ + ',' + (is != null ? "{...}" : "null") + ')'));
@@ -81,7 +81,7 @@ final class Class356 {
 		try {
 			if (l == -1L)
 				l = 9223372036854775807L;
-			if ((file.length() ^ 0xffffffffffffffffL) < (l ^ 0xffffffffffffffffL))
+			if (l < file.length())
 				file.delete();
 			aRandomAccessFile3021 = new RandomAccessFile(file, string);
 			aLong3024 = l;
@@ -121,7 +121,7 @@ final class Class356 {
 
 	final void method3882(byte[] is, int i, int i_4_, int i_5_) throws IOException {
 		try {
-			if (((long) i_5_ - -aLong3019 ^ 0xffffffffffffffffL) < (aLong3024 ^ 0xffffffffffffffffL)) {
+			if (aLong3024 < (long) i_5_ - -aLong3019) {
 				aRandomAccessFile3021.seek(aLong3024);
 				aRandomAccessFile3021.write(1);
 				throw new EOFException();
@@ -129,7 +129,7 @@ final class Class356 {
 			aRandomAccessFile3021.write(is, i_4_, i_5_);
 			if (i != 4657)
 				method3876((byte) 49);
-			aLong3019 += (long) i_5_;
+			aLong3019 += i_5_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("vl.B(" + (is != null ? "{...}" : "null") + ',' + i + ',' + i_4_ + ',' + i_5_ + ')'));
 		}

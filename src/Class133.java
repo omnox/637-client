@@ -56,7 +56,7 @@ final class Class133 implements Interface18 {
 		do {
 			try {
 				if (bool)
-					Class265.aHa1974.aa(0, 0, Class39_Sub1.anInt3593, Class98_Sub25.anInt4024, ((Class163) aClass163_3453).anInt3515, 0);
+					Class265.aHa1974.aa(0, 0, Class39_Sub1.anInt3593, Class98_Sub25.anInt4024, aClass163_3453.anInt3515, 0);
 				if (i < -81)
 					break;
 				method2238(true, null);

@@ -10,7 +10,7 @@ public class dxVertexLayout extends Class256 {
 
 	dxVertexLayout(ha_Sub3_Sub1 var_ha_Sub3_Sub1, Class49[] class49s) {
 		try {
-			VertexElementCollection vertexelementcollection = new VertexElementCollection(((ha_Sub3_Sub1) var_ha_Sub3_Sub1).aJaa6108);
+			VertexElementCollection vertexelementcollection = new VertexElementCollection(var_ha_Sub3_Sub1.aJaa6108);
 			int i = 0;
 			for (int i_0_ = 0; class49s.length > i_0_; i_0_++) {
 				int i_1_ = 0;
@@ -34,11 +34,11 @@ public class dxVertexLayout extends Class256 {
 							vertexelementcollection.addElement(i_0_, 1, 0, 5, i++, i_1_);
 					} else
 						vertexelementcollection.addElement(i_0_, 4, 0, 10, 0, i_1_);
-					i_1_ += ((Class169) class169).anInt1295;
+					i_1_ += class169.anInt1295;
 				}
 			}
 			vertexelementcollection.finish();
-			((dxVertexLayout) this).anIDirect3DVertexDeclaration5155 = ((ha_Sub3_Sub1) var_ha_Sub3_Sub1).anIDirect3DDevice6098.a(vertexelementcollection, null);
+			this.anIDirect3DVertexDeclaration5155 = var_ha_Sub3_Sub1.anIDirect3DDevice6098.a(vertexelementcollection, null);
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
 		}

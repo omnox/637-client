@@ -15,7 +15,7 @@ final class Class85 {
 			if (!Class98_Sub17_Sub1.aClass207_5783.method2756(false, interfaceID))
 				return false;
 			int i_1_ = Class98_Sub17_Sub1.aClass207_5783.method2761(0, interfaceID);
-			if ((i_1_ ^ 0xffffffff) == -1) {
+			if (i_1_ == 0) {
 				Class246_Sub3_Sub3_Sub1.loadedInterfaceFlags[interfaceID] = true;
 				return true;
 			}
@@ -26,7 +26,7 @@ final class Class85 {
 					byte[] archiveData = Class98_Sub17_Sub1.aClass207_5783.readArchive(componentID, interfaceID);
 					if (archiveData != null) {
 						GameInterfaceData interfaceComponent = (Class159.gameInterfaces[interfaceID][componentID] = new GameInterfaceData());
-						((GameInterfaceData) interfaceComponent).anInt2248 = (interfaceID << -1849090224) - -componentID;
+						interfaceComponent.anInt2248 = (interfaceID << 16) - -componentID;
 						if (archiveData[0] != -1)
 							throw new IllegalStateException("if1");
 						interfaceComponent.decodeInterface(new RSByteBuffer(archiveData), -947);

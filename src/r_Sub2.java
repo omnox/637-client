@@ -40,11 +40,11 @@ final class r_Sub2 extends r {
 
 	final void method1651(int i, int i_0_, int i_1_, int i_2_, int i_3_) {
 		try {
-			((r_Sub2) this).anInt6328 = i_3_ + -i_2_;
-			((r_Sub2) this).anInt6331 = -i_0_ + i;
-			((r_Sub2) this).anInt6327 = i_0_;
+			this.anInt6328 = i_3_ + -i_2_;
+			this.anInt6331 = -i_0_ + i;
+			this.anInt6327 = i_0_;
 			if (i_1_ == 0)
-				((r_Sub2) this).anInt6329 = i_2_;
+				this.anInt6329 = i_2_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("gl.D(" + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ')'));
 		}
@@ -54,7 +54,7 @@ final class r_Sub2 extends r {
 		try {
 			if (i_5_ != 22657)
 				method1654(-99);
-			if ((((r_Sub2) this).aByteArray6332.length ^ 0xffffffff) > (i_4_ * i ^ 0xffffffff))
+			if (i_4_ * i > this.aByteArray6332.length)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
@@ -67,16 +67,16 @@ final class r_Sub2 extends r {
 			if (i_10_ == -69) {
 				int i_12_ = 0;
 				if (i_11_ != i)
-					i_12_ = (-i_6_ + i_7_ << -443628592) / (-i + i_11_);
+					i_12_ = (-i_6_ + i_7_ << 16) / (-i + i_11_);
 				int i_13_ = 0;
 				if (i_11_ != i_9_)
-					i_13_ = (-i_7_ + i_8_ << 785005552) / (-i_11_ + i_9_);
+					i_13_ = (-i_7_ + i_8_ << 16) / (-i_11_ + i_9_);
 				int i_14_ = 0;
-				if ((i ^ 0xffffffff) != (i_9_ ^ 0xffffffff))
-					i_14_ = (i_6_ + -i_8_ << -747179600) / (-i_9_ + i);
-				if ((i_11_ ^ 0xffffffff) > (i ^ 0xffffffff) || i > i_9_) {
-					if ((i_9_ ^ 0xffffffff) <= (i_11_ ^ 0xffffffff)) {
-						if ((i ^ 0xffffffff) >= (i_9_ ^ 0xffffffff)) {
+				if (i_9_ != i)
+					i_14_ = (i_6_ + -i_8_ << 16) / (-i_9_ + i);
+				if (i > i_11_ || i > i_9_) {
+					if (i_11_ <= i_9_) {
+						if (i_9_ >= i) {
 							i_8_ = i_7_ <<= -1005720400;
 							i_6_ <<= 1054242160;
 							if (i_11_ < 0) {
@@ -84,39 +84,39 @@ final class r_Sub2 extends r {
 								i_8_ -= i_11_ * i_12_;
 								i_11_ = 0;
 							}
-							if ((i ^ 0xffffffff) > -1) {
+							if (i < 0) {
 								i_6_ -= i_14_ * i;
 								i = 0;
 							}
 							if (i_12_ < i_13_) {
 								i_9_ -= i;
 								i -= i_11_;
-								i_11_ *= ((r_Sub2) this).anInt6328;
-								while ((--i ^ 0xffffffff) <= -1) {
-									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_8_ >> 1059858032, i_7_ >> 2069463248, 0, ((r_Sub2) this).aByteArray6332);
-									i_11_ += ((r_Sub2) this).anInt6328;
+								i_11_ *= this.anInt6328;
+								while (--i >= 0) {
+									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_8_ >> 16, i_7_ >> 16, 0, this.aByteArray6332);
+									i_11_ += this.anInt6328;
 									i_7_ += i_13_;
 									i_8_ += i_12_;
 								}
-								while ((--i_9_ ^ 0xffffffff) <= -1) {
-									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_6_ >> 120550704, i_7_ >> 1465970480, 0, ((r_Sub2) this).aByteArray6332);
-									i_11_ += ((r_Sub2) this).anInt6328;
+								while (--i_9_ >= 0) {
+									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_6_ >> 16, i_7_ >> 16, 0, this.aByteArray6332);
+									i_11_ += this.anInt6328;
 									i_6_ += i_14_;
 									i_7_ += i_13_;
 								}
 							} else {
 								i_9_ -= i;
 								i -= i_11_;
-								i_11_ = ((r_Sub2) this).anInt6328 * i_11_;
-								while ((--i ^ 0xffffffff) <= -1) {
-									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_7_ >> -670753872, i_8_ >> -481747760, 0, ((r_Sub2) this).aByteArray6332);
+								i_11_ = this.anInt6328 * i_11_;
+								while (--i >= 0) {
+									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_7_ >> 16, i_8_ >> 16, 0, this.aByteArray6332);
 									i_7_ += i_13_;
-									i_11_ += ((r_Sub2) this).anInt6328;
+									i_11_ += this.anInt6328;
 									i_8_ += i_12_;
 								}
-								while ((--i_9_ ^ 0xffffffff) <= -1) {
-									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_7_ >> -2068840848, i_6_ >> 2101115120, 0, ((r_Sub2) this).aByteArray6332);
-									i_11_ += ((r_Sub2) this).anInt6328;
+								while (--i_9_ >= 0) {
+									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_7_ >> 16, i_6_ >> 16, 0, this.aByteArray6332);
+									i_11_ += this.anInt6328;
 									i_6_ += i_14_;
 									i_7_ += i_13_;
 								}
@@ -129,45 +129,45 @@ final class r_Sub2 extends r {
 								i_6_ -= i_11_ * i_12_;
 								i_11_ = 0;
 							}
-							if ((i_9_ ^ 0xffffffff) > -1) {
+							if (i_9_ < 0) {
 								i_8_ -= i_14_ * i_9_;
 								i_9_ = 0;
 							}
-							if (i_9_ != i_11_ && ((i_12_ ^ 0xffffffff) > (i_13_ ^ 0xffffffff)) || i_9_ == i_11_ && ((i_14_ ^ 0xffffffff) > (i_12_ ^ 0xffffffff))) {
+							if (i_9_ != i_11_ && (i_13_ > i_12_) || i_9_ == i_11_ && (i_12_ > i_14_)) {
 								i -= i_9_;
 								i_9_ -= i_11_;
-								i_11_ *= ((r_Sub2) this).anInt6328;
+								i_11_ *= this.anInt6328;
 								while (--i_9_ >= 0) {
-									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_6_ >> 1993822576, i_7_ >> -51441968, 0, ((r_Sub2) this).aByteArray6332);
+									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_6_ >> 16, i_7_ >> 16, 0, this.aByteArray6332);
 									i_7_ += i_13_;
-									i_11_ += ((r_Sub2) this).anInt6328;
+									i_11_ += this.anInt6328;
 									i_6_ += i_12_;
 								}
-								while ((--i ^ 0xffffffff) <= -1) {
-									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_6_ >> -1614605648, i_8_ >> -1609116880, 0, ((r_Sub2) this).aByteArray6332);
+								while (--i >= 0) {
+									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_6_ >> 16, i_8_ >> 16, 0, this.aByteArray6332);
 									i_6_ += i_12_;
 									i_8_ += i_14_;
-									i_11_ += ((r_Sub2) this).anInt6328;
+									i_11_ += this.anInt6328;
 								}
 							} else {
 								i -= i_9_;
 								i_9_ -= i_11_;
-								i_11_ *= ((r_Sub2) this).anInt6328;
+								i_11_ *= this.anInt6328;
 								while (--i_9_ >= 0) {
-									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_7_ >> -24007280, i_6_ >> 797325680, 0, ((r_Sub2) this).aByteArray6332);
+									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_7_ >> 16, i_6_ >> 16, 0, this.aByteArray6332);
 									i_6_ += i_12_;
-									i_11_ += ((r_Sub2) this).anInt6328;
+									i_11_ += this.anInt6328;
 									i_7_ += i_13_;
 								}
 								while (--i >= 0) {
-									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_8_ >> 1015000624, i_6_ >> 1871830288, 0, ((r_Sub2) this).aByteArray6332);
+									Class246_Sub4_Sub2.method3108((byte) 1, i_11_, i_8_ >> 16, i_6_ >> 16, 0, this.aByteArray6332);
 									i_6_ += i_12_;
-									i_11_ += ((r_Sub2) this).anInt6328;
+									i_11_ += this.anInt6328;
 									i_8_ += i_14_;
 								}
 							}
 						}
-					} else if ((i ^ 0xffffffff) <= (i_11_ ^ 0xffffffff)) {
+					} else if (i_11_ <= i) {
 						i_6_ = i_8_ <<= 1675497904;
 						i_7_ <<= -180783632;
 						if (i_9_ < 0) {
@@ -175,41 +175,41 @@ final class r_Sub2 extends r {
 							i_8_ -= i_9_ * i_14_;
 							i_9_ = 0;
 						}
-						if ((i_11_ ^ 0xffffffff) > -1) {
+						if (i_11_ < 0) {
 							i_7_ -= i_11_ * i_12_;
 							i_11_ = 0;
 						}
 						if (i_13_ >= i_14_) {
 							i -= i_11_;
 							i_11_ -= i_9_;
-							i_9_ *= ((r_Sub2) this).anInt6328;
+							i_9_ *= this.anInt6328;
 							while (--i_11_ >= 0) {
-								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_8_ >> 904296848, i_6_ >> 871105648, 0, ((r_Sub2) this).aByteArray6332);
-								i_9_ += ((r_Sub2) this).anInt6328;
+								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_8_ >> 16, i_6_ >> 16, 0, this.aByteArray6332);
+								i_9_ += this.anInt6328;
 								i_6_ += i_13_;
 								i_8_ += i_14_;
 							}
 							while (--i >= 0) {
-								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_8_ >> 1374751856, i_7_ >> -493069808, 0, ((r_Sub2) this).aByteArray6332);
-								i_9_ += ((r_Sub2) this).anInt6328;
+								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_8_ >> 16, i_7_ >> 16, 0, this.aByteArray6332);
+								i_9_ += this.anInt6328;
 								i_7_ += i_12_;
 								i_8_ += i_14_;
 							}
 						} else {
 							i -= i_11_;
 							i_11_ -= i_9_;
-							i_9_ *= ((r_Sub2) this).anInt6328;
-							while ((--i_11_ ^ 0xffffffff) <= -1) {
-								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_6_ >> 588920496, i_8_ >> 1994599568, 0, ((r_Sub2) this).aByteArray6332);
+							i_9_ *= this.anInt6328;
+							while (--i_11_ >= 0) {
+								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_6_ >> 16, i_8_ >> 16, 0, this.aByteArray6332);
 								i_8_ += i_14_;
 								i_6_ += i_13_;
-								i_9_ += ((r_Sub2) this).anInt6328;
+								i_9_ += this.anInt6328;
 							}
-							while ((--i ^ 0xffffffff) <= -1) {
-								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_7_ >> 454894448, i_8_ >> 317092656, 0, ((r_Sub2) this).aByteArray6332);
+							while (--i >= 0) {
+								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_7_ >> 16, i_8_ >> 16, 0, this.aByteArray6332);
 								i_8_ += i_14_;
 								i_7_ += i_12_;
-								i_9_ += ((r_Sub2) this).anInt6328;
+								i_9_ += this.anInt6328;
 							}
 						}
 					} else {
@@ -220,39 +220,39 @@ final class r_Sub2 extends r {
 							i_8_ -= i_14_ * i_9_;
 							i_9_ = 0;
 						}
-						if ((i ^ 0xffffffff) > -1) {
+						if (i < 0) {
 							i_6_ -= i * i_12_;
 							i = 0;
 						}
-						if ((i_14_ ^ 0xffffffff) >= (i_13_ ^ 0xffffffff)) {
+						if (i_13_ >= i_14_) {
 							i_11_ -= i;
 							i -= i_9_;
-							i_9_ = ((r_Sub2) this).anInt6328 * i_9_;
-							while ((--i ^ 0xffffffff) <= -1) {
-								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_8_ >> -1048394864, i_7_ >> -429300688, 0, ((r_Sub2) this).aByteArray6332);
-								i_9_ += ((r_Sub2) this).anInt6328;
+							i_9_ = this.anInt6328 * i_9_;
+							while (--i >= 0) {
+								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_8_ >> 16, i_7_ >> 16, 0, this.aByteArray6332);
+								i_9_ += this.anInt6328;
 								i_8_ += i_14_;
 								i_7_ += i_13_;
 							}
 							while (--i_11_ >= 0) {
-								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_6_ >> -2103570032, i_7_ >> 1396136368, 0, ((r_Sub2) this).aByteArray6332);
-								i_9_ += ((r_Sub2) this).anInt6328;
+								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_6_ >> 16, i_7_ >> 16, 0, this.aByteArray6332);
+								i_9_ += this.anInt6328;
 								i_7_ += i_13_;
 								i_6_ += i_12_;
 							}
 						} else {
 							i_11_ -= i;
 							i -= i_9_;
-							i_9_ = ((r_Sub2) this).anInt6328 * i_9_;
-							while ((--i ^ 0xffffffff) <= -1) {
-								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_7_ >> -322633904, i_8_ >> 955734320, 0, ((r_Sub2) this).aByteArray6332);
+							i_9_ = this.anInt6328 * i_9_;
+							while (--i >= 0) {
+								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_7_ >> 16, i_8_ >> 16, 0, this.aByteArray6332);
 								i_7_ += i_13_;
 								i_8_ += i_14_;
-								i_9_ += ((r_Sub2) this).anInt6328;
+								i_9_ += this.anInt6328;
 							}
-							while ((--i_11_ ^ 0xffffffff) <= -1) {
-								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_7_ >> 504672272, i_6_ >> 46642864, 0, ((r_Sub2) this).aByteArray6332);
-								i_9_ += ((r_Sub2) this).anInt6328;
+							while (--i_11_ >= 0) {
+								Class246_Sub4_Sub2.method3108((byte) 1, i_9_, i_7_ >> 16, i_6_ >> 16, 0, this.aByteArray6332);
+								i_9_ += this.anInt6328;
 								i_7_ += i_13_;
 								i_6_ += i_12_;
 							}
@@ -261,7 +261,7 @@ final class r_Sub2 extends r {
 				} else if (i_9_ <= i_11_) {
 					i_7_ = i_6_ <<= 825934864;
 					i_8_ <<= 502840432;
-					if ((i ^ 0xffffffff) > -1) {
+					if (i < 0) {
 						i_6_ -= i_12_ * i;
 						i_7_ -= i * i_14_;
 						i = 0;
@@ -270,35 +270,35 @@ final class r_Sub2 extends r {
 						i_8_ -= i_9_ * i_13_;
 						i_9_ = 0;
 					}
-					if (((i ^ 0xffffffff) != (i_9_ ^ 0xffffffff) && i_14_ < i_12_) || ((i ^ 0xffffffff) == (i_9_ ^ 0xffffffff) && (i_13_ ^ 0xffffffff) < (i_12_ ^ 0xffffffff))) {
+					if ((i_9_ != i && i_14_ < i_12_) || (i_9_ == i && i_12_ < i_13_)) {
 						i_11_ -= i_9_;
 						i_9_ -= i;
-						i = ((r_Sub2) this).anInt6328 * i;
-						while ((--i_9_ ^ 0xffffffff) <= -1) {
-							Class246_Sub4_Sub2.method3108((byte) 1, i, i_7_ >> -2091813776, i_6_ >> 146157264, 0, (((r_Sub2) this).aByteArray6332));
+						i = this.anInt6328 * i;
+						while (--i_9_ >= 0) {
+							Class246_Sub4_Sub2.method3108((byte) 1, i, i_7_ >> 16, i_6_ >> 16, 0, (this.aByteArray6332));
 							i_7_ += i_14_;
 							i_6_ += i_12_;
-							i += ((r_Sub2) this).anInt6328;
+							i += this.anInt6328;
 						}
 						while (--i_11_ >= 0) {
-							Class246_Sub4_Sub2.method3108((byte) 1, i, i_8_ >> 1605633872, i_6_ >> 118924656, 0, (((r_Sub2) this).aByteArray6332));
-							i += ((r_Sub2) this).anInt6328;
+							Class246_Sub4_Sub2.method3108((byte) 1, i, i_8_ >> 16, i_6_ >> 16, 0, (this.aByteArray6332));
+							i += this.anInt6328;
 							i_6_ += i_12_;
 							i_8_ += i_13_;
 						}
 					} else {
 						i_11_ -= i_9_;
 						i_9_ -= i;
-						i = ((r_Sub2) this).anInt6328 * i;
-						while ((--i_9_ ^ 0xffffffff) <= -1) {
-							Class246_Sub4_Sub2.method3108((byte) 1, i, i_6_ >> 580937424, i_7_ >> -1796960496, 0, (((r_Sub2) this).aByteArray6332));
+						i = this.anInt6328 * i;
+						while (--i_9_ >= 0) {
+							Class246_Sub4_Sub2.method3108((byte) 1, i, i_6_ >> 16, i_7_ >> 16, 0, (this.aByteArray6332));
 							i_7_ += i_14_;
-							i += ((r_Sub2) this).anInt6328;
+							i += this.anInt6328;
 							i_6_ += i_12_;
 						}
 						while (--i_11_ >= 0) {
-							Class246_Sub4_Sub2.method3108((byte) 1, i, i_6_ >> 2001540368, i_8_ >> -1393449104, 0, (((r_Sub2) this).aByteArray6332));
-							i += ((r_Sub2) this).anInt6328;
+							Class246_Sub4_Sub2.method3108((byte) 1, i, i_6_ >> 16, i_8_ >> 16, 0, (this.aByteArray6332));
+							i += this.anInt6328;
 							i_6_ += i_12_;
 							i_8_ += i_13_;
 						}
@@ -315,36 +315,36 @@ final class r_Sub2 extends r {
 						i_7_ -= i_11_ * i_13_;
 						i_11_ = 0;
 					}
-					if (((i ^ 0xffffffff) == (i_11_ ^ 0xffffffff) || i_14_ >= i_12_) && ((i ^ 0xffffffff) != (i_11_ ^ 0xffffffff) || i_14_ <= i_13_)) {
+					if ((i_11_ == i || i_14_ >= i_12_) && (i_11_ != i || i_14_ <= i_13_)) {
 						i_9_ -= i_11_;
 						i_11_ -= i;
-						i *= ((r_Sub2) this).anInt6328;
+						i *= this.anInt6328;
 						while (--i_11_ >= 0) {
-							Class246_Sub4_Sub2.method3108((byte) 1, i, i_6_ >> 1230470320, i_8_ >> -1985593040, 0, (((r_Sub2) this).aByteArray6332));
-							i += ((r_Sub2) this).anInt6328;
+							Class246_Sub4_Sub2.method3108((byte) 1, i, i_6_ >> 16, i_8_ >> 16, 0, (this.aByteArray6332));
+							i += this.anInt6328;
 							i_8_ += i_14_;
 							i_6_ += i_12_;
 						}
-						while ((--i_9_ ^ 0xffffffff) <= -1) {
-							Class246_Sub4_Sub2.method3108((byte) 1, i, i_7_ >> 52576112, i_8_ >> 411287696, 0, (((r_Sub2) this).aByteArray6332));
-							i += ((r_Sub2) this).anInt6328;
+						while (--i_9_ >= 0) {
+							Class246_Sub4_Sub2.method3108((byte) 1, i, i_7_ >> 16, i_8_ >> 16, 0, (this.aByteArray6332));
+							i += this.anInt6328;
 							i_7_ += i_13_;
 							i_8_ += i_14_;
 						}
 					} else {
 						i_9_ -= i_11_;
 						i_11_ -= i;
-						i = ((r_Sub2) this).anInt6328 * i;
+						i = this.anInt6328 * i;
 						while (--i_11_ >= 0) {
-							Class246_Sub4_Sub2.method3108((byte) 1, i, i_8_ >> 1095249744, i_6_ >> 265258096, 0, (((r_Sub2) this).aByteArray6332));
+							Class246_Sub4_Sub2.method3108((byte) 1, i, i_8_ >> 16, i_6_ >> 16, 0, (this.aByteArray6332));
 							i_6_ += i_12_;
-							i += ((r_Sub2) this).anInt6328;
+							i += this.anInt6328;
 							i_8_ += i_14_;
 						}
 						while (--i_9_ >= 0) {
-							Class246_Sub4_Sub2.method3108((byte) 1, i, i_8_ >> 1255153136, i_7_ >> -1907768848, 0, (((r_Sub2) this).aByteArray6332));
+							Class246_Sub4_Sub2.method3108((byte) 1, i, i_8_ >> 16, i_7_ >> 16, 0, (this.aByteArray6332));
 							i_7_ += i_13_;
-							i += ((r_Sub2) this).anInt6328;
+							i += this.anInt6328;
 							i_8_ += i_14_;
 						}
 					}
@@ -358,21 +358,21 @@ final class r_Sub2 extends r {
 	final void method1654(int i) {
 		try {
 			if (i <= 68)
-				((r_Sub2) this).anInt6328 = -106;
+				this.anInt6328 = -106;
 			int i_15_ = -1;
-			int i_16_ = -8 + ((r_Sub2) this).aByteArray6332.length;
-			while ((i_15_ ^ 0xffffffff) > (i_16_ ^ 0xffffffff)) {
-				((r_Sub2) this).aByteArray6332[++i_15_] = (byte) 0;
-				((r_Sub2) this).aByteArray6332[++i_15_] = (byte) 0;
-				((r_Sub2) this).aByteArray6332[++i_15_] = (byte) 0;
-				((r_Sub2) this).aByteArray6332[++i_15_] = (byte) 0;
-				((r_Sub2) this).aByteArray6332[++i_15_] = (byte) 0;
-				((r_Sub2) this).aByteArray6332[++i_15_] = (byte) 0;
-				((r_Sub2) this).aByteArray6332[++i_15_] = (byte) 0;
-				((r_Sub2) this).aByteArray6332[++i_15_] = (byte) 0;
+			int i_16_ = -8 + this.aByteArray6332.length;
+			while (i_16_ > i_15_) {
+				this.aByteArray6332[++i_15_] = (byte) 0;
+				this.aByteArray6332[++i_15_] = (byte) 0;
+				this.aByteArray6332[++i_15_] = (byte) 0;
+				this.aByteArray6332[++i_15_] = (byte) 0;
+				this.aByteArray6332[++i_15_] = (byte) 0;
+				this.aByteArray6332[++i_15_] = (byte) 0;
+				this.aByteArray6332[++i_15_] = (byte) 0;
+				this.aByteArray6332[++i_15_] = (byte) 0;
 			}
-			while (((r_Sub2) this).aByteArray6332.length - 1 > i_15_)
-				((r_Sub2) this).aByteArray6332[++i_15_] = (byte) 0;
+			while (this.aByteArray6332.length - 1 > i_15_)
+				this.aByteArray6332[++i_15_] = (byte) 0;
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, "gl.B(" + i + ')');
 		}
@@ -395,9 +395,9 @@ final class r_Sub2 extends r {
 			AnimableEntity class246_sub3 = class246_sub3s[i_20_];
 			class246_sub3s[i_20_] = class246_sub3s[i_19_];
 			class246_sub3s[i_19_] = class246_sub3;
-			int i_22_ = ((AnimableEntity) class246_sub3).anInt5083;
+			int i_22_ = class246_sub3.anInt5083;
 			for (int i_23_ = i; i_23_ < i_19_; i_23_++) {
-				if (((AnimableEntity) class246_sub3s[i_23_]).anInt5083 > i_22_ + (i_23_ & 0x1)) {
+				if (class246_sub3s[i_23_].anInt5083 > i_22_ + (i_23_ & 0x1)) {
 					AnimableEntity class246_sub3_24_ = class246_sub3s[i_23_];
 					class246_sub3s[i_23_] = class246_sub3s[i_21_];
 					class246_sub3s[i_21_++] = class246_sub3_24_;
@@ -414,7 +414,7 @@ final class r_Sub2 extends r {
 		try {
 			if (i_26_ != 1230470320)
 				method1657(-3, null, -82, 89, -120, 72, 31, null, -70);
-			int i_32_ = -(i_28_ >> -110374878);
+			int i_32_ = -(i_28_ >> 2);
 			i_28_ = -(0x3 & i_28_);
 			for (int i_33_ = -i_25_; i_33_ < 0; i_33_++) {
 				for (int i_34_ = i_32_; i_34_ < 0; i_34_++) {
@@ -423,7 +423,7 @@ final class r_Sub2 extends r {
 					is[i_31_++] += is_30_[i++];
 					is[i_31_++] += is_30_[i++];
 				}
-				for (int i_35_ = i_28_; (i_35_ ^ 0xffffffff) > -1; i_35_++)
+				for (int i_35_ = i_28_; i_35_ < 0; i_35_++)
 					is[i_31_++] += is_30_[i++];
 				i += i_29_;
 				i_31_ += i_27_;
@@ -435,7 +435,7 @@ final class r_Sub2 extends r {
 
 	r_Sub2(ha_Sub3 var_ha_Sub3, int i, int i_36_) {
 		try {
-			((r_Sub2) this).aByteArray6332 = new byte[i_36_ * i];
+			this.aByteArray6332 = new byte[i_36_ * i];
 		} catch (RuntimeException runtimeexception) {
 			throw Class64_Sub27.method667(runtimeexception, ("gl.<init>(" + (var_ha_Sub3 != null ? "{...}" : "null") + ',' + i + ',' + i_36_ + ')'));
 		}

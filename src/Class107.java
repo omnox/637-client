@@ -24,9 +24,9 @@ final class Class107 {
 	static final int method1720(int i, int i_0_, int i_1_, int i_2_) {
 		try {
 			i_2_ &= 0x3;
-			if ((i_2_ ^ 0xffffffff) == -1)
+			if (i_2_ == 0)
 				return i;
-			if ((i_2_ ^ 0xffffffff) == -2)
+			if (i_2_ == 1)
 				return i_1_;
 			if (i_0_ != 0)
 				aString912 = null;
@@ -61,21 +61,21 @@ final class Class107 {
 	private final AbstractModel method1723(int i, int i_15_, int i_16_, int i_17_, s var_s, s var_s_18_, int i_19_, byte i_20_, Class183 class183, boolean bool, ha var_ha, boolean bool_21_, int i_22_, int i_23_) {
 		try {
 			int i_24_ = i;
-			Class97 class97 = ((((Class107) this).anInt910 == -1 || (i_15_ ^ 0xffffffff) == 0) ? null : class183.method2623(((Class107) this).anInt910, 16383));
-			bool_21_ = bool_21_ & (((Class107) this).aByte923 ^ 0xffffffff) != -1;
+			Class97 class97 = ((this.anInt910 == -1 || i_15_ == -1) ? null : class183.method2623(this.anInt910, 16383));
+			bool_21_ = bool_21_ & this.aByte923 != 0;
 			if (bool != false)
 				anInt918 = 18;
 			if (class97 != null)
 				i_24_ |= class97.method932(false, i_15_, true, i_17_);
 			if (bool_21_)
-				i_24_ = i_24_ | ((((Class107) this).aByte923 ^ 0xffffffff) != -4 ? 2 : 7);
+				i_24_ = i_24_ | (this.aByte923 != 3 ? 2 : 7);
 			if (anInt916 != 128)
 				i_24_ |= 0x2;
-			if ((anInt920 ^ 0xffffffff) != -129 || (anInt924 ^ 0xffffffff) != -1)
+			if (anInt920 != 128 || anInt924 != 0)
 				i_24_ |= 0x5;
 			AbstractModel class146;
-			synchronized (((Class304) ((Class107) this).aClass304_921).aClass79_2537) {
-				class146 = (AbstractModel) (((Class304) ((Class107) this).aClass304_921).aClass79_2537.get((long) (((Class107) this).anInt925 |= (((ha) var_ha).anInt937 << 1821407229))));
+			synchronized (this.aClass304_921.aClass79_2537) {
+				class146 = (AbstractModel) (this.aClass304_921.aClass79_2537.get(this.anInt925 |= (var_ha.anInt937 << 29)));
 			}
 			if (class146 == null || var_ha.c(class146.ua(), i_24_) != 0) {
 				if (class146 != null)
@@ -85,12 +85,12 @@ final class Class107 {
 					i_25_ |= 0x4000;
 				if (aShortArray913 != null)
 					i_25_ |= 0x8000;
-				ModelDefinitions class178 = Class98_Sub6.method981(0, -9252, (((Class304) ((Class107) this).aClass304_921).aClass207_2536), anInt914);
+				ModelDefinitions class178 = Class98_Sub6.method981(0, -9252, (this.aClass304_921.aClass207_2536), anInt914);
 				if (class178 == null)
 					return null;
-				if (((ModelDefinitions) class178).anInt1387 < 13)
+				if (class178.anInt1387 < 13)
 					class178.method2592(13746, 2);
-				class146 = var_ha.method1790(class178, i_25_, (((Class304) ((Class107) this).aClass304_921).anInt2539), 64 + anInt915, 850 + anInt917);
+				class146 = var_ha.method1790(class178, i_25_, (this.aClass304_921.anInt2539), 64 + anInt915, 850 + anInt917);
 				if (aShortArray922 != null) {
 					for (int i_26_ = 0; i_26_ < aShortArray922.length; i_26_++)
 						class146.ia(aShortArray922[i_26_], aShortArray919[i_26_]);
@@ -100,15 +100,15 @@ final class Class107 {
 						class146.aa(aShortArray913[i_27_], aShortArray911[i_27_]);
 				}
 				class146.s(i_24_);
-				synchronized (((Class304) ((Class107) this).aClass304_921).aClass79_2537) {
-					((Class304) ((Class107) this).aClass304_921).aClass79_2537.put((long) (((Class107) this).anInt925 |= ((ha) var_ha).anInt937 << 378441757), class146);
+				synchronized (this.aClass304_921.aClass79_2537) {
+					this.aClass304_921.aClass79_2537.put(this.anInt925 |= var_ha.anInt937 << 29, class146);
 				}
 			}
 			AbstractModel class146_28_ = (class97 != null ? class97.method930(i_20_, 0, i_15_, i_24_, i_17_, (byte) 86, class146, i_23_) : class146.method2341(i_20_, i_24_, true));
-			if ((anInt920 ^ 0xffffffff) != -129 || anInt916 != 128)
+			if (anInt920 != 128 || anInt916 != 128)
 				class146_28_.O(anInt920, anInt916, anInt920);
 			if (anInt924 != 0) {
-				if ((anInt924 ^ 0xffffffff) == -91)
+				if (anInt924 == 90)
 					class146_28_.a(4096);
 				if (anInt924 == 180)
 					class146_28_.a(8192);
@@ -116,7 +116,7 @@ final class Class107 {
 					class146_28_.a(12288);
 			}
 			if (bool_21_)
-				class146_28_.p(((Class107) this).aByte923, anInt918, var_s, var_s_18_, i_19_, i_16_, i_22_);
+				class146_28_.p(this.aByte923, anInt918, var_s, var_s_18_, i_19_, i_16_, i_22_);
 			class146_28_.s(i);
 			return class146_28_;
 		} catch (RuntimeException runtimeexception) {
@@ -127,13 +127,13 @@ final class Class107 {
 	static final int method1724(int i, int i_29_, int i_30_, int i_31_) {
 		try {
 			i_29_ &= 0x3;
-			if ((i_29_ ^ 0xffffffff) == -1)
+			if (i_29_ == 0)
 				return i_30_;
 			if (i != 7)
 				return -123;
 			if (i_29_ == 1)
 				return 4095 - i_31_;
-			if ((i_29_ ^ 0xffffffff) == -3)
+			if (i_29_ == 2)
 				return -i_30_ + 4095;
 			return i_31_;
 		} catch (RuntimeException runtimeexception) {
@@ -170,33 +170,33 @@ final class Class107 {
 			if (i_33_ == 1)
 				anInt914 = class98_sub22.readShort();
 			else if (i_33_ == 2)
-				((Class107) this).anInt910 = class98_sub22.readShort();
+				this.anInt910 = class98_sub22.readShort();
 			else if (i_33_ == 4)
 				anInt920 = class98_sub22.readShort();
 			else if (i_33_ != 5) {
-				if ((i_33_ ^ 0xffffffff) == -7)
+				if (i_33_ == 6)
 					anInt924 = class98_sub22.readShort();
 				else if (i_33_ == 7)
 					anInt915 = class98_sub22.readUnsignedByte();
-				else if ((i_33_ ^ 0xffffffff) == -9)
+				else if (i_33_ == 8)
 					anInt917 = class98_sub22.readUnsignedByte();
 				else if (i_33_ == 9) {
 					anInt918 = 8224;
-					((Class107) this).aByte923 = (byte) 3;
-				} else if ((i_33_ ^ 0xffffffff) == -11)
-					((Class107) this).aBoolean909 = true;
+					this.aByte923 = (byte) 3;
+				} else if (i_33_ == 10)
+					this.aBoolean909 = true;
 				else if (i_33_ != 11) {
-					if ((i_33_ ^ 0xffffffff) == -13)
-						((Class107) this).aByte923 = (byte) 4;
+					if (i_33_ == 12)
+						this.aByte923 = (byte) 4;
 					else if (i_33_ != 13) {
-						if ((i_33_ ^ 0xffffffff) == -15) {
-							((Class107) this).aByte923 = (byte) 2;
+						if (i_33_ == 14) {
+							this.aByte923 = (byte) 2;
 							anInt918 = 256 * class98_sub22.readUnsignedByte();
-						} else if ((i_33_ ^ 0xffffffff) == -16) {
-							((Class107) this).aByte923 = (byte) 3;
+						} else if (i_33_ == 15) {
+							this.aByte923 = (byte) 3;
 							anInt918 = class98_sub22.readShort();
 						} else if (i_33_ == 16) {
-							((Class107) this).aByte923 = (byte) 3;
+							this.aByte923 = (byte) 3;
 							anInt918 = class98_sub22.readInt(-2);
 						} else if (i_33_ != 40) {
 							if (i_33_ == 41) {
@@ -218,9 +218,9 @@ final class Class107 {
 							}
 						}
 					} else
-						((Class107) this).aByte923 = (byte) 5;
+						this.aByte923 = (byte) 5;
 				} else
-					((Class107) this).aByte923 = (byte) 1;
+					this.aByte923 = (byte) 1;
 			} else
 				anInt916 = class98_sub22.readShort();
 			if (i >= -49)
@@ -239,12 +239,12 @@ final class Class107 {
 	}
 
 	public Class107() {
-		((Class107) this).aBoolean909 = false;
+		this.aBoolean909 = false;
 		anInt917 = 0;
 		anInt916 = 128;
 		anInt918 = -1;
 		anInt924 = 0;
-		((Class107) this).aByte923 = (byte) 0;
+		this.aByte923 = (byte) 0;
 		anInt915 = 0;
 		anInt920 = 128;
 	}

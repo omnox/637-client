@@ -30,11 +30,11 @@ final class Class98_Sub10_Sub26 extends Class98_Sub10 {
 	private final void method1083(int i) {
 		do {
 			try {
-				Random random = new Random((long) anInt5686);
+				Random random = new Random(anInt5686);
 				aShortArray5689 = new short[512];
-				if (i <= (anInt5682 ^ 0xffffffff))
+				if (i <= (~anInt5682))
 					break;
-				for (int i_1_ = 0; (i_1_ ^ 0xffffffff) > -513; i_1_++)
+				for (int i_1_ = 0; i_1_ < 512; i_1_++)
 					aShortArray5689[i_1_] = (short) Class63.method546(-28737, anInt5682, random);
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, "oo.E(" + i + ')');
@@ -60,25 +60,25 @@ final class Class98_Sub10_Sub26 extends Class98_Sub10 {
 
 	final int[] method990(int i, int i_2_) {
 		try {
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_2_);
+			int[] is = this.aClass16_3863.method237((byte) 98, i_2_);
 			if (i != 255)
 				anInt5686 = -69;
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
+			if (this.aClass16_3863.aBoolean198) {
 				int i_3_ = 2048 - -(anInt5691 * Class352.anIntArray3001[i_2_]);
-				int i_4_ = i_3_ >> -1160351668;
+				int i_4_ = i_3_ >> 12;
 				int i_5_ = 1 + i_4_;
 				int i_6_ = 0;
-				while_145_: for (/**/; (i_6_ ^ 0xffffffff) > (Class25.anInt268 ^ 0xffffffff); i_6_++) {
+				while_145_: for (/**/; Class25.anInt268 > i_6_; i_6_++) {
 					Class163.anInt3517 = Class93_Sub1_Sub1.anInt6291 = Class252.anInt1924 = Class206.anInt1567 = 2147483647;
 					int i_7_ = 2048 - -(anInt5688 * Class64_Sub1.anIntArray3640[i_6_]);
-					int i_8_ = i_7_ >> -275339860;
+					int i_8_ = i_7_ >> 12;
 					int i_9_ = 1 + i_8_;
-					for (int i_10_ = i_4_ + -1; (i_5_ ^ 0xffffffff) <= (i_10_ ^ 0xffffffff); i_10_++) {
+					for (int i_10_ = i_4_ + -1; i_10_ <= i_5_; i_10_++) {
 						int i_11_ = aByteArray5685[0xff & (anInt5691 <= i_10_ ? -anInt5691 + i_10_ : i_10_)] & 0xff;
 						for (int i_12_ = i_8_ - 1; i_12_ <= i_9_; i_12_++) {
 							int i_13_ = 2 * (0xff & (aByteArray5685[0xff & (i_12_ >= anInt5688 ? i_12_ + -anInt5688 : i_12_) + i_11_]));
-							int i_14_ = (-(i_12_ << -1047229364) - aShortArray5689[i_13_++] + i_7_);
-							int i_15_ = (-(i_10_ << -1193947764) - (aShortArray5689[i_13_] - i_3_));
+							int i_14_ = (-(i_12_ << 12) - aShortArray5689[i_13_++] + i_7_);
+							int i_15_ = (-(i_10_ << 12) - (aShortArray5689[i_13_] - i_3_));
 							int i_16_ = anInt5681;
 							int i_17_;
 							while_141_: do {
@@ -87,7 +87,7 @@ final class Class98_Sub10_Sub26 extends Class98_Sub10 {
 										while_138_: do {
 											do {
 												if (i_16_ != 1) {
-													if ((i_16_ ^ 0xffffffff) != -4) {
+													if (i_16_ != 3) {
 														if (i_16_ != 4) {
 															if (i_16_ != 5) {
 																if (i_16_ == 2)
@@ -99,7 +99,7 @@ final class Class98_Sub10_Sub26 extends Class98_Sub10 {
 														break while_138_;
 													}
 												} else {
-													i_17_ = ((i_14_ * i_14_ - -(i_15_ * i_15_)) >> -1987789620);
+													i_17_ = ((i_14_ * i_14_ - -(i_15_ * i_15_)) >> 12);
 													break while_141_;
 												}
 												i_15_ = (i_15_ < 0 ? -i_15_ : i_15_);
@@ -107,33 +107,33 @@ final class Class98_Sub10_Sub26 extends Class98_Sub10 {
 												i_17_ = (i_14_ > i_15_ ? i_14_ : i_15_);
 												break while_141_;
 											} while (false);
-											i_14_ = (int) ((Math.sqrt((double) ((float) ((i_14_ ^ 0xffffffff) > -1 ? -i_14_ : i_14_) / 4096.0F))) * 4096.0);
-											i_15_ = (int) (4096.0 * (Math.sqrt((double) ((float) (i_15_ >= 0 ? i_15_ : -i_15_) / 4096.0F))));
+											i_14_ = (int) ((Math.sqrt((float) (i_14_ < 0 ? -i_14_ : i_14_) / 4096.0F)) * 4096.0);
+											i_15_ = (int) (4096.0 * (Math.sqrt((float) (i_15_ >= 0 ? i_15_ : -i_15_) / 4096.0F)));
 											i_17_ = i_14_ + i_15_;
-											i_17_ = i_17_ * i_17_ >> 1226834796;
+											i_17_ = i_17_ * i_17_ >> 12;
 											break while_141_;
 										} while (false);
 										i_14_ *= i_14_;
 										i_15_ *= i_15_;
-										i_17_ = (int) ((Math.sqrt(Math.sqrt((double) ((float) (i_15_ + i_14_) / 1.6777216E7F)))) * 4096.0);
+										i_17_ = (int) ((Math.sqrt(Math.sqrt((float) (i_15_ + i_14_) / 1.6777216E7F))) * 4096.0);
 										break while_141_;
 									} while (false);
-									i_17_ = (((i_15_ ^ 0xffffffff) > -1 ? -i_15_ : i_15_) + ((i_14_ ^ 0xffffffff) > -1 ? -i_14_ : i_14_));
+									i_17_ = ((i_15_ < 0 ? -i_15_ : i_15_) + (i_14_ < 0 ? -i_14_ : i_14_));
 									break while_141_;
 								} while (false);
-								i_17_ = (int) (4096.0 * (Math.sqrt((double) ((float) ((i_14_ * i_14_) - -(i_15_ * i_15_)) / 1.6777216E7F))));
+								i_17_ = (int) (4096.0 * (Math.sqrt((float) ((i_14_ * i_14_) - -(i_15_ * i_15_)) / 1.6777216E7F)));
 							} while (false);
-							if ((Class163.anInt3517 ^ 0xffffffff) < (i_17_ ^ 0xffffffff)) {
+							if (i_17_ < Class163.anInt3517) {
 								Class206.anInt1567 = Class252.anInt1924;
 								Class252.anInt1924 = Class93_Sub1_Sub1.anInt6291;
 								Class93_Sub1_Sub1.anInt6291 = Class163.anInt3517;
 								Class163.anInt3517 = i_17_;
-							} else if ((i_17_ ^ 0xffffffff) > (Class93_Sub1_Sub1.anInt6291 ^ 0xffffffff)) {
+							} else if (Class93_Sub1_Sub1.anInt6291 > i_17_) {
 								Class206.anInt1567 = Class252.anInt1924;
 								Class252.anInt1924 = Class93_Sub1_Sub1.anInt6291;
 								Class93_Sub1_Sub1.anInt6291 = i_17_;
-							} else if ((i_17_ ^ 0xffffffff) <= (Class252.anInt1924 ^ 0xffffffff)) {
-								if ((Class206.anInt1567 ^ 0xffffffff) < (i_17_ ^ 0xffffffff))
+							} else if (Class252.anInt1924 <= i_17_) {
+								if (i_17_ < Class206.anInt1567)
 									Class206.anInt1567 = i_17_;
 							} else {
 								Class206.anInt1567 = Class252.anInt1924;
@@ -145,10 +145,10 @@ final class Class98_Sub10_Sub26 extends Class98_Sub10 {
 					while_143_: do {
 						while_142_: do {
 							do {
-								if ((i_18_ ^ 0xffffffff) != -1) {
+								if (i_18_ != 0) {
 									if (i_18_ != 1) {
-										if ((i_18_ ^ 0xffffffff) != -4) {
-											if ((i_18_ ^ 0xffffffff) != -5) {
+										if (i_18_ != 3) {
+											if (i_18_ != 4) {
 												if (i_18_ == 2)
 													break while_143_;
 												continue while_145_;
@@ -188,11 +188,11 @@ final class Class98_Sub10_Sub26 extends Class98_Sub10 {
 						while_147_: do {
 							while_146_: do {
 								do {
-									if ((i_20_ ^ 0xffffffff) != -1) {
-										if ((i_20_ ^ 0xffffffff) != -2) {
-											if ((i_20_ ^ 0xffffffff) != -3) {
+									if (i_20_ != 0) {
+										if (i_20_ != 1) {
+											if (i_20_ != 2) {
 												if (i_20_ != 3) {
-													if ((i_20_ ^ 0xffffffff) != -5) {
+													if (i_20_ != 4) {
 														if (i_20_ != 5) {
 															if (i_20_ == 6)
 																break while_149_;
@@ -245,10 +245,10 @@ final class Class98_Sub10_Sub26 extends Class98_Sub10 {
 		try {
 			try {
 				int i_21_ = class98_sub22.readSmart(1689622712);
-				if ((i_21_ ^ 0xffffffff) < (i ^ 0xffffffff))
+				if (i < i_21_)
 					i_21_ = i;
 				byte[] is = new byte[i_21_];
-				((RSByteBuffer) class98_sub22).position += (Class146_Sub3.aClass213_4949.method2782(((RSByteBuffer) class98_sub22).position, is, -69, i_21_, ((RSByteBuffer) class98_sub22).data, 0));
+				class98_sub22.position += (Class146_Sub3.aClass213_4949.method2782(class98_sub22.position, is, -69, i_21_, class98_sub22.data, 0));
 				String string = Class98_Sub46_Sub6.method1546(i_21_, 0, (byte) -101, is);
 				if (bool != false)
 					return null;

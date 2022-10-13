@@ -9,20 +9,20 @@ final class Class98_Sub10_Sub2 extends Class98_Sub10 {
 		try {
 			if (i > -76)
 				anInt5545 = -101;
-			int[][] is = ((Class98_Sub10) this).aClass223_3859.method2828(i_0_, 0);
-			if (((Class223) ((Class98_Sub10) this).aClass223_3859).aBoolean1683) {
+			int[][] is = this.aClass223_3859.method2828(i_0_, 0);
+			if (this.aClass223_3859.aBoolean1683) {
 				int[] is_1_ = this.method1000(i_0_, 1, 0);
 				int[] is_2_ = this.method1000(i_0_, 2, 0);
 				int[] is_3_ = is[0];
 				int[] is_4_ = is[1];
 				int[] is_5_ = is[2];
-				for (int i_6_ = 0; (Class25.anInt268 ^ 0xffffffff) < (i_6_ ^ 0xffffffff); i_6_++) {
-					int i_7_ = 255 * is_1_[i_6_] >> 328402860 & 0xff;
-					int i_8_ = is_2_[i_6_] * anInt5545 >> 299114828;
-					int i_9_ = (Class278_Sub1.anIntArray5168[i_7_] * i_8_ >> -1083056916);
-					int i_10_ = aa_Sub2.anIntArray3565[i_7_] * i_8_ >> -1641503572;
-					int i_11_ = Class329.anInt2761 & (i_9_ >> 1756603788) + i_6_;
-					int i_12_ = za_Sub1.anInt6075 & (i_10_ >> -1134552788) + i_0_;
+				for (int i_6_ = 0; i_6_ < Class25.anInt268; i_6_++) {
+					int i_7_ = 255 * is_1_[i_6_] >> 12 & 0xff;
+					int i_8_ = is_2_[i_6_] * anInt5545 >> 12;
+					int i_9_ = (Class278_Sub1.anIntArray5168[i_7_] * i_8_ >> 12);
+					int i_10_ = aa_Sub2.anIntArray3565[i_7_] * i_8_ >> 12;
+					int i_11_ = Class329.anInt2761 & (i_9_ >> 12) + i_6_;
+					int i_12_ = za_Sub1.anInt6075 & (i_10_ >> 12) + i_0_;
 					int[][] is_13_ = this.method994(i_12_, 24431, 0);
 					is_3_[i_6_] = is_13_[0][i_11_];
 					is_4_[i_6_] = is_13_[1][i_11_];
@@ -63,17 +63,17 @@ final class Class98_Sub10_Sub2 extends Class98_Sub10 {
 
 	final int[] method990(int i, int i_16_) {
 		try {
-			int[] is = ((Class98_Sub10) this).aClass16_3863.method237((byte) 98, i_16_);
-			if (((Class16) ((Class98_Sub10) this).aClass16_3863).aBoolean198) {
+			int[] is = this.aClass16_3863.method237((byte) 98, i_16_);
+			if (this.aClass16_3863.aBoolean198) {
 				int[] is_17_ = this.method1000(i_16_, 1, 0);
 				int[] is_18_ = this.method1000(i_16_, 2, 0);
-				for (int i_19_ = 0; (Class25.anInt268 ^ 0xffffffff) < (i_19_ ^ 0xffffffff); i_19_++) {
-					int i_20_ = is_17_[i_19_] >> -2049795036 & 0xff;
-					int i_21_ = anInt5545 * is_18_[i_19_] >> 329150252;
-					int i_22_ = (i_21_ * Class278_Sub1.anIntArray5168[i_20_] >> -862649204);
-					int i_23_ = aa_Sub2.anIntArray3565[i_20_] * i_21_ >> -1243350708;
-					int i_24_ = Class329.anInt2761 & (i_22_ >> 820741420) + i_19_;
-					int i_25_ = za_Sub1.anInt6075 & (i_23_ >> 1296780) + i_16_;
+				for (int i_19_ = 0; i_19_ < Class25.anInt268; i_19_++) {
+					int i_20_ = is_17_[i_19_] >> 4 & 0xff;
+					int i_21_ = anInt5545 * is_18_[i_19_] >> 12;
+					int i_22_ = (i_21_ * Class278_Sub1.anIntArray5168[i_20_] >> 12);
+					int i_23_ = aa_Sub2.anIntArray3565[i_20_] * i_21_ >> 12;
+					int i_24_ = Class329.anInt2761 & (i_22_ >> 12) + i_19_;
+					int i_25_ = za_Sub1.anInt6075 & (i_23_ >> 12) + i_16_;
 					int[] is_26_ = this.method1000(i_25_, 0, 0);
 					is[i_19_] = is_26_[i_24_];
 				}
@@ -99,14 +99,14 @@ final class Class98_Sub10_Sub2 extends Class98_Sub10 {
 		try {
 			int i_28_ = i;
 			do {
-				if ((i_28_ ^ 0xffffffff) != -1) {
-					if ((i_28_ ^ 0xffffffff) != -2)
+				if (i_28_ != 0) {
+					if (i_28_ != 1)
 						break;
 				} else {
-					anInt5545 = class98_sub22.readShort() << 568932100;
+					anInt5545 = class98_sub22.readShort() << 4;
 					break;
 				}
-				((Class98_Sub10) this).aBoolean3861 = ((class98_sub22.readUnsignedByte() ^ 0xffffffff) == -2);
+				this.aBoolean3861 = (class98_sub22.readUnsignedByte() == 1);
 			} while (false);
 			if (i_27_ >= -92)
 				anInt5545 = 33;
@@ -120,9 +120,9 @@ final class Class98_Sub10_Sub2 extends Class98_Sub10 {
 			try {
 				int i_29_ = 0 / ((-3 - i) / 47);
 				try {
-					if ((Class257.anInt1948 ^ 0xffffffff) == -2) {
+					if (Class257.anInt1948 == 1) {
 						int i_30_ = Class366.aClass98_Sub31_Sub2_3122.method1360(-16257);
-						if ((i_30_ ^ 0xffffffff) < -1 && Class366.aClass98_Sub31_Sub2_3122.method1354(-3619)) {
+						if (i_30_ > 0 && Class366.aClass98_Sub31_Sub2_3122.method1354(-3619)) {
 							i_30_ -= Class348.anInt2911;
 							if (i_30_ < 0)
 								i_30_ = 0;
@@ -142,12 +142,12 @@ final class Class98_Sub10_Sub2 extends Class98_Sub10 {
 						} while (false);
 						Class81.aClass98_Sub7_620 = null;
 					}
-					if ((Class257.anInt1948 ^ 0xffffffff) != -4)
+					if (Class257.anInt1948 != 3)
 						break;
 					int i_31_ = Class366.aClass98_Sub31_Sub2_3122.method1360(-16257);
-					if ((Class224_Sub3.anInt5037 ^ 0xffffffff) < (i_31_ ^ 0xffffffff) && Class366.aClass98_Sub31_Sub2_3122.method1354(-3619)) {
+					if (i_31_ < Class224_Sub3.anInt5037 && Class366.aClass98_Sub31_Sub2_3122.method1354(-3619)) {
 						i_31_ += Class22.anInt219;
-						if ((Class224_Sub3.anInt5037 ^ 0xffffffff) > (i_31_ ^ 0xffffffff))
+						if (i_31_ > Class224_Sub3.anInt5037)
 							i_31_ = Class224_Sub3.anInt5037;
 						Class366.aClass98_Sub31_Sub2_3122.method1366(i_31_, (byte) 72);
 					} else {

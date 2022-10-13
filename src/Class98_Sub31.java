@@ -17,7 +17,7 @@ abstract class Class98_Sub31 extends Node {
 	}
 
 	final void method1324(int[] is, int i, int i_0_) {
-		if (((Class98_Sub31) this).aBoolean4102)
+		if (this.aBoolean4102)
 			method1325(is, i, i_0_);
 		else
 			method1321(i_0_);

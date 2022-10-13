@@ -26,7 +26,7 @@ final class Class8 {
 		try {
 			Class98_Sub46_Sub18 class98_sub46_sub18;
 			synchronized (aClass79_109) {
-				class98_sub46_sub18 = ((Class98_Sub46_Sub18) aClass79_109.get((long) i_0_));
+				class98_sub46_sub18 = ((Class98_Sub46_Sub18) aClass79_109.get(i_0_));
 			}
 			if (class98_sub46_sub18 != null)
 				return class98_sub46_sub18;
@@ -38,7 +38,7 @@ final class Class8 {
 			if (is != null)
 				class98_sub46_sub18.method1628(new RSByteBuffer(is), -125);
 			synchronized (aClass79_109) {
-				aClass79_109.put((long) i_0_, class98_sub46_sub18);
+				aClass79_109.put(i_0_, class98_sub46_sub18);
 			}
 			if (i != 9)
 				method186(-13, null, 80, -89);
@@ -52,34 +52,34 @@ final class Class8 {
 		do {
 			try {
 				if (Class98_Sub10_Sub9.aBoolean5585) {
-					ParamType class149 = ((Class98_Sub46_Sub1.anInt5945 ^ 0xffffffff) != 0 ? (Class98_Sub43_Sub1.aClass365_5897.list((byte) 31, Class98_Sub46_Sub1.anInt5945)) : null);
-					if (client.getClickMask(class293).method1667((byte) 74) && (Class98_Sub4.anInt3826 & 0x20 ^ 0xffffffff) != -1 && (class149 == null || ((class293.method3472(i ^ 0x56da, (((ParamType) class149).anInt1202), (Class98_Sub46_Sub1.anInt5945)) ^ 0xffffffff) != (((ParamType) class149).anInt1202 ^ 0xffffffff))))
-						GameInterfaceData.method3470(false, true, 0L, Class336.anInt2823, ((GameInterfaceData) class293).anInt2300, (Class246_Sub3_Sub3.aString6156 + " -> " + ((GameInterfaceData) class293).aString2224), false, ((GameInterfaceData) class293).anInt2248, 59, (long) ((((GameInterfaceData) class293).anInt2300 << 1322373568) | ((GameInterfaceData) class293).anInt2248), ((GameInterfaceData) class293).anInt2302, false, Class287_Sub2.aString3272);
+					ParamType class149 = (Class98_Sub46_Sub1.anInt5945 != -1 ? (Class98_Sub43_Sub1.aClass365_5897.list((byte) 31, Class98_Sub46_Sub1.anInt5945)) : null);
+					if (client.getClickMask(class293).method1667((byte) 74) && (Class98_Sub4.anInt3826 & 0x20) != 0 && (class149 == null || (class149.anInt1202 != class293.method3472(i ^ 0x56da, (class149.anInt1202), (Class98_Sub46_Sub1.anInt5945)))))
+						GameInterfaceData.method3470(false, true, 0L, Class336.anInt2823, class293.anInt2300, (Class246_Sub3_Sub3.aString6156 + " -> " + class293.aString2224), false, class293.anInt2248, 59, (class293.anInt2300 << 0) | class293.anInt2248, class293.anInt2302, false, Class287_Sub2.aString3272);
 				}
 				if (i == 59) {
 					for (int i_3_ = 9; i_3_ >= 5; i_3_--) {
 						String string = Class38.method347(class293, (byte) 66, i_3_);
 						if (string != null) {
 							Class132.anInt1046++;
-							GameInterfaceData.method3470(false, true, (long) (i_3_ + 1), Class377.method3991(class293, -127, i_3_), ((GameInterfaceData) class293).anInt2300, ((GameInterfaceData) class293).aString2224, false, ((GameInterfaceData) class293).anInt2248, 1006, (long) (((GameInterfaceData) class293).anInt2248 | (((GameInterfaceData) class293).anInt2300 << 75346272)), ((GameInterfaceData) class293).anInt2302, false, string);
+							GameInterfaceData.method3470(false, true, i_3_ + 1, Class377.method3991(class293, -127, i_3_), class293.anInt2300, class293.aString2224, false, class293.anInt2248, 1006, class293.anInt2248 | (class293.anInt2300 << 0), class293.anInt2302, false, string);
 						}
 					}
 					String string = Class170.method2538(-1, class293);
 					if (string != null)
-						GameInterfaceData.method3470(false, true, 0L, ((GameInterfaceData) class293).anInt2254, ((GameInterfaceData) class293).anInt2300, ((GameInterfaceData) class293).aString2224, false, ((GameInterfaceData) class293).anInt2248, 21, (long) ((((GameInterfaceData) class293).anInt2300 << -1538321408) | ((GameInterfaceData) class293).anInt2248), ((GameInterfaceData) class293).anInt2302, false, string);
+						GameInterfaceData.method3470(false, true, 0L, class293.anInt2254, class293.anInt2300, class293.aString2224, false, class293.anInt2248, 21, (class293.anInt2300 << 0) | class293.anInt2248, class293.anInt2302, false, string);
 					for (int i_4_ = 4; i_4_ >= 0; i_4_--) {
 						String string_5_ = Class38.method347(class293, (byte) 65, i_4_);
 						if (string_5_ != null) {
 							Class132.anInt1046++;
-							GameInterfaceData.method3470(false, true, (long) (i_4_ - -1), Class377.method3991(class293, i ^ ~0x49, i_4_), ((GameInterfaceData) class293).anInt2300, ((GameInterfaceData) class293).aString2224, false, ((GameInterfaceData) class293).anInt2248, 49, (long) (((GameInterfaceData) class293).anInt2248 | (((GameInterfaceData) class293).anInt2300 << -2042533440)), ((GameInterfaceData) class293).anInt2302, false, string_5_);
+							GameInterfaceData.method3470(false, true, i_4_ - -1, Class377.method3991(class293, i ^ ~0x49, i_4_), class293.anInt2300, class293.aString2224, false, class293.anInt2248, 49, class293.anInt2248 | (class293.anInt2300 << 0), class293.anInt2302, false, string_5_);
 						}
 					}
 					if (!client.getClickMask(class293).method1669(1964468))
 						break;
-					if (((GameInterfaceData) class293).aString2333 == null)
-						GameInterfaceData.method3470(false, true, 0L, -1, ((GameInterfaceData) class293).anInt2300, "", false, ((GameInterfaceData) class293).anInt2248, 9, (long) (((GameInterfaceData) class293).anInt2248 | (((GameInterfaceData) class293).anInt2300 << -35313376)), ((GameInterfaceData) class293).anInt2302, false, TextResources.CONTINUE.get_text(Class374.anInt3159));
+					if (class293.aString2333 == null)
+						GameInterfaceData.method3470(false, true, 0L, -1, class293.anInt2300, "", false, class293.anInt2248, 9, class293.anInt2248 | (class293.anInt2300 << 0), class293.anInt2302, false, TextResources.CONTINUE.get_text(Class374.anInt3159));
 					else
-						GameInterfaceData.method3470(false, true, 0L, -1, ((GameInterfaceData) class293).anInt2300, "", false, ((GameInterfaceData) class293).anInt2248, 9, (long) (((GameInterfaceData) class293).anInt2248 | (((GameInterfaceData) class293).anInt2300 << -1733821568)), ((GameInterfaceData) class293).anInt2302, false, ((GameInterfaceData) class293).aString2333);
+						GameInterfaceData.method3470(false, true, 0L, -1, class293.anInt2300, "", false, class293.anInt2248, 9, class293.anInt2248 | (class293.anInt2300 << 0), class293.anInt2302, false, class293.aString2333);
 				}
 			} catch (RuntimeException runtimeexception) {
 				throw Class64_Sub27.method667(runtimeexception, ("ai.A(" + i + ',' + (class293 != null ? "{...}" : "null") + ',' + i_1_ + ',' + i_2_ + ')'));
